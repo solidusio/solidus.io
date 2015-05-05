@@ -1,0 +1,4 @@
+exclude: [vendor]
+sass:
+  sass_dir: styles
+  style: :compressed
