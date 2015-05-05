@@ -1,0 +1,15 @@
+<div id="people" class="people">
+  <div class="people-lead"
+    <h2>Who We Are</h2>
+    <p>Solidus is backed and developed primarily by Bonobos and FreeRunning Technologies. Both have leveraged the Spree platform to build large ecommerce stores while heavily contributing back to the open source project.</p>
+  </div>
+
+  <div class="people-list">
+    {% for person in site.people %}
+      <div class="person">
+        <h4 class="person-name">{{ person.title }}</h4>
+        {{ person.content }}
+      </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,4 +1,9 @@
 exclude: [vendor]
+collections:
+- people
+collections:
+  people:
+    output: true
 sass:
   sass_dir: styles
   style: :compressed
