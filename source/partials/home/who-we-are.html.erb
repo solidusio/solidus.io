@@ -5,11 +5,11 @@
   </div>
 
   <div class="people-list">
-    {% for person in site.people %}
+    <% data.people.each do |person| %>
       <div class="person">
-        <h4 class="person-name">{{ person.title }}</h4>
-        {{ person.content }}
+        <h4 class="person-name"><%= person.name %></h4>
+        <%= person.description %>
       </div>
-    {% endfor %}
+    <% end %>
   </div>
 </div>
