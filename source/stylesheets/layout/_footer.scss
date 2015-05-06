@@ -1,0 +1,49 @@
+.main-footer {
+  margin-top: $spacer*2;
+  padding: $spacer*2 $spacer;
+  background: $color-secondary;
+  color: $white;
+  font-size: 0.9em;
+  text-align: center;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.contact-us {
+
+}
+
+.footer-nav {
+  margin-top: $spacer*2;
+  padding-top: $spacer*2;
+  border-top: 1px solid $color-grey-inverted;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+  }
+}
+
+.footer-logo {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: $color-primary;
+  font-weight: bold;
+}
