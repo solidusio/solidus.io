@@ -1,0 +1,14 @@
+@mixin small-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@mixin center-y {
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+@mixin center-x {
+  left: 50%;
+  @include transform(translateX(-50%));
+}

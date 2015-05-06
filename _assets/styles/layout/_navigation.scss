@@ -1,0 +1,32 @@
+.main-nav {
+  position: absolute;
+  top: 0;
+  @include display(flex);
+  @include center-x;
+  width: 100%;
+  max-width: $width-max;
+  padding: 0 $base-padding*2;
+}
+
+.logo {
+
+}
+
+.main-nav ul {
+  @include flex(1);
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a {
+    display: block;
+    color: $white;
+    text-decoration: none;
+  }
+}

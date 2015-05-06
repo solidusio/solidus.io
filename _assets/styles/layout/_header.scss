@@ -1,0 +1,30 @@
+.main-header {
+  position: relative;
+  padding-top: 46%;
+  height: 0;
+  background: $color-secondary;
+  color: $white;
+}
+
+.header-content {
+  position: absolute;
+  text-align: center;
+  @include center-y;
+  width: 100%;
+
+  > * {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  h1:before {
+    content: "|";
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-top: 30px;
+  }
+}
