@@ -1,11 +1,14 @@
 .main-nav {
-  position: absolute;
-  top: 0;
   @include display(flex);
-  @include center-x;
-  width: 100%;
   max-width: $width-max;
   padding: 0 $base-padding*2;
+
+  @include breakpoint(desktop) {
+    position: absolute;
+    top: 0;
+    @include center-x;
+    width: 100%;
+  }
 }
 
 .logo {
@@ -18,6 +21,7 @@
   padding: 0;
   text-align: right;
   list-style: none;
+  font-size: 0.8em;
 
   li {
     display: inline-block;
@@ -28,5 +32,6 @@
     display: block;
     color: $white;
     text-decoration: none;
+    padding: 1em;
   }
 }

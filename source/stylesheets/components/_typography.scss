@@ -12,6 +12,7 @@ body {
   font-size: $base-font-size;
   line-height: 1.6em;
   color: $color-secondary;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,

@@ -1,27 +1,39 @@
 .main-header {
-  position: relative;
-  padding-top: 46%;
-  height: 0;
   background: $color-secondary;
   color: $white;
+
+  @include breakpoint(desktop) {
+    position: relative;
+    padding-top: 46%;
+    height: 0;
+  }
 }
 
 .header-content {
-  position: absolute;
+  padding: $base-padding;
   text-align: center;
-  @include center-y;
-  width: 100%;
+
+  @include breakpoint(desktop) {
+    position: absolute;
+    @include center-y;
+    width: 100%;
+
+    h1:before {
+      content: "|";
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 0.7em;
+    line-height: 1.6em;
+  }
 
   > * {
     max-width: 600px;
     margin: 0 auto;
-  }
-
-  h1:before {
-    content: "|";
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
   }
 
   p {
