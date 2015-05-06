@@ -21,3 +21,13 @@
     @media (max-width: 767px) { @content; }
   }
 }
+
+@mixin clear-margins {
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}

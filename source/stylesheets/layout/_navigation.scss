@@ -1,7 +1,7 @@
 .main-nav {
   @include display(flex);
   max-width: $width-max;
-  padding: 0 $base-padding*2;
+  padding: 0 $spacer*2;
 
   @include breakpoint(desktop) {
     position: absolute;

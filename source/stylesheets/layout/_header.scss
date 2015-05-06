@@ -10,7 +10,7 @@
 }
 
 .header-content {
-  padding: $base-padding;
+  padding: $spacer;
   text-align: center;
 
   @include breakpoint(desktop) {

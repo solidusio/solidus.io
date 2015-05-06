@@ -1,5 +1,5 @@
-<div id="people" class="people">
-  <div class="people-lead"
+<div id="people" class="home-section people">
+  <div class="people-lead">
     <h2>Who We Are</h2>
     <p>Solidus is backed and developed primarily by Bonobos and FreeRunning Technologies. Both have leveraged the Spree platform to build large ecommerce stores while heavily contributing back to the open source project.</p>
   </div>
@@ -7,8 +7,15 @@
   <div class="people-list">
     <% data.people.each do |person| %>
       <div class="person">
-        <h4 class="person-name"><%= person.name %></h4>
-        <%= person.description %>
+        <div class="person-avatar">
+          <%= image_tag person.avatar %>
+        </div>
+        <div class="person-content">
+          <h4 class="person-name">
+            <a href="<%= person.github %>"><%= person.name %></a>
+          </h4>
+          <%= person.description %>
+        </div>
       </div>
     <% end %>
   </div>

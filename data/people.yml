@@ -1,18 +1,30 @@
 -
   name: Andrew Thal
   description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+  avatar: andrew.jpg
+  github: https://github.com/athal7
 -
   name: Clarke Brunsdon
   description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+  avatar: clarke.jpg
+  github: https://github.com/cbrunsdon
 -
   name: Gregor MacDougall
   description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+  avatar: gregor.jpg
+  github: https://github.com/gmacdougall
 -
   name: John Hawthorn
   description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+  avatar: hawth.jpg
+  github: https://github.com/jhawthorn
 -
   name: Jordan Brough
   description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+  avatar: jordan.jpg
+  github: https://github.com/jordan-brough
 -
   name: Magnus Von Koeller
   description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+  avatar: magnus.jpg
+  github: https://github.com/magnusvk
