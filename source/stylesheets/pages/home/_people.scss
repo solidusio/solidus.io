@@ -1,0 +1,47 @@
+.people-lead {
+  @include clear-margins;
+
+  @include breakpoint(desktop) {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.people-list {
+  margin-top: $spacer*2;
+
+  @include breakpoint(desktop) {
+    font-size: 0;
+  }
+}
+
+.person {
+  margin-top: 1em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include breakpoint(desktop) {
+    display: inline-block;
+    width: 33.33%;
+    padding: 0 $spacer;
+    font-size: $base-font-size;
+  }
+}
+
+.person-avatar {
+  float: left;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+}
+
+.person-content {
+  margin-left: 50px + $spacer; // 50px == image width
+  @include clear-margins;
+}

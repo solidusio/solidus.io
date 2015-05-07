@@ -1,0 +1,21 @@
+.project-goals {
+  @include breakpoint(desktop) {
+    @include clearfix;
+  }
+}
+
+.project-goal {
+  @include clear-margins;
+  margin-top: $spacer*2;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include breakpoint(desktop) {
+    float: left;
+    width: 50%;
+    margin-top: 0;
+    padding: 0 $spacer;
+  }
+}
