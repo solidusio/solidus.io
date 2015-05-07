@@ -1,11 +1,11 @@
 .main-header {
-  background: $color-secondary;
-  color: $white;
 
   @include breakpoint(desktop) {
     position: relative;
     padding-top: 46%;
     height: 0;
+    background: $color-secondary;
+    color: $white;
   }
 }
 
@@ -13,21 +13,23 @@
   padding: $spacer;
   text-align: center;
 
+  svg {
+    display: inline-block;
+    width: 8%;
+    padding: 0 46%;
+    box-sizing: content-box;
+    fill: $color-primary;
+    margin-bottom: $spacer;
+  }
+
   @include breakpoint(desktop) {
     position: absolute;
     @include center-y;
     width: 100%;
-
-    h1:before {
-      content: "|";
-      display: block;
-      text-align: center;
-      margin-bottom: 20px;
-    }
   }
 
   @include breakpoint(mobile) {
-    font-size: 0.7em;
+    font-size: 0.8em;
     line-height: 1.6em;
   }
 

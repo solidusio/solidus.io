@@ -1,27 +1,44 @@
 .main-nav {
-  @include display(flex);
   max-width: $width-max;
-  padding: 0 $spacer*2;
+  padding: $spacer*2;
 
   @include breakpoint(desktop) {
+    @include display(flex);
     position: absolute;
     top: 0;
     @include center-x;
     width: 100%;
   }
+
+  @include breakpoint(mobile) {
+    background: $color-secondary;
+    color: $white;
+    text-align: center;
+  }
 }
 
 .logo {
 
+  svg {
+    width: 100px;
+    fill: $white;
+  }
 }
 
 .main-nav ul {
-  @include flex(1);
   margin: 0;
   padding: 0;
-  text-align: right;
   list-style: none;
   font-size: 0.8em;
+
+  @include breakpoint(desktop) {
+    @include flex(1);
+    text-align: right;
+  }
+
+  @include breakpoint(mobile) {
+    text-align: center;
+  }
 
   li {
     display: inline-block;
