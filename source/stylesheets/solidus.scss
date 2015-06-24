@@ -1,5 +1,7 @@
+@import "susy";
 @import "bourbon";
 
+@import "setup/susy-config";
 @import "setup/normalize";
 @import "setup/mixins";
 @import "setup/variables";
