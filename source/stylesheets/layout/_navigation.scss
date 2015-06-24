@@ -29,7 +29,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0.9em;
 
   @include breakpoint(desktop) {
     @include flex(1);
@@ -49,20 +48,6 @@
     display: block;
     color: $white;
     text-decoration: none;
-    padding: 0.5em 1em;
-  }
-}
-
-.nav-highlight {
-  background: $color-primary;
-  margin-left: 1em;
-  border-radius: 3px;
-
-  &:hover {
-    background: lighten($color-primary, 10%);
-  }
-
-  a {
     padding: 0.5em 1em;
   }
 }
