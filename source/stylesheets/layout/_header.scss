@@ -2,10 +2,21 @@
 
   @include breakpoint(desktop) {
     position: relative;
-    padding-top: 46%;
+    padding-top: 50%;
     height: 0;
-    background: $color-secondary;
     color: $white;
+    background: image-url("header-working-computer.jpg") no-repeat;
+    background-size: cover;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.5);
+    }
   }
 }
 
