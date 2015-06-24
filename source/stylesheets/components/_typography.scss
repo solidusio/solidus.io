@@ -1,8 +1,8 @@
-$body-font-family: "PT Sans", serif;
-$heading-font-family: $body-font-family;
+$font-family-body: "PT Sans", serif;
+$font-family-heading: $font-family-body;
 
 body {
-  font-family: $body-font-family;
+  font-family: $font-family-body;
   font-size: $font-size-base;
   line-height: 1.6em;
   color: $color-secondary;
@@ -15,7 +15,7 @@ h3,
 h4 {
   margin: 0.8em 0;
   line-height: 1.25em;
-  font-family: $heading-font-family;
+  font-family: $font-family-heading;
 
   a {
     color: inherit;
