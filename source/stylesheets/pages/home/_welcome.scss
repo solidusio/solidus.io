@@ -2,19 +2,19 @@
   @include clear-margins;
 
   @include breakpoint(desktop) {
-    h2 {
-      text-align: center;
-    }
-
-    p:not(:last-child) {
-      float: left;
-      width: 50%;
-      padding: 0 $spacer;
-    }
-
-    p:last-child {
-      clear: left;
-      text-align: center;
-    }
+    width: span(9);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
+
+  p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.welcome-lead-cta {
+  margin-top: $gutter-desktop;
 }
