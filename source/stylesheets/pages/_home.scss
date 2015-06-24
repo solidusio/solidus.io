@@ -1,11 +1,15 @@
 .home-sections {
-  padding: 0 $spacer;
+  padding: 0 $gutter-desktop;
+
+  @include breakpoint(mobile) {
+    padding: 0 $gutter-mobile;
+  }
 }
 
 .home-section {
   border-top: 1px solid $color-grey;
-  margin-top: $spacer*2;
-  padding: $spacer*2 0 0;
+  margin-top: 100px;
+  padding: 100px $gutter-desktop 0;
 
   @include breakpoint(desktop) {
     &:first-child {
