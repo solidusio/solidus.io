@@ -1,0 +1,39 @@
+.home-features {
+  @include clearfix;
+}
+
+.home-feature {
+  max-width: span(9);
+  margin: 100px auto 0;
+  @include clearfix;
+  font-size: 0; // inline-block, holler
+
+  &.media-aligned-right {
+    direction: rtl;
+  }
+}
+
+.home-feature-content,
+.home-feature-media {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $font-size-base;
+}
+
+.home-feature-content {
+  width: span(4 of 9);
+  @include clear-margins;
+
+  .media-aligned-left & {
+    padding-right: gutter(1);
+  }
+
+  .media-aligned-right & {
+    text-align: left;
+    padding-left: gutter(1);
+  }
+}
+
+.home-feature-media {
+  width: span(5 of 9);
+}
