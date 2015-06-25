@@ -9,39 +9,20 @@
 }
 
 .people-list {
-  margin-top: $spacer*2;
-
   @include breakpoint(desktop) {
+    max-width: 900px;
+    margin: 0 auto;
     font-size: 0;
   }
 }
 
 .person {
-  margin-top: 1em;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
   @include breakpoint(desktop) {
     display: inline-block;
+    vertical-align: top;
     width: 33.33%;
-    padding: 0 $spacer;
+    margin-top: $gutter-desktop;
+    padding: 0 $gutter-desktop/2;
     font-size: $font-size-base;
   }
-}
-
-.person-avatar {
-  float: left;
-
-  img {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-  }
-}
-
-.person-content {
-  margin-left: 50px + $spacer; // 50px == image width
-  @include clear-margins;
 }
