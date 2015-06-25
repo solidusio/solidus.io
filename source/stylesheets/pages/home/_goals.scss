@@ -1,21 +1,45 @@
-.project-goals {
-  @include breakpoint(desktop) {
-    @include clearfix;
+.project-planning {
+  text-align: center;
+
+  h2 {
+    margin-top: 0;
   }
 }
 
-.project-goal {
-  @include clear-margins;
-  margin-top: $spacer*2;
+.project-plans-wrapper {
+  @include breakpoint(desktop) {
+    width: span(9);
+    margin: $gutter-desktop auto 0;
+    padding-top: $gutter-desktop/2; // each plan also as a padding-top
+    border-top: 1px solid $color-grey;
+  }
+}
 
-  &:first-child {
-    margin-top: 0;
+.project-plans {
+  @include breakpoint(desktop) {
+    font-size: 0; // inline-block
+
+    // make sure the inline block items go to the edge
+    margin-left: -$gutter-desktop/2;
+    margin-right: -$gutter-desktop/2;
+  }
+}
+
+.project-plan {
+  @include breakpoint(desktop) {
+    display: inline-block;
+    vertical-align: top;
+    width: span(33%);
+    font-size: $font-size-base;
+    text-align: left;
+    padding: $gutter-desktop/4 $gutter-desktop/4 0;
   }
 
-  @include breakpoint(desktop) {
-    float: left;
-    width: 50%;
+  p:first-child {
+    margin-bottom: 0;
+  }
+
+  p:last-child {
     margin-top: 0;
-    padding: 0 $spacer;
   }
 }
