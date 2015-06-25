@@ -22,11 +22,7 @@
   @extend .grid-item;
   text-align: left;
 
-  p:first-child {
-    margin-bottom: 0;
-  }
-
-  p:last-child {
-    margin-top: 0;
+  p {
+    margin: 0;
   }
 }
