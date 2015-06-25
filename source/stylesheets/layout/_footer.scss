@@ -1,5 +1,5 @@
 .main-footer {
-  padding: $spacer*2 $spacer;
+  padding: $gutter;
   background: $color-secondary;
   color: $white;
   font-size: 0.9em;
@@ -21,8 +21,8 @@
 }
 
 .footer-nav {
-  margin-top: $spacer*2;
-  padding-top: $spacer*2;
+  margin-top: $gutter;
+  padding-top: $gutter;
   border-top: 1px solid $color-grey-inverted;
 
   li {

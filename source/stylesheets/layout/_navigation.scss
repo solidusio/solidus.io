@@ -1,6 +1,6 @@
 .main-nav {
   max-width: $width-max;
-  padding: $spacer*2;
+  padding: $gutter/3 $gutter;
 
   @include breakpoint(desktop) {
     @include display(flex);
