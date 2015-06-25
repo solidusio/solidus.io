@@ -22,3 +22,13 @@
 .person {
   @extend .grid-item;
 }
+
+.person-name {
+  margin-bottom: 0;
+}
+
+.person-title {
+  margin: 6px 0 0;
+  font-size: 0.9em;
+  line-height: 1.1em;
+}
