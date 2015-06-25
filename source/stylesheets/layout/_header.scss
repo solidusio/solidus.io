@@ -24,15 +24,6 @@
   padding: $gutter;
   text-align: center;
 
-  svg {
-    display: inline-block;
-    width: 8%;
-    padding: 0 46%;
-    box-sizing: content-box;
-    fill: $color-primary;
-    margin-bottom: $spacer;
-  }
-
   @include breakpoint(desktop) {
     position: absolute;
     @include center-y;
