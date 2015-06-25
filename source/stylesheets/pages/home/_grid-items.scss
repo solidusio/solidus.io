@@ -1,7 +1,7 @@
 .grid-items {
   @include breakpoint(desktop) {
-    margin-left: -($gutter-desktop/2);
-    margin-right: -($gutter-desktop/2);
+    margin-left: -($gutter/2);
+    margin-right: -($gutter/2);
     font-size: 0;
   }
 }
@@ -11,8 +11,8 @@
     display: inline-block;
     vertical-align: top;
     width: 33%;
-    padding: 0 $gutter-desktop/2;
-    margin-top: $gutter-desktop;
+    padding: 0 $gutter/2;
+    margin-top: $gutter;
     font-size: $font-size-base;
   }
 }

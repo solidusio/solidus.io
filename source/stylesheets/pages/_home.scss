@@ -5,10 +5,10 @@
 .home-section {
   border-top: 1px solid $color-grey;
   margin-top: 100px;
-  padding: 100px $gutter-desktop 0;
+  padding: 100px $gutter 0;
 
   &.stretched {
-    padding: 100px $gutter-desktop;
+    padding: 100px $gutter;
     background: $color-grey;
 
     + .home-section {

@@ -9,7 +9,7 @@
 .project-plans-wrapper {
   @include breakpoint(desktop) {
     max-width: 900px;
-    margin: $gutter-desktop auto 0;
+    margin: $gutter auto 0;
     border-top: 1px solid $color-grey;
   }
 }

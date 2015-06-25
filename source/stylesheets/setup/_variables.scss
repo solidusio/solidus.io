@@ -8,7 +8,6 @@ $white: white;
 $font-size-base: 16px;
 $spacer: $font-size-base;
 
-$gutter-desktop: 48px; // divisible by 4, 3, 2
-$gutter-mobile: $gutter-desktop / 3;
+$gutter: 48px; // divisible by 4, 3, 2
 
 $width-max: 1200px;
