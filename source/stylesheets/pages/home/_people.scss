@@ -8,21 +8,17 @@
   }
 }
 
-.people-list {
+.people-list-wrapper {
   @include breakpoint(desktop) {
     max-width: 900px;
     margin: 0 auto;
-    font-size: 0;
   }
 }
 
+.people-list {
+  @extend .grid-items;
+}
+
 .person {
-  @include breakpoint(desktop) {
-    display: inline-block;
-    vertical-align: top;
-    width: 33.33%;
-    margin-top: $gutter-desktop;
-    padding: 0 $gutter-desktop/2;
-    font-size: $font-size-base;
-  }
+  @extend .grid-item;
 }

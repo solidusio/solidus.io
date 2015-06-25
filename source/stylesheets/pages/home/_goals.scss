@@ -8,32 +8,19 @@
 
 .project-plans-wrapper {
   @include breakpoint(desktop) {
-    width: span(9);
+    max-width: 900px;
     margin: $gutter-desktop auto 0;
-    padding-top: $gutter-desktop/2; // each plan also as a padding-top
     border-top: 1px solid $color-grey;
   }
 }
 
 .project-plans {
-  @include breakpoint(desktop) {
-    font-size: 0; // inline-block
-
-    // make sure the inline block items go to the edge
-    margin-left: -$gutter-desktop/2;
-    margin-right: -$gutter-desktop/2;
-  }
+  @extend .grid-items;
 }
 
 .project-plan {
-  @include breakpoint(desktop) {
-    display: inline-block;
-    vertical-align: top;
-    width: span(33%);
-    font-size: $font-size-base;
-    text-align: left;
-    padding: $gutter-desktop/4 $gutter-desktop/4 0;
-  }
+  @extend .grid-item;
+  text-align: left;
 
   p:first-child {
     margin-bottom: 0;
