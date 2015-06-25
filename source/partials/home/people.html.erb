@@ -8,15 +8,13 @@
     <div class="people-list">
       <% data.people.each do |person| %>
         <div class="person">
-          <div class="person-avatar">
-            <%= image_tag person.avatar %>
-          </div>
-          <div class="person-content">
-            <h4 class="person-name">
-              <a href="<%= person.github %>"><%= person.name %></a>
-            </h4>
-            <%= person.title %>
-          </div>
+          <%= image_tag person.avatar, class: "person-avatar" %>
+
+          <h4 class="person-name">
+            <a href="<%= person.github %>"><%= person.name %></a>
+          </h4>
+
+          <%= person.title %>
         </div>
       <% end %>
     </div>
