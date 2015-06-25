@@ -18,7 +18,6 @@ input[type="submit"] {
 }
 
 .button-secondary {
-  background: $color-grey;
-  box-shadow: 0 3px 0 darken($color-grey, 10%);
-  color: $color-grey-dark;
+  background: $color-grey-inverted;
+  box-shadow: 0 3px 0 darken($color-grey-inverted, 10%);
 }
