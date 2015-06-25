@@ -1,0 +1,18 @@
+.grid-items {
+  @include breakpoint(desktop) {
+    margin-left: -($gutter-desktop/2);
+    margin-right: -($gutter-desktop/2);
+    font-size: 0;
+  }
+}
+
+.grid-item {
+  @include breakpoint(desktop) {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding: 0 $gutter-desktop/2;
+    margin-top: $gutter-desktop;
+    font-size: $font-size-base;
+  }
+}
