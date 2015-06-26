@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "middleman", "~>3.3.12"
+gem "middleman-s3_sync"
 gem "susy"
 gem "bourbon"
 gem "breakpoint"
