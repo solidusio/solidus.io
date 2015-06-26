@@ -18,4 +18,10 @@
 
 .welcome-lead-cta {
   margin-top: $gutter;
+
+  @include breakpoint(mobile) {
+    .button:last-child {
+      margin-top: $gutter/2;
+    }
+  }
 }

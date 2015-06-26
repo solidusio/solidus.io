@@ -1,5 +1,8 @@
 .project-planning {
-  text-align: center;
+
+  @include breakpoint(desktop) {
+    text-align: center;
+  }
 
   h2 {
     margin-top: 0;
