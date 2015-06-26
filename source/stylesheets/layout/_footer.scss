@@ -1,6 +1,11 @@
-.main-footer {
-  padding: $gutter*2 $gutter;
+.main-footer-wrapper {
   background: $color-secondary;
+}
+
+.main-footer {
+  max-width: $width-max;
+  margin: 0 auto;
+  padding: $gutter*2 $gutter;
   color: $white;
   font-size: 0.9em;
 
