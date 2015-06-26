@@ -1,11 +1,18 @@
 .main-footer {
-  padding: $gutter;
+  padding: $gutter*2 $gutter;
   background: $color-secondary;
   color: $white;
   font-size: 0.9em;
-  text-align: center;
 
-  a {
+  @include breakpoint(desktop) {
+    @include clearfix;
+  }
+
+  @include breakpoint(mobile) {
+    text-align: center;
+  }
+
+  a:not(.button) {
     color: $white;
 
     &:hover {
@@ -20,7 +27,56 @@
   }
 }
 
+.footer-tagline {
+  @include breakpoint(desktop) {
+    @include span(first 8 no-gutters);
+    padding-right: $gutter;
+
+    h3,
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    h3 {
+      margin: 0;
+      @include calc(width, "100% - 50px"); // svg width
+    }
+  }
+
+  .solidus-mark {
+    width: 30px;
+    margin-right: 15px;
+    fill: $color-primary;
+  }
+}
+
+.footer-cta {
+  @include breakpoint(desktop) {
+    @include span(last 4 no-gutters);
+    text-align: right;
+  }
+
+  @include breakpoint(mobile) {
+    margin-top: $gutter;
+  }
+
+  .button-secondary {
+    background: lighten($color-grey-inverted, 10%);
+    box-shadow: 0 3px 0 darken(lighten($color-grey-inverted, 10%), 10%);
+  }
+}
+
 .footer-nav {
+  margin-top: $gutter;
+
+  @include breakpoint(desktop) {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-left: -0.5em; // to account for the padding of the first nav item
+    clear: both;
+  }
 
   li {
     display: inline-block;
