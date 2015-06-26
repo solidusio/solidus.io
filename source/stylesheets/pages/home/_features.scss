@@ -6,12 +6,12 @@
   margin: 100px auto 0;
   @include clearfix;
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     max-width: span(9);
     font-size: 0; // inline-block, holler
   }
 
-  @include breakpoint(mobile) {
+  @include breakpoint($mobile) {
     margin-top: $gutter;
   }
 
@@ -20,7 +20,7 @@
   }
 
   &.media-aligned-right {
-    @include breakpoint(desktop) {
+    @include breakpoint($desktop) {
       direction: rtl;
     }
   }
@@ -28,7 +28,7 @@
 
 .home-feature-content,
 .home-feature-media {
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     display: inline-block;
     vertical-align: middle;
     font-size: $font-size-base;
@@ -38,7 +38,7 @@
 .home-feature-content {
   @include clear-margins;
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     width: span(4 of 9);
 
     .media-aligned-left & {
@@ -53,11 +53,11 @@
 }
 
 .home-feature-media {
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     width: span(5 of 9);
   }
 
-  @include breakpoint(mobile) {
+  @include breakpoint($mobile) {
     margin-top: $gutter/2;
   }
 

@@ -1,6 +1,6 @@
 .project-planning {
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     text-align: center;
   }
 
@@ -10,7 +10,7 @@
 }
 
 .project-plans-wrapper {
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     max-width: 900px;
     margin: $gutter auto 0;
     border-top: 1px solid $color-grey;

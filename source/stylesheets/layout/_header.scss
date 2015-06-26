@@ -1,6 +1,6 @@
 .main-header {
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     position: relative;
     padding-top: 50%;
     height: 0;
@@ -24,13 +24,13 @@
   padding: $gutter;
   text-align: center;
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     position: absolute;
     @include center-y;
     width: 100%;
   }
 
-  @include breakpoint(mobile) {
+  @include breakpoint($mobile) {
     padding: $gutter $gutter/2 0;
 
     h1 {

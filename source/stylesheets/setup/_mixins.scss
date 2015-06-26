@@ -13,15 +13,6 @@
   @include transform(translateX(-50%));
 }
 
-@mixin breakpoint($point) {
-  @if $point == desktop {
-    @media (min-width: 768px) { @content; }
-  }
-  @else if $point == mobile {
-    @media (max-width: 767px) { @content; }
-  }
-}
-
 @mixin clear-margins {
   > *:first-child {
     margin-top: 0;

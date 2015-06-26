@@ -9,11 +9,11 @@
   color: $white;
   font-size: 0.9em;
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     @include clearfix;
   }
 
-  @include breakpoint(mobile) {
+  @include breakpoint($mobile) {
     text-align: center;
   }
 
@@ -33,7 +33,7 @@
 }
 
 .footer-tagline {
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     @include span(first 8 no-gutters);
     padding-right: $gutter;
 
@@ -57,12 +57,12 @@
 }
 
 .footer-cta {
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     @include span(last 4 no-gutters);
     text-align: right;
   }
 
-  @include breakpoint(mobile) {
+  @include breakpoint($mobile) {
     margin-top: $gutter;
   }
 
@@ -75,7 +75,7 @@
 .footer-nav {
   margin-top: $gutter;
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     width: 100%;
     float: left;
     text-align: left;

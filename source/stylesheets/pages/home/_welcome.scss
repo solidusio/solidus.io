@@ -1,7 +1,7 @@
 .welcome-lead {
   @include clear-margins;
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     width: span(9);
     margin-left: auto;
     margin-right: auto;
@@ -19,7 +19,7 @@
 .welcome-lead-cta {
   margin-top: $gutter;
 
-  @include breakpoint(mobile) {
+  @include breakpoint($mobile) {
     .button:last-child {
       margin-top: $gutter/2;
     }

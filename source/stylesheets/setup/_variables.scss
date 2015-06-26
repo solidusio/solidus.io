@@ -8,5 +8,8 @@ $white: white;
 $font-size-base: 16px;
 
 $gutter: 48px; // divisible by 4, 3, 2
-
 $width-max: 1200px;
+
+/* Breakpoints */
+$desktop: 768px;
+$mobile: max-width 767px;

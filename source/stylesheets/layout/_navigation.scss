@@ -2,7 +2,7 @@
   max-width: $width-max;
   padding: $gutter/3 $gutter;
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     @include display(flex);
     position: absolute;
     top: 0;
@@ -10,7 +10,7 @@
     width: 100%;
   }
 
-  @include breakpoint(mobile) {
+  @include breakpoint($mobile) {
     background: $color-secondary;
     color: $white;
     text-align: center;
@@ -30,12 +30,12 @@
   padding: 0;
   list-style: none;
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     @include flex(1);
     text-align: right;
   }
 
-  @include breakpoint(mobile) {
+  @include breakpoint($mobile) {
     text-align: center;
   }
 

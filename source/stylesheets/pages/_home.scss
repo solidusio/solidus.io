@@ -7,7 +7,7 @@
   margin-top: 100px;
   padding: 100px $gutter 0;
 
-  @include breakpoint(mobile) {
+  @include breakpoint($mobile) {
     margin-top: $gutter;
     padding: $gutter $gutter/2 0;
   }
@@ -16,7 +16,7 @@
     padding: 100px $gutter;
     background: $color-grey;
 
-    @include breakpoint(mobile) {
+    @include breakpoint($mobile) {
       padding: $gutter $gutter/2;
     }
 
@@ -25,7 +25,7 @@
     }
   }
 
-  @include breakpoint(desktop) {
+  @include breakpoint($desktop) {
     &:first-child {
       padding-top: 0;
       border-top: 0;
