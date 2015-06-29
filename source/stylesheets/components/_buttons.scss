@@ -11,8 +11,7 @@
 }
 
 .button,
-button,
-input[type="submit"] {
+#{$all-buttons} {
   display: inline-block;
   padding: 0.8em 2.5em;
   border: none;
