@@ -1,0 +1,13 @@
+pre,
+code {
+  border: 1px solid $color-grey;
+  background: lighten($color-grey, 10%);
+}
+
+pre {
+  padding: $gutter/3;
+}
+
+code {
+  color: $color-primary;
+}
