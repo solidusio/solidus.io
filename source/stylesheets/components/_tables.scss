@@ -1,0 +1,32 @@
+table {
+  border: 1px solid $color-grey;
+}
+
+thead {
+  background: $color-grey;
+
+  @include breakpoint($mobile) {
+    display: none;
+  }
+}
+
+tr:nth-child(even) {
+  background: lighten($color-grey, 10%);
+}
+
+th,
+td {
+  padding: 0.5em;
+}
+
+td {
+  @include breakpoint($mobile) {
+    display: block;
+
+    &:before {
+      content: attr(data-column-label) ":";
+      margin-right: 5px;
+      font-weight: bold;
+    }
+  }
+}
