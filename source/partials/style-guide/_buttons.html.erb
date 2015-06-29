@@ -1,0 +1,38 @@
+<% snippet = capture do %>
+<button>Primary Button</button>
+<button class="button-secondary">Secondary Button</button>
+
+/* Change color */
+.context .button {
+  @include button-color($background-color, $text-color);
+}
+<% end %>
+
+<div id="buttons" class="style-guide-section">
+  <div class="style-guide-lead">
+    <h2>Buttons</h2>
+
+    <p>There are two styles of buttons used on the soludis website: primary and secondary.</p>
+
+    <p>A "button" is considered any of the following:</p>
+
+    <pre>.button,
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"]</pre>
+
+    <p>When wanting to use the secondary style, simply add <code>class="button-secondary"</code>.</p>
+
+    <p>If you need to tweak a button's color (if you were adding one to a different colored background, for example), you can use the <code>button-color</code> mixin.</p>
+  </div>
+
+  <div class="style-guide-result">
+    <button>Primary Button</button>
+    <button class="button-secondary">Secondary Button</button>
+  </div>
+
+  <div class="style-guide-code">
+    <pre><%= escape_once snippet %></pre>
+  </div>
+</div>

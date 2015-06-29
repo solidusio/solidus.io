@@ -40,6 +40,8 @@ configure :build do
     line_comments: false
   }
 
+  ignore "style-guide.html.erb"
+
   # Minify Javascript on build
   activate :minify_javascript
 

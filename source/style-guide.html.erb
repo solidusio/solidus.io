@@ -1,0 +1,49 @@
+---
+title: Solidus Marketing Site Style Guide
+---
+
+<%# Inline styles so we don't have to build a whole CSS file just for this internal page %>
+<style>
+  .style-guide-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em 2em;
+  }
+
+  .style-guide-section {
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid #eee;
+    border-radius: 3px;
+  }
+
+  .style-guide-section::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .style-guide-lead {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #eee;
+  }
+
+  .style-guide-result,
+  .style-guide-code {
+    float: left;
+    width: 50%;
+  }
+
+  .style-guide-result {
+    padding-right: 0.5em;
+  }
+
+  .style-guide-code {
+    padding-left: 0.5em;
+  }
+</style>
+
+<div class="style-guide-wrapper">
+  <%= partial "style-guide/buttons" %>
+</div>
