@@ -1,23 +1,28 @@
+@mixin button-color($background, $text: $white) {
+  background: $background;
+  box-shadow: 0 3px 0 darken($background, 10%);
+  color: $text;
+
+  &:hover {
+    /* If .button is an anchor, we want to make sure
+       we don't end up using a:hover's color */
+    color: $text;
+  }
+}
+
 .button,
 button,
 input[type="submit"] {
   display: inline-block;
   padding: 0.8em 2.5em;
   border-radius: 3px;
-  box-shadow: 0 3px 0 darken($color-primary, 10%);
-  background: $color-primary;
-  color: $white;
+  @include button-color($color-primary);
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-
-  &:hover {
-    color: $white;
-  }
 }
 
 .button-secondary {
-  background: $color-grey-inverted;
-  box-shadow: 0 3px 0 darken($color-grey-inverted, 10%);
+  @include button-color($color-grey-inverted);
 }

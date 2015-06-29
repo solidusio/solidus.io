@@ -67,8 +67,8 @@
   }
 
   .button-secondary {
-    background: lighten($color-grey-inverted, 10%);
-    box-shadow: 0 3px 0 darken(lighten($color-grey-inverted, 10%), 10%);
+    // we need a slightly lighter color of grey for the footer
+    @include button-color(lighten($color-grey-inverted, 10%));
   }
 }
 
