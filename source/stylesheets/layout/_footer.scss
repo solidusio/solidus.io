@@ -5,11 +5,12 @@
 .main-footer {
   max-width: $width-max;
   margin: 0 auto;
-  padding: $gutter*2 $gutter;
+  padding: $gutter $gutter/3;
   color: $white;
   font-size: 0.9em;
 
   @include breakpoint($desktop) {
+    padding: $gutter*2 $gutter;
     @include clearfix;
   }
 
@@ -51,8 +52,11 @@
 
   .solidus-mark {
     width: 30px;
-    margin-right: 15px;
     fill: $color-primary;
+
+    @include breakpoint($desktop) {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -63,7 +67,11 @@
   }
 
   @include breakpoint($mobile) {
-    margin-top: $gutter;
+    margin-top: $gutter/2;
+
+    .button {
+      margin-top: $gutter/2;
+    }
   }
 
   .button-secondary {
