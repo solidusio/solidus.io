@@ -1,0 +1,65 @@
+.input-wrapper,
+.input-group-wrapper {
+  margin: 1em 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+
+  .input-group-wrapper & {
+    font-weight: normal;
+  }
+
+  .input-group-wrapper:not(.inline-options) & {
+    margin: 1em 0;
+  }
+
+  .inline-options & {
+    display: inline-block;
+
+    &:not(:first-of-type) {
+      margin-left: 1em;
+    }
+  }
+}
+
+#{$all-text-inputs},
+.select-wrapper {
+  width: 100%;
+  padding: 1em 1.2em;
+  border: 1px solid $color-grey;
+  border-radius: 3px;
+
+  &:focus {
+    outline: none;
+    border-color: black;
+  }
+
+  @include placeholder {
+    color: $color-grey;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding-right: 3em;
+
+  &:after {
+    content: "";
+    @include position(absolute, 50% 1em null null);
+    @include transform(translateY(-50%));
+    @include triangle(8px 6px, black, down);
+  }
+
+  select {
+    @include position(absolute, 0 0 0 0);
+    max-width: 100%;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-appearance: none; // allow the select element to stretch
+  }
+}
