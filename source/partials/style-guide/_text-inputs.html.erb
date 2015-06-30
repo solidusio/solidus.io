@@ -1,0 +1,44 @@
+<% snippet = capture do %>
+<div class="input-wrapper">
+  <label for="input-1">First Name</label>
+  <input id="input-1" name="first-name" placeholder="John" type="text">
+</div>
+
+<div class="input-wrapper">
+  <label for="input-2">Last Name</label>
+  <input id="input-2" name="last-name" placeholder="Smith" type="text">
+</div>
+
+<div class="input-wrapper">
+  <label for="input-3">Email</label>
+  <input id="input-3" name="email" placeholder="johnsmith@example.com" type="email">
+</div>
+
+<div class="input-wrapper">
+  <label for="input-4">Number</label>
+  <input id="input-4" name="text" pattern="d*" placeholder="Numbers only!" type="email">
+</div>
+
+<div class="input-wrapper">
+  <label for="input-5">Message</label>
+  <textarea id="input-5" name="message" placeholder="Anything you want! Keep it friendly :)"></textarea>
+</div>
+<% end %>
+
+<div id="text-inputs" class="style-guide-section">
+  <div class="style-guide-lead">
+    <h2>Forms: Text Inputs</h2>
+
+    <p>Basic form elements should be wrapped in an <code>input-wrapper</code> class.</p>
+
+    <p>Using <code>type="number"</code> can be tricky and doesn't always work out the way you want it to. Want to force number-only keyboards on mobile devices? Use <code>pattern="\d*"</code> instead.</p>
+  </div>
+
+  <div class="style-guide-result">
+    <%= snippet %>
+  </div>
+
+  <div class="style-guide-code">
+    <pre><%= escape_once snippet %></pre>
+  </div>
+</div>

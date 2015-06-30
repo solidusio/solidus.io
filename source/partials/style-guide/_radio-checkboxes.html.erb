@@ -1,0 +1,59 @@
+<% snippet = capture do %>
+<div class="input-group-wrapper">
+  <h3>Radio Buttons (stacked)</h3>
+  <label for="radio-1">
+    <input id="radio-1" name="radio" type="radio">
+    Option 1
+  </label>
+  <label for="radio-2">
+    <input id="radio-2" name="radio" type="radio">
+    Option 2
+  </label>
+  <label for="radio-3">
+    <input id="radio-3" name="radio" type="radio">
+    Option 3
+  </label>
+  <label for="radio-4">
+    <input id="radio-4" name="radio" type="radio">
+    Option 4
+  </label>
+</div>
+
+<div class="input-group-wrapper inline-options">
+  <h3>Checkboxes (inline)</h3>
+  <label for="checkbox-1">
+    <input id="checkbox-1" name="checkbox" type="checkbox">
+    Option 1
+  </label>
+  <label for="checkbox-2">
+    <input id="checkbox-2" name="checkbox" type="checkbox">
+    Option 2
+  </label>
+  <label for="checkbox-3">
+    <input id="checkbox-3" name="checkbox" type="checkbox">
+    Option 3
+  </label>
+  <label for="checkbox-4">
+    <input id="checkbox-4" name="checkbox" type="checkbox">
+    Option 4
+  </label>
+</div>
+<% end %>
+
+<div id="radios-checkboxes" class="style-guide-section">
+  <div class="style-guide-lead">
+    <h2>Forms: Radio Buttons and Checkboxes</h2>
+
+    <p>Use the <code>input-group-wrapper</code> class when wrapping radio buttons or checkboxes.</p>
+
+    <p>If you want the radio buttons or checkboxes to be displayed inline, simply append the <code>inline-options</code> class to the group wrapper.</p>
+  </div>
+
+  <div class="style-guide-result">
+    <%= snippet %>
+  </div>
+
+  <div class="style-guide-code">
+    <pre><%= escape_once snippet %></pre>
+  </div>
+</div>

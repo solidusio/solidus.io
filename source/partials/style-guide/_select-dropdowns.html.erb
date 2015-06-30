@@ -1,0 +1,35 @@
+<% snippet = capture do %>
+<div class="input-wrapper">
+  <label for="select-1">Select Dropdown</label>
+  <div class="select-wrapper">
+    <span class="selected-text">Country</span>
+    <select id="select-1" name="select-1">
+      <option disabled selected>Country</option>
+      <option>Canada</option>
+      <option>United States</option>
+      <option>Mexico</option>
+      <option>Brazil</option>
+      <option>Peru</option>
+      <option>This is a super long one to test how our select element does. Will it break out of its container?</option>
+    </select>
+  </div>
+</div>
+<% end %>
+
+<div id="select-dropdowns" class="style-guide-section">
+  <div class="style-guide-lead">
+    <h2>Forms: Select Dropdowns</h2>
+
+    <p>Ah, the select dropdown. This requires a few extra elements (and some JavaScript) to accomplish.</p>
+
+    <p>If no value is selected by default, you will want to provide default text to the <code>.selected-text</code> element. When you create a new dropdown (<code>new CustomSelect</code>) it will automatically try to fill <code>.selected-text</code> with the current value of the select element.</p>
+  </div>
+
+  <div class="style-guide-result">
+    <%= snippet %>
+  </div>
+
+  <div class="style-guide-code">
+    <pre><%= escape_once snippet %></pre>
+  </div>
+</div>
