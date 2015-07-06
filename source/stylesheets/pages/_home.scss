@@ -24,6 +24,11 @@
       margin-top: 0;
     }
   }
+
+  &.darker {
+    background: $color-secondary;
+    color: $white;
+  }
 }
 
 @import "home/grid-items";
