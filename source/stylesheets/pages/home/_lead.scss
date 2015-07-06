@@ -17,3 +17,19 @@
     }
   }
 }
+
+.api-features {
+  max-width: 900px;
+  margin: 0 auto $gutter;
+}
+
+.api-feature {
+  strong {
+    font-size: 20px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto $gutter/4;
+  }
+}
