@@ -24,16 +24,10 @@
       margin-top: 0;
     }
   }
-
-  @include breakpoint($desktop) {
-    &:first-child {
-      padding-top: 0;
-      border-top: 0;
-    }
-  }
 }
 
 @import "home/grid-items";
+@import "home/lead";
 @import "home/features";
 @import "home/welcome";
 @import "home/goals";
