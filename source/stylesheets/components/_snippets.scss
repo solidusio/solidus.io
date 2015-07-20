@@ -11,3 +11,10 @@ pre {
 code {
   color: $color-primary;
 }
+
+/* code within a pre should be rendered as normal */
+pre code {
+  border: none;
+  background: none;
+  color: $color-secondary;
+}

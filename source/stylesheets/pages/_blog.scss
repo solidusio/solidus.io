@@ -1,0 +1,13 @@
+body.blog {
+  article, aside {
+    max-width: 900px;
+    margin: auto;
+  }
+}
+
+.byline {
+  font-style: italic;
+  .author, .date {
+    font-style: normal;
+  }
+}
