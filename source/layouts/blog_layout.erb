@@ -1,0 +1,23 @@
+<% wrap_layout :layout do %>
+  <article>
+    <h1><%= current_article.title %></h1>
+    <div class="byline">
+      <% if author = current_article.data[:author] %>
+        by <span class="author"><%= author %></span>
+      <% end %>
+      on <span class="date"><%= current_article.date.strftime('%b %e') %></span>
+    </div>
+    <div class="content">
+      <%= yield %>
+    </div>
+  </article>
+
+  <aside>
+    <h2>Recent Articles</h2>
+    <ol>
+      <% blog.articles[0...10].each do |article| %>
+        <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+      <% end %>
+    </ol>
+  </aside>
+<% end %>

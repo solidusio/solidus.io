@@ -3,6 +3,16 @@
 # Page options, layouts, aliases and proxies
 ###
 
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.layout = "blog_layout"
+end
+
+activate :syntax
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
 # Per-page layout changes:
 #
 # With no layout
