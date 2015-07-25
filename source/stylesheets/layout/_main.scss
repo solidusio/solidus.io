@@ -1,0 +1,9 @@
+body:not(.index) .main-content {
+  max-width: $width-max;
+  margin: 0 auto;
+  padding: 0 $gutter;
+
+  @include breakpoint($mobile) {
+    padding: 0 $gutter/3;
+  }
+}
