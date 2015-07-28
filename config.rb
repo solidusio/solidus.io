@@ -8,6 +8,8 @@ activate :blog do |blog|
   blog.layout = "blog_layout"
 end
 
+page "/feed.xml", layout: false
+
 activate :syntax
 
 set :markdown_engine, :redcarpet
