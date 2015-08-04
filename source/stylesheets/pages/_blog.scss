@@ -11,3 +11,18 @@ body.blog {
     font-style: normal;
   }
 }
+
+.pagination {
+  margin: 3em 0;
+  text-align: center;
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
