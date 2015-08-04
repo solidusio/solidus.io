@@ -1,0 +1,5 @@
+body {
+  @include display(flex);
+  min-height: 100vh;
+  @include flex-direction(column);
+}

@@ -3,16 +3,24 @@ pageable: true
 per_page: 10
 ---
 
-<% page_articles.each_with_index do |article, i| %>
-  <article>
-  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <%= article.body %>
-  </article>
-<% end %>
+<div class="articles-list">
+  <% page_articles.each_with_index do |article, i| %>
+    <article class="article-list-item">
+      <div class="article-list-item-heading">
+        <h2 class="article-list-item-title"><%= link_to article.title, article %></h2>
+        <span class="article-list-item-meta"><%= article.date.strftime('%b %-d, %Y') %> • <%= article.data[:author] %></span>
+      </div>
+    </article>
+  <% end %>
+</div>
 
-<% if paginate && num_pages > 1 %>
+<div class="security-updates">
+  <h4>Security Updates</h4>
+
+  <p>While we will post all security vulnerabilities to this blog you may wish to recieve notifications. For instant updates you can subscribe to the <a href="https://groups.google.com/forum/#!forum/solidus-security">Google group</a>.</p>
+</div>
+
+<% if paginate %>
   <ul class="pagination">
     <li class="button button-small button-outline <%= prev_page ? "" : "disabled" %>">
       <% if prev_page %>
