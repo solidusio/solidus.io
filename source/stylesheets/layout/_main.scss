@@ -1,3 +1,7 @@
+.main-content {
+  @include flex(1);
+}
+
 body:not(.index) .main-content {
   max-width: $width-max;
   margin: 0 auto;
