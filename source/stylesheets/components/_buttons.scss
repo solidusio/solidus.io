@@ -1,7 +1,8 @@
-@mixin button-color($background, $text: $white) {
+@mixin button-color($background, $text: $white, $border-color: transparent) {
   background: $background;
   box-shadow: 0 3px 0 darken($background, 10%);
   color: $text;
+  border: 1px solid $border-color;
 
   &:hover {
     /* If .button is an anchor, we want to make sure
@@ -14,15 +15,39 @@
 #{$all-buttons} {
   display: inline-block;
   padding: 0.8em 2.5em;
-  border: none;
   border-radius: 3px;
   @include button-color($color-primary);
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+
+  &.disabled,
+  &[disabled] {
+    @include button-color($color-grey);
+  }
 }
 
 .button-secondary {
   @include button-color($color-grey-inverted);
+}
+
+.button-outline {
+  @include button-color($white, $color-primary, $color-primary);
+  box-shadow: none;
+
+  &.disabled,
+  &[disabled] {
+    @include button-color($white, $color-grey, $color-grey);
+    box-shadow: none;
+  }
+}
+
+.button-outline-secondary {
+  @include button-color($white, $color-grey-inverted, $color-grey-inverted);
+  box-shadow: none;
+}
+
+.button-small {
+  padding: 0.5em 1.2em;
 }

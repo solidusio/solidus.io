@@ -1,6 +1,12 @@
 <% snippet = capture do %>
 <button>Primary Button</button>
 <button class="button-secondary">Secondary Button</button>
+<button class="button-outline">Outline Button</button>
+<button class="button-outline-secondary">Secondary Outline Button</button>
+<button class="button-small">Small Button</button>
+<button class="button-outline-secondary button-small">Small Button</button>
+<button disabled>Disabled Button</button>
+<button class="button-outline" disabled>Disabled Outline Button</button>
 
 /* Change color */
 .context .button {
@@ -28,8 +34,22 @@
   </div>
 
   <div class="style-guide-result">
-    <button>Primary Button</button>
-    <button class="button-secondary">Secondary Button</button>
+    <div class="input-wrapper">
+      <button>Primary Button</button>
+      <button class="button-secondary">Secondary Button</button>
+    </div>
+    <div class="input-wrapper">
+      <button class="button-outline">Outline Button</button>
+      <button class="button-outline-secondary">Secondary Outline Button</button>
+    </div>
+    <div class="input-wrapper">
+      <button class="button-small">Small Button</button>
+      <button class="button-outline-secondary button-small">Small Button</button>
+    </div>
+    <div class="input-wrapper">
+      <button disabled>Disabled Button</button>
+      <button class="button-outline" disabled>Disabled Outline Button</button>
+    </div>
   </div>
 
   <div class="style-guide-code">

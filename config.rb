@@ -6,6 +6,7 @@
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.layout = "blog_layout"
+  blog.paginate = true
 end
 
 page "/feed.xml", layout: false

@@ -13,7 +13,11 @@
 
   <body class="<%= page_classes %>">
     <%= partial "header" %>
-    <%= yield %>
+
+    <div class="main-content" role="main">
+      <%= yield %>
+    </div>
+
     <%= partial "footer" %>
 
     <%= javascript_include_tag "solidus" %>
