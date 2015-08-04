@@ -79,25 +79,3 @@
     @include button-color(lighten($color-grey-inverted, 10%));
   }
 }
-
-.footer-nav {
-  margin-top: $gutter;
-
-  @include breakpoint($desktop) {
-    width: 100%;
-    float: left;
-    text-align: left;
-    margin-left: -0.5em; // to account for the padding of the first nav item
-    clear: both;
-  }
-
-  li {
-    display: inline-block;
-  }
-
-  a {
-    display: block;
-    padding: 0.5em;
-    text-decoration: none;
-  }
-}
