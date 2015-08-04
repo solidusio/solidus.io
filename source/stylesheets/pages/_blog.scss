@@ -1,8 +1,40 @@
-body.blog {
-  article, aside {
-    max-width: 900px;
-    margin: auto;
+.articles-list {
+  margin: $gutter 0;
+
+  @include breakpoint($desktop) {
+    margin: $gutter (-$gutter/4);
+    font-size: 0; // inline block hack
   }
+}
+
+.article-list-item {
+  margin-bottom: $gutter/2;
+  text-align: center;
+
+  @include breakpoint($desktop) {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 $gutter/4;
+    font-size: $font-size-base;
+  }
+}
+
+.article-list-item-heading {
+  padding: 1em 3em;
+  border: 1px solid $color-grey;
+}
+
+.article-list-item-title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.article-list-item-meta {
+  display: block;
+  margin-top: $gutter/4;
+  font-size: 12px;
+  @include small-caps;
 }
 
 .byline {
