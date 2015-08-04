@@ -1,7 +1,13 @@
+body.blog_index .main-content {
+  @include clearfix;
+}
+
 .articles-list {
   margin: $gutter 0;
 
   @include breakpoint($desktop) {
+    @include calc(width, "100% - 320px");
+    float: left;
     margin: $gutter (-$gutter/4);
     font-size: 0; // inline block hack
   }
@@ -35,6 +41,15 @@
   margin-top: $gutter/4;
   font-size: 12px;
   @include small-caps;
+}
+
+.security-updates {
+  @include breakpoint($desktop) {
+    width: 300px;
+    float: right;
+    margin: $gutter 0;
+    @include clear-margins;
+  }
 }
 
 .byline {
