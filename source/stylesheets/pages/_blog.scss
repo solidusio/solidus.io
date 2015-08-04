@@ -61,8 +61,13 @@ body.blog_index .main-content {
 
 .pagination {
   margin: 3em 0;
+  padding: 0;
   text-align: center;
   list-style: none;
+
+  @include breakpoint($desktop) {
+    @include calc(width, "100% - 300px");
+  }
 
   li {
     display: inline-block;
