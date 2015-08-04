@@ -1,6 +1,9 @@
 .main-footer-wrapper {
-  margin-top: $gutter;
   background: $color-secondary;
+
+  body:not(.index) & {
+    margin-top: $gutter;
+  }
 }
 
 .main-footer {
