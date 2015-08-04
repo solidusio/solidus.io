@@ -1,34 +1,55 @@
+.people-wrapper {
+  @include breakpoint($desktop) {
+    max-width: 900px;
+    margin: 0 auto;
+    @include clearfix;
+  }
+}
+
 .people-lead {
   @include clear-margins;
 
   @include breakpoint($desktop) {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-.people-list-wrapper {
-  @include breakpoint($desktop) {
-    max-width: 900px;
-    margin: 0 auto;
+    width: 50%;
+    float: left;
+    padding-right: $gutter/2;
   }
 }
 
 .people-list {
-  @extend .grid-items;
+  margin-left: -($gutter/4);
+  margin-right: -($gutter/4);
+  font-size: 0;
+
+  @include breakpoint($desktop) {
+    width: 50%;
+    float: right;
+    padding-left: $gutter/2;
+  }
+
+  @include breakpoint($mobile) {
+    margin-top: $gutter;
+  }
 }
 
 .person {
-  @extend .grid-item;
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  padding: 0 $gutter/4;
+  margin-top: $gutter/4;
+  font-size: $font-size-base;
 }
 
 .person-name {
   margin-bottom: 0;
+  font-size: 0.8em;
+
+  @include breakpoint($desktop) {
+    font-size: $font-size-base;
+  }
 }
 
-.person-title {
-  margin: 6px 0 0;
-  font-size: 0.9em;
-  line-height: 1.1em;
+.person-avatar {
+  border-radius: 3px;
 }
