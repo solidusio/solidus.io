@@ -33,18 +33,18 @@
 }
 
 .button-outline {
-  @include button-color($white, $color-primary, $color-primary);
+  @include button-color(transparent, $color-primary, $color-primary);
   box-shadow: none;
 
   &.disabled,
   &[disabled] {
-    @include button-color($white, $color-grey, $color-grey);
+    @include button-color(transparent, $color-grey, $color-grey);
     box-shadow: none;
   }
 }
 
 .button-outline-secondary {
-  @include button-color($white, $color-grey-inverted, $color-grey-inverted);
+  @include button-color(transparent, $color-grey-inverted, $color-grey-inverted);
   box-shadow: none;
 }
 
