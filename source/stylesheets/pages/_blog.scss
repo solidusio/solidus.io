@@ -2,12 +2,31 @@ body.blog_index .main-content {
   @include clearfix;
 }
 
+.blog-content {
+  @include breakpoint($desktop) {
+    @include calc(width, "100% - 300px");
+    float: left;
+    padding-right: $gutter;
+  }
+}
+
+.blog-sidebar {
+  background: $color-grey-light;
+  padding: $gutter/2;
+  border-radius: 3px;
+
+  @include breakpoint($desktop) {
+    width: 300px;
+    float: right;
+    margin: $gutter 0;
+    @include clear-margins;
+  }
+}
+
 .articles-list {
   margin: $gutter 0;
 
   @include breakpoint($desktop) {
-    @include calc(width, "100% - 320px");
-    float: left;
     margin: $gutter (-$gutter/4);
     font-size: 0; // inline block hack
   }
@@ -43,15 +62,6 @@ body.blog_index .main-content {
   @include small-caps;
 }
 
-.security-updates {
-  @include breakpoint($desktop) {
-    width: 300px;
-    float: right;
-    margin: $gutter 0;
-    @include clear-margins;
-  }
-}
-
 .byline {
   font-style: italic;
   .author, .date {
@@ -66,7 +76,7 @@ body.blog_index .main-content {
   list-style: none;
 
   @include breakpoint($desktop) {
-    @include calc(width, "100% - 300px");
+    @include calc(width, "100% - 300px - #{$gutter}");
   }
 
   li {
