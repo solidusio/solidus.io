@@ -15,6 +15,10 @@
     text-align: center;
     padding: $gutter/2 $gutter/3;
   }
+
+  body:not(.index) & {
+    border-bottom: 1px solid $color-grey;
+  }
 }
 
 .logo {
