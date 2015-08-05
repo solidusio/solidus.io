@@ -10,8 +10,6 @@
   }
 
   @include breakpoint($mobile) {
-    background: $color-secondary;
-    color: $white;
     text-align: center;
     padding: $gutter/2 $gutter/3;
   }
