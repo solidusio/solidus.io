@@ -3,6 +3,14 @@
   letter-spacing: 0.1em;
 }
 
+.small-caps {
+  @include small-caps;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
 @mixin center-y {
   top: 50%;
   @include transform(translateY(-50%));
