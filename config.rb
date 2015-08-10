@@ -13,8 +13,8 @@ page "/feed.xml", layout: false
 
 activate :syntax
 
-set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown_engine, :kramdown
+set :markdown, input: 'GFM', hard_wrap: false
 
 # Per-page layout changes:
 #
