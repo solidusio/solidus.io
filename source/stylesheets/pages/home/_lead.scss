@@ -1,26 +1,36 @@
 .home-section.lead {
   margin-top: 0;
+  padding: $gutter*2 0 0 0;
   text-align: center;
 
-  > h2,
-  > p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  .lead-opening {
+    margin-bottom: $gutter*2;
 
-    &:first-child {
-      margin-top: 0;
-    }
+    h2,
+    p {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
 
-    &:last-child {
-      margin-bottom: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 .api-features {
-  max-width: 900px;
-  margin: 0 auto $gutter;
+  padding: 0 0 $gutter/2 0;
+  background-color: darken($color-secondary, 4%);
+
+  .grid-items {
+    max-width: 900px;
+    margin: 0 auto $gutter;
+  }
 }
 
 .api-feature {
@@ -32,4 +42,9 @@
     display: block;
     margin: 0 auto $gutter/4;
   }
+}
+
+.get-started {
+  padding: $gutter/2 0;
+  background-color: darken($color-secondary, 8%);
 }
