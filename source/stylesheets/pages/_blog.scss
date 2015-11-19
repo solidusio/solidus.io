@@ -8,6 +8,12 @@ body.blog_index .main-content {
     float: left;
     padding-right: $gutter;
   }
+
+  a[target="_blank"]:after {
+    content: " #{$character-link-ext}";
+    font-family: "fontello";
+    font-size: 0.75em;
+  }
 }
 
 .blog-sidebar {

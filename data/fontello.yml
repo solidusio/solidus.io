@@ -1,0 +1,8 @@
+fontello_session_id: '28bf73922df327ff1770316d2366c519'
+asset_dir: './source'
+font_dir: './source/fonts'
+stylesheet_dir: './source/stylesheets/vendor'
+icon_guide_dir: './source'
+config_file: './data/fontello.json'
+assets_prefix_css: '/stylesheets'
+assets_prefix_fonts: '/fonts'
