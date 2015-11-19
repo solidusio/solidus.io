@@ -20,4 +20,4 @@ end
 
 I urge Spree Commerce to move this domain to a static, empty s3 bucket to avoid stores having issues.
 
-This system was [removed in Solidus](https://github.com/solidusio/solidus/commit/18c4132161ab3ead5a826270a3c3a11c0546670a) shortly after the fork.
+This system was [removed in Solidus](https://github.com/solidusio/solidus/commit/18c4132161ab3ead5a826270a3c3a11c0546670a){: target="_blank"} shortly after the fork.

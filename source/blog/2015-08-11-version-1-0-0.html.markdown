@@ -8,9 +8,9 @@ author: John Hawthorn
 <a class="button" href="https://github.com/solidusio/solidus/tree/v1.0">github</a>
 <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/1.0.0">rubygems</a>
 
-We're happy to announce Solidus 1.0.0, an updated fork of Spree 2.4 spearheaded by the developers at [Bonobos](https://bonobos.com) and [FreeRunning Technologies](https://freerunningtech.com).
+We're happy to announce Solidus 1.0.0, an updated fork of Spree 2.4 spearheaded by the developers at [Bonobos](https://bonobos.com){: target="_blank"} and [FreeRunning Technologies](https://freerunningtech.com){: target="_blank"}.
 
-These changes mostly came from the needs of running a large store like [Bonobos](https://bonobos.com) and [AYR](https://ayr.com/). Changes include refund and cancellation overhaul, performance fixes, customer service enhancements, changes for fulfilment, and many fixes. The downside is that this is a large set of changes. We didn't release 1.0 early but we hope for our future versions to be released often.
+These changes mostly came from the needs of running a large store like [Bonobos](https://bonobos.com){: target="_blank"} and [AYR](https://ayr.com/){: target="_blank"}. Changes include refund and cancellation overhaul, performance fixes, customer service enhancements, changes for fulfilment, and many fixes. The downside is that this is a large set of changes. We didn't release 1.0 early but we hope for our future versions to be released often.
 
 We intend this to be a direct upgrade for Spree 2.4 (or earlier) users. We've also tweaked the Spree 2.2 → 2.3 → 2.4 migrations to be faster and more correct. A future version, likely 1.1.0, will provide an upgrade path for users on spree 3.0.
 
@@ -21,7 +21,7 @@ We intend this to be a direct upgrade for Spree 2.4 (or earlier) users. We've al
 
   We've upgraded to rails 4.2. Notably this includes ActiveJob, asynchronous emails, and ActiveRecord performance improvements.
 
-  See the [rails 4.2 release notes](http://guides.rubyonrails.org/4_2_release_notes.html)
+  See the [rails 4.2 release notes](http://guides.rubyonrails.org/4_2_release_notes.html){: target="_blank"}
 
 * **Solidus**
 
@@ -49,7 +49,7 @@ We intend this to be a direct upgrade for Spree 2.4 (or earlier) users. We've al
 
 * **Store credit**
 
-  We wanted to be able to include store credits with Solidus. This integrated the existing [spree_store_credit_payment_method](https://github.com/bonobos/spree_store_credit_payment_method) extension.
+  We wanted to be able to include store credits with Solidus. This integrated the existing [spree_store_credit_payment_method](https://github.com/bonobos/spree_store_credit_payment_method){: target="_blank"} extension.
 
   This allows assigning an amount of store credit to a user and allow them to pay using those funds.
 
@@ -141,7 +141,7 @@ We intend this to be a direct upgrade for Spree 2.4 (or earlier) users. We've al
 
 * **API::Base now rescues `StandardError` instead of `Exception`**
 
-  Exceptions should rarely be rescued, Jon Yurek has [an excellent explanation of StandardError](https://robots.thoughtbot.com/rescue-standarderror-not-exception) on the thoughtbot blog. In the future we'd like to remove this catch-all rescue entirely.
+  Exceptions should rarely be rescued, Jon Yurek has [an excellent explanation of StandardError](https://robots.thoughtbot.com/rescue-standarderror-not-exception){: target="_blank"} on the thoughtbot blog. In the future we'd like to remove this catch-all rescue entirely.
 
 * **Spree.ajax**
 
@@ -153,13 +153,13 @@ We intend this to be a direct upgrade for Spree 2.4 (or earlier) users. We've al
 
   Spree alerts was a system which queried an external service on all API pages in order to deliver security updates or other news. This was a bad unneeded system which had a habit of breaking the entire admin.
 
-  We recommend subscribing to the [solidus-security mailing list](https://groups.google.com/forum/#!forum/solidus-security).
+  We recommend subscribing to the [solidus-security mailing list](https://groups.google.com/forum/#!forum/solidus-security){: target="_blank"}.
 
 * **Currency configuration removed**
 
   Previously `Spree::Config` held several settings to control how monetary amounts were displayed. These had incorrect defaults for many currencies and had a sizeable performance impact.
 
-  This has been removed in favour of using the [RubyMoney](https://github.com/RubyMoney/money) defaults.
+  This has been removed in favour of using the [RubyMoney](https://github.com/RubyMoney/money){: target="_blank"} defaults.
 
 * **Improved authorization checks**
 
@@ -184,9 +184,9 @@ We intend this to be a direct upgrade for Spree 2.4 (or earlier) users. We've al
 * Improved YARD documentation: [http://docs.solidus.io/](http://docs.solidus.io/)
 * Removed unused JS components from admin
 * Removed CSS "hacks" directory
-* [UserMethods](https://github.com/solidusio/solidus/pull/153) module instead of `class_eval`
-* [Spree::DisplayMoney#money_methods](http://docs.solidus.io/Spree/DisplayMoney.html#money_methods-instance_method)
-* [Unauthorized redirect override](https://github.com/solidusio/solidus/pull/179) without class_eval
+* [UserMethods](https://github.com/solidusio/solidus/pull/153){: target="_blank"} module instead of `class_eval`
+* [Spree::DisplayMoney#money_methods](http://docs.solidus.io/Spree/DisplayMoney.html#money_methods-instance_method){: target="_blank"}
+* [Unauthorized redirect override](https://github.com/solidusio/solidus/pull/179){: target="_blank"} without class_eval
 
 ## Housekeeping
 
