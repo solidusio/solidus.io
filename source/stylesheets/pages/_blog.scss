@@ -8,6 +8,16 @@ body.blog_index .main-content {
     float: left;
     padding-right: $gutter;
   }
+
+  figure {
+    width: 50%;
+    margin: 2rem auto;
+  }
+
+  figcaption {
+    text-align: center;
+    color: $color-grey-dark;
+  }
 }
 
 .blog-sidebar {
