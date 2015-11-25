@@ -1,0 +1,94 @@
+---
+title: Version 1.1.0
+date: 2015-11-25
+tags: release
+author: John Hawthorn
+---
+
+<a class="button" href="https://github.com/solidusio/solidus/tree/v1.1">github</a>
+<a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/1.1.0">rubygems</a>
+
+Just before Black Friday, a new minor release of Solidus. As this is a minor release, we've done our best to keep compatibility and have added deprecation notices wherever possible.
+
+With this version we've pulled in a few migrations and schema changes from spree 3.0, which should make it possible to migrate a spree 3.0 store directly to solidus.
+
+There have been schema changes as well as some changes to indexes and foreign keys. You may want to perform a PostgreSQL `vacuumdb --analyze` or a MySQL `ANALYZE` after migrations for best performance.
+
+## User Address Books
+
+*   Address is now immutable (Address#readonly? is always true)
+
+    This allows us to minimize cloning addresses, while still ensuring historical data is preserved.
+
+*   UserAddressBook module added to manage a user's multiple addresses
+
+*   GET /admin/search/users searches all of a user's addresses, not
+    just current bill and ship addresss
+
+## Schema changes
+
+*   Adjustment state column has been replaced with a `finalized` boolean column.
+    This includes a migration replacing the column, which may cause some
+    downtime for large stores.
+
+*   Some HABTM associations have been converted to HMT associations.
+    Referential integrity has also been added as well.
+    Specifically:
+
+    * Prototype <=> Taxon
+    * ShippingMethod <=> Zone
+    * Product <=> PromotionRule
+
+*   An `apply_automatically` field was added to promotions to distinguish
+    coupons needing a code or path to be applied from those which were applied
+    automatically to any cart matching the ruleset. This significantly improves
+    performance on stores with a large number of promotions.
+
+*   The schema and migrations have been updated to allow a clean data migration from spree 3.0
+
+## Permissions
+
+*   Support read-only access to promotions
+
+*   Hide api keys from non-superuser admins
+
+*   Disable modification of roles from non-superuser admins
+
+## Misc
+
+*   Handlebars templates in the admin are now stored in assets and precompiled
+    with the rest of the admin js.
+
+*   Change all mails deliveries to `#deliver_later`. Emails will now be sent in
+    the background if you configure active\_job to do so. See [the rails guides](http://guides.rubyonrails.org/active_job_basics.html#job-execution)
+    for more information.
+
+*   Cartons deliveries now send one email per-order, instead of one per-carton.
+    This allows setting `@order` and `@store` correctly for the template. For
+    most stores, which don't combine multiple orders into a carton, this will
+    behave the same.
+
+*   Improvements and fixes to the granular permission system introduced in solidus 1.0
+
+*   Added `inventory_cache_threshold` configuration option, which causes cache
+    to be invalidated when stock levels rise or fall below a specified level.
+
+*   Added `OrderUpdateAttributes` class to replace the `Spree::Order#update_from_params` method
+
+*   Added `PaymentCreate` class for creating payments. This allowed removing
+    `after_initialize` filters previously responsible for creating or
+    associating a payment source.
+
+*   Fixed :image factory
+
+*   `Order#outstanding_balance` now considers refunds in its calculation.
+
+*   Fix select2 product selector ajax pagination in admin.
+
+## Removals
+
+*   Removed `map_nested_attributes_keys` from the Api::BaseController. This
+    method was only used in one place and was oblivious of strong_params.
+
+*   Deprecate `delegate_belongs_to` in favour of rails' standard `belongs_to`
+
