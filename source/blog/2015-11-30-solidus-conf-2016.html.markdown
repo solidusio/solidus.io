@@ -1,0 +1,23 @@
+---
+title: Solidus Conf 2016
+date: 2015-11-30 00:00 UTC
+tags: conference
+author: Susan Aili
+---
+
+## Registration for SolidusConf 2016 opening soon!
+
+Solidus Conf will be held on May 11th and 12th, 2016 at the [Yorkville Conference Centre](https://www.google.ca/maps/place/Human+Resources+Professionals+Association+of+Ontario/@43.6690559,-79.395695,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34ae7eaeb499:0x56651d7b1e1fd442?hl=en) in the heart of downtown Toronto, Ontario. The centre and the conference hotel are conveniently located in Bloor Street West and provide easy access to the city’s best restaurants.
+
+## Early Bird Tickets
+Take advantage of our early bird conference rate of $199 and receive a 30% discount off the regular ticket price of $299. Register by March 1st for this special rate! **Tickets will be on sale soon.**
+
+The two day event includes:
+
+* Presentations on the Solidus platform
+* Coffee, snacks, and lunch provided both days
+* Conference t-shirt
+* A pub night to meet fellow attendees
+
+## Presentation List to be Announced
+Solidus Conf 2016 will be offering an exciting lineup of presentations that will benefit both developers and e-commerce store owners. Follow us on [Twitter](https://twitter.com/stembolthq) or [subscribe to our mailing list](http://conf.solidus.io), to catch all the updated information.
