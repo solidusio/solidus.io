@@ -1,0 +1,10 @@
+/* Banner after body content everywhere except homepage */
+body:not(.index) {
+  .solidus-conf-alert {
+    order: 1;
+  }
+
+  .main-footer-wrapper {
+    order: 2;
+  }
+}

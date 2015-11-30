@@ -1,7 +1,10 @@
 .home-section {
-  border-top: 1px solid $color-grey;
   margin-top: 100px;
   padding: 100px $gutter 0;
+
+  &:not(:first-child) {
+    border-top: 1px solid $color-grey;
+  }
 
   @include breakpoint($mobile) {
     margin-top: $gutter;

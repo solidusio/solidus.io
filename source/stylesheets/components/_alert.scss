@@ -1,0 +1,12 @@
+.alert {
+  background: $color-primary;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1em;
+
+  &,
+  a {
+    color: $white;
+    font-weight: bold;
+  }
+}

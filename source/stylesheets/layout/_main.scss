@@ -4,7 +4,7 @@
 
 body:not(.index) .main-content {
   max-width: $width-max;
-  margin: 0 auto;
+  margin: 0 auto $gutter;
   padding: 0 $gutter;
 
   @include breakpoint($mobile) {
