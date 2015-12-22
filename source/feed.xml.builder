@@ -1,7 +1,7 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   site_url = "http://solidus.io/"
-  xml.title "Soldisu Blog"
+  xml.title "Solidus Blog"
   xml.subtitle "News and updates for the Solidus e-commerce framework"
   xml.id URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
