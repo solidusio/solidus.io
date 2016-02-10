@@ -24,16 +24,16 @@ per_page: 10
   <ul class="pagination">
     <li class="button button-small button-outline <%= prev_page ? "" : "disabled" %>">
       <% if prev_page %>
-        <%= link_to "Older Posts", prev_page %>
+        <%= link_to "Newer Posts", prev_page %>
       <% else %>
-        Older Posts
+        Newer Posts
       <% end %>
     </li>
     <li class="button button-small button-outline <%= next_page ? "" : "disabled" %>">
       <% if next_page %>
-        <%= link_to "Newer Posts", next_page %>
+        <%= link_to "Older Posts", next_page %>
       <% else %>
-        Newer Posts
+        Older Posts
       <% end %>
     </li>
   </ul>
