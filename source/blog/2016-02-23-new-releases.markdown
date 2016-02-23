@@ -6,7 +6,7 @@ author: John Hawthorn
 ---
 
 We've released Solidus [1.2.1](https://github.com/solidusio/solidus/releases/tag/v1.2.1),
-[1.1.2](https://github.com/solidusio/solidus/releases/tag/v1.1.2), and
+[1.1.3](https://github.com/solidusio/solidus/releases/tag/v1.1.3), and
 [1.0.5](https://github.com/solidusio/solidus/releases/tag/v1.0.5)
 to address several security vulnerabilities affecting all versions of Spree and Solidus.
 
