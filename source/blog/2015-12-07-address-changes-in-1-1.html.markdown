@@ -1,0 +1,40 @@
+## What's up with Address and UserAddressBook in Solidus 1.1? ##
+
+It's a domain level refactoring. Address is now readonly with copy on write semantics, so once it's in the db, it doesn't change. If you use the typical nested attributes for addresses in Orders (and now Users and CreditCards) it'll just work. If you need to create them manually `Address.factory` and `Address.immutable_merge` are your new friends. UserAddressBook is foundational work to ultimately allow users a richer set of addresses to use for pre-fill during checkout.
+
+### Background ###
+
+I was asked to add what seemed like a fairly simple new feature to our custom frontend code, but upon digging I found that it would require some fairly large refactoring to do it well. That new feature was to allow the user to manage a list of addresses in their account section of our frontend. Those will be used as options to pre-fill during checkout. The things that I found that I wanted to refactor were some missing and misplaced address associations, plus a lot of unnecessary cloning of addresses.
+
+One of the core questions that we had to consider was the real meaning of _billing_ and _shipping_ addresses. There's nothing inherent in the Address itself that determines that; it's based upon how the model that has an address uses it. The authoritative source for a shipping address is the one attached to a Shipment. Any other reference to it should be considered transient. That behavior is unchanged, unlike billing address. The authoritative source of a billing address should be any payment source that requires it (CreditCards are the only implementation currently). This CreditCard `belongs_to :address` association was added as an early part of this overall refactoring. At the heart of it, a billing address is an agreement between a person and their credit card company specifying where to mail the bills. It's not a fundamental part of ordering products. What it is used for is extra authentication information to better ensure the user of a credit card is not fraudulent, but even that is optional depending on the type of payment and the payment gateway.
+
+`Order.bill_address` and `User.bill_address` are still around and operate as they always have in order to avoid backwards incompatible changes. However, expect less dependence on them moving forward, favoring the `CreditCard.address`. Perhaps they eventually become an opt-in configuration setting. The vision is for a user to have a list of just Addresses. They can be used to pre-fill both a credit card's address and to denote where to ship an order. Those associations determine whether it is a billing address or a shipping address.
+
+The [bulk of the changes](https://github.com/solidusio/solidus/pull/257) are intended to keep existing behavior unchanged. There's 2 main parts that in retrospect I wish I'd done separately.
+
+### Part 1: Address is readonly ###
+
+Fundamentally addresses are value objects. They're not entites that need aa unique identity (id) to be tracked for their changes over time. Rails doesn't give us a lot to help with the notion of value objects -- the `#readonly?` method is mostly it. `Address#==` has been overidden such that the db-housekeeping fields are ignored (id, created_at, updated_at) so it is the real contents of the "address" that are compared (address1, address2, city, state, zip, etc.) for equality. `Address.factory` also helps in looking up or generating an Address with given fields.
+
+So, how do we update addresses, you ask? Well, technically we don't, since they're immutable value objects. What we can do however, is give an Order (or User or Shipment, etc.) a reference to a new Address with the specified values. `Address.immutable_merge` is the core piece that makes this work. It takes one Address, plus field diffs to apply and gives you back an appropriate Address. By overriding things like `#ship_address_attributes=` in models that reference Addresses we can tie into normal Rails-ish behavior of `accepts_nested_attributes_for` and enforce this immutability in the model layer without the controller layer needing to know about it. _(A possible future refactoring is to metaprogram this bit so that models referencing Addresses can just declare something like `accepts_immutable_nested_attributes_for`)_
+
+The primary benefit of this is to avoid all the defensive cloning of Addresses, while at the same time preserving historical data. If two entities reference the same Address, and one of them "updates" it, it'll receive a new Address and the other entity still has a reference to the unchanged original Address.
+
+_(Note: If one wants to get technical, Address is still not completely immutable, since it can go through normal mutation up until the point it is first saved to the database. This compromise was made to avoid going against the grain of the Rails way too much.)_
+
+### Part 2: UserAddressBook Module ###
+
+This introduces the notion of a User entity being able to manage the Addresses it references. It's incomplete and I'll be sending in future PRs as I work with some concrete use cases, but it lays the main foundation. We tied into Order creation to send Addresses over to the User model so they can show up in this "address book." Ultimately the end user will be able to display all the Addresses they reference, choose an explicit default, soft delete them, and "edit" them (by soft deleting the old one and adding a new one). These Addresses can then be used in the UI to give users more options to pre-fill addresses during checkout and streamline the purchase process.
+
+The existing behavior always treats the most recently used address as the default, so the user only has that one address to be used for pre-fill. By always setting default to true when Orders send Addresses to `User#save_in_address_book` this behavior is preserved. A follow-up PR will add some configuration setting so stores can continue with the existing behavior or allow the user direct control over setting defaults.
+
+#### UserAddress join model ####
+This is worth calling out too. Rails has nice support for `has_many :through` associations, but the design decision to use it here needs justification. Once we view Address as a value object, then adding flags to them such as 'default' or 'archived' doesn't quite hold up. Those flags more properly represent one entity's relationship to Address (in this case the User entity). The requirement that a User has one and only one default Address only applies to that User/Address relationship. The 'archived' flag is not inherent to the Address itself. A user might choose to soft delete an Address (set the 'archived' flag) so they won't see it again for pre-fill, but at the same time that Address is in active use attached to their credit card. 
+
+### Api::AddressBooksController
+Here's the main entry point to managing address books. It's worth noting that changing one address to default will remove the default flag from any prior address. Additionally, the sort order is default first followed by the others in most recently updated order. Any change to an individual address requires the entire address book be retrieved to present an accurate whole. For this reason the AddressBook as a whole is a singular resource. A compromise was made to use the destroy action because that was so convenient, but it could have been modeled as part of an update to the AddressBook.
+
+_(Note: future work is coming that will allow an admin to update the AddressBook of users)_
+
+### Using It ###
+The `Spree::UserMethods` concern is the gateway to getting this in your Solidus implementation. If you use the solidus_auth_devise gem, then this gets mixed into your User model already. If you don't, then you'll need to include it yourself. That concern is a grouping of multiple individual modules dealing with api auth, reporting, payment sources and now addresses too. Once that's in place, set the `automatic_default_address` setting in your `AppConfiguration` to false and manage address books via the `Api::AddressBooksController`.
