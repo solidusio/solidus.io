@@ -1,9 +1,4 @@
 -
-  name: Andrew Thal
-  title: Engineering Manager, Bonobos
-  avatar: andrew.jpg
-  github: https://github.com/athal7
--
   name: Clarke Brunsdon
   title: CEO, FreeRunning Technologies
   avatar: clarke.jpg
@@ -28,3 +23,8 @@
   title: CTO, magic labs
   avatar: thomas.jpg
   github: https://github.com/tvdeyen
+-
+  name: Martin Meyerhoff
+  title: Freelance Administration Scientist
+  avatar: martin.jpg
+  github: https://github.com/mamhoff
