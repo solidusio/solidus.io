@@ -4,32 +4,38 @@
   avatar: clarke.jpg
   github: https://github.com/cbrunsdon
   twitter_name: cbrunsdon
+  core_contributor: true
 -
   name: Gregor MacDougall
   title: Senior Software Developer, FreeRunning Technologies
   avatar: gregor.jpg
   github: https://github.com/gmacdougall
   twitter_name: GrMacDougall
+  core_contributor: true
 -
   name: John Hawthorn
   title: Senior Software Developer, FreeRunning Technologies
   avatar: hawth.jpg
   github: https://github.com/jhawthorn
   twitter_name: jhawthorn
+  core_contributor: true
 -
   name: Jordan Brough
   title: Principal Engineer, Bonobos
   avatar: jordan.jpg
   github: https://github.com/jordan-brough
+  core_contributor: true
 -
   name: Thomas von Deyen
   title: CTO, magic labs
   avatar: thomas.jpg
   github: https://github.com/tvdeyen
   twitter_name: tvdeyen
+  core_contributor: true
 -
   name: Martin Meyerhoff
   title: Freelance Administration Scientist
   avatar: martin.jpg
   github: https://github.com/mamhoff
   twitter_name: mamhoff
+  core_contributor: true

@@ -31,6 +31,10 @@ set :markdown, input: 'GFM', hard_wrap: false
 
 # Methods defined in the helpers block are available in templates
 helpers do
+  def core_contributors
+    data.people.select(&:core_contributor)
+  end
+
   def find_author(author_name)
     data.people.find {|author| author.name == author_name } || { name: author_name }
   end
