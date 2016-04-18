@@ -1,8 +1,10 @@
+<% author = find_author(current_article.data.author) %>
+
 <% wrap_layout :layout do %>
   <article class="blog-article blog-content">
     <header class="blog-article-header">
       <h1><%= current_article.title %></h1>
-      <p><%= current_article.date.strftime('%b %-d, %Y') %> • <%= current_article.data[:author] %></p>
+      <p><%= current_article.date.strftime('%b %-d, %Y') %> • <%= author.name %></p>
     </header>
 
     <div class="blog-article-content">
