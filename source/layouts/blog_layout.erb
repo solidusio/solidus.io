@@ -1,5 +1,13 @@
 <% author = find_author(current_article.data.author) %>
 
+<% content_for :head do %>
+  <meta name='twitter:card' content='summary'>
+  <meta name='twitter:site' content='@solidusio'>
+  <meta name='twitter:creator' content='<%= "@#{ author.twitter_name || 'solidusio' }" %>'>
+  <meta name='og:title' content='<%= "#{ current_article.title }" %>'>
+  <meta name='og:description' content='<%= "#{ strip_tags(current_article.summary) }" %>'>
+<% end %>
+
 <% wrap_layout :layout do %>
   <article class="blog-article blog-content">
     <header class="blog-article-header">
