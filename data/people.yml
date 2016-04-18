@@ -3,16 +3,19 @@
   title: CEO, FreeRunning Technologies
   avatar: clarke.jpg
   github: https://github.com/cbrunsdon
+  twitter_name: cbrunsdon
 -
   name: Gregor MacDougall
   title: Senior Software Developer, FreeRunning Technologies
   avatar: gregor.jpg
   github: https://github.com/gmacdougall
+  twitter_name: GrMacDougall
 -
   name: John Hawthorn
   title: Senior Software Developer, FreeRunning Technologies
   avatar: hawth.jpg
   github: https://github.com/jhawthorn
+  twitter_name: jhawthorn
 -
   name: Jordan Brough
   title: Principal Engineer, Bonobos
@@ -23,8 +26,10 @@
   title: CTO, magic labs
   avatar: thomas.jpg
   github: https://github.com/tvdeyen
+  twitter_name: tvdeyen
 -
   name: Martin Meyerhoff
   title: Freelance Administration Scientist
   avatar: martin.jpg
   github: https://github.com/mamhoff
+  twitter_name: mamhoff
