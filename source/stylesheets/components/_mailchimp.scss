@@ -1,0 +1,39 @@
+.footer-mailing-list {
+  background: #616161;
+  padding: 48px 16px;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    margin: 0 0 0.5em;
+  }
+
+  p {
+    color: #fff;
+    margin: 0 0 2.5em;
+  }
+
+  .button {
+    height: 35px;
+    padding: 0 18px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  input.email {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 350px;
+    padding: 0.5em;
+    vertical-align: top;
+    width: 30%;
+
+    @media (max-width: 768px) {
+      margin-bottom: 5px;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
