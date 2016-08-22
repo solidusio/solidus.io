@@ -18,12 +18,12 @@ making it possible to upgrade extensions and Solidus itself separately, smaller
 upgrades can be done resulting in fewer changes and therefore fewer issues and
 less developer time to fix those issues.
 
-After a series of betas, rails 5.0.0 was released June 30th. It doesn't present
-as many changes as rails 4.0 (which introduced strong parameters), but it is a
-more involved upgrade than rails 4.1 or 4.2.
+After a series of betas, Rails 5.0.0 was released June 30th. It doesn't present
+as many changes as Rails 4.0 (which introduced strong parameters), but it is a
+more involved upgrade than Rails 4.1 or 4.2.
 
-In order to make the rails 5 upgrade as easy as possible we've made Solidus
-2.0 and Solidus 1.4 nearly identical, with the only difference being rails 5
+In order to make the Rails 5 upgrade as easy as possible we've made Solidus
+2.0 and Solidus 1.4 nearly identical, with the only difference being Rails 5
 support.
 
 Please give these releases a try, and [file any
