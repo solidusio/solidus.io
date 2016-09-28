@@ -5,7 +5,7 @@ tags: contributor
 author: Solidus Core Team
 ---
 
-The Solidus core team personally recognizes that there are some individuals in the community that contribute regularly to core and would like recognize those individuals on a more public level. These individuals take the time to contribute back to core, and we as a community are better off because of that.
+The Solidus core team personally recognizes that there are some individuals in the community that contribute regularly to core and would like to recognize those individuals on a more public level. These individuals take the time to contribute back to core, and we as a community are better off because of that.
 
 ![Solidus contributor Jonathan Rochkind](2016-06-14-solidus-contributor-jonathan-rochkind/solidus-contributor-jrochkind.jpg)
 
