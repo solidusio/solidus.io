@@ -1,0 +1,36 @@
+---
+title: Announcing Solidus Conf 2017 in London
+date: 2016-11-22 00:00 UTC
+tags: conference
+author: Jordan Brough
+---
+
+![SolidusConf 2017](2016-11-22-solidus-conf-2017/homepage-splash-2017.jpg)
+
+We're proud to announce that SolidusConf 2017 will take place on the 24th and
+25th of May. It is presented by [Lost My Name](https://www.lostmy.name) and will
+be hosted at [The Rainmaking Loft](http://www.rainmakingloft.com/uk/event-space/)
+in London [next to the iconic Tower Bridge](2016-11-22-solidus-conf-2017/rainmaking-loft.png).
+
+## Registration and more coming soon
+
+Visit our conference website at [conf2017.solidus.io](http://conf2017.solidus.io)
+to sign up for updates as we open up registration for tickets, announce
+speakers, provide hotel information, and more.
+
+## The Conference – May 24-25
+
+The two day event includes:
+
+* Presentations on the Solidus platform
+* Coffee, snacks, and lunch provided both days
+* Conference t-shirt
+* A pub night to meet fellow attendees
+
+## The Hackathon – May 22-23
+
+[Lost My Name](https://www.lostmy.name) will also be opening the conference
+center on Monday and Tuesday, May 22 & 23 for a hackathon for conference
+attendees.
+
+Come hack with us on your favorite parts of Solidus or Solidus-related work!
