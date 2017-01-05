@@ -1,24 +1,29 @@
 ---
-title: Announcing Solidus Conf 2017 in London
-date: 2016-11-22 00:00 UTC
+title: Solidus Conf 2017 tickets available
+date: 2017-01-05 00:00 UTC
 tags: conference
 author: Jordan Brough
 ---
 
-![SolidusConf 2017](2016-11-22-solidus-conf-2017/homepage-splash-2017.jpg)
+## Tickets Available
+SolidusConf tickets are now available!  Head over to the
+[conference site](http://conf2017.solidus.io) or
+[click here](https://www.eventbrite.co.uk/e/solidusconf-tickets-30324634799) to
+purchase tickets.
 
-We're proud to announce that SolidusConf 2017 will take place on the 24th and
+## Soliciting Talk Proposals
+
+Have an idea for a talk? We're now
+[accepting proposals](http://cfp.solidus.io/events/solidus-conf-2017).
+
+## Details about the Conference
+
+SolidusConf 2017 will take place on the 24th and
 25th of May. It is presented by [Lost My Name](https://www.lostmy.name) and will
 be hosted at [The Rainmaking Loft](http://www.rainmakingloft.com/uk/event-space/)
 in London [next to the iconic Tower Bridge](2016-11-22-solidus-conf-2017/rainmaking-loft.jpg).
 
-## Registration and more coming soon
-
-Visit our conference website at [conf2017.solidus.io](http://conf2017.solidus.io)
-to sign up for updates as we open up registration for tickets, announce
-speakers, provide hotel information, and more.
-
-## The Conference – May 24-25
+### The Conference – May 24-25
 
 The two day event includes:
 
@@ -27,7 +32,7 @@ The two day event includes:
 * Conference t-shirt
 * A pub night to meet fellow attendees
 
-## The Hackathon – May 22-23
+### The Hackathon – May 22-23
 
 [Lost My Name](https://www.lostmy.name) will also be opening the conference
 center on Monday and Tuesday, May 22 & 23 for a hackathon for conference
