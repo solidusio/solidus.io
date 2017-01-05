@@ -21,7 +21,7 @@ Have an idea for a talk? We're now
 SolidusConf 2017 will take place on the 24th and
 25th of May. It is presented by [Lost My Name](https://www.lostmy.name) and will
 be hosted at [The Rainmaking Loft](http://www.rainmakingloft.com/uk/event-space/)
-in London [next to the iconic Tower Bridge](2016-11-22-solidus-conf-2017/rainmaking-loft.png).
+in London [next to the iconic Tower Bridge](2016-11-22-solidus-conf-2017/rainmaking-loft.jpg).
 
 ### The Conference – May 24-25
 
