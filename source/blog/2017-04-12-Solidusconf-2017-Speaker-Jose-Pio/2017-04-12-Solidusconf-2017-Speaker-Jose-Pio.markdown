@@ -54,4 +54,4 @@ I'm very glad for the opportunity and thanks for letting me collaborate.
 
 **You're welcome. Thanks for taking the time to chat with me today!**
 
-**Learn more about the conference at [http://conf2017.solidus.io/](http://conf2017.solidus.io/)
+**Learn more about the conference at [http://conf2017.solidus.io/](http://conf2017.solidus.io/)**
