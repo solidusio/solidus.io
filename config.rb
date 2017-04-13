@@ -50,10 +50,6 @@ default_caching_policy max_age: (60 * 60 * 24 * 365)
 caching_policy 'text/html', max_age: 0, must_revalidate: true
 caching_policy 'application/xml', max_age: 0, must_revalidate: true
 
-activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-65365712-1'
-end
-
 # Build-specific configuration
 configure :build do
   set :sass, {
