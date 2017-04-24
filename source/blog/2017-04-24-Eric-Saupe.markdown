@@ -4,7 +4,7 @@ date: 2017-04-24 00:00 UTC
 author: Susan Aili
 ---
 
-![SolidusConf Speaker Eric Saupe](2017-04-24-Eric-Saupe.jpg)
+![2017-04-24-Eric-Saupe](2017-04-24-Eric-Saupe.jpg)
 
 **Please give us a quick introduction of yourself for those who don’t know you**
 
