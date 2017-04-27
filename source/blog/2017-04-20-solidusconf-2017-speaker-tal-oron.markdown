@@ -16,7 +16,7 @@ When we started Lost My Name we were lacking ecommerce experience. We were using
 
 **What is your talk going to be about?**
 
-I'm still wondering that to be completely honest. I'd rather make sure I add value for the conference goers. I've started asking people around what would be the most interesting to them. I suspect I'm going to end up telling our entrepreneurial story rather than go deep into technology decisions. There would be way more capable people from Lost My Name, shedding light on those.
+I'll be talking about our entrepreneurial story rather than go deep into technology decisions. There would be way more capable people from Lost My Name, shedding light on those.
 
 **What are you most looking forward to at SolidusConf?**
 
