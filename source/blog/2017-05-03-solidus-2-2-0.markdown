@@ -9,9 +9,9 @@ author: John Hawthorn
 
 Announcing Solidus 2.2.0!
 
-This release includes better support for of non-credit-card payment sources, better promotion creation, and many other great changes. 
+This release includes better support for non-credit-card payment sources, better promotion creation, and many other great changes. 
 
-Later this month is [SolidusConf 2017 in London](http://conf.solidus.io/). Hope to see you there!
+Later this month is [SolidusConf 2017 in London](http://conf2017.solidus.io/). Hope to see you there!
 
 ### Major Changes
 
