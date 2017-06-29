@@ -3,79 +3,21 @@
 }
 
 .main-footer {
-  max-width: $width-max;
-  margin: 0 auto;
-  padding: $gutter $gutter/3;
   color: $white;
   font-size: 0.9em;
-
-  @include breakpoint($desktop) {
-    padding: $gutter*2 $gutter;
-    @include clearfix;
-  }
-
-  @include breakpoint($mobile) {
-    text-align: center;
-  }
+  max-width: $width-max;
+  margin: 0 auto;
+  padding: 2.5em;
+  text-align: center;
 
   a:not(.button) {
     color: $white;
+    margin: 0 .75em;
+    opacity: .6;
+    text-decoration: none;
 
     &:hover {
-      color: $color-primary;
+      opacity: 1;
     }
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-}
-
-.footer-tagline {
-  @include breakpoint($desktop) {
-    @include span(first 8 no-gutters);
-    padding-right: $gutter;
-
-    h3,
-    svg {
-      display: inline-block;
-      vertical-align: middle;
-    }
-
-    h3 {
-      margin: 0;
-      @include calc(width, "100% - 50px"); // svg width
-    }
-  }
-
-  .solidus-mark {
-    width: 30px;
-    fill: $color-primary;
-
-    @include breakpoint($desktop) {
-      margin-right: 15px;
-    }
-  }
-}
-
-.footer-cta {
-  @include breakpoint($desktop) {
-    @include span(last 4 no-gutters);
-    text-align: right;
-  }
-
-  @include breakpoint($mobile) {
-    margin-top: $gutter/2;
-
-    .button {
-      margin-top: $gutter/2;
-    }
-  }
-
-  .button-secondary {
-    // we need a slightly lighter color of grey for the footer
-    @include button-color(lighten($color-grey-inverted, 10%));
   }
 }
