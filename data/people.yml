@@ -1,30 +1,35 @@
 -
-  name: Clarke Brunsdon
-  title: CEO, FreeRunning Technologies
-  avatar: clarke.jpg
-  github: https://github.com/cbrunsdon
--
-  name: Gregor MacDougall
-  title: Senior Software Developer, FreeRunning Technologies
-  avatar: gregor.jpg
-  github: https://github.com/gmacdougall
--
-  name: John Hawthorn
-  title: Senior Software Developer, FreeRunning Technologies
-  avatar: hawth.jpg
-  github: https://github.com/jhawthorn
--
   name: Jordan Brough
-  title: Principal Engineer, Bonobos
+  title: Senior Software Developer, Lost My Name
   avatar: jordan.jpg
   github: https://github.com/jordan-brough
 -
-  name: Thomas von Deyen
-  title: CTO, bitspire
-  avatar: thomas.jpg
-  github: https://github.com/tvdeyen
+  name: Clarke Brunsdon
+  title: CEO, Stembolt
+  avatar: clarke.jpg
+  github: https://github.com/cbrunsdon
+-
+  name: John Hawthorn
+  title: Senior Software Developer, Stembolt
+  avatar: hawth.jpg
+  github: https://github.com/jhawthorn
+-
+  name: Gregor MacDougall
+  title: Senior Software Developer, Stembolt
+  avatar: gregor.jpg
+  github: https://github.com/gmacdougall
 -
   name: Martin Meyerhoff
-  title: Freelance Administration Scientist
+  title: Senior Software Developer, Stembolt
   avatar: martin.jpg
   github: https://github.com/mamhoff
+-
+  name: Alberto Vena
+  title: Senior Software Developer, Nebulab
+  avatar: alberto.jpg
+  github: https://github.com/kennyadsl
+-
+  name: Thomas von Deyen
+  title: Senior Software Developer, Stembolt
+  avatar: thomas.jpg
+  github: https://github.com/tvdeyen

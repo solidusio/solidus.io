@@ -10,7 +10,7 @@
   @include clear-margins;
 
   @include breakpoint($desktop) {
-    width: 50%;
+    width: 40%;
     float: left;
     padding-right: $gutter/2;
   }
@@ -22,7 +22,7 @@
   font-size: 0;
 
   @include breakpoint($desktop) {
-    width: 50%;
+    width: 60%;
     float: right;
     padding-left: $gutter/2;
   }
@@ -35,14 +35,14 @@
 .person {
   display: inline-block;
   vertical-align: top;
-  width: 33.33%;
+  width: 25%;
   padding: 0 $gutter/4;
   margin-top: $gutter/4;
   font-size: $font-size-base;
 }
 
 .person-name {
-  margin-bottom: 0;
+  margin: 0 0 1em;
   font-size: 0.8em;
 
   @include breakpoint($desktop) {
