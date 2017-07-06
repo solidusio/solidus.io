@@ -1,0 +1,60 @@
+-
+  url: https://www.lostmy.name/
+  name: Lost My Name
+  image_url: logos/lost-my-name.svg
+  logo_width: 200px
+-
+  url: https://www.smartthings.com
+  name: Smart Things
+  image_url: logos/smart-things.svg
+  logo_width: 220px
+-
+  url: https://www.tommyjohn.com
+  name: Tommy John
+  image_url: logos/tommy-john.svg
+  logo_width: 210px
+-
+  url: https://www.goby.co
+  name: Goby
+  image_url: logos/goby.svg
+  logo_width: 130px
+-
+  url: https://floyddetroit.com
+  name: Floyd
+  image_url: logos/floyd.svg
+  logo_width: 140px
+-
+  url: https://www.glossier.com
+  name: Glossier
+  image_url: logos/glossier.svg
+  logo_width: 160px
+-
+  url: https://www.raden.com
+  name: Raden
+  image_url: logos/raden.svg
+  logo_width: 150px
+-
+  url: https://newdistrict.ca
+  name: New District
+  image_url: logos/new-district.svg
+  logo_width: 170px
+-
+  url: https://jopsonsjewellers.co.uk
+  name: Jopsons Jewellers
+  image_url: logos/new-district.svg
+  logo_width: 150px
+-
+  url: https://www.instafloat.co.uk
+  name: Instafloat
+  image_url: logos/instafloat.png
+  logo_width: 100px
+-
+  url: https://orwell-health-production.herokuapp.com
+  name: Orwell Health
+  image_url: logos/orwell.png
+  logo_width: 100px
+-
+  url: https://www.lalignenyc.com
+  name: La Ligne
+  image_url: logos/la-ligne.svg
+  logo_width: 170px
