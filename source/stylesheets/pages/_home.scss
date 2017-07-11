@@ -1,6 +1,5 @@
 .home-section {
-  margin-top: 100px;
-  padding: 100px $gutter 0;
+  padding: 100px $gutter;
 
   &:not(:first-child) {
     border-top: 1px solid $color-grey;
@@ -36,3 +35,4 @@
 @import "home/goals";
 @import "home/newsletter";
 @import "home/people";
+@import "home/logos";

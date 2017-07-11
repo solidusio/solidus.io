@@ -1,0 +1,15 @@
+<div class="home-section storefronts">
+  <h2>Solidus is Trusted by High Volume, Complex Storefronts</h2>
+  <div class="store-logos">
+    <% data.solidus_clients.each do |company| %>
+      <a href="<%= company.url %>" title="<%= company.name %>">
+        <%= image_tag(
+          company.image_url,
+          alt: company.name,
+          class: "store-logo",
+          width: company.logo_width
+        ) %>
+      </a>
+    <% end %>
+  </div>
+</div>
