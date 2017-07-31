@@ -58,3 +58,8 @@
   name: La Ligne
   image_url: logos/la-ligne.svg
   logo_width: 170px
+-
+  url: https://www.alarmgrid.com/
+  name: Alarm Grid
+  image_url: logos/alarmgrid.svg
+  logo_width: 200px
