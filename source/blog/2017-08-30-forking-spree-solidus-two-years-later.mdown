@@ -22,7 +22,8 @@ The conference came up with six points we knew would make the project a success.
 ![The original Solidus goals](2017-08-30-forking-spree-solidus-two-years-later/original-solidus-goals.png "The original Solidus goals")
 
 # Reviewing Solidus’ Original Goals
-We’ve Earned the Trust of Open Source Developers
+
+## We’ve Earned the Trust of Open Source Developers
 We’ve been uncompromising in our standard of development. We give a broken test suite our highest priority. Every PR is reviewed by at least two seasoned Solidus core members before it is merged. The improvements we’ve made to our test infrastructure and general reliability have directly translated into improvements in the tests and reliability of every store that uses Solidus.
 
 ## Our API is Stable
