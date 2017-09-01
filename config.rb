@@ -1,3 +1,4 @@
+require 'rouge'
 
 ###
 # Page options, layouts, aliases and proxies
@@ -10,8 +11,6 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
-
-activate :syntax
 
 set :markdown_engine, :kramdown
 set :markdown, input: 'GFM', hard_wrap: false
@@ -66,7 +65,7 @@ configure :build do
   #activate :asset_hash
 
   # Use relative URLs
-  activate :relative_assets
+  #activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
