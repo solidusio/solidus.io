@@ -5,7 +5,7 @@ tags: Spree, Solidus, forked
 author: Solidus Core Team
 ---
 
-[Since forking Spree](https://solidus.io/blog/2015/10/28/future-of-spree.html) we’ve been so busy putting together our [3456 artisanally-crafted solidus core commits](https://github.com/solidusio/solidus), we often forget to stick our head out of our git logs and talk about where we are and where we’re going. During one of the [SolidusConf 2017](https://youtu.be/TSbUnRPbeK0?list=PLQNruX2oZ7ZFQrXZ2WmRtCB5Bi5wjCIeB) keynotes, the Solidus core team made a commitment to more frequently discuss the state and direction of the Solidus project. Before we get into where we’re going, we thought a good place to start is examining how far we’ve come in our two years since forking.
+[Since forking Spree](https://solidus.io/blog/2015/10/28/future-of-spree.html) we’ve been so busy putting together our [5329 artisanally-crafted solidus core commits](https://github.com/solidusio/solidus/graphs/contributors), we often forget to stick our head out of our git logs and talk about where we are and where we’re going. During one of the [SolidusConf 2017](https://youtu.be/TSbUnRPbeK0?list=PLQNruX2oZ7ZFQrXZ2WmRtCB5Bi5wjCIeB) keynotes, the Solidus core team made a commitment to more frequently discuss the state and direction of the Solidus project. Before we get into where we’re going, we thought a good place to start is examining how far we’ve come in our two years since forking.
 
 Last April (2016) Stembolt wrote about [why we’d forked Spree and started Solidus](https://stembolt.com/blog/why-we-forked-spree-and-started-solidus/). Since that post was written we’ve had two successful SolidusConfs ([Toronto, Canada](http://conf2016.solidus.io/) and [London, England](http://conf2017.solidus.io/)), seen adoption skyrocket, and watched our community grow and thrive. Less visibly, through that time the Solidus Core team and the community at large has had its heads-down working on improving the technical side of the Solidus ecosystem.
 
@@ -43,6 +43,8 @@ With the exception of [John Hawthorn](https://github.com/jhawthorn) – who main
 
 # We Were on the Radar
 Six months after we quietly posted our goals, and four months after the release of Solidus 1.0, Spree Commerce announced they were acquired and would no longer maintain the Spree platform. The people we respected most in the community had known about our fork and appreciated our goals and the direction we were headed. A notice was added to the Spree repo directing traffic to Solidus.
+
+![Notice that Spree is no longer maintained posted by Radar in November 2015](2017-08-30-forking-spree-solidus-two-years-later/add-notice-spree-is-no-longer-maintained.png "Notice that Spree is no longer maintained")
 
 We took this validation and put our heads down to the codebase. We started to tackle tough technical problems and brought aboard [Martin](https://github.com/mamhoff), [Thomas](https://github.com/tvdeyen) and [Alberto](https://github.com/kennyadsl) - three incredibly talented  and experienced individuals to help guide the project.
 
