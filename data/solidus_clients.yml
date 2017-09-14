@@ -1,13 +1,13 @@
 -
-  url: https://www.lostmy.name/
-  name: Lost My Name
-  image_url: logos/lost-my-name.svg
-  logo_width: 200px
--
   url: https://www.smartthings.com
   name: Smart Things
   image_url: logos/smart-things.svg
   logo_width: 220px
+-
+  url: https://www.wonderbly.com/
+  name: Wonderbly
+  image_url: logos/wonderbly.svg
+  logo_width: 180px
 -
   url: https://www.tommyjohn.com
   name: Tommy John
