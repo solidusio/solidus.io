@@ -44,7 +44,7 @@ With the exception of [John Hawthorn](https://github.com/jhawthorn) – who main
 # We Were on the Radar
 Six months after we quietly posted our goals, and four months after the release of Solidus 1.0, Spree Commerce announced they were acquired and would no longer maintain the Spree platform. The people we respected most in the community had known about our fork and appreciated our goals and the direction we were headed. A notice was added to the Spree repo directing traffic to Solidus.
 
-![Notice that Spree is no longer maintained posted by Radar in November 2015](2017-08-30-forking-spree-solidus-two-years-later/add-notice-spree-is-no-longer-maintained.png "Notice that Spree is no longer maintained")
+![Notice that Spree is no longer maintained posted by Radar in November 2015](/blog/2017/08/30/forking-spree-solidus-two-years-later/add-notice-spree-is-no-longer-maintained.png "Notice that Spree is no longer maintained")
 
 We took this validation and put our heads down to the codebase. We started to tackle tough technical problems and brought aboard [Martin](https://github.com/mamhoff), [Thomas](https://github.com/tvdeyen) and [Alberto](https://github.com/kennyadsl) - three incredibly talented  and experienced individuals to help guide the project.
 
