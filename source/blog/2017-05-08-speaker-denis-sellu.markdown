@@ -4,7 +4,7 @@ date: 2017-05-08 00:00 UTC
 author: Gregor MacDougall 
 ---
 
-![solidusconf speaker denis sellu](2017-05-08-speaker-denis-sellu/denis-sellu.jpg)
+![solidusconf speaker denis sellu](/blog/2017/05/08/speaker-denis-sellu/denis-sellu.jpg)
 
 **Please give us a short introduction to yourself for those who don’t know you**
 

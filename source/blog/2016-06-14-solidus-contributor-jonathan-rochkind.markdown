@@ -7,7 +7,7 @@ author: Solidus Core Team
 
 The Solidus core team personally recognizes that there are some individuals in the community that contribute regularly to core and would like to recognize those individuals on a more public level. These individuals take the time to contribute back to core, and we as a community are better off because of that.
 
-![Solidus contributor Jonathan Rochkind](2016-06-14-solidus-contributor-jonathan-rochkind/solidus-contributor-jrochkind.jpg)
+![Solidus contributor Jonathan Rochkind](/blog/2016/06/14/solidus-contributor-jonathan-rochkind/solidus-contributor-jrochkind.jpg)
 
 The first outstanding individual we’d like to publicly thank is Jonathan Rochkind. Jonathan was introduced to Solidus back in December of 2015 when he was hired on at [Friends of the Web](http://friendsoftheweb.com), an iOS and Rails development consultancy. He’s been working with Solidus for less than seven months, but in those seven months has submitted numerous significant [pull requests](https://github.com/solidusio/solidus/pulls?utf8=%E2%9C%93&q=author%3Ajrochkind) to the [Solidus GitHub repository](https://github.com/solidusio/solidus).
 

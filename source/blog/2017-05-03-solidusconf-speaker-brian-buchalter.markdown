@@ -4,7 +4,7 @@ date: 2017-05-03 00:00 UTC
 author: Susan Aili
 ---
 
-![solidusconf speaker brian buchalter](2017-05-03-solidusconf-speaker-brian-buchalter/brian-buchalter.jpg) 
+![solidusconf speaker brian buchalter](/blog/2017/05/03/solidusconf-speaker-brian-buchalter/brian-buchalter.jpg) 
 
 **Please give us a quick introduction for those who don't know you**
 

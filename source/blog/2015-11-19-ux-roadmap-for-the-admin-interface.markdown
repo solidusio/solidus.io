@@ -36,13 +36,13 @@ on track to be included in the 1.2 release of Solidus. Some improvements include
 
 Here's an early wireframe of that layout.
 
-![left navigation wireframe](2015-11-19-ux-roadmap-for-the-admin-interface/left-nav-sidebar.png)
+![left navigation wireframe](/blog/2015/11/19/ux-roadmap-for-the-admin-interface/left-nav-sidebar.png)
 
 [Kevin Attfield](https://github.com/Sinetheta), a
 developer at Stembolt, took this wireframe and the current colour palette to
 create a left side navigation.
 
-![left navigation screenshot](2015-11-19-ux-roadmap-for-the-admin-interface/solidus-left-nav.png)
+![left navigation screenshot](/blog/2015/11/19/ux-roadmap-for-the-admin-interface/solidus-left-nav.png)
 
 We're currently gathering feedback regarding the order and grouping of menu
 items so that we can make them more intuitive for admin users. Much prettier
@@ -50,7 +50,7 @@ than wireframes, I've also started drawing mockups for what it could look like
 with a new colour palette. This is still a work in progress, but this is what
 I've put together so far.
 
-![potential Solidus branding](2015-11-19-ux-roadmap-for-the-admin-interface/solidus-branding.png)
+![potential Solidus branding](/blog/2015/11/19/ux-roadmap-for-the-admin-interface/solidus-branding.png)
 
 There are plans to move add and edit functions into the page that they're
 affecting and to cleanup the way those forms are presented. Search filter layout

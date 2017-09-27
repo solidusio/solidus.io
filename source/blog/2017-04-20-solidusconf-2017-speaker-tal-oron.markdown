@@ -4,7 +4,7 @@ date: 2017-04-20 00:00 UTC
 author: Gregor MacDougall
 ---
 
-![SolidusConf Speaker Tal Oron](2017-04-20-solidusconf-2017-speaker-tal-oron/tal-profile.jpg)
+![SolidusConf Speaker Tal Oron](/blog/2017/04/20/solidusconf-2017-speaker-tal-oron/tal-profile.jpg)
 
 **Please give us a quick introduction for those who don't know you**
 

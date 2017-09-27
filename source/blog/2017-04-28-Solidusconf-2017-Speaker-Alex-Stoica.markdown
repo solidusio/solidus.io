@@ -4,7 +4,7 @@ date: 2017-04-28 00:00 UTC
 author: Gregor MacDougall
 ---
 
-![Solidusconf 2017 Speaker Alex Stoica](2017-04-28-solidusconf-2017-speaker-alex-stoica/alex-profile.jpg)
+![Solidusconf 2017 Speaker Alex Stoica](/blog/2017/04/28/solidusconf-2017-speaker-alex-stoica/alex-profile.jpg)
 
 **Please give us a quick introduction for those who don’t know you**
 

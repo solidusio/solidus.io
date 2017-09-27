@@ -5,12 +5,12 @@ tags: conference
 author: Jordan Brough
 ---
 
-![SolidusConf 2017](2016-11-22-solidus-conf-2017/homepage-splash-2017.jpg)
+![SolidusConf 2017](/blog/2016/11/22/solidus-conf-2017/homepage-splash-2017.jpg)
 
 We're proud to announce that SolidusConf 2017 will take place on the 24th and
 25th of May. It is presented by [Lost My Name](https://www.lostmy.name) and will
 be hosted at [The Rainmaking Loft](http://www.rainmakingloft.com/uk/event-space/)
-in London [next to the iconic Tower Bridge](2016-11-22-solidus-conf-2017/rainmaking-loft.jpg).
+in London [next to the iconic Tower Bridge](/blog/2016/11/22/solidus-conf-2017/rainmaking-loft.jpg).
 
 ## Registration and more coming soon
 

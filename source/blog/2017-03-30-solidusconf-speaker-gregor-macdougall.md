@@ -6,7 +6,7 @@ author: Susan Aili
 
 There is a buzz around the office as SolidusConf 2017 gets closer. We want to share a little piece of that excitement in the weeks leading up to the conference. That’s why we’ve created a series of speaker interviews that include teasers from their talks, their story, and what motivates them to contribute to solidus. Our series begins with the Master of Ceremonies and speaker, Gregor MacDougall.
 
-![SolidusConf Speaker Gregor MacDougall](2017-03-30-solidusconf-speaker-gregor-macdougall/gregor-macdougall-2017.jpg)
+![SolidusConf Speaker Gregor MacDougall](/blog/2017/03/30/solidusconf-speaker-gregor-macdougall/gregor-macdougall-2017.jpg)
 
 **Please give us a quick introduction for those who don't know you**
 

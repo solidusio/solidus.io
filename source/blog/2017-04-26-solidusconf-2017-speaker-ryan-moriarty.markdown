@@ -4,7 +4,7 @@ date: 2017-04-26 00:00 UTC
 author: Gregor MacDougall
 ---
 
-![Solidusconf 2017 Speaker Ryan Moriarty](2017-04-26-solidusconf-2017-speaker-ryan-moriarty/ryan-profile.jpg)
+![Solidusconf 2017 Speaker Ryan Moriarty](/blog/2017/04/26/solidusconf-2017-speaker-ryan-moriarty/ryan-profile.jpg)
 
 **First off could you give a quick introduction to yourself?**
 

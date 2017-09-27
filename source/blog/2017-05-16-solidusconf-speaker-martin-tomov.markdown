@@ -4,7 +4,7 @@ date: 2017-05-16 00:00 UTC
 author: Gregor MacDougall
 ---
 
-![solidusconf speaker martin tomov](2017-05-16-solidusconf-speaker-martin-tomov/martin-tomov.jpg)
+![solidusconf speaker martin tomov](/blog/2017/05/16/solidusconf-speaker-martin-tomov/martin-tomov.jpg)
 
 **Please gives us an introduction for those who don’t know you**
 

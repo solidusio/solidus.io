@@ -4,7 +4,7 @@ date: 2017-05-11 00:00 UTC
 author: Susan Aili
 ---
 
-![solidusconf speaker clarke brunsdon](2017-05-11-solidusconf-speaker-clarke-brunsdon/clarke-brunsdon-2017.jpg)
+![solidusconf speaker clarke brunsdon](/blog/2017/05/11/solidusconf-speaker-clarke-brunsdon/clarke-brunsdon-2017.jpg)
 
 **Please give us a quick introduction for those who don't know you**
 

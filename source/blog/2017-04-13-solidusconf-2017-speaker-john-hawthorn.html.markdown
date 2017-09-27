@@ -4,7 +4,7 @@ date: 2017-04-13 20:20 UTC
 author: Susan Aili
 ---
 
-![SolidusConf Speaker John Hawthorn](2017-04-13-solidusconf-2017-speaker-john-hawthorn/john-profile.jpg)
+![SolidusConf Speaker John Hawthorn](/blog/2017/04/13/solidusconf-2017-speaker-john-hawthorn/john-profile.jpg)
 
 **Please give us a quick introduction for those who don't know you**
 

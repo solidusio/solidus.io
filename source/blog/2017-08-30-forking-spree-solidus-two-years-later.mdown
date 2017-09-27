@@ -19,7 +19,7 @@ We wanted to fix what we saw as wrong with the project and plan for its future. 
 
 The conference came up with six points we knew would make the project a success. Once our fork was public, they were posted on the homepage of solidus.io as signposts for other developers that shared our goals and concerns.
 
-![The original Solidus goals](2017-08-30-forking-spree-solidus-two-years-later/original-solidus-goals.png "The original Solidus goals")
+![The original Solidus goals](/blog/2017/08/30/forking-spree-solidus-two-years-later/original-solidus-goals.png "The original Solidus goals")
 
 # Reviewing Solidus’ Original Goals
 

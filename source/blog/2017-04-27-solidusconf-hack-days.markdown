@@ -4,7 +4,7 @@ date: 2017-04-27 00:00 UTC
 author: Martin Meyerhoff
 ---
 
-![A picture from the Hackdays in 2016](2017-04-27-solidusconf-hack-days/solidusconf2016-hack-days-02.jpg)
+![A picture from the Hackdays in 2016](/blog/2017/04/27/solidusconf-hack-days/solidusconf2016-hack-days-02.jpg)
 
 On May 22nd and May 23rd, we're inviting you to the Solidus Conference Center for two days of hacking on the Solidus platform or your own code.
 

@@ -4,7 +4,7 @@ date: 2017-04-12 00:00 UTC
 author: Gregor MacDougall
 ---
 
-![SolidusConf Speaker Jose Pio](2017-04-12-solidusconf-2017-speaker-jose-pio/jose-profile.jpg)
+![SolidusConf Speaker Jose Pio](/blog/2017/04/12/solidusconf-2017-speaker-jose-pio/jose-profile.jpg)
 
 **Please give us a quick introduction to yourself for those who don’t know you**
 

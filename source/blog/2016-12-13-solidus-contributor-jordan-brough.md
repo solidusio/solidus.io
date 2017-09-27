@@ -6,7 +6,7 @@ author: Susan Aili
 
 The Solidus core team would like to publicly thank and acknowledge Jordan Brough for his contributions to both the Solidus community and the codebase over the past few years. Jordan has been dedicated to working with Solidus since its inception back in 2013 when Jordan helped migrate a large fashion-based company from Spree to Solidus.
 
-![Solidus contributor Jordan Brough](2016-12-13-solidus-contributor-jordan-brough/jordan-profile.jpg)
+![Solidus contributor Jordan Brough](/blog/2016/12/13/solidus-contributor-jordan-brough/jordan-profile.jpg)
 
 Motivated by the benefits and potential of open source, Jordan began contributing to what now amounts to an impressive [331 commits](https://github.com/solidusio/solidus/commits?author=jordan-brough) in the [Solidus Github repository](https://github.com/solidusio/solidus). However, before his work with the Spree and Solidus open source platforms, 99% of Jordan’s code was written for closed source platforms. The switch from closed to open source software has allowed him to experience firsthand the value of open source platforms for companies needing a custom store and the ability to grow without the limits of a packaged product. 
 
