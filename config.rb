@@ -61,12 +61,6 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript
 
-  # Enable cache buster
-  activate :asset_hash, ignore: [/^blog/]
-
-  # Use relative URLs
-  activate :relative_assets
-
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
