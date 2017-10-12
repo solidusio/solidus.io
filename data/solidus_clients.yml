@@ -63,3 +63,8 @@
   name: Alarm Grid
   image_url: logos/alarmgrid.svg
   logo_width: 200px
+-
+  url: https://revere.co/
+  name: revere
+  image_url: logos/revere.svg
+  logo_width: 160px
