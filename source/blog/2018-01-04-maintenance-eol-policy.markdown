@@ -20,9 +20,7 @@ the following End of Life policy:
 Solidus versions will receive security patches for 18 months following their
 initial release.
 
-Versions which would hit their EOL before May 5th, 2018 (4 months from the
-date of this announcement) will receive security patches until May 5th,
-2018. This applies to Solidus 1.0 through 2.0.
+Versions which would hit their EOL before May 5th, 2018 (4 months from the date of this announcement) will receive security patches until May 5th, 2018. This applies to Solidus 1.0 through 2.0.
 
 Under this policy, versions will be supported until the following dates:
 
