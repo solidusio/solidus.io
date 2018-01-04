@@ -14,15 +14,15 @@ many. However we don't want to surprise users by announcing an issue with no
 easy patch available to them.
 
 To allow us to patch security issues promptly, and to make sure developers know
-how long their Solidus version will be supported, we're introducing the
-following End of Life policy:
+how long their Solidus version will receive security updates, we're introducing
+the following End of Life policy:
 
-Solidus versions will be supported for 18 months following their initial
-release.
+Solidus versions will receive security patches for 18 months following their
+initial release.
 
 Versions which would hit their EOL before May 5th, 2018 (4 months from the
-date of this announcement) will be supported until May 5th, 2018. This
-applies to Solidus 1.0 through 2.0.
+date of this announcement) will be receive security patches until May 5th,
+2018. This applies to Solidus 1.0 through 2.0.
 
 Under this policy, versions will be supported until the following dates:
 
