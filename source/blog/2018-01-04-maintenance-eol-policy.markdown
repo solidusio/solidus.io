@@ -39,4 +39,4 @@ Under this policy, versions will be supported until the following dates:
 |     2.3 |  2017-07-31 |  2019-01-31 |
 |     2.4 |  2017-11-07 |  2019-05-07 |
 
-<img src="/blog/2018/01/05/maintenance-eol-policy/chart.png" class="no-box" />
+<img src="/blog/2018/01/04/maintenance-eol-policy/chart.png" class="no-box" />
