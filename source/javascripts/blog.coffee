@@ -3,7 +3,7 @@
 #= require vendor/jquery.fluidbox.min
 
 imageOnly = ->
-  hasImage = $(this).find('img').length == 1
+  hasImage = $(this).find('img:not(.no-box)').length == 1
   hasText = $.trim($(this).text()).length
   hasImage and !hasText
 
