@@ -1,6 +1,6 @@
 ---
 title: Solidus 2.4-2.5 Technical Rundown
-date: 2018-01-
+date: 2018-01-15
 tags: Solidus, roadmap, technical
 author: Solidus Core Team
 ---
