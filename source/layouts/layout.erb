@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <title><%= current_page.data.title || "Middleman" %></title>
+  <%= stylesheet_link_tag "site" %>
+  <%= javascript_include_tag "site" %>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="navbar container">
+    <div class="logo-wrapper">
+      <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt="Solidus" width="" height=""></a>
+    </div>
+
+    <nav class="site-menu" role="navigation">
+      <ul class="menu-items list-inline">
+        <li class="list-inline-item <%= nav_active("features.html") %>"><a class="text-gray-900" href="/features">Features</a></li>
+        <li class="list-inline-item <%= nav_active("developers.html") %>"><a href="/developers">Developers</a></li>
+      </ul>
+    </nav>
+
+    <div class="navbar-right">
+      <ul class="social-links list-inline">
+        <li class="list-inline-item"><a href="#"><img src="/assets/images/svg/github.svg" alt="Solidus" width="20" height="20"></a></li>
+        <li class="list-inline-item"><a href="#"><img src="/assets/images/svg/github.svg" alt="Solidus" width="20" height="20"></a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm" href="#">Contact</a>
+    </div>
+  </div>
+</header>
+
+<div class="site-content">
+  <%= yield %>
+</div>
+
+<footer class="site-footer content-block-gray-900">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <nav class="footer-menu">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-white" href="#">Features</a></li>
+            <li class="list-inline-item"><a class="text-white" href="#">Developers</a></li>
+            <li class="list-inline-item"><a class="text-white" href="#">Contact</a></li>
+            <li class="list-inline-item"><a class="text-white" href="#">Legal</a></li>
+          </ul>
+        </nav>
+
+        <div>Created by <a class="text-white" href="#">Stembolt</a>, maintained by the core team with the help of our contributors.</div>
+      </div>
+      <div class="col-sm-5">
+        <ul class="social-links list-inline">
+          <li class="list-inline-item"><a class="text-white" href="#"><img src="/assets/images/svg/github.svg" alt="Solidus" width="20" height="20"></a></li>
+          <li class="list-inline-item"><a class="text-white" href="#"><img src="/assets/images/svg/github.svg" alt="Solidus" width="20" height="20"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

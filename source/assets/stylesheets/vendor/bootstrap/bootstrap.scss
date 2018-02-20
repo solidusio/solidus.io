@@ -1,0 +1,25 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "theme/variables";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "theme/mixins";
+
+// Basic styles
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+
+
+// Components
+@import "node_modules/bootstrap/scss/utilities/text";
+@import "theme/utilities/text";
+
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/buttons";
+@import "theme/buttons";
+

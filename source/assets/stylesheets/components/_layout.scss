@@ -1,0 +1,58 @@
+//Common layout blocks
+
+html {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: $min-page-width;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+}
+
+//Sticky footer styles
+.site-header, .site-footer { flex: none; }
+.site-content{ flex: 1 0 auto; }
+
+
+//Site header
+.site-header{
+  border-bottom: 1px solid $gray-200;
+}
+
+
+//Page footer
+.site-footer{
+  flex-shrink: 0;
+  font-size: $font-size-xs;
+  padding: 24px 0;
+  text-align: center;
+
+  .social-links{
+    margin-top: 1rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    text-align: left;
+    .social-links{ margin-top: 0; }
+  }
+}
+
+.footer-menu{
+  font-size: $font-size-sm;
+  margin-bottom: 1.125rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 0.5rem;
+  }
+
+  ul{ margin-bottom: 0; }
+}
+

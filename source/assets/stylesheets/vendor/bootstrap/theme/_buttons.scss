@@ -1,0 +1,9 @@
+.btn-outline-secondary{
+  @include button-outline-variant( $primary, $blue-darker, #ffffff, $secondary );
+
+  border-color: $secondary;
+
+  &:active, &.active{
+    color: $blue-darker;
+  }
+}
