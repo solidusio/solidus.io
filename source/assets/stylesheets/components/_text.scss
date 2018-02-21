@@ -1,3 +1,27 @@
 a{
   transition: all ease 0.3s;
+
+  .isvg .inherit-fill {
+    transition: all ease 0.3s;
+  }
+}
+
+p{
+  &:last-child{ margin-bottom: 0; }
+}
+
+.subheading{
+  font-weight: $font-weight-base;
+}
+
+// list items separated by gray lines
+.list-underlined{
+  @extend .list-unstyled;
+  border-top: 2px solid $gray-200;
+  margin-bottom: 2rem;
+
+  > li{
+    padding: 1rem 0;
+    border-bottom: 2px solid $gray-200;
+  }
 }

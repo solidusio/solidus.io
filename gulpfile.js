@@ -37,7 +37,7 @@ var
   },
 
   js = {
-    in: src + 'assets/javascripts/*.{js,coffee}',
+    in: src + 'assets/javascripts/*.js',
     out: dest + 'assets/javascripts/'
   },
 
@@ -67,7 +67,18 @@ gulp.task('css', function() {
 
 // Javascript Bundling
 gulp.task('js', function() {
+  gulp.src('src/app.js')
+      .pipe(babel({
+        presets: ['@babel/env']
+      }))
+      .pipe(gulp.dest(js.out))
 
+  return b.bundle().on('error', handleError)
+      .pipe(p.source('bundle.js'))
+      .pipe(production() ? p.buffer() : p.gutil.noop())
+      .pipe(production(p.stripDebug()))
+      .pipe(production() ? p.uglify(uglifyOpts) : p.gutil.noop())
+      .pipe(gulp.dest());
 });
 
 // Image Optimization

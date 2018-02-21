@@ -1,0 +1,22 @@
+// Blockquotes
+.blockquote {
+  color: $gray-500;
+  margin-bottom: 0;
+
+  .subheading{}
+}
+
+.blockquote-footer {
+  font-size: $font-size-sm;
+
+  &::before { content: ""; }
+
+  cite{
+    display: inline-block;
+    font-style: normal;
+    text-align: left;
+    max-width: 100%;
+
+    img{ margin-right: $spacer; }
+  }
+}

@@ -10,14 +10,14 @@
 
 // stylelint-disable
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #fafbfc;
 $gray-200: #ecedf1;
-$gray-300: #dee2e6 !default;
-$gray-400: #cacbcc;
-$gray-500: rgba(#24282f, 0.4);
-$gray-600: #7e7f80;
-$gray-700: #474a50;
-$gray-800: #343a40 !default;
+$gray-300: #e7e7e8;
+$gray-400: #cecece;
+$gray-500: #929497; //mockup text opacity 0.5
+$gray-600: #66696e; //mockup text opacity 0.7
+$gray-700: #505359; //mockup text opacity 0.8
+$gray-800: #474a50; //mockup text opacity 0.16
 $gray-900: #24282f;
 
 $blue:    #3c76f0;
@@ -52,6 +52,13 @@ $border-radius-lg:            2px;
 $border-radius-sm:            2px;
 
 
+// Body
+//
+// Settings for the `<body>` element.
+$body-bg:                   $white !default;
+$body-color:                $gray-500;
+
+
 // Links
 //
 // Style anchor elements.
@@ -59,11 +66,20 @@ $border-radius-sm:            2px;
 $link-hover-color:          $blue-dark;
 $link-hover-decoration:     none;
 
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1rem;
+
 // Paragraphs
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   1.5em;
 
 
 // Grid breakpoints
@@ -73,6 +89,7 @@ $paragraph-margin-bottom:   1rem !default;
 
 $grid-breakpoints: (
   xs: 0,
+  sm: 768px,
   md: 768px,
   lg: 1024px,
   xl: 1280px
@@ -125,6 +142,25 @@ $font-weight-bold:            500;
 $font-weight-base:            $font-weight-normal;
 $line-height-base:            1.5;
 
+$h1-font-size:                $font-size-base * 2.625; //42px
+$h2-font-size:                $font-size-base * 2.125; //34px
+$h3-font-size:                $font-size-base * 2.125; //34px
+$h4-font-size:                $font-size-base * 1.5; //24px
+$h5-font-size:                $font-size-base * 1.375; //22px
+$h6-font-size:                $font-size-base * 1.125; //18px
+
+$headings-margin-bottom:      0.5em;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2;
+$headings-color:              $gray-900;
+
+$lead-font-size:              ($font-size-base * 1.375);
+$lead-font-weight:            300 !default;
+
+$blockquote-small-color:      $gray-900;
+$blockquote-font-size:        $h4-font-size;
+
 
 // Buttons
 //
@@ -146,6 +182,8 @@ $input-color:                           $gray-900;
 $input-border-color:                    $gray-200;
 $input-border-width:                    $border-width;
 $input-box-shadow:                      none;
+
+$input-placeholder-color:               $gray-500;
 
 $input-focus-border-color:              $gray-600;
 $input-focus-color:                     $input-color;

@@ -35,13 +35,22 @@ body{
   padding: 24px 0;
   text-align: center;
 
-  .social-links{
-    margin-top: 1rem;
-  }
+  .social-links{  margin-top: 1rem; }
 
-  @include media-breakpoint-up(sm) {
+  .isvg-coffee-love{ margin-bottom: 0.5rem; }
+
+  @include media-breakpoint-up(lg) {
     text-align: left;
-    .social-links{ margin-top: 0; }
+
+    .social-links{
+      margin-top: 0;
+      text-align: right;
+    }
+
+    .isvg-coffee-love{
+      margin-right: 0.5rem;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -49,9 +58,7 @@ body{
   font-size: $font-size-sm;
   margin-bottom: 1.125rem;
 
-  @include media-breakpoint-up(sm) {
-    margin-bottom: 0.5rem;
-  }
+  @include media-breakpoint-up(lg) { margin-bottom: 0.5rem; }
 
   ul{ margin-bottom: 0; }
 }

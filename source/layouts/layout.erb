@@ -18,12 +18,12 @@
 <header class="site-header">
   <div class="navbar container">
     <div class="logo-wrapper">
-      <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt="Solidus" width="" height=""></a>
+      <a class="site-logo" href="/"><%= inline_svg("logo.svg", class: "isvg") %></a>
     </div>
 
     <nav class="site-menu" role="navigation">
       <ul class="menu-items list-inline">
-        <li class="list-inline-item <%= nav_active("features.html") %>"><a class="text-gray-900" href="/features">Features</a></li>
+        <li class="list-inline-item <%= nav_active("features.html") %>"><a href="/features">Features</a></li>
         <li class="list-inline-item <%= nav_active("developers.html") %>"><a href="/developers">Developers</a></li>
       </ul>
     </nav>
@@ -44,8 +44,8 @@
 
 <footer class="site-footer content-block-gray-900">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-7">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
         <nav class="footer-menu">
           <ul class="list-inline">
             <li class="list-inline-item"><a class="text-white" href="#">Features</a></li>
@@ -55,12 +55,16 @@
           </ul>
         </nav>
 
-        <div>Created by <a class="text-white" href="#">Stembolt</a>, maintained by the core team with the help of our contributors.</div>
+        <div>
+          <%= inline_svg("footer-icons.svg", class: "isvg isvg-coffee-love") %> <br class="d-lg-none">
+          Created by <a class="text-white" href="#">Stembolt</a>, maintained by the core team with the help of our contributors.
+        </div>
       </div>
-      <div class="col-sm-5">
+      <div class="col-lg-5">
         <ul class="social-links list-inline">
-          <li class="list-inline-item"><a class="text-white" href="#"><img src="/assets/images/svg/github.svg" alt="Solidus" width="20" height="20"></a></li>
-          <li class="list-inline-item"><a class="text-white" href="#"><img src="/assets/images/svg/github.svg" alt="Solidus" width="20" height="20"></a></li>
+          <li class="list-inline-item"><a class="text-gray-800" href="#"><%= inline_svg("social-icons/twitter.svg", class: "isvg") %></a></li>
+          <li class="list-inline-item"><a class="text-gray-800" href="#"><%= inline_svg("social-icons/slack.svg", class: "isvg") %></a></li>
+          <li class="list-inline-item"><a class="text-gray-800" href="#"><%= inline_svg("social-icons/github.svg", class: "isvg") %></a></li>
         </ul>
       </div>
     </div>

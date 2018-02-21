@@ -19,24 +19,6 @@ module CustomHelpers
     end
   end
 
-  # https://robots.thoughtbot.com/organized-workflow-for-svg
-  # https://gist.github.com/bitmanic/0047ef8d7eaec0bf31bb
-  def inline_svg(filename, options = {})
-    root = Middleman::Application.root
-    file_path = "#{root}/source/assets/images/#{filename}"
-    if File.exists?(file_path)
-      file = File.read(file_path).force_encoding("UTF-8")
-      doc = Nokogiri::HTML::DocumentFragment.parse file
-      svg = doc.at_css "svg"
-      if options[:class].present?
-        svg["class"] = options[:class]
-      end
-      doc
-    else
-      "file not found: #{file_path}"
-    end
-  end
-
   # return "active" if current page = path. used for navigation classes
   def nav_active(path)
     current_page.path == path ? "active" : ""
