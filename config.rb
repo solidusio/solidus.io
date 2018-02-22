@@ -14,15 +14,15 @@ set :css_dir, "assets/stylesheets"
 set :images_dir, "assets/images"
 set :js_dir, "assets/javascripts"
 
-configure :build do
-  activate :external_pipeline,
-    name: :gulp,
-    command: "npm run production",
-    source: ".tmp",
-    latency: 1
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ?  "npm run production" : "npm run development",
+         source: ".tmp",
+         latency: 1
 
+configure :build do
   # Append a hash to asset urls (make sure to use the url helpers)
-  #activate :asset_hash
+  activate :asset_hash
 
   ignore "assets/javascripts/all.js"
   ignore "assets/stylesheets/site"
