@@ -1,0 +1,10 @@
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  @include media-breakpoint-down(md){
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

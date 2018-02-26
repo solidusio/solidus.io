@@ -7,8 +7,11 @@ a{
 }
 
 p{
-  &:last-child{ margin-bottom: 0; }
+  @include media-breakpoint-up(md){
+    &:last-child{ margin-bottom: 0; }
+  }
 }
+
 
 .subheading{
   font-weight: $font-weight-base;
