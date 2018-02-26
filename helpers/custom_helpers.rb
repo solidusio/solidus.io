@@ -23,4 +23,9 @@ module CustomHelpers
   def nav_active(path)
     current_page.path == path ? "active" : ""
   end
+
+  # return "active" if current page is not in paths array. used for navigation classes
+  def nav_inactive(paths)
+    (paths.include? current_page.path) ? "" : "no-active"
+  end
 end

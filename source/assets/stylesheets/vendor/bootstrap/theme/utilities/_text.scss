@@ -1,14 +1,15 @@
 // Contextual colors
-
 a.text-white {
   @include hover-focus {
     color: $gray-300 !important;
   }
 }
 
+
+@include text-emphasis-variant(".text-white-048", $white-05);
+
+
 @include text-emphasis-variant(".text-gray-400", $gray-400, $gray-800);
-@include text-emphasis-variant(".text-gray-500", $gray-500);
 @include text-emphasis-variant(".text-gray-600", $gray-600);
 @include text-emphasis-variant(".text-gray-700", $gray-700);
-@include text-emphasis-variant(".text-gray-800", $gray-800, $gray-500);
-@include text-emphasis-variant(".text-gray-900", $gray-900);
+@include text-emphasis-variant(".text-gray", $gray-900);

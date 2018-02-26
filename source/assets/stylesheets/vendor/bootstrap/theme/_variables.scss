@@ -10,15 +10,26 @@
 
 // stylelint-disable
 $white:    #fff !default;
+$gray-900: #24282f;
+
+$white-016: rgba($white, 0.16);
+$white-048: rgba($white, 0.48);
+$white-05: rgba($white, 0.5);
+$white-072: rgba($white, 0.72);
+$white-08: rgba($white, 0.8);
+$gray-024: rgba($gray-900, 0.24);
+$gray-048: rgba($gray-900, 0.48);
+$gray-08: rgba($gray-900, 0.8);
+
 $gray-100: #fafbfc;
 $gray-200: #ecedf1;
 $gray-300: #e7e7e8;
 $gray-400: #d3d4d5; //mockup white opacity 0.8
-$gray-500: #919397; //mockup text opacity 0.5
+$gray-500: $gray-048; //mockup text opacity 0.5
 $gray-600: #66696e; //mockup text opacity 0.7
-$gray-700: #505359; //mockup text opacity 0.8
+$gray-700: $gray-08; //mockup text opacity 0.8
 $gray-800: #474a50; //mockup text opacity 0.16
-$gray-900: #24282f;
+
 
 $blue:    #3c76f0;
 $blue-darker: #3363cc;
@@ -45,7 +56,7 @@ $line-height-lg:              1.5;
 $line-height-sm:              1.3;
 
 $border-width:                1px;
-$border-color:                $gray-900;
+$border-color:                $gray-08;
 
 $border-radius:               2px;
 $border-radius-lg:            2px;
@@ -56,7 +67,7 @@ $border-radius-sm:            2px;
 //
 // Settings for the `<body>` element.
 $body-bg:                   $white !default;
-$body-color:                $gray-500;
+$body-color:                $gray-08;
 
 
 // Links

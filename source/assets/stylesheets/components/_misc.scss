@@ -1,4 +1,6 @@
+//Social links
 .social-links{
+  @extend .list-inline;
   margin-bottom: 0;
 
   a{
@@ -8,4 +10,23 @@
     line-height: 1.8rem;
     text-align: center;
   }
+}
+
+.social-links-light{
+  a{
+    opacity: 0.16;
+    &:hover{ opacity: 0.48; }
+  }
+
+  .isvg .inherit-fill { fill: #ffffff; }
+}
+
+
+.social-links-dark{
+  a{
+    opacity: 0.24;
+    &:hover{ opacity: 0.72; }
+  }
+
+  .isvg .inherit-fill { fill: $gray-900; }
 }

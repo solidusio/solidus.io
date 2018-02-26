@@ -15,6 +15,10 @@ body{
   display: flex;
   font-size: 16px;
   flex-direction: column;
+
+  @include media-breakpoint-down(md){
+    &.menu-open{ overflow: hidden; }
+  }
 }
 
 //Sticky footer styles
@@ -25,19 +29,35 @@ body{
 //Site header
 .site-header{
   border-bottom: 1px solid $gray-200;
+
+  @include media-breakpoint-down(md){
+    .menu-open &{ background-color: $gray-900; }
+  }
 }
 
 
 //Page footer
 .site-footer{
+  bottom: 0;
   flex-shrink: 0;
   font-size: $font-size-xs;
+  left: 0;
   padding: 24px 0;
   text-align: center;
+  width: 100%;
 
   .social-links{  margin-top: 1rem; }
 
   .isvg-coffee-love{ margin-bottom: 0.5rem; }
+
+  @include media-breakpoint-down(md){
+    .menu-open &{
+      position: absolute;
+      z-index: $zindex-sticky + 1;
+
+      .footer-menu{ display: none; }
+    }
+  }
 
   @include media-breakpoint-up(lg) {
     text-align: left;

@@ -19,10 +19,9 @@
 
 .content-block-gray-900{
   background: $gray-900;
-  color: $gray-400;
+  color: $white-08;
 
-
-  a{
-
+  h1, h2, h3, h4, h5, h6, .title{
+    color: #ffffff;
   }
 }

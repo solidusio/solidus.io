@@ -3,5 +3,8 @@ import "popper.js";
 import "bootstrap";
 
 $(function () {
-  console.log($("body"));
+  $(".site-menu-toggler").click(function () {
+    $("body").toggleClass("menu-open");
+    return false;
+  })
 });
