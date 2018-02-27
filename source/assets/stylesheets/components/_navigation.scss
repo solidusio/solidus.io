@@ -73,7 +73,6 @@
 
 .site-menu{
   background: $gray-900;
-  bottom: 0;
   display: none;
   font-size: 2rem;
   left: 0;
@@ -82,6 +81,7 @@
   right: 0;
   text-align: center;
   top: 63px;
+  height: calc(100vh - 194px); //header height + aprox minimal footer height. no matter if sizes are not exact, footer overlaps site-nav
   z-index: $zindex-sticky;
 
   .menu-items{
