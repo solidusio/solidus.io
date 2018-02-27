@@ -15,10 +15,14 @@ body{
   display: flex;
   font-size: 16px;
   flex-direction: column;
+  padding-top: 64px;
+  position: relative;
 
   @include media-breakpoint-down(md){
     &.menu-open{ overflow: hidden; }
   }
+
+  @include media-breakpoint-up(lg){ padding-top: 80px; }
 }
 
 //Sticky footer styles
@@ -28,11 +32,29 @@ body{
 
 //Site header
 .site-header{
+  background: #ffffff;
+  transition: transform .3s ease-in-out;
   border-bottom: 1px solid $gray-200;
 
   @include media-breakpoint-down(md){
     .menu-open &{ background-color: $gray-900; }
   }
+}
+
+.site-header--fixed {
+  position: fixed;
+  z-index: $zindex-fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.site-header--pinned {
+  transform: translateY(0)
+}
+
+.site-header--unpinned{
+  transform: translateY(-100%);
 }
 
 
@@ -52,8 +74,8 @@ body{
 
   @include media-breakpoint-down(md){
     .menu-open &{
-      position: absolute;
-      z-index: $zindex-sticky + 1;
+      position: fixed;
+      z-index: $zindex-sticky + 10;
 
       .footer-menu{ display: none; }
     }

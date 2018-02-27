@@ -40,7 +40,8 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
-      bootstrap: 'bootstrap'
+      bootstrap: 'bootstrap',
+      headroom: 'headroom.js'
     }),
     new CopyWebpackPlugin([
       {from: __dirname + '/source/assets/images', to: __dirname + '/.tmp/assets/images'}
