@@ -24,7 +24,8 @@
 @import "theme/grid";
 
 //@import "tables";
-//@import "forms";
+@import "node_modules/bootstrap/scss/forms";
+@import "theme/forms";
 @import "node_modules/bootstrap/scss/buttons";
 @import "theme/buttons";
 //@import "transitions";

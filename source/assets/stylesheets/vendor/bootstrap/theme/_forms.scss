@@ -1,0 +1,96 @@
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Textual form controls
+//
+
+.form-control {
+  padding: $input-padding-y $input-padding-x;
+
+  &:hover{
+    border-color: $input-hover-border-color;
+    box-shadow: 0 0 0 1px $input-hover-border-color;
+
+    &::placeholder {
+      color: $body-color;
+    }
+  }
+
+  &:focus{
+    border-color: $input-focus-border-color;
+    box-shadow: 0 0 0 1px $input-focus-border-color;
+  }
+}
+
+//Override invalid/valid styling
+.form-control, .custom-select {
+  .was-validated &:invalid, &.is-invalid {
+    &, &:focus{
+      border-color: $form-feedback-invalid-color;
+      box-shadow: 0 0 0 $input-focus-width $form-feedback-invalid-color;
+    }
+  }
+}
+
+
+//Float label inputs
+.has-float-label {
+  margin-bottom: 0;
+  position: relative;
+
+  label, .form-control, .form-control::placeholder {
+    transition-property: padding, opacity, color, background-color, font-size;
+    transition-duration: .3s;
+  }
+
+  .form-control::placeholder {
+
+  }
+
+  label{
+    background: transparent;
+    color: $input-placeholder-color;
+    font-size: $font-size-base;
+    left: 1px;
+    line-height: $input-line-height;
+    margin: 0;
+    overflow: hidden;
+    padding: $input-padding-y $input-padding-x 0;
+    position: absolute;
+    text-align: left;
+    text-overflow: ellipsis;
+    top: 1px;
+    white-space: nowrap;
+    width: calc(100% - 2px);
+    z-index: 1;
+  }
+
+  .form-control {
+    position: relative;
+    z-index: 2;
+
+    &:not(:placeholder-shown), &:focus{
+      background: transparent;
+      padding-top: 25px;
+      padding-bottom: 7px;
+
+      &::placeholder { opacity: 0; }
+
+      & + label{
+        background: #ffffff;
+        font-size: 12px;
+        padding-top: 8px;
+      }
+    }
+  }
+
+  textarea.form-control + label{
+    width: calc(100% - 20px);
+  }
+
+  textarea.form-control:not(:placeholder-shown), textarea.form-control:focus {
+    & + label {
+      z-index: 3;
+    }
+  }
+}

@@ -19,7 +19,9 @@
     "node-sass": "^4.7.2",
     "run-sequence": "^2.2.0",
     "sass-loader": "^6.0.6",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "postcss-loader": "~2.1.1",
+    "autoprefixer": "~8.0"
   },
   "dependencies": {
     "bootstrap": "4.0.0",
@@ -31,5 +33,12 @@
     "presets": [
       "env"
     ]
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not ie <= 10",
+    "not <= 0.4%",
+    "not OperaMini all"
+  ]
 }

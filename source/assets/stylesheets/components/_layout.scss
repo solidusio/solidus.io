@@ -49,12 +49,14 @@ body{
   top: 0;
 }
 
-.site-header--pinned {
-  transform: translateY(0)
-}
+.site-header--pinned { transform: translateY(0); }
 
 .site-header--unpinned{
   transform: translateY(-100%);
+
+  @include media-breakpoint-down(md) {
+    .menu-open & { transform: translateY(0); }
+  }
 }
 
 
