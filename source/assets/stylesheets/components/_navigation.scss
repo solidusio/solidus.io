@@ -80,7 +80,6 @@
   position: fixed;
   right: 0;
   text-align: center;
-  top: 63px;
   height: calc(100vh - 194px); //header height + aprox minimal footer height. no matter if sizes are not exact, footer overlaps site-nav
   z-index: $zindex-sticky;
 
@@ -98,6 +97,7 @@
   }
 
   @include media-breakpoint-down(md){
+    top: 63px;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 155px; //footer height
@@ -118,7 +118,8 @@
     font-size: $font-size-md;
     opacity: 1;
     background: none;
-    position: static;
+    position: relative;
+    margin-bottom: -1px;
 
     .menu-items{
       >li{
@@ -132,6 +133,7 @@
         display: inline-block;
         padding: 28px 12px 26px;
         font-weight: $font-weight-base;
+        height: 80px;
       }
 
       .active a, a:hover, a:focus{ color: $gray-900; }

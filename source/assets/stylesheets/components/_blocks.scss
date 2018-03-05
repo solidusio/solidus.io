@@ -36,3 +36,10 @@
   max-width: 485px;
   margin: 0 auto;
 }
+
+//Features hero banner
+.features-hero{
+  padding-bottom: 40px;
+
+  .container{ max-width: 740px + $grid-gutter-width; }
+}

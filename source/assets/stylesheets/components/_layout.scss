@@ -39,6 +39,10 @@ body{
   @include media-breakpoint-down(md){
     .menu-open &{ background-color: $gray-900; }
   }
+
+  @include media-breakpoint-up(lg){
+    height: 80px;
+  }
 }
 
 .site-header--fixed {
