@@ -43,3 +43,50 @@
 
   .container{ max-width: 740px + $grid-gutter-width; }
 }
+
+//Features main block
+.features-main-block{
+  .feature{
+    max-width: 300px;
+    margin: 0 auto 2rem;
+
+    .isvg{ margin-bottom: 1rem; }
+    .title{ font-weight: $font-weight-base; }
+  }
+}
+
+//Features details block
+.features-details-block{
+  .container{
+    max-width: 960px + $grid-gutter-width;
+  }
+
+  .features-group{
+    padding: 16px 0;
+
+    @include media-breakpoint-up(lg){
+      > .title a{
+        cursor: default;
+        color: $body-color;
+      }
+
+      .collapse{
+        display: block !important;
+      }
+    }
+  }
+
+  .feature{
+    margin: 0 auto 2rem;
+
+    @include media-breakpoint-up(md){
+      max-width: 300px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .title{
+      font-weight: $font-weight-base;
+    }
+  }
+}
