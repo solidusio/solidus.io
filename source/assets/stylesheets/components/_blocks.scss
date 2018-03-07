@@ -62,8 +62,6 @@
   }
 
   .features-group{
-    padding: 16px 0;
-
     @include media-breakpoint-up(lg){
       > .title a{
         cursor: default;
