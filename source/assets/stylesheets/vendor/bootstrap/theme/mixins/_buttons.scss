@@ -9,20 +9,21 @@
   border-color: $border;
   @include box-shadow($btn-box-shadow);
 
+  .inherit-fill{
+    fill: color-yiq($background) !important;
+  }
+
   @include hover {
     color: color-yiq($hover-background);
     @include gradient-bg($hover-background);
     border-color: $hover-border;
+    box-shadow: 0 0 4px 0 rgba(#000000, 0.66);
   }
 
   &:focus,
   &.focus {
     // Avoid using mixin so we can pass custom focus shadow properly
-    @if $enable-shadows {
-      box-shadow: $btn-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
-    } @else {
-      box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
-    }
+    box-shadow: 0 0 4px 0 rgba(#000000, 0.66);
   }
 
   // Disabled comes first so active can properly restyle
@@ -45,11 +46,7 @@
 
     &:focus {
       // Avoid using mixin so we can pass custom focus shadow properly
-      @if $enable-shadows {
-        box-shadow: $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($border, .5);
-      } @else {
-        box-shadow: 0 0 0 $btn-focus-width rgba($border, .5);
-      }
+      box-shadow: 0 0 4px 0 rgba(#000000, 0.66);
     }
   }
 }

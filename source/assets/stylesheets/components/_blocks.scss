@@ -63,9 +63,14 @@
 
   .features-group{
     @include media-breakpoint-up(lg){
-      > .title a{
-        cursor: default;
-        color: $body-color;
+      > .title{
+        a{
+          cursor: default;
+          color: $body-color;
+          pointer-events: none;
+        }
+
+        .isvg-arrow{ display: none; }
       }
 
       .collapse{
@@ -81,6 +86,10 @@
       max-width: 300px;
       margin-left: 0;
       margin-right: 0;
+    }
+
+    @include media-breakpoint-up(lg){
+      margin-bottom: 3em;
     }
 
     .title{
