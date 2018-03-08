@@ -2,12 +2,36 @@
 title: Developers
 ---
 
-<div class="home-hero container text-center">
-  <h1 class="title">You’re going to this.</h1>
-  <p class="subtitle">Solidus is an open source ecommerce solution built with Ruby on Rails and maintained by a community of passionate developers. Here’s everything you’ll need to start creating your own online store.</p>
+<div class="developers-hero content-block content-block-xl text-center">
+  <div class="container container-md">
+    <h1 class="title">You’re going to <%= inline_svg("icons/heart-big.svg", class: "isvg")%> this.</h1>
+    <p class="lead mb-md-6">Solidus is an open source ecommerce solution built with Ruby on Rails and maintained by a community of passionate developers. Here’s everything you’ll need to start creating your own online store.</p>
+    <div class="btns-wrapper">
+      <a class="btn btn-primary btn-w-icon" href="#" target="_blank"><%= inline_svg("social-icons/slack.svg", class: "isvg") %> <span class="text">Join our Slack</span></a>
+      <br class="d-md-none">
+      <a class="btn btn-outline-secondary" href="#">Read our Docs</a>
+    </div>
+  </div>
+</div>
 
-  <div class="ta-c">
-    <a href="#" class="btn btn-primary">Go to Github</a>
-    <a href="#" class="btn btn-outline-secondary">Read our Docs</a>
+<div class="developers-springboard-block content-block text-center">
+  <div class="container container-md mb-6">
+    <h4 class="title text-white">Your GitHub springboard.</h4>
+    <p class="lead text-white-072">Head over to GitHub and download the latest Solidus release, find instructions for getting set up, and contribute to the codebase.</p>
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <img class="img-fluid mx-auto" src="assets/images/tmp/github.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="content-block text-center">
+  <div class="container">
+    <h2 class="title mb-4">Have a question? Ask the community.</h2>
+    <a class="btn btn-primary btn-w-icon" href="#" target="_blank"><%= inline_svg("social-icons/slack.svg", class: "isvg") %> <span class="text">Join our Slack</span></a>
   </div>
 </div>

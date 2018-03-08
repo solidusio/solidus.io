@@ -30,13 +30,14 @@
 @import "theme/buttons";
 @import "node_modules/bootstrap/scss/transitions";
 //@import "dropdown";
-//@import "button-group";
+@import "node_modules/bootstrap/scss/button-group";
 //@import "input-group";
 //@import "custom-forms";
 @import "node_modules/bootstrap/scss/nav";
 @import "theme/nav";
 //@import "navbar";
-//@import "card";
+//@import "node_modules/bootstrap/scss/card";
+@import "theme/card";
 //@import "breadcrumb";
 //@import "pagination";
 //@import "badge";

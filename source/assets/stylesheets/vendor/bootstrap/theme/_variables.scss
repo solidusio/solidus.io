@@ -59,7 +59,7 @@ $border-width:                1px;
 $border-color:                $gray-08;
 
 $border-radius:               2px;
-$border-radius-lg:            2px;
+$border-radius-lg:            4px;
 $border-radius-sm:            2px;
 
 
@@ -233,3 +233,12 @@ $form-group-margin-bottom:              10px;
 $nav-pills-border-radius:           0;
 $nav-pills-link-active-color:       $blue;
 $nav-pills-link-active-bg:          transparent;
+
+
+// Cards
+
+$card-spacer-y:                     1.5rem;
+$card-spacer-x:                     1.5rem;
+$card-border-radius:                $border-radius-lg;
+$card-border-color:                 #ecedf1;
+$card-bg:                           $white;

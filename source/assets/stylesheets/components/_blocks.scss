@@ -17,6 +17,13 @@
   }
 }
 
+.content-block-xl{
+  @include media-breakpoint-up(md) {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+}
+
 .content-block-gray-100{
   background: $gray-100;
 }
@@ -41,7 +48,7 @@
 .features-hero{
   padding-bottom: 40px;
 
-  .container{ max-width: 740px + $grid-gutter-width; }
+
 }
 
 //Features main block
@@ -95,5 +102,31 @@
     .title{
       font-weight: $font-weight-base;
     }
+  }
+}
+
+//developers hero block
+.developers-hero{
+  .title{
+    .isvg{
+      @include media-breakpoint-down(md){
+        width: 33px;
+      }
+    }
+  }
+
+  .btns-wrapper{
+    @include media-breakpoint-down(sm){
+      display: inline-block;
+      .btn{ width: 100%; }
+    }
+  }
+}
+
+.developers-springboard-block{
+  background-image: linear-gradient(#3c76f0, #716ff9);
+
+  .card-body{
+    width: 100%;
   }
 }
