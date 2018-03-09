@@ -7,9 +7,7 @@ a{
 }
 
 p{
-  @include media-breakpoint-up(md){
-    &:last-child{ margin-bottom: 0; }
-  }
+  &:last-child{ margin-bottom: 0; }
 }
 
 

@@ -24,7 +24,15 @@
 }
 
 
+.card-border-none{
+  border: none;
+}
+
+
 .card-body {
-  padding: $card-spacer-x;
+  padding: 16px;
+  @include media-breakpoint-up(lg){
+    padding: $card-spacer-x;
+  }
 }
 
