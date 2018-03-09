@@ -9,6 +9,10 @@
   }
 }
 
+.container-xs{
+  max-width: 400px + $grid-gutter-width;
+}
+
 .container-md{
   max-width: 740px + $grid-gutter-width;
 }

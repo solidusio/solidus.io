@@ -21,11 +21,15 @@
   }
 
   .card-body{
+    display: flex;
+    flex-direction: column;
     flex-grow: 2;
   }
 
   .links{
     font-size: $font-size-base;
+    margin-top: auto;
+    margin-bottom: 0;
     .isvg{ margin-right: 5px; }
   }
 
@@ -35,7 +39,10 @@
   }
 
   @include media-breakpoint-up(lg){
-    .card{ min-height: 240px; }
+    .card{
+      font-size: $font-size-base;
+      min-height: 240px;
+    }
     .card-body{
       padding-left: 0;
     }
