@@ -4,13 +4,14 @@ import "bootstrap";
 import Headroom from "headroom.js";
 
 $(function () {
+  //Menu toggler functionality
   $(".site-menu-toggler").click(function () {
     $("body").toggleClass("menu-open");
     return false;
   });
 
 
-  // construct an instance of Headroom, passing the element
+  //Sticky header initialization
   let header = document.querySelector(".site-header");
   let headroom  = new Headroom(header, {
     offset: header.offsetHeight,
@@ -26,4 +27,14 @@ $(function () {
   });
   // initialise
   headroom.init();
+
+  //Prevent invalid form submit
+
+  $("body").on("submit", ".needs-validation", function (event) {
+    if (this[0].checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    $(this).addClass('was-validated');
+  });
 });
