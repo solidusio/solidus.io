@@ -25,9 +25,10 @@
   },
   "dependencies": {
     "bootstrap": "4.0.0",
+    "headroom.js": "0.9.4",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.9",
-    "headroom.js": "0.9.4"
+    "nouislider": "^11.0.3",
+    "popper.js": "^1.12.9"
   },
   "babel": {
     "presets": [

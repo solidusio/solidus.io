@@ -62,3 +62,68 @@
     }
   }
 }
+
+//Cost calculator
+.cost-calculator{
+  color: $body-color;
+  text-align: center;
+  display: block;
+  max-width: 480px;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(lg){ margin: 0 0 0 auto; }
+
+  .card-body{ padding: 24px 0 0; }
+
+  .title{ margin-bottom: 11px; }
+
+  .table{
+    margin: 0;
+
+    td, th{
+      border: none;
+      padding: 8px 5px;
+
+      &:first-child{ border-right: 1px solid $card-border-color; }
+    }
+
+    th{
+      height: 80px;
+      vertical-align: middle;
+      border-top: 1px solid $card-border-color;
+    }
+
+    tbody tr:first-child td{ padding-top: 0; }
+    tbody tr:last-child td{ padding-bottom: 24px; }
+  }
+
+  .price{
+    color: $blue;
+    font-size: 86px;
+    line-height: 1em;
+    letter-spacing: -1.2px;
+    font-weight: 300;
+    @include respond-to(360px){ font-size: 106px; }
+  }
+
+  .expense-title{
+    font-weight: 300;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: $gray-048;
+    margin-bottom: 4px;
+    letter-spacing: 0;
+
+    @include respond-to(360px){
+      font-size: $font-size-xs;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  .expense-amount{
+    font-size: $h6-font-size;
+    line-height: 1.45em;
+
+    @include respond-to(360px){ font-size: $h5-font-size; }
+  }
+}
