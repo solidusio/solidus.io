@@ -1,0 +1,30 @@
+.noUi-target{
+  background-color: $gray-200;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-connect{
+  background: #1c3770;
+}
+
+.noUi-handle{
+  border: none;
+  background: $blue;
+  box-shadow: 0 0 8px 0 rgba(#000000, 0.14);
+  border-radius: 50%;
+
+  &:before, &:after{ display: none; }
+
+  &:focus{ outline: none; }
+}
+
+.noUi-horizontal{
+  height: 4px;
+
+  .noUi-handle{
+    width: 16px;
+    height: 16px;
+    right: -8px !important;
+  }
+}

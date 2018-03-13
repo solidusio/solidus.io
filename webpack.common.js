@@ -4,6 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const Clean = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
+
 module.exports = {
   //Entry points(js, scss files)
   entry: {
@@ -65,7 +66,6 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
-      bootstrap: 'bootstrap',
       headroom: 'headroom.js'
     }),
     new CopyWebpackPlugin([
@@ -83,7 +83,9 @@ module.exports = {
       minChunks: Infinity,
       // (with more entries, this ensures that no other module
       //  goes into the vendor chunk)
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
     })
-  ],
-  devtool: 'eval-source-map'
+  ]
 };

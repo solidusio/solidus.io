@@ -1,7 +1,9 @@
 import "jquery";
 import "popper.js";
 import "bootstrap";
+import NoUiSlider from "nouislider";
 import Headroom from "headroom.js";
+import numeral from "numeral";
 
 $(function () {
   //Menu toggler functionality
@@ -29,12 +31,31 @@ $(function () {
   headroom.init();
 
   //Prevent invalid form submit
-
   $("body").on("submit", ".needs-validation", function (event) {
     if (this[0].checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
     }
     $(this).addClass('was-validated');
+  });
+
+
+  //Price calculation block
+  let $slider = $(".cost-calculator .slider"),
+      $sliderSales = $(".cost-calculator .js-sales"),
+      $sliderTotal = $(".cost-calculator .js-total-cost");
+
+  NoUiSlider.create($slider[0], {
+    start: [$slider.data("start")],
+    connect: [true, false],
+    step: 1000,
+    range: {
+      'min': $slider.data("min"),
+      'max': $slider.data("max")
+    }
+  });
+
+  $slider[0].noUiSlider.on('update', function(e){
+    $sliderSales.html(numeral(e[0]).format('0,0'))
   });
 });

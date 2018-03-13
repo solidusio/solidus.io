@@ -75,7 +75,20 @@
 
   .card-body{ padding: 24px 0 0; }
 
-  .title{ margin-bottom: 11px; }
+  .title{
+    margin-bottom: 17px;
+    .sales{
+      font-weight: $font-weight-light;
+      display: inline-block;
+      min-width: 130px;
+      text-align: left;
+    }
+  }
+
+  .slider{
+    max-width: 190px;
+    margin: 0 auto 30px;
+  }
 
   .table{
     margin: 0;
