@@ -24,6 +24,6 @@ configure :build do
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash
 
-  ignore "assets/javascripts/all.js"
+  ignore "assets/javascripts/common.js"
   ignore "assets/stylesheets/site"
 end
