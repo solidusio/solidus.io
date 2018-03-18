@@ -1,9 +1,4 @@
-activate :directory_indexes
-
 set :relative_links, true
-
-# Disable Haml warnings
-Haml::TempleEngine.disable_option_validator!
 
 page "/*.xml", layout: false
 page "/*.json", layout: false
@@ -13,6 +8,18 @@ page "/404.html", directory_index: false
 set :css_dir, "assets/stylesheets"
 set :images_dir, "assets/images"
 set :js_dir, "assets/javascripts"
+
+activate :blog do |blog|
+  blog.layout = 'blog'
+  blog.prefix = 'blog'
+  blog.tag_template = 'blog/tag.html'
+  blog.calendar_template = 'blog/calendar.html'
+  blog.year_template = 'blog/calendar.html'
+  blog.month_template = 'blog/calendar.html'
+  blog.day_template = 'blog/calendar.html'
+end
+
+activate :directory_indexes
 
 activate :external_pipeline,
          name: :webpack,
