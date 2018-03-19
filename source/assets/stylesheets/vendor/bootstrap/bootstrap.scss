@@ -19,7 +19,8 @@
 @import "theme/utilities";
 
 @import "node_modules/bootstrap/scss/images";
-//@import "code";
+@import "node_modules/bootstrap/scss/code";
+@import "theme/code";
 @import "node_modules/bootstrap/scss/grid";
 @import "theme/grid";
 

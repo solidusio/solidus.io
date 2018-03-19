@@ -242,3 +242,18 @@ $card-spacer-x:                     1.5rem;
 $card-border-radius:                $border-radius-lg;
 $card-border-color:                 #ecedf1;
 $card-bg:                           $white;
+
+// Code
+
+$code-font-size:                    $font-size-sm;
+$code-color:                        $body-color;
+$code-background:                   #f4f5f7;
+
+$kbd-padding-y:                     .2rem !default;
+$kbd-padding-x:                     .4rem !default;
+$kbd-font-size:                     $code-font-size !default;
+$kbd-color:                         $white !default;
+$kbd-bg:                            $gray-900 !default;
+
+$pre-color:                         $gray-900 !default;
+$pre-scrollable-max-height:         340px !default;
