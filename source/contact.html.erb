@@ -7,11 +7,12 @@ title: Contact
     <h1 class="title text-center">Contact us</h1>
     <p class="lead mb-4 mb-md-6 text-center">Got questions about Solidus? Complete the form below and we’ll respond as soon as possible. </p>
 
-    <form class="needs-validation">
+    <form class="needs-validation" novalidate>
       <div class="form-group">
         <div class="has-float-label">
           <input type="text" class="form-control " name="inputName" id="inputName" placeholder="Name" required>
           <label for="inputName">Name</label>
+          <div class="invalid-feedback">This field is required</div>
         </div>
       </div>
       <div class="form-group">
@@ -25,6 +26,7 @@ title: Contact
         <div class="has-float-label">
           <textarea class="form-control" name="inputMessage" id="inputMessage" rows="10" placeholder="Message" required></textarea>
           <label for="inputMessage">Message</label>
+          <div class="invalid-feedback">This field is required</div>
         </div>
       </div>
 
