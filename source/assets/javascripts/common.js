@@ -45,17 +45,19 @@ $(function () {
       $sliderSales = $(".cost-calculator .js-sales"),
       $sliderTotal = $(".cost-calculator .js-total-cost");
 
-  NoUiSlider.create($slider[0], {
-    start: [$slider.data("start")],
-    connect: [true, false],
-    step: 1000,
-    range: {
-      'min': $slider.data("min"),
-      'max': $slider.data("max")
-    }
-  });
+  if($slider.length){
+    NoUiSlider.create($slider[0], {
+      start: [$slider.data("start")],
+      connect: [true, false],
+      step: 1000,
+      range: {
+        'min': $slider.data("min"),
+        'max': $slider.data("max")
+      }
+    });
 
-  $slider[0].noUiSlider.on('update', function(e){
-    $sliderSales.html(numeral(e[0]).format('0,0'))
-  });
+    $slider[0].noUiSlider.on('update', function(e){
+      $sliderSales.html(numeral(e[0]).format('0,0'))
+    });
+  }
 });

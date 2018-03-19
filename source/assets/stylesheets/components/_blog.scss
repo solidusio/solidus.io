@@ -1,0 +1,27 @@
+.blog-index-block{
+  padding-top: 0;
+  background: linear-gradient($gray-100 100px, $body-bg 100px);
+
+  .container{
+    max-width: 550px + $grid-gutter-width;
+  }
+}
+
+.blog-post-preview{
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 24px;
+
+  &:last-child{ margin-bottom: 0; }
+
+  .card-body{ padding: 24px; }
+
+  .title{
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+}
+
+.blog-post-author{
+  font-size: $font-size-sm;
+}

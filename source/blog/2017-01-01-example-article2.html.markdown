@@ -1,6 +1,6 @@
 ---
-title: Example Article
-date: 2012-01-01
+title: Example Article 2
+date: 2017-01-01
 author: Solidus Core Team
 ---
 

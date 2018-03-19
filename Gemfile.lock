@@ -75,7 +75,10 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
+    mini_portile2 (2.3.0)
     minitest (5.10.3)
+    nokogiri (1.8.1-x86-mingw32)
+      mini_portile2 (~> 2.3.0)
     oga (2.14)
       ast
       ruby-ll (~> 2.1)
@@ -115,6 +118,7 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 4.2)
   middleman-blog (~> 4.0)
+  nokogiri (~> 1.8.1)
   oga (~> 2.14)
   tzinfo-data
   wdm (~> 0.1)

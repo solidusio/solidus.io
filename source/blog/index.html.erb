@@ -2,23 +2,57 @@
 pageable: true
 per_page: 10
 ---
-<% if paginate && num_pages > 1 %>
-  <p>Page <%= page_number %> of <%= num_pages %></p>
 
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
-<% end %>
+<div class="content-block content-block-gray-100 text-center">
+  <div class="container">
+    <h1 class="title">Solidus <span class="text-gray-048">Blog</span></h1>
+  </div>
+</div>
 
-<% page_articles.each_with_index do |article, i| %>
-  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <%= article.body %>
-<% end %>
+<div class="blog-index-block content-block">
+  <div class="container">
+    <% page_articles.each_with_index do |article, i| %>
+      <div class="blog-post-preview card">
+        <div class="card-body">
+          <h3 class="title"><%= link_to article.title, article, :class => 'text-gray' %></h3>
+          <%= article.summary %>
 
-<% if paginate %>
-  <% if next_page %>
-    <p><%= link_to 'Next page', next_page %></p>
-  <% end %>
-<% end %>
+          <div class="blog-post-author text-gray-048"><%= article.data.author %> · <%= article.date.strftime('%b %e %y') %></div>
+        </div>
+      </div>
+    <% end %>
+
+
+    <% if paginate %>
+      <% if num_pages > 1 %>
+        <p>Page <%= page_number %> of <%= num_pages %></p>
+
+        <% if prev_page %>
+          <p><%= link_to 'Previous page', prev_page %></p>
+        <% end %>
+      <% end %>
+
+      <% if next_page %>
+        <p><%= link_to 'Next page', next_page %></p>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+<div class="content-block content-block-gray-100 text-center">
+  <div class="container container-xs">
+    <h4 class="title mb-1">Your feedback is important to us!</h4>
+    <p>Join the Solidus user testing mailing list to share your opinions and participate in user testing. </p>
+
+    <form action="" class="needs-validation" novalidate>
+      <div class="form-group form-group-submittable">
+        <div class="has-float-label">
+          <input type="email" class="form-control " name="inputName" id="inputName" placeholder="Email" required>
+          <label for="inputName">Email</label>
+          <div class="invalid-feedback">Please enter correct email</div>
+          <button type="submit" class="btn btn-link"><%= inline_svg("icons/arrow-right.svg", class: "isvg") %></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
