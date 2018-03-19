@@ -1,5 +1,3 @@
-set :relative_links, true
-
 page "/*.xml", layout: false
 page "/*.json", layout: false
 page "/*.txt", layout: false
@@ -28,7 +26,6 @@ activate :blog do |blog|
   blog.generate_tag_pages = true
   # Whether to generate year pages.
   blog.generate_year_pages = true
-
 end
 
 activate :directory_indexes
