@@ -21,11 +21,17 @@ module CustomHelpers
 
   # return "active" if current page = path. used for navigation classes
   def nav_active(path)
-    current_page.path == path ? "active" : ""
+    (current_page.path.start_with? path) ? "active" : ""
   end
 
   # return "active" if current page is not in paths array. used for navigation classes
   def nav_inactive(paths)
-    (paths.include? current_page.path) ? "" : "no-active"
+    cls = "no-active"
+    paths.each do |path|
+      if(current_page.path.start_with? path)
+        cls = ""
+      end
+    end
+    return cls
   end
 end
