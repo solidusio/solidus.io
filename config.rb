@@ -18,6 +18,8 @@ activate :blog do |blog|
   blog.summary_length = 450
   blog.summary_separator = '%%READMORE%%'
   blog.default_extension = '.erb'
+  blog.paginate = true
+  blog.per_page = 10
 
   # Whether to generate day pages.
   blog.generate_day_pages = false
