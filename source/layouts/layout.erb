@@ -1,81 +1,26 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href='assets/images/favicon/apple-touch-icon.png'>
+  <link rel="shortcut icon" type="image/x-icon" href='assets/images/favicon/favicon.ico'>
 
   <title><%= current_page.data.title || "Middleman" %></title>
   <%= stylesheet_link_tag "site" %>
 </head>
 
 <body>
-<header class="site-header site-header--fixed">
-  <div class="navbar container">
-    <div class="logo-wrapper">
-      <a class="site-logo" href="/"><%= inline_svg("logo.svg", class: "isvg") %></a>
-    </div>
-
-    <nav class="site-menu" role="navigation">
-      <ul class="menu-items <%= nav_inactive(["features.html", "developers.html", "blog.html"]) %>">
-        <li class=" <%= nav_active("features.html") %>"><a href="/features">Features</a></li>
-        <li class="<%= nav_active("developers.html") %>"><a href="/developers">Developers</a></li>
-        <li class="<%= nav_active("blog.html") %>"><a href="/blog">Blog</a></li>
-        <li class="d-lg-none <%= nav_active("contact.html") %>"><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-
-
-    <div class="navbar-right">
-      <a class="site-menu-toggler" href="#">
-        <%= inline_svg("menu.svg", class: "isvg isvg-menu") %>
-        <%= inline_svg("close.svg", class: "isvg isvg-close") %>
-      </a>
-      <ul class="social-links social-links-dark">
-        <li class="list-inline-item"><a href="#"><%= inline_svg("social-icons/slack.svg", class: "isvg") %></a></li>
-        <li class="list-inline-item"><a href="#"><%= inline_svg("social-icons/github.svg", class: "isvg") %></a></li>
-      </ul>
-      <a class="btn btn-primary btn-sm" href="/contact">Contact</a>
-    </div>
-  </div>
-</header>
+<%= partial "partials/header" %>
 
 <div class="site-content">
   <%= yield %>
 </div>
 
-<footer class="site-footer content-block-gray-900">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <nav class="footer-menu">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a class="text-white" href="/features">Features</a></li>
-            <li class="list-inline-item"><a class="text-white" href="/developers">Developers</a></li>
-            <li class="list-inline-item"><a class="text-white" href="/contact">Contact</a></li>
-            <li class="list-inline-item"><a class="text-white" href="/legal">Legal</a></li>
-          </ul>
-        </nav>
-
-        <div class="text-white-048">
-          <%= inline_svg("footer-icons.svg", class: "isvg isvg-coffee-love") %> <br class="d-lg-none">
-          Created by <a class="text-white" href="#">Stembolt</a>, maintained by the core team with the help of our contributors.
-        </div>
-      </div>
-      <div class="col-lg-5">
-        <ul class="social-links social-links-light">
-          <li class="list-inline-item"><a href="#"><%= inline_svg("social-icons/twitter.svg", class: "isvg") %></a></li>
-          <li class="list-inline-item"><a href="#"><%= inline_svg("social-icons/slack.svg", class: "isvg") %></a></li>
-          <li class="list-inline-item"><a href="#"><%= inline_svg("social-icons/github.svg", class: "isvg") %></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+<%= partial "partials/footer" %>
 
 <%= javascript_include_tag "vendor" %>
 <%= javascript_include_tag "common" %>

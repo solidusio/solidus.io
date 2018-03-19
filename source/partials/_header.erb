@@ -1,0 +1,29 @@
+<header class="site-header site-header--fixed">
+  <div class="navbar container">
+    <div class="logo-wrapper">
+      <a class="site-logo" href="/"><%= inline_svg("logo.svg", class: "isvg") %></a>
+    </div>
+
+    <nav class="site-menu" role="navigation">
+      <ul class="menu-items <%= nav_inactive(["features.html", "developers.html", "blog.html"]) %>">
+        <li class=" <%= nav_active("features.html") %>"><a href="/features">Features</a></li>
+        <li class="<%= nav_active("developers.html") %>"><a href="/developers">Developers</a></li>
+        <li class="<%= nav_active("blog.html") %>"><a href="/blog">Blog</a></li>
+        <li class="d-lg-none <%= nav_active("contact.html") %>"><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="navbar-right">
+      <a class="site-menu-toggler" href="#">
+        <%= inline_svg("menu.svg", class: "isvg isvg-menu") %>
+        <%= inline_svg("close.svg", class: "isvg isvg-close") %>
+      </a>
+      <ul class="social-links social-links-dark">
+        <li class="list-inline-item"><a href="#"><%= inline_svg("social-icons/slack.svg", class: "isvg") %></a></li>
+        <li class="list-inline-item"><a href="#"><%= inline_svg("social-icons/github.svg", class: "isvg") %></a></li>
+      </ul>
+      <a class="btn btn-primary btn-sm" href="/contact">Contact</a>
+    </div>
+  </div>
+</header>

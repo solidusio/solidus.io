@@ -17,7 +17,7 @@ per_page: 10
           <h3 class="title"><%= link_to article.title, article, :class => 'text-gray' %></h3>
           <%= article.summary %>
 
-          <div class="blog-post-author text-gray-048"><%= article.data.author %> · <%= article.date.strftime('%b %e %y') %></div>
+          <div class="blog-post-author text-gray-048"><%= article.data.author %> · <%= article.date.strftime('%b %e, %Y') %></div>
         </div>
       </div>
     <% end %>

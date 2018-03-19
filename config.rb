@@ -17,15 +17,16 @@ activate :blog do |blog|
   blog.day_template = 'blog/calendar.html'
   blog.summary_length = 450
   blog.summary_separator = '%%READMORE%%'
+  blog.default_extension = '.erb'
 
   # Whether to generate day pages.
-  blog.generate_day_pages = true
+  blog.generate_day_pages = false
   # Whether to generate month pages.
-  blog.generate_month_pages = true
+  blog.generate_month_pages = false
   # Whether to generate tag pages.
-  blog.generate_tag_pages = true
+  blog.generate_tag_pages = false
   # Whether to generate year pages.
-  blog.generate_year_pages = true
+  blog.generate_year_pages = false
 end
 
 activate :directory_indexes

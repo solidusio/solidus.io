@@ -20,8 +20,47 @@
     font-size: 22px;
     margin-bottom: 8px;
   }
+
+  p{
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
 }
 
 .blog-post-author{
   font-size: $font-size-sm;
+}
+
+.blog-post{
+  .post-title{
+    letter-spacing: -0.8px;
+    margin-bottom: 1rem;
+    font-size: 40px;
+    @include media-breakpoint-up(md){ font-size: 56px; }
+  }
+
+  .lead{
+    line-height: 1.78em;
+  }
+
+  p{ margin-bottom: 2rem; }
+
+
+  h2, .h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-up(lg){ margin-top: 4rem; }
+
+    & + h3, & + .h3, & + h4, & + .h4{
+      margin-top: 2rem;
+    }
+  }
+
+  h3, .h3, h4, .h4 {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+
+    @include media-breakpoint-up(lg){ font-size: 22px; }
+  }
 }
