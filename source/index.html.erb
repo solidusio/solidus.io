@@ -170,39 +170,37 @@ title: Home
       <div class="col-lg">
         <div class="cost-calculator card">
           <div class="card-body">
-            <h5 class="title text-gray">Annual Sales <span class="sales text-gray-048">$<span class="js-sales">9,000,000</span></span></h5>
-            <div class="slider" data-start="9000000" data-min="0" data-max="18000000"></div>
+            <h5 class="title expense-title">Annual Sales</h5>
+            <div class="sales expense-amount text-gray">$<span class="js-sales">20,000,000</span></div>
+            <div class="slider" data-start="20000000" data-min="1000000" data-max="40000000"></div>
 
             <table class="table">
               <thead>
               <tr>
                 <th><%= inline_svg("logo.svg", class: "solidus-logo isvg") %></th>
-                <th>Industry Avg.</th>
+                <th>Industry Average</th>
               </tr>
               </thead>
               <tbody>
               <tr>
-                <td rowspan="2" class="price">$0</td>
-                <td>
-                  <h6 class="expense-title">Transaction Fees</h6>
-                  <div class="expense-amount">1.0%</div>
-                </td>
-              </tr>
-              <tr>
                 <td>
                   <h6 class="expense-title">Annual License Fees</h6>
-                  <div class="expense-amount">$500k</div>
+                  <div class="expense-amount">0%</div>
+                </td>
+                <td>
+                  <h6 class="expense-title">Annual License Fees</h6>
+                  <div class="expense-amount">2%</div>
                 </td>
               </tr>
 
               <tr>
                 <td>
                   <h6 class="expense-title">Total Annual Cost</h6>
-                  <div class="expense-amount"><strong>Free Forever</strong></div>
+                  <div class="expense-amount"><strong class="text-primary">Free Forever</strong></div>
                 </td>
                 <td>
                   <h6 class="expense-title">Total Annual Cost</h6>
-                  <div class="expense-amount js-total-cost">$900,000</div>
+                  <div class="expense-amount ">$<span class="js-total-cost">400,000</span></div>
                 </td>
               </tr>
               </tbody>

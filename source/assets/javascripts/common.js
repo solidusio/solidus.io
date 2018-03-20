@@ -57,7 +57,8 @@ $(function () {
     });
 
     $slider[0].noUiSlider.on('update', function(e){
-      $sliderSales.html(numeral(e[0]).format('0,0'))
+      $sliderSales.html(numeral(e[0]).format('0,0'));
+      $sliderTotal.html(numeral(e[0] * 0.02).format('0,0'))
     });
   }
 });
