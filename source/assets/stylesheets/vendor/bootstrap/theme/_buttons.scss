@@ -24,13 +24,17 @@
   }
 }
 
-
-
 .btn ~ .btn{
   margin-top: 1rem;
 
   @include media-breakpoint-up(md){
     margin-top: 0;
     margin-left: 1rem;
+  }
+}
+
+.btn-group{
+  .btn ~ .btn{
+    margin-top: 0;
   }
 }

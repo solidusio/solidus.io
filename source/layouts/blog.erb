@@ -10,6 +10,11 @@
   <link rel="shortcut icon" type="image/x-icon" href='/assets/images/favicon/favicon.ico'>
 
   <title><%= current_article.title unless current_article.nil? %> - Solidus</title>
+
+  <script type="text/javascript" charset="utf-8">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
   <%= stylesheet_link_tag "site" %>
 </head>
 
@@ -26,7 +31,7 @@
     <%= yield %>
   </div>
 
-  <div class="content-block text-center">
+  <div class="content-block text-center" data-aos="fade">
     <div class="social-plugins-block">
       <div class="social-btn">
         <a class="twitter-share-button" href="https://twitter.com/share" data-text="<%= current_page.data.title %>" data-url="<%= config.base_url %><%= current_page.url %>" data-hashtags="solidus">Tweet</a>
@@ -37,7 +42,7 @@
     </div>
   </div>
 
-  <div class="content-block content-block-gray-100 text-center">
+  <div class="content-block content-block-gray-100 text-center" data-aos="fade">
     <div class="container container-xs">
       <h4 class="title mb-1">Your feedback is important to us!</h4>
       <p>Join the Solidus user testing mailing list to share your opinions and participate in user testing. </p>

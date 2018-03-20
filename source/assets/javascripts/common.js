@@ -4,6 +4,7 @@ import "bootstrap";
 import NoUiSlider from "nouislider";
 import Headroom from "headroom.js";
 import numeral from "numeral";
+import AOS from "aos";
 
 $(function () {
   //Menu toggler functionality
@@ -61,4 +62,10 @@ $(function () {
       $sliderTotal.html(numeral(e[0] * 0.02).format('0,0'))
     });
   }
+
+  //Fade in blocks on scroll
+  AOS.init({
+    once: true,
+    duration: 600
+  });
 });

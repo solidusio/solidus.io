@@ -10,6 +10,11 @@
   <link rel="shortcut icon" type="image/x-icon" href='/assets/images/favicon/favicon.ico'>
 
   <title><%= current_page.data.title || "Middleman" %></title>
+
+  <script type="text/javascript" charset="utf-8">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
   <%= stylesheet_link_tag "site" %>
 </head>
 

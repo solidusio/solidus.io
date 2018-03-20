@@ -26,6 +26,7 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
+    "aos": "~2.2.0",
     "bootstrap": "4.0.0",
     "headroom.js": "0.9.4",
     "jquery": "^3.2.1",

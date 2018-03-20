@@ -12,7 +12,7 @@ per_page: 1
 <div class="blog-index-block content-block">
   <div class="container">
     <% page_articles.each_with_index do |article, i| %>
-      <div class="blog-post-preview card">
+      <div class="blog-post-preview card" data-aos="fade">
         <div class="card-body">
           <h3 class="title"><%= link_to article.title, article, :class => 'text-gray' %></h3>
           <%= article.summary %>
@@ -24,7 +24,7 @@ per_page: 1
 
 
     <% if paginate && num_pages > 1%>
-      <div class="text-center">
+      <div class="text-center" data-aos="fade">
         <div class="btn-group" role="group">
           <a class="btn btn-primary <% unless prev_page %>disabled<% end %>" href="<% if prev_page %><%= url_for prev_page %><% else %>#<% end %>">Previous</a>
           <a class="btn btn-primary <% unless next_page %>disabled<% end %>" href="<% if next_page %><%= url_for next_page %><% else %>#<% end %>">Next</a>
@@ -34,7 +34,7 @@ per_page: 1
   </div>
 </div>
 
-<div class="content-block content-block-gray-100 text-center">
+<div class="content-block content-block-gray-100 text-center" data-aos="fade">
   <div class="container container-xs">
     <h4 class="title mb-1">Your feedback is important to us!</h4>
     <p>Join the Solidus user testing mailing list to share your opinions and participate in user testing. </p>
