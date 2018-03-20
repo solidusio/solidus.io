@@ -6,8 +6,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="apple-touch-icon" href='assets/images/favicon/apple-touch-icon.png'>
-  <link rel="shortcut icon" type="image/x-icon" href='assets/images/favicon/favicon.ico'>
+  <link rel="apple-touch-icon" href='/assets/images/favicon/apple-touch-icon.png'>
+  <link rel="shortcut icon" type="image/x-icon" href='/assets/images/favicon/favicon.ico'>
 
   <title><%= current_article.title unless current_article.nil? %> - Solidus</title>
   <%= stylesheet_link_tag "site" %>
@@ -27,7 +27,14 @@
   </div>
 
   <div class="content-block text-center">
-    tweet share
+    <div class="social-plugins-block">
+      <div class="social-btn">
+        <a class="twitter-share-button" href="https://twitter.com/share" data-text="<%= current_page.data.title %>" data-url="<%= config.base_url %><%= current_page.url %>" data-hashtags="solidus">Tweet</a>
+      </div>
+      <div class="social-btn">
+        <div class="fb-share-button" data-href="<%= config.base_url %><%= current_page.url %>" data-layout="button" data-size="small" data-mobile-iframe="true">Share</div>
+      </div>
+    </div>
   </div>
 
   <div class="content-block content-block-gray-100 text-center">
@@ -53,5 +60,28 @@
 
 <%= javascript_include_tag "vendor" %>
 <%= javascript_include_tag "common" %>
+
+<!--Social scrtipts-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  t._e = [];
+  t.ready = function(f) { t._e.push(f); };
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 </body>
 </html>

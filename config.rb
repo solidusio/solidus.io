@@ -6,6 +6,7 @@ page "/404.html", directory_index: false
 set :css_dir, "assets/stylesheets"
 set :images_dir, "assets/images"
 set :js_dir, "assets/javascripts"
+set :base_url, build? ? "https://solidus.io" : "http://localhost:4567"
 
 activate :blog do |blog|
   blog.layout = 'blog'

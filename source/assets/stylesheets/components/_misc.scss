@@ -146,3 +146,14 @@
     @include respond-to(360px){ font-size: $h5-font-size; }
   }
 }
+
+.social-plugins-block{
+  .social-btn{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .fb-share-button{
+    > span{ vertical-align: top !important; }
+  }
+}
