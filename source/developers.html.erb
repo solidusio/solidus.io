@@ -7,7 +7,7 @@ title: Developers
     <h1 class="title">You’re going to <%= inline_svg("icons/heart-big.svg", class: "isvg")%> this.</h1>
     <p class="lead mb-md-6">Solidus is an open source ecommerce solution built with Ruby on Rails and maintained by a community of passionate developers. Here’s everything you’ll need to start creating your own online store.</p>
     <div class="btns-wrapper">
-      <a class="btn btn-primary btn-w-icon" href="#" target="_blank"><%= inline_svg("social-icons/slack.svg", class: "isvg") %> <span class="text">Join our Slack</span></a>
+      <a class="btn btn-primary btn-w-icon" href="http://slack.solidus.io/" target="_blank"><%= inline_svg("social-icons/slack.svg", class: "isvg") %> <span class="text">Join our Slack</span></a>
       <br class="d-md-none">
       <a class="btn btn-outline-secondary" href="#">Read our Docs</a>
     </div>
@@ -47,7 +47,7 @@ title: Developers
               <p>Software Developer<br> Stembolt</p>
               <ul class="links list-unstyled">
                 <li>
-                  <a href="#" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>jhawthorn</strong></a>
+                  <a href="https://github.com/jhawthorn" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>jhawthorn</strong></a>
                 </li>
               </ul>
             </div>
@@ -74,7 +74,7 @@ title: Developers
               <p>Software Developer<br> Wonderbly</p>
               <ul class="links list-unstyled">
                 <li>
-                  <a href="#" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>jordan-brough</strong></a>
+                  <a href="https://github.com/jordan-brough" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>jordan-brough</strong></a>
                 </li>
               </ul>
             </div>
@@ -101,7 +101,7 @@ title: Developers
               <p>Co Founder & Developer <br> Stembolt</p>
               <ul class="links list-unstyled">
                 <li>
-                  <a href="#" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>cbrunsdon</strong></a>
+                  <a href="https://github.com/cbrunsdon" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>cbrunsdon</strong></a>
                 </li>
               </ul>
             </div>
@@ -128,7 +128,7 @@ title: Developers
               <p>Co-Founder & Developer <br> Nebulab</p>
               <ul class="links list-unstyled">
                 <li>
-                  <a href="#" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>kennyadsl</strong></a>
+                  <a href="https://github.com/kennyadsl" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>kennyadsl</strong></a>
                 </li>
               </ul>
             </div>
@@ -155,7 +155,7 @@ title: Developers
               <p>Software Developer <br> Stembolt</p>
               <ul class="links list-unstyled">
                 <li>
-                  <a href="#" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>gmacdougall</strong></a>
+                  <a href="https://github.com/gmacdougall" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>gmacdougall</strong></a>
                 </li>
               </ul>
             </div>
@@ -182,7 +182,7 @@ title: Developers
               <p>CEO and Software Developer <br> Stembolt Europe</p>
               <ul class="links list-unstyled">
                 <li>
-                  <a href="#" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>mamhoff</strong></a>
+                  <a href="https://github.com/mamhoff" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>mamhoff</strong></a>
                 </li>
               </ul>
             </div>
@@ -209,7 +209,7 @@ title: Developers
               <p>Managing Partner and CTO <br> Stembolt Europe</p>
               <ul class="links list-unstyled">
                 <li>
-                  <a href="#" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>tvdeyen</strong></a>
+                  <a href="https://github.com/tvdeyen" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <strong>tvdeyen</strong></a>
                 </li>
               </ul>
             </div>
@@ -226,27 +226,6 @@ title: Developers
   </div>
 </div>
 
-<div class="content-block content-block-gray-100 text-center" data-aos="fade">
-  <div class="container container-xs">
-    <h4 class="title mb-1">Your feedback is important to us!</h4>
-    <p>Join the Solidus user testing mailing list to share your opinions and participate in user testing. </p>
+<%= partial "partials/feedback" %>
 
-    <form action="" class="needs-validation" novalidate>
-      <div class="form-group form-group-submittable">
-        <div class="has-float-label">
-          <input type="email" class="form-control " name="inputName" id="inputName" placeholder="Email" required>
-          <label for="inputName">Email</label>
-          <div class="invalid-feedback">Please enter correct email</div>
-          <button type="submit" class="btn btn-link"><%= inline_svg("icons/arrow-right.svg", class: "isvg") %></button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-
-<div class="content-block text-center" data-aos="fade">
-  <div class="container">
-    <h2 class="title mb-4">Have a question? Ask the community.</h2>
-    <a class="btn btn-primary btn-w-icon" href="#" target="_blank"><%= inline_svg("social-icons/slack.svg", class: "isvg") %> <span class="text">Join our Slack</span></a>
-  </div>
-</div>
+<%= partial "partials/community_block" %>
