@@ -23,4 +23,4 @@ Usage
 
         $ bundle exec middleman build
         
-        
+5. Set proper `base_url` in config.rb         
