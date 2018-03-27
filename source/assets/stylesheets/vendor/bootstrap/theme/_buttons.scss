@@ -1,5 +1,12 @@
 .btn-primary {
-  @include button-variant($primary, $primary, $primary, $primary, $blue-darker, $blue-darker);
+  @include button-variant($primary, $primary, #ffffff, $primary, $primary, #ffffff, $blue-darker, $blue-darker, #ffffff);
+}
+
+.btn-white{
+  @include button-variant(#ffffff, #ffffff, $blue, $active-background: #ffffff, $active-border: #ffffff, $hover-color: $blue, $active-color: $blue);
+  @include hover {
+    box-shadow: 0 0 4px 0 rgba(#ffffff, 0.66);
+  }
 }
 
 
