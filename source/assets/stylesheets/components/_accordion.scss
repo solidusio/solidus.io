@@ -12,6 +12,7 @@
     margin-bottom: 0;
 
     a{
+      color: $body-color;
       display: block;
       padding: 16px 32px 16px 0;
       position: relative;
@@ -37,7 +38,8 @@
 
   .content{
     > .row{
-      padding-top: 24px;
+      padding-top: 8px;
+      @include media-breakpoint-up(lg){ padding-top: 0; }
     }
   }
 }
