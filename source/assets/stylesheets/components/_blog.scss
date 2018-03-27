@@ -5,6 +5,10 @@
   .container{
     max-width: 550px + $grid-gutter-width;
   }
+
+  .blog-pagination{
+    margin-top: 80px;
+  }
 }
 
 .blog-post-preview{

@@ -17,13 +17,13 @@
     color: $hover-color;
     @include gradient-bg($hover-background);
     border-color: $hover-border;
-    box-shadow: 0 0 4px 0 rgba(#000000, 0.66);
+    box-shadow: 0 0 4px 0 rgba(#000000, 0.4);
   }
 
   &:focus,
   &.focus {
     // Avoid using mixin so we can pass custom focus shadow properly
-    box-shadow: 0 0 4px 0 rgba(#000000, 0.66);
+    box-shadow: 0 0 4px 0 rgba(#000000, 0.4);
   }
 
   // Disabled comes first so active can properly restyle
