@@ -26,6 +26,12 @@
     flex-grow: 2;
   }
 
+  .name{
+    @include media-breakpoint-up(md){
+      font-size: 1.5rem;
+    }
+  }
+
   .links{
     font-size: $font-size-base;
     margin-top: auto;

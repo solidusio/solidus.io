@@ -43,10 +43,6 @@
     transition-duration: .3s;
   }
 
-  .form-control::placeholder {
-
-  }
-
   label{
     background: transparent;
     color: $input-placeholder-color;
@@ -62,7 +58,7 @@
     top: 1px;
     white-space: nowrap;
     width: calc(100% - 2px);
-    z-index: 1;
+    z-index: 2;
   }
 
   .form-control {
@@ -70,7 +66,7 @@
     z-index: 2;
 
     &:not(:placeholder-shown), &:focus{
-      background: transparent;
+      background: $input-bg;
       padding-top: 25px;
       padding-bottom: 7px;
 
@@ -80,6 +76,7 @@
         background: #ffffff;
         font-size: 12px;
         padding-top: 8px;
+
       }
     }
   }
