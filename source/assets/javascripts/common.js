@@ -66,6 +66,8 @@ $(function () {
   //Fade in blocks on scroll
   AOS.init({
     once: true,
-    duration: 600
+    offset: 200,
+    duration: 600,
+    easing: "ease-in-quart"
   });
 });

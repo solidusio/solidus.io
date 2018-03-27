@@ -2,10 +2,11 @@
   @include button-variant($primary, $primary, $primary, $primary, $blue-darker, $blue-darker);
 }
 
-.btn-outline-secondary{
-  @include button-outline-variant( $primary, rgba(#24282f, 0.11), #ffffff, rgba(#24282f, 0.08), $blue-darker);
 
-  border-color: rgba(#24282f, 0.08);
+.btn-outline-secondary{
+  @include button-outline-variant( $blue, $blue-darker, #ffffff, $blue-darker, $blue-darker);
+
+  border-color: $blue;
 }
 
 .btn-w-icon{

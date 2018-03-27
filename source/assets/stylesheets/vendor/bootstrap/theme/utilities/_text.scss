@@ -15,3 +15,5 @@ a.text-white {
 @include text-emphasis-variant(".text-gray-600", $gray-600);
 @include text-emphasis-variant(".text-gray-700", $gray-700);
 @include text-emphasis-variant(".text-gray", $gray-900, $blue);
+
+@include text-emphasis-variant(".text-teal", #41bfba);

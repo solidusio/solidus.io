@@ -79,12 +79,29 @@ h6, .h6 {
     font-style: normal;
     text-align: left;
     max-width: 100%;
+    white-space: nowrap;
 
-    img{ margin-right: $spacer; }
+    .img-circled, .text{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .text{
+      white-space: normal;
+      max-width: calc(100% - 64px);
+    }
+
+    .img-circled{ margin-right: $spacer; }
   }
 }
 
 // Lists
 ol, ul{
   padding-left: 30px;
+
+  li{
+    margin-bottom: 10px;
+
+    &:last-child{ margin-bottom: 0; }
+  }
 }
