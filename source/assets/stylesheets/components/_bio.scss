@@ -1,5 +1,5 @@
 .bio-block{
-  margin: 0 auto 40px;
+  margin: 0 auto 3rem;
   max-width: 480px;
 
   &:last-child{ margin-bottom: 0; }
@@ -40,8 +40,10 @@
   }
 
   @include media-breakpoint-up(md){
-    margin-bottom: 56px;
+    margin-bottom: 3.5rem;
     max-width: none;
+
+    .card{ margin-bottom: 0; }
   }
 
   @include media-breakpoint-up(lg){

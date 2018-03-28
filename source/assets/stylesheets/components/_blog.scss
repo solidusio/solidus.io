@@ -12,15 +12,18 @@
 }
 
 .blog-post-preview{
+  display: block;
   border-radius: 0;
   box-shadow: none;
   margin-bottom: 24px;
+  color: $body-color !important;
 
   &:last-child{ margin-bottom: 0; }
 
   .card-body{ padding: 24px; }
 
   .title{
+    transition: all ease 0.3s;
     font-size: 22px;
     margin-bottom: 8px;
   }
@@ -29,9 +32,17 @@
     font-size: inherit !important;
     line-height: inherit !important;
   }
+
+  &:hover{
+    border-color: $gray-400;
+    color: $gray-900 !important;
+    .title{ color: $link-hover-color; }
+    .blog-post-author{ color: $gray-08 !important; }
+  }
 }
 
 .blog-post-author{
+  transition: all ease 0.3s;
   font-size: $font-size-sm;
 }
 
