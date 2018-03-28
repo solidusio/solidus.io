@@ -10,7 +10,6 @@
     .isvg{
       display: block;
       margin: 0 0 auto;
-      width: 66px;
 
       @include media-breakpoint-down(md){
         .menu-open &{ .inherit-fill{ fill: #ffffff; } }
