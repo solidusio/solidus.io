@@ -38,6 +38,22 @@
   }
 }
 
+//Price calculation block
+.calculator-block{
+  .block-content{
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .title{
+      font-size: $h2-font-size;
+    }
+
+    @include media-breakpoint-up(md){ max-width: none; }
+  }
+}
+
+
 //Contact form wrapper
 .contact-block{
   max-width: 485px;
@@ -47,8 +63,6 @@
 //Features hero banner
 .features-hero{
   padding-bottom: 40px;
-
-
 }
 
 //Features main block
