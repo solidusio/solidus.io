@@ -70,4 +70,5 @@ $(function () {
     duration: 600,
     easing: "ease-in-quart"
   });
+
 });

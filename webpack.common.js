@@ -8,6 +8,7 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
   //Entry points(js, scss files)
   entry: {
+    "extensions": './source/assets/javascripts/extensions.js',
     "common": './source/assets/javascripts/common.js',
     "site": './source/assets/stylesheets/site.scss',
     "vendor": ["jquery", "bootstrap"],
@@ -70,10 +71,6 @@ module.exports = {
       Popper: ['popper.js', 'default'],
       headroom: 'headroom.js'
     }),
-    new CopyWebpackPlugin([
-      {from: __dirname + '/source/assets/images', to: __dirname + '/.tmp/assets/images'},
-      {from: __dirname + '/source/assets/javascripts/modernizr.js', to: __dirname + '/.tmp/assets/javascripts/modernizr.js'}
-    ]),
     new ExtractTextPlugin({ // define where to save the file
       filename: '../stylesheets/site.css',
       allChunks: true,
@@ -87,6 +84,10 @@ module.exports = {
       // (with more entries, this ensures that no other module
       //  goes into the vendor chunk)
     }),
+    new CopyWebpackPlugin([
+      {from: __dirname + '/source/assets/javascripts/vendor', to: __dirname + '/.tmp/assets/javascripts'},
+      {from: __dirname + '/source/assets/images', to: __dirname + '/.tmp/assets/images'}
+    ]),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')
     })

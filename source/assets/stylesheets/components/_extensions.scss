@@ -68,6 +68,8 @@
 
       .collapse{ display: block !important; }
     }
+
+    &.empty{ display: none; }
   }
 
   .extensions{
@@ -133,4 +135,7 @@
     font-weight: $font-weight-bolder;
   }
 
+  &.deselected{
+    display: none;
+  }
 }
