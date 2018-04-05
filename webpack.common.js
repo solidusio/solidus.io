@@ -40,7 +40,9 @@ module.exports = {
               loader: 'postcss-loader',
               options: {
                 plugins: [
-                  autoprefixer()
+                  autoprefixer({
+                    // grid: true
+                  })
                 ],
                 sourceMap: true
               }
@@ -69,7 +71,8 @@ module.exports = {
       headroom: 'headroom.js'
     }),
     new CopyWebpackPlugin([
-      {from: __dirname + '/source/assets/images', to: __dirname + '/.tmp/assets/images'}
+      {from: __dirname + '/source/assets/images', to: __dirname + '/.tmp/assets/images'},
+      {from: __dirname + '/source/assets/javascripts/modernizr.js', to: __dirname + '/.tmp/assets/javascripts/modernizr.js'}
     ]),
     new ExtractTextPlugin({ // define where to save the file
       filename: '../stylesheets/site.css',

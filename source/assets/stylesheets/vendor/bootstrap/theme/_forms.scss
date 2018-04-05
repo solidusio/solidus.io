@@ -123,3 +123,33 @@
 .invalid-feedback, .valid-feedback{
   text-align: left;
 }
+
+/* Custom checkboxes
+<div class="form-check form-check-custom">
+<input type="checkbox" class="form-check-input" id="filter-customer">
+<%= inline_svg("icons/checkbox.svg", class: "isvg") %>
+<label class="form-check-label" for="filter-customer">Customer-Facing</label>
+</div>
+ */
+.form-check-custom{
+  padding-left: 27px;
+
+  input[type="checkbox"] { opacity: 0; }
+
+  label {
+    position: relative;
+    font-weight: $font-weight-bold;
+  }
+
+  .isvg{
+    position: absolute;
+    left: -27px;
+    top: 7px
+  }
+
+  /*Checked state*/
+  input[type="checkbox"]:checked + label .isvg .inherit-fill {
+    fill: $blue;
+    opacity: 1;
+  }
+}

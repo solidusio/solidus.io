@@ -2,6 +2,7 @@
 .social-links{
   @extend .list-inline;
   margin-bottom: 0;
+  white-space: nowrap;
 
   a{
     display: inline-block;

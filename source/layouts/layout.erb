@@ -11,10 +11,7 @@
 
   <title><%= current_page.data.title || "Middleman" %></title>
 
-  <script type="text/javascript" charset="utf-8">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
+  <%= javascript_include_tag "modernizr" %>
   <%= stylesheet_link_tag "site" %>
 </head>
 

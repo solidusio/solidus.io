@@ -11,10 +11,7 @@
 
   <title><%= current_article.title unless current_article.nil? %> - Solidus</title>
 
-  <script type="text/javascript" charset="utf-8">
-    document.documentElement.classList.remove('no-js');
-    document.documentElement.classList.add('js');
-  </script>
+  <%= javascript_include_tag "modernizr" %>
   <%= stylesheet_link_tag "site" %>
 </head>
 

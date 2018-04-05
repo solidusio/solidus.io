@@ -18,7 +18,7 @@
   }
 
   .logo-wrapper, .navbar-right{
-    width: 30%;
+    width: 25%;
     flex-shrink: 0;
   }
 
@@ -111,7 +111,7 @@
     @include list-unstyled;
     align-items: center;
     display: flex;
-    width: 40%;
+    width: 50%;
     height: auto;
     flex-shrink: 0;
     font-size: $font-size-md;
