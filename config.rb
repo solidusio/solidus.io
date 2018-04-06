@@ -40,9 +40,15 @@ activate :external_pipeline,
          source: ".tmp",
          latency: 1
 
+configure :development do
+  config[:contact_url] = "http://localhost:4567/contact"
+end
+
 configure :build do
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash
+
+  config[:contact_url] = "https://formspree.io/xywvpjlx"
 
   ignore "2012-01-01-example-article.html.markdown"
   ignore "assets/javascripts/common.js"
