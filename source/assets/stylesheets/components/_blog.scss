@@ -78,4 +78,10 @@
 
     @include media-breakpoint-up(lg){ font-size: 22px; }
   }
+
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
 }
