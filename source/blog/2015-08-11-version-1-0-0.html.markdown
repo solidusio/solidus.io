@@ -1,0 +1,202 @@
+---
+title: Version 1.0.0
+date: 2015-08-11
+tags: release
+author: John Hawthorn
+---
+
+<a class="button" href="https://github.com/solidusio/solidus/tree/v1.0">github</a>
+<a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/1.0.0">rubygems</a>
+
+We're happy to announce Solidus 1.0.0, an updated fork of Spree 2.4 spearheaded by the developers at [Bonobos](https://bonobos.com) and [FreeRunning Technologies](https://freerunningtech.com).
+
+These changes mostly came from the needs of running a large store like [Bonobos](https://bonobos.com) and [AYR](https://ayr.com/). Changes include refund and cancellation overhaul, performance fixes, customer service enhancements, changes for fulfilment, and many fixes. The downside is that this is a large set of changes. We didn't release 1.0 early but we hope for our future versions to be released often.
+
+We intend this to be a direct upgrade for Spree 2.4 (or earlier) users. We've also tweaked the Spree 2.2 → 2.3 → 2.4 migrations to be faster and more correct. A future version, likely 1.1.0, will provide an upgrade path for users on spree 3.0.
+
+
+## Major Changes
+
+* **Rails 4.2**
+
+  We've upgraded to rails 4.2. Notably this includes ActiveJob, asynchronous emails, and ActiveRecord performance improvements.
+
+  See the [rails 4.2 release notes](http://guides.rubyonrails.org/4_2_release_notes.html)
+
+* **Solidus**
+
+  Gems have all been renamed solidus: `solidus`, `solidus_api`, `solidus_backend`, `solidus_core`, `solidus_frontend`. Branding and some sample data has been changed. We will continue using the `Spree::` namespace.
+
+* **SSL configuration removed**
+
+  Previously SSL was enforced by Spree at the controller level by declaring either `ssl_required` or `ssl_allowed`, which checked several Spree::Config options to determine if SSL should be used in this environment and if the HTTPS request should be redirected to plain HTTP.
+
+  It is now expected that the entire store has SSL enforced. This is to be handled either by Rails, the web server, or the load balancer.
+
+  This can be done by setting `config.force_ssl = true` in `config/environments/production.rb`
+
+* **Order mutex for the API**
+
+  Previously, concurrent requests to the API could put the order into an inconsistent state. Now, concurrent requests to the API will return HTTP 409 "Conflict".
+
+* **Explicit order complete + confirmation always required**
+
+  Previously `order.next` was used to advance an order through the order checkout states and to ultimately complete the order. This made it easy to complete the order unintentionally through the admin or when using the API. This is now changed so that an explicit call to `order.complete` is required to complete the order. To facilitate this the `confirm` state is now always required.
+
+  The API's `advance` route will now move the order to the 'confirm' state. The `next` action will continue to move orders from `confirm` to `complete`, but issues a deprecation warning when doing so.
+
+  The frontend checkout continues to act as before, but will always have the confirm state.
+
+* **Store credit**
+
+  We wanted to be able to include store credits with Solidus. This integrated the existing [spree_store_credit_payment_method](https://github.com/bonobos/spree_store_credit_payment_method) extension.
+
+  This allows assigning an amount of store credit to a user and allow them to pay using those funds.
+
+* **Cartons**
+
+  When physically shipping items to a customer, multiple orders to the same customer may be combined into one package. A single shipment (as seen and paid for by customer) may end up split into multiple packages with different tracking numbers (due to sizing restrictions, for example). To better represent this, we've created the cartons model, which is intended to accurately represent the physical shipment (likely with a tracking number) which was sent out.
+
+  This should allow more robust integration with some third party logistics providers and help stores with complex shipping needs. In simple stores this addition will be transparent. For most stores, this change should be transparent. Shipping a shipment will create a 1:1 carton.
+
+* **Stock Transfer Improvements**
+
+  We added a whole lot of improvements to the stock transfer feature set, including improved admin for which stock locations the inventory is being transferred between, automatic stock quantity handling, better product search, more data capture, and blind receiving of stock transfers at the warehouse to promote assurance of correct product received.
+
+* **New stock management interface**
+
+  Stock can now be managed at a per-stock-location level in addition to a per-product level. Additionally, it is far easier to search for and filter products, as well as change stock quantities at specific stock locations. Restrictions can also be put in place to only allow certain users to access or manage certain stock locations.
+
+* **Multiple codes on a promotion**
+
+  A single promotion can now have many unique codes. Previous versions only allowed a single code per promotion. This allows reusing promotion rules and actions without having to duplicate the promotion. Each individual code has it's own usage limit and is dynamically generated with a user specified prefix. (e.g. `base_owgklx`)
+
+* **Adjustment Reasons**
+
+  Adjustment Reasons are categorizations of why an adjustment occurred. This can help with data reporting, accounting, and business intelligence around why adjustments are occurring to orders.
+
+* **Return reasons**
+
+  Similar to Adjustment Reasons, Return Reasons provide an extra level of information around why returns occur.
+
+* **Item Cancellations**
+
+  There are times when orders are unable to be completely fulfilled, or where the customer changes their mind about receiving a product. For this purpose, Item Cancellations were introduced, which can adjust order totals before a shipment occurs, and even change the amount that you use to calculate tax or to charge with your payment provider if you capture payment at dispatch.
+
+* **OrderPromotions**
+
+  A new `OrderPromotion` model records that a promotion has been applied to an order, allowing item-level promotions to apply to line items or shipments added later to the order.
+
+* **spree_cmd/solidus_cmd removed**
+
+  Removes the `spree` command, which was an alternative way to add Spree to a new Rails app. We've removed this in favour of the normal installation generator.
+
+
+## Configuration
+
+* **Static global settings**
+
+  Spree::Config settings can now be hard-coded during initialization to avoid storing to and fetching from the database. This is recommended and the default for newly generated stores.
+
+  ``` ruby
+  # in config/initializers/solidus.rb
+  Spree.config do |config|
+    config.use_static_preferences!
+    config.currency = "USD"
+  end
+  ```
+
+* **Static gateway settings**
+
+  An interface has been added to configure credentials statically which can be referenced . This avoids storing credentials in the database and can be used to instead fetch them from ENV or from yaml.
+
+  ``` ruby
+  config.static_model_preferences.add(
+    Spree::Gateway::StripeGateway,
+    'stripe_env_credentials',
+    secret_key: ENV['STRIPE_SECRET_KEY'],
+    publishable_key: ENV['STRIPE_PUBLISHABLE_KEY'],
+    server: Rails.env.production? ? 'production' : 'test',
+    test: !Rails.env.production?
+  )
+  ```
+
+
+* **Configurable permissions for roles**
+
+  Permissions have been grouped together into components, and can be tied to database roles without needing to override the Cancancan ability.
+
+  ```ruby
+  Spree::RoleConfiguration.configure do |config|
+    config.assign_permissions :customer_service, [
+      Spree::PermissionSets::OrderDisplay,
+      Spree::PermissionSets::UserDisplay,
+      Spree::PermissionSets::ProductDisplay
+    ]
+  end
+  ```
+
+
+## API
+
+* **API::Base now rescues `StandardError` instead of `Exception`**
+
+  Exceptions should rarely be rescued, Jon Yurek has [an excellent explanation of StandardError](https://robots.thoughtbot.com/rescue-standarderror-not-exception) on the thoughtbot blog. In the future we'd like to remove this catch-all rescue entirely.
+
+* **Spree.ajax**
+
+  In JavaScript we've added the `Spree.ajax` method, which behaves similarly to `jQuery.ajax`, but handles the detail of setting the `X-Spree-Token` header.
+
+## Backend
+
+* **Spree alerts have removed**
+
+  Spree alerts was a system which queried an external service on all API pages in order to deliver security updates or other news. This was a bad unneeded system which had a habit of breaking the entire admin.
+
+  We recommend subscribing to the [solidus-security mailing list](https://groups.google.com/forum/#!forum/solidus-security).
+
+* **Currency configuration removed**
+
+  Previously `Spree::Config` held several settings to control how monetary amounts were displayed. These had incorrect defaults for many currencies and had a sizeable performance impact.
+
+  This has been removed in favour of using the [RubyMoney](https://github.com/RubyMoney/money) defaults.
+
+* **Improved authorization checks**
+
+  In conjunction with the configurable role permissions, we've added authorization checks around links that would require additional permissions in the admin.
+
+## Misc
+
+* Renamed `Spree::Order#considered_risky?` to `Spree::Order#is_risky?`
+* Transactional emails now use the `mail_from_address` on the Store
+
+## Bugfixes
+
+* Fix JS route generation when store is not mounted at `/`
+* Fix a race condition where the wrong states would be displayed for the selected country
+* Fix load order issues related to `Spree.user_class`
+* Fix load order issue related to StateMachine defined methods
+* Fix promotion usage being counted incorrectly when applying line item adjustments
+* Many others
+
+## Cleanup
+
+* Improved YARD documentation: [http://docs.solidus.io/](http://docs.solidus.io/)
+* Removed unused JS components from admin
+* Removed CSS "hacks" directory
+* [UserMethods](https://github.com/solidusio/solidus/pull/153) module instead of `class_eval`
+* [Spree::DisplayMoney#money_methods](http://docs.solidus.io/Spree/DisplayMoney.html#money_methods-instance_method)
+* [Unauthorized redirect override](https://github.com/solidusio/solidus/pull/179) without class_eval
+
+## Housekeeping
+
+We've made some changes that make developing Solidus a better experience, but don't directly affect stores using it.
+
+* Replaced many rake tasks with simpler versions
+* More stable spec suite
+* Specs run with `--order=random` by default
+* Removed `rspec-retry`: if we have race conditions, we'd like to fix them
+
+---
+
+![](http://38.media.tumblr.com/e517178a30708f8ed6ab2d4858e1ac86/tumblr_n3860pIfPj1trbh6do1_400.gif)

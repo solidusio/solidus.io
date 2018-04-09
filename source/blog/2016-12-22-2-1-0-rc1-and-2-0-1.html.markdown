@@ -1,0 +1,21 @@
+---
+title: Solidus 2.1.0.rc1 and 2.0.1
+tags: release
+author: John Hawthorn
+---
+
+<a class="button" href="https://github.com/solidusio/solidus/tree/v2.0">2.0 on github</a>
+<a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/2.0.1">2.0.1 on rubygems</a>
+
+<a class="button" href="https://github.com/solidusio/solidus/tree/v2.1">2.1 on github</a>
+<a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/2.1.0.rc1">2.1.0.rc1 on rubygems</a>
+
+We have two new Solidus versions: Solidus 2.0.1 and Solidus 2.1.0.rc1.
+
+Solidus 2.0.1 contains only a small fix to support the upcoming [Ruby 2.4.0](https://www.ruby-lang.org/en/news/2016/12/12/ruby-2-4-0-rc1-released/), which Matz usually [wraps under the tree with care](https://blog.heroku.com/ruby-2-3-0-on-heroku-with-matz#ruby-releases-happen-every-year-on-christmas-day-why-christmas). The recently released [Rails 5.0.1](http://weblog.rubyonrails.org/2016/12/21/Rails-5-0-1-has-been-released/) is required for ruby 2.4.0.
+
+Solidus 2.1.0.rc1 will become Solidus 2.1.0 if there aren't major issues.
+
+You can read more about both on the [github releases page](https://github.com/solidusio/solidus/releases).
+
+We'll be back in the new year to release Solidus 2.1.0 final. Until then, happy holidays and a happy new year.

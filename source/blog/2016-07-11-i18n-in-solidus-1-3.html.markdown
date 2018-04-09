@@ -1,0 +1,130 @@
+---
+title: Internationalization in Solidus 1.3
+tags: release
+author: Martin Meyerhoff
+---
+
+<a class="button" href="https://github.com/solidusio/solidus/tree/v1.3">github</a>
+<a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/1.3.0">rubygems</a>
+
+# Internationalizing Solidus: Pricing, Taxes and Translations
+
+Historically, Spree and Solidus have been very much geared towards the US-American market. At [bitspire](https://www.bitspire.de/en), we make e-commerce sites for both the United States and our home European markets. When building these projects, we often ran into localization and internationalization issues that were difficult to cope with.
+
+In this blog post, I want to talk about three areas that we have improved massively in Solidus 1.3:
+
+* Internationalization
+* Support for Value Added Tax
+* More flexible Pricing
+
+## Internationalization
+
+Much of the Solidus backend and frontend views use Rails' i18n functionality. So, instead of just writing an English-language string into the view, there would be a call to Rails' `t` helper with a symbol, that would then look up the string for the current locale in some kind of datastore. Great! However, one symbol can not always transmit the necessary context for a word.
+
+One example is the English word "state": It can mean a region in a country or the status of an order. In German, we use two different words for that: "Bundesland" (the region) and "Status" (the, well, state). Because Solidus' translations were not scoped in the past, we would end up with a "Bundesland" column in the orders index table. This was incredibly confusing to users, and really hard to fix in a client app as it meant that just for this minor change, we'd have to override frontend and backend views as well as Solidus' core translations.
+
+In November last year, core team member [Thomas von Deyen](https://github.com/tvdeyen) [started working on fixing this](https://github.com/solidusio/solidus/pull/549), but got a bit side-tracked. After that, Stembolt's [Murphy](https://github.com/Murph33) went through [the arduous task of replacing all model names and attributes](https://github.com/solidusio/solidus/issues/735) with proper ActiveRecord attribute translations, providing the much-needed namespacing that now allows us to provide the proper words for things in other languages than English.
+
+We're not done yet though: Many languages still don't have their translation keys updated in the [Solidus i18n repo](https://github.com/solidusio-contrib/solidus_i18n). [Luuk](https://github.com/luukveenis) from [Stembolt](https://stembolt.com/) has created a script to update the keys, but many languages still need some love from a native speaker. Come up and pull request! The Solidus community will thank you for it.
+
+## Support for Value Added Tax
+
+In Europe (and almost all countries outside the United States), the consumption tax is included in the price shown to the User. This means that the price shown to the user has to change when the consumption tax changes for a particular user.
+
+For example, whenever a German store would export an item, the price for that item would be reduced by 19% (because VAT does not apply in international trade.)
+
+In the past, Solidus' support for VAT worked by assuming that all prices have the store's home VAT included, and would add a negative Adjustment to every line item when the order was exported to somewhere without VAT.
+
+In the beginning of 2015, the EU came up with the MOSS regulation, in which digital products have different VAT for every single EU country - and thus, a different price for every country in the EU. It was at this point that Spree/Solidus' VAT support fell apart entirely, and we had to think of something new to cope with this.
+
+We built support for MOSS taxation for Spree 3.0 (recently released as 3.1), and did it again for Solidus. However, the way we went about it is radically different: While in Spree, the taxation system will calculate a line item's price on-the-fly, in Solidus, the prices for each country are calculated when updating its price in the backend.
+
+Thus, Solidus 1.3 brings about a rather large change in which every variant can have many prices for different countries, and Solidus will display and use the correct price from whenever it knows the current user's shipping country.
+
+Previous versions already had support for different prices by currency, posing the additional challenge of how to deal with the price being determined by several factors (country and currency).
+
+In order to accomodate this, we extended Solidus with a price selecting mechanism that accepts a `PricingOptions` object containing all the things that determine which price to choose.
+
+If you want to know more about the motivations and architectural decisions involved in the VAT refactoring that has made Solidus 1.3 such a big step forward for European merchants, watch [Martin's SolidusConf 2016 talk](https://www.youtube.com/watch?list=PLQNruX2oZ7ZHF2ElDFL_CTerqnTY5cmpo&v=BRnY-BidYRM).
+
+## More Flexible Pricing
+
+The price selecting mechanism initially built for better support of VAT can be extended rather easily to also accomodate different pricing by user role (wholesale customers) or by line item quantity (bulk discounts without having to use promotions) or by time period (summer sale!). The way it works is by adding a field to the `spree_prices` table, and then subclassing `Spree::Variant::PriceSelector` and `Spree::Variant::PricingOptions` to find the right price.
+
+This flexibility removes the need for Gems like the very complex `spree_price_books` or `spree_price_lists` for a very large number of cases.
+
+## Upgrade Guide
+
+In order to upgrade to Solidus 1.3, a couple of steps will have to be taken.
+
+### Update the Gem
+
+First, upgrade the Solidus version in your Gemfile:
+
+```ruby
+# Gemfile
+
+gem 'solidus', "~> 1.3.0"
+```
+
+Then, update Solidus, but not any other Gem if possible:
+
+```sh
+bundle update --source solidus
+```
+
+### Install Migrations
+
+Install and run the migrations for version 1.3. This will install a lot of migrations. [Have a look at the Changelog](http://solidus.io/blog/2016/06/22/version-1-3-0.html) to get a good overview of what changes are in here.
+
+```sh
+rake spree:install:migrations
+rake db:migrate
+```
+
+If the migrations don't work for you for some reason, absolutely tell us. They should provide helpful errors in case anything goes wrong.
+
+### Run upgrader tasks
+
+As a final step, run the upgrader rake tasks. These tasks will need to be run exactly once. Don't forget to test run with a clone of your production database, so that things do not go wrong when deploying!
+
+#### Migrate Shipping Rate Taxes
+
+This task is necessary for all users. It will run over all historical shipping rates and generate newly persisted the shipping rate estimations for past orders. This will not affect the tax totals or adjustments on shipments, but it will affect how shipping rate tax estimations are displayed on the shipping rate selection page (when the order is in `shipping` state).
+
+```sh
+rake solidus:migrations:migrate_shipping_rate_taxes:up
+```
+
+### Create VAT Prices
+
+This task is only necessary if you have value added tax configured. It will create a plethora (`variants * (countries_with_vat + 1) * currencies`) of price objects.
+
+This migration will remove the default VAT zone, as it is no longer necessary (actually harmful) with the new VAT system.
+
+```sh
+rake solidus:migrations:create_vat_prices:up
+```
+
+Both of these tasks should be idempotent, but still: Make sure to only run them once. Don't forget to test them on a clone of your production database before you deploy.
+
+### Do It All At Once
+
+You can run the aforementioned tasks also as one combined task:
+
+```sh
+rake solidus:upgrade:one_point_three
+```
+
+If you run into trouble upgrading, please open an issue on Github or poke us on Slack. We want you to have an easy time with this upgrade, even though it's a biggie.
+
+## Conclusion
+
+Solidus 1.3 is a large release that tackles many issues that have been plagueing international Solidus users. We've drastically improved the use of Rails' `i18n` subsystem to provide context for translation strings, and we've added an elegant system for selecting and administering prices for different countries and currencies. This system can be easily extended to cover a multitude of use cases that required difficult-to-maintain customizations in the past.
+
+We hope these improvements increase adoption of the platform within and outside the United States, as these changes improve the customizability of the core platform for all users.
+
+
+## Outlook
+
+For the next versions, we're looking at improving the support for non-credit-card payment sources as well as further abstracting Solidus' taxation system for easier integration of external services (a much-needed feature, actually, for merchants based in the United States).
