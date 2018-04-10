@@ -44,6 +44,7 @@ configure :build do
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash
 
+  ignore "2012-01-01-example-article.html.markdown"
   ignore "assets/javascripts/common.js"
   ignore "assets/stylesheets/site"
 end
