@@ -1,0 +1,173 @@
+---
+title: Solidus 2.1.0
+tags: release
+author: John Hawthorn
+---
+
+<a class="button" href="https://github.com/solidusio/solidus/releases/tag/v2.1.0">2.1.0 on github</a>
+<a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/2.1.0">2.1.0 on rubygems</a>
+
+I'm happy to announce the release of Solidus 2.1.0!
+
+An exciting change in this release is taxes are now always fully recalculated on an `order.update!`. `order.create_tax_charge!` is no longer required! We hope that this is simpler for developers and should help us better support external tax services in the future.
+
+Also notable in this release the removal of methods which were deprecated before Solidus 1.4. We've also extracted `solidus_prototype` and `solidus_trackers` into separate extensions.
+
+## Changelog
+
+
+*   The OrderUpdater (as used by `order.update!`) now fully updates taxes.
+
+    Previously there were two different ways taxes were calculated: a "full"
+    and a "quick" calculation. The full calculation was performed with
+    `order.create_tax_charge!` and would determine which tax rates applied and
+    add taxes to items. The "quick" calculation was performed as part of an
+    order update, and would only update the tax amounts on existing line items
+    with taxes.
+
+    Now `order.update!` will perform the full calculation every time.
+    `order.create_tax_charge!` is now deprecated and has been made equivalent
+    to `order.update!`.
+
+    [#1479](https://github.com/solidusio/solidus/pull/1479)
+
+*   `ItemAdjustments` has been merged into the `OrderUpdater`
+
+    The previous behaviour between these two classes was to iterate over each
+    item calculating promotions, taxes, and totals for each before moving on to
+    the next item. To better support external tax services, we now calculate
+    promotions for all items, followed by taxes for all items, etc.
+
+    [#1466](https://github.com/solidusio/solidus/pull/1466)
+
+*   Make frontend prices depend on `store.cart_tax_country_iso`
+
+    Prices in the frontend now depend on `store.cart_tax_country_iso` instead of `Spree::Config.admin_vat_country_iso`.
+
+    [#1605](https://github.com/solidusio/solidus/pull/1605)
+
+*   Deprecate methods related to Spree::Order#tax_zone
+
+    We're not using `Spree::Order#tax_zone`, `Spree::Zone.default_tax`,
+    `Spree::Zone.match`, or `Spree::Zone#contains?` in our code base anymore.
+    They will be removed soon. Please use `Spree::Order#tax_address`,
+    `Spree::Zone.for_address`, and `Spree::Zone.include?`, respectively,
+    instead.
+
+    [#1543](https://github.com/solidusio/solidus/pull/1543)
+
+*   Product Prototypes have been removed from Solidus itself.
+
+    The new `solidus_prototype` extension provides the existing functionality. [#1517](https://github.com/solidusio/solidus/pull/1517)
+
+*   Analytics trackers have been removed from Solidus itself.
+
+    The new `solidus_trackers` extension provides the existing functionality. [#1438](https://github.com/solidusio/solidus/pull/1438)
+
+*   Bootstrap row and column classes have replaced the legacy skeleton classes throughout the admin. [#1484](https://github.com/solidusio/solidus/pull/1484)
+
+*   Remove `currency` from line items.
+
+    It's no longer allowed to have line items with different currencies on the
+    same order. This makes storing the currency on line items redundant, since
+    it will always be considered the same as the order currency.
+
+    It will raise an exception if a line item with the wrong currency is added.
+
+    This change also deletes the `currency` database field (String)
+    from the `line_items` table, since it will not be used anymore.
+
+    [#1507](https://github.com/solidusio/solidus/pull/1507)
+
+*   Add `Spree::Promotion#remove_from` and `Spree::PromotionAction#remove_from`
+
+    This will allow promotions to be removed from orders and allows promotion
+    actions to define how to reverse their side effects on an order.
+
+    For now `PromotionAction` provides a default remove_from method, with a
+    deprecation warning that subclasses should define their own remove_from
+    method.
+
+    [#1451](https://github.com/solidusio/solidus/pull/1451)
+
+*   Remove `is_default` boolean from `Spree::Price` model
+
+    This boolean used to mean "the price to be used". With the new
+    pricing architecture introduced in 1.3, it is now redundant and can be
+    reduced to an order clause in the currently valid prices scope.
+
+    [#1469](https://github.com/solidusio/solidus/pull/1469)
+
+*   Remove callback `Spree::LineItem.after_create :update_tax_charge`
+
+    Any code that creates `LineItem`s outside the context of OrderContents
+    should ensure that it calls `order.update!` after doing so.
+
+    [#1463](https://github.com/solidusio/solidus/pull/1463)
+
+*   Mark `Spree::Tax::ItemAdjuster` as api-private [#1463](https://github.com/solidusio/solidus/pull/1463)
+
+*   Updated Credit Card brand server-side detection regex to support more
+    brands and MasterCard's new BIN range. [#1477](https://github.com/solidusio/solidus/pull/1477)
+
+    Note: Most stores will be using client-side detection which was updated in
+    Solidus 1.2
+
+*   `CreditCard`'s `verification_value` field is now converted to a string and
+    has whitespace removed on assignment instead of before validations.
+
+*   The `lastname` field on `Address` is now optional. [#1369](https://github.com/solidusio/solidus/pull/1369)
+
+*   The admin prices listings page now shows master and variant prices
+    seperately. This changes `@prices` to `@master_prices` and `@variant_prices` in prices_controller
+
+    [#1510](https://github.com/solidusio/solidus/pull/1510)
+
+*   Admin javascript assets are now individually `require`d using sprockets
+    directives instead of using `require_tree`. This should fix issues where
+    JS assets could not be overridden in applications. [#1613](https://github.com/solidusio/solidus/pull/1613)
+
+*   The admin has an improved image upload interface with drag and drop. [#1553](https://github.com/solidusio/solidus/pull/1553)
+
+*   PaymentMethod's `display_on` column has been replaced with `available_to_users` and `available_to_admin`.
+    The existing attributes and scopes have been deprecated.
+
+    [#1540](https://github.com/solidusio/solidus/pull/1540)
+
+*   ShippingMethod's `display_on` column has been replaced with `available_to_users`.
+    The existing attributes and scopes have been deprecated.
+
+    [#1611](https://github.com/solidusio/solidus/pull/1611)
+
+*   Added experimental Spree::Config.tax_adjuster_class
+
+    To allow easier customization of tax calculation in extensions or
+    applications.
+
+    This API is *experimental* and is likely to change in a future version.
+
+    [#1479](https://github.com/solidusio/solidus/pull/1479)
+
+*   Removals
+
+    * Removed deprecated `STYLE_image` helpers from BaseHelper [#1623](https://github.com/solidusio/solidus/pull/1623)
+
+    * Removed deprecated method `Spree::TaxRate.adjust` (not to be confused with
+      Spree::TaxRate#adjust) in favor of `Spree::Config.tax_adjuster_class`.
+
+      [#1462](https://github.com/solidusio/solidus/pull/1462)
+
+    * Removed deprecated method `Promotion#expired?` in favor of
+      `Promotion#inactive?`
+
+      [#1461](https://github.com/solidusio/solidus/pull/1461)
+
+    * Removed nested attribute helpers `generate_template`, `generate_html`,
+      and `remove_nested`. Also removes some javascript bound to selectors
+      `.remove`, `a[id*=nested]`.
+
+    * Removed `accept_alert` and `dismiss_alert` from CapybaraExt.
+      `accept_alert` is now a capybara builtin (that we were overriding) and
+      `dismiss_alert` can be replaced with `dismiss_prompt`.
+
+    * Removed deprecated delegate_belongs_to
