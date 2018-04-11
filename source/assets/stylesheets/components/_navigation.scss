@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   .site-logo{
     float: left;
@@ -37,8 +37,9 @@
   }
 
   .site-menu-toggler{
-    width: 16px;
-    height: 16px;
+    width: 48px;
+    height: 48px;
+    padding: 16px;
 
     &, .isvg{
       display: block;
