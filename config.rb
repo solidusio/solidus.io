@@ -56,6 +56,8 @@ configure :build do
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash, ignore: [%r{^blog}]
 
+  activate :minify_css
+
   config[:contact_url] = "https://formspree.io/xywvpjlx"
 
   ignore "2012-01-01-example-article.html.markdown"
