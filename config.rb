@@ -59,6 +59,4 @@ configure :build do
   config[:contact_url] = "https://formspree.io/xywvpjlx"
 
   ignore "2012-01-01-example-article.html.markdown"
-  ignore "assets/javascripts/common.js"
-  ignore "assets/stylesheets/site"
 end
