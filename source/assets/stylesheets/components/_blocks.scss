@@ -51,6 +51,10 @@
 
     @include media-breakpoint-up(md){ max-width: none; }
   }
+
+  .solidus-logo {
+    width: 100px;
+  }
 }
 
 
