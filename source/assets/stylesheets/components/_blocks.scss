@@ -145,6 +145,15 @@
       .btn{ width: 100%; }
     }
   }
+
+  .heart:hover {
+    animation: beat .75s infinite alternate;
+    transform-origin: center;
+  }
+
+  @keyframes beat {
+    to { transform: scale(1.1); }
+  }
 }
 
 .developers-springboard-block{
