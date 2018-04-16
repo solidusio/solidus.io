@@ -4,6 +4,8 @@ window.onload = function() {
 
   function addAnimation() {
     heart.classList.add('animate-heart')
+    heart.removeEventListener('animationiteration', removeAnimation);
+    heart.removeEventListener('webkitAnimationIteration', removeAnimation);
   }
 
   function removeAnimation() {
