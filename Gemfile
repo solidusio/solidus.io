@@ -5,6 +5,8 @@ gem "middleman", "~> 4.2"
 gem "oga", "~> 2.14"
 gem "nokogiri", "~>1.8.1"
 gem "middleman-blog", "~> 4.0"
+gem "middleman-s3_sync"
+gem 'mime-types'
 
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
