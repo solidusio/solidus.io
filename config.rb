@@ -58,7 +58,7 @@ configure :build do
 
   activate :minify_css
 
-  config[:contact_url] = "https://formspree.io/xywvpjlx"
+  config[:contact_url] = "https://formspree.io/modzwdlx"
 
   ignore "2012-01-01-example-article.html.markdown"
 end
