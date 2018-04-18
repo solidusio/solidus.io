@@ -82,7 +82,7 @@
   position: fixed;
   right: 0;
   text-align: center;
-  height: calc(100vh - 194px); //header height + aprox minimal footer height. no matter if sizes are not exact, footer overlaps site-nav
+  height: calc(100vh);
   z-index: $zindex-sticky;
 
   .menu-items{

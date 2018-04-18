@@ -79,12 +79,7 @@ body{
   .isvg-coffee-love{ margin-bottom: 0.5rem; }
 
   @include media-breakpoint-down(md){
-    .menu-open &{
-      position: fixed;
-      z-index: $zindex-sticky + 10;
-
-      .footer-menu{ display: none; }
-    }
+    display: none;
   }
 
   @include media-breakpoint-up(lg) {
