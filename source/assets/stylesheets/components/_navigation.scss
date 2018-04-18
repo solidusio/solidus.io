@@ -82,7 +82,7 @@
   position: fixed;
   right: 0;
   text-align: center;
-  height: calc(100vh);
+  height: calc(100vh - 64px);
   z-index: $zindex-sticky;
 
   .menu-items{
@@ -100,12 +100,11 @@
     top: 63px;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 155px; //footer height
+    padding-bottom: 32px;
 
     .menu-open &{
       display: flex;
       opacity: 1;
-      justify-content: flex-start
     }
   }
 
