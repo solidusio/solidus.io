@@ -78,7 +78,7 @@ body{
   .isvg-coffee-love{ margin-bottom: 0.5rem; }
 
   @include media-breakpoint-down(md){
-    display: none;
+    .site_footer { display: none; }
   }
 
   @include media-breakpoint-up(lg) {
