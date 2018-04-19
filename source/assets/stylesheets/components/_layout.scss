@@ -15,14 +15,14 @@ body{
   display: flex;
   font-size: 16px;
   flex-direction: column;
-  padding-top: 64px;
+  padding-top: $mobile-header-height;
   position: relative;
 
   @include media-breakpoint-down(md){
     &.menu-open{ overflow: hidden; }
   }
 
-  @include media-breakpoint-up(lg){ padding-top: 80px; }
+  @include media-breakpoint-up(lg) { padding-top: $desktop-header-height; }
 }
 
 //Sticky footer styles
@@ -35,14 +35,13 @@ body{
   background: #ffffff;
   transition: transform .3s ease-in-out;
   border-bottom: 1px solid $gray-200;
+  height: $mobile-header-height;
 
   @include media-breakpoint-down(md){
     .menu-open &{ background-color: $gray-900; }
   }
 
-  @include media-breakpoint-up(lg){
-    height: 80px;
-  }
+  @include media-breakpoint-up(lg) { height: $desktop-header-height; }
 }
 
 .site-header--fixed {

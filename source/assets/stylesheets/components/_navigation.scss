@@ -82,7 +82,7 @@
   position: fixed;
   right: 0;
   text-align: center;
-  height: calc(100vh - 64px);
+  height: calc(100vh - #{$mobile-header-height});
   z-index: $zindex-sticky;
 
   .menu-items{
