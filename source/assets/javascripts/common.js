@@ -68,7 +68,8 @@ $(function () {
     once: true,
     offset: 200,
     duration: 600,
-    easing: "ease-in-quart"
+    easing: "ease-in-quart",
+    disable: window.innerWidth < 1024
   });
 
 });
