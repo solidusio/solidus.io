@@ -173,9 +173,9 @@
 }
 
 .rings-tab {
-  height: 500px;
+  @include media-breakpoint-up(md) { height: 500px; }
 }
 
 .decision-makers-tab {
-  height: 600px;
+  @include media-breakpoint-up(md) { height: 600px; }
 }
