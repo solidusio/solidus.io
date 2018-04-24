@@ -1,7 +1,8 @@
 const COMMIT_COUNT = 10;
 const SOLIDUS_URL = 'http://github.com/solidusio/solidus'
 
-function populateCommits(json) {
+function populateCommits() {
+  let json = JSON.parse(sessionStorage.getItem('github_json'));
   let template = document.querySelector('.commit-template').content;
   let commitList = document.querySelector('.commit-list');
 
@@ -113,4 +114,9 @@ http.onreadystatechange = function() {
   }
 }
 http.open('GET', 'https://api.github.com/repos/solidusio/solidus/commits', true);
-http.send();
+
+if (sessionStorage.getItem('github_json') ===  null) {
+  http.send();
+} else {
+  populateCommits();
+}
