@@ -16,9 +16,15 @@ function populateCommits(json) {
     setCodeLink(commit, commit_json);
     setCommitMessage(commit, commit_json);
     setVerifiedText(commit, commit_json);
+    setClipboardData(commit, commit_json);
 
     commitList.appendChild(commit);
   }
+  new ClipboardJS('.clipboard');
+}
+
+function setClipboardData(commit, commit_json) {
+  commit.querySelector('.clipboard').setAttribute('data-clipboard-text', commit_json['sha']);
 }
 
 function setVerifiedText(commit, commit_json) {
@@ -102,7 +108,8 @@ function findAncestor (el, cls) {
 let http = new XMLHttpRequest();
 http.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
-    populateCommits(JSON.parse(this.responseText));
+    sessionStorage.setItem('github_json', this.responseText);
+    populateCommits();
   }
 }
 http.open('GET', 'https://api.github.com/repos/solidusio/solidus/commits', true);
