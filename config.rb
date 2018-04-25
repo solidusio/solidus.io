@@ -33,6 +33,7 @@ activate :blog do |blog|
 end
 
 activate :directory_indexes
+page 'blog/*', :directory_index => false
 
 activate :external_pipeline,
          name: :webpack,
