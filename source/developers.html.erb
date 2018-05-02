@@ -21,7 +21,62 @@ title: Developers
   <div class="container">
     <div class="card mb-4">
       <div class="card-body">
-        <img class="img-fluid mx-auto" src="<%= image_path('github.png') %>">
+        <div class="github">
+          <div class="commits" data-aos="fade" data-aos-delay="300">
+            <ol class="commit-list">
+              <template class="commit-template">
+                <li class="commit">
+                  <div class="commit-flex-box">
+                    <span class="commit-info">
+                      <p class="commit-title">
+                        <span class="user-commit">
+                          <a target="_blank"></a>
+                        </span>
+                        <span class="web-flow-commit">
+                          <a class="action" target="_blank"></a>
+                          <a class="issue" href="" target="_blank"></a>
+                          <a class="branch" target="_blank"></a>
+                        </span>
+                        <span class="ellipsis-container">
+                          <button class="ellipsis-expander" onclick="toggleCommitMessage(this)">...</button>
+                        </span>
+                      </p>
+                      <div class="commit-meta">
+                        <span class="avatar">
+                          <a class="avatar-link" target="_blank">
+                            <img>
+                          </a>
+                        </span>
+                        <span>
+                          <a class="commit-author" target="_blank"></a>
+                          committed
+                          <span class="relative-time"></span>
+                        </span>
+                      </div>
+                    </span>
+                    <span class="commit-links">
+                      <div class="btn-group">
+                        <div class='btn verified'>
+                          Verified
+                        </div>
+                      </div>
+                      <div class="btn-group">
+                        <a class="btn clipboard" target="_blank" title="Copy the full SHA">
+                          <%= inline_svg("icons/clipboard.svg") %>
+                        </a>
+                        <a class="btn sha" target="_blank"></a>
+                      </div>
+                      <a class="btn btn-group code-link" target="_blank" title="Browse the repository at this point in history">
+                        <%= inline_svg("icons/code.svg") %>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="commit-message hide"></div>
+                </li>
+              </template>
+            </ol>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -179,4 +234,7 @@ title: Developers
 
 <%= partial "partials/community_block" %>
 
+<%= javascript_include_tag "vendor/clipboard.min" %>
+<%= javascript_include_tag "vendor/moment.min" %>
 <%= javascript_include_tag "heart" %>
+<%= javascript_include_tag "github" %>
