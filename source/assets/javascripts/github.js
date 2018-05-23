@@ -65,7 +65,7 @@ function setAuthorElements(commit, commit_json) {
 }
 
 function setTitle(commit, commit_json) {
-  if (commit_json['committer']['login'] === 'web-flow') {
+  if ((commit_json['committer']['login'] === 'web-flow') && commit_json['commit']['message'].startsWith('Merge')) {
     setWebFlowTitle(commit, commit_json);
     commit.querySelector('.user-commit').remove();
   } else {
