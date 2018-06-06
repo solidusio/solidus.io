@@ -9,7 +9,12 @@
   <link rel="apple-touch-icon" href='/assets/images/favicon/apple-touch-icon.png'>
   <link rel="shortcut icon" type="image/x-icon" href='/assets/images/favicon/favicon.ico'>
 
-  <title><%= current_page.data.title || "Middleman" %></title>
+  <title>
+    <% if current_page.data.title %>
+      <%= current_page.data.title + " | " %>
+    <% end %>
+    <%= config[:seo_title] %>
+  </title>
 
   <%= javascript_include_tag "modernizr" %>
   <%= stylesheet_link_tag "site" %>
