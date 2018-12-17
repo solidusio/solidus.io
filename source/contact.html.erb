@@ -7,7 +7,7 @@ title: Contact
     <h1 class="title text-center">Contact us</h1>
     <p class="lead mb-4 mb-md-6 text-center">Got questions about Solidus? Complete the form below and we’ll respond as soon as possible. </p>
 
-    <form class="contact-form needs-validation" method="POST" action=<%= config[:contact_url] %> novalidate>
+    <form class="contact-form needs-validation" method="POST" name="contact" novalidate data-netlify="true">
       <fieldset>
         <div class="form-group">
           <div class="has-float-label">
@@ -30,8 +30,9 @@ title: Contact
             <div class="invalid-feedback">This field is required</div>
           </div>
         </div>
-        <div class="text-center">
-          <button class="btn btn-primary" type="submit">Send</button>
+        <div data-netlify-recaptcha="true"></div>
+        <div class="text-center mt-1">
+          <button class="btn btn-primary btn-block" type="submit">Send</button>
         </div>
       </fieldset>
 
