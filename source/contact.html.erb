@@ -7,27 +7,24 @@ title: Contact
     <h1 class="title text-center">Contact us</h1>
     <p class="lead mb-4 mb-md-6 text-center">Got questions about Solidus? Complete the form below and we’ll respond as soon as possible. </p>
 
-    <form class="contact-form needs-validation" method="POST" name="contact" novalidate data-netlify="true">
+    <form class="contact-form" method="POST" name="contact" data-netlify="true">
       <fieldset>
         <div class="form-group">
           <div class="has-float-label">
             <input type="text" class="form-control " name="inputName" id="inputName" placeholder="Name" required>
             <label for="inputName">Name</label>
-            <div class="invalid-feedback">This field is required</div>
           </div>
         </div>
         <div class="form-group">
           <div class="has-float-label">
             <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email" required>
             <label for="inputEmail">Email</label>
-            <div class="invalid-feedback">Please enter a valid email address.</div>
           </div>
         </div>
         <div class="form-group mb-3">
           <div class="has-float-label">
             <textarea class="form-control" name="inputMessage" id="inputMessage" rows="10" placeholder="Message" required></textarea>
             <label for="inputMessage">Message</label>
-            <div class="invalid-feedback">This field is required</div>
           </div>
         </div>
         <div data-netlify-recaptcha="true"></div>
@@ -35,22 +32,6 @@ title: Contact
           <button class="btn btn-primary btn-block" type="submit">Send</button>
         </div>
       </fieldset>
-
-      <div class="contact-form-success hide">
-        <h3>Success!</h3>
-        <p>Message received. We'll be in touch shortly.</p>
-      </div>
-
-      <div class="contact-form-error hide">
-        <h3>Oh no!</h3>
-        <p>
-          Sorry about that. Something went wrong and we were unable to submit your
-          message to us. Please give us a hard time at
-          <a href="mailto:contact@contact@solidus.io">contact@solidus.io</a>.
-        </p>
-      </div>
     </form>
   </div>
 </div>
-
-<%= javascript_include_tag "contact" %>

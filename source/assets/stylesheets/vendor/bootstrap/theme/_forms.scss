@@ -22,17 +22,6 @@
   }
 }
 
-//Override invalid/valid styling
-.form-control, .custom-select {
-  .was-validated &:invalid, &.is-invalid {
-    &, &:focus{
-      border-color: $form-feedback-invalid-color;
-      box-shadow: 0 0 0 $input-focus-width $form-feedback-invalid-color;
-    }
-  }
-}
-
-
 //Float label inputs
 .has-float-label {
   margin-bottom: 0;
@@ -107,30 +96,8 @@
   .form-control{
     padding-right: 50px;
   }
-
-  .was-validated &{
-    .form-control:invalid, .form-control.is-invalid{
-      & ~ .btn{
-        opacity: 0.4;
-        cursor: not-allowed;
-      }
-    }
-  }
 }
 
-
-// Form validation
-.invalid-feedback, .valid-feedback{
-  text-align: left;
-}
-
-/* Custom checkboxes
-<div class="form-check form-check-custom">
-<input type="checkbox" class="form-check-input" id="filter-customer">
-<%= inline_svg("icons/checkbox.svg", class: "isvg") %>
-<label class="form-check-label" for="filter-customer">Customer-Facing</label>
-</div>
- */
 .form-check-custom{
   padding-left: 27px;
 
