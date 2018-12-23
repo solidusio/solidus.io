@@ -199,4 +199,4 @@ We've made some changes that make developing Solidus a better experience, but do
 
 ---
 
-![](http://38.media.tumblr.com/e517178a30708f8ed6ab2d4858e1ac86/tumblr_n3860pIfPj1trbh6do1_400.gif)
+![](https://38.media.tumblr.com/e517178a30708f8ed6ab2d4858e1ac86/tumblr_n3860pIfPj1trbh6do1_400.gif)

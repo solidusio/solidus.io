@@ -31,16 +31,6 @@ $(function () {
   // initialise
   headroom.init();
 
-  //Prevent invalid form submit
-  $("body").on("submit", ".needs-validation", function (event) {
-    if (this[0].checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    $(this).addClass('was-validated');
-  });
-
-
   //Price calculation block
   let $slider = $(".cost-calculator .slider"),
       $sliderSales = $(".cost-calculator .js-sales"),

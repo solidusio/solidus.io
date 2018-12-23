@@ -20,3 +20,5 @@ npm-debug.log
 
 # NPM local modules
 node_modules/
+build/
+yarn.lock
