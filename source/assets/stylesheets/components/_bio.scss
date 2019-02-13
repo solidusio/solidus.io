@@ -27,9 +27,7 @@
   }
 
   .name{
-    @include media-breakpoint-up(md){
-      font-size: 1.5rem;
-    }
+    margin-bottom: 0.5em;
   }
 
   .links{

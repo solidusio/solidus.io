@@ -3,6 +3,7 @@ h1, .h1 {
   font-size: $h1-mobile-font-size;
   line-height: 1.25;
   margin-bottom: 1rem;
+  font-weight: 600;
 
   @include media-breakpoint-up(lg){
     font-size: $h1-font-size;
@@ -42,11 +43,14 @@ h4, .h4 {
 h5, .h5 { font-size: $h5-font-size; }
 h6, .h6 {
   font-size: $h6-font-size;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  letter-spacing: 1px;
   margin-bottom: 0.5em;
 }
 
 .lead {
-  line-height: 1.33;
+  line-height: 1.6;
   font-size: $lead-mobile-font-size;
 
   @include media-breakpoint-up(lg){
@@ -108,4 +112,8 @@ ol, ul{
 
 .list-inline-item{
   margin-bottom: 0;
+}
+
+p {
+  line-height: 1.7;
 }

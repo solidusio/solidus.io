@@ -13,7 +13,8 @@ html, body {
 
 body{
   display: flex;
-  font-size: 16px;
+  font-family: $font-family-sans-serif;
+  font-size: 17px;
   flex-direction: column;
   padding-top: $mobile-header-height;
   position: relative;
