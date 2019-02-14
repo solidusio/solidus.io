@@ -144,10 +144,10 @@
   }
 
   .expense-amount{
-    font-size: $h6-font-size;
+    font-size: $h5-font-size;
     line-height: 1.45em;
 
-    @include respond-to(360px){ font-size: $h5-font-size; }
+    @include respond-to(360px){ font-size: $h4-font-size; }
   }
 }
 

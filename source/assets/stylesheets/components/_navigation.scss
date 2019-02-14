@@ -115,7 +115,7 @@
     width: 50%;
     height: auto;
     flex-shrink: 0;
-    font-size: $font-size-md;
+    font-size: $font-size-base;
     opacity: 1;
     background: none;
     position: relative;
@@ -132,7 +132,7 @@
         border-bottom: 2px solid transparent;
         display: inline-block;
         padding: 28px 12px 26px;
-        font-weight: $font-weight-base;
+        font-weight: 500;
         height: 80px;
       }
 
