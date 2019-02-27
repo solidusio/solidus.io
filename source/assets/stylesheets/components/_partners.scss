@@ -3,7 +3,10 @@
   padding-bottom: 3rem;
   border-bottom: 1px solid $gray-200;
 
-  &:last-child{ margin-bottom: 0; }
+  &:last-child{
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
 
   .card{
     font-size: $font-size-xs;
@@ -21,9 +24,13 @@
 
   .logo{
     align-self: center;
-    flex-shrink: 0;
     margin: 0 auto;
     padding: $card-spacer-x;
+  }
+  
+  .img-fluid {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .title{
@@ -35,15 +42,35 @@
     margin-top: auto;
     margin-bottom: 0;
   }
+  
+  @include media-breakpoint-down(sm) {
+    .media-body{
+      font-size: $font-size-xs;
+    }
+    
+    .card{ display: block; }
+    
+    .silver-partner .logo{ max-width: 70%; }
+    
+    .bronze-partner .logo{ max-width: 50%; }
+  }
 
   @include media-breakpoint-up(md){
     margin-bottom: 3.5rem;
     max-width: none;
     
-    .logo-wrapper .logo {
+    .card-deck .card{
+      // flex: 0 0 33.333333%;
+      // max-width: 33.333333%;
+    }
+    
+    .logo {
+      flex-shrink: 0;
+    }
+    
+    .column-wrapper .logo {
       margin-bottom: -(($card-spacer-y * 2) +  1rem);
     }
-    //.card{ margin-bottom: 0; }
   }
 
   @include media-breakpoint-up(lg){
@@ -56,7 +83,7 @@
       padding-left: 0;
     }
   }
-
+  
   .data{
     @include media-breakpoint-up(md){
       padding-left: 18px + $grid-gutter-width/2;
