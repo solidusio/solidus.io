@@ -60,14 +60,7 @@
     margin-bottom: 3.5rem;
     max-width: none;
     
-    .card-deck .card{
-      // flex: 0 0 33.333333%;
-      // max-width: 33.333333%;
-    }
-    
-    .logo {
-      flex-shrink: 0;
-    }
+    .logo{ flex-shrink: 0; }
     
     .column-wrapper .logo {
       margin-bottom: -(($card-spacer-y * 2) +  1rem);
@@ -89,5 +82,52 @@
     @include media-breakpoint-up(md){
       padding-left: 18px + $grid-gutter-width/2;
     }
+  }
+}
+
+.partners-hero{
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+  
+  // @include media-breakpoint-up(sm){
+  //   .container{ height: 150px; }
+  // 
+  //   & + .content-block{
+  //     padding-top: ((150px / 2) + (48px * 3)) / 2;
+  //   }
+  // }
+  
+  @include media-breakpoint-up(md){
+    .container{ height: 200px; }
+    
+    & + .content-block{
+      padding-top: ((200px / 2) + (80px * 3)) / 2;
+    }
+  }
+  
+  @include media-breakpoint-up(lg){
+    .container{ height: 400px; }
+    
+    & + .content-block{
+      padding-top: ((400px / 2) + (80px * 3)) / 2;
+    }
+  }
+}
+
+.partners-hero .container{
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    backface-visibility: hidden;
+    bottom: 0;
+    transform: skewY(-9deg);
+    transform-origin: 100%;
   }
 }
