@@ -13,6 +13,16 @@
     font-size: $font-size-xs;
     min-height: 200px;
     margin-bottom: 1.5rem;
+    
+    &::before{
+      content: '';
+      border-radius: 0 $card-border-radius 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 64px;
+      height: 64px;
+    }
   }
   
   .card-deck .card-body {
@@ -57,12 +67,28 @@
     }
   }
   
+  .gold-partner::before{
+    background: url("/assets/images/icons/gold-corner.svg") no-repeat;
+  }
+  
+  .silver-partner::before{
+    background: url("/assets/images/icons/silver-corner.svg") no-repeat;
+  }
+  
+  .bronze-partner::before{
+    background: url("/assets/images/icons/bronze-corner.svg") no-repeat;
+  }
+  
   @include media-breakpoint-down(sm) {
     .media-body{
       font-size: $font-size-xs;
     }
     
-    .card{ display: block; }
+    .card{
+      display: block;
+      
+      &:last-child { margin-bottom: 0; }
+    }
     
     .silver-partner .logo{ max-width: 70%; }
     
@@ -100,21 +126,11 @@
   }
 }
 
-
-
 .partners-hero{
   padding-bottom: 0;
   position: relative;
   z-index: 1;
-  
-  // @include media-breakpoint-up(sm){
-  //   .container{ height: 150px; }
-  //
-  //   & + .content-block{
-  //     padding-top: ((150px / 2) + (48px * 3)) / 2;
-  //   }
-  // }
-  
+
   @include media-breakpoint-up(md){
     .container{ height: 200px; }
     
