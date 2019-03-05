@@ -128,6 +128,39 @@
   }
 }
 
+//community block
+.community-content{
+  margin-bottom: 1rem;
+  text-align: left;
+  
+  &:last-child { margin-bottom: 0; }
+  
+  @include media-breakpoint-down(sm){
+    text-align: center;
+  }
+}
+
+.community-content .title{
+  color: $blue;
+  margin-bottom: .5rem;
+}
+
+.community-content p{
+  font-size: $font-size-sm;
+}
+
+.community-block { background-color: $blue; }
+
+.community-block .card{
+  height: 70px;
+  width: 70px;
+}
+
+.community-block .isvg{
+  width: 38px;
+  height: 38px;
+}
+
 //developers hero block
 .developers-hero{
   .title{
