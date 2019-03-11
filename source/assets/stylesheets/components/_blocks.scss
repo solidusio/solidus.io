@@ -161,6 +161,21 @@
   height: 38px;
 }
 
+.donor-block img{
+  @include media-breakpoint-up(md){
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 380px;
+  }
+}
+
+.donor-content{
+  @include media-breakpoint-up(md){
+    min-height: 385px;
+  }
+}
+
 //developers hero block
 .developers-hero{
   .title{

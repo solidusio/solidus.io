@@ -293,24 +293,21 @@ title: Community
 
 <%= partial "partials/members_list" %>
 
-<div class="content-block content-block-gray-900 p-md-0 pb-0" data-aos="fade">
-  <div class="row align-items-center">
-    <div class="col-md">
-      <div class="d-flex justify-content-end">
-        <div class="col-md-10 pr-md-6 mb-4 mt-sm-4">
+<div class="donor-block content-block content-block-gray-900 position-relative p-md-0 pb-0" data-aos="fade">
+  <div class="container">
+    <div class="row">
+      <div class="donor-content col-md-6">
+        <div class="pr-md-6 mb-4 mt-sm-4">
           <h2 class="title mb-4">Become a donor.</h2>
           <p class="lead">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.
           </p>
+          <a class="btn btn-primary" href="#" target="_blank">Donate</a>
         </div>
       </div>
     </div>
-    <div class="col-md">
-      <div class="pt-3 pb-3">
-        <img class="img-fluid" src="<%= image_path('illustrations/donor-become-a.svg') %>" alt="Become a donor">
-      </div>
-    </div>
   </div>
+  <img class="img-fluid pb-3 pt-3" src="<%= image_path('illustrations/donor-become-a.svg') %>" alt="Become a donor">
 </div>
 
 <%= partial "partials/community_block" %>
