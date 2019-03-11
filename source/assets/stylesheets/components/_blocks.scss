@@ -135,6 +135,11 @@
   
   &:last-child { margin-bottom: 0; }
   
+  a:hover .isvg{
+    opacity: .8;
+    //transform: scale(1.1);
+  }
+  
   @include media-breakpoint-down(sm){
     text-align: center;
   }
