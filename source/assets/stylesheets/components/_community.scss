@@ -1,0 +1,105 @@
+.dev-slider-content { position: relative; }
+
+.dev-slider{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5em 0;
+  z-index: -1;
+  
+  @include media-breakpoint-up(md){
+    position: absolute;
+    top: 0;
+    right: 1.5em;
+  }
+}
+
+.dev-slide{
+  box-shadow: 0px 0px 6px 0px rgba(72,116,235,0.5);
+  background-color: $white;
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+}
+
+.dev-slide,
+.dev-circle{
+  position: absolute;
+}
+
+.dev-circle{
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+}
+
+.dev-slide.wrapper-1{
+  top: 150px;
+  left: 260px;
+}
+
+.dev-slide.wrapper-2{
+  top: 230px;
+  right: 25px;
+}
+
+.dev-slide.wrapper-3{
+  left: 200px;
+  bottom: 80px;
+}
+
+.wrapper-1{
+  .dev-1{
+    @include img-retina("/assets/images/team/clarke-brunsdon.png", "/assets/images/team/clarke-brunsdon@2x.png", 100%, auto);
+  }
+  
+  .dev-2{
+    @include img-retina("/assets/images/team/gregor-macdougall.png", "/assets/images/team/gregor-macdougall@2x.png", 100%, auto);
+    background-color: $white;
+    animation: devFade 10s ease-in-out infinite alternate;
+  }
+}
+
+.wrapper-2{
+  .dev-1{
+    @include img-retina("/assets/images/team/eric-saupe.png", "/assets/images/team/eric-saupe@2x.png", 100%, auto);
+  }
+  
+  .dev-2{
+    @include img-retina("/assets/images/team/alberto-vena.png", "/assets/images/team/alberto-vena@2x.png", 100%, auto);
+    background-color: $white;
+    animation: devFade 10s ease-in-out 2s infinite alternate;
+  }
+}
+
+.wrapper-3{
+  .dev-1{
+    @include img-retina("/assets/images/team/jacob-herrington.png", "/assets/images/team/jacob-herrington@2x.png", 100%, auto);
+  }
+  
+  .dev-2{
+    @include img-retina("/assets/images/team/thomas-von-deyen.png", "/assets/images/team/thomas-von-deyen@2x.png", 100%, auto);
+    background-color: $white;
+    animation: devFade 10s ease-in-out 1s infinite alternate;
+  }
+}
+
+.community-hero{
+  background: url("/assets/images/illustrations/community-hero-bg.svg") no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+
+@keyframes devFade {
+  0% {
+  opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+}
