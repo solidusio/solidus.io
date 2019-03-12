@@ -165,6 +165,10 @@
   height: 38px;
 }
 
+.community-content{
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.25) 10%, rgba(255,255,255,.5) 50%, rgba(255,255,255,0.25) 90%, rgba(255,255,255,0) 100%);
+}
+
 .donor-block img{
   @include media-breakpoint-up(md){
     position: absolute;
