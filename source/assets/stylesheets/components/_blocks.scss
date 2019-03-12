@@ -174,13 +174,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 380px;
+    height: 485px;
   }
 }
 
 .donor-content{
+  display: flex;
+  
   @include media-breakpoint-up(md){
-    min-height: 385px;
+    min-height: 485px;
   }
 }
 
