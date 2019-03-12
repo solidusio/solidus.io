@@ -1,50 +1,115 @@
-.dev-slider-content { position: relative; }
-
-.dev-slider{
-  display: flex;
-  justify-content: flex-end;
-  padding: 1.5em 0;
-  z-index: -1;
+.community-hero{
+  @include media-breakpoint-up(sm){
+    .dev-community-circle{
+      height: 540px;
+    }
+    
+    .dev-slide,
+    .dev-circle{
+      width: 44px;
+      height: 44px;
+    }
+  }
   
   @include media-breakpoint-up(md){
-    position: absolute;
-    top: 0;
-    right: 1.5em;
+    background: url("/assets/images/illustrations/community-hero-bg.svg") no-repeat;
+    background-size: contain;
+    background-position: top left;
+    
+    .dev-community-circle{
+      background: url("/assets/images/illustrations/dev-slider-bg.svg") no-repeat;
+      background-position: top left;
+      height: 558px;
+      width: 398px;
+    }
+    
+    .dev-slider{
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 1.5em 0;
+      position: absolute;
+      top: 0;
+      right: 1.5em;
+    }
   }
 }
+
+.dev-community-circle{
+  background: url("/assets/images/illustrations/dev-slider-bg-rotated.svg") no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  height: 320px;
+}
+
+.dev-slider-content{
+  position: relative;
+  z-index: -1;
+}
+
+.dev-slider{ margin: -40% 0 0; }
+
+.dev-circle{ border-radius: 100%; }
 
 .dev-slide{
   box-shadow: 0px 0px 6px 0px rgba(72,116,235,0.5);
   background-color: $white;
   border-radius: 100%;
-  width: 44px;
-  height: 44px;
 }
 
 .dev-slide,
 .dev-circle{
   position: absolute;
-}
-
-.dev-circle{
-  border-radius: 100%;
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
 }
 
 .dev-slide.wrapper-1{
-  top: 150px;
-  left: 260px;
+  top: 190px;
+  right: 70px;
+  
+  @include media-breakpoint-up(sm){
+    top: 300px;
+    right: 100px;
+  }
+  
+  @include media-breakpoint-up(md){
+    top: 150px;
+    right: 90px;
+  }
 }
 
 .dev-slide.wrapper-2{
-  top: 230px;
-  right: 25px;
+  bottom: 30px;
+  right: 140px;
+  
+  @include media-breakpoint-up(sm){
+    bottom: 115px;
+    right: 180px;
+  }
+  
+  @include media-breakpoint-up(md){
+    bottom: auto;
+    top: 230px;
+    right: 25px;
+  }
 }
 
 .dev-slide.wrapper-3{
-  left: 200px;
-  bottom: 80px;
+  left: 40px;
+  bottom: 140px;
+  
+  @include media-breakpoint-up(sm){
+    left: 80px;
+    bottom: 200px;
+    right: auto;
+  }
+  
+  @include media-breakpoint-up(md){
+    left: auto;
+    right: 140px;
+    bottom: 80px;
+  }
 }
 
 .wrapper-1{
@@ -81,12 +146,6 @@
     background-color: $white;
     animation: devFade 10s ease-in-out 1s infinite alternate;
   }
-}
-
-.community-hero{
-  background: url("/assets/images/illustrations/community-hero-bg.svg") no-repeat;
-  background-size: contain;
-  background-position: top left;
 }
 
 @keyframes devFade {
