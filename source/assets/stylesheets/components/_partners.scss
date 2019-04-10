@@ -162,6 +162,10 @@
     bottom: 0;
     transform: skewY(-9deg);
     transform-origin: 100%;
+    
+    @include media-breakpoint-down(sm) {
+      transform: skewY(-5deg);
+    }
   }
 }
 
