@@ -1,7 +1,14 @@
 <div class="help-center-widget">
+  <div class="help-center-widget__launcher">
+    <%= inline_svg("icons/help.svg", class: "isvg") %>
+  </div>
+
   <div class="help-center-widget__content">
     <div class="help-center-widget__content__header">
       <h5 class="help-center-widget__content__header__title text-white">Help Center</h5>
+      <div class="help-center-widget__content__header__close">
+        <%= inline_svg("icons/close.svg", class: "isvg") %>
+      </div>
     </div>
     <div class="help-center-widget__content__body">
       <div class="help-center-widget__content__body__card">
@@ -41,9 +48,5 @@
         </a>
       </div>
     </div>
-  </div>
-
-  <div class="help-center-widget__launcher">
-    <%= inline_svg("icons/help.svg", class: "isvg") %>
   </div>
 </div>
