@@ -1,0 +1,31 @@
+<svg width="32px" height="37px" viewBox="0 0 32 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="-0.0016420975%" y1="50.0027523%" x2="100.002844%" y2="50.0027523%" id="linearGradient-1">
+            <stop stop-color="#C1D3FA" offset="0%"></stop>
+            <stop stop-color="#6D98F4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Help-Center-Opened" transform="translate(-1062.000000, -753.000000)">
+            <g id="Group-2" transform="translate(1062.000000, 736.000000)">
+                <g id="icon-reportbug" transform="translate(0.000000, 17.000000)">
+                    <g id="icon">
+                        <g id="ico-bug-copy">
+                            <rect id="Rectangle" fill="url(#linearGradient-1)" x="1.9047619" y="1.92708333" width="30.0952381" height="35.0729167" rx="3.80952381"></rect>
+                            <rect id="Rectangle" stroke="#3D76F1" stroke-width="1.5" fill="#FFFFFF" x="0.75" y="0.75" width="28.5952381" height="33.5729167" rx="3.80952381"></rect>
+                            <g id="!" transform="translate(8.038095, 17.025362)">
+                                <ellipse id="Oval" stroke="#3D76F1" stroke-width="1.5" cx="6.75776398" cy="6.83695652" rx="6.75776398" ry="6.83695652"></ellipse>
+                                <rect id="Rectangle" fill="#3D76F1" x="5.97197747" y="3.17997978" width="1.88588762" height="5.08796764"></rect>
+                                <rect id="Rectangle-Copy" fill="#3D76F1" x="5.97197747" y="8.90394338" width="1.88588762" height="1.90798787"></rect>
+                            </g>
+                        </g>
+                        <path d="M5.04962973,5.1513423 L14.9554987,5.1513423" id="Line-2-Copy-8" stroke="#24282F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M19.9067726,5.1513423 L24.8610578,5.1513423" id="Line-2-Copy-9" stroke="#24282F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.89724878,9.40768288 L24.7089867,9.40768288" id="Line-2-Copy-10" stroke="#24282F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M4.89724878,13.4195324 L19.9067726,13.4195324" id="Line-2-Copy-14" stroke="#24282F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="-0.0016420975%" y1="50.0027523%" x2="100.002844%" y2="50.0027523%" id="linearGradient-1">
+            <stop stop-color="#C1D3FA" offset="0%"></stop>
+            <stop stop-color="#6D98F4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Help-Center-Opened" transform="translate(-1056.000000, -651.000000)">
+            <g id="Group" transform="translate(1056.000000, 640.000000)">
+                <g id="icon-question" transform="translate(0.000000, 12.000000)">
+                    <g id="icon">
+                        <g id="chat-question" transform="translate(3.106796, 0.000000)">
+                            <g id="iconfinder_Icon_Profiles_3319415-Copy-2">
+                                <polygon id="Shape" stroke="#3D76F1" stroke-width="1.5" fill="url(#linearGradient-1)" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="0.893203883 21 37.8932039 21 35.2848488 16.7432432 35.2848488 0 0.893203883 0"></polygon>
+                                <path d="M26.4282888,13.4366667 L23.4673538,13.4366667 L23.4673538,13.1913675 C23.4673538,12.2306125 23.5087655,11.7604558 23.7779414,11.045 C24.0471173,10.3295442 24.6475866,9.81850427 25.6207611,9.40967236 L26.3868771,9.08260684 C26.8631114,8.89863248 27.0908756,8.55112536 27.0908756,8.06052707 C27.0908756,7.34507123 26.5525238,6.95668091 25.7242902,6.95668091 C24.9995859,6.95668091 24.3991166,7.50860399 24.3991166,8.26494302 L21.4174757,8.26494302 C21.4174757,5.42356125 23.1153545,3.87 25.7864078,3.87 C27.0908756,3.87 28.1468734,4.23794872 28.9544011,4.95340456 C29.7619289,5.6688604 30.1553398,6.65005698 30.1553398,7.85611111 C30.1553398,9.79806268 29.1614595,11.1267664 27.5049924,11.7195726 C26.6767588,12.0261966 26.4282888,12.4554701 26.4282888,13.4366667 Z M22.3883495,16.2858696 C22.3883495,15.2044203 23.2468063,14.3933333 24.3096576,14.3933333 C25.3929484,14.3933333 26.2718447,15.2044203 26.2718447,16.2858696 C26.2718447,17.3881159 25.3929484,18.22 24.3096576,18.22 C23.2468063,18.22 22.3883495,17.3881159 22.3883495,16.2858696 Z" id="?" fill="#FFFFFF"></path>
+                                <path d="M5.54064782,5.9529478 L11.4787373,5.9529478" id="Line-2-Copy-8" stroke="#3D76F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.54064782,9.8243708 L14.4469724,9.8243708" id="Line-2-Copy-10" stroke="#3D76F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M5.54064782,13.6957938 L14.4469724,13.6957938" id="Line-2-Copy-11" stroke="#3D76F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </g>
+                        <g id="chat-bottom" transform="translate(19.223301, 32.428571) scale(-1, 1) translate(-19.223301, -32.428571) translate(0.223301, 25.428571)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                            <g id="Group" fill-rule="nonzero" stroke="#C1D3FA">
+                                <polygon id="Shape" transform="translate(18.689214, 6.857143) scale(1, -1) translate(-18.689214, -6.857143) " points="0.155126427 13.7142857 37.223301 13.7142857 34.6101398 10.9343629 34.6101398 0 0.155126427 0"></polygon>
+                            </g>
+                            <path d="M30.3340692,4.46248548 L4.21359223,4.46248548 L30.3340692,4.46248548 Z" id="Line-2-Copy-6" stroke="#24282F"></path>
+                            <path d="M30.3340692,8.75772358 L17.4174757,8.75772358 L30.3340692,8.75772358 Z" id="Line-2-Copy-12" stroke="#24282F"></path>
+                            <path d="M12.4699915,8.75772358 L10.4271845,8.75772358 L12.4699915,8.75772358 Z" id="Line-2-Copy-13" stroke="#24282F"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
