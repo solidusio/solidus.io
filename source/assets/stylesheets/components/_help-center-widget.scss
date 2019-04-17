@@ -9,19 +9,49 @@
     width: auto;
   } 
 
+  &[open] {
+    .help {
+      display: none;
+    } 
+
+    .close {
+      display: inline-block;
+    }
+  }
+
   &__launcher {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    bottom: 20px;
+    right: 5px;
     width: 60px;
     height: 60px;
+    line-height: 60px;
+    text-align: center;
     border-radius: 50%;
     background: $blue;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
     cursor: pointer;
+    z-index: 1031;
+    @include media-breakpoint-up(md){
+      bottom: 30px;
+      right: 30px;
+    }  
+    
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:first-of-type {
+      list-style-type: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .close {
+      display: none; 
+    }
   }
 
   &__content {
