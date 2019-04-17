@@ -10,6 +10,18 @@
   } 
 
   &[open] {
+    summary::before {
+      @include media-breakpoint-up(md){
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      } 
+    }
+
     .help {
       display: none;
     } 
@@ -67,6 +79,7 @@
       bottom: 120px;
       right: 30px;
       height: auto;
+      z-index: 1031;
     } 
   
     &__header {
