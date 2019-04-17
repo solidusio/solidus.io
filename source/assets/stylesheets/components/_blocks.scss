@@ -136,7 +136,7 @@
   &:last-child { margin-bottom: 0; }
   
   a:hover .isvg{
-    opacity: .8;
+    opacity: .7;
   }
   
   @include media-breakpoint-down(sm){
@@ -158,6 +158,20 @@
 .community-block .card{
   height: 70px;
   width: 70px;
+  
+  &.rounded-circle{
+    a{
+      align-items: center;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      
+      .isvg{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }
 
 .community-block .isvg{
