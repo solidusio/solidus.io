@@ -10,7 +10,7 @@
   } 
 
   &[open] {
-    summary::before {
+    summary::after {
       @include media-breakpoint-up(md){
         content: "";
         display: block;
@@ -22,11 +22,16 @@
       } 
     }
 
+    summary::before {
+      content: '';
+      padding: 0;
+    }
+
     .help {
       display: none;
     } 
 
-    .close {
+    .close { 
       display: inline-block;
     }
   }
@@ -48,6 +53,11 @@
       bottom: 30px;
       right: 30px;
     }  
+
+    &:before {
+      content: '';
+      padding: 0;
+    }
     
     &::-webkit-details-marker {
       display: none;
