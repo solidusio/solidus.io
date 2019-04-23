@@ -11,35 +11,36 @@
   
   <div class="container">
     <div class="partner-block">
-      <div class="row">
-        <div class="col-md">
-          <div class="logo">
-            <img class="img-fluid" src="<%= image_path('partners/nebulab-logo.svg') %>" alt="Nebulab">
+      <% data.partners[:main_contributors].each do |partner, info| %>
+        <div class="row">
+          <div class="col-md">
+            <div class="logo">
+              <img class="img-fluid" src="<%= image_path("partners/#{info[:image]}")%>" alt="<%= info[:name] %>">
+            </div>
+            <h4 class="title"><%= info[:name] %></h4>
+            <p class="text-gray-048"><%= info[:short_description] %></p>
+            <p class="mb-4 mb-md-0">
+              <%= info[:description] %>
+            </p>
           </div>
-          <h4 class="title">Nebulab</h4>
-          <p class="text-gray-048">Back-End, Front-End, UX Design</p>
-          <p class="mb-4 mb-md-0">
-            Nebulab is a digital consulting company specialized in designing, developing, and maintaining high-quality eCommerce websites built with Solidus and Ruby on Rails applications. They mix passion and technology to give their clients the best the web has to offer to succeed!
-          </p>
-        </div>
-        <div class="main-partner justify-content-center col-md">
-          <div class="align-self-center">
-            <h6 class="mb-3">Expertise</h6>
-            <ul class="list-underlined">
-              <li>
-                Solidus eCommerce Development
-              </li>
-              <li>
-                UX/UI Design
-              </li>
-              <li>
-                QA & Workflow design
-              </li>
-            </ul>
-            <a class="btn btn-primary" href="https://nebulab.it" target="_blank">Contact</a>
+          <div class="main-partner justify-content-center col-md">
+            <div class="align-self-center">
+              <h6 class="mb-3">Expertise</h6>
+              <% if info[:skills] %>
+                <ul class="list-underlined">
+                  <% info[:skills].each do |skill| %>
+                    <li>
+                      <%= skill %>
+                    </li>
+                  <% end %>
+                </ul>
+              <% end %>
+              
+              <a class="btn btn-primary" href="<%= info[:url] %>" target="_blank">Contact</a>
+            </div>
           </div>
         </div>
-      </div>
+      <% end %>
     </div>
     
     <div class="partner-block">
@@ -52,26 +53,32 @@
           </p>
         </div>
       </div>
+      
       <div class="card-deck">
-        <div class="card card-border-none col-lg-6 gold-partner">
-          <div class="card-body">
-            <div class="d-md-flex column-wrapper">
-              <div class="logo">
-                <img class="img-fluid" src="<%= image_path('partners/supergood-logo.svg') %>" alt="Super Good">
-              </div>
-              <div class="data">
-                <h4 class="title">Super Good</h4>
-                <p class="text-gray-048">Spree and Solidus Specialists</p>
-                <p class="lead">
-                  Super Good is a software development agency specializing in ecommerce, Solidus, Ruby on Rails, and React.
-                </p>
+        <% data.partners[:gold_partners].each do |partner, info| %>
+        
+          <div class="card card-border-none col-lg-6 gold-partner">
+            <div class="card-body">
+              <div class="d-md-flex column-wrapper">
+                <div class="logo">
+                  <img class="img-fluid" src="<%= image_path("partners/#{info[:image]}")%>" alt="<%= info[:name] %>">
+                </div>
+                
+                <div class="data">
+                  <h4 class="title"><%= info[:name] %></h4>
+                  <p class="text-gray-048"><%= info[:short_description] %></p>
+                  <p class="lead">
+                    <%= info[:description] %>
+                  </p>
+                </div>
               </div>
             </div>
+            <div class="card-footer text-right">
+              <a class="link" href="<%= info[:url] %>" target="_blank">Contact</a>
+            </div>
           </div>
-          <div class="card-footer text-right">
-            <a class="link" href="https://supergood.software/" target="_blank">Contact</a>
-          </div>
-        </div>
+        
+        <% end %>
 
       </div>
     </div>
@@ -87,36 +94,28 @@
         </div>
       </div>
       <div class="card-deck">
-        <div class="card card-border-none col-lg-4 silver-partner">
-          <div class="card-body">
-            <div class="logo text-center">
-              <img class="img-fluid" src="<%= image_path('partners/pbc-logo.svg') %>" alt="Peter Berkenbosch Consultancy (PBC)">
+        <% data.partners[:silver_partners].each do |partner, info| %>
+          <div class="card card-border-none col-lg-4 silver-partner">
+            <div class="card-body">
+              <div class="logo text-center">
+                <% if info[:retina] %>
+                  <img class="img-fluid" src="<%= image_path("partners/#{info[:retina].default_img}") %>" srcset="<%= image_path("partners/#{info[:retina].default_img}") %>, <%= image_path("partners/#{info[:retina].retina_img}") %> 2x" alt="<%= info[:name] %>">
+                  
+                  <% else %>
+                  <img class="img-fluid" src="<%= image_path("partners/#{info[:image]}")%>" alt="<%= info[:name] %>">
+                <% end %>
+              </div>
+              <h4 class="title"><%= info[:name] %></h4>
+              <p class="text-gray-048"><%= info[:short_description] %></p>
+              <p>
+                <%= info[:description] %>
+              </p>
             </div>
-            <h4 class="title">Peter Berkenbosch Consultancy (PBC)</h4>
-            <p class="text-gray-048">e-commerce consultancy</p>
-            <p>
-              Peter Berkenbosch Consultancy (PBC) specialist in e-commerce consultancy, backend and integration development and CXOps.
-            </p>
-          </div>
-          <div class="card-footer text-right">
-            <a class="link" href="https://peterberkenbosch.nl" target="_blank">Contact</a>
-          </div>
-        </div>
-        <div class="card card-border-none col-lg-4 silver-partner">
-          <div class="card-body">
-            <div class="logo text-center">
-              <img class="img-fluid" src="<%= image_path('partners/boomerdigital-logo.png') %>" srcset="<%= image_path('partners/boomerdigital-logo.png') %>, <%= image_path('partners/boomerdigital-logo@2x.png') %> 2x" alt="Boomer Digital">
+            <div class="card-footer text-right">
+              <a class="link" href="<%= info[:url] %>" target="_blank">Contact</a>
             </div>
-            <h4 class="title">Boomer Digital</h4>
-            <p class="text-gray-048">e-commerce, Mobile applications, DevOps, Software development</p>
-            <p>
-              Boomer Digital is proud to be a Solidus.io partner. We love working with Solidus because of its flexibility!
-            </p>
           </div>
-          <div class="card-footer text-right">
-            <a class="link" href="https://boomerdigital.net" target="_blank">Contact</a>
-          </div>
-        </div>
+        <% end %>
         <div class="w-100"></div>
 
       </div>
@@ -132,7 +131,6 @@
           </p>
         </div>
       </div>
-      
     </div>
     
   </div>
