@@ -137,7 +137,11 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    
+
+    &::-ms-expand {
+      display: none;
+    }
+
     &:hover {
       color: $body-color;
     }
