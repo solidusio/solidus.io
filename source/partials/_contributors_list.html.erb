@@ -1,0 +1,8 @@
+<div class="community-contributors">
+  <% github_contributors.each do |user| %>
+    <%= user.login %>
+    (<%= user.contributions_count %>)
+
+    <%= image_tag user.avatar_url %>
+  <% end %>
+</div>
