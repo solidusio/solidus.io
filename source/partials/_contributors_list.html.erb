@@ -1,8 +1,22 @@
-<div class="community-contributors">
-  <% github_contributors.each do |user| %>
-    <%= user.login %>
-    (<%= user.contributions_count %>)
+<div class="content-block content-block-gray-100 community-contributors" data-aos="fade">
+  <div class="container">
+    <h2 class="title">Contributors.</h2>
+    <p class="mb-8">
+      Solidus is free and open source software, made possible by the work of dozens of volunteers. 
+      <a class="link" href="https://opencollective.com/solidus" target="_blank">Join us!</a>
+    </p>
+    
+    <ul class="list-inline">
+      <% github_contributors.each do |user| %>
+        <li class="list-inline-item contributor">
+          <a href="#" target="_blank" rel="noopener noreferrer nofollow">
+            <span><%= user.login %></span>
+            <%#= user.contributions_count %>
 
-    <%= image_tag user.avatar_url %>
-  <% end %>
+            <%= image_tag user.avatar_url %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
