@@ -150,14 +150,18 @@
 
 // Community contributors
 .community-contributors{
-  ul li:not(:last-child) {
-    margin-bottom: $spacer;
+  ul li {
+    margin: $spacer / 2;
+    
+    &:not(:last-child){
+      margin-right: $spacer / 2;
+    }
   }
   
   img{
     width: 100%;
     height: auto;
-    max-width: 60px;
+    max-width: 50px;
     //
     border-radius: 100%;
     border: 1px solid $blue;
