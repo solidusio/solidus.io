@@ -135,8 +135,9 @@
     background-size: 280% auto;
     background-position: 86%;
     
-    @include media-breakpoint-up(md){
-      background-size: 86% auto;
+    @include media-breakpoint-up(md) {
+      background-size: 75% auto;
+      background-position: .5em .5em;
       display: flex;
       justify-content: space-between;
       align-items: center;
