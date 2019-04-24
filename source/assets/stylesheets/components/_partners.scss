@@ -126,6 +126,31 @@
   }
 }
 
+.card.placeholder-card{
+  min-height: 1px;
+  
+  .card-body{
+    padding: $card-spacer-x ($card-spacer-x * 1.8);
+    background: url("/assets/images/illustrations/bg-triangles-light.svg") no-repeat;
+    background-size: 280% auto;
+    background-position: 86%;
+    
+    @include media-breakpoint-up(md){
+      background-size: 86% auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  
+  .title{
+    @include media-breakpoint-up(md){
+      margin-bottom: 0;
+    }
+  }
+}
+
 .partners-hero{
   padding-bottom: 0;
   position: relative;
