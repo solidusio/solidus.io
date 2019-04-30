@@ -11,6 +11,10 @@ module Solidus
       @contributions_count = contributions_count
     end
 
+    def profile_url
+      "http://github.com/#{@login}"
+    end
+
     def <=>(other)
       other.contributions_count <=> contributions_count
     end
