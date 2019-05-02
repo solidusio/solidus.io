@@ -165,17 +165,17 @@
   
   img{
     width: 100%;
-    height: auto;
-    max-width: 50px;
-    //
+    height: 100%;
     border-radius: 100%;
-    border: 1px solid $blue;
   }
   
   .contributor a{
-    width: 100%;
-    height: 100%;
+    background-color: darken($gray-100, 5%);
     display: inline-block;
+    border-radius: 100%;
+    border: 1px solid $blue;
+    width: 50px;
+    height: 50px;
     
     span{
       text-indent: 200%;
@@ -185,7 +185,7 @@
     }
     
     &:hover img{
-      border-color: $blue-dark;
+      filter: opacity(65%);
     }
   }
 }

@@ -99,7 +99,7 @@ module Github
 
       fragment userFields on User {
         login
-        avatarUrl(size: 50)
+        avatarUrl(size: 100)
       }
     GRAPHQL
 
