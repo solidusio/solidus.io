@@ -190,6 +190,17 @@
   }
 }
 
+.tooltip-gh-icon{
+  mask: url("/assets/images/social-icons/github.svg") no-repeat 0 0;
+  mask-size: 100% auto;
+  background-color: $white;
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 11px;
+  margin-right: 5px;
+}
+
 @keyframes devFade {
   0% {
   opacity:1;

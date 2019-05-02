@@ -14,6 +14,8 @@ $(function () {
     return false;
   });
 
+  //Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
 
   //Sticky header initialization
   let header = document.querySelector(".site-header");
