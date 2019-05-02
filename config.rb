@@ -10,6 +10,8 @@ set :base_url, build? ? "https://solidus.io" : "http://localhost:4567"
 
 set :seo_title, "Solidus: Rails Ecommerce Platform"
 
+redirect "developers.html", to: "community.html"
+
 activate :blog do |blog|
   blog.layout = 'blog'
   blog.prefix = 'blog'
