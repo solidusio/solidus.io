@@ -1,6 +1,7 @@
 import "jquery";
 import "popper.js";
 import "bootstrap";
+import "details-element-polyfill";
 import NoUiSlider from "nouislider";
 import Headroom from "headroom.js";
 import numeral from "numeral";

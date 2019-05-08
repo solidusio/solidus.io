@@ -1,0 +1,19 @@
+<svg width="40" height="46" viewBox="0 0 40 46" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="-.0016421%" y1="50.0027523%" x2="100.002844%" y2="50.0027523%" id="linearGradient-3">
+      <stop stop-color="#C1D3FA" offset="0%"/>
+      <stop stop-color="#6D98F4" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g>
+      <rect fill="url(#linearGradient-3)" x="2.38095238" y="2.39583333" width="37.6190476" height="43.6041667" rx="3.80952381"/>
+      <rect stroke="#3D76F1" stroke-width="1.5" fill="#FFF" x=".75" y=".75" width="36.1190476" height="42.1041667" rx="3.80952381"/>
+      <g transform="translate(10.047619 21.166667)">
+        <ellipse stroke="#3D76F1" stroke-width="1.5" cx="8.44720497" cy="8.5" rx="8.44720497" ry="8.5"/>
+        <path fill="#3D76F1" d="M7.46497183 3.95348837h2.35735953v6.3255814H7.46497183zM7.46497183 11.0697674h2.35735953v2.37209302H7.46497183z"/>
+      </g>
+    </g>
+    <path d="M6.31203717 6.40437151H18.6943734M24.8834657 6.40437151h6.1928565M6.12156098 11.6960382H30.8862334M6.12156098 16.683743H24.8834657" stroke="#24282F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

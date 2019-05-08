@@ -1,0 +1,159 @@
+.help-center-widget {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1031;
+  width: 100%;
+  height: 100%;
+  @include media-breakpoint-up(md){
+    width: auto;
+  } 
+
+  &[open] {
+    summary::after {
+      @include media-breakpoint-up(md){
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      } 
+    }
+
+    summary::before {
+      content: '';
+      padding: 0;
+    }
+
+    .help {
+      display: none;
+    } 
+
+    .close { 
+      display: inline-block;
+    }
+  }
+
+  &__launcher {
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background: $blue;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    z-index: 1031;
+    @include media-breakpoint-up(md){
+      bottom: 30px;
+      right: 30px;
+    }  
+
+    &:before {
+      content: '';
+      padding: 0;
+    }
+    
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:first-of-type {
+      list-style-type: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .close {
+      display: none; 
+    }
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    @include media-breakpoint-up(sm){
+      width: 400px;
+    }
+    @include media-breakpoint-up(md){
+      bottom: 120px;
+      right: 30px;
+      height: auto;
+      z-index: 1031;
+    } 
+  
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: $blue;
+      padding: 20px 25px;
+      @include media-breakpoint-up(md){
+        border-radius: 10px 10px 0 0;
+      }
+
+      &__title {
+        margin: 0;
+      }
+
+      &__close {
+        @include media-breakpoint-up(md){
+          display: none;
+        }
+      }
+    }
+
+    &__body {
+      padding: 40px 30px;
+      background: #ffffff;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 0 30px 0 rgba(0,0,0,0.18);
+      height: 100vh;
+      @include media-breakpoint-up(md){
+        padding: 50px 30px;
+        height: auto;
+      }
+
+      &__card {
+        margin-bottom: 40px;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+          transform: translate(10px, 0)
+        }
+        &:last-child {
+          margin: 0;
+        }
+
+        &__content {
+          display: flex;
+          align-items: center;
+
+          svg {
+            max-height: 40px;
+          }
+          
+          &__text {
+            margin-left: 20px; 
+
+            h5 {
+              margin: 0;
+            }
+            p {
+              font-size: $font-size-sm;
+            }
+          }
+        }
+      }
+    }
+  }
+}
