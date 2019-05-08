@@ -1,0 +1,35 @@
+main_contributors:
+  nebulab:
+    name: "Nebulab"
+    short_description: "Back-End, Front-End, UX Design"
+    description: "Nebulab is a digital consulting company specialized in designing, developing, and maintaining high-quality eCommerce websites built with Solidus and Ruby on Rails applications. They mix passion and technology to give their clients the best the web has to offer to succeed!"
+    url: https://nebulab.it
+    image: "nebulab-logo.svg"
+    skills:
+      - "Solidus eCommerce Development"
+      - "UX/UI Design"
+      - "QA & Workflow design"
+
+gold_partners:
+  super_good:
+    name: "Super good"
+    short_description: "Spree and Solidus Specialists"
+    description: "Super Good is a software development agency specializing in ecommerce, Solidus, Ruby on Rails, and React."
+    url: https://supergood.software/
+    image: "supergood-logo.svg"
+    
+silver_partners:
+  peter_berkenbosch:
+    name: "Peter Berkenbosch Consultancy (PBC)"
+    short_description: "e-commerce consultancy"
+    description: "Peter Berkenbosch Consultancy (PBC) specialist in e-commerce consultancy, backend and integration development and CXOps."
+    url: https://peterberkenbosch.nl
+    image: "pbc-logo.svg"
+  boomer_digital:
+    name: "Boomer Digital"
+    short_description: "e-commerce, Mobile applications, DevOps, Software development"
+    description: "Boomer Digital is proud to be a Solidus.io partner. We love working with Solidus because of its flexibility!"
+    url: https://boomerdigital.net
+    retina:
+      default_img: "boomerdigital-logo.png"
+      retina_img: "boomerdigital-logo@2x.png"
