@@ -150,6 +150,11 @@
 
 // Community contributors
 .community-contributors{
+  ul {
+    overflow: hidden;
+    position: relative;
+  }
+  
   ul li {
     margin: $spacer / 2;
     
