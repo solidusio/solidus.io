@@ -148,6 +148,59 @@
   }
 }
 
+// Community contributors
+.community-contributors{
+  ul {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  ul li {
+    margin: $spacer / 2;
+    
+    &:not(:last-child){
+      margin-right: $spacer / 2;
+    }
+  }
+  
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  
+  .contributor a{
+    background-color: darken($gray-100, 5%);
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid $blue;
+    width: 50px;
+    height: 50px;
+    
+    span{
+      text-indent: 200%;
+      white-space: nowrap;
+      overflow: hidden;
+      position: absolute;
+    }
+    
+    &:hover img{
+      filter: opacity(65%);
+    }
+  }
+}
+
+.tooltip-gh-icon{
+  mask: url("/assets/images/social-icons/github.svg") no-repeat 0 0;
+  mask-size: 100% auto;
+  background-color: $white;
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 11px;
+  margin-right: 5px;
+}
+
 @keyframes devFade {
   0% {
   opacity:1;

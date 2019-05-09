@@ -26,6 +26,10 @@ GEM
     fastimage (2.1.1)
     ffi (1.9.23)
     ffi (1.9.23-x86-mingw32)
+    graphql (1.9.4)
+    graphql-client (0.14.0)
+      activesupport (>= 3.0, < 6.0)
+      graphql (~> 1.6)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
@@ -116,6 +120,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  graphql-client
   middleman (~> 4.2)
   middleman-blog (~> 4.0)
   mime-types
@@ -124,4 +129,4 @@ DEPENDENCIES
   wdm (~> 0.1)
 
 BUNDLED WITH
-   1.16.1
+   1.17.3

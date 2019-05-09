@@ -1,0 +1,24 @@
+<div class="content-block content-block-gray-100 community-contributors">
+  <div class="container text-center">
+    <div data-aos="fade">
+      <h2 class="title">Contributors.</h2>
+      <p class="mb-8">
+        Solidus is free and open source software, made possible by the work of dozens of volunteers.
+        <a class="link" href="https://github.com/solidusio/solidus" target="_blank">Join us!</a>
+      </p>
+    </div>
+
+    <ul class="list-inline">
+      <% github_contributors.each do |user| %>
+        <li class="list-inline-item contributor">
+          <a href="<%= user.profile_url %>" target="_blank" rel="noopener noreferrer nofollow" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<span class='tooltip-gh-icon'></span><%= user.login %>">
+            <span><%= user.login %></span>
+
+            <%= image_tag user.avatar_url %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+
+  </div>
+</div>

@@ -1,3 +1,5 @@
+require_relative '../lib/solidus'
+
 module CustomHelpers
   def full_title(page_title=nil, site_title)
     page_title ||= ""
@@ -33,5 +35,17 @@ module CustomHelpers
       end
     end
     return cls
+  end
+
+  # Returns a sorted list of contributors on GitHub
+  # @return [<Solidus::Contributor>]
+  def github_contributors
+    contributors_populator = Solidus::ContributorsPopulator.new(
+      organizations: %w[solidusio solidusio-contrib],
+      offset: 15,
+    )
+    contributors_populator.call
+
+    contributors_populator.contributors
   end
 end
