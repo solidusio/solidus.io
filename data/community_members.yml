@@ -1,0 +1,74 @@
+key_stakeholders:
+  nebulab:
+    name: "Nebulab"
+    url: https://opencollective.com/nebulab
+    image: "nebulab.svg"
+    
+  engine:
+    name: "Engine"
+    url: https://opencollective.com/engine-commerce
+    image: "engine.svg"
+    
+  super_good:
+    name: "Super Good"
+    url: https://opencollective.com/supergoodsoft
+    image: "super-good.svg"
+    
+  karma_creative:
+    name: "Karma Creative"
+    url: https://opencollective.com/karmacreative
+    image: "karma-creative.svg"
+
+sponsors:
+  boomer_digital:
+    name: "Boomer Digital"
+    url: https://opencollective.com/boomerdigital1
+    image: "boomer-digital.svg"
+    
+  peter_berkenbosch:
+    name: "Peter Berkenbosch"
+    url: https://opencollective.com/pberkenbosch
+    retina:
+      default_img: "p-berkenbosch.png"
+      retina_img: "p-berkenbosch@2x.png"
+
+  modded_euros:
+    name: "Modded Euros"
+    url: https://opencollective.com/modded-euros
+    image: "moddedeuros.svg"
+    
+backers:
+  twc:
+    name: "TWC"
+    url: https://opencollective.com/tcwequipment1
+    image: "twc.svg"
+  sean_denny:
+    name: "Sean Denny"
+    url: https://opencollective.com/sean-denny
+    retina:
+      default_img: "s-denny.png"
+      retina_img: "s-denny@2x.png"
+  jacob_herrington:
+    name: "Jacob Herrington"
+    url: https://opencollective.com/jacob-herrington
+    retina:
+      default_img: "jacob-herrington.png"
+      retina_img: "jacob-herrington@2x.png"
+  blake_puryear:
+    name: "Blake Puryear"
+    url: https://opencollective.com/b_puryear
+    retina:
+      default_img: "b-puryear.png"
+      retina_img: "b-puryear@2x.png"
+  omar_vazquez:
+    name: "Omar Vazquez"
+    url: https://opencollective.com/vzqzac
+    retina:
+      default_img: "o-vazquez.png"
+      retina_img: "o-vazquez@2x.png"
+  raul_contreras:
+    name: "Raul Contreras"
+    url: https://opencollective.com/rulocontreras
+    retina:
+      default_img: "r-contreras.png"
+      retina_img: "r-contreras@2x.png"
