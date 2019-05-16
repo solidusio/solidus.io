@@ -17,6 +17,12 @@ gold_partners:
     description: "Super Good is a software development agency specializing in ecommerce, Solidus, Ruby on Rails, and React."
     url: https://supergood.software/
     image: "supergood-logo.svg"
+  karma_creative:
+    name: "Karma Creative"
+    short_description: "Ecommerce Experts in Solidus"
+    description: "Full-service custom digital agency focused on Solidus, eCommerce, SEO, and working with Karma in everything we do."
+    url: https://karmacreative.io/
+    image: "karma-creative-logo.svg"
     
 silver_partners:
   peter_berkenbosch:
