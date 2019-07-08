@@ -1,0 +1,47 @@
+---
+title: SolidusConf 2019
+date: 2019-07-17
+tags: Solidus, conference
+author: Sean Denny
+---
+
+### Join us in Salt Lake City for SolidusConf 2019
+------
+
+###### 21-24 Oct 2019 in Salt Lake City, Utah
+
+We're proud to announce that this years SolidusConf will be held in Salt Lake City. Join us on October 21-24th for four days chock full of Solidus. SolidusConf is an annual conference for Solidus experts, people new to Solidus ecommerce, and stores considering the platform. More information can be found [here](https://conf.solidus.io/). We can't wait to see you there.
+
+#### Conference Days
+
+###### MONDAY, OCTOBER 21 & TUESDAY, OCTOBER 22
+
+![alt text](https://conf.solidus.io/images/conference_days.jpg "Conference Days")
+
+A single track conference with talks from industry leaders. Plenty of time for mingling between sessions.
+
+#### Hack Days
+
+###### WEDNESDAY, OCTOBER 23 & THURSDAY, OCTOBER 24
+
+![alt text](https://conf.solidus.io/images/hack_days.jpg "Hack Days")
+
+Spend 2 days with the Solidus core team and a room full of Solidus experts working on the platform or your own code.
+
+### Venue
+
+![alt text](https://conf.solidus.io/images/venue.jpg "Sale Lake City Public Library")
+
+The conference will be held in the Salt Lake City Public Library, a stunning, iconic structure, designed by internationally-acclaimed architect Moshe Safdie. With its massive, multi-purpose space, the SLCPL serves to bring people together to share ideas, network, hang out, or simply admire panoramic views of the city skyline.
+
+### Speakers
+
+Have an awesome idea for a talk you want to give at SolidusConf? Our CFP is now open! Submit your talk ideas [here](https://www.papercall.io/events/2434).
+
+### Tickets
+
+Tickets are available through [OpenCollective](https://opencollective.com/solidus/events/solidusconf-2019-21928ev). If you're unable to purchase a ticket, give us a shout at info@southeastsolid.us - we want you to be able to attend!
+
+### Updates
+
+[Join our Slack](slack.solidus.io) to stay up to date - more news coming soon!
