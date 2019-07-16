@@ -1,30 +1,30 @@
-key_stakeholders:
+ambassadors:
   nebulab:
     name: "Nebulab"
     url: https://opencollective.com/nebulab
     image: "nebulab.svg"
-    
+
   engine:
     name: "Engine"
     url: https://opencollective.com/engine-commerce
     image: "engine.svg"
-    
+
   super_good:
     name: "Super Good"
     url: https://opencollective.com/supergoodsoft
     image: "super-good.svg"
-    
+
   karma_creative:
     name: "Karma Creative"
     url: https://opencollective.com/karmacreative
     image: "karma-creative.svg"
 
-sponsors:
+supporters:
   boomer_digital:
     name: "Boomer Digital"
     url: https://opencollective.com/boomerdigital1
     image: "boomer-digital.svg"
-    
+
   peter_berkenbosch:
     name: "Peter Berkenbosch"
     url: https://opencollective.com/pberkenbosch
@@ -36,8 +36,8 @@ sponsors:
     name: "Modded Euros"
     url: https://opencollective.com/modded-euros
     image: "moddedeuros.svg"
-    
-backers:
+
+entushiasts:
   twc:
     name: "TWC"
     url: https://opencollective.com/tcwequipment1
