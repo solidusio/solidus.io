@@ -10,7 +10,7 @@ author: Sean Denny
 
 ###### 21-24 Oct 2019 in Salt Lake City, Utah
 
-We're proud to announce that this years SolidusConf will be held in Salt Lake City. Join us on October 21-24th for four days chock full of Solidus. SolidusConf is an annual conference for Solidus experts, people new to Solidus ecommerce, and stores considering the platform. More information can be found [here](https://conf.solidus.io/). We can't wait to see you there.
+We're proud to announce that this year SolidusConf will be held in Salt Lake City. Join us on October 21-24th for four days chock full of Solidus. SolidusConf is an annual conference for Solidus experts, people new to Solidus ecommerce, and stores considering the platform. More information can be found [here](https://conf.solidus.io/). We can't wait to see you there.
 
 #### Conference Days
 
@@ -18,7 +18,7 @@ We're proud to announce that this years SolidusConf will be held in Salt Lake Ci
 
 ![alt text](https://conf.solidus.io/images/conference_days.jpg "Conference Days")
 
-A single track conference with talks from industry leaders. Plenty of time for mingling between sessions.
+A single-track conference with talks from industry leaders. Plenty of time for mingling between sessions.
 
 #### Hack Days
 
