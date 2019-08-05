@@ -59,10 +59,12 @@
       display: block;
       max-width: 100%;
     }
-
-    @include media-breakpoint-up(lg){
-      margin-left: 17px;
-      margin-right: 17px;
+    
+    .content-block-gray-100 & {
+      @include media-breakpoint-up(lg){
+        margin-left: 17px;
+        margin-right: 17px;
+      }  
     }
   }
 }

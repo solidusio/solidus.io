@@ -18,6 +18,11 @@ ambassadors:
     name: "Karma Creative"
     url: https://opencollective.com/karmacreative
     image: "karma-creative.svg"
+    
+  modded_euros:
+    name: "Modded Euros"
+    url: https://opencollective.com/modded-euros
+    image: "moddedeuros.svg"
 
 supporters:
   boomer_digital:
@@ -31,11 +36,6 @@ supporters:
     retina:
       default_img: "p-berkenbosch.png"
       retina_img: "p-berkenbosch@2x.png"
-
-  modded_euros:
-    name: "Modded Euros"
-    url: https://opencollective.com/modded-euros
-    image: "moddedeuros.svg"
 
 entushiasts:
   twc:
@@ -72,3 +72,9 @@ entushiasts:
     retina:
       default_img: "r-contreras.png"
       retina_img: "r-contreras@2x.png"
+  ben_akroyd:
+    name: "Ben Akroyd"
+    url: https://opencollective.com/ben-akroyd
+    retina:
+      default_img: "b-akroyd.png"
+      retina_img: "b-akroyd@2x.png"
