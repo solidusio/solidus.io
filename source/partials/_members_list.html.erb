@@ -11,7 +11,7 @@
       <div class="row align-items-center justify-content-center">
         <% data.community_members[:ambassadors].each do |member, info| %>
 
-          <div class="col-6 col-sm-4 col-lg-auto">
+          <div class="col-6 col-sm-4 col-lg">
             <a class="item" href="<%= info[:url] %>" target="_blank">
 
               <% if info[:retina] %>
@@ -61,7 +61,7 @@
   <div class="content-block border-bottom border-secondary" data-aos="fade">
     <div class="container container-md mb-8 text-center">
       <%= inline_svg("icons/backer.svg", class: "isvg") %>
-      <h3 class="title mt-3">Entushiasts</h3>
+      <h3 class="title mt-3">Enthusiasts</h3>
       <p>
         Those who have pledged on Open Collective from <b>$10</b> to <b>$50</b> a month to Solidus.
       </p>
@@ -69,7 +69,7 @@
     <div class="community-logos">
       <div class="row align-items-center justify-content-center">
 
-        <% data.community_members[:entushiasts].each do |member, info| %>
+        <% data.community_members[:enthusiasts].each do |member, info| %>
 
           <div class="col-3 col-sm-2 col-lg-auto">
             <a class="item" href="<%= info[:url] %>" target="_blank">
