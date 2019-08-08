@@ -39,3 +39,11 @@ silver_partners:
     retina:
       default_img: "boomerdigital-logo.png"
       retina_img: "boomerdigital-logo@2x.png"
+
+bronze_partners:
+  wemove:
+    name: "wemove digital solutions GmbH"
+    short_description: "Webshop Development"
+    description: "Developing Webshops, Websites and GeoData/OpenData Applications."
+    url: https://wemove.com
+    image: "wemove-logo.svg"

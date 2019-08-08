@@ -36,7 +36,7 @@
           flex: 0 0 calc(50% - 30px);
         }
         
-        &.silver-partner {
+        &.silver-partner, &.bronze-partner {
           flex: 0 0 calc(33.333% - 30px);
         }
       }
