@@ -8,7 +8,7 @@ author: Sean Denny
 ### Introducing SolidusConf Speaker Jason Swett
 ------
 
-![alt text](https://www.codewithjason.com/wp-content/uploads/2018/06/jason-swett-280x300.jpg "Jason Swett")
+![alt text](https://www.codewithjason.com/wp-content/uploads/2018/06/jason-swett-280x300.jpg "A headshot of Jason Swett")
 
 We’re proud to announce that Jason Swett will be joining us as a speaker for SolidusConf 2019.
 
