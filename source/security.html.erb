@@ -1,0 +1,212 @@
+---
+title: Security
+---
+
+<div class="content-block container">
+  <div class="security-block">
+    <h1 class="title">Security</h1>
+
+    <div class="mb-4 mb-md-6">
+      <p class="lead">
+        We take security very seriously and adopt industry best practices to
+        minimize the likelihood of introducing vulnerabilities in the Solidus
+        codebase. For us, security also means having a clear policy in place
+        for reporting and patching vulnerabilities.
+      </p>
+
+      <h2>Supported Versions</h2>
+      <p>
+        Solidus versions will receive security patches for 18 months after
+        their initial release.
+      </p>
+      <p>
+        The following table represents the latest versions with their release date,
+        EOL date and current support state.
+      </p>
+
+      <%= partial "partials/supported_versions" %>
+
+      <h2>Reporting a vulnerability</h2>
+
+      <p>
+        <strong>
+          We promise to be always responsive and thankful to those who report
+          any security vulnerabilities following the instructions described here.
+        </strong>
+      </p>
+
+      <p>
+        All security bugs in Solidus should be reported through our
+        <a href="https://hackerone.com/solidus">
+          vulnerability disclosure program page at HackerOne</a>. This will
+        deliver a message to a subset of the Core Team who handle
+        security issues. Your report will be acknowledged as soon as possible
+        and we'll try to get in touch within 5 days.
+      </p>
+
+      <p>
+        We may ask you to access the Security Advisory created in GitHub to
+        help us discover more about the report, fix it, and also to keep you
+        informed on progress.
+      </p>
+      <p>
+        Alternatively, you’ll just receive a detailed response indicating the
+        next steps in handling your report. After the first reply to your
+        report, the security team will keep you informed of the progress
+        being made towards a fix and full announcement. These updates will be
+        sent at least every 5 days.
+      </p>
+
+      <p>
+        If you have not received a reply to your report within 5 days, or have
+        not heard from the security team for the past 5 days, please, either:
+
+        <ul>
+          <li>
+            Contact the current security coordinator
+            <a href="mailto:kennyadsl@gmail.com?subject=Solidus Security Issue">
+              (Alberto Vena)
+            </a>
+            directly.
+          </li>
+          <li>
+            Contact any other Solidus Core Team member on
+            <a href="http://slack.solidus.io/">
+              Slack
+            </a>
+            via direct message.
+          </li>
+        </ul>
+      </p>
+
+      <div class="font-weight-light">
+        <p>
+          All response target times are tracked and reported in business days.
+          Business days are defined to be:
+
+          <ul>
+            <li>Monday - Friday</li>
+            <li>24 hours</li>
+            <li>Including holidays (hackers never sleep!)</li>
+          </ul>
+        </p>
+      </div>
+
+      <h2>Disclosure process</h2>
+
+      <h4>
+        1. Security Report Received
+      </h4>
+      <ul>
+        <li>
+          Report is assigned a primary handler. This person will coordinate
+          the fix and release process.
+        </li>
+        <li>
+          Problem is confirmed and a list of all affected versions is determined.
+        </li>
+        <li>
+          Code is audited to find any potential similar problems.
+        </li>
+      </ul>
+
+      <h4>
+        2. Vulnerability Fixed
+      </h4>
+      <ul>
+        <li>
+          A new
+          <a href="https://help.github.com/en/articles/about-maintainer-security-advisories">
+            Security Advisory
+          </a>
+          is created in GitHub to privately discuss and fix the vulnerability
+          reported. This will also allow publishing a security alert to Solidus
+          users directly on GitHub, only visible to repository users with admin
+          permissions.
+        </li>
+        <li>
+          Fixes are prepared for all releases which are still supported.
+          These fixes are not committed to the public repository but rather
+          held privately pending the announcement.
+        </li>
+      </ul>
+
+      <h4>
+        3. Vulnerability Published
+      </h4>
+      <p>
+        <em>
+          These actions should be done within the same business day.
+        </em>
+      </p>
+      <ul>
+        <li>
+          The GitHub Security Advisory is published.
+        </li>
+        <li>
+          A
+          <a href="https://groups.google.com/forum/#!forum/solidus-security">
+            Solidus Security mailing list
+          </a>
+          thread is created.
+        </li>
+        <li>
+          Fixed gems versions are released to RubyGems.
+        </li>
+        <li>
+          A blog post is published on solidus.io.
+        </li>
+      </ul>
+
+      <h2>Receiving disclosures</h2>
+
+      <p>
+        The best way to receive all the security announcements is to
+        <a href="https://help.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies">
+          enable alerts for vulnerable dependencies in GitHub
+        </a>
+        or to subscribe to the
+        <a href="https://groups.google.com/forum/#!forum/solidus-security">
+          Solidus Security mailing list</a>.
+        The mailing list is very low traffic, and it receives the public
+        notifications the moment the vulnerability is published.
+      </p>
+
+      <p>
+        If you have any suggestions to improve this policy, please send an
+        email to the
+        <a href="mailto:kennyadsl@gmail.com?subject=Solidus Security Policy Feedback">
+          security policy coordinator</a>.
+      </p>
+
+      <h2>Additional Security Initiatives</h2>
+      <p>
+        In addition to the Disclosure Program above we also enforce the
+        security of the codebase and released gems through the following
+        initiatives:
+      </p>
+
+      <ul>
+        <li>
+          <b>Two mandatory PR reviews from the Core Team:</b>
+          Before merging any PR we need two mandatory reviews from members of
+          the Core Team, which helps spot security issues.
+        </li>
+        <li>
+          <b>Multi-factor authentication enabled on RubyGems:</b>
+          All users who have permissions to release a core gem of Solidus
+          need to have
+          <a href="https://guides.rubygems.org/setting-up-multifactor-authentication/">
+            multi-factor authentication enabled on RubyGems
+          </a> to avoid gem hijacking.
+        </li>
+        <li>
+          <b>Automated GitHub Security Fixes:</b>
+          When one of the Solidus dependencies receives a security fix, GitHub
+          automatically submits a Pull Request on our repository to require the
+          library at the patched version.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
