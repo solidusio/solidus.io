@@ -1,16 +1,12 @@
 ---
-title: Solidus v2.9
-date: 2019-07-16
+title: Solidus Surveys
+date: 2019-08-30
 tags: Solidus
 author: Solidus Core Team
-cover_image: /blog/2019/07/16/solidus-v2-9/solidus_2.9.png
+cover_image: /blog/2019/08/30/solidus-surveys/solidus_survey_roadmap.jpg
 ---
 
-![New Solidus Admin UI](2019-07-16-solidus-v2.9/solidus_2.9.png)
-
-
-- <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v2.9.0">2.9.0 on GitHub</a>
-- <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/2.9.0">2.9.0 on RubyGems</a>
+Test test test
 
 Thanks to all contributors, testers, and users who made this release possible.
 
