@@ -6,6 +6,7 @@ import NoUiSlider from "nouislider";
 import Headroom from "headroom.js";
 import numeral from "numeral";
 import AOS from "aos";
+const Cookies = require('js-cookie');
 
 $(function () {
   //Menu toggler functionality
@@ -63,6 +64,16 @@ $(function () {
     duration: 600,
     easing: "ease-in-quart",
     disable: window.innerWidth < 1024
+  });
+
+  //Remove top bar on click
+  if (!Cookies.get('announcement')) {
+    $(".top-bar").addClass('top-bar--show');
+  }
+
+  $(".top-bar-close").click(function(){
+    Cookies.set('announcement', 'true', { expires: 10 });
+    $(".top-bar").removeClass('top-bar--show');
   });
 
 });
