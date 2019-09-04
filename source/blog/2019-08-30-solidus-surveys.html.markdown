@@ -1,113 +1,42 @@
 ---
-title: Solidus Surveys
+title: Be part of the first Solidus Roadmap Survey!
 date: 2019-08-30
 tags: Solidus
 author: Solidus Core Team
 cover_image: /blog/2019/08/30/solidus-surveys/solidus_survey_roadmap.jpg
 ---
 
-Test test test
 
-Thanks to all contributors, testers, and users who made this release possible.
+### Hello everyone!
 
-This version's support will end in 18 months: 2021-01-16.
+As we have already announced in our Slack channel, we are currently conducting two surveys that will
+help us define Solidus' roadmap for the rest of 2019 and 2020.
+
+The first survey is aimed at websites which are currently on Solidus: we think you, the Solidus
+community, can provide invaluable feedback on what's working and what we could be doing better for
+you. The second survey is for websites which are currently on a different platform. It will help us
+understand how we can make Solidus a more appealing option for these users, and what the biggest
+and most recurring pain points are in the eCommerce space.
+
+**You can find the surveys here:**
+
+![Question](2019-08-30-solidus-surveys/main-question.png){: .img-fluid .custom-img-texts }
+![Answers](2019-08-30-solidus-surveys/yes-no-answers.png){: .img-fluid .custom-img-texts }
+![](2019-08-30-solidus-surveys/swirls-answers.png){: .img-fluid }
+{: .mb-1 }
+
+[Solidus Users Survey](https://forms.gle/MGtDtgVMB7G9Q2aL8){: .btn .btn-primary target='blank'}
+{: .text-center .mb-1}
+
+![](2019-08-30-solidus-surveys/swirls.png){: .img-fluid }
+{: .mb-1 }
+
+[Solidus Non-Users Survey](https://forms.gle/U8UjXSWpfmnriVnd7){: .btn .btn-dark target='blank'}
+{: .text-center .mb-5}
 
 
-### What's changed?
+We're trying to reach as many people as possible and we would really appreciate your help! Fill the
+surveys if you haven't already (they're very short!), and share them with your network if you think
+they have interesting thoughts or ideas to send our way.
 
-Full changelog can be found on our
-[GitHub repository](https://github.com/solidusio/solidus/blob/7f35c94a624be1a78b659500ee1af5dbd4bf63c2/CHANGELOG.md#solidus-290-2019-07-16)
-but here's a list of major changes:
-
-**Admin UI restyle**
-
-Solidus has a fresh Admin UI! Your eyes will thank you and this would not
-impact your store but if you added some custom CSS that matches the old Admin
-UI, you probaly have to make some change at it now.
-
-**New REST API documentation**
-
-Our REST API is now documented using the Open API Specification. The
-documentation is part of the repository and published on
-https://solidus.docs.stoplight.io/.
-
-**Added Spree::Event**
-
-Solidus now includes an event library that allows to use different adapters.
-The default adapter is based on `ActiveSupport::Notifications` library.
-Events should allow developers to customize and extend Solidus behavior
-more easily by simply subscribing to certain events. Sending emails may be a
-simple use case for this new feature.
-
-**Attachment adapters**
-
-This is the first step to support other files attachment libraries since
-Paperclip is no more maintained. Solidus will release the ActiveStorage
-support in core in the next releases or via an extension.
-
-**Add more fields to the API json response for shipments**
-
-This change adds more fields to the API endpoints that return a shipment
-object. We had two partials to represent shipments:
-[`small`](https://github.com/solidusio/solidus/blob/e7260a27a7c292908a835f374d5ba73fe7284cd0/api/app/views/spree/api/shipments/_big.json.jbuilder)
-and
-[`big`](https://github.com/solidusio/solidus/blob/e7260a27a7c292908a835f374d5ba73fe7284cd0/api/app/views/spree/api/shipments/_small.json.jbuilder)
-but some of the `small` fields were not present in the `big` partial. Now they
-are aligned but users that were using those partials could notice some
-difference in how the API endpoints involved respond.
-
-**Deprecate reset_spree_preferences in test**
-
-Changing preferences and resetting them after any example is not a good
-practice and it's error-prone. The new standard is stubbing preferences and
-it's enforced with a deprecation of reset_spree_preferences. This way we can
-gradually align stores and extensions.
-
-**Changed payment method partials name convention**
-
-Payment methods partials filename are now expected to be the
-Spree::PaymentMethod class underscored instead of downcased. This means that,
-for example, for `Spree::PaymentMethod::StoreCredit` the corresponding partial
-files would be named `_store_credit` and not `_storecredit`. If you overrode
-one of the following files, you should rename it now:
-
-```
-api/app/views/spree/api/payments/source_views/_storecredit.json.jbuilder → api/app/views/spree/api/payments/source_views/_store_credit.json.jbuilder
-backend/app/views/spree/admin/payments/source_forms/_storecredit.html.erb → backend/app/views/spree/admin/payments/source_forms/_store_credit.html.erb
-backend/app/views/spree/admin/payments/source_views/_storecredit.html.erb → backend/app/views/spree/admin/payments/source_views/_store_credit.html.erb
-```
-
-Also, if you've built your own payment method you may need to change the
-corresponding partials filename.
-
-**Fix non thread safe gateway initialization**
-
-`ActiveMerchant::Billing::Base.mode` is a global `ActiveMerchant` preference
-and we were setting it into each payment gateway initialization. This means
-that if the last instantiated payment method's mode was different from the
-other ones, the last one's mode will be applied to all of them. To fix this
-issue we changed how we tell ActiveMerchant that one gateway is in test mode.
-Please double check your production configuration for payment methods: only
-payment methods where `server` preference set to production and `test_mode`
-turned off will work in "production" mode.
-
-**Remove name from default ransackable attributes**
-
-Ransack needs a whitelist of attributes to perform a search against for security
-reasons. We used to whitelist `id` and `name` for all the models but not all
-models have the `name` attribute/column making ransack search raise an error.
-If you have a custom model and you are performing search against its `name`,
-now you have to manually add it to the ransackable whitelist for that resource.
-
-**Changes to how returns are processed from a return item**
-
-It you are programmatically calling `Spree::ReturnItem#process_inventory_unit!`
-please notice that it doesn't automatically process return anymore. To remove
-the deprecation warning you have to set an attribute on your `return_item`
-instance before calling `process_inventory_unit!`:
-
-```ruby
-return_item.skip_customer_return_processing = true
-return_item.process_inventory_unit!
-# here you should process the customer return manually
-```
+**Together, we are going to shape the future of Solidus!**

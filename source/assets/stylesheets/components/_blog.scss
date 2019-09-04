@@ -87,3 +87,12 @@
     margin: 1rem 0;
   }
 }
+
+.custom-img-texts {
+  margin: 0 auto;
+  max-width: 100%;
+  
+  @include media-breakpoint-up(sm) {
+    max-width: 60%;
+  }
+}
