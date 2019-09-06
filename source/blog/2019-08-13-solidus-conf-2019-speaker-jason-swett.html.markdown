@@ -3,12 +3,11 @@ title: SolidusConf 2019 Speaker Jason Swett
 date: 2019-08-13
 tags: Solidus, conference
 author: Sean Denny
+cover_image: /blog/2019/08/13/solidus-conf-2019-speaker-jason-swett/solidus-conf-jswett_TW1024x512.png
 ---
 
 ### Introducing SolidusConf Speaker Jason Swett
 ------
-
-![alt text](https://www.codewithjason.com/wp-content/uploads/2018/06/jason-swett-280x300.jpg "A headshot of Jason Swett")
 
 We’re proud to announce that Jason Swett will be joining us as a speaker for [SolidusConf 2019](http://conf.solidus.io).
 

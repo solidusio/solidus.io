@@ -3,12 +3,12 @@ title: SolidusConf 2019 Speaker Alessandro Desantis
 date: 2019-08-28
 tags: Solidus, conference
 author: Sean Denny
+cover_image: /blog/2019/08/28/solidus-conf-2019-speaker-alessandro-desantis/solidus-conf-adesantis_TW1024x512.png
 ---
 
 ### Introducing SolidusConf Speaker Alessandro Desantis
 ------
 
-![alt text](https://southeastsolid.us/wp-content/uploads/2019/08/avatar.png "A headshot of Alessandro Desantis")
 
 We’re proud to announce that Alessandro Desantis will be joining us as a speaker for [SolidusConf 2019](http://conf.solidus.io).
 
