@@ -1,14 +1,13 @@
 ---
 title: SolidusConf 2019 Speaker Sean Denny
-date: 2019-09-03
+date: 2019-09-09
 tags: Solidus, conference
 author: Sean Denny
+cover_image: /blog/2019/09/09/solidus-conf-2019-speaker-sean-denny/solidusconf_speaker_sean_denny.png
 ---
 
 ### Introducing SolidusConf Speaker Sean Denny
 ------
-
-![alt text](https://southeastsolid.us/wp-content/uploads/2019/08/48385935_1991549777588600_14940503300636672_o-2.jpg "A headshot of Sean Denny")
 
 We’re proud to announce that Sean Denny will be joining us as a speaker for [SolidusConf 2019](http://conf.solidus.io).
 
