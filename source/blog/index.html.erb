@@ -14,6 +14,9 @@ per_page: 10
   <div class="container">
     <% page_articles.each_with_index do |article, i| %>
       <a class="blog-post-preview card" href="<%= url_for article %>">
+        <% if article.data.cover_image %>
+          <img class="card-img-top img-fluid" src="<%= article.data.cover_image %>">
+        <% end %>
         <div class="card-body">
           <h3 class="title"><%= article.title %></h3>
           <div class="blog-post-author text-gray-048"><%= article.data.author %> · <%= article.date.strftime('%b %e, %Y') %></div>

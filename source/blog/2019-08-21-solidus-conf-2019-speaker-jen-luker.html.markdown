@@ -3,12 +3,12 @@ title: SolidusConf 2019 Speaker Jen Luker
 date: 2019-08-21
 tags: Solidus, conference
 author: Sean Denny
+cover_image: /blog/2019/08/21/solidus-conf-2019-speaker-jen-luker/solidus-conf-jluker_TW1024x512.png
 ---
 
 ### Introducing SolidusConf Speaker Jen Luker
 ------
 
-![alt text](https://www.jenluker.com/assets/JenLuker.jpg "A headshot of Jen Luker")
 
 We’re proud to announce that Jen Luker will be joining us as a speaker for [SolidusConf 2019](http://conf.solidus.io).
 
