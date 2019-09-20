@@ -184,11 +184,25 @@ SEO & Tracking:
     link: https://github.com/solidusio-contrib/solidus_trackers
 
 Content Management:
+  - title: Alchemy Solidus
+    categories:
+      - Admin
+      - Customer-Facing
+    description: A Solidus integration that connects both backends providing a fully featured CMS with flexible Taxon and Product content blocks.
+    link: https://github.com/AlchemyCMS/alchemy-solidus
+
   - title: Solidus editor
     categories:
       - Admin
     description: Edit product descriptions using a WYSIWYG editor. Choose from two separate options for inline WYSIWYG rich text editors.
     link: https://github.com/solidusio-contrib/solidus_editor
+
+  - title: Solidus Refinery CMS Authentication
+    categories:
+      - Admin
+      - Customer-Facing
+    description: A Refinery CMS and Solidus E-commerce connector providing tabs in Refinery CMS and Solidus menus to easily switch between both backends.
+    link: https://github.com/refinerycms-contrib/solidus-refinery-authentication
 
   - title: Solidus static content
     categories:
