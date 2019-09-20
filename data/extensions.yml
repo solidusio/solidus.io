@@ -1,0 +1,245 @@
+Search:
+  - title: Solidus elastic product
+    categories:
+      - Backend Functionality
+      - Customer-Facing
+    description: Allow users to search your store and explore trends and patterns in their searching behaviour. Elasticsearch, a distributed, RESTful search and analytics engine that centrally stores data.
+    link: https://github.com/boomerdigital/solidus_elastic_product
+
+Products & Inventory:
+  - title: Solidus flexi variants
+    categories:
+      - Customer-Facing
+    description: Provide multiple product options, like colour and size, without creating individual variants. Customers can also upload or customize their own products (e.g. custom engravings).
+    link: https://github.com/boomerdigital/solidus_flexi_variants
+
+  - title: Solidus prototypes
+    categories:
+      - Admin
+    description: Create product templates to reduce the time it takes to create new products from scratch.
+    link: https://github.com/solidusio-contrib/solidus_prototypes
+
+  - title: Solidus product assembly
+    categories:
+      - Admin
+    description: Create products that contain several items or customizable features like a gift basket or clothing options on a doll.
+    link: https://github.com/solidusio-contrib/solidus_product_assembly
+
+  - title: Solidus asset variant options
+    categories:
+      - Admin
+    description: Share product images across multiple variants to save time when options such as clothing size don’t change the way a product looks.
+    link: https://github.com/solidusio/solidus_asset_variant_options
+
+  - title: Solidus related products
+    categories:
+      - Admin
+      - Customer-Facing
+    description: Create relationships between products and use them to cross sell and upsell compatible products like accessories, replacement parts and warranties.
+    link: https://github.com/solidusio-contrib/solidus_related_products
+
+Orders:
+  - title: Solidus subscriptions
+    categories:
+      - Admin
+      - Backend Functionality
+      - Customer-Facing
+    description: Give your customers access to, and bill for, recurring orders.
+    link: https://github.com/solidusio-contrib/solidus_subscriptions
+
+  - title: Solidus Signifyd
+    categories:
+      - Backend Functionality
+    description: Provide fraud protection and chargeback prevention with this Signifyd integration for Solidus.
+    link: https://github.com/solidusio/solidus_signifyd
+
+  - title: Solidus print invoice
+    categories:
+      - Admin
+    description: Create a PDF of an individual invoice from the order screen. A template is provided and can be easily extended and styled.
+    link: https://github.com/solidusio-contrib/solidus_print_invoice
+
+Sales:
+  - title: Solidus volume pricing
+    categories:
+      - Admin
+      - Customer-Facing
+    description: Set pricing discounts based on a range of quantities to provide competitive rates for customers buying in bulk.
+    link: https://github.com/solidusio-contrib/solidus_volume_pricing
+
+  - title: Solidus multi domain
+    categories:
+      - Customer-Facing
+    description: Create multiple storefronts and select which products and pricing are displayed on each.
+    link: https://github.com/solidusio/solidus_multi_domain
+
+  - title: Solidus Avatax certified
+    categories:
+      - Admin
+      - Backend Functionality
+    description: Calculate taxes automatically using this third-party integration with Avalara’s Avatax service.
+    link: https://github.com/boomerdigital/solidus_avatax_certified
+
+  - title: Solidus wishlist
+    categories:
+      - Customer-Facing
+    description: Allow your customers to create multiple wishlists that are either private or publicly shareable.
+    link: https://github.com/boomerdigital/solidus_wishlist
+
+Payments:
+  - title: Solidus Amazon payments
+    categories:
+      - Customer-Facing
+    description: Integrate Amazon Pay into your store’s checkout for a familiar, trusted way for customers to check out.
+    link: https://github.com/boomerdigital/solidus_amazon_payments
+
+  - title: Solidus Adyen
+    categories:
+      - Customer-Facing
+    description: Support credit cards, PayPal, and direct debit payments through the Adyen payment gateway.
+    link: https://github.com/StemboltHQ/solidus-adyen
+
+  - title: Solidus Affirm
+    categories:
+      - Customer-Facing
+    description: Offer flexible financing and monthly payment options to customers using the Affirm service.
+    link: https://github.com/solidusio-contrib/solidus_affirm
+
+  - title: Solidus Braintree
+    categories:
+      - Customer-Facing
+    description: Support credit cards, PayPal, and Apple Pay payments through the Braintree payment gateway.
+    link: https://github.com/solidusio/solidus_paypal_braintree
+
+  - title: Solidus Paybright
+    categories:
+      - Customer-Facing
+    description: Offer flexible financing and monthly payment options to customers using the Paybright service.
+    link: https://github.com/StemboltHQ/solidus_paybright
+
+  - title: Solidus Klarna payments
+    categories:
+      - Customer-Facing
+    description: Offer flexible financing and monthly payment options to customer using the Klarna service.
+    link: https://github.com/bitspire/solidus_klarna_payments
+
+  - title: Solidus virtual gift card
+    categories:
+      - Customer-Facing
+    description: Add virtual gift card products with unique codes that can apply store credit to a user’s account.
+    link: https://github.com/solidusio/solidus_virtual_gift_card
+
+Shipping:
+  - title: Solidus active shipping
+    categories:
+      - Admin
+      - Customer-Facing
+    description: Find shipping rates and provides the ability to register and track shipments with this simple library. Negotiate rates directly with your carrier of choice and use this extension to connect your account. Choose from eight carriers including UPS, USPS, FedEx, Canada Post and more.
+    link: https://github.com/solidusio-contrib/solidus_active_shipping
+
+  - title: Solidus Shipstation
+    categories:
+      - Admin
+      - Customer-Facing
+    description: Import, manage, and ship orders using the Shipstation service.
+    link: https://github.com/boomerdigital/solidus_shipstation
+
+  - title: Solidus EasyPost
+    categories:
+      - Admin
+      - Customer-Facing
+    description: Compare rates, buy postage, track packages, verify addresses, and more, using the EasyPost service. This service integrates with USPS, UPS, Fedex, DHL, and other popular carriers.
+    link: https://github.com/solidusio-contrib/solidus_easypost
+
+Social:
+  - title: Solidus social
+    categories:
+      - Customer-Facing
+    description: Provide social login support for your customers including authorization, account creation, and association through third-party services. Twitter, Facebook, GitHub, Google oAuth2 and Amazon are available out of the box.
+    link: https://github.com/solidusio-contrib/solidus_social
+
+  - title: Solidus email to friend
+    categories:
+      - Customer-Facing
+    description: Provide the ability for users to email a product to their friend.
+    link: https://github.com/boomerdigital/solidus_email_to_friend
+
+SEO & Tracking:
+  - title: Solidus product feed
+    categories:
+      - Backend Functionality
+    description: Create a RSS product feed with attributes like name, price, image etc that integrates with Google Shopping.
+    link: https://github.com/solidusio-contrib/solidus_product_feed
+
+  - title: Solidus sitemap
+    categories:
+      - Backend Functionality
+    description: Index product pages and others to generate a sitemap that you can submit to search engines.
+    link: https://github.com/solidusio-contrib/solidus_sitemap
+
+  - title: Solidus trackers
+    categories:
+      - Admin
+    description: Configure Google Analytics from the admin to track data around how your users interact with your storefront.
+    link: https://github.com/solidusio-contrib/solidus_trackers
+
+Authoring:
+  - title: Solidus editor
+    categories:
+      - Admin
+    description: Edit product descriptions using a WYSIWYG editor. Choose from two separate options for inline WYSIWYG rich text editors.
+    link: https://github.com/solidusio-contrib/solidus_editor
+
+  - title: Solidus static content
+    categories:
+      - Backend Functionality
+    description: Manage static content like about pages, landing pages, and terms and conditions straight from the Solidus admin.
+    link: https://github.com/solidusio-contrib/solidus_static_content
+
+Tools:
+  - title: Solidus log viewer
+    categories:
+      - Admin
+    description: View payment logs in the Solidus admin instead of a separate file.
+    link: https://github.com/solidusio-contrib/solidus_log_viewer
+
+  - title: Solidus comments
+    categories:
+      - Admin
+    description: Annotate and add messaging to tables on the order and shipment screens.
+    link: https://github.com/solidusio-contrib/solidus_comments
+
+  - title: Solidus papertrail
+    categories:
+      - Backend Functionality
+    description: Track changes to your models’ data. See how a model looks at any stage, revert it to any version, and restore it after it has been destroyed. Ideal for auditing and versioning your data.
+    link: https://github.com/solidusio-contrib/solidus_papertrail
+
+Customers & Users:
+  - title: Solidus auth devise
+    categories:
+      - Admin
+      - Custom-Facing
+    description: Provide authentication services through email/password combinations using confirmation emails. This is the default Solidus authentication plugin.
+    link: https://github.com/solidusio/solidus_auth_devise
+
+  - title: Solidus user roles
+    categories:
+      - Admin
+    description: Create custom roles within your company with different permissions and access levels to admin screens.
+    link: https://github.com/boomerdigital/solidus_user_roles
+
+Internationalization:
+  - title: Solidus I18n
+    categories:
+      - Admin
+      - Custom-Facing
+    description: Change the language of your store with internationalization and localization language support. 39 languages are included.
+    link: https://github.com/solidusio-contrib/solidus_i18n
+
+  - title: Solidus globalize
+    categories:
+      - Admin
+      - Custom-Facing
+    description: Translate your product names and descriptions.
+    link: https://github.com/solidusio-contrib/solidus_globalize
