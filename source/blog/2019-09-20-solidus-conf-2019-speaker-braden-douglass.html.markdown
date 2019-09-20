@@ -15,7 +15,7 @@ Braden is a developer, community advocate and organizer. He's a half JavaScript,
 
 
 
-#### Breaking Up The Band Monolith With EQ
+#### Breaking Up The <s>Band</s> Monolith With EQ
 
 Emotional intelligence is sometimes missing from the software engineering realm. However, how can we as engineers and managers utilize it when feeling the pain of a monolithic application design? How do EQ markers equate to when and how a monolith should be deconstructed? The talk will explore the fundamentals of emotional intelligence in an engineering team and how to utilize tools from the 'emotional intelligence tool-belt' to read when a team is ready to deconstruct their monolith.
 
