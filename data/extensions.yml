@@ -183,7 +183,7 @@ SEO & Tracking:
     description: Configure Google Analytics from the admin to track data around how your users interact with your storefront.
     link: https://github.com/solidusio-contrib/solidus_trackers
 
-Authoring:
+Content Management:
   - title: Solidus editor
     categories:
       - Admin
