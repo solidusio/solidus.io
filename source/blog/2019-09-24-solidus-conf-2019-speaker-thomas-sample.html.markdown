@@ -17,6 +17,6 @@ Focused on Spree and Solidus since 2013, Thomas founded Karma Creative in 2017, 
 
 #### 101 Solidus SEO Tips: The Ultimate Guide
 
-A deep dive into the business value and practical application of SEO techniques and principals for your Solidus store. We’ll dig into actionable advise that actually works, formatted into 101 ways to improve your rankings and increase your sales.
+A deep dive into the business value and practical application of SEO techniques and principles for your Solidus store. We’ll dig into actionable advise that actually works, formatted into 101 ways to improve your rankings and increase your sales.
 
 ## [See Thomas speak at SolidusConf 2019](http://conf.solidus.io)
