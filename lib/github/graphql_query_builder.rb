@@ -97,7 +97,7 @@ module Github
         }
       }
 
-      fragment userFields on User {
+      fragment userFields on Actor {
         login
         avatarUrl(size: 100)
       }
