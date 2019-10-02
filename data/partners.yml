@@ -39,6 +39,12 @@ silver_partners:
     retina:
       default_img: "boomerdigital-logo.png"
       retina_img: "boomerdigital-logo@2x.png"
+  magmalabs: 
+    name: "MagmaLabs"
+    short_description: "Ruby on Rails, React, React Native, and Solidus Developers"
+    description: "MagmaLabs builds tailored software solutions to help companies execute their vision achieving quick turn-around."
+    url: https://www.magmalabs.io/
+    image: "magmalabs-logo.svg"
 
 bronze_partners:
   wemove:

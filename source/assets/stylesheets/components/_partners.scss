@@ -48,9 +48,15 @@
   }
 
   .logo{
+    display: flex;
+    min-height: 150px;
     align-self: center;
     margin: 0 auto;
     padding: $card-spacer-x 0;
+    
+    img {
+      align-items: center;
+    }
   }
   
   .img-fluid {
