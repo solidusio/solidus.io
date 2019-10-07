@@ -53,3 +53,15 @@ bronze_partners:
     description: "Developing Webshops, Websites and GeoData/OpenData Applications."
     url: https://wemove.com
     image: "wemove-logo.svg"
+  embold:
+    name: "emBold"
+    short_description: "eCommerce and web/mobile apps"
+    description: "A small and experienced team of developers that focuses on eCommerce, web and mobile apps, and automation."
+    url: https://embold.com
+    image: "embold-logo.svg"
+  welaika:
+    name: "weLaika"
+    short_description: "Craftsmen of Rails, Elixir, JavaScript, and mobile apps"
+    description: "We like to customize e-commerce according to our customers’ needs and Solidus allows us to comply with any requirement."
+    url: https://embold.com
+    image: "welaika-logo.svg"
