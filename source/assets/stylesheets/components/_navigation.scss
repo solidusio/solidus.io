@@ -62,7 +62,17 @@
     @include media-breakpoint-up(lg){ display: none; }
   }
 
-  .social-links{ margin-right: 2rem; }
+  .social-links { 
+    margin-right: 2rem; 
+
+    .list-inline-item {
+      margin-right: 0.1rem;
+
+      @include media-breakpoint-up(xl){
+        margin-right: 1rem;
+      }
+    }
+  }
 
   @include media-breakpoint-up(lg){
     padding-bottom: 0;
