@@ -1,0 +1,12 @@
+<div class="extension-info card card-border-none <%= extension['categories'].map { |c| "e-#{c.split(/[-\s]/).first.downcase}" }.join(' ') %>">
+  <div class="card-body">
+    <h4 class="title"><%= extension['title'] %></h4>
+    <div class="categories">
+    <% extension['categories'].each do |category| %>
+      <span class="category"><%= category %></span>
+    <% end %>
+    </div>
+    <p><%= extension['description'] %></p>
+    <a class="link" href="<%= extension['link'] %>" target="_blank">Get it on GitHub</a>
+  </div>
+</div>
