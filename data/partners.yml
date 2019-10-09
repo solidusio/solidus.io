@@ -65,3 +65,9 @@ bronze_partners:
     description: "We like to customize e-commerce according to our customers’ needs and Solidus allows us to comply with any requirement."
     url: https://dev.welaika.com/
     image: "welaika-logo.svg"
+  seesaw:
+    name: "SeeSaw"
+    short_description: "Crafting great ideas with simplicity and effectiveness"
+    description: "We design, develop and launch digital products, fully integrated with existing company infrastructure."
+    url: https://www.seesaw.it
+    image: "seesaw-logo.svg"
