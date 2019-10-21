@@ -24,11 +24,11 @@ minimize the admin sidebar navigation and recover some lost screen real estate.
 This is the first step in achieving a more responsive and modern UI in Solidus.
 
 ## Solidus Brand
-We released a [public repository](https://github.com/solidusio/brand) with all the Solidus' brand assets, so if you 
+We released a [public repository](https://github.com/solidusio/brand) with all the Solidus brand assets, so if you 
 need to use the Solidus logo, please use those official resources. 
 We plan to publish those brand assets, along with a revamped style guide, also 
 on the official project website. Stay tuned!
 
 ## What's next?
-The next step is to follow the upcoming official roadmap, making Design decisions 
+The next step is to follow the upcoming official roadmap, making design decisions 
 based on a shared purpose and qualitative and quantitative data.
