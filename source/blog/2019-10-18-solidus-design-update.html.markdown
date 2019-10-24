@@ -3,6 +3,7 @@ title: Solidus Design Update
 date: 2019-10-18
 tags: Solidus, design, brand
 author: Davide Di Stefano
+cover_image: /blog/2019/10/18/solidus-design-update/solidus-design-update.jpg
 ---
 
 Hey there! We just wanted to update you about the current state of Design in the 
