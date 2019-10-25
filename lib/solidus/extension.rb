@@ -60,6 +60,7 @@ module Solidus
       {
         travis: Extensions::Travis::Project,
         circleci: Extensions::CircleCi::Project,
+        unsupported: Extensions::Unsupported::Project,
       }[ci_provider.to_sym]
     end
   end
