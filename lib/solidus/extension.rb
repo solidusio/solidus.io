@@ -59,6 +59,7 @@ module Solidus
 
       {
         travis: Extensions::Travis::Project,
+        circleci: Extensions::CircleCi::Project,
       }[ci_provider.to_sym]
     end
   end

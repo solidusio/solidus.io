@@ -7,6 +7,7 @@ gem "middleman-blog", "~> 4.0"
 gem 'mime-types'
 gem 'graphql-client'
 gem 'travis'
+gem 'circleci'
 
 # Windows does not come with time zone data
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]

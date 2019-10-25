@@ -86,3 +86,209 @@ refinerycms-contrib/solidus-refinery-authentication:
   title: RefineryCMS
   description: "Integrate RefineryCMS with your store: share authentication, permissions and more."
   group: Content Management
+solidusio/solidus_auth_devise:
+  ci_provider: circleci
+  title: Devise
+  description: Add Devise authentication to your store. Supports registration, password resets and
+    more.
+  group: Authentication
+solidusio-contrib/solidus_social:
+  ci_provider: circleci
+  title: Social Authentication
+  description: Allow your customers to authenticate with Twitter, Facebook, Github, Google, and
+    Amazon.
+  group: Social
+solidusio/solidus_stripe:
+  ci_provider: circleci
+  title: Stripe
+  description: Integrate Stripe in your store for beautiful and developer-friendly direct credit
+    card payments.
+  group: Payments
+solidusio/solidus_braintree:
+  ci_provider: circleci
+  title: Braintree (legacy)
+  description: Legacy extension for integrating Braintree v.zero payments in your Solidus store.
+  group: Payments
+solidusio/solidus_paypal_braintree:
+  ci_provider: circleci
+  title: Braintree
+  description: Use Braintree for seamless direct credit card, PayPal and Apple Pay payments.
+  group: Payments
+solidusio/solidus_affirm:
+  ci_provider: circleci
+  title: Affirm
+  description: Allow your customers to pay in multiple installments by integrating Affirm payments.
+  group: Payments
+solidusio-contrib/solidus_signifyd:
+  ci_provider: circleci
+  title: Signifyd
+  description: Integrate your store with Signifyd for fraud protection and chargeback recovery.
+  group: Fraud Checking
+solidusio-contrib/solidus_subscriptions:
+  ci_provider: circleci
+  title: Subscriptions
+  description: Easily allow your customers to subscribe to recurring products in your store.
+  group: Pricing
+solidusio-contrib/solidus_virtual_gift_card:
+  ci_provider: circleci
+  title: Virtual Gift Card
+  description: Allow your customers to pay with virtual gift cards at checkout.
+  group: Payments
+solidusio-contrib/solidus_digital:
+  ci_provider: circleci
+  title: Digital
+  description: Add support for digital products to your store and let customers download them at
+    checkout.
+  group: Products
+solidusio-contrib/solidus_easypost:
+  ci_provider: circleci
+  title: EasyPost
+  description: Consolidate multiple shipping services into one by integrating with EasyPost.
+  group: Shipping
+solidusio-contrib/solidus_quiet_logistics:
+  ci_provider: circleci
+  title: Quiet Logistics
+  description: Integrate your store with Quiet Logistics' third-party logistics API solution.
+  group: Shipping
+solidusio-contrib/solidus_shipping_labeler:
+  ci_provider: circleci
+  title: FedEx Shipping Labels
+  description: Simply and quickly print FedEx shipping labels when processing return authorizations.
+  group: Shipping
+solidusio-contrib/solidus_shipwire:
+  ci_provider: circleci
+  title: Shipwire
+  description: Connect your store with the Shipwire logistics platform to easily ship
+    internationally and domestically.
+  group: Shipping
+solidusio-contrib/solidus_tax_cloud:
+  ci_provider: circleci
+  title: TaxCloud
+  description: Integrate your store with TaxCloud for free, reliable US-based sales tax calculation.
+  group: Taxation
+solidusio-contrib/solidus_multi_domain:
+  ci_provider: circleci
+  title: Multi Domain
+  description: Have several customer-facing stores backed by a single administration interface.
+  group: Multitenancy
+solidusio-contrib/solidus_asset_variant_options:
+  ci_provider: circleci
+  title: Asset Variant Options
+  description: Make it easy for store administrators to reuse product images across different
+    variants.
+  group: Products
+solidusio-contrib/solidus_related_products:
+  ci_provider: circleci
+  title: Related Products
+  description: Simplify upselling by showing your customers products they may also be interested in.
+  group: Conversion Optimization
+solidusio-contrib/solidus_product_assembly:
+  ci_provider: circleci
+  title: Product Assembly
+  description: Create a Solidus product composed of other products and easily manage its inventory.
+  group: Products
+solidusio-contrib/solidus_editor:
+  ci_provider: circleci
+  title: Editor
+  description: Integrate a WYSIWYG editor in your store's backend for more attractive content.
+  group: Products
+solidusio-contrib/solidus_handling_fees:
+  ci_provider: circleci
+  title: Handling Fees
+  description: Charge your customers fulfilling costs by adding handling fees to their orders.
+  group: Shipping
+solidusio-contrib/solidus_searchkick:
+  ci_provider: circleci
+  title: Searchkick
+  description: Integrate Searchkick with your store for best-in-class search and suggestion
+    functionality.
+  group: Search
+solidusio-contrib/solidus_abandoned_carts:
+  ci_provider: circleci
+  title: Abandoned Carts
+  description: Let your users know when they leave items in the cart. Highly customizable to suit
+    your needs.
+  group: Conversion Optimization
+solidusio-contrib/solidus_recently_viewed:
+  ci_provider: circleci
+  title: Recently Viewed
+  description: Display a list of recently viewed products and encourage customers to buy.
+  group: Conversion Optimization
+solidusio-contrib/solidus_product_feed:
+  ci_provider: circleci
+  title: Product Feed
+  description: Create an RSS feed of your products. Supports the Google Merchant Feed format for
+    remarketing.
+  group: Marketing
+solidusio-contrib/solidus_sitemap:
+  ci_provider: circleci
+  title: Sitemap
+  description: Provide search engines with a sitemap of your store for easier indexing.
+  group: Marketing
+solidusio-contrib/solidus_volume_pricing:
+  ci_provider: circleci
+  title: Volume Pricing
+  description: Easily offer volume-based pricing (quantity discounts) to your customers.
+  group: Pricing
+solidusio-contrib/solidus_prototypes:
+  ci_provider: circleci
+  title: Prototypes
+  description: Create reusable product prototypes for your store's administration panel.
+  group: Products
+solidusio-contrib/solidus_print_invoice:
+  ci_provider: circleci
+  title: Print Invoice
+  description: Provide your customers with a printable PDF invoice for their purchase.
+  group: Invoicing
+solidusio-contrib/solidus_comments:
+  ci_provider: circleci
+  title: Comments
+  description: Allow admins and customer service reps to comment on objects in your store's backend.
+  group: Auditing
+solidusio-contrib/solidus_reports:
+  ci_provider: circleci
+  title: Reports
+  description: Add basic and extendable reporting functionality to your store's admin panel.
+  group: Reporting
+solidusio-contrib/solidus_papertrail:
+  ci_provider: circleci
+  title: Papertrail
+  description: Integrate with the paper_trail gem to make tracking order changes a no-brainer.
+  group: Auditing
+solidusio-contrib/solidus_log_viewer:
+  ci_provider: circleci
+  title: Log Viewer
+  description: View payment log entries directly from your store's backend, no database skills
+    needed.
+  group: Auditing
+solidusio-contrib/solidus_static_content:
+  ci_provider: circleci
+  title: Static Content
+  description: The simplest, most straightforward content management solution for your store.
+  group: Content Management
+solidusio-contrib/solidus_redirector:
+  ci_provider: circleci
+  title: Redirector
+  description: Manage HTTP redirects via your admin panel. Uses the Redirector gem under the hood.
+  group: Content Management
+solidusio-contrib/solidus_gdpr:
+  ci_provider: circleci
+  title: GDPR
+  description: Automate GDPR compliance in your store by declaratively defining sensitive data.
+  group: Compliance
+solidusio-contrib/solidus_geocoding:
+  ci_provider: circleci
+  title: Geocoding
+  description: Geocode your customer's addresses and calculate their latitude and longitude.
+  group: Geocoding
+solidusio-contrib/solidus_reviews:
+  ci_provider: circleci
+  title: Reviews
+  description: Use product reviews and ratings to leverage the power of user-generated content in
+    your store.
+  group: Social
+solidusio-contrib/solidus_expedited_exchanges:
+  ci_provider: circleci
+  title: Expedited Exchanges
+  description: Process returns by exchanging products with others from your administration panel.
+  group: Returns
