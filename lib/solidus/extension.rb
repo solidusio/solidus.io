@@ -55,7 +55,11 @@ module Solidus
     private
 
     def ci_klass
-      Extensions::Fake::Project
+      return Extensions::Fake::Project if environment.to_sym == :development
+
+      {
+        travis: Extensions::Travis::Project,
+      }[ci_provider.to_sym]
     end
   end
 end
