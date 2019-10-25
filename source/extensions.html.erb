@@ -53,7 +53,7 @@ title: Extensions
       <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
         <div class="extensions-group accordion-item" id="extensions-group-<%= group_name.underscore.gsub('_', '-') %>">
           <h3 class="title">
-            <a href="#" data-toggle="collapse" data-target="#collapse<% i %>">
+            <a href="#" data-toggle="collapse" data-target="#collapse<%= i %>">
               <%= group_name %>
               <%= inline_svg("icons/arrow-down.svg", class: "isvg isvg-arrow") %>
             </a>
