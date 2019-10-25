@@ -41,14 +41,14 @@
 @import "theme/card";
 //@import "breadcrumb";
 //@import "pagination";
-//@import "badge";
+@import "node_modules/bootstrap/scss/badge";
 //@import "jumbotron";
 @import "node_modules/bootstrap/scss/alert";
 //@import "progress";
 @import "node_modules/bootstrap/scss/media";
 //@import "list-group";
-//@import "close";
-//@import "modal";
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/modal";
 @import "node_modules/bootstrap/scss/tooltip";
 //@import "popover";
 //@import "carousel";

@@ -1,12 +1,38 @@
-<div class="extension-info card card-border-none <%= extension['categories'].map { |c| "e-#{c.split(/[-\s]/).first.downcase}" }.join(' ') %>">
+<div class="extension-info card card-border-none <%= extension.categories.map { |c| "e-#{c.underscore.gsub('_', '-')}" }.join(' ') %>">
   <div class="card-body">
-    <h4 class="title"><%= extension['title'] %></h4>
-    <div class="categories">
-    <% extension['categories'].each do |category| %>
-      <span class="category"><%= category %></span>
-    <% end %>
+    <h4 class="title">
+      <a href="<%= extension.repo_url %>" target="_blank">
+        <%= extension.title %>
+      </a>
+
+      <% extension.categories.each do |category| %>
+        <span class="category"><%= category %></span>
+      <% end %>
+    </h4>
+
+    <div>
+      <p><%= extension.description %></p>
     </div>
-    <p><%= extension['description'] %></p>
-    <a class="link" href="<%= extension['link'] %>" target="_blank">Get it on GitHub</a>
+
+    <div class="extension-ci">
+      <% extension.ci.build_statuses.each_pair do |version, build| %>
+        <%= partial 'partials/extension/build_status', locals: {
+            extension: extension,
+            version: version,
+            build: build,
+        } %>
+      <% end %>
+    </div>
+
+    <div class="extension-meta">
+      <div class="extension-org">
+        <img class="extension-org-logo" src="<%= extension.repo_org_image_url %>">
+        <small class="text-muted"><%= extension.repo_org %></small>
+      </div>
+
+      <div class="extension-gh">
+        <a class="link" href="<%= extension.repo_url %>" target="_blank">Get it on GitHub</a>
+      </div>
+    </div>
   </div>
 </div>

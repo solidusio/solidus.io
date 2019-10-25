@@ -98,6 +98,10 @@
   }
 }
 
+.form-check {
+  cursor: pointer;
+}
+
 .form-check-custom{
   padding-left: 27px;
 
@@ -106,6 +110,7 @@
   label {
     position: relative;
     font-weight: $font-weight-bold;
+    cursor: pointer;
   }
 
   .isvg{

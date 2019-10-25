@@ -11,60 +11,62 @@ title: Extensions
   <img class="img-fluid" src="<%= image_path('illustrations/extensions.png') %>" srcset="<%= image_path('illustrations/extensions.png') %>, <%= image_path('illustrations/extensions@2x.png') %> 2x" alt="Extensions">
 </div>
 
-
 <div class="extensions-filter" data-aos="fade">
   <div class="container">
-    <h6 class="title">Show</h6>
+    <h6 class="title">Show:</h6>
 
     <div class="form-check form-check-custom">
-      <input type="checkbox" class="form-check-input" id="filter-customer" name="customer" checked>
-      <label class="form-check-label" for="filter-customer">
+      <input type="checkbox" class="form-check-input" id="filter-official" name="official" checked>
+      <label class="form-check-label" for="filter-official">
         <%= inline_svg("icons/checkbox.svg", class: "isvg") %>
-        Customer-Facing
+        Official
       </label>
     </div>
 
     <div class="form-check form-check-custom">
-      <input type="checkbox" class="form-check-input" id="filter-admin" name="admin" checked>
-      <label class="form-check-label" for="filter-admin">
+      <input type="checkbox" class="form-check-input" id="filter-community" name="community" checked>
+      <label class="form-check-label" for="filter-community">
         <%= inline_svg("icons/checkbox.svg", class: "isvg") %>
-        Admin
+        Community
       </label>
     </div>
 
     <div class="form-check form-check-custom">
-      <input type="checkbox" class="form-check-input" id="filter-backend" name="backend" checked>
-      <label class="form-check-label" for="filter-backend">
+      <input type="checkbox" class="form-check-input" id="filter-third-party" name="third-party" checked>
+      <label class="form-check-label" for="filter-third-party">
         <%= inline_svg("icons/checkbox.svg", class: "isvg") %>
-        Backend Functionality
+        Third-Party
       </label>
     </div>
   </div>
 </div>
 
+<% extensions = Solidus::Extension.from_yaml_data(data.extensions, environment: environment) %>
+
 <div class="extensions-list-block content-block content-block-gray-100" data-aos="fade">
   <div class="container">
-
     <div class="alert alert-warning mb-0 d-none" role="alert">
       No extensions matching your criteria
     </div>
 
     <div class="accordion">
-      <% data.extensions.each.with_index do |data, i| %>
-      <% group = data[0] %>
-      <div class="extensions-group accordion-item" id="<%= group.split(' ').first.downcase %>">
-        <h3 class="title">
-          <a href="#" data-toggle="collapse" data-target="#collapse<% i %>"><%= group %> <%= inline_svg("icons/arrow-down.svg", class: "isvg isvg-arrow") %></a>
-        </h3>
+      <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
+        <div class="extensions-group accordion-item" id="extensions-group-<%= group_name.underscore.gsub('_', '-') %>">
+          <h3 class="title">
+            <a href="#" data-toggle="collapse" data-target="#collapse<% i %>">
+              <%= group_name %>
+              <%= inline_svg("icons/arrow-down.svg", class: "isvg isvg-arrow") %>
+            </a>
+          </h3>
 
-        <div id="collapse<%= i %>" class="content collapse show" data-parent="#accordion">
-          <div class="extensions">
-          <% data[1].each do |extension| %>
-            <%= partial 'partials/extension', locals: { extension: extension } %>
-          <% end %>
+          <div id="collapse<%= i %>" class="content collapse show" data-parent="#accordion">
+            <div class="extensions">
+              <% group_extensions.sort_by(&:title).each do |extension| %>
+                <%= partial 'partials/extension', locals: { extension: extension } %>
+              <% end %>
+            </div>
           </div>
         </div>
-      </div>
       <% end %>
     </div>
   </div>

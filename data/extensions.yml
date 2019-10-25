@@ -1,259 +1,299 @@
-Search:
-  - title: Solidus elastic product
-    categories:
-      - Backend Functionality
-      - Customer-Facing
-    description: Allow users to search your store and explore trends and patterns in their searching behaviour. Elasticsearch, a distributed, RESTful search and analytics engine that centrally stores data.
-    link: https://github.com/boomerdigital/solidus_elastic_product
-
-Products & Inventory:
-  - title: Solidus flexi variants
-    categories:
-      - Customer-Facing
-    description: Provide multiple product options, like colour and size, without creating individual variants. Customers can also upload or customize their own products (e.g. custom engravings).
-    link: https://github.com/boomerdigital/solidus_flexi_variants
-
-  - title: Solidus prototypes
-    categories:
-      - Admin
-    description: Create product templates to reduce the time it takes to create new products from scratch.
-    link: https://github.com/solidusio-contrib/solidus_prototypes
-
-  - title: Solidus product assembly
-    categories:
-      - Admin
-    description: Create products that contain several items or customizable features like a gift basket or clothing options on a doll.
-    link: https://github.com/solidusio-contrib/solidus_product_assembly
-
-  - title: Solidus asset variant options
-    categories:
-      - Admin
-    description: Share product images across multiple variants to save time when options such as clothing size don’t change the way a product looks.
-    link: https://github.com/solidusio/solidus_asset_variant_options
-
-  - title: Solidus related products
-    categories:
-      - Admin
-      - Customer-Facing
-    description: Create relationships between products and use them to cross sell and upsell compatible products like accessories, replacement parts and warranties.
-    link: https://github.com/solidusio-contrib/solidus_related_products
-
-Orders:
-  - title: Solidus subscriptions
-    categories:
-      - Admin
-      - Backend Functionality
-      - Customer-Facing
-    description: Give your customers access to, and bill for, recurring orders.
-    link: https://github.com/solidusio-contrib/solidus_subscriptions
-
-  - title: Solidus Signifyd
-    categories:
-      - Backend Functionality
-    description: Provide fraud protection and chargeback prevention with this Signifyd integration for Solidus.
-    link: https://github.com/solidusio/solidus_signifyd
-
-  - title: Solidus print invoice
-    categories:
-      - Admin
-    description: Create a PDF of an individual invoice from the order screen. A template is provided and can be easily extended and styled.
-    link: https://github.com/solidusio-contrib/solidus_print_invoice
-
-Sales:
-  - title: Solidus volume pricing
-    categories:
-      - Admin
-      - Customer-Facing
-    description: Set pricing discounts based on a range of quantities to provide competitive rates for customers buying in bulk.
-    link: https://github.com/solidusio-contrib/solidus_volume_pricing
-
-  - title: Solidus multi domain
-    categories:
-      - Customer-Facing
-    description: Create multiple storefronts and select which products and pricing are displayed on each.
-    link: https://github.com/solidusio/solidus_multi_domain
-
-  - title: Solidus Avatax certified
-    categories:
-      - Admin
-      - Backend Functionality
-    description: Calculate taxes automatically using this third-party integration with Avalara’s Avatax service.
-    link: https://github.com/boomerdigital/solidus_avatax_certified
-
-  - title: Solidus wishlist
-    categories:
-      - Customer-Facing
-    description: Allow your customers to create multiple wishlists that are either private or publicly shareable.
-    link: https://github.com/boomerdigital/solidus_wishlist
-
-Payments:
-  - title: Solidus Amazon payments
-    categories:
-      - Customer-Facing
-    description: Integrate Amazon Pay into your store’s checkout for a familiar, trusted way for customers to check out.
-    link: https://github.com/boomerdigital/solidus_amazon_payments
-
-  - title: Solidus Adyen
-    categories:
-      - Customer-Facing
-    description: Support credit cards, PayPal, and direct debit payments through the Adyen payment gateway.
-    link: https://github.com/StemboltHQ/solidus-adyen
-
-  - title: Solidus Affirm
-    categories:
-      - Customer-Facing
-    description: Offer flexible financing and monthly payment options to customers using the Affirm service.
-    link: https://github.com/solidusio-contrib/solidus_affirm
-
-  - title: Solidus Braintree
-    categories:
-      - Customer-Facing
-    description: Support credit cards, PayPal, and Apple Pay payments through the Braintree payment gateway.
-    link: https://github.com/solidusio/solidus_paypal_braintree
-
-  - title: Solidus Paybright
-    categories:
-      - Customer-Facing
-    description: Offer flexible financing and monthly payment options to customers using the Paybright service.
-    link: https://github.com/StemboltHQ/solidus_paybright
-
-  - title: Solidus Klarna payments
-    categories:
-      - Customer-Facing
-    description: Offer flexible financing and monthly payment options to customer using the Klarna service.
-    link: https://github.com/bitspire/solidus_klarna_payments
-
-  - title: Solidus virtual gift card
-    categories:
-      - Customer-Facing
-    description: Add virtual gift card products with unique codes that can apply store credit to a user’s account.
-    link: https://github.com/solidusio/solidus_virtual_gift_card
-
-Shipping:
-  - title: Solidus active shipping
-    categories:
-      - Admin
-      - Customer-Facing
-    description: Find shipping rates and provides the ability to register and track shipments with this simple library. Negotiate rates directly with your carrier of choice and use this extension to connect your account. Choose from eight carriers including UPS, USPS, FedEx, Canada Post and more.
-    link: https://github.com/solidusio-contrib/solidus_active_shipping
-
-  - title: Solidus Shipstation
-    categories:
-      - Admin
-      - Customer-Facing
-    description: Import, manage, and ship orders using the Shipstation service.
-    link: https://github.com/boomerdigital/solidus_shipstation
-
-  - title: Solidus EasyPost
-    categories:
-      - Admin
-      - Customer-Facing
-    description: Compare rates, buy postage, track packages, verify addresses, and more, using the EasyPost service. This service integrates with USPS, UPS, Fedex, DHL, and other popular carriers.
-    link: https://github.com/solidusio-contrib/solidus_easypost
-
-Social:
-  - title: Solidus social
-    categories:
-      - Customer-Facing
-    description: Provide social login support for your customers including authorization, account creation, and association through third-party services. Twitter, Facebook, GitHub, Google oAuth2 and Amazon are available out of the box.
-    link: https://github.com/solidusio-contrib/solidus_social
-
-  - title: Solidus email to friend
-    categories:
-      - Customer-Facing
-    description: Provide the ability for users to email a product to their friend.
-    link: https://github.com/boomerdigital/solidus_email_to_friend
-
-SEO & Tracking:
-  - title: Solidus product feed
-    categories:
-      - Backend Functionality
-    description: Create a RSS product feed with attributes like name, price, image etc that integrates with Google Shopping.
-    link: https://github.com/solidusio-contrib/solidus_product_feed
-
-  - title: Solidus sitemap
-    categories:
-      - Backend Functionality
-    description: Index product pages and others to generate a sitemap that you can submit to search engines.
-    link: https://github.com/solidusio-contrib/solidus_sitemap
-
-  - title: Solidus trackers
-    categories:
-      - Admin
-    description: Configure Google Analytics from the admin to track data around how your users interact with your storefront.
-    link: https://github.com/solidusio-contrib/solidus_trackers
-
-Content Management:
-  - title: Alchemy Solidus
-    categories:
-      - Admin
-      - Customer-Facing
-    description: A Solidus integration that connects both backends providing a fully featured CMS with flexible Taxon and Product content blocks.
-    link: https://github.com/AlchemyCMS/alchemy-solidus
-
-  - title: Solidus editor
-    categories:
-      - Admin
-    description: Edit product descriptions using a WYSIWYG editor. Choose from two separate options for inline WYSIWYG rich text editors.
-    link: https://github.com/solidusio-contrib/solidus_editor
-
-  - title: Solidus Refinery CMS Authentication
-    categories:
-      - Admin
-      - Customer-Facing
-    description: A Refinery CMS and Solidus E-commerce connector providing tabs in Refinery CMS and Solidus menus to easily switch between both backends.
-    link: https://github.com/refinerycms-contrib/solidus-refinery-authentication
-
-  - title: Solidus static content
-    categories:
-      - Backend Functionality
-    description: Manage static content like about pages, landing pages, and terms and conditions straight from the Solidus admin.
-    link: https://github.com/solidusio-contrib/solidus_static_content
-
-Tools:
-  - title: Solidus log viewer
-    categories:
-      - Admin
-    description: View payment logs in the Solidus admin instead of a separate file.
-    link: https://github.com/solidusio-contrib/solidus_log_viewer
-
-  - title: Solidus comments
-    categories:
-      - Admin
-    description: Annotate and add messaging to tables on the order and shipment screens.
-    link: https://github.com/solidusio-contrib/solidus_comments
-
-  - title: Solidus papertrail
-    categories:
-      - Backend Functionality
-    description: Track changes to your models’ data. See how a model looks at any stage, revert it to any version, and restore it after it has been destroyed. Ideal for auditing and versioning your data.
-    link: https://github.com/solidusio-contrib/solidus_papertrail
-
-Customers & Users:
-  - title: Solidus auth devise
-    categories:
-      - Admin
-      - Custom-Facing
-    description: Provide authentication services through email/password combinations using confirmation emails. This is the default Solidus authentication plugin.
-    link: https://github.com/solidusio/solidus_auth_devise
-
-  - title: Solidus user roles
-    categories:
-      - Admin
-    description: Create custom roles within your company with different permissions and access levels to admin screens.
-    link: https://github.com/boomerdigital/solidus_user_roles
-
-Internationalization:
-  - title: Solidus I18n
-    categories:
-      - Admin
-      - Custom-Facing
-    description: Change the language of your store with internationalization and localization language support. 39 languages are included.
-    link: https://github.com/solidusio-contrib/solidus_i18n
-
-  - title: Solidus globalize
-    categories:
-      - Admin
-      - Custom-Facing
-    description: Translate your product names and descriptions.
-    link: https://github.com/solidusio-contrib/solidus_globalize
+---
+boomerdigital/solidus_user_roles:
+  ci_provider: travis
+  title: User Roles
+  description: Add support for advanced roles and authorization management to your store's backend.
+  group: Authentication
+boomerdigital/solidus_amazon_payments:
+  ci_provider: travis
+  title: Pay with Amazon
+  description: Allow your customers to check out with their Amazon account via Pay with Amazon.
+  group: Payments
+boomerdigital/solidus_shipstation:
+  ci_provider: travis
+  title: ShipStation
+  description: Integrate with ShipStation to unify your carriers, track inventory and handle
+    returns.
+  group: Shipping
+solidusio-contrib/solidus_globalize:
+  ci_provider: travis
+  title: Globalize
+  description: Translate your store's content (products, taxons and more) into multiple languages.
+  group: Internationalization
+boomerdigital/solidus_avatax_certified:
+  ci_provider: travis
+  title: Avatax
+  description: Automate sales tax decision and calculation in your store with Avalara's AvaTax API.
+  group: Taxation
+boomerdigital/solidus_email_to_friend:
+  ci_provider: travis
+  title: Email to Friend
+  description: Build reputation by allowing customers to easily email one of your products to a
+    friend.
+  group: Social
+boomerdigital/solidus_flexi_variants:
+  ci_provider: travis
+  title: Flexi Variants
+  description: Allow different product option combinations without having to create variants for
+    each one.
+  group: Products
+boomerdigital/solidus_elastic_product:
+  ci_provider: travis
+  title: Elastic Product
+  description: Concurrent, high-performance ElasticSearch indexing of your products for large
+    stores.
+  group: Search
+karmakatahdin/solidus_seo:
+  ci_provider: travis
+  title: SEO
+  description: Add common-sense SEO defaults (structured data, meta tags, Open Graph and more) to
+    your store.
+  group: Marketing
+boomerdigital/solidus_wishlist:
+  ci_provider: travis
+  title: Wishlist
+  description: Let customers add products to their wishlist, so that they can easily buy them later.
+  group: Conversion Optimization
+magma-labs/solidus_simple_dash:
+  ci_provider: travis
+  title: Simple Dash
+  description: Provide store administrators with a simple overview dashboard for your store.
+  group: Reporting
+StemboltHQ/solidus-adyen:
+  ci_provider: travis
+  title: Adyen
+  description: Use Adyen HPP to allow your customers to check out with their favorite payment
+    method.
+  group: Payments
+StemboltHQ/solidus_paybright:
+  ci_provider: travis
+  title: PayBright
+  description: Let customers pay for their purchases over time by integrating with PayBright.
+  group: Payments
+robinboening/solidus_klarna_payments:
+  ci_provider: travis
+  title: Klarna
+  description: Allow your customers to buy now and pay later with the Klarna integration for your
+    store.
+  group: Payments
+AlchemyCMS/alchemy-solidus:
+  ci_provider: travis
+  title: AlchemyCMS
+  description: "Integrate AlchemyCMS with your store: share authentication, content and more."
+  group: Content Management
+refinerycms-contrib/solidus-refinery-authentication:
+  ci_provider: travis
+  title: RefineryCMS
+  description: "Integrate RefineryCMS with your store: share authentication, permissions and more."
+  group: Content Management
+solidusio/solidus_auth_devise:
+  ci_provider: circleci
+  title: Devise
+  description: Add Devise authentication to your store. Supports registration, password resets and
+    more.
+  group: Authentication
+solidusio-contrib/solidus_social:
+  ci_provider: circleci
+  title: Social Authentication
+  description: Allow your customers to authenticate with Twitter, Facebook, Github, Google, and
+    Amazon.
+  group: Social
+solidusio/solidus_stripe:
+  ci_provider: circleci
+  title: Stripe
+  description: Integrate Stripe in your store for beautiful and developer-friendly direct credit
+    card payments.
+  group: Payments
+solidusio/solidus_braintree:
+  ci_provider: circleci
+  title: Braintree (legacy)
+  description: Legacy extension for integrating Braintree v.zero payments in your Solidus store.
+  group: Payments
+solidusio/solidus_paypal_braintree:
+  ci_provider: circleci
+  title: Braintree
+  description: Use Braintree for seamless direct credit card, PayPal and Apple Pay payments.
+  group: Payments
+solidusio/solidus_affirm:
+  ci_provider: circleci
+  title: Affirm
+  description: Allow your customers to pay in multiple installments by integrating Affirm payments.
+  group: Payments
+solidusio-contrib/solidus_signifyd:
+  ci_provider: circleci
+  title: Signifyd
+  description: Integrate your store with Signifyd for fraud protection and chargeback recovery.
+  group: Fraud Checking
+solidusio-contrib/solidus_subscriptions:
+  ci_provider: circleci
+  title: Subscriptions
+  description: Easily allow your customers to subscribe to recurring products in your store.
+  group: Pricing
+solidusio-contrib/solidus_virtual_gift_card:
+  ci_provider: circleci
+  title: Virtual Gift Card
+  description: Allow your customers to pay with virtual gift cards at checkout.
+  group: Payments
+solidusio-contrib/solidus_digital:
+  ci_provider: circleci
+  title: Digital
+  description: Add support for digital products to your store and let customers download them at
+    checkout.
+  group: Products
+solidusio-contrib/solidus_easypost:
+  ci_provider: circleci
+  title: EasyPost
+  description: Consolidate multiple shipping services into one by integrating with EasyPost.
+  group: Shipping
+solidusio-contrib/solidus_quiet_logistics:
+  ci_provider: circleci
+  title: Quiet Logistics
+  description: Integrate your store with Quiet Logistics' third-party logistics API solution.
+  group: Shipping
+solidusio-contrib/solidus_shipping_labeler:
+  ci_provider: circleci
+  title: FedEx Shipping Labels
+  description: Simply and quickly print FedEx shipping labels when processing return authorizations.
+  group: Shipping
+solidusio-contrib/solidus_shipwire:
+  ci_provider: circleci
+  title: Shipwire
+  description: Connect your store with the Shipwire logistics platform to easily ship
+    internationally and domestically.
+  group: Shipping
+solidusio-contrib/solidus_tax_cloud:
+  ci_provider: circleci
+  title: TaxCloud
+  description: Integrate your store with TaxCloud for free, reliable US-based sales tax calculation.
+  group: Taxation
+solidusio-contrib/solidus_multi_domain:
+  ci_provider: circleci
+  title: Multi Domain
+  description: Have several customer-facing stores backed by a single administration interface.
+  group: Multitenancy
+solidusio-contrib/solidus_asset_variant_options:
+  ci_provider: circleci
+  title: Asset Variant Options
+  description: Make it easy for store administrators to reuse product images across different
+    variants.
+  group: Products
+solidusio-contrib/solidus_related_products:
+  ci_provider: circleci
+  title: Related Products
+  description: Simplify upselling by showing your customers products they may also be interested in.
+  group: Conversion Optimization
+solidusio-contrib/solidus_product_assembly:
+  ci_provider: circleci
+  title: Product Assembly
+  description: Create a Solidus product composed of other products and easily manage its inventory.
+  group: Products
+solidusio-contrib/solidus_editor:
+  ci_provider: circleci
+  title: Editor
+  description: Integrate a WYSIWYG editor in your store's backend for more attractive content.
+  group: Products
+solidusio-contrib/solidus_handling_fees:
+  ci_provider: circleci
+  title: Handling Fees
+  description: Charge your customers fulfilling costs by adding handling fees to their orders.
+  group: Shipping
+solidusio-contrib/solidus_searchkick:
+  ci_provider: circleci
+  title: Searchkick
+  description: Integrate Searchkick with your store for best-in-class search and suggestion
+    functionality.
+  group: Search
+solidusio-contrib/solidus_abandoned_carts:
+  ci_provider: circleci
+  title: Abandoned Carts
+  description: Let your users know when they leave items in the cart. Highly customizable to suit
+    your needs.
+  group: Conversion Optimization
+solidusio-contrib/solidus_recently_viewed:
+  ci_provider: circleci
+  title: Recently Viewed
+  description: Display a list of recently viewed products and encourage customers to buy.
+  group: Conversion Optimization
+solidusio-contrib/solidus_product_feed:
+  ci_provider: circleci
+  title: Product Feed
+  description: Create an RSS feed of your products. Supports the Google Merchant Feed format for
+    remarketing.
+  group: Marketing
+solidusio-contrib/solidus_sitemap:
+  ci_provider: circleci
+  title: Sitemap
+  description: Provide search engines with a sitemap of your store for easier indexing.
+  group: Marketing
+solidusio-contrib/solidus_volume_pricing:
+  ci_provider: circleci
+  title: Volume Pricing
+  description: Easily offer volume-based pricing (quantity discounts) to your customers.
+  group: Pricing
+solidusio-contrib/solidus_prototypes:
+  ci_provider: circleci
+  title: Prototypes
+  description: Create reusable product prototypes for your store's administration panel.
+  group: Products
+solidusio-contrib/solidus_print_invoice:
+  ci_provider: circleci
+  title: Print Invoice
+  description: Provide your customers with a printable PDF invoice for their purchase.
+  group: Payments
+solidusio-contrib/solidus_comments:
+  ci_provider: circleci
+  title: Comments
+  description: Allow admins and customer service reps to comment on objects in your store's backend.
+  group: Auditing
+solidusio-contrib/solidus_reports:
+  ci_provider: circleci
+  title: Reports
+  description: Add basic and extendable reporting functionality to your store's admin panel.
+  group: Reporting
+solidusio-contrib/solidus_papertrail:
+  ci_provider: circleci
+  title: Papertrail
+  description: Integrate with the paper_trail gem to make tracking order changes a no-brainer.
+  group: Auditing
+solidusio-contrib/solidus_log_viewer:
+  ci_provider: circleci
+  title: Log Viewer
+  description: View payment log entries directly from your store's backend, no database skills
+    needed.
+  group: Auditing
+solidusio-contrib/solidus_static_content:
+  ci_provider: circleci
+  title: Static Content
+  description: The simplest, most straightforward content management solution for your store.
+  group: Content Management
+solidusio-contrib/solidus_redirector:
+  ci_provider: circleci
+  title: Redirector
+  description: Manage HTTP redirects via your admin panel. Uses the Redirector gem under the hood.
+  group: Content Management
+solidusio-contrib/solidus_gdpr:
+  ci_provider: circleci
+  title: GDPR
+  description: Automate GDPR compliance in your store by declaratively defining sensitive data.
+  group: Compliance
+solidusio-contrib/solidus_geocoding:
+  ci_provider: circleci
+  title: Geocoding
+  description: Geocode your customer's addresses and calculate their latitude and longitude.
+  group: Geocoding
+solidusio-contrib/solidus_reviews:
+  ci_provider: circleci
+  title: Reviews
+  description: Use product reviews and ratings to leverage the power of user-generated content in
+    your store.
+  group: Social
+solidusio-contrib/solidus_expedited_exchanges:
+  ci_provider: circleci
+  title: Expedited Exchanges
+  description: Process returns by exchanging products with others from your administration panel.
+  group: Returns
+solidusio-contrib/solidus_i18n:
+  ci_provider: travis
+  title: I18n
+  description: Official internationalization extension to support multiple languages in your store.
+  group: Internationalization
