@@ -21,7 +21,7 @@ solidusio-contrib/solidus_globalize:
   description: Translate your store's content (products, taxons and more) into multiple languages.
   group: Internationalization
 boomerdigital/solidus_avatax_certified:
-  ci_provider: travis
+  ci_provider: circleci
   title: Avatax
   description: Automate sales tax decision and calculation in your store with Avalara's AvaTax API.
   group: Taxation
