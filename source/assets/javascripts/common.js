@@ -76,4 +76,5 @@ $(function () {
     $(".top-bar").removeClass('top-bar--show');
   });
 
+  $('[data-toggle="tooltip"]').tooltip()
 });

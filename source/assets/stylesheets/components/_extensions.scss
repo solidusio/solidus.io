@@ -10,10 +10,18 @@
   }
 }
 
+.extensions-group {
+  & > .title {
+    line-height: 0;
+    margin-bottom: 10px;
+  }
+}
+
 //Extensions list block
 .extensions-filter{
   background-color: rgba(#f3f3f4, 0.5);
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
 
   .container{
     @include media-breakpoint-up(lg){
@@ -48,6 +56,8 @@
 }
 
 .extensions-list-block{
+  padding-top: 0;
+
   .container{
     @include media-breakpoint-up(lg){
       max-width: 960px + $grid-gutter-width;
@@ -80,7 +90,7 @@
       grid-column-gap: 2rem;
       grid-row-gap: 2rem;
       padding-top: 8px;
-      padding-bottom: 72px;
+      padding-bottom: 45px;
 
       .no-cssgrid &{
         display: block;
@@ -88,7 +98,9 @@
           margin-bottom: 2rem;
         }
 
-        .card-body{ display: block; }
+        .card-body {
+          display: block;
+        }
       }
     }
   }
@@ -96,6 +108,10 @@
   .extension-info{
     margin-bottom: 2rem;
     @include media-breakpoint-up(md){ margin-bottom: 0; }
+  }
+
+  .accordion-item {
+    border: none;
   }
 }
 
@@ -105,28 +121,37 @@
   .card-body{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .title{
     font-weight: $font-weight-normal;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+
+    img {
+      width: 15px;
+      height: 15px;
+      vertical-align: middle;
+      margin-right: 2px;
+    }
   }
 
-  .categories{
+  .category{
     font-size: $font-size-xs;
     color: #a8a9ac;
     letter-spacing: 0.4px;
     font-weight: $font-weight-bolder;
-    margin-bottom: 1rem;
     text-transform: uppercase;
-
-    .category{
-      margin-right: 1rem;
-      &:last-child{ margin-right: 0; }
-    }
+    display: inline-block;
+    margin-left: .25rem;
+    margin-right: 1rem;
+    &:last-child{ margin-right: 0; }
   }
 
-  p{ margin-bottom: 0.5rem; }
+  p {
+    margin-bottom: 0;
+    color: rgba(36, 40, 47, 0.8);
+  }
 
   .link{
     display: block;
@@ -137,5 +162,36 @@
 
   &.deselected{
     display: none;
+  }
+}
+
+.extension-meta {
+  margin-top: auto;
+}
+
+.extension-ci {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  span {
+    display: inline-block;
+    margin-right: .25rem;
+  }
+}
+
+.extension-meta {
+  display: flex;
+  border-top: 1px solid $gray-200;
+  padding-top: .75rem;
+
+  .extension-org {
+    .extension-org-logo {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .extension-gh {
+    margin-left: auto;
   }
 }

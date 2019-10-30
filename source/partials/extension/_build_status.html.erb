@@ -1,0 +1,9 @@
+<a target="_blank" href="<%= build[:url] %>">
+  <span
+    data-toggle="tooltip"
+    title="<%= extension_build_tooltip_text(build, version: version) %>"
+    class="<%= extension_build_badge_class(build) %>"
+  >
+    <%= version %>
+  </span>
+</a>
