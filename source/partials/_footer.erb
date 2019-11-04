@@ -1,42 +1,73 @@
-<footer class="site-footer content-block-gray-900">
+<footer class="site-footer content-block content-block-gray-900">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <nav class="footer-menu">
-          <ul class="list-inline">
-            <li class="list-inline-item">
+    <div class="site-footer__top">
+      <div class="row">
+        <div class="col-12 col-lg-1">
+          <a class="footer-logo" href="/"><%= inline_svg("logo-mark.svg", class: "isvg") %></a>
+        </div>
+        <div class="col-4 col-lg-2">
+          <h6 class="text-white-048">Solidus</h6>
+          <ul class="footer-links">
+            <li class="footer-links-item">
               <a class="text-white" href="/features">Features</a>
             </li>
-            <li class="list-inline-item">
-              <a class="text-white" href="/community">Community</a>
+            <li class="footer-links-item">
+              <a class="text-white" href="https://guides.solidus.io/">Guides</a>
             </li>
-            <li class="list-inline-item">
-              <a class="text-white" href="http://guides.solidus.io" target="_blank">Guides</a>
-            </li>
-            <li class="list-inline-item">
+            <li class="footer-links-item">
               <a class="text-white" href="/security">Security</a>
             </li>
-            <li class="list-inline-item">
-              <a class="text-white" href="/contact">Contact</a>
+          </ul>
+        </div>
+        <div class="col-4 col-lg-2">
+          <h6 class="text-white-048">Community</h6>
+          <ul class="footer-links">
+            <li class="footer-links-item">
+              <a class="text-white" href="/community">Contributors</a>
             </li>
-            <li class="list-inline-item">
-              <a class="text-white" href="/community-guidelines">Community guidelines</a>
+            <li class="footer-links-item">
+              <a class="text-white" href="/features">Start contributing</a>
+            </li>
+            <li class="footer-links-item">
+              <a class="text-white" href="/partners">Become a partner</a>
+            </li>
+            <li class="footer-links-item">
+              <a class="text-white" href="/community-guidelines">Community Guidelines</a>
             </li>
           </ul>
-        </nav>
-
-        <div class="text-white-048">
-          Maintained by the <a class="text-white" href="/community#core-team">core team</a> with the help of our <a class="text-white" href="https://github.com/solidusio/solidus/graphs/contributors" target="_blank">our contributors</a>, directed by <a class="text-white" href="https://nebulab.it/" target="_blank">Nebulab</a>.
+        </div>
+        <div class="col-4 col-lg-2">
+          <h6 class="text-white-048">News</h6>
+          <ul class="footer-links">
+            <li class="footer-links-item">
+              <a class="text-white" href="/blog">Blog</a>
+            </li>
+            <li class="footer-links-item">
+              <a class="text-white" href="/features">Product changelog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4 ml-lg-auto">
+          <%= partial "partials/newsletter_form" %>
         </div>
       </div>
-      <div class="col-lg-5">
-        <ul class="social-links social-links-light">
-          <li class="list-inline-item"><a href="https://twitter.com/solidusio" target="_blank"><%= inline_svg("social-icons/twitter.svg", class: "isvg") %></a></li>
-          <li class="list-inline-item"><a href="http://slack.solidus.io/" target="_blank"><%= inline_svg("social-icons/slack.svg", class: "isvg") %></a></li>
-          <li class="list-inline-item"><a href="https://github.com/solidusio/solidus" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %></a></li>
-          <li class="list-inline-item"><a href="https://stackoverflow.com/questions/tagged/solidus" target="_blank"><%= inline_svg("social-icons/stack-overflow.svg", class: "isvg") %></a></li>
-          <li class="list-inline-item"><a href="https://opencollective.com/solidus" target="_blank"><%= inline_svg("social-icons/opencollective.svg", class: "isvg") %></a></li>
-        </ul>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="text-white-048">
+            Maintained by the <a class="text-white" href="/community#core-team">core team</a> with the help of our <a class="text-white" href="https://github.com/solidusio/solidus/graphs/contributors" target="_blank">our contributors</a>, directed by <a class="text-white" href="https://nebulab.it/" target="_blank">Nebulab</a>.
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <ul class="social-links social-links-light">
+            <li class="list-inline-item"><a href="https://twitter.com/solidusio" target="_blank"><%= inline_svg("social-icons/twitter.svg", class: "isvg") %></a></li>
+            <li class="list-inline-item"><a href="http://slack.solidus.io/" target="_blank"><%= inline_svg("social-icons/slack.svg", class: "isvg") %></a></li>
+            <li class="list-inline-item"><a href="https://github.com/solidusio/solidus" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %></a></li>
+            <li class="list-inline-item"><a href="https://stackoverflow.com/questions/tagged/solidus" target="_blank"><%= inline_svg("social-icons/stack-overflow.svg", class: "isvg") %></a></li>
+            <li class="list-inline-item"><a href="https://opencollective.com/solidus" target="_blank"><%= inline_svg("social-icons/opencollective.svg", class: "isvg") %></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
