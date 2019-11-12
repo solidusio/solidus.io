@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="50px" viewBox="0 0 32 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Footer logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-161.000000, -90.000000)" fill="#FFFFFF">
+            <g id="Footer-logo">
+                <g transform="translate(161.000000, 90.000000)">
+                    <path d="M0,50 L31.1320755,50 L31.1320755,0 L0,0 L0,50 Z M4.45754717,45.4746332 L26.6037736,45.4746332 L26.6037736,4.46349655 L4.45754717,4.46349655 L4.45754717,45.4746332 Z" id="Fill-1"></path>
+                    <path d="M13.4330952,18.6406349 L13.4330952,32.6855648 C13.4330952,36.9008038 15.4638544,38.4254179 19.8329985,40.5660377 L21.6981132,37.1560062 L19.4199627,35.7985936 C18.2389386,35.1011872 17.7613659,34.3157799 17.6989803,32.2785611 L17.6989803,18.2600314 C17.6989803,14.0425924 15.6682211,12.5179783 11.2969257,10.3773585 L9.43396226,13.7895901 L11.7121127,15.1228024 C12.8952881,15.8224089 13.3707095,16.6056161 13.4330952,18.6406349" id="Fill-2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

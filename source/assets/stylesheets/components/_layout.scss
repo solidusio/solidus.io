@@ -62,44 +62,88 @@ body{
 
 
 //Page footer
-.site-footer{
-  bottom: 0;
-  flex-shrink: 0;
-  font-size: $font-size-xs;
-  left: 0;
-  padding: 24px 0;
-  text-align: center;
-  width: 100%;
-
-  .social-links{  margin-top: 1rem; }
-
-  .isvg-coffee-love{ margin-bottom: 0.5rem; }
-
-  @include media-breakpoint-down(md){
-    .site_footer { display: none; }
-  }
-
-  @include media-breakpoint-up(lg) {
-    text-align: left;
-
-    .social-links{
-      margin-top: 0;
-      text-align: right;
+.site-footer {
+  &__top {
+    .footer-logo {
+      margin-bottom: 50px;
+      display: block;
     }
 
-    .isvg-coffee-love{
-      margin-right: 0.5rem;
-      margin-bottom: 0;
+    h6 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .footer-links {  
+      margin: 0;
+      padding: 0;
+
+      .footer-links-item {
+        list-style-type: none;
+        font-size: $font-size-sm; 
+       
+        @include media-breakpoint-up(lg) {
+          font-size: $font-size-base;
+        }
+      }
+    }
+
+    .newsletter-form {
+      margin-top: 50px;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
+
+      label {
+        margin-bottom: 15px;
+        font-size: $font-size-sm;
+      }
+
+      div {
+        display: flex;
+
+        .email {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          padding: 10px;
+          background: $gray-900;
+          color: $white;
+
+          &::placeholder {
+            color: $white-05;
+          }
+        }
+
+        .button {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          padding-left: 1em;  
+          padding-right: 1em;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 50px;
+    padding-top: 50px;
+    font-size: $font-size-sm;
+    text-align: center;
+    border-top: 1px solid rgba($white, 0.1);
+
+    @include media-breakpoint-up(lg){
+      margin-top: 80px;
+      text-align: left;
+    }
+
+    .social-links {
+      margin-top: 20px;
+
+      @include media-breakpoint-up(lg){
+        margin-top: 0;
+        text-align: right;
+      }
     }
   }
 }
-
-.footer-menu{
-  font-size: $font-size-sm;
-  margin-bottom: 1.125rem;
-
-  @include media-breakpoint-up(lg) { margin-bottom: 0.5rem; }
-
-  ul{ margin-bottom: 0; }
-}
-
