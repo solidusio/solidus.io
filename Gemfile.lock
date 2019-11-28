@@ -32,8 +32,8 @@ GEM
       faraday (>= 0.7.4, < 1.0)
     fast_blank (1.0.0)
     fastimage (2.1.1)
-    ffi (1.9.23)
-    ffi (1.9.23-x86-mingw32)
+    ffi (1.11.3)
+    ffi (1.11.3-x86-mingw32)
     gh (0.14.0)
       addressable
       backports
