@@ -1,0 +1,34 @@
+.newsbar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 4px 15px;
+  background: rgba(0, 0, 0, 0.2);
+  color: $white;
+  border-radius: 5px;
+  font-size: 12px;
+
+  @include media-breakpoint-up(md){
+    max-width: 565px;
+    margin-top: -60px;
+    font-size: 14px;
+  }
+  
+  span {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: $green;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  a {
+    color: $white;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
