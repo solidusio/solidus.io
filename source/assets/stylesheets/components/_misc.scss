@@ -69,6 +69,18 @@
   }
 }
 
+//Alumni
+.alumni {
+  margin-top: 30px;
+   
+  a {
+    width: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: block;
+  }
+}
+
 //Cost calculator
 .cost-calculator{
   color: $body-color;
