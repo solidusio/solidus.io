@@ -205,7 +205,6 @@
       overflow: hidden;
       opacity: 0;
       height: 0;
-      transition: transform 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
   
       @include media-breakpoint-up(lg){
         position: absolute;
@@ -223,11 +222,76 @@
         overflow: visible;
         opacity: 1;
         height: auto;
-        padding: 20px 30px 0;
         transform: translateY(0);
+        transition: transform 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+        padding: 20px 30px 0;
 
         @include media-breakpoint-up(lg){
           padding: 40px;
+        }
+      }
+
+      &--multi {
+        min-width: 500px;
+
+        a {
+          height: auto;
+          margin-bottom: 15px;
+          padding: 0;
+          display: block;
+        }
+
+        .dropdown-top {
+          @include media-breakpoint-up(lg){
+            padding-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+          }
+
+          &__list {
+            display: none;
+
+            @include media-breakpoint-up(lg){
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              display: block;
+            }
+
+            a {
+              &:first-child {
+                text-transform: uppercase;
+                font-size: $font-size-xs;
+                font-weight: $font-weight-bold;
+                letter-spacing: 1px;
+                color: $blue;
+              }
+            }
+          }
+        }
+
+        .dropdown-bottom {
+          @include media-breakpoint-up(lg) {
+            padding-top: 40px;
+            border-top: 1px solid $gray-200;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            &:last-child {
+              display: none;
+
+              @include media-breakpoint-up(lg){
+                display: block;
+              }
+            }
+          }
         }
       }
   
@@ -241,6 +305,7 @@
           margin-bottom: 20px;
           height: auto;
           padding: 0;
+          font-size: 1.1rem;
           font-weight: 500;
           color: $gray-900;
         }
