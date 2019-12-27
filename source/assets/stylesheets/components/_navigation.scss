@@ -29,12 +29,12 @@
     justify-content: flex-end;
     text-align: right;
 
-    .social-links, .btn{ display: none; }
+    .github-stars, .btn{ display: none; }
 
     @include media-breakpoint-up(lg){
       display: flex;
 
-      .social-links, .btn{ display: block; }
+      .github-stars, .btn{ display: block; }
     }
   }
 
@@ -62,16 +62,9 @@
     @include media-breakpoint-up(lg){ display: none; }
   }
 
-  .social-links { 
+  .github-stars { 
     margin-right: 2rem; 
-
-    .list-inline-item {
-      margin-right: 0.1rem;
-
-      @include media-breakpoint-up(xl){
-        margin-right: 1rem;
-      }
-    }
+    line-height: 0;
   }
 
   @include media-breakpoint-up(lg){
@@ -239,6 +232,10 @@
           margin-bottom: 15px;
           padding: 0;
           display: block;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
 
         .dropdown-top {
