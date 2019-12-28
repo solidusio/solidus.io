@@ -132,7 +132,7 @@
         color: $gray-048;
         border-bottom: 2px solid transparent;
         display: inline-block;
-        padding: 28px 12px 26px;
+        padding: 28px 15px 26px;
         font-weight: 500;
         height: 80px;
       }
@@ -159,6 +159,12 @@
   }
 
   .dropdown {
+    a {
+      @include media-breakpoint-up(lg){
+        color: $gray-900;
+      }
+    }
+    
     .dropdown-link {
       display: block;
       position: relative;
@@ -233,6 +239,12 @@
           padding: 0;
           display: block;
 
+          .dropdown-icon {
+            @include media-breakpoint-up(lg){
+              fill: $gray-900;
+            }
+          }
+
           &:last-child {
             margin-bottom: 0;
           }
@@ -256,7 +268,7 @@
             }
 
             a {
-              &:first-child {
+              &:first-child { 
                 text-transform: uppercase;
                 font-size: $font-size-xs;
                 font-weight: $font-weight-bold;
@@ -286,6 +298,7 @@
 
               @include media-breakpoint-up(lg){
                 display: block;
+                font-size: 14px;
               }
             }
           }
