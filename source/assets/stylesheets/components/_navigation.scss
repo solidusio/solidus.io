@@ -160,6 +160,10 @@
 
   .dropdown {
     a {
+      &:focus {
+        outline: 0;
+      }
+
       @include media-breakpoint-up(lg){
         color: $gray-900;
       }
