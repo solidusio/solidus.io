@@ -31,7 +31,7 @@ Please note that Rails 6 requires Ruby 2.5.0 or newer.
 
 **Deprecated support for Rails 5.1**
 
-Rails 5.1 is deprecated and we'll remove support to 5.1 on the next version.
+Rails 5.1 is deprecated and we'll remove support for 5.1 on the next version.
 If you are still using it, a deprecation warning will be printed in your logs
 when the application boots.
 
