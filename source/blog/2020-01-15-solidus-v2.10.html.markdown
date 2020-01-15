@@ -1,0 +1,89 @@
+---
+title: Solidus v2.10 released
+date: 2020-01-15
+tags: Solidus
+author: Solidus Core Team
+---
+
+We just released Solidus v2.10!
+
+Thanks to all contributors, testers, and users who made this release possible.
+This version's support will end in 18 months: 2021-07-15.
+
+- <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v2.10.0">2.10.0 on GitHub</a>
+- <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/2.10.0">2.10.0 on RubyGems</a>
+
+### What's changed?
+
+The full CHANGELOG can be found on our
+[GitHub repository](https://github.com/solidusio/solidus/blob/master/CHANGELOG.md)
+but here's a list of all major changes:
+
+**Added support for Rails 6**
+
+Solidus core now fully supports Rails 6! After upgrading to the 2.10 version
+you can follow the official [Rails Upgrading Guide](https://guides.rubyonrails.org/upgrading_ruby_on_rails.html#upgrading-from-rails-5-2-to-rails-6-0).
+Please note that Rails 6 requires Ruby 2.5.0 or newer.
+
+- Add support for Rails 6 [#3236](https://github.com/solidusio/solidus/pull/3236) ([aldesantis](https://github.com/aldesantis))
+- Fix dummy app generator to skip Bootsnap and Webpack in Rails 6 [#3327](https://github.com/solidusio/solidus/pull/3327) ([aldesantis](https://github.com/aldesantis))
+- Handle deprecation for Rails 6 in DummyApp [#3352](https://github.com/solidusio/solidus/pull/3352) ([cedum](https://github.com/cedum))
+
+**Deprecated support for Rails 5.1**
+
+Rails 5.1 is deprecated and we'll remove support to 5.1 on the next version.
+If you are still using it, a deprecation warning will be printed in your logs
+when the application boots.
+
+- Deprecate Rails 5.1 [#3333](https://github.com/solidusio/solidus/pull/3333) ([kennyadsl](https://github.com/kennyadsl))
+
+**Changed default images sizes**
+
+We update the images used by Solidus demo in the `sample` gem. To update
+those images we needed to change the default sizes of Spree::Image. They
+changed from:
+
+```
+mini: '48x48>', small: '100x100>', product: '240x240>', large: '600x600>'
+```
+
+to
+
+```
+mini: '48x48>', small: '400x400>', product: '680x680>', large: '1200x1200>'
+```
+
+If your store relies on these sizes, you should change them back following
+the guide [here](https://guides.solidus.io/developers/products-and-variants/product-images.html#paperclip-settings).
+
+- Upload new sample images [#3270](https://github.com/solidusio/solidus/pull/3270) ([mfrecchiami](https://github.com/mfrecchiami))
+- Remove unused sample images [#3397](https://github.com/solidusio/solidus/pull/3397) ([JDutil](https://github.com/JDutil))
+- Update sample imgs with wrong file extension [#3343](https://github.com/solidusio/solidus/pull/3343) ([mfrecchiami](https://github.com/mfrecchiami))
+
+**State machines extracted into their own replaceable modules**
+
+This allows stores to replace the state machine completely with their own
+implementation, even with different gems or using custom code without any
+state machine gem. All the customizations previously made to the state machine
+should work smoothly, but it could be a good idea to check twice. You can read
+more about the suggested way to customize the state machine [here](https://guides.solidus.io/developers/customizations/state-machines.html#state-machines).
+
+- Extract the state machines into replaceable modules [#3356](https://github.com/solidusio/solidus/pull/3356) ([cedum](https://github.com/cedum))
+
+**Display error if editing non-current order**
+
+In Solidus frontend users were able to input any `order_id` in the
+`/orders/:order_id/edit` route and they were simply seeing the cart
+(showing the current order and not the requested one) without any notice.
+With this Solidus version we print an flash message and redirect users to
+their cart.
+
+- Display error if editing non-current order [#3391](https://github.com/solidusio/solidus/pull/3391) ([JDutil](https://github.com/JDutil))
+
+**Solidus now requires Ruby 2.4 or newer**
+
+Ruby 2.2 and 2.3 support has ended, Rubocop support for 2.2 ended and
+they are also about to drop 2.3. Also, we already introduced code that
+is not compliant with 2.2 anymore.
+
+- Bump required ruby version to 2.4 [#3337](https://github.com/solidusio/solidus/pull/3337) ([kennyadsl](https://github.com/kennyadsl))
