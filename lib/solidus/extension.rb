@@ -1,6 +1,6 @@
 module Solidus
   class Extension
-    VERSIONS = %w[v2.6 v2.7 v2.8 v2.9 master].freeze
+    VERSIONS = %w[v2.7 v2.8 v2.9 v2.10 master].freeze
 
     attr_accessor :repo, :title, :ci_provider, :description, :group, :environment
 
