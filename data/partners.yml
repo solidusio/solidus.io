@@ -23,7 +23,7 @@ gold_partners:
     description: "Full-service custom digital agency focused on Solidus, eCommerce, SEO, and working with Karma in everything we do."
     url: https://karmacreative.io/
     image: "karma-creative-logo.svg"
-    
+
 silver_partners:
   peter_berkenbosch:
     name: "Peter Berkenbosch Consultancy (PBC)"
@@ -39,7 +39,7 @@ silver_partners:
     retina:
       default_img: "boomerdigital-logo.png"
       retina_img: "boomerdigital-logo@2x.png"
-  magmalabs: 
+  magmalabs:
     name: "MagmaLabs"
     short_description: "Ruby on Rails, React, React Native, and Solidus Developers"
     description: "MagmaLabs builds tailored software solutions to help companies execute their vision achieving quick turn-around."
@@ -71,3 +71,9 @@ bronze_partners:
     description: "We design, develop and launch digital products, fully integrated with existing company infrastructure."
     url: https://www.seesaw.it
     image: "seesaw-logo.svg"
+  digital_reflow :
+    name: "Digital Reflow"
+    short_description: "Functional and focused web apps built on Ruby on Rails. Big fan of Solidus."
+    description: "We’re a Digital Consultancy near London, England with an experienced team of developers, UI and UX designers building solutions in an agile way."
+    url: https://www.digitalreflow.co.uk
+    image: "digital-reflow-logo.svg"
