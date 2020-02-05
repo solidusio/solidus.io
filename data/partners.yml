@@ -3,7 +3,7 @@ main_contributors:
     name: "Nebulab"
     short_description: "Back-End, Front-End, UX Design"
     description: "Nebulab is a digital consulting company specialized in designing, developing, and maintaining high-quality eCommerce websites built with Solidus and Ruby on Rails applications. They mix passion and technology to give their clients the best the web has to offer to succeed!"
-    url: https://nebulab.it
+    url: https://nebulab.it/?utm_source=solidus-partners-page
     image: "nebulab-logo.svg"
     skills:
       - "Solidus eCommerce Development"
