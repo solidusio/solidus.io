@@ -25,12 +25,6 @@ gold_partners:
     image: "karma-creative-logo.svg"
 
 silver_partners:
-  peter_berkenbosch:
-    name: "Peter Berkenbosch Consultancy (PBC)"
-    short_description: "e-commerce consultancy"
-    description: "Peter Berkenbosch Consultancy (PBC) specialist in e-commerce consultancy, backend and integration development and CXOps."
-    url: https://peterberkenbosch.nl
-    image: "pbc-logo.svg"
   boomer_digital:
     name: "Boomer Digital"
     short_description: "e-commerce, Mobile applications, DevOps, Software development"
@@ -45,8 +39,21 @@ silver_partners:
     description: "MagmaLabs builds tailored software solutions to help companies execute their vision achieving quick turn-around."
     url: https://www.magmalabs.io/
     image: "magmalabs-logo.svg"
+  digital_reflow :
+    name: "Digital Reflow"
+    short_description: "Functional and focused web apps built on Ruby on Rails. Big fan of Solidus."
+    description: "We’re a Digital Consultancy near London, England with an experienced team of developers, UI and UX designers building solutions in an agile way."
+    url: https://www.digitalreflow.co.uk
+    image: "digital-reflow-logo.svg"
+
 
 bronze_partners:
+  peter_berkenbosch:
+    name: "Peter Berkenbosch Consultancy (PBC)"
+    short_description: "e-commerce consultancy"
+    description: "Peter Berkenbosch Consultancy (PBC) specialist in e-commerce consultancy, backend and integration development and CXOps."
+    url: https://peterberkenbosch.nl
+    image: "pbc-logo.svg"
   wemove:
     name: "wemove digital solutions GmbH"
     short_description: "Webshop Development"
@@ -71,9 +78,3 @@ bronze_partners:
     description: "We design, develop and launch digital products, fully integrated with existing company infrastructure."
     url: https://www.seesaw.it
     image: "seesaw-logo.svg"
-  digital_reflow :
-    name: "Digital Reflow"
-    short_description: "Functional and focused web apps built on Ruby on Rails. Big fan of Solidus."
-    description: "We’re a Digital Consultancy near London, England with an experienced team of developers, UI and UX designers building solutions in an agile way."
-    url: https://www.digitalreflow.co.uk
-    image: "digital-reflow-logo.svg"
