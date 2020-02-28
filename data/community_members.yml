@@ -4,11 +4,6 @@ ambassadors:
     url: https://opencollective.com/nebulab
     image: "nebulab.svg"
 
-  engine:
-    name: "Engine"
-    url: https://opencollective.com/engine-commerce
-    image: "engine.svg"
-
   super_good:
     name: "Super Good"
     url: https://opencollective.com/supergoodsoft
@@ -18,7 +13,7 @@ ambassadors:
     name: "Karma Creative"
     url: https://opencollective.com/karmacreative
     image: "karma-creative.svg"
-    
+
   modded_euros:
     name: "Modded Euros"
     url: https://opencollective.com/modded-euros
