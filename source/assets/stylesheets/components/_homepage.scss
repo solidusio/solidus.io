@@ -1,0 +1,21 @@
+.homepage-hero{
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+
+  @include media-breakpoint-up(md){
+    .container{ height: 200px; }
+    
+    & + .content-block{
+      padding-top: ((200px / 2) + (80px * 3)) / 2;
+    }
+  }
+  
+  @include media-breakpoint-up(lg){
+    .container{ height: 400px; }
+    
+    & + .content-block{
+      padding-top: ((400px / 2) + (80px * 3)) / 2;
+    }
+  }
+}

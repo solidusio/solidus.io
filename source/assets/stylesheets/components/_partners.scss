@@ -194,27 +194,6 @@
   }
 }
 
-.partners-hero .container{
-  &:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    backface-visibility: hidden;
-    bottom: 0;
-    transform: skewY(-9deg);
-    transform-origin: 100%;
-    
-    @include media-breakpoint-down(sm) {
-      transform: skewY(-5deg);
-    }
-  }
-}
-
 .partners-detail-block .detail {
   .picture{
     margin: 2rem 0 1rem;

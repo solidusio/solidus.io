@@ -31,6 +31,10 @@
   }
 }
 
+.content-block-white{
+  background: $white;
+}
+
 //Price calculation block
 .calculator-block{
   .block-content{
@@ -63,6 +67,28 @@
 .community-guidelines-block {
   max-width: 680px;
   margin: 0 auto;
+}
+
+//Skew hero banners
+.skew-block .container{
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    backface-visibility: hidden;
+    bottom: 0;
+    transform: skewY(-9deg);
+    transform-origin: 100%;
+    
+    @include media-breakpoint-down(sm) {
+      transform: skewY(-5deg);
+    }
+  }
 }
 
 //Features hero banner
