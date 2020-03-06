@@ -3,6 +3,7 @@ import "popper.js";
 import "bootstrap";
 import "details-element-polyfill";
 import NoUiSlider from "nouislider";
+import "slick-carousel";
 import Headroom from "headroom.js";
 import numeral from "numeral";
 import AOS from "aos";
@@ -76,5 +77,52 @@ $(function () {
     $(".top-bar").removeClass('top-bar--show');
   });
 
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
+  
+  //Slick Slider
+  $('.carousel-list').slick({
+    autoplay: true,
+    lazyLoad: 'ondemand',
+    dots: false,
+    speed: 300,
+    lazyLoad: 'progressive',
+    //centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 1
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       centerMode: false,
+    //       variableWidth: true,
+    //       infinite: false,
+    //       dots: false,
+    //       arrows: true
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 769,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       centerMode: false,
+    //       variableWidth: true,
+    //       infinite: true,
+    //       dots: true,
+    //       arrows: false
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       centerMode: true,
+    //       variableWidth: true,
+    //       infinite: true,
+    //       dots: true,
+    //       arrows: false
+    //     }
+    //   }
+    // ]
+  });
 });
