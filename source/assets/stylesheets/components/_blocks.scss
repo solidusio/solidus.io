@@ -45,10 +45,6 @@
     margin-left: auto;
     margin-right: auto;
 
-    .title{
-      font-size: $h2-font-size;
-    }
-
     @include media-breakpoint-up(md){ max-width: none; }
   }
 
