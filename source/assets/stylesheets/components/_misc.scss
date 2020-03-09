@@ -176,3 +176,33 @@
     > span{ vertical-align: top !important; }
   }
 }
+
+//Terminal window
+.terminal-window {
+  background-color: darken($gray-900, 5%);
+  border-radius: $border-radius;
+  padding: $card-spacer-y $card-spacer-x;
+  
+  .terminal-header {
+    span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      
+      &.close-btn { background-color: $danger; }
+      &.minimize-btn { background-color: $warning; }
+      &.zoom-btn { background-color: $success; }
+    }
+  }
+  
+  code {
+    width: 100%;
+    float: left;
+    background-color: transparent;
+    color: $white;
+  }
+  
+  .highlighted { color: #3EB0EF; }
+  .comment { color: $gray-600; }
+}
