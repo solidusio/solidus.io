@@ -214,10 +214,18 @@ $slick-opacity-not-active: 0.25 !default;
   outline: 0;
 }
 
-// Carousel
-// .carousel {
-//   overflow: hidden;
-// }
+Carousel
+.carousel {
+  overflow: hidden;
+}
+
+.carousel__list {
+  visibility: hidden;
+  &.slick-initialized {
+    visibility: visible;
+  }
+}
+
 
 // .carousel__list {
 //   visibility: hidden;

@@ -31,19 +31,15 @@
     padding: $spacer * 3;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .15);
     position: relative;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       max-width: 486px;
       min-height: 380px;
     }
     
-    .logo {
-      position: absolute;
-      bottom: -100px;
-      left: 0;
-      width: 100%;
-      
-      .isvg {
-        width: 100px;
+    .blockquote {
+      text-align: left;
+      .quote {
+        transform: translate(0, 150%);
       }
     }
     
@@ -51,12 +47,26 @@
       font-weight: $headings-font-weight;
       font-size: $h2-font-size;
       line-height: $headings-line-height;
+      color: $white;
+    }
+    
+    .text {
+      color: $white;
     }
     
     .author {
       display: block;
       font-weight: $font-weight-bold;
       font-size: $font-size-lg;
+    }
+    
+    .logo {
+      display: block;
+      width: 100px;
+      height: auto;
+      .inherit-fill {
+        fill: $white;
+      }
     }
   }
   
@@ -66,7 +76,7 @@
     bottom: 50px;
     z-index: -1;
     visibility: hidden;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       visibility: visible;
     }
   }

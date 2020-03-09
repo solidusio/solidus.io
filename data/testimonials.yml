@@ -1,0 +1,28 @@
+testimonials:
+  floyd:
+    name: "Floyd"
+    quote: "I've never had to say 'no' to my product team. I can customize Solidus to do anything they want."
+    author_name: "Jacky Giang"
+    author_role: "Head of Technology at Floyd"
+    url: https://floyddetroit.com/
+    logo: "floyd.svg"
+    main_img:
+      default_img: "slide-1@1x.jpg"
+      retina_img: "slide-1@2x.jpg"
+    author_img:
+      default_img: "jacky-giang.png"
+      retina_img: "jacky-giang@2x.png"
+      
+  Ipsum:
+    name: "Ipsum"
+    quote: "Lorem Ipsum."
+    author_name: "Dan Mitchell"
+    author_role: "Product Owner"
+    url: https://floyddetroit.com/
+    logo: "casper.svg"
+    main_img:
+      default_img: "slide-2@1x.jpg"
+      retina_img: "slide-2@2x.jpg"
+    author_img:
+      default_img: "dan-mitchell.png"
+      retina_img: "dan-mitchell@2x.png"

@@ -1,58 +1,36 @@
 <div class="carousel">
   <div class="carousel-list">
-    <div class="carousel-list-item">
-      <div class="wrapper">
-        <div class="carousel-content">
-          <div class="blockquote-container">
-            <blockquote class="blockquote">
-              <p class="text-white mb-4">
-                "I've never had to say 'no' to my product team. I can customize Solidus to do anything they want."
-              </p>
-              <footer class="blockquote-footer">
-                <cite>
-                  <img class="img-circled" src="<%= image_path('quotes/jacky-giang.png') %>" srcset="<%= image_path('quotes/jacky-giang.png') %>, <%= image_path('quotes/jacky-giang@2x.png') %> 2x" alt="Jacky Giang" width="65" height="65"><span class="text text-white">
-                   <span class="author">Jacky Giang</span>
-                   Head of Technology at Floyd
-                </cite>
-              </footer>
-              <a class="logo" href="https://floyddetroit.com/" target="_blank"><%= inline_svg("community-logos/floyd.svg", class: "isvg") %></a>
-              
-            </blockquote>
-          </div>
-          
-          <div class="main-image-container">
-              <img data-lazy="<%= image_path("testimonials/slide-1@1x.jpg") %>" srcset="<%= image_path("testimonials/slide-1@2x.jpg") %> 2x, <%= image_path("testimonials/slide-1@1x.jpg") %> 1x" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="carousel-list-item">
-      <div class="wrapper">
-        <div class="carousel-content">
-          <div class="blockquote-container">
-            <blockquote class="blockquote">
-              <p class="text-white mb-4">
-                "Lorem Ipsum dolor sit amet."
-              </p>
-              <footer class="blockquote-footer">
-                <cite>
-                  <img class="img-circled" src="<%= image_path('quotes/jacky-giang.png') %>" srcset="<%= image_path('quotes/jacky-giang.png') %>, <%= image_path('quotes/jacky-giang@2x.png') %> 2x" alt="Jacky Giang" width="65" height="65"><span class="text text-white">
-                   <span class="author">John Doe</span>
-                   Product Owner at Casper
-                </cite>
-              </footer>
-              <a class="logo" href="#" target="_blank"><%= inline_svg("community-logos/casper.svg", class: "isvg") %></a>
-              
-            </blockquote>
-          </div>
-          
-          <div class="main-image-container">
-              <img data-lazy="<%= image_path("testimonials/slide-2@1x.jpg") %>" srcset="<%= image_path("testimonials/slide-2@2x.jpg") %> 2x, <%= image_path("testimonials/slide-2@1x.jpg") %> 1x" class="img-fluid" />
+    <% data.testimonials[:testimonials].each do |testimonial, info| %>
+      <div class="carousel-list-item">
+        <div class="wrapper">
+          <div class="carousel-content">
+            <div class="blockquote-container">
+              <blockquote class="blockquote">
+                <a class="logo" href="<%= info[:url] %>" target="_blank"><%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %></a>
+                <%= inline_svg("icons/quote.svg", class: "quote") %>
+                <p class="mb-4 pl-4">
+                  <%= info[:quote] %>
+                </p>
+                <footer class="blockquote-footer">
+                  <cite>
+                    <img data-lazy="<%= image_path("quotes/#{info[:author_img].default_img}") %>" srcset="<%= image_path("quotes/#{info[:author_img].retina_img}") %> 2x, <%= image_path("quotes/#{info[:author_img].default_img}") %> 1x" class="img-circled" alt="<%= info[:author_name] %>" />
+                    <span class="text">
+                       <span class="author"><%= info[:author_name] %></span>
+                       <%= info[:author_role] %>
+                     </span>
+                  </cite>
+                </footer>
+                
+              </blockquote>
+            </div>
+            
+            <div class="main-image-container">
+                <img data-lazy="<%= image_path("testimonials/#{info[:main_img].default_img}") %>" srcset="<%= image_path("testimonials/#{info[:main_img].retina_img}") %> 2x, <%= image_path("testimonials/#{info[:main_img].default_img}") %> 1x" class="img-fluid" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    <% end %>
     
   </div>
 

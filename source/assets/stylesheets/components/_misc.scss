@@ -49,6 +49,7 @@
   .item{
     display: block;
     max-width: 100%;
+    min-width: 75px;
     margin: 1rem auto;
 
     &:hover{

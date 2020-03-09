@@ -88,7 +88,8 @@ $(function () {
     lazyLoad: 'progressive',
     //centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 1
+    slidesToShow: 1,
+    fade: true
     // responsive: [
     //   {
     //     breakpoint: 1024,
