@@ -1,19 +1,12 @@
 .content-block{
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 65px;
+  padding-bottom: 65px;
 
   @include media-breakpoint-up(md){
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 130px;
+    padding-bottom: 130px;
 
     .block-content{ max-width: 480px; }
-  }
-}
-
-.content-block-lg{
-  @include media-breakpoint-up(md) {
-    padding-top: 100px;
-    padding-bottom: 100px;
   }
 }
 
