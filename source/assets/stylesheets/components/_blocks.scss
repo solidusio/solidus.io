@@ -86,18 +86,13 @@
 
 //Features details block
 .features-details-block{
-  .container{
-    @include media-breakpoint-up(lg){
-      max-width: 960px + $grid-gutter-width;
-    }
-  }
 
   .features-group{
     @include media-breakpoint-up(lg){
       > .title{
         a{
           cursor: default;
-          color: $body-color;
+          color: $gray-900; 
           pointer-events: none;
         }
 
