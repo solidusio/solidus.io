@@ -182,6 +182,7 @@
   background-color: darken($gray-900, 5%);
   border-radius: $border-radius;
   padding: $card-spacer-y $card-spacer-x;
+  min-height: 490px;
   
   .terminal-header {
     span {
@@ -196,6 +197,8 @@
     }
   }
   
+  pre { white-space: nowrap; }
+  
   code {
     width: 100%;
     float: left;
@@ -204,5 +207,83 @@
   }
   
   .highlighted { color: #3EB0EF; }
-  .comment { color: $gray-600; }
+  .comment {
+    opacity: 0;
+    color: $gray-600;
+  }
+  
+  .line {
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    padding: 1px;
+  }
+  
+  &.aos-animate {
+    .line-0 { animation: fadeIn .5s 0s 1 forwards; }
+    .line-3 { animation: fadeIn .5s 1.5s 1 forwards; }
+    .line-5 { animation: fadeIn .5s 3s 1 forwards; }
+    .line-10 { animation: fadeIn .5s 5.5s 1 forwards; }
+    .line-12 { animation: fadeIn .5s 6.5s 1 forwards; }
+    
+    .line-1 { animation: type .5s .5s steps(20, end) 1 forwards; }
+    .cursor-1 { animation: blink .3s 1s 1 forwards; }
+    
+    .line-2 { animation: type .3s 1s steps(20, end) 1 forwards; }
+    .cursor-2 { animation: blink 1s 1.5s 2 forwards; }
+    
+    .line-4 { animation: type .5s 2.5s steps(20, end) 1 forwards; }
+    .cursor-4 { animation: blink .5s 3s 1 forwards; }
+    
+    .line-6 { animation: type .5s 3.5s steps(20, end) 1 forwards; }
+    .cursor-6 { animation: blink .5s 4s 1 forwards; }
+    
+    .line-7 { animation: type .5s 4s steps(20, end) 1 forwards; }
+    
+    .line-8 { animation: type .5s 4.5s steps(20, end) 1 forwards; }
+    
+    .line-9 { animation: type .5s 5s steps(20, end) 1 forwards; }
+    .cursor-9 { animation: blink 1s 5.5s 1 forwards; }
+    
+    .line-11 { animation: type .5s 6s steps(20, end) 1 forwards; }
+    .cursor-11 { animation: blink .5s 6.5s 1 forwards; }
+    
+    .line-13 { animation: type .5s 7s steps(20, end) 1 forwards; }
+    .cursor-13 { animation: blink 1s 7.5s infinite; }
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes type {
+  to {
+    width: 99%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
