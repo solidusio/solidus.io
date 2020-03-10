@@ -4,10 +4,18 @@ import "bootstrap";
 import "details-element-polyfill";
 import NoUiSlider from "nouislider";
 import "slick-carousel";
+import Rellax from "rellax";
 import Headroom from "headroom.js";
 import numeral from "numeral";
 import AOS from "aos";
 const Cookies = require('js-cookie');
+
+var rellax = new Rellax('.rellax');
+
+// var rellax = new Rellax('.rellax', {
+//     wrapper: '.carousel'
+// });
+
 
 $(function () {
   //Menu toggler functionality
@@ -81,12 +89,13 @@ $(function () {
   
   //Slick Slider
   $('.carousel-list').slick({
-    autoplay: true,
+    autoplay: false,
     lazyLoad: 'ondemand',
     dots: false,
     speed: 300,
     lazyLoad: 'progressive',
     //centerMode: true,
+    useTransform: false,
     centerPadding: '60px',
     slidesToShow: 1,
     fade: true
