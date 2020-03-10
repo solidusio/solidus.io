@@ -298,3 +298,8 @@ solidusio-contrib/solidus_i18n:
   description: A collection of localization files for translating your store into multiple
     languages.
   group: Internationalization
+hefan/solidus_dynamic_variants:
+  ci_provider: circleci
+  title: Dynamic Variants
+  description: Creates variants from selected options on the fly during cart populate
+  group: Products
