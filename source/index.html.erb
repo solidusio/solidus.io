@@ -11,6 +11,16 @@
             Build, customize and scale your store: no limits, no license fees. Solidus is the open-source eCommerce framework for digitally-native brands, fast-growing online businesses, and passionate developers.
           </p>
           <a class="btn btn-primary" href="#">Get started</a>
+          <div class="mt-4 mb-4">
+            <%= inline_svg("icons/check-circle-green.svg", class: "isvg") %>
+            <span class="pr-sm-4 pr-2">
+              <small>No license fees</small>
+            </span>
+            <%= inline_svg("icons/check-circle-green.svg", class: "isvg") %>
+            <span>
+              <small>Open Source</small>
+            </span>
+          </div>
         </div>
       </div>
       <div class="col-md">
@@ -24,16 +34,8 @@
   <div class="content-block" data-aos="fade">
     <div class="container">
       <p class="title text-gray-600 text-center font-weight-light mb-4">Solidus powers the brands defining the future of eCommerce.</p>
-
-      <div class="community-logos">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-4 col-lg-auto"><a class="item" href="https://www.glossier.com/" target="_blank"><%= inline_svg("community-logos/glossier.svg", class: "isvg") %></a></div>
-          <div class="col-4 col-lg-auto"><a class="item" href="https://www.meundies.com/" target="_blank"><%= inline_svg("community-logos/meundies.svg", class: "isvg") %></a></div>
-          <div class="col-4 col-lg-auto"><a class="item" href="https://www.aceandtate.com/" target="_blank"><%= inline_svg("community-logos/ace&tate.svg", class: "isvg") %></a></div>
-          <div class="col-4 col-lg-auto"><a class="item pt-1" href="https://casper.com/" target="_blank"><%= inline_svg("community-logos/casper.svg", class: "isvg") %></a></div>
-          <div class="col-4 col-lg-auto"><a class="item" href="https://floyddetroit.com/" target="_blank"><%= inline_svg("community-logos/floyd.svg", class: "isvg") %></a></div>
-        </div>
-      </div>
+      
+      <%= partial "partials/community_logos" %>
     </div>
   </div>
   
@@ -224,9 +226,6 @@
 <div class="content-block text-center" data-aos="fade">
   <div class="container">
     <h2 class="title mb-4">Join the brands changing the future of eCommerce</h2>
-    <p class="lead">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-    </p>
     <a class="btn btn-primary" href="#">Get started</a>
   </div>
 </div>

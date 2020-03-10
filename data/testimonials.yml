@@ -13,16 +13,16 @@ testimonials:
       default_img: "jacky-giang.png"
       retina_img: "jacky-giang@2x.png"
       
-  Ipsum:
-    name: "Ipsum"
-    quote: "Lorem Ipsum."
-    author_name: "Dan Mitchell"
-    author_role: "Product Owner"
-    url: https://floyddetroit.com/
-    logo: "casper.svg"
+  meundies:
+    name: "MeUndies"
+    quote: "Solidus has evolved with our business over the years, and continues to do so as we begin a comprehensive rearchitecture of our eCommerce platform."
+    author_name: "Robert Zablit"
+    author_role: "Developer"
+    url: https://www.meundies.com/
+    logo: "meundies.svg"
     main_img:
       default_img: "slide-2@1x.jpg"
       retina_img: "slide-2@2x.jpg"
     author_img:
-      default_img: "dan-mitchell.png"
-      retina_img: "dan-mitchell@2x.png"
+      default_img: "robert-zablit.png"
+      retina_img: "robert-zablit@2x.png"
