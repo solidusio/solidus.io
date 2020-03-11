@@ -5,12 +5,14 @@
         <div class="wrapper">
           <div class="carousel-content">
             <div class="blockquote-container">
-              <blockquote class="blockquote">
+              <blockquote class="<%= info[:custom_css] %> blockquote d-flex flex-column flex-wrap justify-content-between align-items-stretch">
                 <a class="logo" href="<%= info[:url] %>" target="_blank"><%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %></a>
-                <%= inline_svg("icons/quote.svg", class: "quote") %>
-                <p class="mb-4 pl-4">
-                  <%= info[:quote] %>
-                </p>
+                <div>
+                  <%= inline_svg("icons/quote.svg", class: "quote") %>
+                  <p class="pl-4">
+                    <%= info[:quote] %>
+                  </p>
+                </div>
                 <footer class="blockquote-footer">
                   <cite>
                     <img data-lazy="<%= image_path("quotes/#{info[:author_img].default_img}") %>" srcset="<%= image_path("quotes/#{info[:author_img].retina_img}") %> 2x, <%= image_path("quotes/#{info[:author_img].default_img}") %> 1x" class="img-circled" alt="<%= info[:author_name] %>" />

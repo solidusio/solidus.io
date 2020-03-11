@@ -15,65 +15,85 @@
 .testimonials {
   .carousel-content {
     position: relative;
-    min-height: 600px;
+    @include media-breakpoint-up(lg) { height: 520px; }
   }
   
-  .blockquote-container {
-    background-color: $primary;
+  .blockquote {
+    text-align: left;
     padding: $spacer * 3;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .15);
     position: relative;
     @include media-breakpoint-up(lg) {
-      max-width: 486px;
-      min-height: 380px;
+      width: 480px;
+      height: 440px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: 470px;
     }
     
-    .blockquote {
-      text-align: left;
-      .quote {
-        transform: translate(0, 150%);
-      }
+    .quote {
+      transform: translate(0, 150%);
     }
-    
     p {
       font-weight: $headings-font-weight;
-      font-size: $h2-font-size;
       line-height: $headings-line-height;
       color: $white;
-    }
-    
-    .text {
-      color: $white;
-    }
-    
-    .author {
-      display: block;
-      font-weight: $font-weight-bold;
-      font-size: $font-size-lg;
-    }
-    
-    .logo {
-      display: block;
-      width: 140px;
-      height: auto;
-      svg {
-        min-width: 100%;
-        height: auto;
-      }
-      .inherit-fill {
-        fill: $white;
-      }
+      margin-bottom: 0;
     }
   }
+  
+  .text {
+    color: $white;
+    font-size: $font-size-sm;
+  }
+  
+  .author {
+    display: block;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-md;
+  }
+  
+  .logo {
+    height: auto;
+    svg {
+      min-width: 100%;
+      height: auto;
+    }
+  }
+  
+  .inherit-fill { fill: $white; }
   
   .main-image-container {
     position: absolute;
     right: 0;
-    bottom: 50px;
+    bottom: 0;
     z-index: -1;
     visibility: hidden;
     @include media-breakpoint-up(lg) {
       visibility: visible;
     }
+  }
+}
+
+.blockquote {
+  &.meundies {
+    background-color: #7023F0;
+    .logo { width: 131px; }
+    p { font-size: $font-size-lg; }
+  }
+  &.floyd {
+    background-color: #EF4023;
+    .logo { width: 100px; }
+    p { font-size: $font-size-lg; }
+  }
+  &.glossier {
+    background-color: #F5E3E7;
+    .logo { width: 131px; }
+    .inherit-fill { fill: $gray-900; }
+    p {
+      font-size: $font-size-base;
+      color: $gray-900;
+    }
+    .text { color: $gray-900; }
   }
 }
