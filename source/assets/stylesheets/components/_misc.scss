@@ -51,10 +51,6 @@
     max-width: 100%;
     margin: 1rem auto;
 
-    &:hover{
-      transform: scale(1.1);
-    }
-
     .isvg{
       display: block;
       max-width: 100%;
@@ -67,6 +63,8 @@
       }  
     }
   }
+  
+  .inherit-fill { fill: #505359; }
 }
 
 //Alumni
