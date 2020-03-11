@@ -172,26 +172,22 @@
         </div>
         <div class="col-md">
           <div class="terminal-window" data-aos="fade">
-            <div class="terminal-header">
+            <div class="terminal-header mb-3">
               <span class="close-btn"></span>
               <span class="minimize-btn ml-1 mr-1"></span>
               <span class="zoom-btn"></span>
             </div>
             <div class="terminal-body">
               <pre>
-                <code class="comment line-0"># Add the gems yo your Rails 5/6 application</code>
+                <code class="comment line-0"># Add the Solidus gem to your Rails application</code>
                 <code class="line line-1">$ gem '<span class="highlighted">solidus</span>'<span class="cursor-1">_</span></code>
-                <code class="line line-2">$ gem '<span class="highlighted">solidus_auth_devise</span>'<span class="cursor-2">_</span></code>
-                <code class="comment mt-2 line-3">Run bundle command to install</code>
+                <code class="comment mt-2 line-3"># Install dependencies</code>
                 <code class="line line-4">$ bundle<span class="cursor-4">_</span></code>
-                <code class="comment mt-2 line-5">Create necessary configuration files and migrations</code>
-                <code class="line line-6">$ bundle <span class="highlighted">exec</span> rails g spree:install<span class="cursor-6">_</span></code>
-                <code class="line line-7">$ bundle <span class="highlighted">exec</span> rails g solidus:auth:install</code>
-                <code class="line line-8">$ bundle <span class="highlighted">exec</span> rake railties:install:migrations</code>
-                <code class="line line-9">$ bundle <span class="highlighted">exec</span> rake db:migrate<span class="cursor-9">_</span></code>
-                <code class="comment mt-2 line-10">Start the server</code>
+                <code class="comment mt-2 line-5"># Install Solidus</code>
+                <code class="line line-6">$ bin/rails g solidus:install<span class="cursor-6">_</span></code>
+                <code class="comment mt-2 line-10"># Start the server</code>
                 <code class="line line-11">$ bundle <span class="highlighted">exec</span> rails s<span class="cursor-11">_</span></code>
-                <code class="comment mt-2 line-12">Visit the local server</code>
+                <code class="comment mt-2 line-12"># Visit the local server</code>
                 <code class="line line-13">http://localhost:3000/<span class="cursor-13">_</span></code>
               </pre>
             </div>
