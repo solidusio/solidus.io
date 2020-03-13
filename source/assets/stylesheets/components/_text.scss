@@ -12,6 +12,7 @@ a{
 }
 
 p{
+  font-size: $font-size-base;
   &:last-child{ margin-bottom: 0; }
 }
 
