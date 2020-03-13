@@ -3,11 +3,21 @@
   position: relative;
   z-index: 1;
   
-  @include media-breakpoint-up(md){
-    .container{ height: 400px; }
-    
-    & + .content-block{
-      padding-top: ((400px / 2) + (80px * 3)) / 2;
+  &.testimonials {
+    @include media-breakpoint-up(md){
+      .container{ height: 100px; }
+      
+      & + .content-block{
+        padding-top: 400px;
+      }
+    }
+  }
+}
+
+.testimonials.skew-block .container{
+  &:after {
+    @include media-breakpoint-up(md) {
+      bottom: -100%;
     }
   }
 }
@@ -20,15 +30,16 @@
   
   .blockquote {
     text-align: left;
-    padding: $spacer * 3;
+    padding: $spacer;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, .15);
     position: relative;
     @include media-breakpoint-up(lg) {
       width: 480px;
       height: 440px;
+      padding: $spacer * 3;
     }
     @include media-breakpoint-down(sm) {
-      height: 470px;
+      height: 340px;
     }
     
     .quote {
@@ -59,18 +70,21 @@
       min-width: 100%;
       height: auto;
     }
+    @include media-breakpoint-down(sm) {
+      transform: scale(.75);
+    }
   }
   
   .inherit-fill { fill: $white; }
   
   .main-image-container {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    visibility: hidden;
+    max-height: 180px;
     @include media-breakpoint-up(lg) {
-      visibility: visible;
+      max-height: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
     }
   }
 }
@@ -79,12 +93,22 @@
   &.meundies {
     background-color: #7023F0;
     .logo { width: 131px; }
-    p { font-size: $font-size-lg; }
+    p {
+      font-size: $font-size-lg;
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-md;
+      }
+    }
   }
   &.floyd {
     background-color: #EF4023;
     .logo { width: 100px; }
-    p { font-size: $font-size-lg; }
+    p {
+      font-size: $font-size-lg;
+      @include media-breakpoint-down(sm) {
+        font-size: $font-size-md;
+      }
+    }
   }
   &.glossier {
     background-color: #F5E3E7;

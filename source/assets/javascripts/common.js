@@ -12,10 +12,6 @@ const Cookies = require('js-cookie');
 
 var rellax = new Rellax('.rellax');
 
-// var rellax = new Rellax('.rellax', {
-//     wrapper: '.carousel'
-// });
-
 
 $(function () {
   //Menu toggler functionality
@@ -94,45 +90,29 @@ $(function () {
     dots: false,
     speed: 300,
     lazyLoad: 'progressive',
-    //centerMode: true,
     useTransform: false,
     centerPadding: '60px',
     slidesToShow: 1,
-    fade: true
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       centerMode: false,
-    //       variableWidth: true,
-    //       infinite: false,
-    //       dots: false,
-    //       arrows: true
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 769,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       centerMode: false,
-    //       variableWidth: true,
-    //       infinite: true,
-    //       dots: true,
-    //       arrows: false
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       centerMode: true,
-    //       variableWidth: true,
-    //       infinite: true,
-    //       dots: true,
-    //       arrows: false
-    //     }
-    //   }
-    // ]
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          dots: true,
+          arrows: false
+        }
+      }
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     centerMode: true,
+      //     variableWidth: true,
+      //     infinite: true,
+      //     dots: true,
+      //     arrows: false
+      //   }
+      // }
+    ]
   });
 });

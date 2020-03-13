@@ -7,19 +7,19 @@
 // "\2192" outputs ascii character "→"
 // "\2022" outputs ascii character "•"
 
-// $slick-font-path: "./fonts/" !default;
+// $slick-font-path: "node_modules/slick-carousel/slick/fonts/" !default;
 // $slick-font-family: "slick" !default;
-// $slick-loader-path: "./" !default;
+//$slick-loader-path: "./" !default;
 $slick-arrow-color: $gray-900 !default;
-$slick-dot-color: $gray-900 !default;
+$slick-dot-color: $primary !default;
 $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "\2190" !default;
 $slick-next-character: "\2192" !default;
 $slick-dot-character: "\2022" !default;
-$slick-dot-size: 6px !default;
-$slick-opacity-default: 0.75 !default;
+$slick-dot-size: $font-size-base !default;
+$slick-opacity-default: 1 !default;
 $slick-opacity-on-hover: 1 !default;
-$slick-opacity-not-active: 0.25 !default;
+$slick-opacity-not-active: 0.75 !default;
 
 // @function slick-image-url($url) {
 //     @if function-exists(image-url) {
@@ -91,6 +91,7 @@ $slick-opacity-not-active: 0.25 !default;
         color: transparent;
         &:before {
             opacity: $slick-opacity-on-hover;
+            color: $primary;
         }
     }
     &.slick-disabled:before {
@@ -103,6 +104,10 @@ $slick-opacity-not-active: 0.25 !default;
         opacity: $slick-opacity-default;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+    }
+    
+    @include media-breakpoint-down(lg){
+      transform: scale(.75);
     }
 }
 
@@ -118,6 +123,9 @@ $slick-opacity-not-active: 0.25 !default;
             content: $slick-next-character;
         }
     }
+    @include media-breakpoint-down(lg) {
+      left: 0;
+    }
 }
 
 .slick-next {
@@ -131,6 +139,9 @@ $slick-opacity-not-active: 0.25 !default;
         [dir="rtl"] & {
             content: $slick-prev-character;
         }
+    }
+    @include media-breakpoint-down(lg) {
+      right: 0;
     }
 }
 
@@ -172,7 +183,7 @@ $slick-opacity-not-active: 0.25 !default;
             &:hover, &:focus {
                 outline: none;
                 &:before {
-                    opacity: $slick-opacity-on-hover;
+                    opacity: 1;
                 }
             }
             &:before {
@@ -187,14 +198,14 @@ $slick-opacity-not-active: 0.25 !default;
                 line-height: 20px;
                 text-align: center;
                 color: $slick-dot-color;
-                opacity: $slick-opacity-not-active;
+                opacity: .75;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
         }
         &.slick-active button:before {
             color: $slick-dot-color-active;
-            opacity: $slick-opacity-default;
+            opacity: 1;
         }
     }
 }
@@ -222,35 +233,3 @@ $slick-opacity-not-active: 0.25 !default;
     visibility: visible;
   }
 }
-
-
-// .carousel__list {
-//   visibility: hidden;
-//   &.slick-initialized {
-//     visibility: visible;
-//   }
-// 
-//   &__item {
-//     margin: (15px * 2) 15px;
-//     &:focus {
-//       border: 0;
-//       outline: 0;
-//     }
-// 
-//     &__image {
-//       margin: 0 auto;
-// 
-//       @include media-breakpoint-down(sm) {
-//         max-height: 440px;
-//         width: auto;
-//       }
-//     }
-//   }
-//}
-
-// .carousel-list {
-//   .slick-track {
-//     display: flex;
-//     align-items: flex-end;
-//   }
-// }

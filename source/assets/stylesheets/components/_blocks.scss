@@ -84,9 +84,13 @@
     bottom: 0;
     transform: skewY(-9deg);
     transform-origin: 100%;
+    min-height: 340px;
     
     @include media-breakpoint-down(sm) {
       transform: skewY(-5deg);
+    }
+    @include media-breakpoint-up(lg) {
+      min-height: 500px;
     }
   }
 }

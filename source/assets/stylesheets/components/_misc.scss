@@ -177,9 +177,8 @@
 //Terminal window
 .terminal-window {
   background-color: darken($gray-900, 5%);
-  border-radius: $border-radius;
-  padding: $card-spacer-y $card-spacer-x;
-  min-height: 490px;
+  border-radius: 10px;
+  padding: $spacer ($spacer * 2);
   
   .terminal-header {
     span {
