@@ -63,6 +63,8 @@ body{
 
 //Page footer
 .site-footer {
+  padding-bottom: 50px !important;
+
   &__top {
     .footer-logo {
       margin-bottom: 50px;
@@ -144,6 +146,11 @@ body{
         margin-top: 0;
         text-align: right;
       }
+    }
+
+    .netlify-badge {
+      margin-top: 60px;
+      text-align: center;
     }
   }
 }
