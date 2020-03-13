@@ -1,13 +1,14 @@
+@import url('https://rsms.me/inter/inter.css');
+
 //Headings
 h1, .h1 {
   font-size: $h1-mobile-font-size;
-  line-height: 1.25;
+  line-height: 1.2;
   margin-bottom: 1rem;
-  font-weight: 600;
 
   @include media-breakpoint-up(lg){
     font-size: $h1-font-size;
-    line-height: 1.14;
+    line-height: 1;
     margin-bottom: 1.5rem;
   }
 }
@@ -18,7 +19,7 @@ h2, .h2 {
 
   @include media-breakpoint-up(lg){
     font-size: $h2-font-size;
-    line-height: 1.18;
+    line-height: 1.1;
     margin-bottom: 1.5rem;
   }
 }
@@ -48,6 +49,8 @@ h6, .h6 {
   letter-spacing: 1px;
   margin-bottom: 0.5em;
 }
+
+h1, h2, h3, h4, h5, h6 { font-weight: $headings-font-weight; }
 
 .lead {
   line-height: 1.6;

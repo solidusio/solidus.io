@@ -189,7 +189,7 @@
     .container{ height: 400px; }
     
     & + .content-block{
-      padding-top: ((400px / 2) + (80px * 3)) / 2;
+      padding-top: ((600px / 2) + (80px * 3)) / 2;
     }
   }
 }

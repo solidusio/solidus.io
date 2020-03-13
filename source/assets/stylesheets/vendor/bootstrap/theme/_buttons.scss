@@ -1,5 +1,5 @@
 .btn-primary {
-  @include button-variant($primary, $primary, #ffffff, $primary, $primary, #ffffff, $blue-darker, $blue-darker, #ffffff);
+  @include button-variant($primary, $primary, #ffffff, $blue-darker, $blue-darker, #ffffff, $blue-darker, $blue-darker, #ffffff);
 }
 
 .btn-white{
