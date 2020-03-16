@@ -82,7 +82,7 @@ $(function () {
   });
 
   $('[data-toggle="tooltip"]').tooltip();
-  
+
   //Slick Slider
   $('.carousel-list').slick({
     autoplay: false,

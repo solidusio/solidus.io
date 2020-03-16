@@ -1,0 +1,15 @@
+<div class="community-stats community-stats-<%= type %>">
+  <div class="community-stats-inner">
+    <figure class="community-stats-figure">
+      <%= inline_svg("community-stats/#{type}.svg", class: "isvg") %>
+    </figure>
+
+    <div class="community-stats-count">
+      <%= count %>
+    </div>
+
+    <header class="community-stats-title">
+      <%= title %>
+    </header>
+  </div>
+</div>

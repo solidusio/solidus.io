@@ -1,0 +1,138 @@
+.community-stats {
+  color: $white;
+  border: 3px solid $blue;
+  text-align: center;
+  float: left;
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
+  position: relative;
+
+  &-inner {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60%;
+  }
+
+  &-figure {
+    margin: 0 0 10px 0;
+  }
+
+  .isvg {
+    width: 50px;
+    height: 50px;
+  }
+
+  &-count {
+    font-size: $h2-mobile-font-size;
+    font-weight: $headings-font-weight;
+  }
+
+  &-title {
+    font-size: $font-size-xs;
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 190px;
+    width: 190px;
+    border-radius: 95px;
+
+    .community-stats-inner {
+      height: 70%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+
+    .community-stats-inner {
+      height: 50%;
+    }
+
+    .community-stats-count {
+      font-size: $h1-mobile-font-size;
+    }
+
+    .community-stats-title {
+      font-size: $font-size-sm;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+
+    .community-stats-inner {
+      height: 50%;
+    }
+  }
+
+  &-open-collective {
+    background-color: $blue;
+    margin-top: 30px;
+    clear: left;
+  }
+
+  &-slack, &-contributors {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    float: right;
+
+    .community-stats-inner {
+      height: 70%;
+    }
+
+    .community-stats-count {
+      font-size: $h2-mobile-font-size;
+    }
+
+    .community-stats-title {
+      font-size: $font-size-xs;
+    }
+
+    .isvg {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 200px;
+      width: 200px;
+      border-radius: 100px;
+
+      .community-stats-inner {
+        height: 60%;
+      }
+
+      .isvg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 250px;
+      width: 250px;
+      border-radius: 125px;
+      margin-left: 40px;
+      margin-top: 60px;
+
+      .community-stats-inner {
+        height: 50%;
+      }
+
+      .isvg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
