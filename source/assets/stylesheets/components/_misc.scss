@@ -179,6 +179,7 @@
   background-color: darken($gray-900, 5%);
   border-radius: 10px;
   padding: $spacer ($spacer * 2);
+  box-shadow: -7px 0px 100px rgba(0, 0, 0, 0.24);
   
   .terminal-header {
     span {
@@ -200,6 +201,7 @@
     float: left;
     background-color: transparent;
     color: $white;
+    font-size: 12px;
   }
   
   .highlighted { color: #3EB0EF; }
