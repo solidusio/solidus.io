@@ -123,8 +123,8 @@ $slick-opacity-not-active: 0.75 !default;
             content: $slick-next-character;
         }
     }
-    @include media-breakpoint-down(lg) {
-      left: 0;
+    @include media-breakpoint-down(md) {
+      top: 80px;
     }
 }
 
@@ -140,8 +140,8 @@ $slick-opacity-not-active: 0.75 !default;
             content: $slick-prev-character;
         }
     }
-    @include media-breakpoint-down(lg) {
-      right: 0;
+    @include media-breakpoint-down(md) {
+      top: 80px;
     }
 }
 

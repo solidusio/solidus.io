@@ -93,26 +93,6 @@ $(function () {
     useTransform: false,
     centerPadding: '60px',
     slidesToShow: 1,
-    fade: true,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          dots: true,
-          arrows: false
-        }
-      }
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     centerMode: true,
-      //     variableWidth: true,
-      //     infinite: true,
-      //     dots: true,
-      //     arrows: false
-      //   }
-      // }
-    ]
+    fade: true
   });
 });
