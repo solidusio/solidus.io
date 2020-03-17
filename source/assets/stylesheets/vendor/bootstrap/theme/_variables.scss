@@ -160,7 +160,7 @@ $font-size-base:              1rem; // Assumes the browser default, typically `1
 $font-size-lg:                ($font-size-base * 1.25); //20px
 $font-size-md:                ($font-size-base * 1.125); //18px
 $font-size-sm:                ($font-size-base * 0.938); //15px
-$font-size-xs:                ($font-size-base * 0.813); //13px
+$font-size-xs:                ($font-size-base * 0.875); //14px
 
 $font-weight-light:           300;
 $font-weight-normal:          300;
@@ -179,7 +179,7 @@ $h3-mobile-font-size:         $font-size-base * 1.500; //24px
 $h4-font-size:                $font-size-base * 1.250; //20px
 $h4-mobile-font-size:         $font-size-base * 1.250; //20px
 $h5-font-size:                $font-size-base * 1.125; //18px
-$h6-font-size:                $font-size-xs; //13px
+$h6-font-size:                $font-size-xs; //14px
 
 $headings-margin-bottom:      1rem;
 $headings-font-family:        inherit !default;
