@@ -34,11 +34,11 @@
   <div class="content-block" data-aos="fade">
     <div class="container">
       <p class="lead text-gray-600 text-center font-weight-light mb-4">Solidus powers the brands defining the future of eCommerce.</p>
-      
+
       <%= partial "partials/community_logos" %>
     </div>
   </div>
-  
+
   <div class="intro content-block pt-0">
     <div data-aos="fade">
       <div class="container container-md text-center">
@@ -81,7 +81,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="container" data-aos="fade">
       <div class="content-block pt-0">
         <div class="row align-items-center">
@@ -128,12 +128,15 @@
   <div class="container content-block-gray-900">
     <div class="content-block" data-aos="fade">
       <div class="row align-items-center">
-        <div class="col-md">
+        <div class="col-md-5 col-lg-6 col-xl-7">
           <div class="pr-md-6">
-            <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="" >
+            <%= partial 'partials/community_stats', locals: { type: 'github', count: '3000', title: 'GitHub stars' } %>
+            <%= partial 'partials/community_stats', locals: { type: 'slack', count: '2900', title: 'Slack members' } %>
+            <%= partial 'partials/community_stats', locals: { type: 'open-collective', count_prefix: '$', count: '60000', title: 'Donated' } %>
+            <%= partial 'partials/community_stats', locals: { type: 'contributors', count: '670', title: 'Contributors' } %>
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-md-7 col-lg-6 col-xl-5">
           <div class="pl-md-6">
             <h2 class="title mt-4">A truly Open Source mindset</h2>
             <div class="mb-4 mt-4">
@@ -155,12 +158,12 @@
               </p>
             </div>
             <a class="btn btn-primary" href="#">Join our Community</a>
-            
+
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="ruby-on-rails content-block" >
       <div class="row align-items-center">
         <div class="col-lg pl-lg-6 order-lg-2">
@@ -195,7 +198,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="row" data-aos="fade">
       <div class="col-md-4 mb-4">
         <h4 class="title">Fast development</h4>
