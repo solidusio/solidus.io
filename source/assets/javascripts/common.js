@@ -42,8 +42,8 @@ $(function () {
 
   //Price calculation block
   let $slider = $(".cost-calculator .slider"),
-      $sliderSales = $(".cost-calculator .js-sales"),
-      $sliderTotal = $(".cost-calculator .js-total-cost");
+  $sliderSales = $(".cost-calculator .js-sales"),
+  $sliderTotal = $(".cost-calculator .js-total-cost");
 
   if($slider.length){
     NoUiSlider.create($slider[0], {
@@ -95,4 +95,20 @@ $(function () {
     slidesToShow: 1,
     fade: true
   });
+});
+
+$(document).on('aos:in', function(event) {
+  var target = $(event.originalEvent.detail);
+
+  if (target.data('start-counter') !== undefined) {
+    target.prop('Counter', 0).animate({
+      Counter: target.text()
+    }, {
+      duration: 2000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.ceil(now));
+      }
+    });
+  }
 });

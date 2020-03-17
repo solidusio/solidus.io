@@ -1,5 +1,5 @@
 <div class="community-stats community-stats-<%= type %>">
-  <div class="circle" data-aos>
+  <div class="circle" data-aos data-aos-once>
     <div class="circle-halfclip">
       <div class="circle-halfcircle circle-clipped"></div>
     </div>
@@ -12,7 +12,10 @@
     </figure>
 
     <div class="community-stats-count">
-      <%= count %>
+      <%= count_prefix if defined?(count_prefix) %>
+      <span class="count" data-aos data-aos-once data-start-counter>
+        <%= count %>
+      </span>+
     </div>
 
     <header class="community-stats-title">
