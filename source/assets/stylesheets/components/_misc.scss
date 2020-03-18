@@ -180,6 +180,31 @@
   }
 }
 
+.newsletter-form {
+  label {
+    margin-bottom: 15px;
+    font-size: $font-size-xs;
+  }
+  div {
+    display: flex;
+
+    .email {
+      padding-top: 11px;
+      padding-bottom: 11px;
+      max-width: 280px;
+      font-size: $font-size-xs;
+    }
+
+    .button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding-left: 1em;  
+      padding-right: 1em;
+      cursor: pointer;
+    }
+  }
+}
+
 //Terminal window
 .terminal-window {
   background-color: darken($gray-900, 5%);
