@@ -56,7 +56,7 @@ $(function () {
 
   //Show roadmap hidden features on click
   $('.roadmap-use-case__timeline--future').click(function(){
-    $(this).children('.roadmap-use-case__timeline--future p').toggle();
+    $(this).children('.roadmap-use-case__timeline--future p').toggle('fast');
   });
 
   //Remove top bar on click
