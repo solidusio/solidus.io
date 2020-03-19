@@ -12,7 +12,6 @@ const Cookies = require('js-cookie');
 
 var rellax = new Rellax('.rellax');
 
-
 $(function () {
   //Menu toggler functionality
   $(".site-menu-toggler").click(function () {
