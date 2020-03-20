@@ -8,6 +8,44 @@
 
     .block-content{ max-width: 480px; }
   }
+  
+  &--skewed {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin-top: -65px;
+    transform: skewY(-8deg);
+    &.intro {
+      margin-top: -1px;
+    }
+
+    @include media-breakpoint-up(md){
+      padding-top: 130px;
+      padding-bottom: 65px;
+      margin-top: -130px;
+      
+      &.intro {
+        margin-top: -1px;
+      }
+    }
+    @include media-breakpoint-up(xl){
+      padding-top: 180px;
+      padding-bottom: 90px;
+      margin-top: -180px;
+      
+      &.intro {
+        margin-top: -1px;
+      }
+    }
+    
+    > .content-wrapper {
+      transform: skewY(8deg);
+      padding-top: 65px;
+      padding-bottom: 65px;
+      @include media-breakpoint-up(md) {
+        padding-top: 130px;
+      }
+    }
+  }
 }
 
 .content-block-xl{
@@ -67,32 +105,6 @@
 .community-guidelines-block {
   max-width: 680px;
   margin: 0 auto;
-}
-
-//Skew hero banners
-.skew-block .container{
-  &:after {
-    background: inherit;
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    backface-visibility: hidden;
-    bottom: 0;
-    transform: skewY(-9deg);
-    transform-origin: 100%;
-    min-height: 340px;
-    
-    @include media-breakpoint-down(sm) {
-      transform: skewY(-5deg);
-    }
-    @include media-breakpoint-up(lg) {
-      min-height: 500px;
-    }
-  }
 }
 
 //Features hero banner

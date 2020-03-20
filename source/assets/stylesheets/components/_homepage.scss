@@ -1,25 +1,5 @@
-.homepage-hero{
-  padding-bottom: 0;
-  position: relative;
-  z-index: 1;
-  
-  &.testimonials {
-    @include media-breakpoint-up(md){
-      .container{ height: 100px; }
-      
-      & + .content-block{
-        padding-top: 400px;
-      }
-    }
-  }
-}
-
-.testimonials.skew-block .container{
-  &:after {
-    @include media-breakpoint-up(md) {
-      bottom: -100%;
-    }
-  }
+.dark-background {
+  background-color: $gray-900;
 }
 
 .testimonials {

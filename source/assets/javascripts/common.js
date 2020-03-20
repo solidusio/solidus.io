@@ -10,7 +10,7 @@ import numeral from "numeral";
 import AOS from "aos";
 const Cookies = require('js-cookie');
 
-var rellax = new Rellax('.rellax');
+//var rellax = new Rellax('.rellax');
 
 $(function () {
   //Menu toggler functionality

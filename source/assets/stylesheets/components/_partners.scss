@@ -173,27 +173,6 @@
   }
 }
 
-.partners-hero{
-  padding-bottom: 0;
-  position: relative;
-
-  @include media-breakpoint-up(md){
-    .container{ height: 200px; }
-    
-    & + .content-block{
-      padding-top: ((200px / 2) + (80px * 3)) / 2;
-    }
-  }
-  
-  @include media-breakpoint-up(lg){
-    .container{ height: 400px; }
-    
-    & + .content-block{
-      padding-top: ((600px / 2) + (80px * 3)) / 2;
-    }
-  }
-}
-
 .partners-detail-block .detail {
   .picture{
     margin: 2rem 0 1rem;
