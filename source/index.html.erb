@@ -49,33 +49,54 @@
       </div>
       <div class="container">
         <div class="content-block">
-          <div class="row align-items-center">
-            <div class="col-md">
-              <div class="pr-md-6">
-                <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="" >
+          <div class="features-section row align-items-center">
+            <div class="features-section--image tab-content col-md">
+              <div class="tab-pane active fade show pr-lg-6" id="truly-flexible" role="tabpanel">
+                <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+              </div>
+              <div class="tab-pane fade pr-lg-6" id="endlessly-scalable" role="tabpanel">
+                <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="2" >
+              </div>
+              <div class="tab-pane fade pr-lg-6" id="stable-reliable" role="tabpanel">
+                <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="3" >
               </div>
             </div>
-            <div class="col-md">
-              <div class="pl-md-6">
-                <div class="mb-4 mt-4">
-                  <h4>Truly Flexible</h4>
-                  <p>
-                    Solidus fits to your business requirements, not the other way around. Integrate anything, customize everything, without constraints.
-                  </p>
-                </div>
-                <div class="mb-4">
-                  <h4>Endlessly Scalable</h4>
-                  <p>
-                    Adapt and react to any condition. Solidus handles the complexity and removes the headache of scaling from small to enterprise.
-                  </p>
-                </div>
-                <div>
-                  <h4>Stable and Reliable</h4>
-                  <p>
-                    Built on the shared knowledge of 500+ brands that revolutionized the eCommerce world. Tap into a shared knowledge of  10 years worth of experiences.
-                  </p>
-                </div>
-              </div>
+            <div class="features-section--paragraph col-md">
+              <ul class="nav pl-lg-6">
+                <li class="nav-item mb-4 mt-4">
+                  <div class="img-wrap">
+                    <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                  </div>
+                  <a class="nav-link active" data-toggle="tab" role="tab" href="#truly-flexible">
+                    <h4>Truly Flexible</h4> 
+                    <p>
+                      Solidus fits to your business requirements, not the other way around. Integrate anything, customize everything, without constraints.
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item mb-4">
+                  <div class="img-wrap">
+                    <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                  </div>
+                  <a class="nav-link" data-toggle="tab" role="tab" href="#endlessly-scalable">
+                    <h4>Endlessly Scalable</h4>
+                    <p>
+                      Adapt and react to any condition. Solidus handles the complexity and removes the headache of scaling from small to enterprise.
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <div class="img-wrap">
+                    <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                  </div>
+                  <a class="nav-link" data-toggle="tab" role="tab" href="#stable-reliable">
+                    <h4>Stable and Reliable</h4>
+                    <p>
+                      Built on the shared knowledge of 500+ brands that revolutionized the eCommerce world. Tap into a shared knowledge of  10 years worth of experiences.
+                    </p>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -84,33 +105,54 @@
 
     <div class="container" data-aos="fade">
       <div class="content-block pt-0">
-        <div class="row align-items-center">
-          <div class="col-md order-lg-2">
-            <div class="pl-md-6">
-              <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="" >
+        <div class="features-section row align-items-center">
+          <div class="features-section--image tab-content col-md order-md-2">
+            <div class="tab-pane active fade show pl-lg-6" id="free-forever" role="tabpanel">
+              <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+            </div>
+            <div class="tab-pane fade pr-lg-6" id="secure-by-default" role="tabpanel">
+              <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="2" >
+            </div>
+            <div class="tab-pane fade pr-lg-6" id="easy-adoption" role="tabpanel">
+              <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="3" >
             </div>
           </div>
-          <div class="col-md">
-            <div class="pr-md-6">
-              <div class="mb-4 mt-4">
-                <h4>Free forever</h4>
-                <p>
-                  No license costs. No 3rd-party application costs. Invest in what matters the most: your team, your product.
-                </p>
-              </div>
-              <div class="mb-4">
-                <h4>Secure by default</h4>
-                <p>
-                  Sleep tight knowing your store is secure. Automated security fixes, a clear disclosure policy and strict code reviews guarantee a seamless experience.
-                </p>
-              </div>
-              <div>
-                <h4>Easy adoption</h4>
-                <p>
-                  Community edition is the only edition. Build your next brand on top of a truly open-source, community-driven platform that multiplies your competitive advantage.
-                </p>
-              </div>
-            </div>
+          <div class="features-section--paragraph left-block col-md order-md-1">
+            <ul class="nav pr-lg-6">
+              <li class="nav-item mb-4 mt-4">
+                <div class="img-wrap">
+                  <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                </div>
+                <a class="nav-link active" data-toggle="tab" role="tab" href="#free-forever">
+                  <h4>Free forever</h4>
+                  <p>
+                    No license costs. No 3rd-party application costs. Invest in what matters the most: your team, your product.
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item mb-4">
+                <div class="img-wrap">
+                  <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                </div>
+                <a class="nav-link" data-toggle="tab" role="tab" href="#secure-by-default">
+                  <h4>Secure by default</h4>
+                  <p>
+                    Sleep tight knowing your store is secure. Automated security fixes, a clear disclosure policy and strict code reviews guarantee a seamless experience.
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="img-wrap">
+                  <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                </div>
+                <a class="nav-link" data-toggle="tab" role="tab" href="#easy-adoption">
+                  <h4>Easy adoption</h4>
+                  <p>
+                    Community edition is the only edition. Build your next brand on top of a truly open-source, community-driven platform that multiplies your competitive advantage.
+                  </p>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
