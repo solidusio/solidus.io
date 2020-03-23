@@ -12,7 +12,14 @@ set :seo_title, "Solidus: Rails Ecommerce Platform"
 
 redirect "developers.html", to: "community.html"
 
+activate :syntax
+
+set :markdown_engine, :redcarpet
+
+set :markdown, fenced_code_blocks: true
+
 activate :blog do |blog|
+
   blog.layout = 'blog'
   blog.prefix = 'blog'
   blog.tag_template = 'blog/tag.html'
@@ -57,3 +64,4 @@ configure :build do
 
   ignore "2012-01-01-example-article.html.markdown"
 end
+

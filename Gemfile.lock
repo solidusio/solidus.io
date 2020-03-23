@@ -98,6 +98,9 @@ GEM
       servolux
       tilt (~> 2.0)
       uglifier (~> 3.0)
+    middleman-syntax (3.0.0)
+      middleman-core (>= 3.2)
+      rouge (~> 2.0)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
@@ -125,6 +128,8 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    redcarpet (3.5.0)
+    rouge (2.0.6)
     ruby-ll (2.1.2)
       ansi
       ast
@@ -164,8 +169,10 @@ DEPENDENCIES
   graphql-client
   middleman (~> 4.2)
   middleman-blog (~> 4.0)
+  middleman-syntax
   mime-types
   oga (~> 2.14)
+  redcarpet
   travis
   tzinfo-data
   wdm (~> 0.1)
