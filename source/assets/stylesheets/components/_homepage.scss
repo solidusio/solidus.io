@@ -2,6 +2,32 @@
   background-color: $gray-900;
 }
 
+.homepage-hero {
+  position: relative;
+  z-index: 1000;
+  
+  .hero-image-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+  }
+  @include media-breakpoint-up(xl) {
+    .hero-image-wrapper {
+      min-height: 500px;
+    }
+    .hero-image {
+      position: absolute;
+      right: -50%;
+      top: -100px;
+      max-width: 200%;
+      height: auto;
+    }
+  }
+}
+
 .testimonials {
   .carousel-content {
     position: relative;

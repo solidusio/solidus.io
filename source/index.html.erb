@@ -5,7 +5,7 @@
   <div class="homepage-hero content-block--skewed content-block-white">
     <div class="content-wrapper container content-block-white">
       <div class="row align-items-center">
-        <div class="col-md">
+        <div class="col-lg">
           <div class="pr-md-6 mb-3">
             <h1 class="title">The only eCommerce platform you’ll ever need.</h1>
             <p class="lead mb-md-6">
@@ -24,8 +24,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md">
-          <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="" >
+        <div class="col-lg">
+          <div class="hero-image-wrapper">
+            <img class="hero-image" src="<%= image_path('illustrations/solidus-hero-home.svg') %>" alt="Solidus eCommerce">
+          </div>
         </div>
       </div>
     </div>
@@ -52,20 +54,20 @@
             <div class="features-section row align-items-center">
               <div class="features-section--image tab-content col-md">
                 <div class="tab-pane active fade show pr-lg-6" id="truly-flexible" role="tabpanel">
-                  <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                  <img src="<%= image_path('illustrations/truly-flexible.svg') %>" class="img-fluid" alt="Truly Flexible" >
                 </div>
                 <div class="tab-pane fade pr-lg-6" id="endlessly-scalable" role="tabpanel">
-                  <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="2" >
+                  <img src="<%= image_path('illustrations/endlessly-scalable.svg') %>" class="img-fluid" alt="Endlessly Scalable" >
                 </div>
                 <div class="tab-pane fade pr-lg-6" id="stable-reliable" role="tabpanel">
-                  <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="3" >
+                  <img src="<%= image_path('illustrations/stable-and-reliable.png') %>" class="img-fluid" alt="Stable and Reliable" >
                 </div>
               </div>
               <div class="features-section--paragraph col-md">
                 <ul class="nav pl-lg-6">
                   <li class="nav-item mb-4 mt-4">
                     <div class="img-wrap">
-                      <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                      <img src="<%= image_path('illustrations/truly-flexible.svg') %>" class="img-fluid" alt="Truly Flexible" >
                     </div>
                     <a class="nav-link active" data-toggle="tab" role="tab" href="#truly-flexible">
                       <h4>Truly Flexible</h4> 
@@ -76,7 +78,7 @@
                   </li>
                   <li class="nav-item mb-4">
                     <div class="img-wrap">
-                      <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                      <img src="<%= image_path('illustrations/endlessly-scalable.svg') %>" class="img-fluid" alt="Endlessly Scalable" >
                     </div>
                     <a class="nav-link" data-toggle="tab" role="tab" href="#endlessly-scalable">
                       <h4>Endlessly Scalable</h4>
@@ -87,7 +89,7 @@
                   </li>
                   <li class="nav-item">
                     <div class="img-wrap">
-                      <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                      <img src="<%= image_path('illustrations/stable-and-reliable.png') %>" class="img-fluid" alt="Stable and Reliable" >
                     </div>
                     <a class="nav-link" data-toggle="tab" role="tab" href="#stable-reliable">
                       <h4>Stable and Reliable</h4>
@@ -108,20 +110,20 @@
           <div class="features-section row align-items-center">
             <div class="features-section--image tab-content col-md order-md-2">
               <div class="tab-pane active fade show pl-lg-6" id="free-forever" role="tabpanel">
-                <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                <img src="<%= image_path('illustrations/free-forever.svg') %>" class="img-fluid" alt="Free Forever" >
               </div>
-              <div class="tab-pane fade pr-lg-6" id="secure-by-default" role="tabpanel">
-                <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="2" >
+              <div class="tab-pane fade pl-lg-6" id="secure-by-default" role="tabpanel">
+                <img src="<%= image_path('illustrations/secure-by-default.svg') %>" class="img-fluid" alt="Secure by Default" >
               </div>
-              <div class="tab-pane fade pr-lg-6" id="easy-adoption" role="tabpanel">
-                <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="3" >
+              <div class="tab-pane fade pl-lg-6" id="easy-adoption" role="tabpanel">
+                <img src="<%= image_path('illustrations/easy-adoption.svg') %>" class="img-fluid" alt="Easy Adoption" >
               </div>
             </div>
             <div class="features-section--paragraph left-block col-md order-md-1">
               <ul class="nav pr-lg-6">
                 <li class="nav-item mb-4 mt-4">
                   <div class="img-wrap">
-                    <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                    <img src="<%= image_path('illustrations/free-forever.svg') %>" class="img-fluid" alt="Free Forever" >
                   </div>
                   <a class="nav-link active" data-toggle="tab" role="tab" href="#free-forever">
                     <h4>Free forever</h4>
@@ -132,7 +134,7 @@
                 </li>
                 <li class="nav-item mb-4">
                   <div class="img-wrap">
-                    <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                    <img src="<%= image_path('illustrations/secure-by-default.svg') %>" class="img-fluid" alt="Secure by Default" >
                   </div>
                   <a class="nav-link" data-toggle="tab" role="tab" href="#secure-by-default">
                     <h4>Secure by default</h4>
@@ -143,7 +145,7 @@
                 </li>
                 <li class="nav-item">
                   <div class="img-wrap">
-                    <img src="<%= image_path('imgholdr-image.png') %>" class="img-fluid rounded" alt="1" >
+                    <img src="<%= image_path('illustrations/easy-adoption.svg') %>" class="img-fluid" alt="Easy Adoption" >
                   </div>
                   <a class="nav-link" data-toggle="tab" role="tab" href="#easy-adoption">
                     <h4>Easy adoption</h4>

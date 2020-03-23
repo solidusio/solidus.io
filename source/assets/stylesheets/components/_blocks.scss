@@ -16,6 +16,32 @@
     transform: skewY(-8deg);
     &.intro {
       margin-top: -1px;
+      transform: skewY(0);
+      &::before {
+        content: '';
+        transform: skewY(-8deg);
+        background-color: inherit;
+        display: block;
+        z-index: -1;
+        height: 600px;
+        top: -100px;
+        width: 100%;
+        position: absolute;
+      }
+      &::after {
+        content: '';
+        transform: skewY(-8deg);
+        background-color: inherit;
+        display: block;
+        z-index: -1;
+        height: 600px;
+        bottom: -200px;
+        width: 100%;
+        position: absolute;
+      }
+      > .content-wrapper {
+        transform: skewY(0);
+      }
     }
 
     @include media-breakpoint-up(md){
