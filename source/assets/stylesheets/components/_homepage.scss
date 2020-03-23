@@ -60,12 +60,13 @@
   
   .main-image-container {
     max-height: 180px;
-    
-    img {
-      transform: translateY(-50%);
-    }
-    &.meundies img {
-      transform: translateY(0);
+    @include media-breakpoint-up(md) {
+      img {
+        transform: translateY(-50%);
+      }
+      &.meundies img {
+        transform: translateY(0);
+      }  
     }
     
     @include media-breakpoint-up(lg) {
