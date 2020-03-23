@@ -13,13 +13,14 @@
     padding: $spacer;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
     position: relative;
+    min-height: 350px;
     @include media-breakpoint-up(lg) {
       width: 480px;
       height: 440px;
       padding: $spacer * 3;
     }
-    @include media-breakpoint-down(sm) {
-      height: 350px;
+    @include media-breakpoint-up(md) {
+      min-height: 260px;
     }
     
     .quote {
@@ -41,17 +42,17 @@
   .author {
     display: block;
     font-weight: $headings-font-weight;
-    font-size: $font-size-md;
   }
   
   .logo {
     height: auto;
+    transform: scale(.75);
     svg {
       min-width: 100%;
       height: auto;
     }
-    @include media-breakpoint-down(sm) {
-      transform: scale(.75);
+    @include media-breakpoint-up(lg) {
+      transform: scale(1);
     }
   }
   
@@ -59,38 +60,53 @@
   
   .main-image-container {
     max-height: 180px;
+    
+    img {
+      transform: translateY(-50%);
+    }
+    &.meundies img {
+      transform: translateY(0);
+    }
+    
     @include media-breakpoint-up(lg) {
       max-height: 100%;
       position: absolute;
       right: 0;
       bottom: 0;
       z-index: -1;
+      
+      img { transform: translateY(0); }
     }
   }
 }
 
 .blockquote {
+  .testimonials & {
+    @include media-breakpoint-up(lg) {
+      p {
+        font-size: $h3-mobile-font-size;
+      }
+      .author {
+        font-size: $font-size-md;
+      }
+    }
+  }
+  
   &.meundies {
     background-color: #7023F0;
     .logo { width: 131px; }
-    p {
-      font-size: 22px;
-    }
   }
   &.floyd {
     background-color: #EF4023;
     .logo { width: 100px; }
-    p {
-      font-size: 24px;
-    }
   }
   &.glossier {
     background-color: #F5E3E7;
     .logo { width: 131px; }
     .inherit-fill { fill: $gray-900; }
     p {
-      font-size: 18px;
       color: $gray-900;
+      @include media-breakpoint-up(lg) { font-size: $font-size-md; }
     }
     .text { color: $gray-900; }
   }

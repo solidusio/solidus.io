@@ -82,6 +82,14 @@ $slick-opacity-not-active: 0.75 !default;
       content: $slick-next-character;
     }
   }
+  
+  @include media-breakpoint-down(lg) {
+    left: 5px;
+    [dir="rtl"] & {
+      left: auto;
+      right: 5px;
+    }
+  }
 
   @include media-breakpoint-down(md) {
     top: 80px;
@@ -99,6 +107,14 @@ $slick-opacity-not-active: 0.75 !default;
     content: $slick-next-character;
     [dir="rtl"] & {
       content: $slick-prev-character;
+    }
+  }
+  
+  @include media-breakpoint-down(lg) {
+    right: 5px;
+    [dir="rtl"] & {
+      left: 5px;
+      right: auto;
     }
   }
 
