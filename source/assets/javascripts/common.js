@@ -66,8 +66,7 @@ $(function () {
     once: true,
     offset: 200,
     duration: 600,
-    easing: "ease-in-quart",
-    disable: window.innerWidth < 1024
+    easing: "ease-in-quart"
   });
 
   //Remove top bar on click
