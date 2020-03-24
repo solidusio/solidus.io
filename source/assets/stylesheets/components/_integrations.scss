@@ -1,0 +1,77 @@
+.integrations-hero {
+  background: $blue-darkest;
+  color: $white;
+
+  h1 {
+    color: $white;
+  }
+}
+
+.integrations-navigation {
+  background: $white;
+  font-weight: bold;
+  padding: 26px 0;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid $gray-200;
+  z-index: 1;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      margin: 0 40px;
+      display: inline;
+      text-transform: uppercase;
+      font-size: $small-font-size;
+
+      a {
+        color: $gray-900;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.integration {
+  &__list {
+    &__item {
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border: 1px solid $gray-200;
+      border-radius: 3px;
+      background: $white;
+      color: $gray-900;
+
+      &:hover {
+        box-shadow: 0 25px 30px 0 rgba(0,0,0,.03), 0 8px 8px 0 rgba(0,0,0,.033);
+      }
+
+      &__image {
+        width: 150px;
+        padding: 30px;
+        border-right: 1px solid $gray-200;
+      }
+
+      &__description {
+        padding: 30px;
+
+        h4 {
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: $small-font-size;
+        }
+      }
+    }
+  }
+}
