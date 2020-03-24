@@ -3,10 +3,8 @@
 }
 
 .btn-white{
-  @include button-variant(#ffffff, #ffffff, $blue, $active-background: #ffffff, $active-border: #ffffff, $hover-color: $blue, $active-color: $blue);
-  @include hover {
-    box-shadow: 0 0 4px 0 rgba(#ffffff, 0.4);
-  }
+  @include button-variant(#ffffff, $secondary, $gray-900, $active-background: #ffffff, $active-border: #ffffff, $hover-color: $blue, $active-color: $blue);
+  border-width: 1px;
 }
 
 
