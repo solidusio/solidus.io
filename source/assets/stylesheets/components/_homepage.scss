@@ -12,12 +12,6 @@
     position: relative;
     width: 100%;
   }
-  
-  .content-wrapper {
-    @include media-breakpoint-down(lg) {
-      padding-bottom: 0;
-    }
-  }
 
   @include media-breakpoint-up(lg) {
     .hero-image-wrapper {
@@ -191,6 +185,10 @@
           height: 0;
         }
       }
+    }
+    
+    .nav-item {
+      margin-bottom: 0;
     }
   }
   
