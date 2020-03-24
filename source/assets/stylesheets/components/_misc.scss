@@ -44,15 +44,20 @@
     margin-bottom: 30px;
     width: 50%;
     text-align: center;
+    padding: 0 $spacer;
 
     @include media-breakpoint-up(md){ 
       width: 20%;
+      padding: 0;
     }
 
     a {
       .isvg {
-        //width: 80%;
-
+        @include media-breakpoint-down(md) {
+          max-width: 100%;
+          height: auto;
+        }
+        
         @include media-breakpoint-up(md){ 
           width: 70%;
         }
