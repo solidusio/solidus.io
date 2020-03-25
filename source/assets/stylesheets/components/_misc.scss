@@ -45,6 +45,7 @@
     width: 50%;
     text-align: center;
     padding: 0 $spacer;
+    transform: scale(.9);
 
     @include media-breakpoint-up(md){ 
       width: 20%;

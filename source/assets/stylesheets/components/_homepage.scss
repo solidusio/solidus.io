@@ -90,6 +90,8 @@
     svg {
       min-width: 100%;
       height: auto;
+      // Fix on IE11
+      max-height: 50px;
     }
     @include media-breakpoint-up(lg) {
       transform: scale(1);
@@ -158,11 +160,13 @@
     .nav-link {
       color: $body-color;
       position: relative;
-      padding: ($spacer * 2);
+      padding: 0;
       
       &.active { color: $body-color; }
       
       @include media-breakpoint-up(md) {
+        padding: ($spacer * 2);
+        
         &.active {
           background-color: lighten($primary, 36);
           border-radius: ($border-radius-lg * 2);
@@ -185,10 +189,15 @@
           height: 0;
         }
       }
+      
+      @include media-breakpoint-down(md) {
+        cursor: default;
+      }
     }
     
     .nav-item {
-      margin-bottom: 0;
+      margin-bottom: $spacer * 3;
+      @include media-breakpoint-up(md) { margin-bottom: 0; }
     }
   }
   
@@ -216,11 +225,17 @@
   }
   
   .img-wrap {
-    margin-bottom: ($spacer * 2);
+    margin-bottom: $spacer;
     text-align: center;
     @include media-breakpoint-up(md) {
       display: none;
       visibility: hidden;
+    }
+  }
+  // Reset the default bottom padding - 65px
+  &.first > .content-block {
+    @include media-breakpoint-down(md) {
+      padding-bottom: 0;
     }
   }
 }

@@ -8,7 +8,7 @@
               <img data-lazy="<%= image_path("testimonials/#{info[:main_img].default_img}") %>" srcset="<%= image_path("testimonials/#{info[:main_img].retina_img}") %> 2x, <%= image_path("testimonials/#{info[:main_img].default_img}") %> 1x" class="img-fluid" />
             </div>
             <div class="blockquote-container">
-              <blockquote class="<%= info[:custom_css] %> blockquote d-flex flex-column justify-content-between align-items-stretch">
+              <blockquote class="<%= info[:custom_css] %> blockquote d-flex flex-column justify-content-between">
                 <a class="logo" href="<%= info[:url] %>" target="_blank"><%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %></a>
                 <div>
                   <%= inline_svg("icons/quote.svg", class: "quote") %>
