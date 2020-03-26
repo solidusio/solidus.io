@@ -42,6 +42,29 @@ body{
   }
 }
 
+.site-header--top.site-header--blue {
+  @include media-breakpoint-up(lg) {
+    background: $blue-darkest;
+    border-color: rgba(255, 255, 255, 0.15);
+
+    .site-logo {
+      .isvg {
+        .solidus-logo {
+          fill: $white;
+        }
+      }
+    }
+
+    .site-menu .menu-items.no-active li > a {
+      color: $white;
+    }
+
+    .btn {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
 .site-header--fixed {
   position: fixed;
   z-index: $zindex-fixed;
