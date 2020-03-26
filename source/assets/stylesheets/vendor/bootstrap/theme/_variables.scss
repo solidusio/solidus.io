@@ -76,7 +76,7 @@ $body-color:                $gray-08;
 //
 // Style anchor elements.
 
-$link-hover-color:          $blue-dark;
+$link-hover-color:          darken($blue, 15%);
 $link-hover-decoration:     none;
 
 
@@ -204,6 +204,9 @@ $btn-padding-x:               1.5em;
 
 $btn-padding-y-sm:            0.64286em;
 $btn-padding-x-sm:            1em;
+
+$btn-padding-y-lg:            .75em;
+$btn-padding-x-lg:            2em;
 
 $btn-border-width:            2px;
 

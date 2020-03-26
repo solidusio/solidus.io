@@ -290,3 +290,20 @@
   80% { transform: scale(1); }
   100% { transform: scale(1); }
 }
+
+// Bottom CTA
+.call-to-action {
+  .title {
+    font-size: $h2-font-size;
+    line-height: $line-height-sm;
+    margin-bottom: $spacer * 3;
+  }
+  
+  .btn {
+    box-shadow: 0 3px 18px 0 rgba(0, 0, 0, .2);
+    
+    &.btn-lg {
+      padding: .75rem ($spacer * 2);
+    }
+  }
+}
