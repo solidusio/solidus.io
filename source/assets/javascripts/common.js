@@ -13,6 +13,10 @@ const Cookies = require('js-cookie');
 //var rellax = new Rellax('.rellax');
 
 $(function () {
+  // Tab hover
+  $('[data-toggle="tab-hover"]').hover( function(){
+    $(this).tab('show');
+  });
   //Menu toggler functionality
   $(".site-menu-toggler").click(function () {
     $("body").toggleClass("menu-open");
