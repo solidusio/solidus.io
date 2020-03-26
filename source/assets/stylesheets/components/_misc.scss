@@ -186,6 +186,7 @@
   border-radius: 10px;
   padding: $spacer ($spacer * 2);
   box-shadow: -7px 0px 100px rgba(0, 0, 0, 0.24);
+  height: 341px;
   
   .terminal-header {
     span {
@@ -208,6 +209,7 @@
     background-color: transparent;
     color: $white;
     font-size: 12px;
+    padding: 0;
   }
   
   .highlighted { color: #3EB0EF; }
@@ -221,7 +223,7 @@
     left: 0;
     overflow: hidden;
     width: 0;
-    padding: 1px;
+    padding: 0;
   }
   
   &.aos-animate {
