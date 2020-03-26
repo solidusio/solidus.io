@@ -225,7 +225,7 @@
   }
   
   .img-wrap {
-    margin-bottom: $spacer;
+    margin-bottom: $spacer * 2;
     text-align: center;
     @include media-breakpoint-up(md) {
       display: none;
