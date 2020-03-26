@@ -8,9 +8,12 @@ import Rellax from "rellax";
 import Headroom from "headroom.js";
 import numeral from "numeral";
 import AOS from "aos";
+import LazyLoad from "vanilla-lazyload";
 const Cookies = require('js-cookie');
 
 //var rellax = new Rellax('.rellax');
+
+var lazyLoadInstance = new LazyLoad;
 
 $(function () {
   // Tab hover
@@ -88,10 +91,8 @@ $(function () {
   //Slick Slider
   $('.carousel-list').slick({
     autoplay: false,
-    lazyLoad: 'ondemand',
     dots: false,
     speed: 300,
-    lazyLoad: 'progressive',
     useTransform: false,
     centerPadding: '60px',
     slidesToShow: 1,
