@@ -156,6 +156,14 @@
 }
 
 .features-section {
+  .center-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-up(md) {
+      min-height: 454px;
+    }
+  }
   .nav {
     .nav-link {
       color: $body-color;
@@ -197,7 +205,7 @@
     
     .nav-item {
       margin-bottom: $spacer * 3;
-      @include media-breakpoint-up(md) { margin-bottom: 0; }
+      @include media-breakpoint-up(md) { margin-bottom: $spacer / 2; }
     }
   }
   
