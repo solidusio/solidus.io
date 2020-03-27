@@ -12,14 +12,18 @@ import LazyLoad from "vanilla-lazyload";
 const Cookies = require('js-cookie');
 
 //var rellax = new Rellax('.rellax');
-
 var lazyLoadInstance = new LazyLoad;
 
 $(function () {
-  // Tab hover
-  $('[data-toggle="tab-hover"]').hover( function(){
+  // Tab on hover instead of click
+  $('.tab-hover[data-mouse="hover"] a').hover(function(){
     $(this).tab('show');
   });
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    var target = $(e.relatedTarget).attr('href');
+    $(target).removeClass('active');
+  });
+  
   //Menu toggler functionality
   $(".site-menu-toggler").click(function () {
     $("body").toggleClass("menu-open");
