@@ -7,6 +7,7 @@ testimonials:
     author_role: "Senior Developer at MeUndies"
     url: https://www.meundies.com/
     logo: "meundies.svg"
+    placeholder_img: "meundies_placeholder@2x.jpg"
     main_img:
       default_img: "meundies@1x.jpg"
       retina_img: "meundies@2x.jpg"
@@ -22,6 +23,7 @@ testimonials:
     author_role: "Head of Technology at Floyd"
     url: https://floyddetroit.com/
     logo: "floyd.svg"
+    placeholder_img: "floyd_placeholder@2x.jpg"
     main_img:
       default_img: "floyd@1x.jpg"
       retina_img: "floyd@2x.jpg"
@@ -37,6 +39,7 @@ testimonials:
     author_role: "Developer at Glossier"
     url: https://www.glossier.com/
     logo: "glossier.svg"
+    placeholder_img: "glossier_placeholder@2x.jpg"
     main_img:
       default_img: "glossier@1x.jpg"
       retina_img: "glossier@2x.jpg"

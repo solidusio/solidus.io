@@ -26,7 +26,7 @@
         </div>
         <div class="col-lg">
           <div class="hero-image-wrapper">
-            <img class="hero-image" data-src="<%= image_path('illustrations/solidus-hero-home.svg') %>" alt="Solidus eCommerce">
+            <img class="hero-image" src="<%= image_path('illustrations/solidus-hero-home@0,5x.png') %>" data-src="<%= image_path('illustrations/solidus-hero-home.svg') %>" alt="Solidus eCommerce">
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
             <div class="features-section--image tab-content col-md">
               <div class="tab-pane active fade show pr-lg-6" id="truly-flexible" role="tabpanel">
                 <div class="center-image">
-                  <img data-src="<%= image_path('illustrations/truly-flexible.svg') %>" class="img-fluid" alt="Truly Flexible" width="100%" >
+                  <img data-srcset="<%= image_path('illustrations/truly-flexible@2x.png') %> 2x, <%= image_path('illustrations/truly-flexible@1x.png') %> 1x" class="img-fluid" alt="Truly Flexible" width="100%" >
                 </div>
               </div>
               <div class="tab-pane fade pr-lg-6" id="endlessly-scalable" role="tabpanel">
@@ -65,7 +65,7 @@
               </div>
               <div class="tab-pane fade pr-lg-6" id="stable-reliable" role="tabpanel">
                 <div class="center-image">
-                  <img data-src="<%= image_path('illustrations/stable-and-reliable.svg') %>" class="img-fluid" alt="Stable and Reliable" width="100%">
+                  <img data-srcset="<%= image_path('illustrations/stable-and-reliable@2x.png') %> 2x, <%= image_path('illustrations/stable-and-reliable@1x.png') %> 1x" class="img-fluid" alt="Stable and Reliable" width="100%" >
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@
               <ul class="nav tab-hover pl-lg-6" data-mouse="hover">
                 <li class="nav-item">
                   <div class="img-wrap mb-0">
-                    <img data-src="<%= image_path('illustrations/truly-flexible.svg') %>" class="img-fluid" alt="Truly Flexible" >
+                    <img data-srcset="<%= image_path('illustrations/truly-flexible@2x.png') %> 2x, <%= image_path('illustrations/truly-flexible@1x.png') %> 1x" class="img-fluid" alt="Truly Flexible" width="100%" >
                   </div>
                   <a class="nav-link active" data-toggle="tab" role="tab" href="#truly-flexible">
                     <h4>Truly Flexible</h4> 
@@ -95,7 +95,7 @@
                 </li>
                 <li class="nav-item">
                   <div class="img-wrap">
-                    <img data-src="<%= image_path('illustrations/stable-and-reliable.svg') %>" class="img-fluid" alt="Stable and Reliable" >
+                    <img data-srcset="<%= image_path('illustrations/stable-and-reliable@2x.png') %> 2x, <%= image_path('illustrations/stable-and-reliable@1x.png') %> 1x" class="img-fluid" alt="Stable and Reliable" width="100%" >
                   </div>
                   <a class="nav-link" data-toggle="tab" role="tab" href="#stable-reliable">
                     <h4>Stable and Reliable</h4>
@@ -116,7 +116,7 @@
             <div class="features-section--image tab-content col-md order-md-2">
               <div class="tab-pane active fade show pl-lg-6" id="free-forever" role="tabpanel">
                 <div class="center-image">
-                  <img data-src="<%= image_path('illustrations/free-forever.svg') %>" class="img-fluid" alt="Free Forever" width="100%" >
+                  <img srcset="<%= image_path('illustrations/free-forever@2x.png') %> 2x, <%= image_path('illustrations/free-forever@1x.png') %> 1x" class="img-fluid" alt="Free Forever" width="100%" >
                 </div>
               </div>
               <div class="tab-pane fade pl-lg-6 text-center" id="secure-by-default" role="tabpanel">
@@ -134,7 +134,7 @@
               <ul class="nav tab-hover pr-lg-6" data-mouse="hover">
                 <li class="nav-item">
                   <div class="img-wrap">
-                    <img data-src="<%= image_path('illustrations/free-forever.svg') %>" class="img-fluid" alt="Free Forever" >
+                      <img data-srcset="<%= image_path('illustrations/free-forever@2x.png') %> 2x, <%= image_path('illustrations/free-forever@1x.png') %> 1x" class="img-fluid" alt="Free Forever" width="100%" >
                   </div>
                   <a class="nav-link active" data-toggle="tab" role="tab" href="#free-forever">
                     <h4>Free Forever</h4>
