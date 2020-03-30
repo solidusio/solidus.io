@@ -101,7 +101,6 @@
   .inherit-fill { fill: $white; }
   
   .main-image-container {
-    max-height: 180px;
     @include media-breakpoint-up(md) {
       img {
         transform: translateY(-50%);
