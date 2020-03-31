@@ -32,10 +32,7 @@
     "headroom.js": "0.9.4",
     "jquery": "^3.2.1",
     "js-cookie": "^2.2.1",
-    "nouislider": "^11.0.3",
-    "numeral": "^2.0.6",
     "popper.js": "^1.12.9",
-    "rellax": "^1.12.1",
     "slick-carousel": "^1.8.1",
     "vanilla-lazyload": "^14.0.0"
   },

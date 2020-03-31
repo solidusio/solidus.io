@@ -2,16 +2,12 @@ import "jquery";
 import "popper.js";
 import "bootstrap";
 import "details-element-polyfill";
-import NoUiSlider from "nouislider";
 import "slick-carousel";
-import Rellax from "rellax";
 import Headroom from "headroom.js";
-import numeral from "numeral";
 import AOS from "aos";
 import LazyLoad from "vanilla-lazyload";
 const Cookies = require('js-cookie');
 
-//var rellax = new Rellax('.rellax');
 var lazyLoadInstance = new LazyLoad;
 
 $(function () {
@@ -49,28 +45,6 @@ $(function () {
   });
   // initialise
   headroom.init();
-
-  //Price calculation block
-  let $slider = $(".cost-calculator .slider"),
-  $sliderSales = $(".cost-calculator .js-sales"),
-  $sliderTotal = $(".cost-calculator .js-total-cost");
-
-  if($slider.length){
-    NoUiSlider.create($slider[0], {
-      start: [$slider.data("start")],
-      connect: [true, false],
-      step: 1000,
-      range: {
-        'min': $slider.data("min"),
-        'max': $slider.data("max")
-      }
-    });
-
-    $slider[0].noUiSlider.on('update', function(e){
-      $sliderSales.html(numeral(e[0]).format('0,0'));
-      $sliderTotal.html(numeral(e[0] * 0.02).format('0,0'))
-    });
-  }
 
   //Fade in blocks on scroll
   AOS.init({
