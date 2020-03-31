@@ -12,11 +12,9 @@
     </figure>
 
     <div class="community-stats-count">
-      <%= count_prefix if defined?(count_prefix) %>
-      <span class="count" data-aos data-aos-once data-start-counter>
+      <%= count_prefix if defined?(count_prefix) %><span class="count" data-aos data-aos-once data-start-counter>
         <%= count %>
-      </span>
-      <%= count_k if defined?(count_k) %>
+      </span><%= count_k if defined?(count_k) %>
     </div>
 
     <header class="community-stats-title">
