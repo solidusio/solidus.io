@@ -12,10 +12,8 @@
   &--skewed {
     padding-top: 65px;
     padding-bottom: 65px;
-    margin-top: -65px;
     transform: skewY(-9deg);
     &.intro {
-      margin-top: -1px;
       padding-bottom: 0;
       transform: skewY(0);
       &::before {
@@ -40,44 +38,47 @@
         width: 100%;
         position: absolute;
       }
-      > .content-wrapper {
-        transform: skewY(0);
-      }
     }
     
-    &.homepage-hero {
+    &.hero-block {
       padding-bottom: 0;
+      margin-top: -65px;
       .content-wrapper {
+        padding-top: 65px;
         padding-bottom: 0;
+        @include media-breakpoint-up(md) {
+          padding-top: 130px;
+        }
       }
     }
 
     @include media-breakpoint-up(md){
       padding-top: 130px;
-      padding-bottom: 65px;
-      margin-top: -130px;
+      padding-bottom: 90px;
       
+      &.hero-block {
+        margin-top: -130px;
+        padding-bottom: 65px;
+      }
       &.intro {
-        margin-top: -1px;
+        padding-bottom: 65px;
       }
     }
     @include media-breakpoint-up(xl){
       padding-top: 205px;
-      padding-bottom: 90px;
-      margin-top: -205px;
+      padding-bottom: 130px;
       
+      &.hero-block {
+        margin-top: -205px;
+        padding-bottom: 90px;
+      }
       &.intro {
-        margin-top: -1px;
+        padding-bottom: 90px;
       }
     }
     
     > .content-wrapper {
       transform: skewY(9deg);
-      padding-top: 65px;
-      padding-bottom: 65px;
-      @include media-breakpoint-up(md) {
-        padding-top: 130px;
-      }
     }
   }
 }
