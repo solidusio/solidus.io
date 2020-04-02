@@ -145,8 +145,11 @@
   position: absolute;
   overflow: hidden;
   transform-origin: left center;
-  animation: cliprotate 2s 1;
-  transform: rotate(180deg);
+
+  .animated & {
+    animation: cliprotate 2s 1;
+    transform: rotate(180deg);
+  }
 }
 
 .circle-halfcircle {
@@ -162,14 +165,23 @@
 
 .circle-clipped {
   width: 200%;
-  transform: rotate(135deg);
-  animation: rotate 1s linear 2;
+  transform: rotate(-45deg);
+
+  .animated & {
+    transform: rotate(135deg);
+    animation: rotate 1s linear 2;
+  }
 }
 
 .circle-fixed {
   width: 100%;
   transform: rotate(135deg);
-  animation: showfixed 2s 1;
+  opacity: 0;
+
+  .animated & {
+    opacity: 1;
+    animation: showfixed 2s 1;
+  }
 }
 
 @keyframes cliprotate {
