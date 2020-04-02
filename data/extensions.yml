@@ -292,8 +292,8 @@ solidusio-contrib/solidus_expedited_exchanges:
   title: Expedited Exchanges
   description: Process returns by exchanging products with others from your administration panel.
   group: Returns
-solidusio-contrib/solidus_i18n:
-  ci_provider: unsupported
+solidusio/solidus_i18n:
+  ci_provider: circleci
   title: I18n
   description: A collection of localization files for translating your store into multiple
     languages.
