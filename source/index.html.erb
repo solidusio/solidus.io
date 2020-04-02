@@ -1,240 +1,285 @@
 ---
+description: Solidus is the free, open-source, Ruby on Rails eCommerce platform for digitally-native brands, fast-growing online businesses and passionate developers.
 ---
 
-<div class="content-block content-block-gray-900">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md">
-        <div class="block-content mb-4 mb-md-0">
-          <h1 class="title">The only eCommerce platform you’ll ever need.</h1>
-          <p class="lead">Build, customize and scale your store: no limits, no license fees. Solidus is the open-source eCommerce framework for digitally-native brands, fast-growing online businesses, and passionate developers.</p>
-        </div>
-      </div>
-      <div class="col-md text-center text-lg-right">
-        <img class="img-fluid" src="<%= image_path('illustrations/proceed-to-checkout.png') %>" srcset="<%= image_path('illustrations/proceed-to-checkout.png') %>, <%= image_path('illustrations/proceed-to-checkout@2x.png') %> 2x" alt="Edit Product">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="content-block content-block-gray-100" data-aos="fade">
-  <div class="container">
-    <h3 class="title text-gray-600 text-center font-weight-light mb-4">Our community builds innovative ecommerce experiences.</h3>
-
-    <div class="community-logos">
-      <div class="row align-items-center justify-content-center">
-        <div class="col-6 col-sm-4 col-lg-auto"><a class="item" href="https://www.smartthings.com/" target="_blank"><%= inline_svg("community-logos/smartthings.svg", class: "isvg") %></a></div>
-        <div class="col-6 col-sm-4 col-lg-auto"><a class="item" href="https://www.glossier.com/" target="_blank"><%= inline_svg("community-logos/glossier.svg", class: "isvg") %></a></div>
-        <div class="col-6 col-sm-4 col-lg-auto"><a class="item" href="https://www.meundies.com/" target="_blank"><%= inline_svg("community-logos/meundies.svg", class: "isvg") %></a></div>
-        <div class="col-6 col-sm-4 col-lg-auto"><a class="item" href="https://www.wonderbly.com/" target="_blank"><%= inline_svg("community-logos/wonderbly.svg", class: "isvg") %></a></div>
-        <div class="w-100 d-none d-lg-block"></div>
-        <div class="col-6 col-sm-4 col-lg-auto"><a class="item" href="https://floyddetroit.com/" target="_blank"><%= inline_svg("community-logos/floyd.svg", class: "isvg") %></a></div>
-        <div class="col-6 col-sm-4 col-lg-auto"><a class="item" href="https://www.aceandtate.com/" target="_blank"><%= inline_svg("community-logos/ace&tate.svg", class: "isvg") %></a></div>
-        <div class="col-6 col-sm-4 col-lg-auto"><a class="item" href="https://www.moddedeuros.com/" target="_blank"><%= inline_svg("community-logos/moddedeuros.svg", class: "isvg") %></a></div>
-        <div class="col-6 col-sm-4 col-lg-auto"><a class="item" href="https://yearandday.com/" target="_blank"><%= inline_svg("community-logos/yearandday.svg", class: "isvg") %></a></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="content-block" data-aos="fade">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md">
-        <div class="block-content mb-4 mb-md-0">
-          <!-- Nav tabs -->
-
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#block1t1" role="tab">For Decision Makers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#block1t2" role="tab">For developers</a>
-            </li>
-          </ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content decision-makers-tab">
-            <div class="tab-pane active fade show" id="block1t1" role="tabpanel">
-              <h2 class="title">Yours to customize, yours forever.</h2>
-              <p>Hosted ecommerce solutions are a great option for simple stores with low to medium traffic. But what happens when your store’s needs outgrow the capabilities of your current solution? Solidus was built to support high-volume stores with varied and complex needs. Many outlying use cases or specific features have already been included in our platform. </p>
-              <ul class="list-underlined">
-                <li>Product and inventory management</li>
-                <li>Order management</li>
-                <li>Every major payment gateway</li>
-                <li>Always 100% FREE to use</li>
-              </ul>
-              <a href="/features"><strong>See the features</strong></a>
-            </div>
-            <div class="tab-pane fade" id="block1t2" role="tabpanel">
-              <h2 class="title">Solidus is modular and stable.</h2>
-              <p>Often we get asked to move mountains to make ecommerce work. We’re expected to get the job done, when sometimes it’s all but impossible on a platform you don’t control. The Solidus platform has all of the essential ecommerce functionality out-of-the-box, with easy-to-use extension points allowing for full customization.</p>
-              <ul class="list-underlined">
-                <li>RESTful API</li>
-                <li>Aggressive release schedule</li>
-                <li>Great community support</li>
-                <li>Always 100% FREE to use</li>
-              </ul>
-              <a href="/features"><strong>See the features</strong></a>
+<div class="dark-background">
+  <div class="homepage-hero content-block--skewed content-block-white">
+    <div class="content-wrapper container">
+      <div class="row align-items-center">
+        <div class="col-lg">
+          <div class="pr-lg-6 mb-3">
+            <h1 class="title">The only eCommerce platform you’ll ever need.</h1>
+            <p class="lead mb-6">
+              Build, customize and scale your store: no limits, no license fees. Solidus is the open-source eCommerce framework for digitally-native brands, fast-growing online businesses, and passionate developers.
+            </p>
+            <a class="btn btn-primary btn-lg" href="/contact">Get started</a>
+            <div class="mt-4 mb-4">
+              <%= inline_svg("icons/check-circle-green.svg", class: "isvg") %>
+              <span class="pr-sm-4 pr-2">
+                <small>No license fees</small>
+              </span>
+              <%= inline_svg("icons/check-circle-green.svg", class: "isvg") %>
+              <span>
+                <small>Open Source</small>
+              </span>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md text-center text-lg-right">
-        <img class="img-fluid" src="<%= image_path('illustrations/edit-product.png') %>" srcset="<%= image_path('illustrations/edit-product.png') %>, <%= image_path('illustrations/edit-product@2x.png') %> 2x" alt="Edit Product">
-      </div>
-    </div>
-  </div>
-</div>
-
-<blockquote class="blockquote content-block content-block-gray-100" data-aos="fade">
-  <div class="container">
-    <p class="mb-4">"I've never had to say 'no' to my product team. I can customize Solidus to do anything they want."</p>
-    <footer class="blockquote-footer">
-      <cite>
-        <img class="img-circled" src="<%= image_path('quotes/jacky-giang.png') %>" srcset="<%= image_path('quotes/jacky-giang.png') %>, <%= image_path('quotes/jacky-giang@2x.png') %> 2x" alt="Jacky Giang" width="48" height="48"><!--
-        --><span class="text">
-          Jacky Giang, Head of Technology <br>
-          <a rel="nofollow" href="https://floyddetroit.com/" target="_blank">Floyd Furniture</a>
-        </span>
-      </cite>
-    </footer>
-  </div>
-</blockquote>
-
-<div class="content-block" data-aos="fade">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md">
-        <div class="block-content ml-lg-auto mb-6 mb-md-0">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#block2t1" role="tab">For Decision Makers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#block2t2" role="tab">For developers</a>
-            </li>
-          </ul>
-
-          <div class="tab-content rings-tab">
-            <div class="tab-pane active fade show" id="block2t1" role="tabpanel">
-              <h2 class="title">Don’t reinvent the wheel.</h2>
-              <p>Are you sinking big bucks into your own in-house ecommerce solution as your developers struggle to keep up with features requests? Solidus keeps your store running smoothly, while a community of developers work together around the world to improve the platform. </p>
-              <ul class="list-underlined">
-                <li>14000+ Core commits since 2015</li>
-                <li>2200+ Slack channel members</li>
-                <li>40+ Community-supported extensions</li>
-                <li>670+ Contributors</li>
-              </ul>
-            </div>
-            <div class="tab-pane fade" id="block2t2" role="tabpanel">
-              <h2 class="title">A community of support.</h2>
-              <p>Solidus has over 600 contributors with thousands of active developers across North America and Western Europe. All commits are reviewed and validated by the core team before being added to the codebase; all pull requests are open for a minimum of 48 hours to allow for community feedback. Around-the-clock support is always available in our Slack channel.</p>
-              <ul class="list-underlined">
-                <li>14000+ Core commits since 2015</li>
-                <li>2200+ Slack channel members</li>
-                <li>40+ Community-supported extensions</li>
-                <li>670+ Contributors</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md order-md-first text-center text-lg-left">
-        <img class="img-fluid" src="<%= image_path('illustrations/rings.png') %>" srcset="<%= image_path('illustrations/rings.png') %>, <%= image_path('illustrations/rings@2x.png') %> 2x" alt="Rings">
-      </div>
-    </div>
-  </div>
-</div>
-
-<blockquote class="blockquote content-block content-block-gray-100" data-aos="fade">
-  <div class="container">
-    <p>"If you love the joy baked into the Ruby programming language and need to sell products, Solidus should be on the forefront of your radar. Thoughtful refactoring goes into the codebase daily, the community is exceptionally friendly and building a product that sells goods couldn't be easier."</p>
-    <footer class="blockquote-footer">
-      <cite>
-        <img class="img-circled float-left" src="<%= image_path('quotes/braden-douglass.png') %>" srcset="<%= image_path('quotes/braden-douglass.png') %>, <%= image_path('quotes/braden-douglass@2x.png') %> 2x" alt="Braden Douglass" width="48" height="48"><!--
-        --><span class="text">
-          Braden Douglass, Developer<br>
-          <a rel="nofollow" href="https://www.glossier.com/" target="_blank">Glossier</a>
-        </span>
-      </cite>
-    </footer>
-  </div>
-</blockquote>
-
-
-<div class="calculator-block content-block content-block-gray-900" data-aos="fade">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg">
-        <div class="block-content mx-auto mb-4 mb-lg-0">
-          <h2 class="title">Solidus is free, forever</h2>
-          <p>Are you spending your hard earned cash on hosted ecommerce solutions? There are no service, licensing, management or transaction fees for using Solidus. And because it’s open source, you decide where and how to host your store. Take control of your ecommerce experience without losing control of your chequebook.</p>
-        </div>
-      </div>
-      <div class="col-lg">
-        <div class="cost-calculator card">
-          <div class="card-body">
-            <h5 class="title expense-title">Annual Sales</h5>
-            <div class="sales expense-amount text-gray">$<span class="js-sales">20,000,000</span></div>
-            <div class="slider" data-start="20000000" data-min="1000000" data-max="40000000"></div>
-
-            <table class="table">
-              <thead>
-              <tr>
-                <th><%= inline_svg("logo.svg", class: "solidus-logo isvg") %></th>
-                <th>Industry Average</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>
-                  <h6 class="expense-title">Annual License Fees</h6>
-                  <div class="expense-amount">0%</div>
-                </td>
-                <td>
-                  <h6 class="expense-title">Annual License Fees</h6>
-                  <div class="expense-amount">2%</div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <h6 class="expense-title">Total Annual Cost</h6>
-                  <div class="expense-amount"><strong class="text-primary">Free Forever</strong></div>
-                </td>
-                <td>
-                  <h6 class="expense-title">Total Annual Cost</h6>
-                  <div class="expense-amount font-weight-bold">$<span class="js-total-cost">400,000</span></div>
-                </td>
-              </tr>
-              </tbody>
-            </table>
+        <div class="col-lg">
+          <div class="hero-image-wrapper">
+            <img class="hero-image" src="<%= image_path('illustrations/solidus-hero-home@0,5.png') %>" data-src="<%= image_path('illustrations/solidus-hero-home.svg') %>" alt="Solidus eCommerce">
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  
+  <div class="intro content-block--skewed content-block-gray-100">
+    <div class="content-wrapper pt-0 pb-0">
+      <div class="content-block pt-0" data-aos="fade">
+        <div class="container">
+          <p class="lead text-gray-600 text-center font-weight-light mb-4">Solidus powers the brands defining the future of eCommerce.</p>
+          <%= partial "partials/community_logos" %>
+        </div>
+      </div>
+      
+      <div class="container container-md text-center" data-aos="fade">
+        <h2 class="title">Yours to customize, yours forever.</h2>
+        <p class="lead">
+          Free your business from meaningless boundaries. Solidus gives you the freedom to experiment, change and develop. Start small, grow huge: find what’s really important for your business and make it happen.
+        </p>
+      </div>
 
-<blockquote class="blockquote content-block content-block-gray-100" data-aos="fade">
-  <div class="container">
-    <p class="mb-4">“Solidus has pretty much everything built into its core, so we can spend our time creating a great branded customer experience.“</p>
-    <footer class="blockquote-footer">
-      <cite>
-        <img class="img-circled float-left" src="<%= image_path('quotes/dan-mitchell.png') %>" srcset="<%= image_path('quotes/dan-mitchell.png') %>, <%= image_path('quotes/dan-mitchell@2x.png') %> 2x" alt="Dan Mitchell" width="48" height="48"><!--
-        --><span class="text">
-          Dan Mitchell, Director<br>
-          <a rel="nofollow" href="https://www.digitalreflow.co.uk/" target="_blank">Digital Reflow</a>
-        </span>
-      </cite>
-    </footer>
+      <div class="features-section first container" data-aos="fade">
+        <div class="content-block">
+          <div class="row align-items-center">
+            <div class="features-section--image tab-content col-md">
+              <div class="tab-pane active fade show pr-lg-6" id="truly-flexible" role="tabpanel">
+                <div class="center-image">
+                  <img data-srcset="<%= image_path('illustrations/truly-flexible@2x.png') %> 2x, <%= image_path('illustrations/truly-flexible@1x.png') %> 1x" class="img-fluid" alt="Truly Flexible" width="100%" >
+                </div>
+              </div>
+              <div class="tab-pane fade pr-lg-6" id="endlessly-scalable" role="tabpanel">
+                <div class="center-image">
+                  <img src="<%= image_path('illustrations/endlessly-scalable_placeholder@1x.png') %>" data-src="<%= image_path('illustrations/endlessly-scalable.svg') %>" class="img-fluid" alt="Endlessly Scalable" width="100%" >
+                </div>
+              </div>
+              <div class="tab-pane fade pr-lg-6" id="stable-reliable" role="tabpanel">
+                <div class="center-image">
+                  <img src="<%= image_path('illustrations/stable-and-reliable_placeholder@1x.png') %>" data-srcset="<%= image_path('illustrations/stable-and-reliable@2x.png') %> 2x, <%= image_path('illustrations/stable-and-reliable@1x.png') %> 1x" class="img-fluid" alt="Stable and Reliable" width="100%" >
+                </div>
+              </div>
+            </div>
+            <div class="features-section--paragraph col-md">
+              <ul class="nav tab-hover pl-lg-6" data-mouse="hover">
+                <li class="nav-item">
+                  <div class="img-wrap mb-0">
+                    <img data-srcset="<%= image_path('illustrations/truly-flexible@2x.png') %> 2x, <%= image_path('illustrations/truly-flexible@1x.png') %> 1x" class="img-fluid" alt="Truly Flexible" width="100%" >
+                  </div>
+                  <a class="nav-link active" data-toggle="tab" role="tab" href="#truly-flexible">
+                    <h4>Truly Flexible</h4> 
+                    <p>
+                      Solidus fits to your business requirements, not the other way around. Integrate anything, customize everything, without constraints.
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <div class="img-wrap">
+                    <img data-src="<%= image_path('illustrations/endlessly-scalable.svg') %>" class="img-fluid" alt="Endlessly Scalable" >
+                  </div>
+                  <a class="nav-link" data-toggle="tab" role="tab" href="#endlessly-scalable">
+                    <h4>Endlessly Scalable</h4>
+                    <p>
+                      Adapt and react to any condition. Solidus handles the complexity and removes the headache of scaling from small to enterprise.
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <div class="img-wrap">
+                    <img data-srcset="<%= image_path('illustrations/stable-and-reliable@2x.png') %> 2x, <%= image_path('illustrations/stable-and-reliable@1x.png') %> 1x" class="img-fluid" alt="Stable and Reliable" width="100%" >
+                  </div>
+                  <a class="nav-link" data-toggle="tab" role="tab" href="#stable-reliable">
+                    <h4>Stable and Reliable</h4>
+                    <p>
+                      Built on the shared knowledge of 500+ brands that revolutionized the eCommerce world. Tap into a shared knowledge of  10 years worth of experiences.
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-section second container" data-aos="fade">
+        <div class="content-block p-0">
+          <div class="row align-items-center">
+            <div class="features-section--image tab-content col-md order-md-2">
+              <div class="tab-pane active fade show pl-lg-6" id="free-forever" role="tabpanel">
+                <div class="center-image">
+                  <img src="<%= image_path('illustrations/free-forever_placeholder@1x.png') %>" data-srcset="<%= image_path('illustrations/free-forever@2x.png') %> 2x, <%= image_path('illustrations/free-forever@1x.png') %> 1x" class="img-fluid" alt="Free Forever" width="100%" >
+                </div>
+              </div>
+              <div class="tab-pane fade pl-lg-6 text-center" id="secure-by-default" role="tabpanel">
+                <div class="center-image">
+                  <img src="<%= image_path('illustrations/secure-by-default_placeholder@1x.png') %>" data-src="<%= image_path('illustrations/secure-by-default.svg') %>" class="img-fluid" alt="Secure by Default" width="350" >
+                </div>
+              </div>
+              <div class="tab-pane fade pl-lg-6 text-center" id="easy-adoption" role="tabpanel">
+                <div class="center-image">
+                  <img src="<%= image_path('illustrations/easy-adoption_placeholder@1x.png') %>" data-srcset="<%= image_path('illustrations/easy-adoption@2x.png') %> 2x, <%= image_path('illustrations/easy-adoption@1x.png') %> 1x" class="img-fluid" alt="Easy Adoption" width="400" >
+                </div>
+              </div>
+            </div>
+            <div class="features-section--paragraph left-block col-md order-md-1">
+              <ul class="nav tab-hover pr-lg-6" data-mouse="hover">
+                <li class="nav-item">
+                  <div class="img-wrap">
+                      <img data-srcset="<%= image_path('illustrations/free-forever@2x.png') %> 2x, <%= image_path('illustrations/free-forever@1x.png') %> 1x" class="img-fluid" alt="Free Forever" width="100%" >
+                  </div>
+                  <a class="nav-link active" data-toggle="tab" role="tab" href="#free-forever">
+                    <h4>Free Forever</h4>
+                    <p>
+                      No license costs. No 3rd-party application costs. Invest in what matters the most: your team, your product.
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <div class="img-wrap pl-3 pr-3 pl-md-0 pr-md-0">
+                    <img data-src="<%= image_path('illustrations/secure-by-default.svg') %>" class="img-fluid" alt="Secure by Default" width="350" >
+                  </div>
+                  <a class="nav-link" data-toggle="tab" role="tab" href="#secure-by-default">
+                    <h4>Secure by Default</h4>
+                    <p>
+                      Sleep tight knowing your store is secure. Automated security fixes, a clear disclosure policy and strict code reviews guarantee a seamless experience.
+                    </p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <div class="img-wrap pl-3 pr-3 pl-md-0 pr-md-0">
+                    <img data-src="<%= image_path('illustrations/easy-adoption.svg') %>" class="img-fluid" alt="Easy Adoption" width="400" >
+                  </div>
+                  <a class="nav-link" data-toggle="tab" role="tab" href="#easy-adoption">
+                    <h4>Easy Adoption</h4>
+                    <p>
+                      Community edition is the only edition. Build your next brand on top of a truly open-source, community-driven platform that multiplies your competitive advantage.
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</blockquote>
-
-<div class="content-block text-center" data-aos="fade">
-  <div class="container">
-    <h3 class="title mb-4">Discover what Solidus can do for you.</h3>
-    <a class="btn btn-primary" href="/features">See the Features</a>
+  
+  <div class="open-source-section">
+    <div class="testimonials content-block pb-0">
+      <div class="container text-center">
+        <%= partial "partials/testimonials_list" %>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="content-block" data-aos="fade">
+        <div class="row align-items-center content-block-gray-900" data-aos="fade">
+          <div class="col-md-5 col-lg-6 col-xl-7">
+            <div class="pr-md-6">
+              <%= partial 'partials/community_stats', locals: { type: 'github', count: '3000', title: 'GitHub stars' } %>
+              <%= partial 'partials/community_stats', locals: { type: 'slack', count: '2900', title: 'Slack members' } %>
+              <%= partial 'partials/community_stats', locals: { type: 'open-collective', count_prefix: '$', count: '60', count_k: 'K', title: 'Donated' } %>
+              <%= partial 'partials/community_stats', locals: { type: 'contributors', count: '670', title: 'Contributors' } %>
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-6 col-xl-5">
+            <div class="pl-md-6">
+              <h2 class="title mt-4">A truly Open Source mindset</h2>
+              <div class="mb-4 mt-4">
+                <h4>Driven Collectively</h4>
+                <p>
+                  Solidus can count on the support of a vibrant community of passionate developers, agencies and retailers that work together to move the platform forward.
+                </p>
+              </div>
+              <div class="mb-4">
+                <h4>Funded Transparently</h4>
+                <p>
+                  Our community actively supports Solidus with financial contributions through OpenCollective. These funds are used to improve and promote the platform.
+                </p>
+              </div>
+              <div class="mb-4">
+                <h4>Developed Publicly</h4>
+                <p>
+                  Our Public Roadmap is our way to build our community through transparency. See what the Solidus community is working on right now and planning ahead. Take part in writing the future of our platform.
+                </p>
+              </div>
+              <a class="btn btn-primary" href="/community">Join our Community</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="ruby-on-rails content-block pt-0">
+        <div class="row align-items-center content-block-gray-900">
+          <div class="col-lg pl-lg-6 order-lg-2">
+            <div class="terminal-window mb-8 mb-lg-0" data-aos="fade">
+              <div class="terminal-header mb-3">
+                <span class="close-btn"></span>
+                <span class="minimize-btn ml-1 mr-1"></span>
+                <span class="zoom-btn"></span>
+              </div>
+              <div class="terminal-body">
+                <pre>
+                  <code class="comment line-0"># Add the Solidus gem to your Rails application</code>
+                  <code class="line line-1">gem '<span class="highlighted">solidus</span>'<span class="cursor-1">_</span></code>
+                  <code class="comment mt-2 line-3"># Install dependencies</code>
+                  <code class="line line-4">$ bundle<span class="cursor-4">_</span></code>
+                  <code class="comment mt-2 line-5"># Install Solidus</code>
+                  <code class="line line-6">$ bin/rails g solidus:install<span class="cursor-6">_</span></code>
+                  <code class="comment mt-2 line-10"># Start the server</code>
+                  <code class="line line-11">$ bundle <span class="highlighted">exec</span> rails s<span class="cursor-11">_</span></code>
+                  <code class="comment mt-2 line-12"># Visit the local server</code>
+                  <code class="line line-13">http://localhost:3000/<span class="cursor-13">_</span></code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg pr-lg-6 order-lg-1">
+            <h2 class="title">Powered by <span class="text-danger">Ruby on Rails</span>.</h2>
+            <p class="mb-4">
+              Solidus is powered by Ruby on Rails, the framework used by the most popular online applications such as <b>Basecamp, GitHub, Shopify, Airbnb, Twitch, SoundCloud, Hulu, Zendesk, Square</b>.
+            </p>
+            <a class="btn btn-primary mb-4" href="https://guides.solidus.io/">Read our Guides</a>
+          </div>
+        </div>
+        <div class="row pt-8 content-block-gray-900">
+          <div class="col-md-4 mb-4">
+            <h4 class="title">Fast development</h4>
+            <p>
+              Solidus is excellent for building MVPs and iterating quickly. No matter if you only have one developer or an agile team of 50, Solidus has the flexibility to drive your store.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h4 class="title">Future-proof APIs</h4>
+            <p>
+              No need to choose between REST or GraphQL, Solidus has both. Whether it’s headless, single page app or traditional HTML Solidus has it.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="title">Fully Costumizable Front-End</h4>
+            <p>
+              Build your storefronts exactly the way that your marketing team designed it. No more shoehorning your brand into restrictive themes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="call-to-action content-block content-block-white text-center">
+    <div class="container container-md">
+      <h3 class="title">Join the brands that are changing the future of eCommerce</h3>
+      <a class="btn btn-primary btn-lg" href="/contact">Get started</a>
+    </div>
   </div>
 </div>

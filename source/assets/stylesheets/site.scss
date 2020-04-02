@@ -5,14 +5,15 @@
 @import "vendor/nouislider/nouislider";
 @import "vendor/nouislider/theme";
 @import "vendor/aos/aos";
+@import "vendor/slick-carousel/slick";
+@import "vendor/slick-carousel/slick-theme";
 @import "vendor/rouge-github-theme";
-
-
 
 @import "helper";
 
 @import "components/top-bar";
 @import "components/text";
+@import "components/typeface";
 @import "components/misc";
 @import "components/images";
 @import "components/accordion";
@@ -24,5 +25,7 @@
 @import "components/bio";
 @import "components/blog";
 @import "components/community";
+@import "components/community-stats";
 @import "components/extensions";
 @import "components/partners";
+@import "components/homepage";

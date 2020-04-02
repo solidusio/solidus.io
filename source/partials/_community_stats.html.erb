@@ -1,0 +1,24 @@
+<div class="community-stats community-stats-<%= type %>">
+  <div class="circle" data-aos data-aos-once>
+    <div class="circle-halfclip">
+      <div class="circle-halfcircle circle-clipped"></div>
+    </div>
+    <div class="circle-halfcircle circle-fixed"></div>
+  </div>
+
+  <div class="community-stats-inner">
+    <figure class="community-stats-figure">
+      <%= inline_svg("community-stats/#{type}.svg", class: "isvg") %>
+    </figure>
+
+    <div class="community-stats-count">
+      <%= count_prefix if defined?(count_prefix) %><span class="count" data-aos data-aos-once data-start-counter>
+        <%= count %>
+      </span><%= count_k if defined?(count_k) %>
+    </div>
+
+    <header class="community-stats-title">
+      <%= title %>
+    </header>
+  </div>
+</div>

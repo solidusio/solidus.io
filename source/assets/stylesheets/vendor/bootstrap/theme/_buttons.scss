@@ -1,5 +1,5 @@
 .btn-primary {
-  @include button-variant($primary, $primary, #ffffff, $blue-darker, $blue-darker, #ffffff, $blue-darker, $blue-darker, #ffffff);
+  @include button-variant($background: $primary, $border: $primary, $color: $white, $hover-background: $link-hover-color, $hover-border: $link-hover-color, $hover-color: $white, $active-background: $link-hover-color, $active-border: $link-hover-color, $active-color: $white);
 }
 
 .btn-white{
@@ -39,6 +39,10 @@
     margin-top: 0;
     margin-left: 1rem;
   }
+}
+
+.btn-lg {
+  min-width: 200px;
 }
 
 .btn-group{

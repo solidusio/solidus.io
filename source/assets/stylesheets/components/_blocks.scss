@@ -8,6 +8,78 @@
 
     .block-content{ max-width: 480px; }
   }
+  
+  &--skewed {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin-top: -65px;
+    transform: skewY(-9deg);
+    &.intro {
+      margin-top: -1px;
+      padding-bottom: 0;
+      transform: skewY(0);
+      &::before {
+        content: '';
+        transform: skewY(-9deg);
+        background-color: inherit;
+        display: block;
+        z-index: -1;
+        height: 600px;
+        top: -100px;
+        width: 100%;
+        position: absolute;
+      }
+      &::after {
+        content: '';
+        transform: skewY(-9deg);
+        background-color: inherit;
+        display: block;
+        z-index: -1;
+        height: 600px;
+        bottom: -200px;
+        width: 100%;
+        position: absolute;
+      }
+      > .content-wrapper {
+        transform: skewY(0);
+      }
+    }
+    
+    &.homepage-hero {
+      padding-bottom: 0;
+      .content-wrapper {
+        padding-bottom: 0;
+      }
+    }
+
+    @include media-breakpoint-up(md){
+      padding-top: 130px;
+      padding-bottom: 65px;
+      margin-top: -130px;
+      
+      &.intro {
+        margin-top: -1px;
+      }
+    }
+    @include media-breakpoint-up(xl){
+      padding-top: 205px;
+      padding-bottom: 90px;
+      margin-top: -205px;
+      
+      &.intro {
+        margin-top: -1px;
+      }
+    }
+    
+    > .content-wrapper {
+      transform: skewY(9deg);
+      padding-top: 65px;
+      padding-bottom: 65px;
+      @include media-breakpoint-up(md) {
+        padding-top: 130px;
+      }
+    }
+  }
 }
 
 .content-block-xl{
@@ -29,6 +101,10 @@
   h1, h2, h3, h4, h5, h6, .title{
     color: #ffffff;
   }
+}
+
+.content-block-white{
+  background: $white;
 }
 
 //Price calculation block
@@ -213,4 +289,21 @@
   40% { transform: scale(1.1); }
   80% { transform: scale(1); }
   100% { transform: scale(1); }
+}
+
+// Bottom CTA
+.call-to-action {
+  .title {
+    font-size: $h2-font-size;
+    line-height: $line-height-sm;
+    margin-bottom: $spacer * 3;
+  }
+  
+  .btn {
+    box-shadow: 0 3px 18px 0 rgba(0, 0, 0, .2);
+    
+    &.btn-lg {
+      padding: .75rem ($spacer * 2);
+    }
+  }
 }

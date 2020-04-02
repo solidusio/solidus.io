@@ -2,13 +2,24 @@ import "jquery";
 import "popper.js";
 import "bootstrap";
 import "details-element-polyfill";
-import NoUiSlider from "nouislider";
+import "slick-carousel";
 import Headroom from "headroom.js";
-import numeral from "numeral";
 import AOS from "aos";
+import LazyLoad from "vanilla-lazyload";
 const Cookies = require('js-cookie');
 
+var lazyLoadInstance = new LazyLoad;
+
 $(function () {
+  // Tab on hover instead of click
+  $('.tab-hover[data-mouse="hover"] a').hover(function(){
+    $(this).tab('show');
+  });
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    var target = $(e.relatedTarget).attr('href');
+    $(target).removeClass('active');
+  });
+  
   //Menu toggler functionality
   $(".site-menu-toggler").click(function () {
     $("body").toggleClass("menu-open");
@@ -35,35 +46,12 @@ $(function () {
   // initialise
   headroom.init();
 
-  //Price calculation block
-  let $slider = $(".cost-calculator .slider"),
-      $sliderSales = $(".cost-calculator .js-sales"),
-      $sliderTotal = $(".cost-calculator .js-total-cost");
-
-  if($slider.length){
-    NoUiSlider.create($slider[0], {
-      start: [$slider.data("start")],
-      connect: [true, false],
-      step: 1000,
-      range: {
-        'min': $slider.data("min"),
-        'max': $slider.data("max")
-      }
-    });
-
-    $slider[0].noUiSlider.on('update', function(e){
-      $sliderSales.html(numeral(e[0]).format('0,0'));
-      $sliderTotal.html(numeral(e[0] * 0.02).format('0,0'))
-    });
-  }
-
   //Fade in blocks on scroll
   AOS.init({
     once: true,
     offset: 200,
     duration: 600,
-    easing: "ease-in-quart",
-    disable: window.innerWidth < 1024
+    easing: "ease-in-quart"
   });
 
   //Remove top bar on click
@@ -76,5 +64,32 @@ $(function () {
     $(".top-bar").removeClass('top-bar--show');
   });
 
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
+
+  //Slick Slider
+  $('.carousel-list').slick({
+    autoplay: false,
+    dots: false,
+    speed: 300,
+    useTransform: false,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    fade: true
+  });
+});
+
+$(document).on('aos:in', function(event) {
+  var target = $(event.originalEvent.detail);
+
+  if (target.data('start-counter') !== undefined) {
+    target.prop('Counter', 0).animate({
+      Counter: target.text()
+    }, {
+      duration: 2000,
+      easing: 'swing',
+      step: function (now) {
+        $(this).text(Math.ceil(now));
+      }
+    });
+  }
 });

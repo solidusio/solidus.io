@@ -1,0 +1,48 @@
+testimonials:
+  meundies:
+    name: "MeUndies"
+    custom_css: "meundies"
+    quote: "Solidus has evolved with our business over the years, and continues to do so as we begin a comprehensive rearchitecture of our eCommerce platform."
+    author_name: "Robert Zablit"
+    author_role: "Senior Developer at MeUndies"
+    url: https://www.meundies.com/
+    logo: "meundies.svg"
+    placeholder_img: "meundies_placeholder@2x.jpg"
+    main_img:
+      default_img: "meundies@1x.jpg"
+      retina_img: "meundies@2x.jpg"
+    author_img:
+      default_img: "robert-zablit.png"
+      retina_img: "robert-zablit@2x.png"
+      
+  floyd:
+    name: "Floyd"
+    custom_css: "floyd"
+    quote: "I've never had to say 'no' to my product team. I can customize Solidus to do anything they want."
+    author_name: "Jacky Giang"
+    author_role: "Head of Technology at Floyd"
+    url: https://floyddetroit.com/
+    logo: "floyd.svg"
+    placeholder_img: "floyd_placeholder@2x.jpg"
+    main_img:
+      default_img: "floyd@1x.jpg"
+      retina_img: "floyd@2x.jpg"
+    author_img:
+      default_img: "jacky-giang.png"
+      retina_img: "jacky-giang@2x.png"
+      
+  glossier:
+    name: "Glossier"
+    custom_css: "glossier"
+    quote: "If you love the joy baked into the Ruby programming language and need to sell products, Solidus should be on the forefront of your radar. Thoughtful refactoring goes into the codebase daily, the community is exceptionally friendly and building a product that sells goods couldn't be easier."
+    author_name: "Braden Douglass"
+    author_role: "Senior Software Engineer"
+    url: https://www.glossier.com/
+    logo: "glossier.svg"
+    placeholder_img: "glossier_placeholder@2x.jpg"
+    main_img:
+      default_img: "glossier@1x.jpg"
+      retina_img: "glossier@2x.jpg"
+    author_img:
+      default_img: "braden-douglass.png"
+      retina_img: "braden-douglass@2x.png"

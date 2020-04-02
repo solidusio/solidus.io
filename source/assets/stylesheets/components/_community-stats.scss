@@ -1,0 +1,224 @@
+.community-stats {
+  color: $white;
+  text-align: center;
+  float: left;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  border-radius: 50%;
+
+  &-inner {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60%;
+  }
+
+  &-figure {
+    margin: 0 0 10px 0;
+  }
+
+  .isvg {
+    width: 50px;
+    height: 50px;
+  }
+
+  &-count {
+    font-size: $h2-mobile-font-size;
+    font-weight: $headings-font-weight;
+  }
+
+  &-title {
+    font-size: $font-size-xs;
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 190px;
+    width: 190px;
+
+    .community-stats-inner {
+      height: 70%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 250px;
+    width: 250px;
+
+    .community-stats-inner {
+      height: 50%;
+    }
+
+    .community-stats-count {
+      font-size: $h1-mobile-font-size;
+    }
+
+    .community-stats-title {
+      font-size: $font-size-sm;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 300px;
+    width: 300px;
+
+    .community-stats-inner {
+      height: 50%;
+    }
+  }
+
+  &-open-collective {
+    background-color: $blue;
+    margin-top: 30px;
+    clear: left;
+  }
+
+  &-slack, &-contributors {
+    width: 150px;
+    height: 150px;
+    float: right;
+
+    .community-stats-inner {
+      height: 70%;
+    }
+
+    .community-stats-count {
+      font-size: $h2-mobile-font-size;
+    }
+
+    .community-stats-title {
+      font-size: $font-size-xs;
+    }
+
+    .isvg {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 200px;
+      width: 200px;
+
+      .community-stats-inner {
+        height: 60%;
+      }
+
+      .isvg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 250px;
+      width: 250px;
+      margin-left: 40px;
+      margin-top: 60px;
+
+      .community-stats-inner {
+        height: 50%;
+      }
+
+      .isvg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+// Circle with drawing border animation
+// https://stackoverflow.com/questions/26807610/css-only-animate-draw-circle-with-border-radius-and-transparent-background/28866340
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-halfclip {
+  width: 50%;
+  height: 100%;
+  right: 0px;
+  position: absolute;
+  overflow: hidden;
+  transform-origin: left center;
+
+  .aos-animate & {
+    animation: cliprotate 2s 1;
+    transform: rotate(180deg);
+  }
+}
+
+.circle-halfcircle {
+  box-sizing: border-box;
+  height: 100%;
+  right: 0px;
+  position: absolute;
+  border: solid 3px transparent;
+  border-top-color: $blue;
+  border-left-color: $blue;
+  border-radius: 50%;
+}
+
+.circle-clipped {
+  width: 200%;
+  transform: rotate(-45deg);
+
+  .aos-animate & {
+    transform: rotate(135deg);
+    animation: rotate 1s linear 2;
+  }
+}
+
+.circle-fixed {
+  width: 100%;
+  transform: rotate(135deg);
+  opacity: 0;
+
+  .aos-animate & {
+    opacity: 1;
+    animation: showfixed 2s 1;
+  }
+}
+
+@keyframes cliprotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(0deg);
+  }
+  50.01% {
+      transform: rotate(180deg);
+  }
+  100% {
+      transform: rotate(180deg);
+  }
+}
+
+@keyframes showfixed {
+  0% {
+      opacity: 0;
+  }
+  49.99% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(-45deg);
+  }
+  100% {
+      transform: rotate(135deg);
+  }
+}
