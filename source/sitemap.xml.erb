@@ -1,0 +1,16 @@
+---
+layout: false
+directory_index: false
+---
+
+<% pages = sitemap.resources.reject{|r| r.is_a? Middleman::Sitemap::Extensions::RedirectResource }.find_all{|p| p.source_file.match(/\.html/) && !p.data.sitemap_noindex == true } %>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<% pages.each do |p| %>
+  <url>
+    <loc>https://solidus.io<%=p.url.gsub('/index.html','')%></loc>
+    <changefreq>monthly</changefreq>
+    <priority><%= p.data.sitemap_priority || 0.5 %></priority>
+  </url>
+<% end %>
+</urlset>
