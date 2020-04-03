@@ -27,6 +27,20 @@ $(function () {
         $(this).addClass('animated');
       }
     });
+    
+    var target = $('.count');
+    
+    if (target.data('start-counter') !== undefined) {
+      target.prop('Counter', 0).animate({
+        Counter: target.text()
+      }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+          $(this).text(Math.ceil(now));
+        }
+      });
+    }
   });
   
   // Tab on hover instead of click
