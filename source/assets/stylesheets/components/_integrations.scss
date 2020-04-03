@@ -9,35 +9,35 @@
 
 .integrations-navigation {
   background: $white;
-  font-weight: bold;
   padding: 26px 0;
   position: sticky;
   top: 0;
   border-bottom: 1px solid $gray-200;
   z-index: 1;
+  
+  @include media-breakpoint-down(sm) {
+    padding: 15px 0;
+  }
+  
+  .nav {
+    font-weight: $font-weight-bolder;
+    text-transform: uppercase;
+    font-size: $small-font-size;
+    
+    .nav-item {
+      margin-bottom: 0;
+    }
+    
+    .nav-link {
+      color: $gray-900;
 
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-align: center;
-
-    li {
-      margin: 0 10px;
-      display: inline;
-      text-transform: uppercase;
-      font-size: $small-font-size;
-
-      @include media-breakpoint-up(md){
-        margin: 0 40px;
+      &:hover {
+        color: $primary;
       }
-
-      a {
-        color: $gray-900;
-
-        &:hover {
-          color: $primary;
-        }
+      
+      @include media-breakpoint-down(sm) {
+        font-size: 85%;
+        padding: ($spacer / 2);
       }
     }
   }
