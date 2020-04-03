@@ -6,7 +6,13 @@
 
     <nav class="site-menu" role="navigation">
       <ul class="menu-items <%= nav_inactive(["features.html", "community.html", "blog/", "partners.html"]) %>">
-        <li class="nav-item <%= nav_active("features.html") %>"><a href="/features">Features</a></li>
+        <li class="nav-item dropdown">
+          <a class="dropdown-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Product</a>
+          <div class="dropdown-menu dropdown-menu--multi">
+            <a class="dropdown-item" href="/features">Features</a>
+            <a class="dropdown-item" href="/integrations">Integrations</a>
+          </div>
+        </li>
 	      <li class="nav-item <%= nav_active("community.html") %>"><a href="/community">Community</a></li>
         <li class="nav-item dropdown">
           <a class="dropdown-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Developers</a>
