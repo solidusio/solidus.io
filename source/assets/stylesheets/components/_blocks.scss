@@ -15,7 +15,7 @@
     transform: skewY(-9deg);
     &.intro {
       padding-bottom: 0;
-      transform: skewY(0);
+      transform: skewY(0deg);
       &::before {
         content: '';
         transform: skewY(-9deg);
@@ -37,6 +37,9 @@
         bottom: -200px;
         width: 100%;
         position: absolute;
+      }
+      > .content-wrapper {
+        transform: skewY(0deg);
       }
     }
     
