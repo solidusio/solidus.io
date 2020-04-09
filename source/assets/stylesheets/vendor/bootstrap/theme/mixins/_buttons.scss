@@ -19,6 +19,7 @@
     @include gradient-bg($hover-background);
     border-color: $hover-border;
     box-shadow: 0 0 4px 0 rgba(#000000, 0.4);
+    transform: translateY(-2px);
   }
 
   &:focus,
