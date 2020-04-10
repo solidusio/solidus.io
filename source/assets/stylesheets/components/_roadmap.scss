@@ -17,7 +17,7 @@
       background-position: center top;
       padding: 0 0 0 $spacer;
       min-height: 650px;
-      padding: 0;
+      padding: 0 $spacer;
     }
     
     @include media-breakpoint-up(lg) {
@@ -43,7 +43,12 @@
     
     &__link {
       position: relative;
-      @include button-variant($background: $green, $border: $green, $color: $white, $hover-background: darken($green, 15%), $hover-border: darken($green, 15%), $hover-color: $white, $active-background: darken($green, 15%), $active-border: darken($green, 15%), $active-color: $white);
+      backface-visibility: hidden;
+      min-width: 132px;
+      box-shadow: 0 0 16px 0 rgba(102,199,137,.5);
+      transition: all .5s cubic-bezier(.2,1,.3,1);
+      
+      @include button-variant($background: $green, $border: $green, $color: $gray-900, $hover-background: $white, $hover-border: $white, $hover-color: $gray-900, $active-background: $white, $active-border: $white, $active-color: $gray-900);
       @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius);
       
       @include media-breakpoint-up(sm) {
@@ -58,6 +63,25 @@
           background-position: bottom left;
           background-size: 100% auto;
         }  
+      }
+      
+      .arrow-fixed,
+      .arrow {
+        position: absolute;
+        bottom: -26px;
+        left: 50%;
+        margin-left: -(22px / 2);
+      }
+      
+      &:hover {
+        transition: all 1s cubic-bezier(.2,1,.3,1);
+        
+        .arrow-fixed {
+          animation: arrowFixedAnim 2.5s cubic-bezier(.2,1,.3,1) infinite;
+        }
+        .arrow {
+          animation: arrowAnim 2.5s cubic-bezier(.2,1,.3,1) infinite;
+        }
       }
     }
   }
@@ -186,5 +210,31 @@
         width: auto !important;
       }
     }
+  }
+}
+
+@keyframes arrowAnim {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-0.1rem);
+  }
+  100% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@keyframes arrowFixedAnim {
+  5% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
   }
 }
