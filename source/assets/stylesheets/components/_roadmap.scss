@@ -1,3 +1,83 @@
+.roadmap-hero {
+  &__anchorlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url("/assets/images/illustrations/roadmap-hero-sm.svg") no-repeat;
+    background-size: 75% auto;
+    background-position: center;
+    min-height: 600px;
+    padding: ($spacer * 6) 0 ($spacer * 3);
+    
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      background: url("/assets/images/illustrations/roadmap-hero.svg") no-repeat;
+      background-size: 100% auto;
+      background-position: center top;
+      padding: 0 0 0 $spacer;
+      min-height: 650px;
+      padding: 0;
+    }
+    
+    @include media-breakpoint-up(lg) {
+      min-height: 500px;
+    }
+  }
+  
+  &__anchorlist__item {
+    @include media-breakpoint-up(sm) {
+      align-self: flex-end;
+      margin-bottom: 0;
+      
+      &:nth-of-type(2){
+        margin-bottom: $spacer * 3;
+      }
+      &:nth-of-type(3){
+        margin-bottom: $spacer * 6;
+      }
+      &:nth-of-type(4){
+        margin-bottom: $spacer * 9;
+      }
+    }
+    
+    &__link {
+      position: relative;
+      @include button-variant($background: $green, $border: $green, $color: $white, $hover-background: darken($green, 15%), $hover-border: darken($green, 15%), $hover-color: $white, $active-background: darken($green, 15%), $active-border: darken($green, 15%), $active-color: $white);
+      @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius);
+      
+      @include media-breakpoint-up(sm) {
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: $spacer * 3;
+          left: 0;
+          width: 2px;
+          height: 343px;
+          background: url("/assets/images/illustrations/roadmap-line.svg") no-repeat;
+          background-position: bottom left;
+          background-size: 100% auto;
+        }  
+      }
+    }
+  }
+}
+
+.roadmap-logo {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  width: 50%;
+  height: auto;
+  z-index: 1;
+  @include media-breakpoint-up(sm) {
+    width: 186px;
+  }
+  @include media-breakpoint-up(lg) {
+    top: -10%;
+  }
+}
+
 .roadmap-use-case {
   &__image {
     margin-bottom: 30px;

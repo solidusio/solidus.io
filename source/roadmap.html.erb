@@ -5,7 +5,7 @@ title: Roadmap
 <div class="roadmap-hero content-block">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md">
+      <div class="col-lg">
         <div class="pr-md-6 mb-3">
           <h1 class="title">See what’s next for Solidus</h1>
           <p class="lead mb-md-6">
@@ -14,14 +14,28 @@ title: Roadmap
           <%= partial "partials/newsletter_form" %>
         </div>
       </div>
-      <div class="col-md">
-        <img src="<%= image_path('https://dummyimage.com/450x343/f0f0f0/ffffff.jpg') %>" class="img-fluid rounded" alt="">
+      <div class="col-lg">
+        <%= inline_svg("illustrations/roadmap-solidus-logo.svg", class: "roadmap-logo")%>
+        <div class="d-flex roadmap-hero__anchorlist">
+          <div class="roadmap-hero__anchorlist__item">
+            <a href="#devs" class="btn roadmap-hero__anchorlist__item__link">Developers</a>
+          </div>
+          <div class="roadmap-hero__anchorlist__item">
+            <a href="#customers" class="btn roadmap-hero__anchorlist__item__link">Customers</a>
+          </div>
+          <div class="roadmap-hero__anchorlist__item">
+            <a href="#marketers" class="btn roadmap-hero__anchorlist__item__link">Marketers</a>
+          </div>
+          <div class="roadmap-hero__anchorlist__item">
+            <a href="#store-admins" class="btn roadmap-hero__anchorlist__item__link">Store Admins</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="roadmap-use-case content-block content-block-gray-100" data-aos="fade">
+<div class="roadmap-use-case content-block content-block-gray-100" id="devs">
   <div class="container">
     <div class="row"> 
       <div class="roadmap-use-case__image col-md">
@@ -52,7 +66,7 @@ title: Roadmap
   </div>
 </div>
 
-<div class="roadmap-use-case content-block content-block-gray-100" data-aos="fade">
+<div class="roadmap-use-case content-block content-block-gray-100" id="customers" data-aos="fade">
   <div class="container">
     <div class="row"> 
       <div class="roadmap-use-case__image col-md order-md-2">
@@ -88,7 +102,7 @@ title: Roadmap
   </div>
 </div>
 
-<div class="roadmap-use-case content-block content-block-gray-100" data-aos="fade">
+<div class="roadmap-use-case content-block content-block-gray-100" id="marketers" data-aos="fade">
   <div class="container">
     <div class="row"> 
       <div class="roadmap-use-case__image col-md">
@@ -126,7 +140,7 @@ title: Roadmap
   </div>
 </div>
 
-<div class="roadmap-use-case content-block content-block-gray-100" data-aos="fade">
+<div class="roadmap-use-case content-block content-block-gray-100" id="store-admins" data-aos="fade">
   <div class="container">
     <div class="row">
       <div class="roadmap-use-case__image col-md order-md-2">
