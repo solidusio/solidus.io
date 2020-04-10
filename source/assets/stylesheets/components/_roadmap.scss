@@ -188,10 +188,14 @@
 
       h6 {
         position: relative;
+        padding-right: 44px;
+        @include media-breakpoint-down(sm) {
+            min-height: 44px + 10px;
+            padding-top: 11px;
+        }
 
         &:after {
           content: '';
-          display: block;
           width: 44px;
           height: 44px;
           position: absolute;
