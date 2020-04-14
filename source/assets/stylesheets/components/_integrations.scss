@@ -10,13 +10,17 @@
 .integrations-navigation {
   background: $white;
   padding: 26px 0;
-  position: sticky;
   top: 0;
   border-bottom: 1px solid $gray-200;
-  z-index: 1;
+
   
   @include media-breakpoint-down(sm) {
     padding: 15px 0;
+  }
+  
+  @include media-breakpoint-up(lg) {
+    z-index: $zindex-fixed + 1;
+    position: sticky;
   }
   
   .nav {
