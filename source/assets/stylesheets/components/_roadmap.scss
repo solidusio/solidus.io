@@ -206,12 +206,20 @@
           background-position: center;
           border-radius: 50px;
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+          transition: all 130ms ease;
         }
       }
       
       p {
         display: none;
         width: auto !important;
+      }
+      
+      &.uncollapsed {
+        h6::after {
+          background: url("/assets/images/icons/minus.svg") no-repeat;
+          background-position: center;
+        }
       }
     }
   }
