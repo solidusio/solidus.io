@@ -1,0 +1,51 @@
+.hero-block {
+  position: relative;
+  z-index: 1000;
+  
+  .hero-image-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .hero-image {
+      position: absolute;
+    }
+    
+    &.homepage-hero {
+      .hero-image-wrapper {
+        min-height: 400px;
+      }
+      .hero-image {
+        right: 0;
+        top: -100px;
+        width: 630px;
+      }
+    }
+    
+    &.integrations-hero {
+      .hero-image {
+        right: 0;
+        top: -250px;
+        width: 630px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &.homepage-hero {
+      .hero-image {
+        right: -50px;
+        top: -200px;
+        width: 830px;
+      }
+    }
+  }
+  
+  @include media-breakpoint-down(sm) {
+    .btn {
+      display: block;
+      width: 100%;
+    }
+  }
+}

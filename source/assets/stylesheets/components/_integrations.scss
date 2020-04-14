@@ -1,0 +1,140 @@
+.integrations-hero {
+  background: $blue-darkest;
+  color: $white;
+
+  h1 {
+    color: $white;
+  }
+}
+
+.integrations-navigation {
+  background: $white;
+  padding: 26px 0;
+  top: 0;
+  border-bottom: 1px solid $gray-200;
+
+  
+  @include media-breakpoint-down(sm) {
+    padding: 15px 0;
+  }
+  
+  @include media-breakpoint-up(lg) {
+    z-index: $zindex-fixed + 1;
+    position: sticky;
+  }
+  
+  .nav {
+    font-weight: $font-weight-bolder;
+    text-transform: uppercase;
+    font-size: $small-font-size;
+    
+    .nav-item {
+      margin-bottom: 0;
+    }
+    
+    .nav-link {
+      color: $gray-900;
+
+      &:hover {
+        color: $primary;
+      }
+      
+      @include media-breakpoint-down(sm) {
+        font-size: 85%;
+        padding: ($spacer / 2);
+      }
+    }
+  }
+}
+
+.integration {
+  &__list {
+    margin-top: 30px;
+
+    @include media-breakpoint-up(md){
+      margin-top: 0;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border: 1px solid $gray-200;
+      border-radius: 3px;
+      background: $white;
+      color: $gray-900;
+
+      &:hover {
+        box-shadow: 0 25px 30px 0 rgba(0,0,0,.03), 0 8px 8px 0 rgba(0,0,0,.033);
+      }
+
+      &__image {
+        padding: (30px / 2);
+        width: 150px;
+        
+        @include media-breakpoint-up(md) {
+          padding: 30px;
+        }
+      }
+
+      &__description {
+        border-left: 1px solid $gray-200;
+        padding: 15px;
+        margin: 10px 0;
+        @include media-breakpoint-up(md) {
+          padding: 20px 30px;
+        }
+        @include media-breakpoint-down(md) {
+          width: 80%;
+        }
+
+        h4 {
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: $small-font-size;
+        }
+      }
+    }
+  }
+  
+  .isvg.group {
+    width: 40px;
+    height: 40px;
+    margin-bottom: $spacer;
+    
+    @include media-breakpoint-up(lg) {
+      width: 60px;
+      height: 60px;
+      margin-bottom: $spacer * 2;
+    }
+  }
+}
+
+.integrations-cta {
+  margin-bottom: 50px;
+
+  @include media-breakpoint-up(md){
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .btn {
+    margin-top: $spacer;
+    display: block;
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+    }
+    
+    & ~ .btn {
+      @include media-breakpoint-down(lg) {
+        margin-left: 0;
+      }
+    }
+  }
+}

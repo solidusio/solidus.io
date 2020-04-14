@@ -4,44 +4,6 @@
   overflow: hidden;
 }
 
-.homepage-hero {
-  position: relative;
-  z-index: 1000;
-  
-  .hero-image-wrapper {
-    position: relative;
-    width: 100%;
-  }
-
-  @include media-breakpoint-up(lg) {
-    .hero-image-wrapper {
-      min-height: 400px;
-    }
-    .hero-image {
-      position: absolute;
-      right: 0;
-      top: -100px;
-      width: 630px;
-    }
-  }
-
-  @include media-breakpoint-up(xl) {
-    .hero-image {
-      position: absolute;
-      right: -50px;
-      top: -200px;
-      width: 830px;
-    }
-  }
-  
-  @include media-breakpoint-down(sm) {
-    .btn {
-      display: block;
-      width: 100%;
-    }
-  }
-}
-
 .testimonials {
   .carousel-content {
     position: relative;
