@@ -87,6 +87,18 @@
       }
     }
   }
+  
+  .newsletter-form {
+    .button {
+      background-color: $primary;
+      color: $white;
+      
+      &:hover {
+        background-color: $link-hover-color;
+        color: $white;
+      }
+    }
+  }
 }
 
 .roadmap-logo {

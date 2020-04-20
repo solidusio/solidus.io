@@ -189,18 +189,17 @@
     display: flex;
 
     .email {
-      padding-top: 11px;
-      padding-bottom: 11px;
-      max-width: 280px;
-      font-size: $font-size-xs;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 10px;
     }
 
     .button {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
-      padding-left: 1em;  
+      padding-left: 1em;
       padding-right: 1em;
-      cursor: pointer;
+      
       &:hover {
         transform: none;
       }

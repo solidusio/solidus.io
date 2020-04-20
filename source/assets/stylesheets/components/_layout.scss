@@ -127,38 +127,23 @@ body{
       }
     }
 
-    .footer-newsletter-form {
+    .newsletter-form {
       margin-top: 50px;
 
       @include media-breakpoint-up(lg) {
         margin-top: 0;
       }
-
+      
       label {
-        margin-bottom: 15px;
-        font-size: $font-size-sm;
+        font-size: $font-size-xs;
       }
+      
+      .email {
+        background: $gray-900;
+        color: $white;
 
-      div {
-        display: flex;
-
-        .email {
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-          padding: 10px;
-          background: $gray-900;
-          color: $white;
-
-          &::placeholder {
-            color: $white-05;
-          }
-        }
-
-        .button {
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0;
-          padding-left: 1em;  
-          padding-right: 1em;
+        &::placeholder {
+          color: $white-05;
         }
       }
     }
