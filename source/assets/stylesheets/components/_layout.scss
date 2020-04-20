@@ -42,25 +42,39 @@ body{
   }
 }
 
-.site-header--top.site-header--blue {
-  @include media-breakpoint-up(lg) {
-    background: $blue-darkest;
-    border-color: rgba(255, 255, 255, 0.15);
+.site-header--top {
+  &.site-header--blue,
+  &.site-header--dark {
+    @include media-breakpoint-up(lg) {
+      border-color: rgba(255, 255, 255, 0.15);
 
-    .site-logo {
-      .isvg {
-        .solidus-logo {
-          fill: $white;
+      .site-logo {
+        .isvg {
+          .solidus-logo {
+            fill: $white;
+          }
         }
       }
-    }
 
-    .site-menu .menu-items.no-active li > a {
-      color: $white;
-    }
+      .site-menu .menu-items.no-active li > a {
+        color: $white;
+      }
 
-    .btn {
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      .btn {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  
+  &.site-header--blue {
+    @include media-breakpoint-up(lg) {
+      background: $blue-darkest;
+    }
+  }
+
+  &.site-header--dark {
+    @include media-breakpoint-up(lg) {
+      background: $gray-900;
     }
   }
 }

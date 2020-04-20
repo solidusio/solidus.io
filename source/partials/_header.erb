@@ -1,4 +1,4 @@
-<header class="site-header site-header--fixed <%= "site-header--blue" if current_page.data.title == 'Integrations' %>">
+<header class="site-header site-header--fixed <%= "site-header--blue" if current_page.data.title == 'Integrations' %> <%= "site-header--dark" if current_page.data.title == 'Roadmap' %>">
   <div class="navbar container">
     <div class="logo-wrapper">
       <a class="site-logo" href="/"><%= inline_svg("logo.svg", class: "isvg") %></a>

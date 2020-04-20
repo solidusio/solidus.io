@@ -75,6 +75,8 @@
       
       &:hover {
         transition: all 1s cubic-bezier(.2,1,.3,1);
+        // Reset the default animation on buttons on hover
+        transform: translateY(0);
         
         .arrow-fixed {
           animation: arrowFixedAnim 2.5s cubic-bezier(.2,1,.3,1) infinite;
