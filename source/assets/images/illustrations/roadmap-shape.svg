@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 734.28 329.21">
   <defs>
-    <linearGradient id="e" x1="317.06" y1="56.77" x2="430.59" y2="56.77" gradientUnits="userSpaceOnUse">
+    <linearGradient id="e" x1="355.37" y1="97.2" x2="468.9" y2="97.2" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#66c789" stop-opacity=".5"/>
       <stop offset="1" stop-color="#66c789" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="f" x1="355.08" y1="75.97" x2="462.25" y2="151.02" gradientUnits="userSpaceOnUse">
+    <linearGradient id="f" x1="355.09" y1="75.96" x2="462.24" y2="150.99" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#66c789" stop-opacity="0"/>
       <stop offset="1" stop-color="#66c789" stop-opacity=".5"/>
     </linearGradient>
@@ -25,7 +25,7 @@
       <stop offset="1" stop-color="#3c76f0"/>
     </linearGradient>
     <linearGradient id="k" x1="-737.59" y1="-373.44" x2="-736.73" y2="-373.48" xlink:href="#c"/>
-    <clipPath id="d" transform="translate(-38.31 -40.43)">
+    <clipPath id="d" transform="translate(-38.31 -40.44)">
       <path fill="none" d="M0 0h696.52v412.86H0z"/>
     </clipPath>
   </defs>
@@ -116,8 +116,6 @@
     <circle cx="158.46" cy="99.87" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="163.22" cy="99.87" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="167.98" cy="99.87" r="1.02" fill="#fff" opacity=".5"/>
-    <circle cx="34.69" cy="99.98" r="1.35" fill="#fff"/>
-    <path d="M46.94 102.21a.77.77 0 11.76.76.76.76 0 01-.76-.76zM20.63 101.95l4.28-2.97-4.71-2.22.43 5.19zM28.91 102.24l2.6-4.51H26.3l2.61 4.51zM39.43 99.58h4.51v.9h-4.51z" fill="#fff"/>
     <circle cx="33.34" cy="78.34" r="1.35" fill="#3e4b56"/>
     <circle cx="45.58" cy="78.34" r="1.35" fill="#3e4b56"/>
     <path fill="#3e4b56" d="M25.85 80.31l4.28-2.97-4.72-2.22.44 5.19zM20.56 80.6l2.6-4.51h-5.21l2.61 4.51zM38.07 77.93h4.51v.9h-4.51z"/>
@@ -126,31 +124,21 @@
     <circle cx="274.91" cy="99.87" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="279.67" cy="99.87" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="284.42" cy="99.87" r="1.02" fill="#fff" opacity=".5"/>
-    <circle cx="183.36" cy="99.98" r="1.35" fill="#fff"/>
-    <path d="M201.39 102.21a.77.77 0 11.76.76.76.76 0 01-.76-.76zM193.88 99.58h4.51v.9h-4.51zM189.14 102.24l2.61-4.51h-5.22l2.61 4.51z" fill="#fff"/>
     <rect x="62.76" y="132.04" width="112.38" height="16.24" rx="3" fill="#1665d8"/>
     <path d="M94.48 132.08h77.66a3 3 0 013 3v10.24a3 3 0 01-3 3H94.48v-16.24z" fill="#fff" opacity=".5"/>
     <circle cx="160.53" cy="140.5" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="165.29" cy="140.5" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="170.05" cy="140.5" r="1.02" fill="#fff" opacity=".5"/>
-    <circle cx="81.87" cy="141.35" r="1.35" fill="#fff"/>
-    <path fill="#fff" d="M66.84 140.85h4.51v.9h-4.51zM76.09 139.09l-2.61 4.51h5.21l-2.6-4.51z"/>
     <rect x="291.06" y="216.41" width="112.38" height="16.24" rx="3" fill="#6758f3"/>
     <path d="M322.78 216.46h77.66a3 3 0 013 3v10.24a3 3 0 01-3 3h-77.66v-16.24z" fill="#fff" opacity=".5"/>
     <circle cx="388.83" cy="224.87" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="393.59" cy="224.87" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="398.35" cy="224.87" r="1.02" fill="#fff" opacity=".5"/>
-    <circle cx="296.5" cy="225.72" r="1.35" fill="#fff"/>
-    <path fill="#fff" d="M307.01 225.22h4.51v.9h-4.51zM302.28 223.46l2.6 4.51h-5.21l2.61-4.51z"/>
     <rect x="46.94" y="111.75" width="225.32" height="16.24" rx="3" fill="#1665d8"/>
     <path d="M208.18 111.79h61.07a3 3 0 013 3V125a3 3 0 01-3 3h-61.07v-16.21z" fill="#fff" opacity=".5"/>
     <circle cx="257.65" cy="120.2" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="262.41" cy="120.2" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="267.17" cy="120.2" r="1.02" fill="#fff" opacity=".5"/>
-    <circle cx="66.84" cy="120.33" r="1.35" fill="#fff"/>
-    <path fill="#fff" d="M51.81 119.83h4.51v.9h-4.51zM61.06 118.07l-2.61 4.51h5.21l-2.6-4.51z"/>
-    <circle cx="85.23" cy="120.85" r="1.35" fill="#fff"/>
-    <path d="M97.48 123.08a.77.77 0 11.77.76.76.76 0 01-.77-.76zM71.17 122.82l4.28-2.97-4.71-2.22.43 5.19zM79.45 123.11l2.61-4.51h-5.21l2.6 4.51zM89.97 120.44h4.51v.9h-4.51z" fill="#fff"/>
     <rect x="13.96" y="175.33" width="161.07" height="16.24" rx="3" fill="#6758f3"/>
     <circle cx="158.46" cy="183.79" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="163.22" cy="183.79" r="1.02" fill="#fff" opacity=".5"/>
@@ -164,70 +152,42 @@
     <circle cx="306.38" cy="204.12" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="311.14" cy="204.12" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="315.9" cy="204.12" r="1.02" fill="#fff" opacity=".5"/>
-    <circle cx="213.92" cy="205.06" r="1.35" fill="#fff"/>
-    <path fill="#fff" d="M224.44 204.65h4.51v.9h-4.51zM219.7 207.32l2.61-4.51h-5.21l2.6 4.51z"/>
-    <circle cx="195.53" cy="204.54" r="1.35" fill="#fff"/>
-    <path d="M183.29 202.32a.77.77 0 11-.77-.76.76.76 0 01.77.76zM209.59 202.56l-4.28 2.98 4.71 2.22-.43-5.2zM201.31 202.28l-2.6 4.51h5.21l-2.61-4.51zM186.28 204.04h4.51v.9h-4.51z" fill="#fff"/>
     <rect x="273.88" y="111.75" width="127.99" height="16.24" rx="3" fill="#1665d8"/>
     <rect x="273.88" y="111.79" width="128.06" height="16.24" rx="3" fill="#fff" opacity=".5"/>
     <circle cx="387.34" cy="120.2" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="392.1" cy="120.2" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="396.86" cy="120.2" r="1.02" fill="#fff" opacity=".5"/>
-    <g opacity=".5" fill="#fff">
-      <circle cx="310.93" cy="121.14" r="1.35"/>
-      <path d="M321.45 120.73h4.51v.9h-4.51zM316.71 123.4l2.61-4.51h-5.21l2.6 4.51z"/>
-      <circle cx="292.54" cy="120.62" r="1.35"/>
-      <path d="M280.29 118.4a.76.76 0 01-.76.77.77.77 0 110-1.53.75.75 0 01.76.76zM306.6 118.64l-4.28 2.98 4.71 2.22-.43-5.2zM298.32 118.36l-2.61 4.51h5.21l-2.6-4.51zM283.29 120.12h4.51v.9h-4.51z"/>
-    </g>
     <rect x="13.96" y="259.25" width="161.07" height="16.24" rx="3" fill="#f6ab2f"/>
     <circle cx="158.46" cy="267.71" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="163.22" cy="267.71" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="167.98" cy="267.71" r="1.02" fill="#fff" opacity=".5"/>
-    <circle cx="34.69" cy="267.82" r="1.35" fill="#fff"/>
-    <path d="M46.94 270.05a.77.77 0 011.53 0 .77.77 0 11-1.53 0zM20.63 269.8l4.28-2.98-4.71-2.21.43 5.19zM28.91 270.08l2.6-4.51H26.3l2.61 4.51zM39.43 267.42h4.51v.9h-4.51z" fill="#fff"/>
     <rect x="177.13" y="259.25" width="144.09" height="16.24" rx="3" fill="#f6ab2f"/>
     <path d="M258.5 259.47h59.26a3 3 0 013 3v10.24a3 3 0 01-3 3H258.5v-16.24z" fill="#fff" opacity=".5"/>
     <circle cx="304.23" cy="267.71" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="308.99" cy="267.71" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="313.75" cy="267.71" r="1.02" fill="#fff" opacity=".5"/>
-    <circle cx="183.36" cy="267.82" r="1.35" fill="#fff"/>
-    <path d="M201.39 270.05a.77.77 0 011.53 0 .77.77 0 11-1.53 0zM193.88 267.42h4.51v.9h-4.51zM189.14 270.08l2.61-4.51h-5.22l2.61 4.51z" fill="#fff"/>
     <rect x="86.64" y="279.59" width="104.18" height="16.24" rx="3" fill="#f6ab2f"/>
     <path d="M127 279.63h61a3 3 0 013 3v10.24a3 3 0 01-3 3h-61v-16.24z" fill="#fff" opacity=".5"/>
     <circle cx="176.43" cy="288.04" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="181.19" cy="288.04" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="185.95" cy="288.04" r="1.02" fill="#fff" opacity=".5"/>
-    <circle cx="106.55" cy="288.17" r="1.35" fill="#fff"/>
-    <path fill="#fff" d="M91.52 287.67h4.51v.9h-4.51zM100.76 285.91l-2.6 4.51h5.21l-2.61-4.51z"/>
-    <circle cx="124.94" cy="288.69" r="1.35" fill="#fff"/>
-    <path d="M137.19 290.92a.76.76 0 01.76-.77.77.77 0 110 1.53.75.75 0 01-.76-.76zM110.88 290.66l4.28-2.97-4.72-2.22.44 5.19zM119.16 290.95l2.6-4.51h-5.21l2.61 4.51zM129.67 288.28h4.51v.9h-4.51z" fill="#fff"/>
     <rect x="192.67" y="279.59" width="208.28" height="16.24" rx="3" fill="#f6ab2f"/>
     <rect x="192.67" y="279.63" width="208.41" height="16.24" rx="3" fill="#fff" opacity=".5"/>
     <circle cx="385.09" cy="288.04" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="389.85" cy="288.04" r="1.02" fill="#fff" opacity=".5"/>
     <circle cx="394.61" cy="288.04" r="1.02" fill="#fff" opacity=".5"/>
-    <g opacity=".5" fill="#fff">
-      <circle cx="212.58" cy="288.98" r="1.35"/>
-      <path d="M197.55 288.57h4.51v.9h-4.51zM206.79 291.24l-2.6-4.51h5.21l-2.61 4.51z"/>
-      <circle cx="230.97" cy="288.46" r="1.35"/>
-      <path d="M243.98 285.48a.77.77 0 11-.76.76.76.76 0 01.76-.76zM216.91 286.49l4.28 2.97-4.72 2.22.44-5.19zM225.19 286.2l2.6 4.51h-5.21l2.61-4.51zM235.71 287.96h4.51v.9h-4.51z"/>
-    </g>
     <path fill="none" stroke="#ededed" stroke-miterlimit="10" stroke-width=".75" d="M58.45 77.93h347.26"/>
-    <path d="M13.06 79l-1.32 1.32L10.42 79zM10.42 77.16l1.32-1.32 1.32 1.32z" fill="#ededed"/>
+    <path d="M13.06 78.99l-1.32 1.32-1.32-1.32zM10.42 77.15l1.32-1.32 1.32 1.32z" fill="#ededed"/>
     <circle cx="33.34" cy="245.73" r="1.35" fill="#3e4b56"/>
     <circle cx="45.58" cy="245.73" r="1.35" fill="#3e4b56"/>
     <path fill="#3e4b56" d="M25.85 247.7l4.28-2.97-4.72-2.22.44 5.19zM20.56 247.99l2.6-4.51h-5.21l2.61 4.51zM38.07 245.32h4.51v.9h-4.51z"/>
     <path fill="none" stroke="#ededed" stroke-miterlimit="10" stroke-width=".75" d="M58.45 245.32h347.26M.42 302.07h416"/>
-    <path d="M13.06 246.39l-1.32 1.32-1.32-1.32zM10.42 244.57l1.32-1.32 1.32 1.32z" fill="#ededed"/>
+    <path d="M13.06 246.38l-1.32 1.32-1.32-1.32zM10.42 244.56l1.32-1.32 1.32 1.32z" fill="#ededed"/>
     <circle cx="19.37" cy="162.46" r="1.35" fill="#3e4b56"/>
     <circle cx="42.38" cy="162.46" r="1.35" fill="#3e4b56"/>
     <path fill="#3e4b56" d="M23.35 163.3l5.18-.59-3.09-4.19-2.09 4.78zM32.56 164.43l1.44-5.01-5.05 1.26 3.61 3.75zM38.05 163.53l.75-3.59-3.49 1.15 2.74 2.44z"/>
     <path fill="none" stroke="#ededed" stroke-miterlimit="10" stroke-width=".75" d="M58.45 161.85h347.26"/>
-    <path d="M13.06 162.92l-1.32 1.32-1.32-1.32zM10.42 161.08l1.32-1.32 1.32 1.32z" fill="#ededed"/>
-    <circle cx="197.12" cy="183.9" r="1.35" fill="#fff"/>
-    <path d="M209.36 186.13a.77.77 0 011.54 0 .77.77 0 01-1.54 0zM183.06 185.88l4.28-2.98-4.72-2.22.44 5.2zM191.33 186.16l2.61-4.51h-5.21l2.6 4.51zM201.85 183.5h4.51v.9h-4.51z" fill="#fff"/>
-    <circle cx="21.83" cy="183.9" r="1.35" fill="#fff"/>
-    <path d="M39.86 186.13a.77.77 0 11.77.77.76.76 0 01-.77-.77zM32.35 183.5h4.51v.9h-4.51zM27.61 186.16l2.61-4.51h-5.21l2.6 4.51z" fill="#fff"/>
+    <path d="M13.06 162.91l-1.32 1.32-1.32-1.32zM10.42 161.07l1.32-1.32 1.32 1.32z" fill="#ededed"/>
     <circle cx="10.8" cy="311.25" r="3.16" fill="#dbdbdb"/>
     <circle cx="43.29" cy="311.25" r="3.16" fill="#dbdbdb"/>
     <circle cx="77.13" cy="311.25" r="3.16" fill="#dbdbdb"/>
@@ -248,25 +208,23 @@
     <path fill="none" stroke="#24282f" stroke-miterlimit="10" stroke-width=".56" stroke-dasharray="2.69 2.69" d="M135.11 90.02V149"/>
     <path fill="none" stroke="#24282f" stroke-miterlimit="10" stroke-width=".56" d="M135.11 150.08v1.04"/>
     <rect x="123.96" y="305.84" width="21.84" height="9.93" rx="2.8" fill="#24282f"/>
-    <text transform="translate(347.25 59.59)" font-size="12.24" fill="#24282f" font-family="Inter-Bold, Inter" font-weight="700">
-      <tspan letter-spacing="-.01em">R</tspan><tspan x="7.92" y="0">oadmap</tspan>
-    </text>
+    <path d="M348.02 59.56v-8.9h3.51a3.29 3.29 0 012.36.79 2.78 2.78 0 01.8 2.11 2.87 2.87 0 01-.4 1.56 2.47 2.47 0 01-1.17 1l1.89 3.46h-2.08l-1.68-3.16h-1.38v3.14zm1.88-4.67h1.28c1.07 0 1.61-.44 1.61-1.33s-.54-1.36-1.62-1.36h-1.27zM358.92 59.72a3.39 3.39 0 01-1.75-.44 2.85 2.85 0 01-1.13-1.2 3.86 3.86 0 01-.4-1.81 3.82 3.82 0 01.4-1.8 2.87 2.87 0 011.13-1.21 3.7 3.7 0 013.5 0 3 3 0 011.14 1.21 4 4 0 01.4 1.8 4 4 0 01-.4 1.81 2.93 2.93 0 01-1.14 1.2 3.37 3.37 0 01-1.75.44zm0-1.44a1.15 1.15 0 001-.57 3.18 3.18 0 000-2.9 1.15 1.15 0 00-1-.57 1.17 1.17 0 00-1.06.57 3.18 3.18 0 000 2.9 1.17 1.17 0 001.07.57zM365.32 59.71a2.44 2.44 0 01-1.59-.5 2.1 2.1 0 01-.28-2.66 2.09 2.09 0 01.93-.62 4.8 4.8 0 011.23-.26 8.44 8.44 0 001.24-.19c.25-.06.38-.2.38-.41a.82.82 0 00-.26-.64 1.11 1.11 0 00-.74-.22 1.34 1.34 0 00-.79.21 1 1 0 00-.39.56l-1.71-.14a2.25 2.25 0 011-1.45 3.26 3.26 0 011.95-.54 3.94 3.94 0 011.39.24 2.4 2.4 0 011.05.73 2 2 0 01.4 1.29v4.45h-1.76v-.9h-.05a2 2 0 01-.73.76 2.37 2.37 0 01-1.27.29zm.53-1.27a1.43 1.43 0 001-.36 1.15 1.15 0 00.39-.88v-.71a.93.93 0 01-.34.13l-.49.1-.46.07a1.84 1.84 0 00-.78.28.66.66 0 00-.3.59.65.65 0 00.28.58 1.16 1.16 0 00.7.2zM372.97 59.69a2.51 2.51 0 01-1.37-.39 2.67 2.67 0 01-1-1.16 4.41 4.41 0 01-.36-1.88 4.31 4.31 0 01.37-1.91 2.71 2.71 0 011-1.14 2.47 2.47 0 011.35-.39 2.18 2.18 0 01.94.19 2.11 2.11 0 01.61.47 2.64 2.64 0 01.35.55h.06v-3.34h1.84v8.87h-1.82v-1h-.08a2.53 2.53 0 01-.37.55 1.9 1.9 0 01-.61.45 2.13 2.13 0 01-.91.13zm.59-1.47a1.19 1.19 0 001-.54 2.55 2.55 0 00.36-1.43 2.47 2.47 0 00-.36-1.42 1.17 1.17 0 00-1-.53 1.16 1.16 0 00-1 .54 2.5 2.5 0 00-.36 1.41 2.53 2.53 0 00.36 1.42 1.16 1.16 0 001 .55zM378.29 59.56v-6.65h1.76v1.18h.08a1.87 1.87 0 01.7-.93 2 2 0 011.16-.34 2 2 0 011.17.35 1.56 1.56 0 01.64.92h.07a1.85 1.85 0 01.74-.92 2.34 2.34 0 011.28-.35 2 2 0 011.51.6 2.28 2.28 0 01.59 1.68v4.46h-1.85v-4.1a1.1 1.1 0 00-.29-.83 1 1 0 00-.74-.28 1 1 0 00-.79.32 1.24 1.24 0 00-.28.84v4.05h-1.8v-4.14a1.08 1.08 0 00-.28-.78 1 1 0 00-.73-.29 1 1 0 00-.78.34 1.24 1.24 0 00-.31.89v4zM391.35 59.71a2.41 2.41 0 01-1.58-.5 1.78 1.78 0 01-.63-1.49 1.74 1.74 0 01.35-1.16 2 2 0 01.92-.62 4.8 4.8 0 011.23-.26 8.64 8.64 0 001.25-.19.42.42 0 00.37-.41.82.82 0 00-.26-.64 1.08 1.08 0 00-.73-.22 1.38 1.38 0 00-.8.21 1.1 1.1 0 00-.39.56l-1.71-.14a2.29 2.29 0 01.95-1.45 3.29 3.29 0 012-.54 4 4 0 011.39.24 2.32 2.32 0 011 .73 2 2 0 01.4 1.29v4.44h-1.76v-.9h-.05a1.9 1.9 0 01-.73.76 2.37 2.37 0 01-1.22.29zm.53-1.27a1.41 1.41 0 001-.36 1.15 1.15 0 00.39-.88v-.71a.87.87 0 01-.33.13l-.49.1-.46.07a1.84 1.84 0 00-.79.28.66.66 0 00-.3.59.67.67 0 00.28.58 1.18 1.18 0 00.7.2zM396.55 62.09v-9.18h1.82v1.12h.09a2.64 2.64 0 01.35-.55 2.11 2.11 0 01.61-.47 2.15 2.15 0 01.94-.19 2.44 2.44 0 011.34.39 2.66 2.66 0 011 1.14 4.31 4.31 0 01.37 1.91 4.41 4.41 0 01-.36 1.88 2.69 2.69 0 01-1 1.16 2.47 2.47 0 01-1.37.39 2.08 2.08 0 01-.91-.17 2 2 0 01-.62-.45 2.47 2.47 0 01-.36-.55h-.06v3.57zm1.81-5.84a2.47 2.47 0 00.37 1.43 1.26 1.26 0 002.08 0 2.53 2.53 0 00.36-1.42 2.5 2.5 0 00-.36-1.41 1.18 1.18 0 00-1.05-.54 1.16 1.16 0 00-1 .53 2.39 2.39 0 00-.4 1.41z" fill="#24282f"/>
+    <circle cx="373.82" cy="56.77" r="39.98" fill="#66c789" opacity=".15"/>
+    <path d="M412.13 154a56.77 56.77 0 1156.77-56.8 56.83 56.83 0 01-56.77 56.8zm0-111.53A54.77 54.77 0 10466.9 97.2a54.82 54.82 0 00-54.77-54.76z" transform="translate(-38.31 -40.44)" fill="url(#e)"/>
+    <path d="M412.13 169.12a72 72 0 01-71.91-71.92h1a70.92 70.92 0 10141.83 0h1a72 72 0 01-71.92 71.92z" transform="translate(-38.31 -40.44)" fill="url(#f)"/>
     <text transform="translate(127.37 313.27)" font-size="5.41" fill="#fcfcfc" font-family="Inter-Regular, Inter">
       <tspan letter-spacing="-.08em">T</tspan><tspan x="3.05" y="0" letter-spacing="0em">od</tspan><tspan x="9.64" y="0" letter-spacing="-.02em">a</tspan><tspan x="12.58" y="0">y</tspan>
     </text>
     <text transform="translate(397.05 312.87)" font-size="4.51" fill="#dbdbdb" font-family="Inter-Bold, Inter" font-weight="700">
       2020
     </text>
-    <circle cx="373.82" cy="56.77" r="39.98" fill="#66c789" opacity=".15"/>
-    <circle cx="373.82" cy="56.77" r="55.77" fill="none" stroke-miterlimit="10" stroke-width="2" stroke="url(#e)"/>
-    <path d="M483.55 97.2a71.42 71.42 0 11-142.83 0" transform="translate(-38.31 -40.43)" fill="none" stroke-miterlimit="10" stroke="url(#f)"/>
-    <path d="M540.6 63.17h36a13 13 0 0113 13v124a13 13 0 0013 13h104" transform="translate(-38.31 -40.43)" fill="none" stroke-miterlimit="10" stroke="url(#a)"/>
-    <path d="M426.6 123.17h36a13 13 0 0113 13v64a13 13 0 0013 13h104" transform="translate(-38.31 -40.43)" fill="none" stroke-miterlimit="10" stroke="url(#g)"/>
-    <path d="M582.6 303.2h36a13 13 0 0013-13v-64a13 13 0 0113-13h128" transform="translate(-38.31 -40.43)" fill="none" stroke-miterlimit="10" stroke="url(#h)"/>
-    <path d="M453.6 363.2h41a13 13 0 0013-13v-124a13 13 0 0113-13h104" transform="translate(-38.31 -40.43)" fill="none" stroke-miterlimit="10" stroke="url(#i)"/>
-    <path d="M751.44 333.75h-52a13 13 0 01-13-13v-65.13a13 13 0 00-13-13H370.1" transform="translate(-38.31 -40.43)" fill="none" stroke-miterlimit="10" stroke="url(#b)"/>
-    <path d="M539.71 81.06a17.22 17.22 0 11.1 0z" transform="translate(-38.31 -40.43)" fill="url(#j)"/>
-    <path d="M572.29 298.45a11.36 11.36 0 11-.33 8.69 11.35 11.35 0 01.33-8.69z" transform="translate(-38.31 -40.43)" fill="url(#c)"/>
-    <path d="M52.11 48.27a4.64 4.64 0 11-.11 3.57 4.64 4.64 0 01.11-3.57z" transform="translate(-38.31 -40.43)" fill="url(#k)"/>
+    <path d="M540.6 63.17h36a13 13 0 0113 13v124a13 13 0 0013 13h104" transform="translate(-38.31 -40.44)" fill="none" stroke-miterlimit="10" stroke="url(#a)"/>
+    <path d="M426.6 123.17h36a13 13 0 0113 13v64a13 13 0 0013 13h104" transform="translate(-38.31 -40.44)" fill="none" stroke-miterlimit="10" stroke="url(#g)"/>
+    <path d="M582.6 303.2h36a13 13 0 0013-13v-64a13 13 0 0113-13h128" transform="translate(-38.31 -40.44)" fill="none" stroke-miterlimit="10" stroke="url(#h)"/>
+    <path d="M453.6 363.2h41a13 13 0 0013-13v-124a13 13 0 0113-13h104" transform="translate(-38.31 -40.44)" fill="none" stroke-miterlimit="10" stroke="url(#i)"/>
+    <path d="M751.44 333.75h-52a13 13 0 01-13-13v-65.13a13 13 0 00-13-13H370.1" transform="translate(-38.31 -40.44)" fill="none" stroke-miterlimit="10" stroke="url(#b)"/>
+    <path d="M539.71 81.06a17.22 17.22 0 11.1 0z" transform="translate(-38.31 -40.44)" fill="url(#j)"/>
+    <path d="M572.29 298.45a11.36 11.36 0 11-.33 8.69 11.35 11.35 0 01.33-8.69z" transform="translate(-38.31 -40.44)" fill="url(#c)"/>
+    <path d="M52.11 48.27a4.64 4.64 0 11-.11 3.57 4.64 4.64 0 01.11-3.57z" transform="translate(-38.31 -40.44)" fill="url(#k)"/>
   </g>
 </svg>
