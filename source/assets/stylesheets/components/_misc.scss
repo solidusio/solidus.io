@@ -48,8 +48,12 @@
     transform: scale(.9);
 
     @include media-breakpoint-up(md){ 
-      width: 20%;
+      width: 15%;
       padding: 0;
+      
+      .community-ambassadors & {
+        width: 25%;
+      }
     }
 
     a {
