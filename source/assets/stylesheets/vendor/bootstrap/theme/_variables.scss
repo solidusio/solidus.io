@@ -219,19 +219,18 @@ $btn-box-shadow:              none;
 $input-padding-y-top:                   18px;
 $input-padding-y-bottom:                14px;
 $input-padding-x:                       16px;
-$input-padding-y:                       16px;
+$input-padding-y:                       13px;
 $input-line-height:                     $line-height-base;
 
 $input-color:                           $gray-700;
 $input-border-color:                    $gray-200;
 $input-hover-border-color:              #cacbcc;
-$input-focus-border-color:              #7e7f80;
+$input-focus-border-color:              #cacbcc;
 $input-border-width:                    $border-width;
 $input-box-shadow:                      none;
 
 $input-placeholder-color:               $gray-500;
 
-$input-focus-border-color:              $gray-600;
 $input-focus-color:                     $input-color;
 $input-focus-width:                     1px;
 
