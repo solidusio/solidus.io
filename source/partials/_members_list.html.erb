@@ -8,12 +8,11 @@
         by pledging <b>$750</b> or more a month on Open Collective.
       </p>
     </div>
-    <div class="community-logos">
-      <div class="row align-items-center justify-content-center">
+    <div class="community-logos community-ambassadors col-lg-12">
         <% data.community_members[:ambassadors].each do |member, info| %>
 
-          <div class="col-6 col-sm-4 col-lg">
-            <a class="item" href="<%= info[:url] %>" target="_blank">
+          <div class="community-logos__item">
+            <a href="<%= info[:url] %>" target="_blank">
 
               <% if info[:retina] %>
                 <img class="img-fluid" src="<%= image_path("community-logos/#{info[:retina].default_img}") %>" srcset="<%= image_path("community-logos/#{info[:retina].default_img}") %>, <%= image_path("community-logos/#{info[:retina].retina_img}") %> 2x" alt="<%= info[:name] %>">
@@ -25,7 +24,7 @@
           </div>
 
         <% end %>
-      </div>
+
     </div>
   </div>
 
