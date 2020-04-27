@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.39 187.25" width="186" height="186">
+  <defs>
+    <clipPath id="b">
+      <path d="M80.81 70.6l24.89-.19.37 46.22-24.9.2zm-4.52 51.34l35-.27-.44-56.37-35 .28z" fill="none"/>
+    </clipPath>
+    <clipPath id="c">
+      <path d="M96.12 101.35L96 85.54c0-4.76-2.43-6.53-7.52-8.88l-2.06 3.91L89.1 82c1.35.74 2 1.62 2 4l.12 16c0 4.78 2.43 6.55 7.52 8.9l2.06-3.9-2.7-1.47c-1.35-.87-2-1.73-2-4.16z" fill="none"/>
+    </clipPath>
+    <linearGradient id="a" x1="1.44" y1="93.48" x2="188.39" y2="93.48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="93.48" cy="93.77" r="66.66" fill="#3c76f0" opacity=".2"/>
+  <circle cx="93.48" cy="93.77" r="92.98" fill="none" stroke="#242830" stroke-miterlimit="10" opacity=".1"/>
+  <circle cx="94.91" cy="93.48" r="92.98" fill="none" stroke-miterlimit="10" stroke="url(#a)"/>
+  <circle cx="93.48" cy="93.77" r="52.44" fill="#3c76f0"/>
+  <g clip-path="url(#b)">
+    <path fill="#fff" d="M71.51 60.95h44.16v65.33H71.51z"/>
+  </g>
+  <g clip-path="url(#c)">
+    <path fill="#fff" d="M82.06 72.31h23.06v42.93H82.06z"/>
+  </g>
+</svg>

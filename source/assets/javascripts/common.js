@@ -20,6 +20,26 @@ $(function () {
     $(target).removeClass('active');
   });
   
+  // Smooth anchor scroll
+  $(document).ready(function(){
+
+    var $root = $('html, body');
+
+    $('a[href^="#"]').on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $root.animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+  
   //Menu toggler functionality
   $(".site-menu-toggler").click(function () {
     $("body").toggleClass("menu-open");
@@ -52,6 +72,12 @@ $(function () {
     offset: 200,
     duration: 600,
     easing: "ease-in-quart"
+  });
+
+  //Show roadmap hidden features on click
+  $('.roadmap-use-case__timeline--future').click(function(){
+    $(this).children('.roadmap-use-case__timeline--future p').toggle('fast');
+    $(this).toggleClass('uncollapsed');
   });
 
   //Remove top bar on click

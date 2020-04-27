@@ -43,7 +43,7 @@
   }
   
   @include media-breakpoint-down(sm) {
-    .btn {
+    .btn-primary {
       display: block;
       width: 100%;
     }

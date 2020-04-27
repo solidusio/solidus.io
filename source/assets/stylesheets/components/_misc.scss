@@ -180,6 +180,33 @@
   }
 }
 
+.newsletter-form {
+  label {
+    margin-bottom: 15px;
+    font-size: $font-size-xs;
+  }
+  div {
+    display: flex;
+
+    .email {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 10px;
+    }
+
+    .button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding-left: 1em;
+      padding-right: 1em;
+      
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
+
 //Terminal window
 .terminal-window {
   background-color: darken($gray-900, 5%);
