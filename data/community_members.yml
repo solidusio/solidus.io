@@ -31,6 +31,13 @@ supporters:
     retina:
       default_img: "p-berkenbosch.png"
       retina_img: "p-berkenbosch@2x.png"
+      
+  thomas_sample:
+    name: "Thomas Sample"
+    url: https://opencollective.com/thomas-sample
+    retina:
+      default_img: "t-sample.png"
+      retina_img: "t-sample@2x.png"
 
 enthusiasts:
   twc:
