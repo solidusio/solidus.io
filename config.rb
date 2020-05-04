@@ -6,7 +6,7 @@ page "/404.html", directory_index: false
 set :css_dir, "assets/stylesheets"
 set :images_dir, "assets/images"
 set :js_dir, "assets/javascripts"
-set :base_url, build? ? "https://solidus.io" : "http://localhost:4567"
+set :base_url, build? ? (ENV['DEPLOY_PRIME_URL'] || "https://solidus.io") : "http://localhost:4567"
 
 set :seo_title, "Solidus: Rails Ecommerce Platform"
 
