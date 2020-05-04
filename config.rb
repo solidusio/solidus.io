@@ -9,6 +9,7 @@ set :js_dir, "assets/javascripts"
 set :base_url, build? ? (ENV['DEPLOY_PRIME_URL'] || "https://solidus.io") : "http://localhost:4567"
 
 set :seo_title, "Solidus: Rails Ecommerce Platform"
+set :seo_description, "Build, customize and scale your store with no limits or license fees. Solidus is the free, open-source eCommerce framework for digitally-native brands, fast-growing online businesses and pragmatic developers."
 
 redirect "developers.html", to: "community.html"
 
@@ -65,3 +66,9 @@ configure :build do
   ignore "2012-01-01-example-article.html.markdown"
 end
 
+helpers do
+  def preview_image_path
+    current_page.data.cover_image || # Blog post cover images do not need the hash appended
+      image_path(current_page.data.preview_image || 'social_preview.jpg')
+  end
+end
