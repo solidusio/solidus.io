@@ -6,6 +6,16 @@
     position: relative;
     width: 100%;
   }
+  
+  .hero-image {
+    width: 100%;
+    // Avoid general height: auto to show imgs also on IE11
+    // Add the height rule on sm screens. This fix unwanted margins
+    // on Safari and Firefox 
+    @include media-breakpoint-down(sm) {
+      height: auto;
+    }
+  }
 
   @include media-breakpoint-up(lg) {
     .hero-image {

@@ -6,7 +6,7 @@
     background: url("/assets/images/illustrations/roadmap-hero-sm.svg") no-repeat;
     background-size: 75% auto;
     background-position: center;
-    min-height: 600px;
+    height: 600px;
     padding: ($spacer * 6) 0 ($spacer * 3);
     
     @include media-breakpoint-up(sm) {
@@ -16,12 +16,12 @@
       background-size: 100% auto;
       background-position: center top;
       padding: 0 0 0 $spacer;
-      min-height: 650px;
+      height: 650px;
       padding: 0 $spacer;
     }
     
     @include media-breakpoint-up(lg) {
-      min-height: 500px;
+      height: 500px;
     }
   }
   
