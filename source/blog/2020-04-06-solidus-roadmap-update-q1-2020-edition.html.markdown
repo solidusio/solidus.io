@@ -2,6 +2,8 @@
 title: "Solidus Roadmap Update: Q1 2020 Edition"
 date: 2020-04-06
 tags: Solidus
+cover_image: /blog/2020/04/06/solidus-roadmap-update-q1-2020-edition/solidus-roadmap-update-q1-2020-edition.png
+description: Check out latest updates on the Solidus Roadmap progress. GraphQL API, Shopify importer, Headless content management and much more.
 author: Alessandro Desantis
 ---
 
@@ -32,7 +34,7 @@ hasn’t had an API in place for simplifying this process.
 
 Our team has been hard at work on [solidus_importer](https://github.com/nebulab/solidus_importer/),
 a gem that makes it easier to import data into your Solidus store, either as a one-off task or on a
-recurring basis. 
+recurring basis.
 
 solidus_importer is fully compatible with Shopify’s export format because it’s the most widespread.
 If your store is on a different platform, there are tools that will convert your data export into
