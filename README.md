@@ -22,5 +22,3 @@ Usage
 4. To build html and assets for production, run
 
         $ bundle exec middleman build
-
-5. Set proper `base_url` in config.rb

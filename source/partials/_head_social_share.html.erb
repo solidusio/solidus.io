@@ -1,7 +1,7 @@
 <meta property="og:title" content="<%= current_page.data.title || config[:seo_title] %>">
 <meta property="og:description" content="<%= current_page.data.description || config[:seo_description] %>">
-<meta property="og:image" content="<%= [config[:base_url], preview_image_path].join %>">
-<meta property="og:url" content="<%= [config[:base_url], current_page.url].join %>" />
+<meta property="og:image" content="<%= [base_url, preview_image_path].join %>">
+<meta property="og:url" content="<%= [base_url, current_page.url].join %>" />
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image:alt" content="<%= current_page.data.description || config[:seo_description] %>">
 <meta name="twitter:site" content="@solidusIO">
