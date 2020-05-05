@@ -6,7 +6,6 @@ page "/404.html", directory_index: false
 set :css_dir, "assets/stylesheets"
 set :images_dir, "assets/images"
 set :js_dir, "assets/javascripts"
-set :base_url, build? ? (ENV['DEPLOY_PRIME_URL'] || "https://solidus.io") : "http://localhost:4567"
 
 set :seo_title, "Solidus: Rails Ecommerce Platform"
 set :seo_description, "Build, customize and scale your store with no limits or license fees. Solidus is the free, open-source eCommerce framework for digitally-native brands, fast-growing online businesses and pragmatic developers."
@@ -70,5 +69,12 @@ helpers do
   def preview_image_path
     current_page.data.cover_image || # Blog post cover images do not need the hash appended
       image_path(current_page.data.preview_image || 'social_preview.jpg')
+  end
+
+  def base_url
+    return "http://localhost:4567" unless build?
+    return "https://solidus.io" unless ENV['NETLIFY']
+
+    ENV['CONTEXT'] == 'production' ? ENV['URL'] : ENV['DEPLOY_PRIME_URL']
   end
 end
