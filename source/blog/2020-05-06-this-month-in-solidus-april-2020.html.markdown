@@ -1,6 +1,6 @@
 ---
 title: "This Month in Solidus: April 2020"
-date: 2020-05-04
+date: 2020-05-06
 tags: Solidus
 author: Alessandro Desantis
 ---
