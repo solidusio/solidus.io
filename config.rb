@@ -78,3 +78,5 @@ helpers do
     ENV['CONTEXT'] == 'production' ? ENV['URL'] : ENV['DEPLOY_PRIME_URL']
   end
 end
+
+import_file File.expand_path('source/_redirects', root), '/_redirects'
