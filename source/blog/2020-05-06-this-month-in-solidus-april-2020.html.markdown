@@ -6,7 +6,7 @@ author: Alessandro Desantis
 cover_image: /blog/2020/05/06/this-month-in-solidus-april-2020/solidus-monthly-update-2020.png
 description: >
   Dive in and see everything that happened in the Solidus world in April 2020: tons of core
-  improvements, new extensions, a virtual SolidusConf and much more! 
+  improvements, new extensions, a virtual SolidusConf and much more!
 ---
 
 Hello folks, and welcome to our first edition of This Month in Solidus!
@@ -82,7 +82,7 @@ roadmap goals:
   is expected this week! You will be able to import users, products and orders, along with all
   related data such as taxons, variants, images, option types and so on. Our next focus will be the
   ability to _export_ data as well. Thanks to Mattia Roccoberton and Flavio Auciello from Nebulab!
-* **Content management:** [`solidus_content`](https://github.com/nebulab/solidus_importer) now
+* **Content management:** [`solidus_content`](https://github.com/nebulab/solidus_content) now
   integrates with Contentful, Prismic, static sources such as YAML and JSON and, of course, the old
   and beloved solidus_static_content extension. We are now working on the admin UI to make it easier
   to create content types and entries without any development work. Thanks to Elia Schito and Andrea
