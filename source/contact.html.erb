@@ -8,26 +8,54 @@ description: Got questions about Solidus? Complete the form on this page and we�
     <h1 class="title text-center">Contact us</h1>
     <p class="lead mb-4 mb-md-6 text-center">Got questions about Solidus? Complete the form below and we’ll respond as soon as possible.</p>
 
-    <form class="contact-form" action="/contact/success" method="POST" name="contact" data-netlify="true">
-      <fieldset>
-        <div class="form-group">
-          <label for="inputName">Name *</label>
-          <input type="text" class="form-control " name="inputName" id="inputName" required>
+    <div class="row">
+      <div class="col-lg-7">
+        <form class="contact-form" action="/contact/success" method="POST" name="contact" data-netlify="true">
+          <fieldset>
+            <div class="form-group">
+              <label for="inputName">Name *</label>
+              <input type="text" class="form-control " name="inputName" id="inputName" required>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail">Email *</label>
+              <input type="email" class="form-control" name="inputEmail" id="inputEmail" required>
+            </div>
+            <div class="form-group mb-3">
+              <label for="inputMessage">Message *</label>
+              <textarea class="form-control" name="inputMessage" id="inputMessage" rows="6" required></textarea>
+            </div>
+            <small class="d-block mb-3">* Required fields</small>
+            <div data-netlify-recaptcha="true"></div>
+            <div class="text-center mt-1">
+              <button class="btn btn-primary btn-block" type="submit">Send</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="p-2 ml-lg-2 mt-2 mt-lg-0 bg-light">
+          <h5>Who gets these messages?</h5>
+
+          <p>
+            Solidus is an open-source, community-maintained project. As such, there is no single
+            company behind it, but a group of passionate developers, agencies and retailers that
+            want to change the way people do eCommerce.
+          </p>
+
+          <p>
+            The messages sent through this form are handled by
+            <a href="https://nebulab.it" target="_blank">Nebulab</a>, an eCommerce consulting agency
+            that is the main contributor and project director of the Solidus framework.
+          </p>
+
+          <p>
+            If you are looking for a development agency, you should also check out our
+            <a href="https://solidus.io/partners">Partners</a> — they are all Solidus experts and
+            will make your project a success.
+          </p>
         </div>
-        <div class="form-group">
-          <label for="inputEmail">Email *</label>
-          <input type="email" class="form-control" name="inputEmail" id="inputEmail" required>
-        </div>
-        <div class="form-group mb-3">
-          <label for="inputMessage">Message *</label>
-          <textarea class="form-control" name="inputMessage" id="inputMessage" rows="6" required></textarea>
-        </div>
-        <small class="d-block mb-3">* Required fields</small>
-        <div data-netlify-recaptcha="true"></div>
-        <div class="text-center mt-1">
-          <button class="btn btn-primary btn-block" type="submit">Send</button>
-        </div>
-      </fieldset>
-    </form>
+      </div>
+    </div>
   </div>
 </div>
