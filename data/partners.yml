@@ -45,7 +45,12 @@ silver_partners:
     description: "We’re a Digital Consultancy near London, England with an experienced team of developers, UI and UX designers building solutions in an agile way."
     url: https://www.digitalreflow.co.uk
     image: "digital-reflow-logo.svg"
-
+  3llideas:
+    name: "3llideas"
+    short_description: eCommerce specialist, Amazon AWS partner, Information factory
+    description: 3llideas is an eCommerce specialist helping companies power their business and Solidus helps us to be agile
+    url: http://www.3llideas.com
+    image: "3llideas-logo.svg"
 
 bronze_partners:
   peter_berkenbosch:
