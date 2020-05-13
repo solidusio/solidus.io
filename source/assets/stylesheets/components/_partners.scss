@@ -13,7 +13,7 @@
     font-size: $font-size-xs;
     min-height: 200px;
     margin-bottom: 1.5rem;
-    
+
     &::before{
       content: '';
       border-radius: 0 $card-border-radius 0;
@@ -24,7 +24,7 @@
       height: 64px;
     }
   }
-  
+
   .card-deck {
     .card-body {
       padding-left: $card-spacer-x;
@@ -35,14 +35,14 @@
         &.gold-partner {
           flex: 0 0 calc(50% - 30px);
         }
-        
+
         &.silver-partner, &.bronze-partner {
           flex: 0 0 calc(33.333% - 30px);
         }
       }
     }
   }
-  
+
   .card-footer {
     padding: $card-spacer-y $card-spacer-x;
   }
@@ -53,12 +53,12 @@
     align-self: center;
     margin: 0 auto;
     padding: $card-spacer-x 0;
-    
+
     img {
       align-items: center;
     }
   }
-  
+
   .img-fluid {
     margin-left: auto;
     margin-right: auto;
@@ -73,9 +73,9 @@
     margin-top: auto;
     margin-bottom: 0;
   }
-    
+
   .main-partner h6 { color: $blue; }
-  
+
   .main-partner .list-underlined{
     li::before{
       content: '';
@@ -86,46 +86,46 @@
       vertical-align: middle;
     }
   }
-  
+
   .gold-partner::before{
     background: url("/assets/images/icons/gold-corner.svg") no-repeat;
   }
-  
+
   .silver-partner::before{
     background: url("/assets/images/icons/silver-corner.svg") no-repeat;
   }
-  
+
   .bronze-partner::before{
     background: url("/assets/images/icons/bronze-corner.svg") no-repeat;
   }
-  
+
   @include media-breakpoint-down(sm) {
     .media-body{
       font-size: $font-size-xs;
     }
-    
+
     .card{
       display: block;
       flex: 1 0 100%;
-      
+
       &:last-child { margin-bottom: 0; }
     }
-    
+
     .silver-partner .logo{ max-width: 70%; }
-    
+
     .bronze-partner .logo{ max-width: 50%; }
   }
 
   @include media-breakpoint-up(md){
     margin-bottom: 3.5rem;
     max-width: none;
-    
+
     .logo{ flex-shrink: 0; }
-    
+
     .column-wrapper .logo {
       margin-bottom: -(($card-spacer-y * 2) +  1rem);
     }
-    
+
     .main-partner { display: flex; }
   }
 
@@ -134,12 +134,12 @@
       font-size: $font-size-base;
       min-height: 300px;
     }
-    
+
     .card-body{
       padding-left: 0;
     }
   }
-  
+
   .data{
     @include media-breakpoint-up(md){
       padding-left: 18px + $grid-gutter-width/2;
@@ -149,13 +149,13 @@
 
 .card.placeholder-card{
   min-height: 1px;
-  
+
   .card-body{
     padding: $card-spacer-x ($card-spacer-x * 1.8);
     background: url("/assets/images/illustrations/bg-triangles-light.svg") no-repeat;
     background-size: 280% auto;
     background-position: 86%;
-    
+
     @include media-breakpoint-up(md) {
       background-size: 75% auto;
       background-position: .5em .5em;
@@ -165,7 +165,7 @@
       width: 100%;
     }
   }
-  
+
   .title{
     @include media-breakpoint-up(md){
       margin-bottom: 0;
