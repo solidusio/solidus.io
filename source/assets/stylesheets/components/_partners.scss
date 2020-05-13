@@ -138,6 +138,14 @@
     .card-body{
       padding-left: 0;
     }
+    
+    .silver-partner,
+    .bronze-partner {
+      .logo {
+        padding-left: $card-spacer-x * 1.5;
+        padding-right: $card-spacer-x * 1.5;
+      }
+    }
   }
 
   .data{
