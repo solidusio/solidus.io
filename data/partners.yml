@@ -47,8 +47,8 @@ silver_partners:
     image: "digital-reflow-logo.svg"
   3llideas:
     name: "3llideas"
-    short_description: eCommerce specialist, Amazon AWS partner, Information factory
-    description: 3llideas is an eCommerce specialist helping companies power their business and Solidus helps us to be agile
+    short_description: "eCommerce specialist, Amazon AWS partner, Information factory"
+    description: "3llideas is an eCommerce specialist based in Barcelona (Spain). We help companies power their business and Solidus helps us to be agile."
     url: http://www.3llideas.com
     image: "3llideas-logo.svg"
 
