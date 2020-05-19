@@ -70,7 +70,7 @@ StemboltHQ/solidus_paybright:
   title: PayBright
   description: Let customers pay for their purchases over time by integrating with PayBright.
   group: Payments
-robinboening/solidus_klarna_payments:
+solidusio-contrib/solidus_klarna_payments:
   ci_provider: travis
   title: Klarna
   description: Allow your customers to buy now and pay later with the Klarna integration for your
