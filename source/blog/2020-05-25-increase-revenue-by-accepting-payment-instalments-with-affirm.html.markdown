@@ -28,7 +28,7 @@ The following example shows how easy it is to add the Affirm promotional messagi
 First we have to generate a view override for the cart partial, in this sample we want to show the Affirm payment option under the price.
 
 We can generate our override like this:
-```sh
+```
 bundle exec rails g solidus:views:override --only products/_cart_form
 ```
 (for more information about customizing your storefront see the [customization guide](https://guides.solidus.io/developers/customizations/customizing-storefront.html) )
