@@ -3,7 +3,7 @@ title: "Increase revenue by accepting payment instalments with Affirm."
 date: 2020-05-25 00:00 UTC
 tags: Solidus, Payments, Instalments, Extensions
 author: Peter Berkenbosch
-cover_image: /blog/2020/05/25/increase-revenue-by-accepting-payment-instalments-with-affirm/affirm-numbers.png
+cover_image: /blog/2020/05/25/increase-revenue-by-accepting-payment-instalments-with-affirm/affirm-transaction-api.png
 description: >
   Increase revenue by accepting payment instalments on your Solidus store with Affirm and
   prepare for lease-to-own (LTO) providers.
@@ -37,15 +37,20 @@ This file will be in `app/views/spree/products/_cart_form.html.erb`. To show the
 
 The Solidus extension provides a partial that will configure and load the `Affirm.js` in the `head` element of your storefront. By default it will only load this in the payment step, but for this specific sample we will be adding it at the top of our generated partial like so:
 
-![](/blog/2020/05/25/increase-revenue-by-accepting-payment-instalments-with-affirm/affirmjs-partial-cart.png)
-`app/views/spree/products/_cart_form.html.erb`
+```
+<% render partial: 'solidus_affirm_v2/affirm_js' %>
+
+<%= form_for :order, url: populate_orders_path do |f| %>
+  <div id="inside-product-cart-form" data-hook="inside_product_cart_form" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+```
 
 The next, and last step, is to add a html element at the spot where we want to list the Affirm message. There are a lot of options we can use, you can find the documentation for all the html element options at this link [Affirm HTML Ref](https://docs.affirm.com/affirm-developers/docs/html-reference)
 
 We will have to make sure to set the html class to `affirm-as-low-as`, specify the `data-page` and set the `data-amount` attribute to the product price. The `data-amount` has to be in cents.
 
-![](/blog/2020/05/25/increase-revenue-by-accepting-payment-instalments-with-affirm/affirm-promotion-cart-html.png)
-`app/views/spree/products/_cart_form.html.erb`
+```
+<div id="affirm-message" class="affirm-as-low-as" data-page-type="product" data-amount="<%=@product.price * 100%>"></div>
+```
 
 Refresh the page and visit a product detail page and voila:
 
