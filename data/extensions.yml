@@ -1,6 +1,6 @@
 ---
 boomerdigital/solidus_user_roles:
-  ci_provider: travis
+  ci_provider: circleci
   title: User Roles
   description: Add support for advanced roles and authorization management to your store's backend.
   group: Authentication
