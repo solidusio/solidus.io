@@ -16,7 +16,7 @@ boomerdigital/solidus_shipstation:
     returns.
   group: Shipping
 solidusio-contrib/solidus_globalize:
-  ci_provider: travis
+  ci_provider: circleci
   title: Globalize
   description: Translate your store's content (products, taxons and more) into multiple languages.
   group: Internationalization
