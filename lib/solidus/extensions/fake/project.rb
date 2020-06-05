@@ -2,7 +2,7 @@ module Solidus
   module Extensions
     module Fake
       class Project < AbstractProject
-        def build_statuses
+        def build_statuses(versions:)
           versions.map do |version|
             [version, {
               status: %i[passed failed pending unsupported].sample,

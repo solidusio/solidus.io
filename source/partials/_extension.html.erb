@@ -17,7 +17,7 @@
     </div>
 
     <div class="extension-ci">
-      <% extension.ci(versions: versions).build_statuses.each_pair do |version, build| %>
+      <% extension.ci.build_statuses(versions: versions).each_pair do |version, build| %>
         <%= partial 'partials/extension/build_status', locals: {
             extension: extension,
             version: version,

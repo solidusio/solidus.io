@@ -46,8 +46,8 @@ module Solidus
       end
     end
 
-    def ci(versions:)
-      ci_klass.new(self, versions: versions)
+    def ci
+      ci_klass.new(self)
     end
 
     private
