@@ -1,7 +1,5 @@
 module Solidus
   class Extension
-    VERSIONS = %w[v2.7 v2.8 v2.9 v2.10 master].freeze
-
     attr_accessor :repo, :title, :ci_provider, :description, :group, :environment
 
     class << self
@@ -48,8 +46,8 @@ module Solidus
       end
     end
 
-    def ci
-      ci_klass.new(self, versions: VERSIONS)
+    def ci(versions:)
+      ci_klass.new(self, versions: versions)
     end
 
     private
