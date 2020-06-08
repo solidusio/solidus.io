@@ -1,9 +1,9 @@
 ---
 title: "Increase revenue by accepting payment installments with Affirm."
-date: 2020-05-25 00:00 UTC
+date: 2020-06-15 00:00 UTC
 tags: Solidus, Payments, Installments, Extensions
 author: Peter Berkenbosch
-cover_image: /blog/2020/05/25/increase-revenue-by-accepting-payment-installments-with-affirm/affirm-transaction-api.png
+cover_image: /blog/2020/06/15increase-revenue-by-accepting-payment-installments-with-affirm/affirm-transaction-api.png
 description: >
   Increase revenue by accepting payment installments on your Solidus store with Affirm and
   prepare for lease-to-own (LTO) providers.
@@ -14,7 +14,7 @@ Affirm provides merchants with an option to offer payment installments. In fact,
 
 Did you know using Affirm will increase your Average Order Value (AOV)? Not only that, but it also improves the repeating customer and NPS rates.
 
-![Affirm Numbers](/blog/2020/05/25/increase-revenue-by-accepting-payment-installments-with-affirm/affirm-numbers.png)
+![Affirm Numbers](/blog/2020/06/15increase-revenue-by-accepting-payment-installments-with-affirm/affirm-numbers.png)
 
 A couple of weeks ago, we started developing [a new version](https://github.com/solidusio-contrib/solidus_affirm_v2). This new version has been refactored and upgraded to use the new [Affirm Transaction API](https://docs.affirm.com/affirm-developers/changelog/transactions-api).
 
@@ -54,27 +54,27 @@ We will have to make sure to set the html class to `affirm-as-low-as`, specify t
 
 Refresh the page and visit a product detail page and voila:
 
-![Product Detail Page with Affirm](/blog/2020/05/25/increase-revenue-by-accepting-payment-installments-with-affirm/product-detail-page-with-affirm.png)
+![Product Detail Page with Affirm](/blog/2020/06/15increase-revenue-by-accepting-payment-installments-with-affirm/product-detail-page-with-affirm.png)
 
 When the customer clicks the 'Prequalify now' link, they will get a popup window that shows all the options:
 
-![Affirm Payment Options Popup](/blog/2020/05/25/increase-revenue-by-accepting-payment-installments-with-affirm/affirm-payment-options-popup.png)
+![Affirm Payment Options Popup](/blog/2020/06/15increase-revenue-by-accepting-payment-installments-with-affirm/affirm-payment-options-popup.png)
 
 Note that in this sample we only see 2 options, this is because the amount is too low for 12-month terms.
 
 When checking out, there is an option now to use Affirm:
 
-![Checkout Payment Step with Affirm](/blog/2020/05/25/increase-revenue-by-accepting-payment-installments-with-affirm/checkout-payment-step-affirm.png)
+![Checkout Payment Step with Affirm](/blog/2020/06/15increase-revenue-by-accepting-payment-installments-with-affirm/checkout-payment-step-affirm.png)
 
 When the customer clicks save and continue, they will be redirected to Affirm to complete the payment there.
 
 When completed with Affirm and confirmed on the Solidus storefront, the payment information will show up in the admin (after capturing) like so:
 
-![Admin Payment Completed with Affirm](/blog/2020/05/25/increase-revenue-by-accepting-payment-installments-with-affirm/admin-payment-completed-affirm.png)
+![Admin Payment Completed with Affirm](/blog/2020/06/15increase-revenue-by-accepting-payment-installments-with-affirm/admin-payment-completed-affirm.png)
 
 When clicking on the payment identifier link, you can see more details:
 
-![Admin Payment Details Page with Affirm](/blog/2020/05/25/increase-revenue-by-accepting-payment-installments-with-affirm/admin-payment-details-affirm.png)
+![Admin Payment Details Page with Affirm](/blog/2020/06/15increase-revenue-by-accepting-payment-installments-with-affirm/admin-payment-details-affirm.png)
 
 More information and documentation can be found with the following links:
 
