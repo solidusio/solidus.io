@@ -3,7 +3,7 @@ title: "This Month in Solidus: April 2020"
 date: 2020-05-06
 tags: Solidus
 author: Alessandro Desantis
-cover_image: /blog/2020/05/06/this-month-in-solidus-april-2020/solidus-monthly-update-2020.png
+cover_image: /blog/shared/images/solidus-monthly-update.png
 description: >
   Dive in and see everything that happened in the Solidus world in April 2020: tons of core
   improvements, new extensions, a virtual SolidusConf and much more!

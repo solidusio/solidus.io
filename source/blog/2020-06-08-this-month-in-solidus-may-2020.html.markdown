@@ -3,7 +3,7 @@ title: "This Month in Solidus: May 2020"
 date: 2020-06-08
 tags: Solidus
 author: Alessandro Desantis
-cover_image: /blog/2020/06/08/this-month-in-solidus-may-2020/solidus-monthly-update-2020.png
+cover_image: /blog/shared/images/solidus-monthly-update.png
 description: >
   Dive in and see everything that happened in the Solidus world in May 2020: a new release on its
   way, backend improvements and our very first Community Day!
@@ -31,7 +31,7 @@ You may have noticed the core team is busy working on the [2.11 release](https:/
 This is a special release for a couple of reasons: first of all, it comes with tons of performance
 enhancements, feature improvements and bug fixes across the board.
 
-Bust most importantly, *this is the last release in the 2.x branch! 🎊* Yep, you read that right!
+Bust most importantly, **this is the last release in the 2.x branch! 🎊** Yep, you read that right!
 2.11 paves the way for the much anticipated 3.0 release.
 
 Now, if you know anything about Solidus, you know how much we care about backwards compatibility and
@@ -70,19 +70,19 @@ You can expect to see these and many more in 2.11!
 
 ### Introducing Solidus Community Day!
 
-In order to bring the amazing Solidus community together more often, we're setting up a Solidus
-Community Day on June 12th, where you'll be able to talk about the current state of Solidus, the
+In order to bring the amazing Solidus community together more often, **we're setting up a Solidus
+Community Day on June 12th,** where you'll be able to talk about the current state of Solidus, the
 future of the platform, as well as meet and network with eCommerce industry experts. We'll also have
 speaker sessions where you'll be able to hear from Solidus experts about any number of topics.
 
-This month, we've got Solidus expert Peter Berkenbosch. Peter is an open-source and eCommerce
+**This month, we've got Solidus expert Peter Berkenbosch.** Peter is an open-source and eCommerce
 veteran who's been working with Spree and Solidus for over a decade. He's specialized in bridging
 product, leadership and development to create high-quality eCommerce stacks. He's a CXOps
 enthusiast and is passionate about building technology teams and empower them to be their best.
 
-Peter is going to talk about solidus_dev_support and how it supports developers in creating Solidus
-extensions. He'll be generating an extension from scratch and highlighting the features that come
-out of the box with solidus_dev_support.
+**Peter is going to talk about solidus\_dev\_support** and how it supports developers in creating
+Solidus extensions. He'll be generating an extension from scratch and highlighting the features that
+come out of the box with solidus_dev_support.
 
 We want to make this a monthly event, so we hope you'll join us in making this Solidus Community Day
-a success. [You can sign up here](https://live.remo.co/e/solidus-community-day-1). See you there!
+a success. [**You can sign up here. See you there!**](https://live.remo.co/e/solidus-community-day-1)
