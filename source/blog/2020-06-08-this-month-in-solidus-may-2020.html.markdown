@@ -47,7 +47,7 @@ Here are some of the new features and enhancements introduced in May:
 
 - [**Restrict shipping methods to stock locations.**](https://github.com/solidusio/solidus/pull/3624)
   It is now possible to restrict shipping methods to select stock locations rather than displaying
-  them for all stock locations. Thanks to Dumitru Ceban for Nebulab for uncovering this hidden gem
+  them for all stock locations. Thanks to Dumitru Ceban from Nebulab for uncovering this hidden gem
   in the code and creating a UI to allow anyone to use it!
 - [**Pagination in the stock locations UI.**](https://github.com/solidusio/solidus/pull/3600) The
   Stock Locations page in the backend was missing a pagination UI, which was causing issues for
@@ -82,7 +82,7 @@ enthusiast and is passionate about building technology teams and empower them to
 
 **Peter is going to talk about solidus\_dev\_support** and how it supports developers in creating
 Solidus extensions. He'll be generating an extension from scratch and highlighting the features that
-come out of the box with solidus_dev_support.
+come out of the box with solidus\_dev\_support.
 
 We want to make this a monthly event, so we hope you'll join us in making this Solidus Community Day
 a success. [**You can sign up here. See you there!**](https://live.remo.co/e/solidus-community-day-1)
