@@ -1,4 +1,4 @@
-<% versions = Solidus::Versions.from_yaml_data(data.versions) %>
+<% versions = Solidus::Version.collection_from_yaml_data(data.versions) %>
 
 <table class="table text-center">
   <thead>

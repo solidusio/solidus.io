@@ -1,4 +1,4 @@
-<% versions = Solidus::Versions.from_yaml_data(data.versions).select(&:supported?).map(&:number).reverse.push('master') %>
+<% versions = Solidus::Version.collection_from_yaml_data(data.versions).select(&:supported?).map(&:number).reverse.push('master') %>
 
 <div class="extension-info card card-border-none <%= extension.categories.map { |c| "e-#{c.underscore.gsub('_', '-')}" }.join(' ') %>">
   <div class="card-body">
