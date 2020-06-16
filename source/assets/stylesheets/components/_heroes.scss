@@ -53,7 +53,8 @@
   }
   
   @include media-breakpoint-down(sm) {
-    .btn-primary {
+    .btn-primary,
+    .btn-secondary {
       display: block;
       width: 100%;
     }

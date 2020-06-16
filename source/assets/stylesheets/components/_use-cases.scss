@@ -38,4 +38,10 @@
   h5 {
     color: $blue;
   }
+  
+  &.hero-block.content-block--skewed {
+    .content-wrapper {
+      padding-top: 0;
+    }
+  }
 }
