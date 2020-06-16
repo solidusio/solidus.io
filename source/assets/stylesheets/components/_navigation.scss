@@ -235,6 +235,10 @@
 
       &--multi {
         min-width: 500px;
+        
+        &.expandable {
+          min-width: 1px;
+        }
 
         a {
           height: auto;
@@ -306,6 +310,42 @@
             }
           }
         }
+        
+        .dropdown-expand {
+          @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+          }
+
+          &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            &:last-child {
+              display: none;
+              opacity: 0;
+              transition: all .3s ease;
+              
+              &.expanded {
+                display: block;
+                opacity: 1;
+                transition: all .3s ease;
+              }
+              
+              @include media-breakpoint-up(lg){
+                border-left: 1px solid $gray-200;
+                padding-left: 20px;
+                margin-left: 20px;
+                
+                .dropdown-item {
+                  font-size: 1em;
+                }
+              }
+            }
+          }
+        }
       }
   
       .dropdown-item {
@@ -325,6 +365,23 @@
         
         &:last-child {
           margin-bottom: 0;
+        }
+        
+        &.open-list {
+          &::after {
+            content: '';
+            background: url("/assets/images/icons/chevron-right.svg") no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+            display: inline-block;
+            width: 8px;
+            height: 12px;
+            margin-left: 10px;
+          }
+          
+          &.opened {
+            color: $blue;
+          }
         }
       }
     }
