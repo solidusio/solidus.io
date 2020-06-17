@@ -20,6 +20,14 @@ $(function () {
     }
   });
   
+  // Expand menu on small screens
+  $(".expand-use-cases").click(function (event) {
+    event.stopPropagation();
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+      $(".use-cases-menu, .expandable").toggleClass("expanded");
+    }
+  });
+  
   // Tab on hover instead of click
   $('.tab-hover[data-mouse="hover"] a').hover(function(){
     $(this).tab('show');
