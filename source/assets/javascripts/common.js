@@ -25,6 +25,7 @@ $(function () {
     event.stopPropagation();
     if (window.matchMedia("(max-width: 1023px)").matches) {
       $(".use-cases-menu, .expandable").toggleClass("expanded");
+      $(this).toggleClass("opened");
     }
   });
   

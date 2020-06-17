@@ -372,14 +372,13 @@
       }
   
       .dropdown-item {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-size: 1rem;
         display: block;
         font-weight: 300;
         white-space: nowrap;
   
         @include media-breakpoint-up(lg){
-          margin-bottom: 20px;
           height: auto;
           padding: 0;
           font-size: 1.1rem;
@@ -413,7 +412,14 @@
             &::after {
               background: url("/assets/images/icons/chevron-right_white.svg") no-repeat;
               margin-left: 20px;
-              transform: rotate(90deg);
+              transform: rotate(0deg);
+              transition: transform .3s ease;
+            }
+            
+            &.opened {
+              &::after {
+                transform: rotate(90deg);
+              }
             }
           }
         }
