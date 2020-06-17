@@ -11,18 +11,12 @@ const Cookies = require('js-cookie');
 var lazyLoadInstance = new LazyLoad;
 
 $(function () {
-  // Expand menu
-  $(".expand-use-cases").on("mouseenter", function () {
-    if ($(".expandable").hasClass("show")) {
-      $(".use-cases-menu, .expandable").addClass("expanded");
-      $(this).addClass("opened");
-    }
-  });
-  
-  $(".dropdown-expand__list").on("mouseleave", function () {
-    if ($(".expandable").hasClass("show") && ($(this).hasClass("expanded"))) {
-      $(".dropdown-expand__list, .expandable").removeClass("expanded");
-      $(".expand-use-cases").removeClass("opened");
+  // Expand menu on large screens
+  $(".expand-use-cases").on("mouseenter", function (event) {
+    event.stopPropagation();
+    if ($(".expandable").hasClass("show") && (window.matchMedia("(min-width: 1024px)").matches)) {
+      $(".use-cases-menu, .expandable").toggleClass("expanded");
+      $(this).toggleClass("opened");
     }
   });
   
