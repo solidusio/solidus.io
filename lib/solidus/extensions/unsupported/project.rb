@@ -2,7 +2,7 @@ module Solidus
   module Extensions
     module Unsupported
       class Project < AbstractProject
-        def build_statuses
+        def build_statuses(versions:)
           versions.map do |version|
             [version, {
               status: :unsupported,

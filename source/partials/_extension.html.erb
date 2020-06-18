@@ -1,3 +1,5 @@
+<% versions = Solidus::Version.collection_from_yaml_data(data.versions).select(&:supported?).map(&:number).reverse.push('master') %>
+
 <div class="extension-info card card-border-none <%= extension.categories.map { |c| "e-#{c.underscore.gsub('_', '-')}" }.join(' ') %>">
   <div class="card-body">
     <h4 class="title">
@@ -15,7 +17,7 @@
     </div>
 
     <div class="extension-ci">
-      <% extension.ci.build_statuses.each_pair do |version, build| %>
+      <% extension.ci.build_statuses(versions: versions).each_pair do |version, build| %>
         <%= partial 'partials/extension/build_status', locals: {
             extension: extension,
             version: version,

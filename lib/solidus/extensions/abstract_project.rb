@@ -3,16 +3,15 @@ module Solidus
     class AbstractProject
       BRANCH = 'master'
 
-      attr_reader :extension, :versions
+      attr_reader :extension
 
       delegate :repo, :repo_org, :repo_name, to: :extension
 
-      def initialize(extension, versions:)
+      def initialize(extension)
         @extension = extension
-        @versions = versions
       end
 
-      def build_statuses
+      def build_statuses(versions:)
         @build_statuses ||= versions.map do |version|
           test_runs = last_build_group.test_runs_for(solidus_version: version)
           status = test_run_status_for(test_runs)
