@@ -31,6 +31,18 @@
       background-color: #9BC8CE;
       .logo { width: 140px; }
     }
+    
+    &.eighteenb {
+      background-color: #1798AF;
+    }
+    
+    &.maisonette {
+      background-color: #FAEFD9;
+      
+      p {
+        color: $gray-900;
+      }
+    }
   }
 }
 
