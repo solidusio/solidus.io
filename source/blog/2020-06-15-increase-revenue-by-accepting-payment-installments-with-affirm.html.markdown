@@ -3,7 +3,7 @@ title: "Increase revenue by accepting payment installments with Affirm."
 date: 2020-06-15 00:00 UTC
 tags: Solidus, Payments, Installments, Extensions
 author: Peter Berkenbosch
-cover_image: /blog/2020/06/15//increase-revenue-by-accepting-payment-installments-with-affirm/affirm-transaction-api.png
+cover_image: /blog/2020/06/15/increase-revenue-by-accepting-payment-installments-with-affirm/affirm-transaction-api.png
 description: >
   Increase revenue by accepting payment installments on your Solidus store with Affirm and
   prepare for lease-to-own (LTO) providers.
