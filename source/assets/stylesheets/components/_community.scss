@@ -126,7 +126,7 @@
 
 .wrapper-2{
   .dev-1{
-    @include img-retina("/assets/images/team/eric-saupe.png", "/assets/images/team/eric-saupe@2x.png", 100%, auto);
+    @include img-retina("/assets/images/team/eric-saupe.png", "/assets/images/team/jared-norman@2x.png", 100%, auto);
   }
   
   .dev-2{
@@ -137,20 +137,15 @@
 }
 
 .wrapper-3{
-  .dev-1{
-    @include img-retina("/assets/images/team/jacob-herrington.png", "/assets/images/team/jacob-herrington@2x.png", 100%, auto);
-  }
-  
   .dev-2{
     @include img-retina("/assets/images/team/thomas-von-deyen.png", "/assets/images/team/thomas-von-deyen@2x.png", 100%, auto);
     background-color: $white;
-    animation: devFade 12s ease-in-out 2s infinite alternate;
   }
   
   .dev-3{
     @include img-retina("/assets/images/team/andrea-longhi.png", "/assets/images/team/andrea-longhi@2x.png", 100%, auto);
     background-color: $white;
-    animation: devFade3slide 12s ease-in-out 2s infinite alternate;
+    animation: devFade 10s ease-in-out 2s infinite alternate;
   }
 }
 
@@ -216,24 +211,6 @@
   }
   55% {
   opacity:0;
-  }
-  100% {
-  opacity:0;
-  }
-}
-
-@keyframes devFade3slide {
-  0% {
-  opacity:1;
-  }
-  35% {
-  opacity:0;
-  }
-  50% {
-  opacity:1;
-  }
-  75% {
-    opacity:0;
   }
   100% {
   opacity:0;
