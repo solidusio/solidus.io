@@ -251,11 +251,11 @@
         
         &.expandable {
           min-width: 1px;
-          transition: padding-right .3s ease;
+          transition: padding-right .2s ease;
           
           @include media-breakpoint-up(lg){
             &.expanded {
-              padding-right: 190px;
+              padding-right: 250px;
             }
           }
         }
@@ -344,13 +344,16 @@
             list-style: none;
 
             &:last-child {
-              display: none;
               opacity: 0;
-              transition: opacity .3s linear 1s;
+              visibility: hidden;
+              transition-delay: .15s;
+              transition-property: visibility;
+              transition-duration: .3s;
+              transition-timing-function: ease;
               
               &.expanded {
-                display: block;
                 opacity: 1;
+                visibility: visible;
               }
               
               @include media-breakpoint-up(lg){
