@@ -51,6 +51,12 @@ silver_partners:
     description: "3llideas is an eCommerce specialist based in Barcelona (Spain). We help companies power their business and Solidus helps us to be agile."
     url: http://www.3llideas.com
     image: "3llideas-logo.svg"
+  nimble:
+    name: "Nimble"
+    short_description: "e-Commerce, Ruby on Rails, Elixir, iOS, Android, UX/UI"
+    description: "We are a team of software engineers, designers and product managers building outstanding web and mobile applications for companies of all sizes."
+    url: https://nimblehq.co?utm_source=solidus
+    image: "nimble-logo.svg"
 
 bronze_partners:
   peter_berkenbosch:
