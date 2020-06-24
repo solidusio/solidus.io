@@ -38,10 +38,23 @@
     
     &.maisonette {
       background-color: #FAEFD9;
+      color: $gray-900;
       
-      p {
+      .inherit-fill { fill: $gray-900; }
+      
+      .logo svg {
+        min-width: auto;
+        max-height: auto;
+      }
+      
+      p,
+      .text {
         color: $gray-900;
       }
+    }
+    
+    &.bevv {
+      background-color: #FF4848;
     }
   }
 }
