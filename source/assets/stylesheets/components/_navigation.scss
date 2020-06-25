@@ -346,14 +346,13 @@
             &:last-child {
               opacity: 0;
               visibility: hidden;
-              transition-delay: .15s;
-              transition-property: visibility;
-              transition-duration: .3s;
-              transition-timing-function: ease;
+              height: 0;
+              transition: opacity .3s linear, visibility .3s linear;
               
               &.expanded {
                 opacity: 1;
                 visibility: visible;
+                height: auto;
               }
               
               @include media-breakpoint-up(lg){
