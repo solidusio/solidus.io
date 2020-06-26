@@ -1,6 +1,6 @@
 @mixin link-hover {
   position: relative;
-  padding: 24px 10px;
+  padding: 19px 10px;
 
   &::after {
     background: $blue;
@@ -26,6 +26,20 @@
   border-bottom: 1px solid $gray-200;
   font-size: $font-size-xs;
   width: 100%;
+
+  .subnav-wrapper {
+    display: flex;
+    align-items: center;
+    
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    overflow-x: scroll;
+    scrollbar-width: none; // Firefox 64
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
   
   ul,
   ul li {
@@ -34,37 +48,33 @@
   
   small {
     font-weight: $font-weight-bolder;
-    margin-top: 2px;
+    text-transform: uppercase;
     white-space: nowrap;
   }
   
   ul {
-    align-items: center;
     display: flex;
-    height: 70px;
     list-style-type: none;
-    text-transform: uppercase;
-    
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-    overflow-x: scroll;
-    scrollbar-width: none; // Firefox 64
-    width: 100%;
 
-    &::-webkit-scrollbar {
-      display: none;
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      justify-content: center;
     }
   }
   
   &__item {
     align-items: stretch;
     display: inline-flex;
-    padding: 0 2%;
+    margin: 0 2%;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0 3%;
+    }
     
     &__link {
+      display: block;
       align-self: center;
       color: $gray-900;
-      text-transform: none;
       white-space: nowrap;
       
       @include link-hover;
