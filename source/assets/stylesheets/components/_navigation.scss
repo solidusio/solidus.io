@@ -383,9 +383,14 @@
         @include media-breakpoint-up(lg){
           height: auto;
           padding: 0;
-          font-size: 1.1rem;
           font-weight: 500;
           color: $gray-900;
+        }
+
+        &:hover {
+          @include media-breakpoint-up(lg){
+            color: $blue;
+          }
         }
         
         &:last-child {
@@ -405,12 +410,12 @@
           }
           
           &.opened {
-            color: $blue;
+            @include media-breakpoint-up(lg){
+              color: $blue;
+            }
           }
           
           @include media-breakpoint-down(md) {
-            font-weight: 700;
-            
             &::after {
               background: url("/assets/images/icons/chevron-right_white.svg") no-repeat;
               margin-left: 20px;
