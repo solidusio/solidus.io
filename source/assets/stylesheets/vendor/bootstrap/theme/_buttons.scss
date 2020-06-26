@@ -3,7 +3,7 @@
 }
 
 .btn-white{
-  @include button-variant(#ffffff, $secondary, $gray-900, $active-background: #ffffff, $active-border: #ffffff, $hover-color: $blue, $active-color: $blue);
+  @include button-variant(#ffffff, $secondary, $blue, $active-background: #ffffff, $active-border: #ffffff, $hover-color: $blue, $active-color: $blue);
   border-width: 1px;
 }
 
