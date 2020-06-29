@@ -44,8 +44,16 @@
       }
     }
     
-    &.bevv {
-      background-color: #FF4848;
+    &.wonderbly {
+      background-color: #80D2BE;
+      
+      .logo { width: 130px; }
+      
+      @include media-breakpoint-up(lg) {
+        p {
+          font-size: $font-size-base;
+        }
+      }
     }
   }
 }
