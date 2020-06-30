@@ -53,10 +53,7 @@ description: Solidus is a limitless eCommerce platform. Create an integrated exp
   <div class="content-wrapper">
     <div class="content-block pt-0">
       <div class="container">
-        <p class="lead text-gray-600 text-center font-weight-light mb-4">
-          Solidus powers the brands defining the future of eCommerce.
-        </p>
-        <%= partial "partials/community_logos" %>
+        <%= partial "partials/use_cases_logos" %>
       </div>
     </div>
     
@@ -99,28 +96,27 @@ description: Solidus is a limitless eCommerce platform. Create an integrated exp
   </div>
 </div>
 
-
 <div class="use-cases testimonials">
   <div class="container text-center">
     <div class="carousel-content">
       <div class="main-image-container">
-        <img src="<%= image_path("use-cases/case-study_yearandday@1x.jpg") %>" data-srcset="<%= image_path("use-cases/case-study_yearandday@2x.jpg") %> 2x, <%= image_path("use-cases/case-study_yearandday@1x.jpg") %> 1x" class="img-fluid" width="100%" alt="Year&Day" />
+        <img src="<%= image_path("use-cases/quote-floyd@1x.jpg") %>" data-srcset="<%= image_path("use-cases/quote-floyd@2x.jpg") %> 2x, <%= image_path("use-cases/quote-floyd@1x.jpg") %> 1x" class="img-fluid" width="100%" alt="Floyd" />
       </div>
       <div class="blockquote-container">
-        <blockquote class="blockquote yearandday d-flex flex-column justify-content-between">
-          <a class="logo" href="https://yearandday.com/" target="_blank"><%= inline_svg("community-logos/yearandday.svg", class: "isvg") %></a>
+        <blockquote class="blockquote floyd d-flex flex-column justify-content-between">
+          <a class="logo" href="https://floydhome.com/" target="_blank"><%= inline_svg("community-logos/floyd.svg", class: "isvg") %></a>
           <div>
             <%= inline_svg("icons/quote.svg", class: "quote") %>
             <p class="pl-4">
-              Praesent dignissim pretium auctor. Integer pretium turpis nec malesuada lacinia. Maecenas ex nisl, consectetur at dictum.
+              I've never had to say 'no' to my product team. I can customize Solidus to do anything they want.
             </p>
           </div>
           <footer class="blockquote-footer pt-3">
             <cite>
-              <img src="<%= image_path("use-cases/placeholder.png") %>" data-srcset="<%= image_path("use-cases/placeholder@2x.png") %> 2x, <%= image_path("use-cases/placeholder.png") %> 1x" class="img-circled" width="48" height="48" alt="Lorem Ipsum" />
+              <img src="<%= image_path("quotes/jacky-giang.png") %>" data-srcset="<%= image_path("quotes/jacky-giang@2x.png") %> 2x, <%= image_path("quotes/jacky-giang.png") %> 1x" class="img-circled" width="48" height="48" alt="Jacky Giang" />
               <span class="text">
-                <span class="author">Lorem Ipsum</span>
-                  Developer at Year&Day
+                <span class="author">Jacky Giang</span>
+                  Head of Technology at Floyd
                 </span>
               </cite>
           </footer>
@@ -164,36 +160,6 @@ description: Solidus is a limitless eCommerce platform. Create an integrated exp
           There’s no one-size-fits-all when it comes to analytics, but most eCommerce platforms leave you stuck with their default reports. Solidus lets you retain full ownership over your data: build custom reports right in your store’s backend, or connect your store to external reporting and analytics tools for even more advanced use cases. It’s your brand — why shouldn’t it be your data?
         </p>
         <a href="/roadmap" class="btn-link">Discover more</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="use-cases testimonials">
-  <div class="container text-center">
-    <div class="carousel-content">
-      <div class="main-image-container">
-        <img src="<%= image_path("use-cases/quote-floyd@1x.jpg") %>" data-srcset="<%= image_path("use-cases/quote-floyd@2x.jpg") %> 2x, <%= image_path("use-cases/quote-floyd@1x.jpg") %> 1x" class="img-fluid" width="100%" alt="Floyd" />
-      </div>
-      <div class="blockquote-container">
-        <blockquote class="blockquote floyd d-flex flex-column justify-content-between">
-          <a class="logo" href="https://floydhome.com/" target="_blank"><%= inline_svg("community-logos/floyd.svg", class: "isvg") %></a>
-          <div>
-            <%= inline_svg("icons/quote.svg", class: "quote") %>
-            <p class="pl-4">
-              I've never had to say 'no' to my product team. I can customize Solidus to do anything they want.
-            </p>
-          </div>
-          <footer class="blockquote-footer pt-3">
-            <cite>
-              <img src="<%= image_path("quotes/jacky-giang.png") %>" data-srcset="<%= image_path("quotes/jacky-giang@2x.png") %> 2x, <%= image_path("quotes/jacky-giang.png") %> 1x" class="img-circled" width="48" height="48" alt="Jacky Giang" />
-              <span class="text">
-                <span class="author">Jacky Giang</span>
-                  Head of Technology at Floyd
-                </span>
-              </cite>
-          </footer>
-        </blockquote>
       </div>
     </div>
   </div>

@@ -1,0 +1,83 @@
+online_stores_logos:
+  floyd:
+    name: "Floyd"
+    logo: "floyd.svg"
+    url: https://floydhome.com
+    
+  peach:
+    name: "Peach"
+    logo: "peach.svg"
+    url: https://www.discoverpeach.com
+    
+  casper:
+    name: "Casper"
+    logo: "casper.svg"
+    url: https://www.casper.com
+    
+  firstleaf:
+    name: "firstleaf"
+    logo: "firstleaf.svg"
+    url: https://www.firstleaf.club
+    
+headless_commerce_logos:
+  meundies:
+    name: "MeUndies"
+    logo: "meundies.svg"
+    url: https://www.meundies.com
+    
+  maisonette:
+    name: "Maisonette"
+    logo: "maisonette.svg"
+    url: https://www.maisonette.com
+    
+  acetate:
+    name: "Ace&tate"
+    logo: "ace&tate.svg"
+    url: https://www.aceandtate.com
+    
+  bookshop:
+    name: "Bookshop"
+    logo: "bookshop.svg"
+    url: https://bookshop.org
+    
+marketplace_logos:
+  maisonette:
+    name: "Maisonette"
+    logo: "maisonette.svg"
+    url: https://www.maisonette.com
+    
+  glossier:
+    name: "Glossier"
+    logo: "glossier.svg"
+    url: https://www.glossier.com
+    
+  moddedeuros:
+    name: "Modded Euros"
+    logo: "moddedeuros.svg"
+    url: https://www.moddedeuros.com
+    
+  bevv:
+    name: "Bevv"
+    logo: "bevv.svg"
+    url: https://bevv.com
+    
+global_commerce_logos:
+  wonderbly:
+    name: "Wonderbly"
+    logo: "wonderbly.svg"
+    url: https://www.wonderbly.com
+    
+  wool_and_the_gang:
+    name: "Wool & The Gang"
+    logo: "woolandthegang.svg"
+    url: https://www.woolandthegang.com
+      
+  alumier_md:
+    name: "AlumierMD"
+    logo: "alumiermd.svg"
+    url: https://www.alumiermd.com
+        
+  acetate:
+    name: "Ace&tate"
+    logo: "ace&tate.svg"
+    url: https://www.aceandtate.com

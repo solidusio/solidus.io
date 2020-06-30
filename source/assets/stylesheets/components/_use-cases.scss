@@ -22,11 +22,6 @@
   }
   
   .blockquote {
-    &.yearandday {
-      background-color: #9BC8CE;
-      .logo { width: 140px; }
-    }
-    
     &.maisonette {
       background-color: #FAEFD9;
       color: $gray-900;
@@ -55,6 +50,10 @@
         }
       }
     }
+  }
+  
+  &.community-logos {
+    opacity: .65;
   }
 }
 
