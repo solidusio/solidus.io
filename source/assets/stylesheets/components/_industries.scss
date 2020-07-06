@@ -1,0 +1,23 @@
+.industries {
+  .blockquote {
+    &.zohr {
+      background-color: #FF984D;
+      
+      .logo svg {
+        min-width: auto;
+        max-height: auto;
+      }
+    }
+  }
+}
+
+//Community logos
+.community-logos {
+  &__item {
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
+  }
+  
+  .inherit-fill { fill: $white; }
+}

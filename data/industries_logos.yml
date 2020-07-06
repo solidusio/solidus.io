@@ -1,0 +1,20 @@
+automotive_logos:
+  moddedeuros:
+    name: "ModdedEuros"
+    logo: "moddedeuros.svg"
+    url: https://www.moddedeuros.com
+    
+  tyres_direct:
+    name: "Tyres Direct"
+    logo: "tyresdirect.svg"
+    url: https://tyresdirectuk.co.uk
+    
+  zohr:
+    name: "Zohr"
+    logo: "zohr.svg"
+    url: https://www.zohr.com
+    
+  fcp_euro:
+    name: "FCP Euro"
+    logo: "fcpeuro.svg"
+    url: https://www.fcpeuro.com
