@@ -1,6 +1,6 @@
 ---
-title: Industries | Automotive
-description: Mod any aspect of your store to advance your business through unexplored roads. You are the driver, so take full control of your store, from site performances to your data reporting.
+title: Industries | Home Decor
+description: Fully integrate your brand with your users' experiences and deliver anything to your customer's living room.
 ---
 
 <div class="use-cases-hero hero-block">
@@ -10,10 +10,10 @@ description: Mod any aspect of your store to advance your business through unexp
         <div class="subnav-wrapper container">
           <small>Industries</small>
           <ul>
-            <li class="subnav__item selected">
+            <li class="subnav__item">
               <a class="subnav__item__link" href="/industries/automotive">Automotive</a>
             </li>
-            <li class="subnav__item">
+            <li class="subnav__item selected">
               <a class="subnav__item__link" href="/industries/home-decor">Home Decor</a>
             </li>
           </ul>
@@ -25,10 +25,10 @@ description: Mod any aspect of your store to advance your business through unexp
         <div class="row align-items-center">
           <div class="col-lg">
             <div class="pr-lg-6 mb-3">
-              <h5>Automotive</h5>
-              <h1 class="title">Build your customer experience <span class="d-md-block">at top speed.</span></h1>
+              <h5>Home Decor</h5>
+              <h1 class="title">Create the trendsetting experience your customers want.</h1>
               <p class="mb-6">
-                Mod any aspect of your store to advance your business through unexplored roads. You are the driver, so take full control of your store, from site performances to your data reporting.
+                Fully integrate your brand with your users' experiences and deliver anything to your customer's living room.
               </p>
               <a class="btn btn-primary btn-lg" href="/contact">Get started</a>
               <a class="btn btn-secondary btn-white" href="http://solidemo.herokuapp.com/" target="_blank">Demo</a>
@@ -36,7 +36,7 @@ description: Mod any aspect of your store to advance your business through unexp
           </div>
           <div class="col-lg">
             <div class="hero-image-wrapper">
-              <img data-srcset="<%= image_path('industries/automotive_hero@2x.png') %> 2x, <%= image_path('industries/automotive_hero@1x.png') %> 1x" class="img-fluid" alt="Automotive" >
+              <img data-srcset="<%= image_path('industries/home-decor_hero@2x.png') %> 2x, <%= image_path('industries/home-decor_hero@1x.png') %> 1x" class="img-fluid" alt="Home Decor" >
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@ description: Mod any aspect of your store to advance your business through unexp
   <div class="container">
     <div class="row">
       <div class="industries__image col-md order-md-2">
-        <img src="<%= image_path("industries/automotive_01@1x.png") %>" data-srcset="<%= image_path("industries/automotive_01@2x.png") %> 2x, <%= image_path("industries/automotive_01@1x.png") %> 1x" class="img-fluid" width="100%" alt="Multiple warehouses" />
+        <img src="<%= image_path('industries/home-decor_01_placeholder@2x.png') %>" data-src="<%= image_path('industries/home-decor_01.svg') %>" class="img-fluid" alt="Multiple warehouses" width="100%" />
       </div>
       <div class="col-md align-self-center">
         <div class="industries__header">
@@ -77,7 +77,7 @@ description: Mod any aspect of your store to advance your business through unexp
   <div class="container">
     <div class="row">
       <div class="industries__image col-md">
-        <img src="<%= image_path("industries/automotive_02@1x.png") %>" data-srcset="<%= image_path("industries/automotive_02@2x.png") %> 2x, <%= image_path("industries/automotive_02@1x.png") %> 1x" class="img-fluid" width="100%" alt="Flexible pricing" />
+        <img src="<%= image_path("industries/home-decor_02@1x.png") %>" data-srcset="<%= image_path("industries/home-decor_02@2x.png") %> 2x, <%= image_path("industries/home-decor_02@1x.png") %> 1x" class="img-fluid" width="100%" alt="Flexible pricing" />
       </div>
       <div class="col-md align-self-center">
         <div class="industries__header">
@@ -96,25 +96,23 @@ description: Mod any aspect of your store to advance your business through unexp
     <div class="container text-center">
       <div class="carousel-content">
         <div class="main-image-container">
-          <img src="<%= image_path("industries/quote-zohr@1x.jpg") %>" data-srcset="<%= image_path("industries/quote-zohr@2x.jpg") %> 2x, <%= image_path("industries/quote-zohr@1x.jpg") %> 1x" class="img-fluid" width="100%" alt="Zohr" />
+          <img src="<%= image_path("use-cases/quote-floyd@1x.jpg") %>" data-srcset="<%= image_path("use-cases/quote-floyd@2x.jpg") %> 2x, <%= image_path("use-cases/quote-floyd@1x.jpg") %> 1x" class="img-fluid" width="100%" alt="Floyd" />
         </div>
         <div class="blockquote-container">
-          <blockquote class="blockquote zohr d-flex flex-column justify-content-between">
-            <a class="logo" href="https://zohr.com/" target="_blank">
-              <%= inline_svg("community-logos/zohr.svg", class: "isvg") %>
-            </a>
+          <blockquote class="blockquote floyd d-flex flex-column justify-content-between">
+            <a class="logo" href="https://floydhome.com/" target="_blank"><%= inline_svg("community-logos/floyd.svg", class: "isvg") %></a>
             <div>
               <%= inline_svg("icons/quote.svg", class: "quote") %>
               <p class="pl-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                I've never had to say 'no' to my product team. I can customize Solidus to do anything they want.
               </p>
             </div>
             <footer class="blockquote-footer pt-3">
               <cite>
-                <img src="<%= image_path("use-cases/placeholder.png") %>" data-srcset="<%= image_path("use-cases/placeholder@2x.png") %> 2x, <%= image_path("use-cases/placeholder.png") %> 1x" class="img-circled" width="48" height="48" alt="placeholder" />
+                <img src="<%= image_path("quotes/jacky-giang.png") %>" data-srcset="<%= image_path("quotes/jacky-giang@2x.png") %> 2x, <%= image_path("quotes/jacky-giang.png") %> 1x" class="img-circled" width="48" height="48" alt="Jacky Giang" />
                 <span class="text">
-                  <span class="author">Lorem Ipsum</span>
-                    Lorem Ipsum
+                  <span class="author">Jacky Giang</span>
+                    Head of Technology at Floyd
                   </span>
                 </cite>
             </footer>
@@ -129,11 +127,11 @@ description: Mod any aspect of your store to advance your business through unexp
   <div class="container">
     <div class="row">
       <div class="industries__image order-md-2 col-md">
-        <img src="<%= image_path("industries/automotive_03@1x.png") %>" data-srcset="<%= image_path("industries/automotive_03@2x.png") %> 2x, <%= image_path("industries/automotive_03@1x.png") %> 1x" class="img-fluid" width="100%" alt="Performance" />
+        <img src="<%= image_path("industries/home-decor_03@1x.png") %>" data-srcset="<%= image_path("industries/home-decor_03@2x.png") %> 2x, <%= image_path("industries/home-decor_03@1x.png") %> 1x" class="img-fluid" width="100%" alt="Brand centered experience" />
       </div>
       <div class="col-md align-self-center">
         <div class="industries__header">
-          <h2>Performance</h2>
+          <h2>Brand centered experience</h2>
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt sem id est consequat, vel finibus lectus facilisis. In lectus nisi, posuere nec elit in, vehicula varius magna.
@@ -147,11 +145,11 @@ description: Mod any aspect of your store to advance your business through unexp
   <div class="container">
     <div class="row">
       <div class="industries__image col-md">
-        <img src="<%= image_path("industries/automotive_04@1x.png") %>" data-srcset="<%= image_path("industries/automotive_04@2x.png") %> 2x, <%= image_path("industries/automotive_04@1x.png") %> 1x" class="img-fluid" width="100%" alt="Custom search" />
+        <img src="<%= image_path("industries/home-decor_04@1x.png") %>" data-srcset="<%= image_path("industries/home-decor_04@2x.png") %> 2x, <%= image_path("industries/home-decor_04@1x.png") %> 1x" class="img-fluid" width="445" alt="Omnichannel" />
       </div>
       <div class="col-md align-self-center">
         <div class="industries__header">
-          <h2>Custom search</h2>
+          <h2>Omnichannel</h2>
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt sem id est consequat, vel finibus lectus facilisis. In lectus nisi, posuere nec elit in, vehicula varius magna.

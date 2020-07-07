@@ -1,12 +1,31 @@
 .industries {
+  &__image {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  &.testimonials {
+    // Set fixed width for the logo
+    .logo {
+      transform: none;
+      width: 120px;
+    }
+    
+    .carousel-content {
+      z-index: 998;
+    }
+    
+    .main-image-container {
+      img {
+        transform: translateY(0);
+      }
+    }
+  }
+  
   .blockquote {
     &.zohr {
       background-color: #FF984D;
-      
-      .logo svg {
-        min-width: auto;
-        max-height: auto;
-      }
     }
   }
   

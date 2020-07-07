@@ -1,3 +1,6 @@
+automotive_title:
+  title: Solidus powers automotive brands defining the future of eCommerce.
+  
 automotive_logos:
   moddedeuros:
     name: "ModdedEuros"
@@ -18,3 +21,12 @@ automotive_logos:
     name: "FCP Euro"
     logo: "fcpeuro.svg"
     url: https://www.fcpeuro.com
+    
+home_decor_title:
+  title: Solidus powers home decor brands defining the future of eCommerce.
+    
+home_decor_logos:
+  floyd:
+    name: "Floyd"
+    logo: "floyd.svg"
+    url: https://www.floydhome.com

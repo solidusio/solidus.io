@@ -1,11 +1,31 @@
 <div class="col-lg-6">
   <h3 class="mb-5">
-    Solidus powers automotive brands defining the future of eCommerce.
+    <% if current_page.data.title == 'Industries | Automotive' %>
+      <% data.industries_logos[:automotive_title] do |title| %>
+        <%= title[:title] %>
+      <% end %>
+    <% end %>
+    
+    <% if current_page.data.title == 'Industries | Home Decor' %>
+      <% data.industries_logos[:home_decor_title] do |title| %>
+        <%= title[:title] %>
+      <% end %>
+    <% end %>
   </h3>
 </div>
 <div class="community-logos industries col-lg-6">
   <% if current_page.data.title == 'Industries | Automotive' %>
     <% data.industries_logos[:automotive_logos].each do |automotive, info| %>
+      <div class="community-logos__item">
+        <a href="<%= info[:url] %>" target="_blank">
+          <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %>
+        </a>
+      </div>
+    <% end %>
+  <% end %>
+  
+  <% if current_page.data.title == 'Industries | Home Decor' %>
+    <% data.industries_logos[:home_decor_logos].each do |home_decor, info| %>
       <div class="community-logos__item">
         <a href="<%= info[:url] %>" target="_blank">
           <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %>
