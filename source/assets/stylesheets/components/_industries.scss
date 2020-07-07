@@ -9,15 +9,14 @@
       }
     }
   }
-}
-
-//Community logos
-.community-logos {
-  &__item {
-    @include media-breakpoint-up(md) {
-      width: 50%;
-    }
-  }
   
-  .inherit-fill { fill: $white; }
+  &.community-logos {
+    .community-logos__item {
+      @include media-breakpoint-up(md) {
+        width: 50%;
+      }
+    }
+    
+    .inherit-fill { fill: $white; }
+  }
 }
