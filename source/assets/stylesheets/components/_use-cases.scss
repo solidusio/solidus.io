@@ -19,6 +19,11 @@
         transform: translateY(0);
       }
     }
+    
+    .logo {
+      transform: none;
+      width: 120px;
+    }
   }
   
   .blockquote {
@@ -28,11 +33,6 @@
       
       .inherit-fill { fill: $gray-900; }
       
-      .logo svg {
-        min-width: auto;
-        max-height: auto;
-      }
-      
       p,
       .text {
         color: $gray-900;
@@ -41,8 +41,6 @@
     
     &.wonderbly {
       background-color: #80D2BE;
-      
-      .logo { width: 130px; }
       
       @include media-breakpoint-up(lg) {
         p {
