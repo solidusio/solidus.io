@@ -71,11 +71,6 @@ global_commerce_logos:
     name: "Wool & The Gang"
     logo: "woolandthegang.svg"
     url: https://www.woolandthegang.com
-      
-  alumier_md:
-    name: "AlumierMD"
-    logo: "alumiermd.svg"
-    url: https://www.alumiermd.com
         
   acetate:
     name: "Ace&tate"
