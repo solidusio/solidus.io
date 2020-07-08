@@ -35,7 +35,7 @@ fashion_title:
   title: Solidus powers fashion brands defining the future of eCommerce.
     
 fashion_logos:
-  floyd:
+  maisonette:
     name: "Maisonette"
     logo: "maisonette.svg"
     url: https://www.maisonette.com
@@ -44,3 +44,12 @@ fashion_logos:
     name: "MeUndies"
     logo: "meundies.svg"
     url: https://www.meundies.com
+    
+health_beauty_title:
+  title: Solidus powers health & beauty brands defining the future of eCommerce.
+    
+health_beauty_logos:
+  careof:
+    name: "Care Of"
+    logo: "careof.svg"
+    url: https://takecareof.com
