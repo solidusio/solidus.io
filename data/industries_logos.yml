@@ -30,3 +30,17 @@ home_decor_logos:
     name: "Floyd"
     logo: "floyd.svg"
     url: https://www.floydhome.com
+    
+fashion_title:
+  title: Solidus powers fashion brands defining the future of eCommerce.
+    
+fashion_logos:
+  floyd:
+    name: "Maisonette"
+    logo: "maisonette.svg"
+    url: https://www.maisonette.com
+    
+  meundies:
+    name: "MeUndies"
+    logo: "meundies.svg"
+    url: https://www.meundies.com

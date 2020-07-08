@@ -39,3 +39,18 @@
     .inherit-fill { fill: $white; }
   }
 }
+
+.industries-hero {
+  h5 {
+    color: $blue;
+  }
+  
+  .content-wrapper {
+    .content-block {
+      @include media-breakpoint-up(md){
+        padding-top: 65px;
+        padding-bottom: 65px;
+      }
+    }
+  }
+}
