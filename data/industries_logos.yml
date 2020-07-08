@@ -53,3 +53,17 @@ health_beauty_logos:
     name: "Care Of"
     logo: "careof.svg"
     url: https://takecareof.com
+    
+food_beverage_title:
+  title: Solidus powers food & beverage brands defining the future of eCommerce.
+    
+food_beverage_logos:
+  bevv:
+    name: "Bevv"
+    logo: "bevv.svg"
+    url: https://www.bevv.com
+    
+  firstleaf:
+    name: "Firstleaf"
+    logo: "firstleaf.svg"
+    url: https://www.firstleaf.club

@@ -23,6 +23,12 @@
         <%= title[:title] %>
       <% end %>
     <% end %>
+    
+    <% if current_page.data.title == 'Industries | Food & Beverage' %>
+      <% data.industries_logos[:food_beverage_title] do |title| %>
+        <%= title[:title] %>
+      <% end %>
+    <% end %>
   </h3>
 </div>
 <div class="community-logos industries col-lg-6">
@@ -58,6 +64,16 @@
   
   <% if current_page.data.title == 'Industries | Health & Beauty' %>
     <% data.industries_logos[:health_beauty_logos].each do |health_beauty, info| %>
+      <div class="community-logos__item">
+        <a href="<%= info[:url] %>" target="_blank">
+          <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %>
+        </a>
+      </div>
+    <% end %>
+  <% end %>
+  
+  <% if current_page.data.title == 'Industries | Food & Beverage' %>
+    <% data.industries_logos[:food_beverage_logos].each do |food_beverage, info| %>
       <div class="community-logos__item">
         <a href="<%= info[:url] %>" target="_blank">
           <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %>
