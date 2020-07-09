@@ -2,7 +2,7 @@
 title: "Solidus Roadmap Update: Q1 2020 Edition"
 date: 2020-04-06
 tags: Solidus
-cover_image: /blog/2020/04/06/solidus-roadmap-update-q1-2020-edition/solidus-roadmap-update-q1-2020-edition.png
+cover_image: /blog/shared/images/solidus-monthly-update.png
 description: Check out latest updates on the Solidus Roadmap progress. GraphQL API, Shopify importer, Headless content management and much more.
 author: Alessandro Desantis
 ---
