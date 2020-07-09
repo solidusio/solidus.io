@@ -53,6 +53,11 @@ health_beauty_logos:
     logo: "careof.svg"
     url: https://takecareof.com
     
+  goby:
+    name: "Goby"
+    logo: "goby.svg"
+    url: https://goby.co
+    
 food_beverage_logos:
   bevv:
     name: "Bevv"
