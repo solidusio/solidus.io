@@ -1,33 +1,23 @@
 <div class="col-lg-6">
   <h3 class="mb-5">
     <% if current_page.data.title == 'Industries | Automotive' %>
-      <% data.industries_logos[:automotive_title] do |title| %>
-        <%= title[:title] %>
-      <% end %>
+      <%= data.industries_logos[:automotive_title] %>
     <% end %>
     
     <% if current_page.data.title == 'Industries | Home Decor' %>
-      <% data.industries_logos[:home_decor_title] do |title| %>
-        <%= title[:title] %>
-      <% end %>
+      <%= data.industries_logos[:home_decor_title] %>
     <% end %>
-    
+
     <% if current_page.data.title == 'Industries | Fashion' %>
-      <% data.industries_logos[:fashion_title] do |title| %>
-        <%= title[:title] %>
-      <% end %>
+      <%= data.industries_logos[:fashion_title] %>
     <% end %>
-    
+
     <% if current_page.data.title == 'Industries | Health & Beauty' %>
-      <% data.industries_logos[:health_beauty_title] do |title| %>
-        <%= title[:title] %>
-      <% end %>
+      <%= data.industries_logos[:health_beauty_title] %>
     <% end %>
-    
+
     <% if current_page.data.title == 'Industries | Food & Beverage' %>
-      <% data.industries_logos[:food_beverage_title] do |title| %>
-        <%= title[:title] %>
-      <% end %>
+      <%= data.industries_logos[:food_beverage_title] %>
     <% end %>
   </h3>
 </div>

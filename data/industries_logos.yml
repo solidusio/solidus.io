@@ -1,6 +1,14 @@
-automotive_title:
-  title: Solidus powers automotive brands defining the future of eCommerce.
-  
+automotive_title: Solidus powers automotive brands defining the future of eCommerce.
+
+home_decor_title: Solidus powers home decor brands defining the future of eCommerce.
+
+fashion_title: Solidus powers fashion brands defining the future of eCommerce.
+
+health_beauty_title: Solidus powers health & beauty brands defining the future of eCommerce.
+
+food_beverage_title: Solidus powers food & beverage brands defining the future of eCommerce.
+
+
 automotive_logos:
   moddedeuros:
     name: "ModdedEuros"
@@ -22,17 +30,11 @@ automotive_logos:
     logo: "fcpeuro.svg"
     url: https://www.fcpeuro.com
     
-home_decor_title:
-  title: Solidus powers home decor brands defining the future of eCommerce.
-    
 home_decor_logos:
   floyd:
     name: "Floyd"
     logo: "floyd.svg"
     url: https://www.floydhome.com
-    
-fashion_title:
-  title: Solidus powers fashion brands defining the future of eCommerce.
     
 fashion_logos:
   maisonette:
@@ -45,17 +47,11 @@ fashion_logos:
     logo: "meundies.svg"
     url: https://www.meundies.com
     
-health_beauty_title:
-  title: Solidus powers health & beauty brands defining the future of eCommerce.
-    
 health_beauty_logos:
   careof:
     name: "Care Of"
     logo: "careof.svg"
     url: https://takecareof.com
-    
-food_beverage_title:
-  title: Solidus powers food & beverage brands defining the future of eCommerce.
     
 food_beverage_logos:
   bevv:
