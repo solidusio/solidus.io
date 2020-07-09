@@ -2,7 +2,7 @@
 title: "Solidus Roadmap Update: Q2 2020"
 date: 2020-07-09
 tags: Solidus
-cover_image: /blog/shared/images/solidus-monthly-update.png
+cover_image: /blog/shared/images/solidus-roadmap-update.png
 description: Check out the progress we've made towards our roadmap in Q2 2020!
 author: Alessandro Desantis
 ---
