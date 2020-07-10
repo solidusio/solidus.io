@@ -30,6 +30,7 @@
       <h1 class="post-title title"><%= current_page.data.title %></h1>
       <div class="blog-post-author text-gray-048"><%= current_page.data.author %> · <%= current_page.date.strftime('%b %e, %Y') %></div>
     </div>
+    <%= current_page.data.tags %>
     <% if current_page.data.cover_image %>
       <img class="img-fluid mb-4" src="<%= current_page.data.cover_image %>">
     <% end %>

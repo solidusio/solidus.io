@@ -8,23 +8,36 @@ description: What's new in Solidus! Check out the latest news about our technolo
 <div class="content-block content-block-gray-100 text-center">
   <div class="container">
     <h1 class="title">Solidus <span class="text-gray-048">Blog</span></h1>
+    <p>
+      Stay up to date on the latest from Solidus.
+    </p>
   </div>
 </div>
 
+<%# blog.tags.each do |tag, articles| %>
+  <%#= link_to "#{tag} (#{articles.size})", tag_path(tag) %>
+<%# end %>
+
 <div class="blog-index-block content-block">
   <div class="container">
-    <% page_articles.each_with_index do |article, i| %>
-      <a class="blog-post-preview card" href="<%= url_for article %>">
-        <% if article.data.cover_image %>
-          <img class="card-img-top img-fluid" src="<%= article.data.cover_image %>">
-        <% end %>
-        <div class="card-body">
-          <h3 class="title"><%= article.title %></h3>
-          <div class="blog-post-author text-gray-048"><%= article.data.author %> · <%= article.date.strftime('%b %e, %Y') %></div>
-        </div>
-      </a>
-    <% end %>
-
+    <div class="card-deck align-items-center">
+      <% page_articles.each_with_index do |article, i| %>
+        <a class="blog-post-preview card" href="<%= url_for article %>">
+          <% if article.data.cover_image %>
+          <div class="blog-post-cover">
+            <img class="img-fluid" src="<%= article.data.cover_image %>">
+          </div>
+          <% end %>
+          <div class="blog-post-content">
+            <div class="blog-post-author"><%= article.data.author %> · <%= article.date.strftime('%b %e, %Y') %></div>
+            <h3 class="title"><%= article.title %></h3>
+            <p>
+              <%= article.summary(160) %>
+            </p>
+          </div>
+        </a>
+      <% end %>
+    </div>
 
     <% if paginate && num_pages > 1%>
       <div class="blog-pagination text-center">
