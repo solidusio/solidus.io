@@ -41,6 +41,10 @@
       > .content-wrapper {
         transform: skewY(0deg);
       }
+      
+      &.marketplace::after {
+        display: none;
+      }
     }
 
     &.hero-block {
