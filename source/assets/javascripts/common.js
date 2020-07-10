@@ -19,7 +19,7 @@ $(function () {
     var target = $(e.relatedTarget).attr('href');
     $(target).removeClass('active');
   });
-  
+
   // Smooth anchor scroll
   $(document).ready(function(){
 
@@ -39,7 +39,7 @@ $(function () {
       }
     });
   });
-  
+
   //Menu toggler functionality
   $(".site-menu-toggler").click(function () {
     $("body").toggleClass("menu-open");
@@ -75,8 +75,8 @@ $(function () {
   });
 
   //Show roadmap hidden features on click
-  $('.roadmap-use-case__timeline--future').click(function(){
-    $(this).children('.roadmap-use-case__timeline--future p').toggle('fast');
+  $('.roadmap-use-case__timeline--toggleable').click(function(){
+    $(this).children('.roadmap-use-case__timeline--toggleable p').toggle('fast');
     $(this).toggleClass('uncollapsed');
   });
 
