@@ -41,6 +41,10 @@
       > .content-wrapper {
         transform: skewY(0deg);
       }
+      
+      &.marketplace::after {
+        display: none;
+      }
     }
 
     &.hero-block {
@@ -306,9 +310,12 @@
 // Bottom CTA
 .call-to-action {
   .title {
-    font-size: $h2-font-size;
-    line-height: $line-height-sm;
     margin-bottom: $spacer * 3;
+    
+    @include media-breakpoint-up(md) {
+      font-size: $h2-font-size;
+      line-height: $line-height-sm;
+    }
   }
 
   .btn {

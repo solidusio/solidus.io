@@ -8,10 +8,21 @@
       <ul class="menu-items <%= nav_inactive(["community.html", "blog/", "partners.html"]) %>">
         <li class="nav-item dropdown">
           <a class="dropdown-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Product</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="/features">Features</a>
-            <a class="dropdown-item" href="/integrations">Integrations</a>
-            <a class="dropdown-item" href="/roadmap">Roadmap</a>
+          <div class="dropdown-menu dropdown-menu--multi expandable">
+            <div class="dropdown-expand">
+              <div class="dropdown-expand__list">
+                <a class="dropdown-item" href="/features">Features</a>
+                <a class="dropdown-item" href="/integrations">Integrations</a>
+                <a class="dropdown-item" href="/roadmap">Roadmap</a>
+                <a class="dropdown-item open-list expand-use-cases" data-toggle="open-submenu" href="#" role="button" aria-haspopup="true" aria-expanded="false">Use Cases</a>
+              </div>
+              <div class="dropdown-expand__list use-cases-menu">
+                <a class="dropdown-item" href="/use-cases/online-store">Online Store</a>
+                <a class="dropdown-item" href="/use-cases/headless-commerce">Headless Commerce</a>
+                <a class="dropdown-item" href="/use-cases/marketplace">Marketplace</a>
+                <a class="dropdown-item" href="/use-cases/global-commerce">Global Commerce</a>
+              </div>
+
           </div>
         </li>
 	      <li class="nav-item <%= nav_active("community.html") %>"><a href="/community">Community</a></li>

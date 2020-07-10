@@ -1,0 +1,47 @@
+<p class="lead text-gray-600 text-center font-weight-light mb-4">
+  Join the companies using Solidus.
+</p>
+<div class="community-logos use-cases col-lg-12">
+  <% if current_page.data.title == 'Use Cases | Online Store' %>
+    <% data.use_cases_logos[:online_stores_logos].each do |online_store, info| %>
+      <div class="community-logos__item">
+        <a href="<%= info[:url] %>" target="_blank">
+          <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %>
+        </a>
+      </div>
+    <% end %>
+  <% end %>
+
+      <% if current_page.data.title == 'Use Cases | Headless Commerce' %>
+        <% data.use_cases_logos[:headless_commerce_logos].each do |headless_commerce, info| %>
+          <div class="community-logos__item">
+            <a href="<%= info[:url] %>" target="_blank">
+              <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %>
+            </a>
+          </div>
+        <% end %>
+      <% end %>
+
+
+      <% if current_page.data.title == 'Use Cases | Marketplace' %>
+        <% data.use_cases_logos[:marketplace_logos].each do |marketplace, info| %>
+          <div class="community-logos__item">
+            <a href="<%= info[:url] %>" target="_blank">
+              <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %>
+            </a>
+          </div>
+        <% end %>
+      <% end %>
+
+
+      <% if current_page.data.title == 'Use Cases | Global Commerce' %>
+        <% data.use_cases_logos[:global_commerce_logos].each do |global_commerce, info| %>
+          <div class="community-logos__item">
+            <a href="<%= info[:url] %>" target="_blank">
+              <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %>
+            </a>
+          </div>
+        <% end %>
+      <% end %>
+
+</div>

@@ -214,6 +214,7 @@
         display: block;
         box-shadow: 0px 5px 40px rgba(36, 40, 47, 0.12);
         transform: translateY(20px);
+        min-width: 188px;
         
         a {
           color: $gray-900;
@@ -225,7 +226,19 @@
         opacity: 1;
         height: auto;
         transform: translateY(0);
-        transition: transform 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+        transition: transform .3s linear, opacity .3s linear, visibility .3s linear;
+        padding: 20px 30px 0;
+
+        @include media-breakpoint-up(lg){
+          padding: 40px;
+        }
+        
+        &.expandable {
+          padding: 0;
+        }
+      }
+      
+      .dropdown-expand {
         padding: 20px 30px 0;
 
         @include media-breakpoint-up(lg){
@@ -235,6 +248,17 @@
 
       &--multi {
         min-width: 500px;
+        
+        &.expandable {
+          min-width: 1px;
+          transition: padding-right .2s ease;
+          
+          @include media-breakpoint-up(lg){
+            &.expanded {
+              padding-right: 250px;
+            }
+          }
+        }
 
         a {
           height: auto;
@@ -306,25 +330,105 @@
             }
           }
         }
+        
+        .dropdown-expand {
+          @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+          }
+
+          &__list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            &:last-child {
+              opacity: 0;
+              visibility: hidden;
+              height: 0;
+              transition: opacity .3s linear, visibility .3s linear;
+              
+              &.expanded {
+                opacity: 1;
+                visibility: visible;
+                height: auto;
+              }
+              
+              @include media-breakpoint-up(lg){
+                border-left: 1px solid $gray-200;
+                position: absolute;
+                top: 0;
+                right: 40px;
+                bottom: 0;
+                left: 178px;
+                padding: 40px 0 40px 40px;
+              }
+              
+              @include media-breakpoint-down(md) {
+                padding: 20px 0 0 20px;
+              }
+            }
+          }
+        }
       }
   
       .dropdown-item {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-size: 1rem;
         display: block;
         font-weight: 300;
+        white-space: nowrap;
   
         @include media-breakpoint-up(lg){
-          margin-bottom: 20px;
           height: auto;
           padding: 0;
-          font-size: 1.1rem;
           font-weight: 500;
           color: $gray-900;
+        }
+
+        &:hover {
+          @include media-breakpoint-up(lg){
+            color: $blue;
+          }
         }
         
         &:last-child {
           margin-bottom: 0;
+        }
+        
+        &.open-list {
+          &::after {
+            content: '';
+            background: url("/assets/images/icons/chevron-right.svg") no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+            display: inline-block;
+            width: 8px;
+            height: 12px;
+            margin-left: 10px;
+          }
+          
+          &.opened {
+            @include media-breakpoint-up(lg){
+              color: $blue;
+            }
+          }
+          
+          @include media-breakpoint-down(md) {
+            &::after {
+              background: url("/assets/images/icons/chevron-right_white.svg") no-repeat;
+              margin-left: 20px;
+              transform: rotate(0deg);
+              transition: transform .3s ease;
+            }
+            
+            &.opened {
+              &::after {
+                transform: rotate(90deg);
+              }
+            }
+          }
         }
       }
     }
