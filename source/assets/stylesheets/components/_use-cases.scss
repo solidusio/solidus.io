@@ -27,15 +27,13 @@
   }
   
   .blockquote {
-    &.maisonette {
-      background-color: #FAEFD9;
-      color: $gray-900;
+    &.goby {
+      background-color: #4B80FA;
       
-      .inherit-fill { fill: $gray-900; }
-      
-      p,
-      .text {
-        color: $gray-900;
+      @include media-breakpoint-up(lg) {
+        p {
+          font-size: $font-size-base;
+        }
       }
     }
     
