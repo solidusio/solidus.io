@@ -23,7 +23,13 @@ body{
     &.menu-open{ overflow: hidden; }
   }
 
-  @include media-breakpoint-up(lg) { padding-top: $desktop-header-height; }
+  @include media-breakpoint-up(lg) {
+    padding-top: $desktop-header-height;
+    
+    &.top-bar--show {
+      padding-top: $desktop-header-height + 40px;
+    }
+  }
 }
 
 //Sticky footer styles

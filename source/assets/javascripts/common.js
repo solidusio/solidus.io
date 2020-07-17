@@ -100,12 +100,12 @@ $(function () {
 
   //Remove top bar on click
   if (!Cookies.get('announcement')) {
-    $(".top-bar").addClass('top-bar--show');
+    $(".top-bar, body").addClass('top-bar--show');
   }
 
   $(".top-bar-close").click(function(){
     Cookies.set('announcement', 'true', { expires: 10 });
-    $(".top-bar").removeClass('top-bar--show');
+    $(".top-bar, body").removeClass('top-bar--show');
   });
 
   $('[data-toggle="tooltip"]').tooltip();
