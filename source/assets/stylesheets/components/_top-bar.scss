@@ -5,9 +5,14 @@
   font-size: 14px;
   font-weight: bold;
   display: none;
+  min-height: 40px;
 
   &--show {
     display: block;
+    
+    .menu-open & {
+      display: none;
+    }
   }
   
   .top-bar-content {
