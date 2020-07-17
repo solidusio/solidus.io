@@ -1,65 +1,90 @@
 <footer class="site-footer content-block content-block-gray-900">
   <div class="container">
-    <div class="site-footer__top">
+    <div class="site-footer__newsletter">
       <div class="row">
-        <div class="col-12 col-lg-1">
-          <a class="footer-logo" href="/"><%= inline_svg("logo-mark.svg", class: "isvg") %></a>
+        <div class="col-12 col-lg-7">
+          <h6 class="text-white-048">Subscribe to our newsletter</h6>
+          <p class="text-white">Be the first to learn the news about new features and product updates.</p>
         </div>
-        <div class="col-4 col-lg-2">
-          <h6 class="text-white-048">Solidus</h6>
-          <ul class="footer-links">
-            <li class="footer-links-item">
-              <a class="text-white" href="/features">Features</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="text-white" href="/security">Security</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="text-white" href="/partners">Become a partner</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-4 col-lg-2">
-          <h6 class="text-white-048">Community</h6>
-          <ul class="footer-links">
-            <li class="footer-links-item">
-              <a class="text-white" href="/community">Contributors</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="text-white" href="https://github.com/solidusio/">Start contributing</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="text-white" href="https://guides.solidus.io/">Guides</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="text-white" href="/community-guidelines">Community Guidelines</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-4 col-lg-2">
-          <h6 class="text-white-048">News</h6>
-          <ul class="footer-links">
-            <li class="footer-links-item">
-              <a class="text-white" href="/blog">Blog</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="text-white" href="https://github.com/solidusio/solidus/blob/master/CHANGELOG.md" target="_blank">Product changelog</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-12 col-lg-4 ml-lg-auto">
+        <div class="col-12 col-lg-5">
           <div class="newsletter-form" id="mc_embed_signup">
             <form action="https://solidus.us13.list-manage.com/subscribe/post?u=679f4835b2683d59bc5762ec3&amp;id=3ce07e9582" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <label for="mce-EMAIL">Get updates from Solidus</label>
               <div id="mc_embed_signup_scroll">
                 <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Enter your email" required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_679f4835b2683d59bc5762ec3_3ce07e9582" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-white"></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary"></div>
               </div>
             </form>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="site-footer__sitemap">
+      <div class="site-footer__sitemap__item">
+        <a class="footer-logo" href="/"><%= inline_svg("logo-mark.svg", class: "isvg") %></a>
+      </div>
+      <div class="site-footer__sitemap__item">
+        <h6 class="text-white-048">Solidus</h6>
+        <ul class="footer-links">
+          <li class="footer-links-item">
+            <a class="text-white" href="/features">Features</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="/integrations">Integrations</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="/security">Security</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="/partners">Become a partner</a>
+          </li>
+        </ul>
+      </div>
+      <div class="site-footer__sitemap__item">
+        <h6 class="text-white-048">Use cases</h6>
+        <ul class="footer-links">
+          <li class="footer-links-item">
+            <a class="text-white" href="/use-cases/online-store">Online Stores</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="/use-cases/headless-commerce">Headless Commerce</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="/use-cases/marketplace">Marketplace</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="/use-cases/global-commerce">Global Commerce</a>
+          </li>
+        </ul>
+      </div>
+      <div class="site-footer__sitemap__item">
+        <h6 class="text-white-048">Community</h6>
+        <ul class="footer-links">
+          <li class="footer-links-item">
+            <a class="text-white" href="/community">Contributors</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="https://github.com/solidusio/">Start contributing</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="https://guides.solidus.io/">Guides</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="/community-guidelines">Community Guidelines</a>
+          </li>
+        </ul>
+      </div>
+      <div class="site-footer__sitemap__item">
+        <h6 class="text-white-048">News</h6>
+        <ul class="footer-links">
+          <li class="footer-links-item">
+            <a class="text-white" href="/blog">Blog</a>
+          </li>
+          <li class="footer-links-item">
+            <a class="text-white" href="https://github.com/solidusio/solidus/blob/master/CHANGELOG.md" target="_blank">Product changelog</a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="site-footer__bottom">

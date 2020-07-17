@@ -102,15 +102,55 @@ body{
 .site-footer {
   padding-bottom: 50px !important;
 
-  &__top {
+  &__newsletter {
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba($white, 0.1);
+
+    .newsletter-form {
+      margin-top: 20px;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__sitemap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0 10px 0;
+    
+    @include media-breakpoint-up(lg) {
+      padding: 80px 0;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    
     .footer-logo {
-      margin-bottom: 50px;
       display: block;
     }
 
     h6 {
       font-weight: 700;
       margin-bottom: 20px;
+    }
+
+    &__item {
+      margin-bottom: 50px;
+      width: 50%;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+        width: auto;
+      }
+
+      &:first-child {
+        width: 100%;
+
+        @include media-breakpoint-up(lg) {
+          width: auto;
+        }
+      }
     }
 
     .footer-links {  
@@ -126,38 +166,15 @@ body{
         }
       }
     }
-
-    .newsletter-form {
-      margin-top: 50px;
-
-      @include media-breakpoint-up(lg) {
-        margin-top: 0;
-      }
-      
-      label {
-        font-size: $font-size-xs;
-      }
-      
-      .email {
-        background: $gray-900;
-        color: $white;
-
-        &::placeholder {
-          color: $white-05;
-        }
-      }
-    }
   }
 
   &__bottom {
-    margin-top: 50px;
     padding-top: 50px;
     font-size: $font-size-sm;
     text-align: center;
     border-top: 1px solid rgba($white, 0.1);
 
     @include media-breakpoint-up(lg){
-      margin-top: 80px;
       text-align: left;
     }
 
