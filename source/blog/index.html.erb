@@ -5,9 +5,9 @@ per_page: 10
 description: What's new in Solidus! Check out the latest news about our technology, events and community.
 ---
 
-<div class="content-block content-block-gray-100 text-center">
+<div class="content-block text-center">
   <div class="container">
-    <h1 class="title">Solidus <span class="text-gray-048">Blog</span></h1>
+    <h1 class="title">Solidus Blog</h1>
     <p>
       Stay up to date on the latest from Solidus.
     </p>
@@ -18,24 +18,33 @@ description: What's new in Solidus! Check out the latest news about our technolo
   <%#= link_to "#{tag} (#{articles.size})", tag_path(tag) %>
 <%# end %>
 
-<div class="blog-index-block content-block">
+<div class="blog-index-block content-block pt-0">
   <div class="container">
-    <div class="card-deck align-items-center">
+    <div class="blog-index-container align-items-center">
       <% page_articles.each_with_index do |article, i| %>
-        <a class="blog-post-preview card" href="<%= url_for article %>">
-          <% if article.data.cover_image %>
+        <div class="blog-post-preview card js-fully-clickable">
           <div class="blog-post-cover">
-            <img class="img-fluid" src="<%= article.data.cover_image %>">
+            <a href="<%= url_for article %>">
+              <% if article.data.cover_image %>
+                <img class="img-fluid" src="<%= article.data.cover_image %>">
+              <% else %>
+                <img class="img-fluid" src="<%= image_path('blog-placeholder.jpg') %>">
+              <% end %>
+            </a>
           </div>
-          <% end %>
           <div class="blog-post-content">
-            <div class="blog-post-author"><%= article.data.author %> · <%= article.date.strftime('%b %e, %Y') %></div>
-            <h3 class="title"><%= article.title %></h3>
+            <div class="blog-post-author">
+              <strong><%= article.data.author %></strong>
+              <span class="blog-post-date"><%= article.date.strftime('%b %e, %Y') %></span>
+            </div>
+            <a href="<%= url_for article %>">
+              <h3 class="title"><%= article.title %></h3>
+            </a>
             <p>
               <%= article.summary(160) %>
             </p>
           </div>
-        </a>
+        </div>
       <% end %>
     </div>
 

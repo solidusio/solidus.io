@@ -1,19 +1,31 @@
 .blog-index-block{
-  padding-top: 0;
-  background: linear-gradient($gray-100 100px, $body-bg 100px);
-
+  .blog-index-container {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+  }
+  
   .card {
+    display: block;
     border: 0;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-bottom: 130px;
     
     @include media-breakpoint-up(md) {
-      flex: 0 0 calc(50% - 60px);
+      flex: 0 0 45%;
       
       &:first-child {
-        flex: 0 0 calc(100% - 60px);
+        display: flex;
+        flex: 0 0 calc(100% - 30px);
         flex-direction: row;
-        margin-bottom: 50px;
+        justify-content: space-between;
+        
+        .blog-post-content {
+          width: 45%;
+        }
       }
     }
   }
@@ -24,11 +36,29 @@
 }
 
 .blog-post-preview{
+  cursor: pointer;
   display: block;
   border-radius: 0;
   box-shadow: none;
-  margin-bottom: 24px;
   color: $body-color !important;
+  
+  .blog-post-cover {
+    margin-bottom: $spacer * 2;
+  }
+  
+  .blog-post-content {
+    p {
+      margin-bottom: 0;
+    }
+    
+    h1:not(.title),
+    h2:not(.title),
+    h3:not(.title),
+    h4:not(.title) {
+      font-size: $font-size-base;
+      font-weight: 300;
+    }
+  }
   
   // Style latest article as Featured
   &:first-child {
@@ -39,20 +69,13 @@
     }
     
     .blog-post-content {
-      padding: 5% 0 5% 5%;
+      padding: 15px 0 15px 60px;
     }
     
     .title {
       font-size: $h3-font-size;
     }
-  }
-
-  &:last-child{ margin-bottom: 0; }
-  
-  .blog-post-content {
-    padding-bottom: 65px; 
-  }
-
+  }  
 
   .card-body{ padding: 24px; }
 
@@ -62,29 +85,32 @@
     margin-bottom: 8px;
   }
 
-  p{
-    font-size: inherit !important;
-    line-height: inherit !important;
-  }
-
-  &:hover{
-    border-color: $gray-400;
-    color: $gray-900 !important;
-    .title{ color: $link-hover-color; }
-    .blog-post-author{ color: $gray-08 !important; }
+  &:hover {
+    .title,
+    .blog-post-author {
+      color: $blue;
+    }
   }
 }
 
 .blog-post-author{
   transition: all ease 0.3s;
-  font-size: $font-size-sm;
   color: $gray-08;
+  margin-bottom: $spacer;
+  
+  .blog-post-date {
+    color: $gray-08;
+    
+    @include media-breakpoint-up(md) {
+      padding: 0 $spacer;
+    }
+  }
 }
 
 .blog-post{
   .post-title{
     letter-spacing: -0.8px;
-    margin-bottom: 1rem;
+    margin-bottom: $spacer;
     font-size: 40px;
     @include media-breakpoint-up(md){ font-size: 56px; }
   }
@@ -95,7 +121,7 @@
 
   h2, .h2 {
     margin-top: 3.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: $spacer;
 
     @include media-breakpoint-up(lg){ margin-top: 4rem; }
 

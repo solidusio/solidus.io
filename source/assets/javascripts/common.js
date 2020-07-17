@@ -11,22 +11,22 @@ const Cookies = require('js-cookie');
 var lazyLoadInstance = new LazyLoad;
 
 $(function () {
-  // Expand menu on large screens
-  $(".expand-use-cases").on("mouseenter", function (event) {
-    event.stopPropagation();
-    if ($(".expandable").hasClass("show") && (window.matchMedia("(min-width: 1024px)").matches)) {
-      $(".use-cases-menu, .expandable").toggleClass("expanded");
-      $(this).toggleClass("opened");
-    }
+  // Fully clickable item
+  $(".js-fully-clickable").click(function(e) {
+    e.stopPropagation();
+    window.location = $(this).find("a").attr("href");
   });
-  
-  // Expand menu on small screens
-  $(".expand-use-cases").click(function (event) {
-    event.stopPropagation();
-    if (window.matchMedia("(max-width: 1023px)").matches) {
-      $(".use-cases-menu, .expandable").toggleClass("expanded");
-      $(this).toggleClass("opened");
-    }
+
+  $('.js-fully-clickable').on("touchstart", function (e) {
+      "use strict"; //satisfy the code inspectors
+      var link = $(this); //preselect the link
+      if (link.hasClass('hover')) {
+          return true;
+      } else {
+          link.addClass("hover");
+          $('.js-fully-clickable').not(this).removeClass("hover");
+          return false;
+      }
   });
   
   // Tab on hover instead of click
@@ -37,7 +37,7 @@ $(function () {
     var target = $(e.relatedTarget).attr('href');
     $(target).removeClass('active');
   });
-
+  
   // Smooth anchor scroll
   $(document).ready(function(){
 
@@ -57,7 +57,7 @@ $(function () {
       }
     });
   });
-
+  
   //Menu toggler functionality
   $(".site-menu-toggler").click(function () {
     $("body").toggleClass("menu-open");
