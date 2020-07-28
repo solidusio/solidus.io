@@ -1,3 +1,11 @@
+.blog-header {
+  padding: 60px 0;
+
+  @include media-breakpoint-up(md) {
+    padding: 80px 0;
+  } 
+}
+
 .blog-index-block{
   .blog-index-container {
     @include media-breakpoint-up(md) {
@@ -6,27 +14,6 @@
       justify-content: space-between;
       margin-right: -15px;
       margin-left: -15px;
-    }
-  }
-  
-  .card {
-    display: block;
-    border: 0;
-    margin-bottom: 130px;
-    
-    @include media-breakpoint-up(md) {
-      flex: 0 0 45%;
-      
-      &:first-child {
-        display: flex;
-        flex: 0 0 calc(100% - 30px);
-        flex-direction: row;
-        justify-content: space-between;
-        
-        .blog-post-content {
-          width: 45%;
-        }
-      }
     }
   }
 
@@ -38,9 +25,45 @@
 .blog-post-preview{
   cursor: pointer;
   display: block;
-  border-radius: 0;
-  box-shadow: none;
   color: $body-color !important;
+  padding: 25px;
+  transition: box-shadow .2s linear;
+
+  @include media-breakpoint-up(lg) {
+    flex: 0 0 47%;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  &:hover {
+    box-shadow: 0 15px 50px 0 rgba(0,0,0,.09);
+  }
+
+  &:first-child {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex: 0 0 calc(100% - 30px);
+      flex-direction: row;
+      justify-content: space-between;
+      
+      .blog-post-content {
+        width: 45%;
+      }
+      
+      .blog-post-cover {
+        max-width: 50%;
+        margin-bottom: 0;
+      }
+      
+      .blog-post-content {
+        padding: 0 0 0 60px;
+      }
+      
+      .title {
+        font-size: $h3-font-size;
+      }
+    }
+  }
   
   .blog-post-cover {
     margin-bottom: $spacer * 2;
@@ -58,38 +81,13 @@
       font-size: $font-size-base;
       font-weight: 300;
     }
-  }
-  
-  // Style latest article as Featured
-  &:first-child {
-    display: flex;
-    
-    .blog-post-cover {
-      max-width: 50%;
-    }
-    
-    .blog-post-content {
-      padding: 15px 0 15px 60px;
-    }
-    
-    .title {
-      font-size: $h3-font-size;
-    }
-  }  
+  }    
 
   .card-body{ padding: 24px; }
 
   .title{
-    transition: all ease 0.3s;
     font-size: 22px;
-    margin-bottom: 8px;
-  }
-
-  &:hover {
-    .title,
-    .blog-post-author {
-      color: $blue;
-    }
+    margin-bottom: 12px;
   }
 }
 
@@ -97,6 +95,7 @@
   transition: all ease 0.3s;
   color: $gray-08;
   margin-bottom: $spacer;
+  font-size: $font-size-xs;
   
   .blog-post-date {
     color: $gray-08;
