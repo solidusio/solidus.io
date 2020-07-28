@@ -26,16 +26,25 @@
 
 <div class="site-content">
   <div class="blog-post container container-sm">
-    <div class="content-block content-block-lg text-md-center">
+    <div class="blog-post-heading">
       <h1 class="post-title title"><%= current_page.data.title %></h1>
-      <div class="blog-post-author text-gray-048"><%= current_page.data.author %> · <%= current_page.date.strftime('%b %e, %Y') %></div>
+      <div class="blog-post-author">
+        <strong><%= current_page.data.author %></strong>
+        <span class="blog-post-date"><%= current_page.date.strftime('%b %e, %Y') %></span>
+      </div>
     </div>
-    <%= current_page.data.tags %>
+  </div>
+  <div class="blog-post container container-md">
     <% if current_page.data.cover_image %>
-      <img class="img-fluid mb-4" src="<%= current_page.data.cover_image %>">
+      <div class="blog-post-image">
+        <img class="img-fluid mb-4" src="<%= current_page.data.cover_image %>">
+      </div>
     <% end %>
-
-    <%= yield %>
+  </div>
+  <div class="blog-post container container-sm">
+    <div class="blog-post-body">
+      <%= yield %>
+    </div>
   </div>
 
   <div class="content-block text-center">
