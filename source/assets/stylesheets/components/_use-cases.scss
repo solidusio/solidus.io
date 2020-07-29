@@ -8,46 +8,46 @@
       color: $blue;
     }
   }
-  
+
   &.testimonials {
     .carousel-content {
       z-index: 998;
     }
-    
+
     .main-image-container {
       img {
         transform: translateY(0);
       }
     }
-    
+
     .logo {
       transform: none;
       width: 120px;
     }
   }
-  
+
   .blockquote {
     &.goby {
       background-color: #4B80FA;
-      
+
       @include media-breakpoint-up(lg) {
         p {
-          font-size: $font-size-base;
+          font-size: $font-size-lg;
         }
       }
     }
-    
+
     &.wonderbly {
       background-color: #80D2BE;
-      
+
       @include media-breakpoint-up(lg) {
         p {
-          font-size: $font-size-base;
+          font-size: $font-size-lg;
         }
       }
     }
   }
-  
+
   &.community-logos {
     opacity: .65;
   }
@@ -57,7 +57,7 @@
   h5 {
     color: $blue;
   }
-  
+
   &.hero-block.content-block--skewed {
     .content-wrapper {
       padding-top: 0;
