@@ -30,13 +30,18 @@
   }
   
   .blockquote {
-    &.zohr {
-      background-color: #FF984D;
+    &.goby {
+      background-color: #4B80FA;
+
+      @include media-breakpoint-up(lg) {
+        p {
+          font-size: $font-size-lg;
+        }
+      }
     }
-    
-    &.careof {
-      background-color: #F1574B;
-    }
+    // &.careof {
+    //   background-color: #F1574B;
+    // }
     
     &.firstleaf {
       background-color: #776580;
