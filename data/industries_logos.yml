@@ -2,7 +2,7 @@ automotive_title: Solidus powers automotive brands defining the future of eComme
 
 home_decor_title: Solidus powers home decor brands defining the future of eCommerce.
 
-fashion_title: Solidus powers fashion brands defining the future of eCommerce.
+apparel_title: Solidus powers apparel brands defining the future of eCommerce.
 
 health_beauty_title: Solidus powers health & beauty brands defining the future of eCommerce.
 
@@ -36,7 +36,7 @@ home_decor_logos:
     logo: "floyd.svg"
     url: https://www.floydhome.com
     
-fashion_logos:
+apparel_logos:
   maisonette:
     name: "Maisonette"
     logo: "maisonette.svg"
