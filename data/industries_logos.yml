@@ -20,15 +20,15 @@ automotive_logos:
     logo: "tyresdirect.svg"
     url: https://tyresdirectuk.co.uk
     
-  zohr:
-    name: "Zohr"
-    logo: "zohr.svg"
-    url: https://www.zohr.com
-    
   fcp_euro:
     name: "FCP Euro"
     logo: "fcpeuro.svg"
     url: https://www.fcpeuro.com
+    
+  tyres_agent:
+    name: "Tire Agent"
+    logo: "tireagent.svg"
+    url: https://www.tireagent.com
     
 home_decor_logos:
   floyd:

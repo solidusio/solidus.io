@@ -5,6 +5,12 @@
     }
   }
   
+  &__header {
+    h5 {
+      color: $blue;
+    }
+  }
+  
   &.testimonials {
     // Set fixed width for the logo
     .logo {
