@@ -29,6 +29,24 @@ $(function () {
       }
   });
   
+  // Expand menu on large screens
+  $(".expand-use-cases").on("mouseenter", function (event) {
+    event.stopPropagation();
+    if ($(".expandable").hasClass("show") && (window.matchMedia("(min-width: 1024px)").matches)) {
+      $(".use-cases-menu, .expandable").toggleClass("expanded");
+      $(this).toggleClass("opened");
+    }
+  });
+  
+  // Expand menu on small screens
+  $(".expand-use-cases").click(function (event) {
+    event.stopPropagation();
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+      $(".use-cases-menu, .expandable").toggleClass("expanded");
+      $(this).toggleClass("opened");
+    }
+  });
+  
   // Tab on hover instead of click
   $('.tab-hover[data-mouse="hover"] a').hover(function(){
     $(this).tab('show');
