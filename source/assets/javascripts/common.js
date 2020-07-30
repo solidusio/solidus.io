@@ -11,6 +11,24 @@ const Cookies = require('js-cookie');
 var lazyLoadInstance = new LazyLoad;
 
 $(function () {
+  // Fully clickable item
+  $(".js-fully-clickable").click(function(e) {
+    e.stopPropagation();
+    window.location = $(this).find("a").attr("href");
+  });
+
+  $('.js-fully-clickable').on("touchstart", function (e) {
+      "use strict"; //satisfy the code inspectors
+      var link = $(this); //preselect the link
+      if (link.hasClass('hover')) {
+          return true;
+      } else {
+          link.addClass("hover");
+          $('.js-fully-clickable').not(this).removeClass("hover");
+          return false;
+      }
+  });
+  
   // Expand menu on large screens
   $(".expand-use-cases").on("mouseenter", function (event) {
     event.stopPropagation();
@@ -37,7 +55,7 @@ $(function () {
     var target = $(e.relatedTarget).attr('href');
     $(target).removeClass('active');
   });
-
+  
   // Smooth anchor scroll
   $(document).ready(function(){
 
@@ -57,7 +75,7 @@ $(function () {
       }
     });
   });
-
+  
   //Menu toggler functionality
   $(".site-menu-toggler").click(function () {
     $("body").toggleClass("menu-open");

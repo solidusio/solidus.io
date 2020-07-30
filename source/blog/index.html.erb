@@ -5,26 +5,48 @@ per_page: 10
 description: What's new in Solidus! Check out the latest news about our technology, events and community.
 ---
 
-<div class="content-block content-block-gray-100 text-center">
+<div class="blog-header text-center">
   <div class="container">
-    <h1 class="title">Solidus <span class="text-gray-048">Blog</span></h1>
+    <h1 class="title">Solidus Blog</h1>
+    <p>
+      Stay up to date on the latest from Solidus.
+    </p>
   </div>
 </div>
 
-<div class="blog-index-block content-block">
-  <div class="container">
-    <% page_articles.each_with_index do |article, i| %>
-      <a class="blog-post-preview card" href="<%= url_for article %>">
-        <% if article.data.cover_image %>
-          <img class="card-img-top img-fluid" src="<%= article.data.cover_image %>">
-        <% end %>
-        <div class="card-body">
-          <h3 class="title"><%= article.title %></h3>
-          <div class="blog-post-author text-gray-048"><%= article.data.author %> · <%= article.date.strftime('%b %e, %Y') %></div>
-        </div>
-      </a>
-    <% end %>
+<%# blog.tags.each do |tag, articles| %>
+  <%#= link_to "#{tag} (#{articles.size})", tag_path(tag) %>
+<%# end %>
 
+<div class="blog-index-block content-block pt-0">
+  <div class="container">
+    <div class="blog-index-container align-items-center">
+      <% page_articles.each_with_index do |article, i| %>
+        <div class="blog-post-preview js-fully-clickable">
+          <div class="blog-post-cover">
+            <a href="<%= url_for article %>">
+              <% if article.data.cover_image %>
+                <img class="img-fluid" src="<%= article.data.cover_image %>">
+              <% else %>
+                <img class="img-fluid" src="<%= image_path('blog-placeholder.jpg') %>">
+              <% end %>
+            </a>
+          </div>
+          <div class="blog-post-content">
+            <div class="blog-post-author">
+              <strong><%= article.data.author %></strong>
+              <span class="blog-post-date"><%= article.date.strftime('%b %e, %Y') %></span>
+            </div>
+            <a href="<%= url_for article %>">
+              <h3 class="title"><%= article.title %></h3>
+            </a>
+            <p>
+              <%= Nokogiri::HTML(article.summary(160)).text %>
+            </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
 
     <% if paginate && num_pages > 1%>
       <div class="blog-pagination text-center">
