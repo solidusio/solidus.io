@@ -3,7 +3,7 @@
     <% if current_page.data.title == 'Industries | Automotive' %>
       <%= data.industries_logos[:automotive_title] %>
     <% end %>
-    
+
     <% if current_page.data.title == 'Industries | Home Decor' %>
       <%= data.industries_logos[:home_decor_title] %>
     <% end %>
@@ -12,11 +12,11 @@
       <%= data.industries_logos[:apparel_title] %>
     <% end %>
 
-    <% if current_page.data.title == 'Industries | Health & Beauty' %>
+    <% if current_page.data.title == 'Industries | Health and Beauty' %>
       <%= data.industries_logos[:health_beauty_title] %>
     <% end %>
 
-    <% if current_page.data.title == 'Industries | Food & Beverage' %>
+    <% if current_page.data.title == 'Industries | Food and Beverage' %>
       <%= data.industries_logos[:food_beverage_title] %>
     <% end %>
   </h3>
@@ -31,7 +31,7 @@
       </div>
     <% end %>
   <% end %>
-  
+
   <% if current_page.data.title == 'Industries | Home Decor' %>
     <% data.industries_logos[:home_decor_logos].each do |home_decor, info| %>
       <div class="community-logos__item">
@@ -41,7 +41,7 @@
       </div>
     <% end %>
   <% end %>
-  
+
   <% if current_page.data.title == 'Industries | Apparel' %>
     <% data.industries_logos[:apparel_logos].each do |apparel, info| %>
       <div class="community-logos__item">
@@ -51,8 +51,8 @@
       </div>
     <% end %>
   <% end %>
-  
-  <% if current_page.data.title == 'Industries | Health & Beauty' %>
+
+  <% if current_page.data.title == 'Industries | Health and Beauty' %>
     <% data.industries_logos[:health_beauty_logos].each do |health_beauty, info| %>
       <div class="community-logos__item">
         <a href="<%= info[:url] %>" target="_blank">
@@ -61,8 +61,8 @@
       </div>
     <% end %>
   <% end %>
-  
-  <% if current_page.data.title == 'Industries | Food & Beverage' %>
+
+  <% if current_page.data.title == 'Industries | Food and Beverage' %>
     <% data.industries_logos[:food_beverage_logos].each do |food_beverage, info| %>
       <div class="community-logos__item">
         <a href="<%= info[:url] %>" target="_blank">
