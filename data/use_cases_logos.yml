@@ -35,26 +35,11 @@ headless_commerce_logos:
     logo: "ace&tate.svg"
     url: https://www.aceandtate.com
 
-  bookshop:
-    name: "Bookshop"
-    logo: "bookshop.svg"
-    url: https://bookshop.org
-
 marketplace_logos:
   maisonette:
     name: "Maisonette"
     logo: "maisonette.svg"
     url: https://www.maisonette.com
-
-  glossier:
-    name: "Glossier"
-    logo: "glossier.svg"
-    url: https://www.glossier.com
-
-  moddedeuros:
-    name: "Modded Euros"
-    logo: "moddedeuros.svg"
-    url: https://www.moddedeuros.com
 
   bevv:
     name: "Bevv"
