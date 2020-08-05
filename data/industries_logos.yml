@@ -1,12 +1,12 @@
-automotive_title: Solidus powers automotive brands defining the future of eCommerce.
+automotive_title: Solidus powers the Automotive brands that are defining the future of eCommerce.
 
-home_decor_title: Solidus powers home decor brands defining the future of eCommerce.
+home_decor_title: Solidus powers the Home Decor brands that are defining the future of eCommerce.
 
-apparel_title: Solidus powers apparel brands defining the future of eCommerce.
+apparel_title: Solidus powers the Apparel brands that are defining the future of eCommerce.
 
-health_beauty_title: Solidus powers Health and Beauty brands defining the future of eCommerce.
+health_beauty_title: Solidus powers the Health and Beauty brands that are defining the future of eCommerce.
 
-food_beverage_title: Solidus powers Food and Beverage brands defining the future of eCommerce.
+food_beverage_title: Solidus powers the Food and Beverage brands that are defining the future of eCommerce.
 
 
 automotive_logos:
@@ -20,11 +20,6 @@ automotive_logos:
     logo: "tyresdirect.svg"
     url: https://tyresdirectuk.co.uk
 
-  fcp_euro:
-    name: "FCP Euro"
-    logo: "fcpeuro.svg"
-    url: https://www.fcpeuro.com
-
   tyres_agent:
     name: "Tire Agent"
     logo: "tireagent.svg"
@@ -35,6 +30,11 @@ home_decor_logos:
     name: "Floyd"
     logo: "floyd.svg"
     url: https://www.floydhome.com
+
+  casper:
+    name: "Casper"
+    logo: "casper.svg"
+    url: https://www.casper.com
 
 apparel_logos:
   maisonette:
@@ -47,6 +47,11 @@ apparel_logos:
     logo: "meundies.svg"
     url: https://www.meundies.com
 
+  peach:
+    name: "Peach"
+    logo: "peach.svg"
+    url: https://www.discoverpeach.com
+
 health_beauty_logos:
   careof:
     name: "Care Of"
@@ -57,6 +62,11 @@ health_beauty_logos:
     name: "Goby"
     logo: "goby.svg"
     url: https://goby.co
+
+  glossier:
+    name: "Glossier"
+    logo: "glossier.svg"
+    url: https://www.glossier.com
 
 food_beverage_logos:
   bevv:
