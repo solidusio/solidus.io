@@ -73,6 +73,11 @@ food_beverage_logos:
     name: "Bevv"
     logo: "bevv.svg"
     url: https://www.bevv.com
+    
+  trade:
+    name: "Trade"
+    logo: "trade.svg"
+    url: https://www.drinktrade.com
 
   firstleaf:
     name: "Firstleaf"
