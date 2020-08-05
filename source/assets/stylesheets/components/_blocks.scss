@@ -115,22 +115,6 @@
   background: $white;
 }
 
-//Price calculation block
-.calculator-block{
-  .block-content{
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-
-    @include media-breakpoint-up(md){ max-width: none; }
-  }
-
-  .solidus-logo {
-    width: 100px;
-  }
-}
-
-
 //Contact form wrapper
 .contact-block{
   max-width: 900px;

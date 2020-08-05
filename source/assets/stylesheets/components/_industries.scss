@@ -1,0 +1,75 @@
+.industries {
+  &__image {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__header {
+    h5 {
+      color: $blue;
+    }
+  }
+  
+  &.testimonials {
+    // Set fixed width for the logo
+    .logo {
+      transform: none;
+      width: 120px;
+    }
+    
+    .carousel-content {
+      z-index: 998;
+    }
+    
+    .main-image-container {
+      img {
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  .blockquote {
+    &.goby {
+      background-color: #4B80FA;
+
+      @include media-breakpoint-up(lg) {
+        p {
+          font-size: $font-size-lg;
+        }
+      }
+    }
+    // &.careof {
+    //   background-color: #F1574B;
+    // }
+    
+    &.firstleaf {
+      background-color: #776580;
+    }
+  }
+  
+  &.community-logos {
+    .community-logos__item {
+      @include media-breakpoint-up(md) {
+        width: 50%;
+      }
+    }
+    
+    .inherit-fill { fill: $white; }
+  }
+}
+
+.industries-hero {
+  h5 {
+    color: $blue;
+  }
+  
+  .content-wrapper {
+    .content-block {
+      @include media-breakpoint-up(md){
+        padding-top: 65px;
+        padding-bottom: 65px;
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+---
+title: Industries | Home Decor
+description: Build a fully customized, omnichannel shopping experience that inspires your customers right in the comfort of their living room.
+---
+
+<div class="industries-hero hero-block">
+  <div class="content-wrapper">
+    <nav class="subnav">
+      <div class="subnav-wrapper container">
+        <small>Industries</small>
+        <ul>
+          <li class="subnav__item">
+            <a class="subnav__item__link" href="/industries/automotive">Automotive</a>
+          </li>
+          <li class="subnav__item selected">
+            <a class="subnav__item__link" href="/industries/home-decor">Home Decor</a>
+          </li>
+          <li class="subnav__item">
+            <a class="subnav__item__link" href="/industries/apparel">Apparel</a>
+          </li>
+          <li class="subnav__item">
+            <a class="subnav__item__link" href="/industries/health-and-beauty">Health and Beauty</a>
+          </li>
+          <li class="subnav__item">
+            <a class="subnav__item__link" href="/industries/food-and-beverage">Food and Beverage</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content-block">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg">
+            <div class="pr-lg-6 mb-3">
+              <h5>Home Decor</h5>
+              <h1 class="title">Create the trendsetting look your customers want.</h1>
+              <p class="mb-6">
+                Build a fully customized, omnichannel shopping experience that inspires your customers right in the comfort of their living room.
+              </p>
+              <a class="btn btn-primary btn-lg" href="/contact">Get started</a>
+              <a class="btn btn-secondary btn-white" href="http://solidemo.herokuapp.com/" target="_blank">Demo</a>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="hero-image-wrapper">
+              <img data-srcset="<%= image_path('industries/home-decor_hero@2x.jpg') %> 2x, <%= image_path('industries/home-decor_hero@1x.jpg') %> 1x" class="img-fluid" alt="Home Decor" >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-block pt-0">
+  <div class="content-block content-block-gray-900">
+    <div class="container">
+      <div class="row">
+        <%= partial "partials/industries_logos" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-block pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="industries__image col-md">
+        <img src="<%= image_path("industries/home-decor_04@1x.png") %>" data-srcset="<%= image_path("industries/home-decor_04@2x.png") %> 2x, <%= image_path("industries/home-decor_04@1x.png") %> 1x" class="img-fluid" width="445" alt="Omnichannel" />
+      </div>
+      <div class="col-md align-self-center">
+        <div class="industries__header">
+          <h5>Omnichannel eCommerce</h5>
+          <h2>Unleash the power of omnichannel.</h2>
+        </div>
+        <p>
+          Customers may start on their laptop to get a good look at your sofa, move to their phone and use AR to see how it would look in their living room, then visit your showroom to check it out and buy it at one of your self-serve kiosks. With the Solidus APIs, this all becomes one seamless journey: we provide the infrastructure, you decide how to use it.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-block content-block-gray-100">
+  <div class="container">
+    <div class="row">
+      <div class="industries__image order-md-2 col-md">
+        <img src="<%= image_path("industries/home-decor_03@1x.png") %>" data-srcset="<%= image_path("industries/home-decor_03@2x.png") %> 2x, <%= image_path("industries/home-decor_03@1x.png") %> 1x" class="img-fluid" width="100%" alt="Brand centered experience" />
+      </div>
+      <div class="col-md align-self-center">
+        <div class="industries__header">
+          <h5>Content management</h5>
+          <h2>Use content to create a lifestyle.</h2>
+        </div>
+        <p>
+          With one of the most flexible content management solutions on the market, Solidus gives you the tools you need to make the leap from brand to lifestyle company. Create content that speaks to your customers’ hearts and turns them into ambassadors. Blend the boundaries between products and content in ways you hadn’t thought possible.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-block">
+  <div class="industries testimonials">
+    <div class="container text-center">
+      <div class="carousel-content">
+        <div class="main-image-container">
+          <img src="<%= image_path("use-cases/quote-floyd@1x.jpg") %>" data-srcset="<%= image_path("use-cases/quote-floyd@2x.jpg") %> 2x, <%= image_path("use-cases/quote-floyd@1x.jpg") %> 1x" class="img-fluid" width="100%" alt="Floyd" />
+        </div>
+        <div class="blockquote-container">
+          <blockquote class="blockquote floyd d-flex flex-column justify-content-between">
+            <a class="logo" href="https://floydhome.com/" target="_blank"><%= inline_svg("community-logos/floyd.svg", class: "isvg") %></a>
+            <div>
+              <%= inline_svg("icons/quote.svg", class: "quote") %>
+              <p class="pl-4">
+                I've never had to say 'no' to my product team. I can customize Solidus to do anything they want.
+              </p>
+            </div>
+            <footer class="blockquote-footer pt-3">
+              <cite>
+                <img src="<%= image_path("quotes/jacky-giang.png") %>" data-srcset="<%= image_path("quotes/jacky-giang@2x.png") %> 2x, <%= image_path("quotes/jacky-giang.png") %> 1x" class="img-circled" width="48" height="48" alt="Jacky Giang" />
+                <span class="text">
+                  <span class="author">Jacky Giang</span>
+                    Head of Technology at Floyd
+                  </span>
+                </cite>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-block pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="industries__image col-md">
+        <img src="<%= image_path("industries/home-decor_02@1x.png") %>" data-srcset="<%= image_path("industries/home-decor_02@2x.png") %> 2x, <%= image_path("industries/home-decor_02@1x.png") %> 1x" class="img-fluid" width="100%" alt="Flexible pricing" />
+      </div>
+      <div class="col-md align-self-center">
+        <div class="industries__header">
+          <h5>Flexible fulfillment</h5>
+          <h2>Overcome the logistics barrier.</h2>
+        </div>
+        <p>
+          We can’t solve your packaging challenges for you, but we can give you a technical infrastructure that allows you to focus on picking the right partner rather than the partner with the right plugin. No matter their workflow, Solidus is flexible enough to integrate with your 3PL at every touchpoint of the buying journey, and even with multiple partners at the same time.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-block content-block-gray-100">
+  <div class="container">
+    <div class="row">
+      <div class="industries__image order-md-2 col-md">
+        <img src="<%= image_path("industries/home-decor_05@1x.png") %>" data-srcset="<%= image_path("industries/home-decor_05@2x.png") %> 2x, <%= image_path("industries/home-decor_05@1x.png") %> 1x" class="img-fluid" width="100%" alt="Payment freedom" />
+      </div>
+      <div class="col-md align-self-center">
+        <div class="industries__header">
+          <h5>Payment freedom</h5>
+          <h2>Buy now, pay whenever.</h2>
+        </div>
+        <p>
+          With out-of-the-box support for the most popular payment and financing providers  and the ability to integrate any gateway with an API, Solidus allows you to give your domestic and international buyers a broad range of payment options according to factors such as order value, customer loyalty and any others you want to consider. Increase AOV while maintaining peace of mind.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= partial "partials/cta_bottom" %>

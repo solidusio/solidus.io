@@ -33,16 +33,32 @@ $(function () {
   $(".expand-use-cases").on("mouseenter", function (event) {
     event.stopPropagation();
     if ($(".expandable").hasClass("show") && (window.matchMedia("(min-width: 1024px)").matches)) {
-      $(".use-cases-menu, .expandable").toggleClass("expanded");
-      $(this).toggleClass("opened");
+      $(".use-cases-menu, .expandable").addClass("expanded");
+      $(".industries-menu").removeClass("expanded");
     }
   });
   
+  $(".expand-industries").on("mouseenter", function (event) {
+    event.stopPropagation();
+    if ($(".expandable").hasClass("show") && (window.matchMedia("(min-width: 1024px)").matches)) {
+      $(".industries-menu, .expandable").addClass("expanded");
+      $(".use-cases-menu").removeClass("expanded");
+    }
+  });
+
   // Expand menu on small screens
   $(".expand-use-cases").click(function (event) {
     event.stopPropagation();
     if (window.matchMedia("(max-width: 1023px)").matches) {
       $(".use-cases-menu, .expandable").toggleClass("expanded");
+      $(this).toggleClass("opened");
+    }
+  });
+  
+  $(".expand-industries").click(function (event) {
+    event.stopPropagation();
+    if (window.matchMedia("(max-width: 1023px)").matches) {
+      $(".industries-menu, .expandable").toggleClass("expanded");
       $(this).toggleClass("opened");
     }
   });
