@@ -50,7 +50,8 @@ body{
 
 .site-header--top {
   &.site-header--blue,
-  &.site-header--dark {
+  &.site-header--dark,
+  &.site-header--transparent {
     @include media-breakpoint-up(lg) {
       border-color: rgba(255, 255, 255, 0.15);
 
@@ -81,6 +82,12 @@ body{
   &.site-header--dark {
     @include media-breakpoint-up(lg) {
       background: $gray-900;
+    }
+  }
+  
+  &.site-header--transparent {
+    @include media-breakpoint-up(lg) {
+      background: rgba(255, 255, 255, 0);
     }
   }
 }

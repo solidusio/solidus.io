@@ -1,0 +1,48 @@
+.features {
+  &__gradient {
+    background: linear-gradient(30deg, rgba(102,199,137,1) 46%, rgba(60,118,240,1) 92%);
+    color: $white;
+
+    .title {
+      color: $white;
+    }
+  }
+  
+  &__flexibility {
+    @include media-breakpoint-up(md) {
+      background: url("/assets/images/illustrations/features-flexibility.svg") no-repeat;
+      background-size: 632px auto;
+      background-position: center right;
+    }
+  }
+  
+  &__shipping {
+    @include media-breakpoint-up(md) {
+      background: url("/assets/images/illustrations/features-shipping.svg") no-repeat;
+      background-size: 502px auto;
+      background-position: center right;
+    }
+  }
+  
+  h2 {
+    margin: 1.5rem 0 2.5rem;
+    
+    @include media-breakpoint-up(lg) {
+      margin: 2rem 0 3rem;
+    }
+  }
+  
+  .isvg.group {
+    width: 40px;
+    height: 40px;
+    
+    @include media-breakpoint-up(lg) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  .call-to-action {
+    background: $gray-100;
+  }
+}

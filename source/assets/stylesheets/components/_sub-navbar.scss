@@ -1,0 +1,38 @@
+.sub-navbar {
+  background: $white;
+  padding: 26px 0;
+  top: 0;
+  border-bottom: 1px solid $gray-200;
+
+  @include media-breakpoint-down(sm) {
+    padding: 15px 0;
+  }
+  
+  @include media-breakpoint-up(lg) {
+    z-index: $zindex-fixed + 1;
+    position: sticky;
+  }
+  
+  .nav {
+    font-weight: $font-weight-bolder;
+    text-transform: uppercase;
+    font-size: $small-font-size;
+    
+    .nav-item {
+      margin-bottom: 0;
+    }
+    
+    .nav-link {
+      color: $gray-900;
+
+      &:hover {
+        color: $primary;
+      }
+      
+      @include media-breakpoint-down(sm) {
+        font-size: 85%;
+        padding: ($spacer / 2);
+      }
+    }
+  }
+}
