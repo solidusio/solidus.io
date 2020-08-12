@@ -88,6 +88,12 @@ body{
   &.site-header--transparent {
     @include media-breakpoint-up(lg) {
       background: rgba(255, 255, 255, 0);
+      
+      .btn-primary {
+        color: $primary;
+        background-color: $white;
+        border-color: $white;
+      }
     }
   }
 }

@@ -46,3 +46,33 @@
     background: $gray-100;
   }
 }
+
+.floating-brand {
+  transform: translatey(0);
+  animation: float 3s ease-in-out infinite;
+  
+  &.floyd {
+    animation-delay: .75s;
+  }
+  &.aceandtate {
+    animation-delay: .4s;
+  }
+  &.casper {
+    animation-delay: .75s;
+  }
+  &.away {
+    animation-delay: 2s;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-12px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
