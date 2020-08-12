@@ -48,7 +48,7 @@
 }
 
 .floating-brand {
-  transform: translatey(0);
+  transform: translate(0, 0);
   animation: float 3s ease-in-out infinite;
   
   &.floyd {
@@ -67,12 +67,12 @@
 
 @keyframes float {
   0% {
-    transform: translatey(0);
+    transform: translate(0, 0);
   }
   50% {
-    transform: translatey(-12px);
+    transform: translate(0, -12px);
   }
   100% {
-    transform: translatey(0);
+    transform: translate(0, 0);
   }
 }
