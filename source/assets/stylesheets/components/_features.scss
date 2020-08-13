@@ -48,8 +48,8 @@
 }
 
 .floating-brand {
-  transform: translate(0, 0);
   animation: float 3s ease-in-out infinite;
+  transform: translateZ(0);
   
   &.floyd {
     animation-delay: .75s;
