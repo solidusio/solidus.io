@@ -9,7 +9,7 @@
   }
   
   @include media-breakpoint-up(lg) {
-    z-index: $zindex-fixed + 1;
+    z-index: $zindex-fixed - 1;
     position: sticky;
   }
   
