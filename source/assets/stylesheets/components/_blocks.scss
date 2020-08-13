@@ -60,27 +60,31 @@
     }
 
     @include media-breakpoint-up(md){
-      padding-top: 180px;
+      padding-top: 130px;
       padding-bottom: 90px;
 
       &.hero-block {
         margin-top: -180px;
+        padding-top: 180px;
         padding-bottom: 65px;
       }
       &.intro {
         padding-bottom: 65px;
+        padding-top: 130px;
       }
     }
     @include media-breakpoint-up(xl){
-      padding-top: 290px;
+      padding-top: 205px;
       padding-bottom: 130px;
 
       &.hero-block {
         margin-top: -290px;
+        padding-top: 290px;
         padding-bottom: 90px;
       }
       &.intro {
         padding-bottom: 90px;
+        padding-top: 205px;
       }
     }
 

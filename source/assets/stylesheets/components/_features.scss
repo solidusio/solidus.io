@@ -24,12 +24,8 @@
     }
   }
   
-  h2 {
-    margin: 1.5rem 0 2.5rem;
-    
-    @include media-breakpoint-up(lg) {
-      margin: 2rem 0 3rem;
-    }
+  &__header {
+    margin-bottom: 3rem;
   }
   
   .isvg.group {
