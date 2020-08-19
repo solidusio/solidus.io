@@ -31,10 +31,10 @@ home_decor_logos:
     logo: "floyd.svg"
     url: https://www.floydhome.com
 
-  casper:
-    name: "Casper"
-    logo: "casper.svg"
-    url: https://www.casper.com
+  maisonette:
+    name: "Maisonette"
+    logo: "maisonette.svg"
+    url: https://www.maisonette.com
 
 apparel_logos:
   maisonette:
