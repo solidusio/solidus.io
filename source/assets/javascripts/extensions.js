@@ -1,4 +1,3 @@
-import "jquery";
 import AOS from "aos";
 
 $(function () {
