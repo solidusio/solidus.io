@@ -9,11 +9,6 @@ online_stores_logos:
     logo: "peach.svg"
     url: https://www.discoverpeach.com
 
-  casper:
-    name: "Casper"
-    logo: "casper.svg"
-    url: https://www.casper.com
-
   firstleaf:
     name: "firstleaf"
     logo: "firstleaf.svg"
