@@ -83,7 +83,11 @@
         <%= inline_svg("close.svg", class: "isvg isvg-close") %>
       </a>
       <div class="github-stars">
-        <a class="github-button" href="https://github.com/solidusio/solidus" data-show-count="true" aria-label="Star solidusio/solidus on GitHub">Star</a>
+        <% unless current_page.data.title == 'Roadmap' %>
+          <a class="github-button" href="https://github.com/solidusio/solidus" data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large" data-show-count="true" aria-label="Star solidusio/solidus on GitHub">Star</a>
+          <% else %>
+          <a class="github-button" href="https://github.com/solidusio/solidus" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star solidusio/solidus on GitHub">Star</a>
+        <% end %>
       </div>
       <a class="btn btn-primary btn-sm" href="/contact">Contact</a>
     </div>
