@@ -83,28 +83,11 @@
         <%= inline_svg("close.svg", class: "isvg isvg-close") %>
       </a>
       <div class="github-stars">
-        <a class="github-button" href="https://github.com/solidusio/solidus" data-color-scheme="
-        <%= "no-preference: dark; light: dark; dark: dark;" if current_page.data.title == 'Roadmap' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Solidus' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Features' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Integrations' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Community' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Extensions' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Partners' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Solidus Blog' %>
-        
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Use Cases | Online Store' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Use Cases | Headless Commerce' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Use Cases | Marketplace' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Use Cases | Global Commerce' %>
-        
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Industries | Automotive' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Industries | Home Decor' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Industries | Apparel' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Industries | Health and Beauty' %>
-        <%= "no-preference: light; light: light; dark: light;" if current_page.data.title == 'Industries | Food and Beverage' %>
-        
-        " data-size="large" data-show-count="true" aria-label="Star solidusio/solidus on GitHub">Star</a>
+        <% unless current_page.data.title == 'Roadmap' %>
+          <a class="github-button" href="https://github.com/solidusio/solidus" data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large" data-show-count="true" aria-label="Star solidusio/solidus on GitHub">Star</a>
+          <% else %>
+          <a class="github-button" href="https://github.com/solidusio/solidus" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" data-show-count="true" aria-label="Star solidusio/solidus on GitHub">Star</a>
+        <% end %>
       </div>
       <a class="btn btn-primary btn-sm" href="/contact">Contact</a>
     </div>
