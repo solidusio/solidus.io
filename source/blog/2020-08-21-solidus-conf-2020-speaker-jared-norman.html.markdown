@@ -3,7 +3,7 @@ title: SolidusConf 2020 Speaker Jared Norman
 date: 2020-08-21
 tags: Solidus, conference
 author: Sean Denny
-cover_image: /blog/2020/08/21/solidus-conf-2020-speaker-jared-norman/jared.png
+cover_image: /blog/2020/08/21/solidus-conf-2020-speaker-jared-norman/jared.jpg
 ---
 
 ### Introducing SolidusConf Speaker Jared Norman
