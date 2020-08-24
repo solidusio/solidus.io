@@ -5,6 +5,7 @@
   .hero-image-wrapper {
     position: relative;
     width: 100%;
+    text-align: center;
   }
   
   .hero-image {
@@ -59,4 +60,54 @@
       width: 100%;
     }
   }
+}
+
+.hero-background {
+  position: absolute;
+  z-index: -1;
+  top: -15%;
+  left: -10%;
+  
+  @include media-breakpoint-down(lg) {
+    top: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @include media-breakpoint-down(md) {
+    top: -6%;
+    left: 0;
+  }
+  
+  @include media-breakpoint-down(sm) {
+    top: 0;
+    left: 0;
+  }
+}
+
+.floating-sphere {
+ transform: translateY(0);
+ animation: float 3s ease-in-out infinite;
+ 
+ &.sphere-1 {
+   animation-delay: .75s;
+ }
+ &.sphere-2 {
+   animation-delay: .4s;
+ }
+ &.sphere-4 {
+   animation-delay: 2s;
+ }
+}
+
+@keyframes float {
+ 0% {
+   transform: translateY(0);
+ }
+ 50% {
+   transform: translateY(-12px);
+ }
+ 100% {
+   transform: translateY(0);
+ }
 }
