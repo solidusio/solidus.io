@@ -68,20 +68,41 @@
   top: -15%;
   left: -10%;
   
+  .industries-hero & {
+    top: auto;
+    bottom: -10%;
+  }
+  
   @include media-breakpoint-down(lg) {
     top: 0;
     max-width: 100%;
     height: auto;
+    
+    .industries-hero & {
+      left: -10%;
+      max-width: 114%;
+    }
   }
   
   @include media-breakpoint-down(md) {
     top: -6%;
     left: 0;
+    
+    .industries-hero & {
+      left: 5%;
+      max-width: 100%;
+    }
   }
   
   @include media-breakpoint-down(sm) {
     top: 0;
     left: 0;
+    
+    .industries-hero & {
+      bottom: -10%;
+      left: -10%;
+      max-width: 114%;
+    }
   }
 }
 
@@ -94,6 +115,9 @@
  }
  &.sphere-2 {
    animation-delay: .4s;
+ }
+ &.sphere-3 {
+   animation-delay: 1.2s;
  }
  &.sphere-4 {
    animation-delay: 2s;
