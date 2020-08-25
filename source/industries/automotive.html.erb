@@ -46,6 +46,7 @@ preview_image: industries/social/automotive_preview.jpg
           <div class="col-lg">
             <div class="hero-image-wrapper">
               <img data-srcset="<%= image_path('industries/automotive_hero@2x.jpg') %> 2x, <%= image_path('industries/automotive_hero@1x.jpg') %> 1x" class="img-fluid" alt="Automotive" >
+              <%= inline_svg("industries/hero-bg.svg", class: "hero-background") %>
             </div>
           </div>
         </div>
@@ -97,40 +98,6 @@ preview_image: industries/social/automotive_preview.jpg
         <p>
           When you have hundreds of thousands of products, product discovery is crucial. Build search, filtering and recommendation flows that are tailored to customer taste and your product taxonomy. Use the built-in search system for a quick start, or replace it with powerful alternatives such as Elasticsearch and Algolia to unleash the full potential of search.
         </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="content-block hide">
-  <div class="industries testimonials">
-    <div class="container text-center">
-      <div class="carousel-content">
-        <div class="main-image-container">
-          <img src="<%= image_path("industries/quote-zohr@1x.jpg") %>" data-srcset="<%= image_path("industries/quote-zohr@2x.jpg") %> 2x, <%= image_path("industries/quote-zohr@1x.jpg") %> 1x" class="img-fluid" width="100%" alt="Zohr" />
-        </div>
-        <div class="blockquote-container">
-          <blockquote class="blockquote zohr d-flex flex-column justify-content-between">
-            <a class="logo" href="https://zohr.com/" target="_blank">
-              <%= inline_svg("community-logos/zohr.svg", class: "isvg") %>
-            </a>
-            <div>
-              <%= inline_svg("icons/quote.svg", class: "quote") %>
-              <p class="pl-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-              </p>
-            </div>
-            <footer class="blockquote-footer pt-3">
-              <cite>
-                <img src="<%= image_path("use-cases/placeholder.png") %>" data-srcset="<%= image_path("use-cases/placeholder@2x.png") %> 2x, <%= image_path("use-cases/placeholder.png") %> 1x" class="img-circled" width="48" height="48" alt="placeholder" />
-                <span class="text">
-                  <span class="author">Lorem Ipsum</span>
-                    Lorem Ipsum
-                  </span>
-                </cite>
-            </footer>
-          </blockquote>
-        </div>
       </div>
     </div>
   </div>
