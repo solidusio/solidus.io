@@ -120,6 +120,123 @@
   .inherit-fill { fill: #505359; }
 }
 
+// Community logos animation
+$animation-timing: 9s;
+$carousel-items: 3;
+$animation-delay-fraction: $animation-timing / $carousel-items;
+$animation-steps-fraction: 100 / $carousel-items;
+$slide-change-timing: 3; // percentage of total animation cycle
+
+.animated-logos {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  &__item {
+    margin-bottom: 30px;
+    width: 50%;
+    text-align: center;
+
+    @include media-breakpoint-up(md){ 
+      width: 24%;
+    }
+    
+    &__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        padding: 12px;
+        margin: 0;
+        opacity: 0;
+        animation: carouselAnimateVertical $animation-timing linear infinite;
+        background-color: $gray-100;
+        height: 70px;
+      }
+    }
+    
+    a {
+      .isvg {
+        @include media-breakpoint-down(md) {
+          max-width: 100%;
+          height: auto;
+        }
+        
+        @include media-breakpoint-up(md){ 
+          width: 70%;
+        }
+
+        @include media-breakpoint-up(lg){ 
+          width: 100%;
+        }
+      }
+    }
+    
+    .inherit-fill { fill: #505359; }
+  }
+}
+
+@for $i from 1 through ($carousel-items - 1) { 
+  .animated-logos__item__list li:nth-child(#{$i}) {
+    animation-delay: calc(#{$animation-delay-fraction} * #{$i - 2});
+  }
+}
+
+.animated-logos__item__list li:last-child {
+  animation-delay: calc(-#{$animation-delay-fraction} * 2);
+}
+
+@keyframes carouselAnimateVertical {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  #{$slide-change-timing}%,
+  #{$animation-steps-fraction}% {
+    transform: translateY(100%);
+    //opacity: .4;
+    opacity: 0;
+    visibility: visible;
+  }
+  #{$animation-steps-fraction + $slide-change-timing}%,
+  #{$animation-steps-fraction * 2}% {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  #{($animation-steps-fraction * 2) + $slide-change-timing}%,
+  #{$animation-steps-fraction * 3}% {
+    transform: translateY(-100%);
+    //opacity: .4;
+    opacity: 0;
+    visibility: visible;
+  }
+  #{($animation-steps-fraction * 3) + $slide-change-timing}% {
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 //Alumni
 .alumni {
   margin-top: 30px;
