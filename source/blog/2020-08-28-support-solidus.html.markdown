@@ -1,7 +1,7 @@
 ---
 title: Support Solidus
-cover_image: /blog/2020/06/24/support-solidus/support-solidus-community-group-photo.jpg
-date: 2020-06-24
+cover_image: /blog/2020/08/28/support-solidus/support-solidus-community-group-photo.jpg
+date: 2020-08-28
 tags: Solidus
 author: Thomas Sample
 description: >
@@ -12,6 +12,8 @@ canonical_link: https://karmacreative.io/support-solidus
 
 _This article was originally posted on April 16th, 2020 to [Karma Creative](https://karmacreative.io/)'s website, you can read it here:
 [Full Text of original Support Solidus Article](https://karmacreative.io/support-solidus)._
+
+---
 
 ## Chapter 1: A Call To Arms
 ### The Movement, Its Origins, and What We Hope To Achieve
@@ -33,19 +35,19 @@ and want to support it and shape its future.
 
 That's why we at Karma Creative launched the Support Solidus Initiative: *to spark community engagement and to help our open-source platform thrive.*
 
-![Support Solidus Logo](/blog/2020/06/24/support-solidus/support-solidus-logo.jpg)
+![Support Solidus Logo](/blog/2020/08/28/support-solidus/support-solidus-logo.jpg)
 
 Wouldn't it be great to put some items from YOUR roadmap directly onto the Solidus Roadmap? That's our goal: To completely align with the community and implement items that are shared between individual retailers' roadmaps.
 
 We printed these shirts at Solidus Conf 2019 to introduce the initiative:
 
-![Mock Up of the Support Solidus T-Shirt that was printed for Solidus Conf 2019](/blog/2020/06/24/support-solidus/support-solidus-t-shirt-mock-up.jpg)
+![Mock Up of the Support Solidus T-Shirt that was printed for Solidus Conf 2019](/blog/2020/08/28/support-solidus/support-solidus-t-shirt-mock-up.jpg)
 
 At Solidus, we want the goals of our stores and the goals of the platform to be totally aligned and symbiotic. But in order to have their own needs met and supported, stores need to support Solidus in return.
 
 From our side, we know that doing so can create a ton of opportunity. It can open doors; streamline processes; enable community work on the features and benefits you want to see; and make your business earn more money with less effort. If you care about features and functionality, and if you want your own company roadmap to be a part of the equation, then supporting the platform is a necessary and prudent investment.
 
-![Illustration of People in the Open Source Community Standing Together](/blog/2020/06/24/support-solidus/open-source-community-people-standing-together-illustration.jpg)
+![Illustration of People in the Open Source Community Standing Together](/blog/2020/08/28/support-solidus/open-source-community-people-standing-together-illustration.jpg)
 
 ---
 
@@ -56,12 +58,13 @@ It might help the community (those on the fence about whether or not to join in)
 To start, just by choosing open-source, you open yourself to a world of opportunity. The community and the altruism built around it is palpable in long-running open-source projects like Ruby on Rails and Solidus. Instead of licensing fees, you have a veritable army of developers collaborating together with you, supporting you, providing regular maintenance on underlying dependencies, and so much more. Sure, sometimes you have to also give back to that project, platform, and community. But doing so multiples your *own* efforts and creates a positive feedback loop: one where we gain the ability to add more new features, improve our framework, and stay more secure. Open-source is congruent with success.
 
 But why Solidus in particular?
-Complete control over your store.
-No licensing fees.
-Strong community.
-Solid core team.
-Support for high-volume stores with varied and complex needs, with many outlying use cases and features already included on the platform.
-And it scales.
+
+- Complete control over your store.
+- No licensing fees.
+- Strong community.
+- Solid core team.
+- Support for high-volume stores with varied and complex needs, with many outlying use cases and features already included on the platform.
+- And it scales.
 
 ‘Support Solidus’ means promoting access to future conferences, new features, hassle free maintenance, and better support. But moreover, it means peace of mind knowing that you’re securing the future of this platform as a leading open source e-commerce framework.
 
@@ -97,5 +100,4 @@ And as we touched on in our talk, trust and good relationships allow us to move 
 
 In summary, the Support Solidus initiative was meant, first and foremost, as a *call to arms*. With your code, through becoming an Ambassador, or by donating your time, we want to remind everyone that, together, it can be done.
 
----
-_To continue reading this article, please visit the original on the [Karma Creative](https://karmacreative.io) website: [Full Text of original Support Solidus Article](https://karmacreative.io/support-solidus)._
+## [Click to Support Solidus](https://opencollective.com/solidus/contribute/)
