@@ -42,7 +42,8 @@
     color: initial;
   }
   
-  .site-header--dark & {
+  .site-header--dark &,
+  .site-header--blue & {
     color: $white;
     
     .inherit-fill {
