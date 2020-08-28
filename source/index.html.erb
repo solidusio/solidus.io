@@ -199,10 +199,10 @@ description: Solidus is the free, open-source eCommerce platform based on Ruby o
         <div class="row align-items-center content-block-gray-900">
           <div class="col-md-5 col-lg-6 col-xl-7"  data-aos="fade">
             <div class="pr-md-6">
-              <%= partial 'partials/community_stats', locals: { type: 'github', count: '3223', title: 'GitHub stars' } %>
-              <%= partial 'partials/community_stats', locals: { type: 'slack', count: '3198', title: 'Slack members' } %>
-              <%= partial 'partials/community_stats', locals: { type: 'open-collective', count_prefix: '$', count: '65', count_k: 'K', title: 'Donated' } %>
-              <%= partial 'partials/community_stats', locals: { type: 'contributors', count: '225', title: 'Contributors' } %>
+              <%= partial 'partials/community_stats', locals: { type: 'github', count: data.project_stats.github_stars, title: 'GitHub stars' } %>
+              <%= partial 'partials/community_stats', locals: { type: 'slack', count: data.project_stats.slack_members, title: 'Slack members' } %>
+              <%= partial 'partials/community_stats', locals: { type: 'open-collective', count_prefix: '$', count: data.project_stats.open_collective_donations, count_k: 'K', title: 'Donated' } %>
+              <%= partial 'partials/community_stats', locals: { type: 'contributors', count: data.project_stats.contributors, title: 'Contributors' } %>
             </div>
           </div>
           <div class="col-md-7 col-lg-6 col-xl-5">

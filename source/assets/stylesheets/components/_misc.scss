@@ -31,6 +31,49 @@
   .isvg .inherit-fill { fill: $gray-900; }
 }
 
+// Github Stars custom button
+.github-button {
+  color: $gray-900;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  vertical-align: middle;
+  
+  &:hover {
+    color: initial;
+  }
+  
+  .site-header--dark &,
+  .site-header--blue & {
+    color: $white;
+    
+    .inherit-fill {
+      fill: $white;
+    }
+  }
+  
+  span {
+    display: inline-block;
+  }
+  
+  .isvg {
+    margin-top: -0.25em;
+  }
+  
+  .star {
+    margin-left: .25rem;
+    margin-right: .1rem;
+  }
+}
+
+.github-stars {
+  @include media-breakpoint-up(lg) {
+    margin-right: 1rem;
+  }
+  
+  @include media-breakpoint-up(xl) {
+    margin-right: 2rem;
+  }
+}
 
 //Community logos
 .community-logos{
