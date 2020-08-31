@@ -14,6 +14,11 @@ online_stores_logos:
     logo: "firstleaf.svg"
     url: https://www.firstleaf.club
 
+  away:
+    name: "away"
+    logo: "awaytravel.svg"
+    url: https://www.awaytravel.com
+
 headless_commerce_logos:
   meundies:
     name: "MeUndies"
@@ -26,9 +31,14 @@ headless_commerce_logos:
     url: https://www.maisonette.com
 
   acetate:
-    name: "Ace&tate"
+    name: "Ace & Tate"
     logo: "ace&tate.svg"
     url: https://www.aceandtate.com
+
+  hiki:
+    name: "Hiki"
+    logo: "hiki.svg"
+    url: https://hiki.com
 
 marketplace_logos:
   maisonette:
@@ -40,6 +50,11 @@ marketplace_logos:
     name: "Bevv"
     logo: "bevv.svg"
     url: https://bevv.com
+
+  theetho:
+    name: "The Etho"
+    logo: "theetho.svg"
+    url: https://theetho.com
 
 global_commerce_logos:
   wonderbly:

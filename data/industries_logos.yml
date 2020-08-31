@@ -36,6 +36,16 @@ home_decor_logos:
     logo: "maisonette.svg"
     url: https://www.maisonette.com
 
+  theetho:
+    name: "The Etho"
+    logo: "theetho.svg"
+    url: https://theetho.com
+
+  castlery:
+    name: "Castlery"
+    logo: "castlery.svg"
+    url: https://castlery.com
+
 apparel_logos:
   maisonette:
     name: "Maisonette"
@@ -51,6 +61,11 @@ apparel_logos:
     name: "Peach"
     logo: "peach.svg"
     url: https://www.discoverpeach.com
+
+  'on':
+    name: "On"
+    logo: "on.svg"
+    url: https://on-running.com
 
 health_beauty_logos:
   careof:
@@ -68,16 +83,26 @@ health_beauty_logos:
     logo: "glossier.svg"
     url: https://www.glossier.com
 
+  hiki:
+    name: "Hiki"
+    logo: "hiki.svg"
+    url: https://hiki.com
+
 food_beverage_logos:
   bevv:
     name: "Bevv"
     logo: "bevv.svg"
     url: https://www.bevv.com
-    
+
   trade:
     name: "Trade"
     logo: "trade.svg"
     url: https://www.drinktrade.com
+
+  garten:
+    name: "Garten"
+    logo: "garten.svg"
+    url: https://garten.co
 
   firstleaf:
     name: "Firstleaf"
