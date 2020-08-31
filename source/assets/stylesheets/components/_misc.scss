@@ -159,6 +159,7 @@ $slide-change-timing4: 2; // percentage of total animation cycle
       padding: 0;
       position: relative;
       height: 70px;
+      transform: scale(.9);
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -173,7 +174,6 @@ $slide-change-timing4: 2; // percentage of total animation cycle
         margin: 0;
         opacity: 0;
         animation: carouselAnimateVertical $animation-timing linear infinite;
-        background-color: $gray-100;
         height: 70px;
       }
       
@@ -186,17 +186,15 @@ $slide-change-timing4: 2; // percentage of total animation cycle
     
     a {
       .isvg {
+        width: 100%;
+        
         @include media-breakpoint-down(md) {
           max-width: 100%;
           height: auto;
         }
         
-        @include media-breakpoint-up(md){ 
-          width: 70%;
-        }
-
-        @include media-breakpoint-up(lg){ 
-          width: 100%;
+        &.smaller {
+          width: 80%;
         }
       }
     }
