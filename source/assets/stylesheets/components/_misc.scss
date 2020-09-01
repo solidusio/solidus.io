@@ -158,11 +158,15 @@ $slide-change-timing4: 2; // percentage of total animation cycle
       margin: 0;
       padding: 0;
       position: relative;
-      height: 70px;
+      height: 46px;
       transform: scale(.9);
       display: flex;
       justify-content: center;
       flex-direction: column;
+      
+      @include media-breakpoint-up(sm) {
+        height: 70px;
+      }
       
       li {
         display: flex;
@@ -187,11 +191,6 @@ $slide-change-timing4: 2; // percentage of total animation cycle
     a {
       .isvg {
         width: 100%;
-        
-        @include media-breakpoint-down(md) {
-          max-width: 100%;
-          height: auto;
-        }
         
         &.smaller {
           width: 80%;
