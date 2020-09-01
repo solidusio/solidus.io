@@ -1,81 +1,62 @@
-<<<<<<< HEAD
-<div class="community-logos col-lg-12">
-  <% data.brands.values.take(12).each do |brand| %>
-    <div class="community-logos__item">
-      <a href="<%= brand[:url] %>" target="_blank">
-        <%= inline_svg("community-logos/#{brand[:logo]}", class: "isvg") %>
-      </a>
-    </div>
-  <% end %>
-=======
-<div class="animated-logos col-lg-12" >
+<div class="animated-logos col-lg-12">
+  
   <div class="animated-logos__item">
     <ul class="animated-logos__item__list">
-      <li>
-        <a href="https://floyddetroit.com/" target="_blank"><%= inline_svg("community-logos/floyd.svg", class: "isvg smaller" ) %></a>
-      </li>
-      <li>
-        <a href="https://moddedeuros.com/" target="_blank"><%= inline_svg("community-logos/moddedeuros.svg", class: "isvg") %></a>
-      </li>
-      <li>
-        <a href="https://bookshop.org/" target="_blank"><%= inline_svg("community-logos/bookshop.svg", class: "isvg") %></a>
-      </li>
+      <% data.community_logos[:group_1].each do |brand, info| %>
+        <li>
+          <a href="<%= info[:url] %>" target="_blank">
+            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
+          </a>
+        </li>
+      <% end %>
     </ul>
   </div>
+  
   <div class="animated-logos__item">
     <ul class="animated-logos__item__list">
-      <li>
-        <a href="https://www.aceandtate.com/" target="_blank"><%= inline_svg("community-logos/ace&tate.svg", class: "isvg") %></a>
-      </li>
-      <li>
-        <a href="https://www.discoverpeach.com/" target="_blank"><%= inline_svg("community-logos/peach.svg", class: "isvg smaller") %></a>
-      </li>
-      <li>
-        <a href="https://www.meundies.com/" target="_blank"><%= inline_svg("community-logos/meundies.svg", class: "isvg") %></a>
-      </li>
+      <% data.community_logos[:group_2].each do |brand, info| %>
+        <li>
+          <a href="<%= info[:url] %>" target="_blank">
+            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
+          </a>
+        </li>
+      <% end %>
     </ul>
   </div>
+  
   <div class="animated-logos__item">
     <ul class="animated-logos__item__list">
-      <li>
-        <a href="https://www.awaytravel.com/" target="_blank"><%= inline_svg("community-logos/awaytravel.svg", class: "isvg") %></a>
-      </li>
-      <li>
-        <a href="https://www.fortnumandmason.com/" target="_blank"><%= inline_svg("community-logos/fortnum&mason.svg", class: "isvg") %></a>
-      </li>
-      <li>
-        <a href="https://www.firstleaf.club/" target="_blank"><%= inline_svg("community-logos/firstleaf.svg", class: "isvg" ) %></a>
-      </li>
+      <% data.community_logos[:group_3].each do |brand, info| %>
+        <li>
+          <a href="<%= info[:url] %>" target="_blank">
+            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
+          </a>
+        </li>
+      <% end %>
     </ul>
   </div>
+  
   <div class="animated-logos__item">
     <ul class="animated-logos__item__list">
-      <li>
-        <a href="https://www.maisonette.com/" target="_blank"><%= inline_svg("community-logos/maisonette.svg", class: "isvg smaller" ) %></a>
-      </li>
-      <li>
-        <a href="https://www.woolandthegang.com/" target="_blank"><%= inline_svg("community-logos/woolandthegang.svg", class: "isvg") %></a>
-      </li>
-      <li>
-        <a href="https://www.wonderbly.com/" target="_blank"><%= inline_svg("community-logos/wonderbly.svg", class: "isvg" ) %></a>
-      </li>
+      <% data.community_logos[:group_4].each do |brand, info| %>
+        <li>
+          <a href="<%= info[:url] %>" target="_blank">
+            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
+          </a>
+        </li>
+      <% end %>
     </ul>
   </div>
+  
   <div class="animated-logos__item">
     <ul class="animated-logos__item__list group-4">
-      <li>
-        <a href="https://www.castlery.com/" target="_blank"><%= inline_svg("community-logos/castlery.svg", class: "isvg" ) %></a>
-      </li>
-      <li>
-        <a href="https://www.goby.co/" target="_blank"><%= inline_svg("community-logos/goby.svg", class: "isvg smaller" ) %></a>
-      </li>
-      <li>
-        <a href="https://www.hiki.com/" target="_blank"><%= inline_svg("community-logos/hiki.svg", class: "isvg smaller" ) %></a>
-      </li>
-      <li>
-        <a href="https://takecareof.com/" target="_blank"><%= inline_svg("community-logos/careof.svg", class: "isvg smaller" ) %></a>
-      </li>
+      <% data.community_logos[:group_5].each do |brand, info| %>
+        <li>
+          <a href="<%= info[:url] %>" target="_blank">
+            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
+          </a>
+        </li>
+      <% end %>
     </ul>
   </div>
->>>>>>> Group homepage brands and animate these
 </div>
