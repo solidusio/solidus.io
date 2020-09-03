@@ -1,0 +1,199 @@
+meundies:
+  name: "MeUndies"
+  logo: "meundies.svg"
+  url: https://www.meundies.com
+  use_cases:
+    - headless_commerce
+  industries:
+    - apparel
+
+moddedeuros:
+  name: "ModdedEuros"
+  logo: "moddedeuros.svg"
+  url: https://www.moddedeuros.com
+  use_cases:
+    - online_store
+  industries:
+    - automotive
+
+bookshop:
+  name: "Bookshop"
+  logo: "bookshop.svg"
+  url: https://bookshop.org
+  use_cases:
+    - online_store
+
+peach:
+  name: "Peach"
+  logo: "peach.svg"
+  url: https://www.discoverpeach.com
+  use_cases:
+    - online_store
+  industries:
+    - apparel
+
+acetate:
+  name: "Ace & Tate"
+  logo: "ace&tate.svg"
+  url: https://www.aceandtate.com
+  use_cases:
+    - global_commerce
+    - headless_commerce
+  industries:
+    - apparel
+    - health_and_beauty
+
+wool_and_the_gang:
+  name: "Wool & The Gang"
+  logo: "woolandthegang.svg"
+  url: https://www.woolandthegang.com
+  use_cases:
+    - global_commerce
+
+away:
+  name: "Away"
+  logo: "awaytravel.svg"
+  url: https://www.awaytravel.com
+  use_cases:
+    - global_commerce
+    - online_store
+
+fortnum_and_mason:
+  name: "Fortunm & Mason"
+  logo: "fortnum&mason.svg"
+  url: https://www.fortnumandmason.com/
+  use_cases:
+    - online_store
+  industries:
+    - food_beverage
+
+floyd:
+  name: "FLOYD"
+  logo: "floyd.svg"
+  url: https://floydhome.com
+  use_cases:
+    - online_store
+  industries:
+    - home_decor
+
+firstleaf:
+  name: "Firstleaf"
+  logo: "firstleaf.svg"
+  url: https://www.firstleaf.club
+  use_cases:
+    - online_store
+  industries:
+    - food_beverage
+
+careof:
+  name: "Care/Of"
+  logo: "careof.svg"
+  url: https://takecareof.com
+  use_cases:
+    - online_store
+  industries:
+    - health_beauty
+
+wonderbly:
+  name: "Wonderbly"
+  logo: "wonderbly.svg"
+  url: https://www.wonderbly.com
+  use_cases:
+    - global_commerce
+
+maisonette:
+  name: "Maisonette"
+  logo: "maisonette.svg"
+  url: https://www.maisonette.com
+  use_cases:
+    - headless_commerce
+    - marketplace
+  industries:
+    - home_decor
+    - apparel
+
+hiki:
+  name: "Hiki"
+  logo: "hiki.svg"
+  url: https://hiki.com
+  use_cases:
+    - headless_commerce
+  industries:
+    - health_beauty
+
+bevv:
+  name: "Bevv"
+  logo: "bevv.svg"
+  url: https://bevv.com
+  use_cases:
+    - marketplace
+  industries:
+    - food_beverage
+
+theetho:
+  name: "The Etho"
+  logo: "theetho.svg"
+  url: https://theetho.com
+  use_cases:
+    - marketplace
+  industries:
+    - home_decor
+
+glossier:
+  name: "Glossier"
+  logo: "glossier.svg"
+  url: https://www.glossier.com
+  use_cases:
+    - global_commerce
+  industries:
+    - health_beauty
+
+tyres_direct:
+  name: "Tyres Direct"
+  logo: "tyresdirect.svg"
+  url: https://tyresdirectuk.co.uk
+  use_cases:
+    - online_store
+  industries:
+    - automotive
+
+tyres_agent:
+  name: "Tire Agent"
+  logo: "tireagent.svg"
+  url: https://www.tireagent.com
+  use_cases:
+    - online_store
+  industries:
+    - automotive
+
+'on':
+  name: "On"
+  logo: "on.svg"
+  url: https://on-running.com
+
+goby:
+  name: "Goby"
+  logo: "goby.svg"
+  url: https://goby.co
+  use_cases:
+    - online_store
+  industries:
+    - health_beauty
+
+trade:
+  name: "Trade"
+  logo: "trade.svg"
+  url: https://www.drinktrade.com
+  use_cases:
+    - online_store
+  industries:
+    - food_beverage
+
+garten:
+  name: "Garten"
+  logo: "garten.svg"
+  url: https://garten.co
+  use_cases:
+    - online_store
+  industries:
+    - food_beverage
