@@ -7,7 +7,10 @@ module Solidus
 
           last_builds = client.recent_builds_branch(name, limit: 4).body
           builds_grouped_by_workflow = last_builds.group_by { |build| build["workflows"]["workflow_id"] if build && build.key?("workflows") }
-          last_complete_workflow = builds_grouped_by_workflow.find { |_id, builds| builds.size == 2 }
+          last_complete_workflow = builds_grouped_by_workflow.find do |_id, builds|
+            job_names = builds.map { |build| build['build_parameters']['CIRCLE_JOB'] }
+            job_names.include?('run-specs-with-mysql') && job_names.include?('run-specs-with-postgres')
+          end
           builds = last_complete_workflow[1].map { |build_data| Build.new(project, build_data["build_num"]) }
           mysql_build = builds.find { |build| build.name == 'run-specs-with-mysql' }
           postgres_build = builds.find { |build| build.name == 'run-specs-with-postgres' }
