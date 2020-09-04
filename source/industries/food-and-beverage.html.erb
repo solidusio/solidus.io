@@ -59,7 +59,13 @@ preview_image: industries/social/food-and-beverage_preview.jpg
   <div class="content-block content-block-gray-900">
     <div class="container">
       <div class="row">
-        <%= partial "partials/industries_logos" %>
+        <div class="col-lg-6">
+          <h3 class="mb-5">
+            Solidus powers the Food and Beverage brands that are defining the future of eCommerce.
+          </h3>
+        </div>
+
+        <%= partial 'industries/logos', locals: { industry: 'food_beverage' } %>
       </div>
     </div>
   </div>
