@@ -1,21 +1,11 @@
-<% sliced_logos = data.brands.each_slice(3).to_a %>
-<% if sliced_logos.last.size < 3 %>
-  <% last_chunk = sliced_logos.pop %>
-  <% sliced_logos.last.concat(last_chunk) %>
-<% end %>
-
-<div class="animated-logos col-lg-12">
-  <% sliced_logos.each do |logos| %>
-    <div class="animated-logos__item">
-      <ul class="animated-logos__item__list <% if logos.size != 3 %>group-<%= logos.size %><% end %>">
-        <% logos.each do |brand, info| %>
-          <li>
-            <a href="<%= info[:url] %>" target="_blank">
-              <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
-            </a>
-          </li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<div class="carousel col-lg-12">
+  <div class="animated-logos community-logos carousel__list">
+    <% data.brands.values.each do |brand| %>
+      <div class="community-logos__item">
+        <a href="<%= brand[:url] %>" target="_blank">
+          <%= inline_svg("community-logos/#{brand[:logo]}", class: "isvg #{brand[:size_class]}") %>
+        </a>
+      </div>
+    <% end %>
+  </div>
 </div>

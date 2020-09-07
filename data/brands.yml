@@ -6,7 +6,6 @@ meundies:
     - headless_commerce
   industries:
     - apparel
-  size_class: smaller
 
 moddedeuros:
   name: "ModdedEuros"
@@ -143,6 +142,7 @@ theetho:
     - marketplace
   industries:
     - home_decor
+  size_class: smaller
 
 glossier:
   name: "Glossier"
@@ -162,6 +162,11 @@ tyres_direct:
   industries:
     - automotive
 
+'on':
+  name: "On"
+  logo: "on.svg"
+  url: https://on-running.com
+
 tyres_agent:
   name: "Tire Agent"
   logo: "tireagent.svg"
@@ -170,11 +175,6 @@ tyres_agent:
     - online_store
   industries:
     - automotive
-
-'on':
-  name: "On"
-  logo: "on.svg"
-  url: https://on-running.com
 
 goby:
   name: "Goby"
@@ -203,3 +203,4 @@ garten:
     - online_store
   industries:
     - food_beverage
+  size_class: smaller

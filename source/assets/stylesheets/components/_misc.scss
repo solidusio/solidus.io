@@ -100,6 +100,9 @@
     }
 
     a {
+      outline: 0;
+      outline-color: transparent;
+      
       .isvg {
         @include media-breakpoint-down(md) {
           max-width: 100%;
@@ -113,84 +116,6 @@
         @include media-breakpoint-up(lg){ 
           width: 100%;
         }
-      }
-    }
-  }
-  
-  .inherit-fill { fill: #505359; }
-}
-
-// Community logos animation
-$animation-timing: 9s;
-$carousel-items: 3;
-$animation-delay-fraction: $animation-timing / $carousel-items;
-$animation-steps-fraction: 100 / $carousel-items;
-$slide-change-timing: 3; // percentage of total animation cycle
-
-$animation-timing4: 12s;
-$carousel-items4: 4;
-$animation-delay-fraction4: $animation-timing4 / $carousel-items4;
-$animation-steps-fraction4: 100 / $carousel-items4;
-$slide-change-timing4: 2; // percentage of total animation cycle
-
-.animated-logos {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  
-  &__item {
-    margin-bottom: 30px;
-    width: 100%;
-    text-align: center;
-    
-    @include media-breakpoint-up(md) {
-      width: 15%;
-    }
-
-    @include media-breakpoint-up(lg) {
-      width: 18%;
-    }
-    
-    &__list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      height: 46px;
-      transform: scale(.9);
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      
-      @include media-breakpoint-up(sm) {
-        height: 70px;
-      }
-      
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        width: 100%;
-        padding: 12px;
-        margin: 0;
-        opacity: 0;
-        animation: carouselAnimateVertical $animation-timing linear infinite;
-        height: 70px;
-      }
-      
-      &.group-4 {
-        li {
-          animation: carouselAnimateVerticalGroup4 $animation-timing4 linear infinite;
-        }
-      }
-    }
-    
-    a {
-      .isvg {
-        width: 100%;
         
         &.smaller {
           width: 80%;
@@ -198,101 +123,21 @@ $slide-change-timing4: 2; // percentage of total animation cycle
       }
     }
     
-    .inherit-fill { fill: #505359; }
+    .animated-logos & {
+      margin-bottom: 0;
+    }
   }
+  
+  .inherit-fill { fill: #505359; }
 }
 
-@for $i from 1 through ($carousel-items - 1) { 
-  .animated-logos__item__list li:nth-child(#{$i}) {
-    animation-delay: calc(#{$animation-delay-fraction} * #{$i - 2});
-  }
-}
-
-.animated-logos__item__list li:last-child {
-  animation-delay: calc(-#{$animation-delay-fraction} * 2);
-}
-
-// Group fo 4 logos
-@for $i from 1 through ($carousel-items4 - 1) { 
-  .animated-logos__item__list.group-4 li:nth-child(#{$i}) {
-    animation-delay: calc(#{$animation-delay-fraction4} * #{$i - 2});
-  }
-}
-
-.animated-logos__item__list.group-4 li:last-child {
-  animation-delay: calc(-#{$animation-delay-fraction4} * 2);
-}
-//
-
-@keyframes carouselAnimateVertical {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-    visibility: hidden;
-  }
-  #{$slide-change-timing}%,
-  #{$animation-steps-fraction}% {
-    transform: translateY(100%);
-    opacity: 0;
-    visibility: visible;
-  }
-  #{$animation-steps-fraction + $slide-change-timing}%,
-  #{$animation-steps-fraction * 2}% {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  #{($animation-steps-fraction * 2) + $slide-change-timing}%,
-  #{$animation-steps-fraction * 3}% {
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: visible;
-  }
-  #{($animation-steps-fraction * 3) + $slide-change-timing}% {
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: visible;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes carouselAnimateVerticalGroup4 {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-    visibility: hidden;
-  }
-  #{$slide-change-timing4}%,
-  #{$animation-steps-fraction4}% {
-    transform: translateY(100%);
-    opacity: 0;
-    visibility: visible;
-  }
-  #{$animation-steps-fraction4 + $slide-change-timing4}%,
-  #{$animation-steps-fraction4 * 2}% {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  #{($animation-steps-fraction4 * 2) + $slide-change-timing4}%,
-  #{$animation-steps-fraction4 * 3}% {
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: visible;
-  }
-  #{($animation-steps-fraction4 * 3) + $slide-change-timing4}% {
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: visible;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
+// Community logos animation
+.animated-logos {
+  &.slick-initialized {
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
