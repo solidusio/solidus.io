@@ -1,62 +1,21 @@
+<% sliced_logos = data.brands.each_slice(3).to_a %>
+<% if sliced_logos.last.size < 3 %>
+  <% last_chunk = sliced_logos.pop %>
+  <% sliced_logos.last.concat(last_chunk) %>
+<% end %>
+
 <div class="animated-logos col-lg-12">
-  
-  <div class="animated-logos__item">
-    <ul class="animated-logos__item__list">
-      <% data.community_logos[:group_1].each do |brand, info| %>
-        <li>
-          <a href="<%= info[:url] %>" target="_blank">
-            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
-          </a>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-  
-  <div class="animated-logos__item">
-    <ul class="animated-logos__item__list">
-      <% data.community_logos[:group_2].each do |brand, info| %>
-        <li>
-          <a href="<%= info[:url] %>" target="_blank">
-            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
-          </a>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-  
-  <div class="animated-logos__item">
-    <ul class="animated-logos__item__list">
-      <% data.community_logos[:group_3].each do |brand, info| %>
-        <li>
-          <a href="<%= info[:url] %>" target="_blank">
-            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
-          </a>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-  
-  <div class="animated-logos__item">
-    <ul class="animated-logos__item__list">
-      <% data.community_logos[:group_4].each do |brand, info| %>
-        <li>
-          <a href="<%= info[:url] %>" target="_blank">
-            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
-          </a>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-  
-  <div class="animated-logos__item">
-    <ul class="animated-logos__item__list group-4">
-      <% data.community_logos[:group_5].each do |brand, info| %>
-        <li>
-          <a href="<%= info[:url] %>" target="_blank">
-            <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
-          </a>
-        </li>
-      <% end %>
-    </ul>
-  </div>
+  <% sliced_logos.each do |logos| %>
+    <div class="animated-logos__item">
+      <ul class="animated-logos__item__list <% if logos.size != 3 %>group-<%= logos.size %><% end %>">
+        <% logos.each do |brand, info| %>
+          <li>
+            <a href="<%= info[:url] %>" target="_blank">
+              <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg #{info[:size_class]}" ) %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
 </div>

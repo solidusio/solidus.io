@@ -6,6 +6,7 @@ meundies:
     - headless_commerce
   industries:
     - apparel
+  size_class: smaller
 
 moddedeuros:
   name: "ModdedEuros"
@@ -31,6 +32,7 @@ peach:
     - online_store
   industries:
     - apparel
+  size_class: smaller
 
 acetate:
   name: "Ace & Tate"
@@ -93,6 +95,7 @@ careof:
     - online_store
   industries:
     - health_beauty
+  size_class: smaller
 
 wonderbly:
   name: "Wonderbly"
@@ -111,6 +114,7 @@ maisonette:
   industries:
     - home_decor
     - apparel
+  size_class: smaller
 
 hiki:
   name: "Hiki"
@@ -120,6 +124,7 @@ hiki:
     - headless_commerce
   industries:
     - health_beauty
+  size_class: smaller
 
 bevv:
   name: "Bevv"
@@ -179,6 +184,7 @@ goby:
     - online_store
   industries:
     - health_beauty
+  size_class: smaller
 
 trade:
   name: "Trade"
