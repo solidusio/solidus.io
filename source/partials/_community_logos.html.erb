@@ -3,7 +3,7 @@
     <% data.brands.values.each do |brand| %>
       <div class="community-logos__item">
         <a href="<%= brand[:url] %>" target="_blank">
-          <%= inline_svg("community-logos/#{brand[:logo]}", class: "isvg #{brand[:size_class]}") %>
+          <%= inline_svg("community-logos/#{brand[:logo]}", class: "isvg") %>
         </a>
       </div>
     <% end %>

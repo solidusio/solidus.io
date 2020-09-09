@@ -22,7 +22,6 @@ wool_and_the_gang:
   url: https://www.woolandthegang.com
   use_cases:
     - global_commerce
-  size_class: smaller
 
 away:
   name: "Away"
@@ -31,7 +30,6 @@ away:
   use_cases:
     - global_commerce
     - online_store
-  size_class: smaller
 
 fortnum_and_mason:
   name: "Fortunm & Mason"
@@ -50,7 +48,6 @@ trade:
     - online_store
   industries:
     - food_beverage
-  size_class: smaller
 
 floyd:
   name: "FLOYD"
@@ -60,7 +57,6 @@ floyd:
     - online_store
   industries:
     - home_decor
-  size_class: smaller
 
 peach:
   name: "Peach"
@@ -70,7 +66,6 @@ peach:
     - online_store
   industries:
     - apparel
-  size_class: smaller
 
 maisonette:
   name: "Maisonette"
@@ -82,7 +77,6 @@ maisonette:
   industries:
     - home_decor
     - apparel
-  size_class: smaller
 
 acetate:
   name: "Ace & Tate"
@@ -119,7 +113,6 @@ goby:
     - online_store
   industries:
     - health_beauty
-  size_class: smaller
 
 hiki:
   name: "Hiki"
@@ -129,7 +122,6 @@ hiki:
     - headless_commerce
   industries:
     - health_beauty
-  size_class: smaller
 
 'on':
   name: "On"
@@ -144,7 +136,6 @@ theetho:
     - marketplace
   industries:
     - home_decor
-  size_class: smaller
 
 garten:
   name: "Garten"
@@ -154,7 +145,6 @@ garten:
     - online_store
   industries:
     - food_beverage
-  size_class: smaller
 
 bevv:
   name: "Bevv"
@@ -164,7 +154,6 @@ bevv:
     - marketplace
   industries:
     - food_beverage
-  size_class: smaller
 
 bookshop:
   name: "Bookshop"

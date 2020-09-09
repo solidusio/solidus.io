@@ -104,26 +104,7 @@
       outline-color: transparent;
       
       .isvg {
-        @include media-breakpoint-down(md) {
-          max-width: 100%;
-          height: auto;
-        }
-        
-        @include media-breakpoint-up(md){ 
-          width: 70%;
-          
-          &.smaller {
-            width: 60%;
-          }
-        }
-
-        @include media-breakpoint-up(lg){
-          width: 100%;
-          
-          &.smaller {
-            width: 80%;
-          }
-        }
+        width: 100%;
         
         .animated-logos & {
           max-height: 55px;
