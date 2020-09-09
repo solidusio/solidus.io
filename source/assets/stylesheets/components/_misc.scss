@@ -90,7 +90,7 @@
     padding: 0 $spacer;
     transform: scale(.9);
 
-    @include media-breakpoint-up(md){ 
+    @include media-breakpoint-up(md){
       width: 15%;
       padding: 0;
       
@@ -111,14 +111,22 @@
         
         @include media-breakpoint-up(md){ 
           width: 70%;
+          
+          &.smaller {
+            width: 60%;
+          }
         }
 
-        @include media-breakpoint-up(lg){ 
+        @include media-breakpoint-up(lg){
           width: 100%;
+          
+          &.smaller {
+            width: 80%;
+          }
         }
         
-        &.smaller {
-          width: 80%;
+        .animated-logos & {
+          max-height: 55px;
         }
       }
     }

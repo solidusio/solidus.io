@@ -1,3 +1,12 @@
+glossier:
+  name: "Glossier"
+  logo: "glossier.svg"
+  url: https://www.glossier.com
+  use_cases:
+    - global_commerce
+  industries:
+    - health_beauty
+
 meundies:
   name: "MeUndies"
   logo: "meundies.svg"
@@ -7,21 +16,51 @@ meundies:
   industries:
     - apparel
 
-moddedeuros:
-  name: "ModdedEuros"
-  logo: "moddedeuros.svg"
-  url: https://www.moddedeuros.com
+wool_and_the_gang:
+  name: "Wool & The Gang"
+  logo: "woolandthegang.svg"
+  url: https://www.woolandthegang.com
+  use_cases:
+    - global_commerce
+  size_class: smaller
+
+away:
+  name: "Away"
+  logo: "awaytravel.svg"
+  url: https://www.awaytravel.com
+  use_cases:
+    - global_commerce
+    - online_store
+  size_class: smaller
+
+fortnum_and_mason:
+  name: "Fortunm & Mason"
+  logo: "fortnum&mason.svg"
+  url: https://www.fortnumandmason.com/
   use_cases:
     - online_store
   industries:
-    - automotive
+    - food_beverage
 
-bookshop:
-  name: "Bookshop"
-  logo: "bookshop.svg"
-  url: https://bookshop.org
+trade:
+  name: "Trade"
+  logo: "trade.svg"
+  url: https://www.drinktrade.com
   use_cases:
     - online_store
+  industries:
+    - food_beverage
+  size_class: smaller
+
+floyd:
+  name: "FLOYD"
+  logo: "floyd.svg"
+  url: https://floydhome.com
+  use_cases:
+    - online_store
+  industries:
+    - home_decor
+  size_class: smaller
 
 peach:
   name: "Peach"
@@ -30,6 +69,18 @@ peach:
   use_cases:
     - online_store
   industries:
+    - apparel
+  size_class: smaller
+
+maisonette:
+  name: "Maisonette"
+  logo: "maisonette.svg"
+  url: https://www.maisonette.com
+  use_cases:
+    - headless_commerce
+    - marketplace
+  industries:
+    - home_decor
     - apparel
   size_class: smaller
 
@@ -44,48 +95,6 @@ acetate:
     - apparel
     - health_and_beauty
 
-wool_and_the_gang:
-  name: "Wool & The Gang"
-  logo: "woolandthegang.svg"
-  url: https://www.woolandthegang.com
-  use_cases:
-    - global_commerce
-
-away:
-  name: "Away"
-  logo: "awaytravel.svg"
-  url: https://www.awaytravel.com
-  use_cases:
-    - global_commerce
-    - online_store
-
-fortnum_and_mason:
-  name: "Fortunm & Mason"
-  logo: "fortnum&mason.svg"
-  url: https://www.fortnumandmason.com/
-  use_cases:
-    - online_store
-  industries:
-    - food_beverage
-
-floyd:
-  name: "FLOYD"
-  logo: "floyd.svg"
-  url: https://floydhome.com
-  use_cases:
-    - online_store
-  industries:
-    - home_decor
-
-firstleaf:
-  name: "Firstleaf"
-  logo: "firstleaf.svg"
-  url: https://www.firstleaf.club
-  use_cases:
-    - online_store
-  industries:
-    - food_beverage
-
 careof:
   name: "Care/Of"
   logo: "careof.svg"
@@ -94,7 +103,6 @@ careof:
     - online_store
   industries:
     - health_beauty
-  size_class: smaller
 
 wonderbly:
   name: "Wonderbly"
@@ -103,16 +111,14 @@ wonderbly:
   use_cases:
     - global_commerce
 
-maisonette:
-  name: "Maisonette"
-  logo: "maisonette.svg"
-  url: https://www.maisonette.com
+goby:
+  name: "Goby"
+  logo: "goby.svg"
+  url: https://goby.co
   use_cases:
-    - headless_commerce
-    - marketplace
+    - online_store
   industries:
-    - home_decor
-    - apparel
+    - health_beauty
   size_class: smaller
 
 hiki:
@@ -125,14 +131,10 @@ hiki:
     - health_beauty
   size_class: smaller
 
-bevv:
-  name: "Bevv"
-  logo: "bevv.svg"
-  url: https://bevv.com
-  use_cases:
-    - marketplace
-  industries:
-    - food_beverage
+'on':
+  name: "On"
+  logo: "on.svg"
+  url: https://on-running.com
 
 theetho:
   name: "The Etho"
@@ -144,14 +146,50 @@ theetho:
     - home_decor
   size_class: smaller
 
-glossier:
-  name: "Glossier"
-  logo: "glossier.svg"
-  url: https://www.glossier.com
+garten:
+  name: "Garten"
+  logo: "garten.svg"
+  url: https://garten.co
   use_cases:
-    - global_commerce
+    - online_store
   industries:
-    - health_beauty
+    - food_beverage
+  size_class: smaller
+
+bevv:
+  name: "Bevv"
+  logo: "bevv.svg"
+  url: https://bevv.com
+  use_cases:
+    - marketplace
+  industries:
+    - food_beverage
+  size_class: smaller
+
+bookshop:
+  name: "Bookshop"
+  logo: "bookshop.svg"
+  url: https://bookshop.org
+  use_cases:
+    - online_store
+
+firstleaf:
+  name: "Firstleaf"
+  logo: "firstleaf.svg"
+  url: https://www.firstleaf.club
+  use_cases:
+    - online_store
+  industries:
+    - food_beverage
+
+moddedeuros:
+  name: "ModdedEuros"
+  logo: "moddedeuros.svg"
+  url: https://www.moddedeuros.com
+  use_cases:
+    - online_store
+  industries:
+    - automotive
 
 tyres_direct:
   name: "Tyres Direct"
@@ -162,11 +200,6 @@ tyres_direct:
   industries:
     - automotive
 
-'on':
-  name: "On"
-  logo: "on.svg"
-  url: https://on-running.com
-
 tyres_agent:
   name: "Tire Agent"
   logo: "tireagent.svg"
@@ -175,32 +208,3 @@ tyres_agent:
     - online_store
   industries:
     - automotive
-
-goby:
-  name: "Goby"
-  logo: "goby.svg"
-  url: https://goby.co
-  use_cases:
-    - online_store
-  industries:
-    - health_beauty
-  size_class: smaller
-
-trade:
-  name: "Trade"
-  logo: "trade.svg"
-  url: https://www.drinktrade.com
-  use_cases:
-    - online_store
-  industries:
-    - food_beverage
-
-garten:
-  name: "Garten"
-  logo: "garten.svg"
-  url: https://garten.co
-  use_cases:
-    - online_store
-  industries:
-    - food_beverage
-  size_class: smaller

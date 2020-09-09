@@ -163,6 +163,9 @@ $(function () {
     arrows: false,
     dots: false,
     cssEase: 'linear',
+    swipe: false,
+    swipeToSlide: false,
+    touchMove: false,
     responsive: [{
         breakpoint: 768,
         settings: {
