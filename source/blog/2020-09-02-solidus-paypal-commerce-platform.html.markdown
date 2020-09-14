@@ -57,6 +57,10 @@ When a user clicks the PayPal button, Solidus sends line_item, adjustment, shipp
 
 When a user logs in or changes their address on PayPal, PayPal sends a partial shipping address (missing only street address) and expects us to return an estimate for shipping. We simulate this change in the shipping rates controller, and return what the shipping would be for that address. Then, after the user confirms their payment, we get the finalized address from PayPal. This shouldn't cause you any issues unless you have a lot of customization around shipping rates, but you should keep it in mind just in case.
 
+### Referral Fee
+
+This extension has been sponsored by PayPal and implemented by [Nebulab](https://nebulab.it). PayPal will pay a commission fee to the maintainers for each order placed through the new payment gateway.
+
 ###What's Next?
 
 This extension lays the groundwork for the future of Solidus payment methods. With the default payment system, you won't have to mess with your gemfile to install your payment extension. With the setup wizard, you'll be able to set up your payment provider at the click of a button. And with product payment buttons, installing an instant checkout feature is easier than ever.
