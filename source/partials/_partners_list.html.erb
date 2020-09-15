@@ -8,7 +8,7 @@
       As well as being the main code contributor, Nebulab takes care of coordinating community efforts and makes sure everything runs smoothly.
     </p>
   </div>
-  
+
   <div class="container">
     <div class="partner-block">
       <% data.partners[:main_contributors].each do |partner, info| %>
@@ -35,35 +35,32 @@
                   <% end %>
                 </ul>
               <% end %>
-              
+
               <a class="btn btn-primary" href="<%= info[:url] %>" target="_blank">Contact</a>
             </div>
           </div>
         </div>
       <% end %>
     </div>
-    
+
     <div class="partner-block">
-      <div class="media">
+      <div class="media mb-3">
         <%= inline_svg("icons/partners-gold.svg", class: "isvg align-self-start mr-3") %>
         <div class="media-body">
           <h3 class="title">Gold</h3>
-          <p class="mb-5 mb-md-8 text-gray-048">
-            These partners donate $750+ per month and contribute actively to the development of Solidus.
-          </p>
         </div>
       </div>
-      
+
       <div class="card-deck">
         <% data.partners[:gold_partners].each do |partner, info| %>
-        
+
           <div class="card card-border-none gold-partner">
             <div class="card-body">
               <div class="d-md-flex column-wrapper">
                 <div class="logo">
                   <img class="img-fluid" src="<%= image_path("partners/#{info[:image]}")%>" alt="<%= info[:name] %>">
                 </div>
-                
+
                 <div class="data">
                   <h4 class="title"><%= info[:name] %></h4>
                   <p class="text-gray-048"><%= info[:short_description] %></p>
@@ -77,20 +74,17 @@
               <a class="link" href="<%= info[:url] %>" target="_blank">Contact</a>
             </div>
           </div>
-        
+
         <% end %>
 
       </div>
     </div>
-    
+
     <div class="partner-block">
-      <div class="media">
+      <div class="media mb-3">
         <%= inline_svg("icons/partners-silver.svg", class: "isvg align-self-start mr-3") %>
         <div class="media-body">
           <h3 class="title">Silver</h3>
-          <p class="mb-5 mb-md-8 text-gray-048">
-            These partners donate $100 - $500 per month and contribute actively to the development of Solidus.
-          </p>
         </div>
       </div>
       <div class="card-deck">
@@ -100,7 +94,7 @@
               <div class="logo text-center">
                 <% if info[:retina] %>
                   <img class="img-fluid" src="<%= image_path("partners/#{info[:retina].default_img}") %>" srcset="<%= image_path("partners/#{info[:retina].default_img}") %>, <%= image_path("partners/#{info[:retina].retina_img}") %> 2x" alt="<%= info[:name] %>">
-                  
+
                   <% else %>
                   <img class="img-fluid" src="<%= image_path("partners/#{info[:image]}")%>" alt="<%= info[:name] %>">
                 <% end %>
@@ -122,13 +116,10 @@
     </div>
 
     <div class="partner-block">
-      <div class="media">
+      <div class="media mb-3">
         <%= inline_svg("icons/partners-bronze.svg", class: "isvg align-self-start mr-3") %>
         <div class="media-body">
           <h3 class="title">Bronze</h3>
-          <p class="mb-5 mb-md-8 text-gray-048">
-            These partners donate $10 - $50 per month and contribute actively to the development of Solidus.
-          </p>
         </div>
       </div>
       <div class="card-deck">
@@ -138,7 +129,7 @@
               <div class="logo text-center">
                 <% if info[:retina] %>
                   <img class="img-fluid" src="<%= image_path("partners/#{info[:retina].default_img}") %>" srcset="<%= image_path("partners/#{info[:retina].default_img}") %>, <%= image_path("partners/#{info[:retina].retina_img}") %> 2x" alt="<%= info[:name] %>">
-                  
+
                   <% else %>
                   <img class="img-fluid" src="<%= image_path("partners/#{info[:image]}")%>" alt="<%= info[:name] %>">
                 <% end %>
@@ -158,6 +149,6 @@
 
       </div>
     </div>
-    
+
   </div>
 </div>
