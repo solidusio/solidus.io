@@ -37,15 +37,30 @@ description: Your eCommerce platform should expand your capabilities, not limit 
 <div class="integration content-block" id="payments">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md">
+      <div class="col-lg">
         <%= inline_svg("icons/payments.svg", class: "isvg group") %>
         <h2>Payments</h2>
         <p>Choosing the right payment gateway can make a huge difference in how many customers you reach. Subscriptions, local payment methods, split payments… The possibilities are endless.</p>
         <p>With its clean and flexible payments architecture, Solidus allows you to make it happen with no hassle. The foundation is already there for you, all you have to do is choose what’s best for your company.</p>
         <a class="btn btn-primary" href="/extensions#extensions-group-payments" target="_blank">View all payments extensions</a>
       </div>
-      <div class="integration__list col-md offset-md-1">
-        <a href="https://github.com/solidusio/solidus_affirm" class="integration__list__item" target="_blank">
+      <div class="integration__list col-lg offset-lg-1">
+        <div class="js-fully-clickable integration__list__item highlighted">
+          <div class="integration__list__item__image">
+            <%= inline_svg("integrations/paypal.svg", class: "isvg") %>
+          </div>
+          <div class="integration__list__item__description">
+            <h4>PayPal</h4>
+            <p>The official PayPal Commerce Platform integration of Solidus.</p>
+            <a href="https://github.com/solidusio-contrib/solidus_paypal_commerce_platform" target="_blank" class="btn btn-sm btn-white">Install the Official Gem</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row align-items-stretch mt-lg-8 mt-0 integration__list">
+      <div class="col">
+        <a href="https://github.com/solidusio/solidus_affirm" class="integration__list__item inline-card" target="_blank">
           <div class="integration__list__item__image">
             <%= inline_svg("integrations/affirm.svg", class: "isvg") %>
           </div>
@@ -54,7 +69,9 @@ description: Your eCommerce platform should expand your capabilities, not limit 
             <p>Affirm payment option for your Solidus storefront.</p>
           </div>
         </a>
-        <a href="https://github.com/solidusio/solidus_stripe" class="integration__list__item" target="_blank">
+      </div>
+      <div class="col">
+        <a href="https://github.com/solidusio/solidus_stripe" class="integration__list__item inline-card" target="_blank">
           <div class="integration__list__item__image">
             <%= inline_svg("integrations/stripe.svg", class: "isvg") %>
           </div>
@@ -63,7 +80,9 @@ description: Your eCommerce platform should expand your capabilities, not limit 
             <p>Stripe Payment Methods for Solidus.</p>
           </div>
         </a>
-        <a href="https://github.com/solidusio/solidus_paypal_braintree" class="integration__list__item" target="_blank">
+      </div>
+      <div class="col">
+        <a href="https://github.com/solidusio/solidus_paypal_braintree" class="integration__list__item inline-card" target="_blank">
           <div class="integration__list__item__image">
             <%= inline_svg("integrations/braintree.svg", class: "isvg") %>
           </div>
