@@ -153,6 +153,32 @@ $(function () {
     slidesToShow: 1,
     fade: true
   });
+  
+  $('.animated-logos').slick({
+    slidesToShow: 5,
+    slidesToScroll: 0.1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 750,
+    arrows: false,
+    dots: false,
+    cssEase: 'linear',
+    swipe: false,
+    swipeToSlide: false,
+    touchMove: false,
+    pauseOnHover: true,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 4
+        }
+    }, {
+        breakpoint: 520,
+        settings: {
+            slidesToShow: 2
+        }
+    }]
+  });
 });
 
 $(document).on('aos:in', function(event) {

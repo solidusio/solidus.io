@@ -90,7 +90,7 @@
     padding: 0 $spacer;
     transform: scale(.9);
 
-    @include media-breakpoint-up(md){ 
+    @include media-breakpoint-up(md){
       width: 15%;
       padding: 0;
       
@@ -100,24 +100,54 @@
     }
 
     a {
+      outline: 0;
+      outline-color: transparent;
+      
       .isvg {
-        @include media-breakpoint-down(md) {
-          max-width: 100%;
-          height: auto;
-        }
+        width: 100%;
         
-        @include media-breakpoint-up(md){ 
-          width: 70%;
-        }
-
-        @include media-breakpoint-up(lg){ 
-          width: 100%;
+        .animated-logos & {
+          max-height: 55px;
         }
       }
+    }
+    
+    .animated-logos & {
+      margin-bottom: 0;
     }
   }
   
   .inherit-fill { fill: #505359; }
+}
+
+// Community logos animation
+.animated-logos {
+  &.slick-initialized {
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 25px;
+    height: 100%;
+  }
+  
+  &::before {
+    background: linear-gradient(to right, rgba(250,251,252,1) 0%, rgba(250,251,252,0) 100%);
+    left: 0;
+  }
+  
+  &::after {
+    background: linear-gradient(to right, rgba(250,251,252,0) 0%, rgba(250,251,252,1) 100%);
+    right: 0;
+  }
 }
 
 //Alumni
