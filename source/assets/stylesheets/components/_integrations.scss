@@ -118,8 +118,10 @@
       &.inline-card {
         height: 100%;
         
-        .isvg {
-          width: 75px;
+        @include media-breakpoint-up(lg) {
+          .isvg {
+            width: 75px;
+          }
         }
       }
       
