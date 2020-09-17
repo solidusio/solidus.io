@@ -98,6 +98,14 @@
             margin: 0;
           }
         }
+        
+        .highlighted & {
+          @include media-breakpoint-down(sm) {
+            border-left: 0;
+            width: 100%;
+          }
+        }
+        
         @include media-breakpoint-down(lg) {
           width: 80%;
         }
@@ -128,6 +136,14 @@
       &.highlighted {
         border-color: #C1D3FA;
         cursor: pointer;
+        
+        @include media-breakpoint-down(sm) {
+          display: block;
+          
+          .btn {
+            display: block;
+          }
+        }
       }
     }
     
