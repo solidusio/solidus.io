@@ -51,7 +51,7 @@
   &__list {
     margin-top: 30px;
 
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(lg){
       margin-top: 0;
     }
 
@@ -73,8 +73,16 @@
         padding: (30px / 2);
         width: 150px;
         
-        @include media-breakpoint-up(md) {
+        .highlighted & {
+          width: auto;
+        }
+
+        @include media-breakpoint-up(lg) {
           padding: 30px;
+          
+          .inline-card & {
+            padding: 30px 15px;
+          }
         }
       }
 
@@ -82,10 +90,23 @@
         border-left: 1px solid $gray-200;
         padding: 15px;
         margin: 10px 0;
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
           padding: 20px 30px;
+          
+          .inline-card & {
+            padding: 20px 15px;
+            margin: 0;
+          }
         }
-        @include media-breakpoint-down(md) {
+        
+        .highlighted & {
+          @include media-breakpoint-down(sm) {
+            border-left: 0;
+            width: 100%;
+          }
+        }
+        
+        @include media-breakpoint-down(lg) {
           width: 80%;
         }
 
@@ -95,6 +116,43 @@
 
         p {
           font-size: $small-font-size;
+        }
+        
+        .highlighted & {
+          border-left-color: #C1D3FA;
+        }
+      }
+      
+      &.inline-card {
+        height: 100%;
+        
+        @include media-breakpoint-up(lg) {
+          .isvg {
+            width: 75px;
+          }
+        }
+      }
+      
+      &.highlighted {
+        border-color: #C1D3FA;
+        cursor: pointer;
+        
+        @include media-breakpoint-down(sm) {
+          display: block;
+          
+          .btn {
+            display: block;
+          }
+        }
+      }
+    }
+    
+    & > div {
+      margin-bottom: 20px;
+      
+      &:hover {
+        p {
+          color: $primary;
         }
       }
     }

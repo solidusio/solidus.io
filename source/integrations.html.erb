@@ -37,15 +37,30 @@ description: Your eCommerce platform should expand your capabilities, not limit 
 <div class="integration content-block" id="payments">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md">
+      <div class="col-lg">
         <%= inline_svg("icons/payments.svg", class: "isvg group") %>
         <h2>Payments</h2>
         <p>Choosing the right payment gateway can make a huge difference in how many customers you reach. Subscriptions, local payment methods, split payments… The possibilities are endless.</p>
         <p>With its clean and flexible payments architecture, Solidus allows you to make it happen with no hassle. The foundation is already there for you, all you have to do is choose what’s best for your company.</p>
         <a class="btn btn-primary" href="/extensions#extensions-group-payments" target="_blank">View all payments extensions</a>
       </div>
-      <div class="integration__list col-md offset-md-1">
-        <a href="https://github.com/solidusio/solidus_affirm" class="integration__list__item" target="_blank">
+      <div class="integration__list col-lg offset-lg-1">
+        <div class="js-fully-clickable integration__list__item highlighted">
+          <div class="integration__list__item__image">
+            <%= inline_svg("integrations/paypal.svg", class: "isvg") %>
+          </div>
+          <div class="integration__list__item__description">
+            <h4>PayPal</h4>
+            <p>The official PayPal Commerce Platform integration of Solidus.</p>
+            <a href="https://github.com/solidusio-contrib/solidus_paypal_commerce_platform" target="_blank" class="btn btn-sm btn-white">Install the Official Gem</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row align-items-stretch mt-lg-8 mt-0 integration__list">
+      <div class="col">
+        <a href="https://github.com/solidusio/solidus_affirm" class="integration__list__item inline-card" target="_blank">
           <div class="integration__list__item__image">
             <%= inline_svg("integrations/affirm.svg", class: "isvg") %>
           </div>
@@ -54,7 +69,9 @@ description: Your eCommerce platform should expand your capabilities, not limit 
             <p>Affirm payment option for your Solidus storefront.</p>
           </div>
         </a>
-        <a href="https://github.com/solidusio/solidus_stripe" class="integration__list__item" target="_blank">
+      </div>
+      <div class="col">
+        <a href="https://github.com/solidusio/solidus_stripe" class="integration__list__item inline-card" target="_blank">
           <div class="integration__list__item__image">
             <%= inline_svg("integrations/stripe.svg", class: "isvg") %>
           </div>
@@ -63,7 +80,9 @@ description: Your eCommerce platform should expand your capabilities, not limit 
             <p>Stripe Payment Methods for Solidus.</p>
           </div>
         </a>
-        <a href="https://github.com/solidusio/solidus_paypal_braintree" class="integration__list__item" target="_blank">
+      </div>
+      <div class="col">
+        <a href="https://github.com/solidusio/solidus_paypal_braintree" class="integration__list__item inline-card" target="_blank">
           <div class="integration__list__item__image">
             <%= inline_svg("integrations/braintree.svg", class: "isvg") %>
           </div>
@@ -80,14 +99,14 @@ description: Your eCommerce platform should expand your capabilities, not limit 
 <div class="integration content-block--skewed content-block-gray-100" id="logistics">
   <div class="container content-wrapper">
     <div class="row align-items-center">
-      <div class="col-md order-md-2 offset-md-1">
+      <div class="col-lg order-lg-2 offset-lg-1">
         <%= inline_svg("icons/logistics.svg", class: "isvg group") %>
         <h2>Logistics</h2>
         <p>With the right logistics partner, you can reach your buyers wherever they are. Optimize inventory allocation and costs, and maybe ship with Instagram-ready packaging that will make customers talk about you for weeks.</p>
         <p>You can integrate with any provider, no matter their workflow, and even with multiple providers at once. Always use the right partner for the job, all while retaining full control over your data and customer experience.</p>
         <a class="btn btn-primary" href="/extensions#extensions-group-shipping" target="_blank">View all logistics extensions</a>
       </div>
-      <div class="integration__list col-md">
+      <div class="integration__list col-lg">
         <a href="https://github.com/solidusio-contrib/solidus_shipwire" class="integration__list__item" target="_blank">
           <div class="integration__list__item__image">
             <img class="img-fluid" src="<%= image_path('integrations/shipwire.png') %>" width="90" height="auto">
@@ -123,14 +142,14 @@ description: Your eCommerce platform should expand your capabilities, not limit 
 <div class="integration content-block" id="marketing">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md">
+      <div class="col-lg">
         <%= inline_svg("icons/marketing.svg", class: "isvg group") %>
         <h2>Marketing</h2>
         <p>Collecting data and using it in meaningful ways can be challenging. Marketing and analytics tools help you generate useful insights that inform your business decisions and promotional campaigns.</p>
         <p>Solidus has integrations for the best analytics and marketing tools, as well as a powerful event-based architecture to easily integrate new services.</p>
         <a class="btn btn-primary" href="/extensions#extensions-group-marketing" target="_blank">View all marketing extensions</a>
       </div>
-      <div class="integration__list col-md offset-md-1">
+      <div class="integration__list col-lg offset-lg-1">
         <a href="https://guides.solidus.io/developers/integrations/google-analytics.html" class="integration__list__item" target="_blank">
           <div class="integration__list__item__image">
             <%= inline_svg("integrations/google_analytics.svg", class: "isvg") %>
@@ -175,14 +194,14 @@ description: Your eCommerce platform should expand your capabilities, not limit 
 <div class="integration content-block--skewed content-block-gray-100" id="taxation">
   <div class="container content-wrapper">
     <div class="row align-items-center">
-      <div class="col-md order-md-2 offset-md-1">
+      <div class="col-lg order-lg-2 offset-lg-1">
         <%= inline_svg("icons/taxation.svg", class: "isvg group") %>
         <h2>Taxation</h2>
         <p>Let technology deal with your taxes, so that you can focus on your company. From up-and-coming startup to eCommerce behemoth, our integrations give you the peace of mind you need to build an awesome brand.</p>
         <p>Every business is unique, and sometimes tax reporting can get convoluted. We know this, and we have made it dead-simple to customize the existing Solidus integrations or even build your own, if that’s what it takes.</p>
         <a class="btn btn-primary" href="/extensions#extensions-group/taxation" target="_blank">View all taxation extensions</a>
       </div>
-      <div class="integration__list col-md">
+      <div class="integration__list col-lg">
         <a href="https://github.com/boomerdigital/solidus_avatax_certified" class="integration__list__item" target="_blank">
           <div class="integration__list__item__image">
             <%= inline_svg("integrations/avalara.svg", class: "isvg") %>
@@ -218,7 +237,7 @@ description: Your eCommerce platform should expand your capabilities, not limit 
 <div class="content-block mt-8">
   <div class="container">
     <div class="row">
-      <div class="col-md ">
+      <div class="col-md">
         <h2>We’re not done yet.</h2>
         <p>We’ve just scratched the surface. Over the years, brands have integrated hundreds of services in their stores for the most disparate needs: advanced return processing, custom fraud detection, user-generated content, referral programs and a lot more.</p>
         <p>Solidus allows your development team to quickly write integrations tailored to your unique needs that are stable and do the job, creating endless opportunities for you.</p>
