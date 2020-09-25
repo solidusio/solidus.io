@@ -133,7 +133,7 @@ $(function () {
 
   //Remove top bar on click
   if (!Cookies.get('announcement')) {
-    $(".top-bar, body").addClass('top-bar--show');
+    $(".top-bar").addClass('top-bar--show');
   }
 
   $(".top-bar-close").click(function(){
