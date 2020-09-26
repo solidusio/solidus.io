@@ -308,6 +308,10 @@ solidusio-contrib/solidus_paypal_commerce_platform:
   title: PayPal Commerce Platform
   description: Use PayPal to accept PayPal and credit/debit card payments
   group: Payments
+solidusio-contrib/solidus_tracking:
+  ci_provider: CircleCI
+  title: Tracking
+  description: Integrate with multiple tracking and marketing services through a unified interface.
 solidusio-contrib/solidus_klaviyo:
   ci_provider: circleci
   title: Klaviyo
