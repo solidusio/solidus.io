@@ -1,0 +1,70 @@
+.features {
+  &__gradient {
+    background: linear-gradient(30deg, rgba(102,199,137,1) 46%, rgba(60,118,240,1) 92%);
+    color: $white;
+
+    .title {
+      color: $white;
+    }
+  }
+  
+  &__flexibility {
+    @include media-breakpoint-up(md) {
+      background: url("/assets/images/illustrations/features-flexibility.svg") no-repeat;
+      background-size: 480px auto;
+      background-position: center right;
+    }
+  }
+  
+  &__logistics {
+    @include media-breakpoint-up(md) {
+      background: url("/assets/images/illustrations/features-shipping.svg") no-repeat;
+      background-size: 295px auto;
+      background-position: center right;
+    }
+  }
+  
+  &__header {
+    margin-bottom: 3rem;
+  }
+  
+  .isvg.group {
+    width: 40px;
+    height: 40px;
+    
+    @include media-breakpoint-up(lg) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
+.floating-brand {
+  animation: float 3s ease-in-out infinite;
+  transform: translateZ(0);
+  
+  &.floyd {
+    animation-delay: .75s;
+  }
+  &.aceandtate {
+    animation-delay: .4s;
+  }
+  &.casper {
+    animation-delay: .75s;
+  }
+  &.away {
+    animation-delay: 2s;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -12px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

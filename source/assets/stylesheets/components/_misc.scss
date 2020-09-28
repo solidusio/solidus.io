@@ -43,7 +43,8 @@
   }
   
   .site-header--dark &,
-  .site-header--blue & {
+  .site-header--blue &,
+  .site-header--transparent & {
     color: $white;
     
     .inherit-fill {

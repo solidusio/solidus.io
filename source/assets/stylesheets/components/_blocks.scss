@@ -64,11 +64,13 @@
       padding-bottom: 90px;
 
       &.hero-block {
-        margin-top: -130px;
+        margin-top: -180px;
+        padding-top: 180px;
         padding-bottom: 65px;
       }
       &.intro {
         padding-bottom: 65px;
+        padding-top: 130px;
       }
     }
     @include media-breakpoint-up(xl){
@@ -76,11 +78,13 @@
       padding-bottom: 130px;
 
       &.hero-block {
-        margin-top: -205px;
+        margin-top: -290px;
+        padding-top: 290px;
         padding-bottom: 90px;
       }
       &.intro {
         padding-bottom: 90px;
+        padding-top: 205px;
       }
     }
 
