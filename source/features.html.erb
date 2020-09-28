@@ -111,7 +111,7 @@ description: Solidus can flex, adjust and extend as you deliver your customers a
 
   <div class="features content-block--skewed content-block-gray-900" id="flexibility">
     <div class="features__flexibility container content-wrapper">
-      <div class="features__header">
+      <div class="features__header mt-3 mt-md-0">
         <h2><%= inline_svg("icons/flexibility.svg", class: "isvg group") %> Flexibility</h2>
       </div>
       <div class="row">
@@ -141,7 +141,7 @@ description: Solidus can flex, adjust and extend as you deliver your customers a
 
   <div class="features content-block" id="payment">
     <div class="container">
-      <div class="features__header">
+      <div class="features__header mt-md-6 mt-3">
         <h2><%= inline_svg("icons/payments.svg", class: "isvg group") %> Payment</h2>
       </div>
       <div class="row">
@@ -192,9 +192,9 @@ description: Solidus can flex, adjust and extend as you deliver your customers a
   </div>
 
   <div class="features content-block--skewed content-block-gray-900" id="logistics">
-    <div class="features__shipping container content-wrapper">
-      <div class="features__header">
-        <h2><%= inline_svg("icons/shipping.svg", class: "isvg group") %> Logistics</h2>
+    <div class="features__logistics container content-wrapper">
+      <div class="features__header mt-3 mt-md-0">
+        <h2><%= inline_svg("icons/logistics-features.svg", class: "isvg group") %> Logistics</h2>
       </div>
       <div class="row">
         <div class="col-12 col-md-8">
@@ -222,26 +222,26 @@ description: Solidus can flex, adjust and extend as you deliver your customers a
     </div>
   </div>
 
-  <div class="content-block content-block-white">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md">
-          <h2>All the freedom.</h2>
-          <p>
-            Some stores just don’t fit the mold – that’s where Solidus shines. An open-source
-            codebase with extension points built into all critical intersections that allows you to
-            build anything you need. With Solidus, your eCommerce experience becomes absolutely
-            limitless.
-          </p>
-        </div>
-        <div class="col-md mt-5 mt-sm-0">
-          <img class="img-fluid" src="<%= image_path('illustrations/features-all-the-freedom_placeholder@2x.png') %>" data-src="<%= image_path('illustrations/features-all-the-freedom.svg') %>" alt="All the freedom">
+  <div class="features content-block">
+    <div class="content-wrapper">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md">
+            <h2 class="mt-3 mt-md-0">All the freedom.</h2>
+            <p>
+              Some stores just don’t fit the mold – that’s where Solidus shines. An open-source
+              codebase with extension points built into all critical intersections that allows you to
+              build anything you need. With Solidus, your eCommerce experience becomes absolutely
+              limitless.
+            </p>
+          </div>
+          <div class="col-md mt-5 mt-sm-0">
+            <img class="img-fluid" src="<%= image_path('illustrations/features-all-the-freedom_placeholder@2x.png') %>" data-src="<%= image_path('illustrations/features-all-the-freedom.svg') %>" alt="All the freedom">
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="features">
-    <%= partial "partials/cta_bottom" %>
-  </div>
 </div>
+
+<%= partial "partials/cta_bottom" %>
