@@ -5,54 +5,37 @@ description: Solidus is an open source ecommerce solution built with Ruby on Rai
 
 <div class="community-hero content-block content-block-xl position-relative text-center">
   <div class="container container-md">
-    <h1 class="title">You’re going to <%= inline_svg("icons/heart-big.svg", class: "isvg heart")%> this.</h1>
+    <h1 class="title">You’re going to <%= inline_svg("icons/heart-big.svg", class: "isvg animate-heart")%> this.</h1>
     <p class="lead mb-md-6 mb-3">Solidus is an open source ecommerce solution built with Ruby on Rails and maintained by a community of passionate developers.</p>
   </div>
 
   <div class="community-content">
     <div class="container">
-      <div class="d-md-flex justify-content-around">
+      <div class="d-lg-flex justify-content-center">
         <div class="community-data">
-          <h2 class="title">14000+</h2>
+          <h3 class="title">14000+</h3>
           <p>
             Core commits since 2015
           </p>
         </div>
         <div class="community-data">
-          <h2 class="title">2200+</h2>
+          <h3 class="title"><%= data.project_stats.slack_members %>+</h3>
           <p>
             Slack channel members
           </p>
         </div>
         <div class="community-data">
-          <h2 class="title">40+</h2>
+          <h3 class="title">50+</h3>
           <p>
-            Community-supported extensions
+            Community-supported <span class="d-block">extensions</span>
           </p>
         </div>
         <div class="community-data">
-          <h2 class="title">670+</h2>
+          <h3 class="title">670+</h3>
           <p>
             Contributors
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="dev-slider">
-    <div class="dev-slider-content">
-      <div class="dev-community-circle"></div>
-      <div class="dev-slide wrapper-1">
-        <div class="dev-circle dev-1"></div>
-        <div class="dev-circle dev-2"></div>
-      </div>
-      <div class="dev-slide wrapper-2">
-        <div class="dev-circle dev-1"></div>
-        <div class="dev-circle dev-2"></div>
-      </div>
-      <div class="dev-slide wrapper-3">
-        <div class="dev-circle dev-2"></div>
-        <div class="dev-circle dev-3"></div>
       </div>
     </div>
   </div>
@@ -386,26 +369,26 @@ description: Solidus is an open source ecommerce solution built with Ruby on Rai
 
 <%= partial "partials/members_list" %>
 
-<div class="donor-block content-block content-block-gray-900 position-relative p-md-0 pb-0">
+<div class="content-block-gray-900 position-relative">
   <div class="container">
-    <div class="row">
-      <div class="donor-content col-md-6">
-        <div class="align-self-center pr-md-6 mb-4 mt-sm-4">
-          <h2 class="title mb-4">Become a donor.</h2>
-          <p class="lead">
-            Consider supporting Solidus and its hard-working community with a
-            monthly donation on
-            <a href="https://opencollective.com/solidus" target="_blank">OpenCollective</a>.
-            If you think that Solidus is a great project or you’re already
-            using it for your business, this is your chance to participate and
-            contribute actively. Help Solidus keep growing!
-          </p>
-          <a class="btn btn-primary" href="https://opencollective.com/solidus" target="_blank">Donate</a>
-        </div>
+    <div class="row align-items-center">
+      <div class="col-md mt-5 mt-md-0">
+        <h2 class="title mb-4">Become a donor.</h2>
+        <p class="lead">
+          Consider supporting Solidus and its hard-working community with a
+          monthly donation on
+          <a href="https://opencollective.com/solidus" target="_blank">OpenCollective</a>.
+          If you think that Solidus is a great project or you’re already
+          using it for your business, this is your chance to participate and
+          contribute actively. Help Solidus keep growing!
+        </p>
+        <a class="btn btn-primary" href="https://opencollective.com/solidus" target="_blank">Donate</a>
+      </div>
+      <div class="col-md mt-5 mb-5">
+        <img src="<%= image_path('illustrations/become-donor@2x.png') %>" data-srcset="<%= image_path('illustrations/become-donor@2x.png') %> 2x, <%= image_path('illustrations/become-donor@1x.png') %> 1x" class="img-fluid" alt="Become a donor" width="100%" >
       </div>
     </div>
   </div>
-  <img class="img-fluid pb-3 pt-3" src="<%= image_path('illustrations/donor-become-a.svg') %>" alt="Become a donor">
 </div>
 
 <%= partial "partials/contributors_list" %>
@@ -416,7 +399,3 @@ description: Solidus is an open source ecommerce solution built with Ruby on Rai
     <a class="btn btn-primary btn-w-icon btn-lg" href="https://github.com/solidusio/solidus" target="_blank"><%= inline_svg("social-icons/github.svg", class: "isvg") %> <span class="text">Fork Solidus on GitHub</span></a>
   </div>
 </div>
-
-<%= javascript_include_tag "heart" %>
-
-<!-- this is a test comment that may helps to understand why deploy build fails -->
