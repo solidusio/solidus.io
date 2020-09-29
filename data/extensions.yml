@@ -9,8 +9,8 @@ boomerdigital/solidus_amazon_payments:
   title: Pay with Amazon
   description: Allow your customers to check out with their Amazon account via Pay with Amazon.
   group: Payments
-boomerdigital/solidus_shipstation:
-  ci_provider: travis
+solidusio-contrib/solidus_shipstation:
+  ci_provider: circleci
   title: ShipStation
   description: Integrate with ShipStation to unify your carriers, track inventory and handle
     returns.
@@ -308,6 +308,11 @@ solidusio-contrib/solidus_paypal_commerce_platform:
   title: PayPal Commerce Platform
   description: Use PayPal to accept PayPal and credit/debit card payments
   group: Payments
+solidusio-contrib/solidus_tracking:
+  ci_provider: circleci
+  title: Tracking
+  description: Integrate with multiple tracking and marketing services through a unified interface.
+  group: Marketing
 solidusio-contrib/solidus_klaviyo:
   ci_provider: circleci
   title: Klaviyo
