@@ -1,152 +1,100 @@
-.community-hero{
-  @include media-breakpoint-up(sm){
-    .dev-community-circle{
-      height: 540px;
-    }
-    
-    .dev-slide,
-    .dev-circle{
-      width: 44px;
-      height: 44px;
-    }
-  }
-  
+.community-hero {
+  background: url("/assets/images/illustrations/community-bg@2x.jpg") no-repeat;
+  background-size: 106% auto;
+  background-position: bottom center;
+
   @include media-breakpoint-up(md){
-    background: url("/assets/images/illustrations/community-hero-bg.svg") no-repeat;
     background-size: contain;
-    background-position: top left;
+    background-position: top center;
+  }
+}
+
+.community-data{
+  margin-bottom: $spacer;
+  text-align: left;
+  
+  .title{
+    color: $blue;
+    margin-bottom: $spacer / 2;
+  }
+  
+  .community-hero & {
+    padding: 0 $spacer;
+    text-align: center;
     
-    .dev-community-circle{
-      background: url("/assets/images/illustrations/dev-slider-bg.svg") no-repeat;
-      background-position: top left;
-      height: 558px;
-      width: 398px;
+    .title {
+      margin-bottom: 0;
     }
     
-    .dev-slider{
-      display: flex;
-      justify-content: flex-end;
-      margin: 0;
-      padding: 1.5em 0;
-      position: absolute;
-      top: 0;
-      right: 1.5em;
+    @include media-breakpoint-up(xl) {
+      padding: 0 ($spacer * 2);
+    }
+  }
+
+  a{
+    display: block;
+
+    &:hover{
+      .description { opacity: .7; }
+      .card { box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .35); }
+      .isvg { transform: scale(1.05); }
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    text-align: center;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+
+
+.community-data p{
+  font-size: $font-size-sm;
+}
+
+.community-block { background-color: $blue; }
+
+.community-block .card{
+  height: 70px;
+  width: 70px;
+
+  &.rounded-circle > div {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .isvg{
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
 
-.dev-community-circle{
-  background: url("/assets/images/illustrations/dev-slider-bg-rotated.svg") no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-  height: 320px;
+.community-block .isvg{
+  width: 38px;
+  height: 38px;
 }
 
-.dev-slider-content{
-  position: relative;
-  z-index: -1;
-}
-
-.dev-slider{ margin: -40% 0 0; }
-
-.dev-circle{ border-radius: 100%; }
-
-.dev-slide{
-  box-shadow: 0px 0px 6px 0px rgba(72,116,235,0.5);
-  background-color: $white;
-  border-radius: 100%;
-}
-
-.dev-slide,
-.dev-circle{
-  position: absolute;
-  width: 34px;
-  height: 34px;
-}
-
-.dev-slide.wrapper-1{
-  top: 190px;
-  right: 70px;
-  
-  @include media-breakpoint-up(sm){
-    top: 300px;
-    right: 100px;
-  }
-  
-  @include media-breakpoint-up(md){
-    top: 150px;
-    right: 90px;
+.community-content{
+  @include media-breakpoint-down(lg){
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.25) 10%, rgba(255,255,255,.5) 50%, rgba(255,255,255,0.25) 90%, rgba(255,255,255,0) 100%);
   }
 }
 
-.dev-slide.wrapper-2{
-  bottom: 30px;
-  right: 140px;
-  
-  @include media-breakpoint-up(sm){
-    bottom: 115px;
-    right: 180px;
-  }
-  
-  @include media-breakpoint-up(md){
-    bottom: auto;
-    top: 230px;
-    right: 25px;
-  }
+.animate-heart {
+  animation: beat 1.1s infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
 }
 
-.dev-slide.wrapper-3{
-  left: 40px;
-  bottom: 140px;
-  
-  @include media-breakpoint-up(sm){
-    left: 80px;
-    bottom: 200px;
-    right: auto;
-  }
-  
-  @include media-breakpoint-up(md){
-    left: auto;
-    right: 140px;
-    bottom: 80px;
-  }
-}
-
-.wrapper-1{
-  .dev-1{
-    @include img-retina("/assets/images/team/alessandro-desantis.png", "/assets/images/team/alessandro-desantis@2x.png", 100%, auto);
-  }
-  
-  .dev-2{
-    @include img-retina("/assets/images/team/gregor-macdougall.png", "/assets/images/team/gregor-macdougall@2x.png", 100%, auto);
-    background-color: $white;
-    animation: devFade 10s ease-in-out infinite alternate;
-  }
-}
-
-.wrapper-2{
-  .dev-1{
-    @include img-retina("/assets/images/team/eric-saupe.png", "/assets/images/team/jared-norman@2x.png", 100%, auto);
-  }
-  
-  .dev-2{
-    @include img-retina("/assets/images/team/alberto-vena.png", "/assets/images/team/alberto-vena@2x.png", 100%, auto);
-    background-color: $white;
-    animation: devFade 10s ease-in-out 2s infinite alternate;
-  }
-}
-
-.wrapper-3{
-  .dev-2{
-    @include img-retina("/assets/images/team/thomas-von-deyen.png", "/assets/images/team/thomas-von-deyen@2x.png", 100%, auto);
-    background-color: $white;
-  }
-  
-  .dev-3{
-    @include img-retina("/assets/images/team/andrea-longhi.png", "/assets/images/team/andrea-longhi@2x.png", 100%, auto);
-    background-color: $white;
-    animation: devFade 10s ease-in-out 2s infinite alternate;
-  }
+@keyframes beat {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.1); }
+  80% { transform: scale(1); }
+  100% { transform: scale(1); }
 }
 
 // Community contributors
@@ -200,19 +148,4 @@
   width: 11px;
   height: 11px;
   margin-right: 5px;
-}
-
-@keyframes devFade {
-  0% {
-  opacity:1;
-  }
-  45% {
-  opacity:1;
-  }
-  55% {
-  opacity:0;
-  }
-  100% {
-  opacity:0;
-  }
 }
