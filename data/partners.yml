@@ -12,9 +12,9 @@ main_contributors:
 
 gold_partners:
   super_good:
-    name: "Super Good"
+    name: "Super Good Software"
     short_description: "Spree and Solidus Specialists"
-    description: "Super Good is a software development agency specializing in ecommerce, Solidus, Ruby on Rails, and React."
+    description: "Super Good Software is a software development agency specializing in ecommerce, Solidus, Ruby on Rails, and React."
     url: https://supergood.software/
     image: "supergood-logo.svg"
   karma_creative:
