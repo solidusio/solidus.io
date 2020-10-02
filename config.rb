@@ -7,7 +7,7 @@ set :css_dir, "assets/stylesheets"
 set :images_dir, "assets/images"
 set :js_dir, "assets/javascripts"
 
-set :seo_title, "Solidus: Rails Ecommerce Platform"
+set :seo_title, "Solidus: Rails eCommerce Platform"
 set :seo_description, "Build, customize and scale your store with no limits or license fees. Solidus is the free, open-source eCommerce framework for digitally-native brands, fast-growing online businesses and pragmatic developers."
 
 redirect "developers.html", to: "community.html"
