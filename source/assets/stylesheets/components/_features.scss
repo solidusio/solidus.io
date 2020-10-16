@@ -55,6 +55,9 @@
   &.away {
     animation-delay: 2s;
   }
+  &.bonobos {
+    animation-delay: .5s;
+  }
 }
 
 @keyframes float {
