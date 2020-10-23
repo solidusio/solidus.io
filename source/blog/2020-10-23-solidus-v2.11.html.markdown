@@ -1,0 +1,149 @@
+---
+title: Solidus v2.11
+date: 2020-10-23
+tags: Solidus
+author: Solidus Core Team
+cover_image: /blog/2020/10/23/solidus-v2-11/solidus_2.11.png
+---
+
+- <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v2.11.0">2.11.0 on GitHub</a>
+- <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/2.11.0">2.11.0 on RubyGems</a>
+
+Thanks to all contributors, testers, and users who made this release possible.
+
+This version's support will end in 18 months: 2022-04-23.
+
+## What's next?
+
+Before digging into the most important changes introduced by Solidus 2.11, we want to give you a couple of big announcements.
+
+### Next versions
+
+Solidus 2.11 is the last minor release for version 2 of Solidus. The next release will be **Solidus 3.0** 🎉.
+
+### Solidus 3.0
+
+Solidus 3.0 will not introduce any new features.
+
+In Solidus 3.0, we are going to **remove all the deprecation introduced by Solidus 2**.
+
+So Solidus 2.11 is your last chance to fix all the deprecations on your application because, with Solidus 3.0, they will stop working.
+
+### What's changed?
+
+Full changelog can be found on our
+[GitHub repository](https://github.com/solidusio/solidus/releases/tag/v2.11.0/changelog.md)
+but here's a list of major changes:
+
+**Removed support for Rails 5.1**
+
+Rails 5.1 is not maintained anymore, we deprecated it in 2.10 so it's time to remove it entirely.
+
+**Add `billing_address_required` preference**
+
+The new preference controls whether validations will require the presence of the billing address.
+
+**Add BCC email to order confirmation emails**
+
+Spree::Store model now accepts a BCC email field that, when present, will be used in order confirmation emails.
+
+**Order merger and order updater now require valid order**
+
+The order merger and order updater will complete successfully only on valid orders. This new behavior is opt-in with this release, but will become the default from Solidus 3.0.
+
+You can enable this feature right now by setting the preference with `Spree::Config.run_order_validations_on_order_updater = true`.
+
+**Stop calling `Spree::Refund#perform!` after creating a refund**
+
+From Solidus v3.0 onwards, #perform! will need to be explicitly called when creating new refunds. Please, change your code from:
+
+`Spree::Refund.create(your: attributes)`
+
+to:
+
+`Spree::Refund.create(your: attributes, perform_after_creation: false).perform!`
+
+The `perform_after_creation` attribute will be deprecated in Solidus 3.x.
+
+**Allow to configure `guest_token` cookie options**
+
+The guest_token cookie is currently always only allowed for the current domain, including subdomain. If you want to use the cookie on a different subdomain you can use the preference `guest_token_cookie_options`.
+
+**Add event subscribers automatically**
+
+Event subscribers are now loaded automatically when their source file is placed under the directory `app/subscribers` and filename ends with `_subscriber.rb`. This works both for Solidus core, Solidus extensions and the store app.
+
+If you have any custom subscribers with an explicit subscription (i.e. `MyCustomSubscriber.subscribe!`) ensure they're under `app/subscribers` path and remove the explicit subscriptions from your app initializer (i.e `MyCustomSubscriber.subscribe!`).
+
+**Add address default for billing as well**
+
+It's now possible to mark an address as default for billing with the column `default_billing`.
+
+**Getting closer to completely replace Paranoia with Discard**
+
+We're getting closer to fully replace Paranoia with Discard. Paranoia methods have been fully deprecated, so you're encouraged to switch to Discard also in your store codebase.
+
+**Add ActiveStorage adapter**
+
+From Rails 6.1 ActiveStorage will support public blob URLs and Solidus should be ready to offer an ActiveStorage adapter to new stores.
+
+**Introduce `Address#name`**
+
+We're going to introduce the new column `name` for addresses that will replace the existing `first_name` and `last_name`. In preparation of this, we're now introducing a virtual attribute name that works like and replaces` #full_name`.
+
+**Replace `Spree.routes` with `Spree.pathFor`**
+
+The use of `Spree.routes` is now deprecated. You can check in your browser developer tools console for deprecation messages.
+
+**Configurable order state machine with new default**
+
+The order state machine class is now configurable, just like other models state machines. Also, a simplified version of the current state machine will be the new default in Solidus 3.x.
+
+**Include payment methods in installer**
+
+Solidus installer has now a section for installing payment method gems out of the box. Currently, the only available gem is `solidus_paypal_commerce_platform`.
+
+**Remove CanCanCan custom actions aliases**
+
+`CanCanCan` custom action aliases have been deprecated and replaced with default ones to make it easier upgrading to newer versions of `CanCanCan`. A new application preference has been introduced: `use_custom_cancancan_actions` which when set to:
+
+- `true` will still accept using custom aliases (default for existing applications).
+- `false` any custom aliases defined previously won't be handled anymore by Solidus.
+
+Ensure double-checking all the custom defined permissions in your application before switching to `use_custom_cancancan_actions` preference to `false`.
+
+**Introduce encrypted preference type**
+
+A new preference type `encrypted_string` has been introduced allowing to encrypt the value assigned to the preference to avoid exposing it in case a malicious user gets access to the DB or a dump. Check the related [guide](https://guides.solidus.io/developers/preferences/add-model-preferences.html#details-for-encrypted_string-type) for more details.
+
+**Add "discontinue on" attribute to products**
+
+Adds a `discontinue_on` attribute to products. This accompanies the `available_on` attribute to complete the "Time Based Availability" feature. The `Product.available` scope and `Product#avaliable?` method take this new date field into account to calculate the availability of products.
+
+**Fixed how the default reimbursement store-credit category is fetched**
+
+Before this change the store-credit category for reimbursement was fetched by name using a missing translation (i.e. `en.spree.store_credit_category.default`) that resulted in the name "Default". If no category was found the code fell back on the first category from the database, which wasn't guaranteed to be the right one. Trying to update the translation to the desired category name was also useless due to how code was loaded. Now it's possible to disable this legacy behavior and switch to a simpler one, in which the code will look for a CreditCategory named "Reimbursement". Here's a list of checks and fixes you can perform to ensure you can enable the correct implementation:
+
+- If you don't use reimbursements you're good to go, skip below to Disabling the legacy behavior.
+- Ensure you didn't decorate or patched any of the involved code, especially:
+    - `Spree::StoreCreditCategory.reimbursement_category`.
+    - `Spree::StoreCreditCategory.reimbursement_category_name`.
+- Ensure your "production" environment is already returning the correct category, you can assess that by running this in your "production" console: `Spree::StoreCreditCategory.reimbursement_category(nil).name == "Reimbursement"`.
+
+Disabling the legacy behavior If everything is sound, or you are ok with a different category name for newly created reimbursement store credits you can switch to the new behavior by configuring this Solidus preference in your spree.rb initializer:
+
+```ruby
+Spree.config do |config|
+  config.use_legacy_store_credit_reimbursement_category_name = false
+end
+```
+
+If you had modifications in your codebase consider disabling the legacy behavior and porting them to a simple overwrite of `Spree::Reimbursement#store_credit_category`. The legacy behavior will be removed in the next major version of Solidus.
+
+**Do not consider promotions without actions as active**
+
+When considering to apply a promotion to an order we use the `active` scope. This scope was including promotions without actions and we no longer are taking them into account.
+
+To switch to the new behaviour which will be the only one accepted in Solidus 3.0 change the following preference `Spree::Config.consider_actionless_promotion_active` to `false`.
+
+If you need to consider actionless promotions as active for any reason please implement your own scope for that.
