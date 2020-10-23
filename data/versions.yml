@@ -1,5 +1,8 @@
 ---
 versions:
+  - number: v2.11
+    release_date: 2020-10-23
+    eol_date: 2022-04-23
   - number: v2.10
     release_date: 2020-01-15
     eol_date: 2021-07-15
