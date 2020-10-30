@@ -156,17 +156,17 @@ $(function () {
   
   $('.animated-logos').slick({
     slidesToShow: 5,
-    slidesToScroll: 0.1,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 750,
+    speed: 8000,
     arrows: false,
     dots: false,
     cssEase: 'linear',
     swipe: false,
     swipeToSlide: false,
     touchMove: false,
-    pauseOnHover: true,
+    pauseOnHover: false,
     responsive: [{
         breakpoint: 768,
         settings: {
