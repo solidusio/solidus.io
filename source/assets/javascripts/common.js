@@ -158,15 +158,15 @@ $(function () {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1,
-    speed: 2000,
+    autoplaySpeed: 0,
+    speed: 8000,
     arrows: false,
     dots: false,
     cssEase: 'linear',
     swipe: false,
     swipeToSlide: false,
     touchMove: false,
-    pauseOnHover: true,
+    pauseOnHover: false,
     responsive: [{
         breakpoint: 768,
         settings: {
