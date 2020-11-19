@@ -25,20 +25,14 @@ gold_partners:
     image: "karma-creative-logo.svg"
 
 silver_partners:
-  boomer_digital:
-    name: "Boomer Digital"
-    short_description: "e-commerce, Mobile applications, DevOps, Software development"
-    description: "Boomer Digital is proud to be a Solidus.io partner. We love working with Solidus because of its flexibility!"
-    url: https://boomerdigital.net
-    retina:
-      default_img: "boomerdigital-logo.png"
-      retina_img: "boomerdigital-logo@2x.png"
   magmalabs:
     name: "MagmaLabs"
     short_description: "Ruby on Rails, React, React Native, and Solidus Developers"
     description: "MagmaLabs builds tailored software solutions to help companies execute their vision achieving quick turn-around."
     url: https://www.magmalabs.io/
     image: "magmalabs-logo.svg"
+
+bronze_partners:
   digital_reflow :
     name: "Digital Reflow"
     short_description: "Functional and focused web apps built on Ruby on Rails. Big fan of Solidus."
@@ -57,35 +51,3 @@ silver_partners:
     description: "We are a team of software engineers, designers and product managers building outstanding web and mobile applications for companies of all sizes."
     url: https://nimblehq.co?utm_source=solidus
     image: "nimble-logo.svg"
-
-bronze_partners:
-  peter_berkenbosch:
-    name: "Peter Berkenbosch Consultancy (PBC)"
-    short_description: "e-commerce consultancy"
-    description: "Peter Berkenbosch Consultancy (PBC) specialist in e-commerce consultancy, backend and integration development and CXOps."
-    url: https://peterberkenbosch.nl
-    image: "pbc-logo.svg"
-  wemove:
-    name: "wemove digital solutions GmbH"
-    short_description: "Webshop Development"
-    description: "Developing Webshops, Websites and GeoData/OpenData Applications."
-    url: https://wemove.com
-    image: "wemove-logo.svg"
-  embold:
-    name: "emBold"
-    short_description: "eCommerce and web/mobile apps"
-    description: "A small and experienced team of developers that focuses on eCommerce, web and mobile apps, and automation."
-    url: https://embold.com
-    image: "embold-logo.svg"
-  welaika:
-    name: "weLaika"
-    short_description: "Craftsmen of Rails, Elixir, JavaScript, and mobile apps"
-    description: "We like to customize e-commerce according to our customers’ needs and Solidus allows us to comply with any requirement."
-    url: https://dev.welaika.com/
-    image: "welaika-logo.svg"
-  seesaw:
-    name: "SeeSaw"
-    short_description: "Crafting great ideas with simplicity and effectiveness"
-    description: "We design, develop and launch digital products, fully integrated with existing company infrastructure."
-    url: https://www.seesaw.it
-    image: "seesaw-logo.svg"
