@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
 # https://github.com/middleman/middleman#middleman---makes-developing-websites-simple
-gem "middleman", "~> 4.2"
-gem "oga", "~> 2.14"
+gem "middleman", "~> 4.3"
+gem "oga", "~> 3.3"
 gem "middleman-blog", "~> 4.0"
 gem "middleman-syntax"
 gem 'mime-types'
