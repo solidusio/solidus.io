@@ -1,5 +1,5 @@
 <div class="community-logos industries col-lg-6">
-  <% data.brands.values.select { |brand| brand.fetch(:industries, []).include?(industry) }.take(4).each do |brand| %>
+  <% data.brands.values.select { |brand| brand.fetch(:industries, []).include?(industry) }.take(6).each do |brand| %>
     <div class="community-logos__item">
       <a href="<%= brand[:url] %>" target="_blank">
         <%= inline_svg("community-logos/#{brand[:logo]}", class: "isvg") %>
