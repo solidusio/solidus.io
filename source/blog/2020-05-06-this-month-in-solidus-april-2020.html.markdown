@@ -42,7 +42,7 @@ A big thank you to Davide Di Stefano, Michela Frecchiami and everyone else at Ne
 with the new design and copy, and to everyone in the Solidus community who's helped us with reviews
 and adjustments.
 
-Finally, we've been working on a [demo site](http://solidemo.herokuapp.com/), where you can preview
+Finally, we've been working on a [demo site](http://demo.solidus.io/), where you can preview
 the admin side of Solidus without having to spin up your own server. You're also able to take a
 guided tour of some of our favorite features of the platform. It's still very much a work in
 progress, but we invite you to take a look and let us know what you think. Shoutout to Sean Denny
