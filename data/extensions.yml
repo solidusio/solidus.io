@@ -318,3 +318,8 @@ solidusio-contrib/solidus_klaviyo:
   title: Klaviyo
   description: Integrate with Klaviyo to automate email, SMS and social media marketing campaigns.
   group: Marketing
+solidusio-contrib/solidus_feeds:
+  ci_provider: circleci
+  title: Feeds
+  description: A framework for producing and publishing feeds on Solidus.
+  group: Omnichannel
