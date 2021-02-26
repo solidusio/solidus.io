@@ -48,7 +48,7 @@ page 'blog/*', :directory_index => false
 
 activate :external_pipeline,
          name: :webpack,
-         command: build? ?  "npm run production" : "npm run development",
+         command: build? ? "yarn run production" : "yarn run development",
          source: ".tmp",
          latency: 1
 

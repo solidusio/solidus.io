@@ -9,7 +9,6 @@
 
 # various artifacts
 .sass-cache
-npm-debug.log
 .DS_Store
 
 # compiled files
@@ -18,7 +17,6 @@ npm-debug.log
 # PhpStorm project files
 .idea
 
-# NPM local modules
+# Yarn local modules
 node_modules/
 build/
-yarn.lock
