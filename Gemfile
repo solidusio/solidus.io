@@ -1,18 +1,16 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
-# https://github.com/middleman/middleman#middleman---makes-developing-websites-simple
-gem "middleman", "~> 4.2"
-gem "oga", "~> 2.14"
-gem "middleman-blog", "~> 4.0"
+gem "middleman"
+gem "middleman-blog"
 gem "middleman-syntax"
-gem 'mime-types'
-gem 'graphql-client'
-gem 'travis'
-gem 'circleci'
-gem 'redcarpet'
-# Windows does not come with time zone data
-gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
-gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
-
+gem "graphql-client"
+gem "mime-types"
 gem "nokogiri"
+gem "oga"
+gem "redcarpet"
+
+gem "circleci"
+gem "travis"
