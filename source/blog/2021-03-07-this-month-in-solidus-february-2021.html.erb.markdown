@@ -33,7 +33,7 @@ P.S. Pretty soon, Marc should be in good company... Stay tuned!
 
 We are working hard to cross the ts and dot the is for the release of Solidus 3.0.
 
-Last last month, we organized a Hackathon to get the extensions ready for the next major bump, and
+Last month, we organized a Hackathon to get the extensions ready for the next major bump, and
 the results were amazing: we got 23 extensions ready _in a single day._ Thanks to everyone who
 participated: your dedication to the project is truly inspiring!
 
