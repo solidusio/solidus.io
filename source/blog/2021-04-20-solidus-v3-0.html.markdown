@@ -90,8 +90,11 @@ If you have any issue when upgrading, you can find support on
 [this thread on GitHub Discussion](https://github.com/solidusio/solidus/discussions/4030) or in the `#support` channel of our
 [Slack Workspace](http://slack.solidus.io/).
 
-
 ## Thanks!
 
-Thanks to all contributors that made contributions during the 2.x lifecycle, especially to [John Hawthorn](https://github.com/jhawthorn)
-and the rest of what was the Stembolt team. This release couldn't be possible without you!
+Thanks to all code contributors that made Pull Requests during the 2.x lifecycle, especially to [John Hawthorn](https://github.com/jhawthorn)
+and the rest of what was the Stembolt team.
+
+Thanks to all financial contributors that help the ecosystem supporting the development of Solidus and its community via our [Open Collective page](https://opencollective.com/solidus).
+
+This release couldn't be possible without you all!
