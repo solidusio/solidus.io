@@ -15,41 +15,43 @@ We've just released Solidus `v3.0.0`!
 
 One of the primary goals that drives the development of Solidus is allowing easy upgrades.
 
-Easy upgrades allow teams to take advantage of the last platform improvements. It's equally crucial for Solidus because
-being on a recent Solidus version enables teams to contribute to the platform. Due to this exchange, Solidus mirrors as
-closely as possible what's really needed by its users and the whole community can benefit from new features and fixes.
+Easy upgrades allow teams that use Solidus to take advantage of the last platform improvements but it's equally crucial
+for Solidus because being on a recent Solidus version enables teams to easily contribute to the platform.
+Due to this exchange, Solidus mirrors as closely as possible what's really needed by its users and the whole
+community can benefit from new features and fixes.
 
 Solidus `v3.0` is a release that respects this mindset. In fact, Solidus `v3.0` is nearly identical to the last `v2.11.x` version,
-with the only difference that the new one doesn't have the code that we deprecated during the `v2.x` lifecycle. This means that if
-you see no deprecation messages in your application logs, you should be good to upgrade your store with a minimal effort.
+with the only difference that the new one doesn't have the code that we deprecated during the `v2.x` lifecycle: if
+you don't see deprecation messages in your application logs, you should be good to upgrade your store with a minimal effort.
 
 Although this, there are some relevant things to consider when upgrading:
 
-## We do not require the whole Rails by default anymore
+### We do not require the whole Rails by default anymore
 
 By requiring `rails/all`, Solidus was loading a bunch of unnecessary code that was probably consuming more memory than necessary.
 This change only loads what's strictly needed and allows stores that want to cherry-pick Rails parts to benefit from the more
 attentive choice.
 
-## Active Storage by Default
+### Active Storage by Default
 
 Both Solidus `v2.11` and Solidus `v3.0` come with full support for Rails `6.1`, `6.0` and `5.2`. With Solidus `v3.0` as default on new stores,
-we ship a fully working `Active Storage` support. With time we are going to remove the `Paperclip` dependency because `Active Storage` is
-becoming the new standard for Rails developers. This change won't impact your existing store as soon as you keep using `Paperclip` as the
-attachment module with:
+we ship a fully working `Active Storage` support. In future versions, we will remove the `Paperclip` dependency because `Active Storage` is
+becoming the new standard for Rails developers.
+
+This change won't impact your existing store as soon as you keep using `Paperclip` as the attachment module with:
 
 ```ruby
 Spree::Config.image_attachment_module = 'Spree::Image::PaperclipAttachment'
 Spree::Config.taxon_attachment_module = 'Spree::Taxon::PaperclipAttachment'
 ```
 
-## Discarded Paranoia
+### Discarded Paranoia
 
 We finally completed the heroic work started by [John Hawthorn](https://github.com/jhawthorn) to remove `paranoia` and introduce a new gem for
-soft-deleting records. This gem is called `[discard](https://github.com/jhawthorn/discard)` and, provide a more explicit interface when dealing
+soft-deleting records. This gem is called [discard](https://github.com/jhawthorn/discard) and provides a more explicit interface when dealing
 with record deletion. After a deprecation cycle, this is now the only supported way to soft-delete records in the codebase. No more surprises when deleting or destroying records!
 
-## Unified Name in Address
+### Unified Name in Address
 
 We removed all usage of split `firstname` and `lastname` for addresses since
 [this concept is not valid in all cultures around the world](https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/).
@@ -69,7 +71,7 @@ We suggest migrating to this new schema before the upgrade to `v3.0`. You can fo
 
 This process will make your application behave exactly as it will do with `v3.0`, which only removes the support for that preference being `false`.
 
-## Removed preferences
+### Removed preferences
 
 We removed some preferences that were controlling deprecated behaviors. Probably, you already changed their value to remove the deprecations from your logs but when upgrading, be sure they are not used in your codebase since they do not exist anymore. They are:
 
@@ -83,6 +85,15 @@ We removed some preferences that were controlling deprecated behaviors. Probably
 - `Spree::Config.use_combined_first_and_last_name_in_address`
 
 Please take a look at the [CHANGELOG](https://github.com/solidusio/solidus/blob/master/CHANGELOG.md) for a detailed list of changes.
+
+## Troubles upgrading?
+
+If you have any issue when upgrading, you can find support on
+[this thread on GitHub Discussion](https://github.com/solidusio/solidus/discussions/4030) or in the `#support` channel of our
+[Slack Workspace](http://slack.solidus.io/).
+
+
+## Thanks!
 
 Thanks to all contributors that made contributions during the 2.x lifecycle, especially to [John Hawthorn](https://github.com/jhawthorn)
 and the rest of what was the Stembolt team. This release couldn't be possible without you!
