@@ -9,8 +9,6 @@ cover_image: /blog/2021/04/20/solidus-v3-0/solidus_v3_0.jpg
 - <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v3.0.0">3.0.0 on GitHub</a>
 - <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/3.0.0">3.0.0 on RubyGems</a>
 
-# Solidus 3.0
-
 We've just released Solidus `v3.0.0`!
 
 One of the primary goals that drives the development of Solidus is allowing easy upgrades.
