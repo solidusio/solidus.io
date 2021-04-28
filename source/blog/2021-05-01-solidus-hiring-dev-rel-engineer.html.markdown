@@ -3,7 +3,7 @@ title: Solidus is hiring a Dev Rel Engineer
 date: 2021-05-1
 tags: Solidus Hiring
 author: Solidus Stakeholders
-cover_image: /blog/2021/04/20/solidus-hiring-dev-rel-engineer/cover.jpg
+cover_image: /blog/2021/05/01/solidus-hiring-dev-rel-engineer/cover.jpg
 ---
 
 Solidus is looking for a Developer Relations Engineer!
