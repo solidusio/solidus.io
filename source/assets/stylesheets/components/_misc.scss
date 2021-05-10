@@ -91,6 +91,16 @@
     padding: 0 $spacer;
     transform: scale(.9);
 
+    .carousel & {
+      transform: none;
+      max-width: 100%;
+      height: auto;
+
+      .isvg {
+        margin-top: 0;
+      }
+    }
+
     @include media-breakpoint-up(md){
       width: 15%;
       padding: 0;
@@ -118,7 +128,27 @@
     }
   }
   
-  .inherit-fill { fill: #505359; }
+  .inherit-fill { fill: $gray-500; }
+
+  &:not(.industries) {
+    .community-logos__item {
+      a:hover {
+        .inherit-fill {
+          fill: $gray-800;
+        }
+      }
+    }
+  }
+
+  &.industries {
+    .community-logos__item {
+      a:hover {
+        .inherit-fill {
+          fill: $white-048;
+        }
+      }
+    }
+  }
 }
 
 // Community logos animation
