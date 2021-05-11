@@ -171,13 +171,6 @@ firstleaf:
   industries:
     - food_beverage
 
-blue_apron:
-  name: "Blue Apron"
-  logo: "blue_apron.svg"
-  url: https://www.blueapron.com
-  industries:
-    - food_beverage
-
 moddedeuros:
   name: "ModdedEuros"
   logo: "moddedeuros.svg"
@@ -186,6 +179,13 @@ moddedeuros:
     - online_store
   industries:
     - automotive
+
+blue_apron:
+  name: "Blue Apron"
+  logo: "blue_apron.svg"
+  url: https://www.blueapron.com
+  industries:
+    - food_beverage
 
 tyres_direct:
   name: "Tyres Direct"

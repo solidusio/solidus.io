@@ -155,12 +155,12 @@ $(function () {
   });
   
   $('.animated-logos.row-1').slick({
-    slidesToShow: 8,
+    slidesToShow: 10,
     slidesToScroll: 1,
     autoplay: true,
     infinite: true,
     autoplaySpeed: 0,
-    speed: 8000,
+    speed: 7800,
     arrows: false,
     dots: false,
     cssEase: 'linear',
@@ -188,12 +188,12 @@ $(function () {
   });
 
   $('.animated-logos.row-2').slick({
-    slidesToShow: 8,
+    slidesToShow: 9,
     slidesToScroll: 1,
     autoplay: true,
     infinite: true,
     autoplaySpeed: 0,
-    speed: 5000,
+    speed: 6800,
     arrows: false,
     dots: false,
     cssEase: 'linear',
