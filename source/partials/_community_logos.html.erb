@@ -1,6 +1,18 @@
 <div class="carousel col-lg-12">
-  <div class="animated-logos community-logos carousel__list">
-    <% data.brands.values.each do |brand| %>
+  <div class="animated-logos row-1 community-logos carousel__list">
+    <% data.brands.values.select { |brand| brand }.take(12).each do |brand| %>
+      <div class="community-logos__item">
+        <a href="<%= brand[:url] %>" target="_blank">
+          <%= inline_svg("community-logos/#{brand[:logo]}", class: "isvg") %>
+        </a>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="carousel col-lg-12 mt-3">
+  <div class="animated-logos row-2 community-logos carousel__list">
+    <% data.brands.values.drop(12).each do |brand| %>
       <div class="community-logos__item">
         <a href="<%= brand[:url] %>" target="_blank">
           <%= inline_svg("community-logos/#{brand[:logo]}", class: "isvg") %>
