@@ -248,7 +248,7 @@
         
         &.expandable {
           min-width: 1px;
-          transition: padding-right .2s ease;
+          transition: padding-right .2s ease, transform .3s linear;
           
           @include media-breakpoint-up(lg){
             &.expanded {
