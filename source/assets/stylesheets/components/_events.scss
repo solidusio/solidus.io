@@ -1,0 +1,51 @@
+.events-hero {
+  color: $white;
+  background: $gray-900 url("/assets/images/illustrations/events-background.svg") no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  @include media-breakpoint-up(md){
+    background-size: contain;
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  .newsletter-form {
+    .button {
+      background-color: $primary;
+      color: $white;
+
+      &:hover {
+        background-color: $link-hover-color;
+        color: $white;
+      }
+    }
+  }
+}
+
+.events-list {
+  &__item {
+    min-height: 264px;
+  
+    &.card {
+      @include media-breakpoint-down(md) {
+        display: block;
+      }
+    }
+  
+    &__image {
+      border-radius: 5px 5px 0 0;
+      width: 100%;
+      align-self: center;
+
+      @include media-breakpoint-up(lg) {
+        max-width: 444px;
+        margin-left: 6px;
+        border-radius: 5px;
+      }
+    }
+  }
+  
+}
