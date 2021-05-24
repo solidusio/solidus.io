@@ -1,0 +1,82 @@
+# meetup_sample:
+#   title: "Upcoming Meetup"
+#   image: false
+#   date: Month dd, yyyy
+#   event_type: Remote Event
+#   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sollicitudin felis id ante placerat, at fermentum velit efficitur. Sed consequat ligula eget odio feugiat, eu condimentum diam feugiat. 
+#   label: Meetup
+#   links:
+#     twitter: https://twitter.com/SolidusIO/status/1389604484381302787?s=20 # a direct link to the post
+#     slack: https://solidusio.slack.com/archives/C03L07BUM/p1620039083115100 # a direct link to the message
+
+meetup_04062021:
+  title: "About That E in Ecommerce"
+  image: true
+  date: April 6, 2021
+  event_type: Remote Event
+  description: Jacky Giang is a recent graduate from Floyd and acted as their Head of Tech over the last 5 ½ years. He’s currently on a 3-month sabbatical to research Dapps (don’t ask him about it yet).
+  label: Meetup
+  links:
+    youtube: https://youtu.be/A9AzjZqLSug
+
+meetup_12142020:
+  title: "Frontend 2021"
+  image: true
+  date: December 14, 2020
+  event_type: Remote Event
+  description: Denis has been working with Spree (and now Solidus) on and off for the better part of a decade with FCP Euro. When not at his computer, he's mixing music with friends, exploring the West Coast in his overlander van, drifting his Mercedes or wheelie-ing his KTM. Sometimes he also.
+  label: Meetup
+  links:
+    youtube: https://youtu.be/GdqcLawyo8U
+
+solidusconf_2020:
+  title: "SolidusConf 2020"
+  image: true
+  date: September 23-25, 2020
+  event_type: Remote Conference
+  description: SolidusConf is a conference held for Solidus programmers, Rails users, Ruby lovers, and eCommerce developers. At SolidusConf 2020, we will be continuing the tradition of sharing knowledge and goals for the Solidus community and hearing from some external speakers about relevant eCommerce and engineering challenges.
+  label: Conference
+  links:
+    youtube: https://www.youtube.com/playlist?list=PLLD8ikQvfJqpscVZS3yJuftojeKcsjWeV
+    website: http://conf.solidus.io/
+
+meetup_082020:
+  title: "Demystifying Deface"
+  image: true
+  date: August, 2020
+  event_type: Remote Event
+  description: Elia Schito is a Nebulab developer and core maintainer of Opal. The good, the bad, and the evil - Elia will take us through the secrets behind deface magic in a nutshell.
+  label: Meetup
+  links:
+    youtube: https://youtu.be/wVSbn1AfuXs
+
+meetup_07272020:
+  title: "Solidus 0 To Production"
+  image: true
+  date: July 27, 2020
+  event_type: Remote Event
+  description: Sean Denny is a developer at Nebulab, open source organizer, and a member of Solidus management. He's been building on the web since he was 11, and has been in the eCommerce space for 6 years.
+  label: Meetup
+  links:
+    youtube: https://youtu.be/7NdIu83fgp4
+
+communityday_06152020:
+  title: "Solidus Dev Support"
+  image: true
+  date: July 27, 2020
+  event_type: Remote Event
+  description: Peter Berkenbosch is an OpenSource e-Commerce veteran working with Spree and Solidus frameworks for over a decade, specialized in bridging customers, leadership and development in providing high quality e-commerce stacks. CXOps enthusiast.
+  label: Community Day
+  links:
+    youtube: https://youtu.be/2THP9PMfUHQ
+
+solidusconf_2019:
+  title: "SolidusConf 2019"
+  image: true
+  date: October 21-24, 2019
+  event_type: Conference
+  description: In 2019, the Solidus community came together in Salt Lake City to spend 4 days hacking, hiking, and talking about the platform they love - Solidus.
+  label: Conference
+  links:
+    youtube: https://youtube.com/playlist?list=PLLD8ikQvfJqr8QoGcjxNEALSFDgu8t2mU
+    website: https://conf2019.solidus.io/

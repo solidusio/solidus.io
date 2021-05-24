@@ -1,0 +1,99 @@
+---
+title: Events
+description: Insightful talks and networking opportunities.
+---
+
+<div class="events-hero hero-block content-block">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg">
+        <div class="pr-md-6 mb-3">
+          <h1 class="title">Events</h1>
+          <p class="lead mb-md-6">
+            Insightful talks and networking opportunities.
+          </p>
+          <%= partial "partials/newsletter_form" %>
+        </div>
+      </div>
+      <div class="col-lg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="events content-block content-block-gray-100">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg">
+        <ul class="events-list">
+          <% data.events.each do |event, info| %>
+            <li class="events-list__item card">
+              <% if info[:image] == true %>
+                <img src="<%= image_path("events/#{event}@2x.jpg") %>" class="events-list__item__image card-img-left" alt="" width="444" height="auto">
+                <% else %>
+                <img src="<%= image_path("events/placeholder@2x.jpg") %>" class="events-list__item__image card-img-left" alt="" width="444" height="auto">
+              <% end %>
+
+              <div class="card-body">
+                <h4 class="card-title"><%= info.title %></h4>
+                <h6 class="card-subtitle mb-2 text-muted"><%= info.date %> - <%= info.event_type %></h6>
+                <p class="card-text"><%= info.description.truncate(170) %></p>
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <span class="badge <%= "badge-primary" if info.label == 'Meetup' %> <%= "badge-success" if info.label == 'Conference' %> <%= "badge-dark" if info.label == 'Community Day' %>"><%= info.label %></span>
+                  </li>
+                  <% if info[:links] %>
+                    <% if info[:links].website %>
+                      <li class="list-inline-item align-middle">
+                        <a href="<%= info[:links].website %>" target="_blank" class="main-link">
+                          Website
+                        </a>
+                      </li>
+                    <% end %>
+                    <% if info[:links].youtube %>
+                      <li class="list-inline-item align-middle">
+                        <a href="<%= info[:links].youtube %>" target="_blank">
+                          <% if info.label == 'Conference' %>
+                            Video Playlist
+                            <% else %>
+                            Video
+                          <% end %>
+                        </a>
+                      </li>
+                    <% end %>
+                    <% if info[:links].slack %>
+                      <li class="list-inline-item align-middle">
+                        <a href="<%= info[:links].slack %>" target="_blank">
+                          Slack
+                        </a>
+                      </li>
+                    <% end %>
+                    <% if info[:links].twitter %>
+                      <li class="list-inline-item align-middle">
+                        <a href="<%= info[:links].twitter %>" target="_blank">
+                          Twitter
+                        </a>
+                      </li>
+                    <% end %>
+                  <% end %>
+                </ul>
+              </div>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="call-to-action content-block text-center">
+  <div class="container">
+    <h3 class="title d-block text-center">
+      <span class="d-inline-block pb-1 pb-lg-0">
+        Head to our <span class="d-block d-sm-inline"><span class="text-danger">YouTube</span> channel</span>
+      </span>
+      <%= inline_svg("icons/youtube_custom-icon.svg", class: "isvg mx-auto d-block d-sm-inline-block") %>
+    </h3>
+    <a class="btn btn-primary" href="https://www.youtube.com/channel/UCiFcxyt11T6QIIDPk2w0Jjw/featured?sub_confirmation=1" target="_blank">Give me more videos!</a>
+  </div>
+</div>
