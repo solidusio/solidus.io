@@ -55,7 +55,7 @@ boomerdigital/solidus_wishlist:
   description: Let customers add products to their wishlist, so that they can easily buy them later.
   group: Conversion Optimization
 magma-labs/solidus_simple_dash:
-  ci_provider: travis
+  ci_provider: circleci
   title: Simple Dash
   description: Provide store administrators with a simple overview dashboard for your store.
   group: Reporting
