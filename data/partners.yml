@@ -51,3 +51,9 @@ bronze_partners:
     description: "We are a team of software engineers, designers and product managers building outstanding web and mobile applications for companies of all sizes."
     url: https://nimblehq.co?utm_source=solidus
     image: "nimble-logo.svg"
+  lawebshop:
+    name: "La Web Shop"
+    short_description: "Solidus Specialists, eCommerce Web Development"
+    description: "Digital expertise studio specializing in development of tailor-made, scalable and efficient transactional e-commerce platforms."
+    url: "https://lawebshop.ca/"
+    image: "lawebshop-logo.svg"
