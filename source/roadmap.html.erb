@@ -27,7 +27,7 @@ preview_image: roadmap/preview_image.png
               </a>
             </div>
             <div class="roadmap-hero__anchorlist__item">
-              <a href="#customers" class="btn roadmap-hero__anchorlist__item__link">Operators
+              <a href="#operators" class="btn roadmap-hero__anchorlist__item__link">Operators
               <%= inline_svg("icons/arrow-gradient.svg", class: "arrow")%>
               <%= inline_svg("icons/arrow-gradient.svg", class: "arrow-fixed")%>
               </a>
@@ -38,7 +38,7 @@ preview_image: roadmap/preview_image.png
     </div>
   </div>
 
-  <div class="intro content-block--skewed content-block-gray-100">
+  <div class="content-block--skewed content-block-gray-100">
     <div class="content-wrapper">
       <div class="roadmap-use-case" id="devs">
         <div class="container">
@@ -51,46 +51,13 @@ preview_image: roadmap/preview_image.png
                 <h5>What we’re doing for</h5>
                 <h2>Developers</h2>
               </div>
-              <div class="roadmap-use-case__wrapper">
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable uncollapsed">
-                  <h5>Updated documentation v.1</h5>
-                  <p>We are rewriting the Solidus Guide focusing on questions that developers have when approaching common topics in our ecosystem. You'll have the answers you are looking for with a lot of best practices explained that did come with years of experience. </p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable uncollapsed">
-                  <h5>Rest API Doc Completion</h5>
-                  <p>We want to finalize the API documentation available at solidus.docs.stoplight.io and build some tooling that allow to consume the endpoints provided in a modern way, like an official SDK. </p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable uncollapsed">
-                  <h5>Improve Upgrades Process</h5>
-                  <p>Solidus has to be easy to upgrade from one version to another. At the same time we have big changes coming that may make this process harder than usual. That's why we are building a set of tools and processes that will help you staying always up to date with the platform and benefit from the last features.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>GraqhQL Completion</h5>
-                  <p>Solidus has to be easy to upgrade from one version to another. At the same time we have big changes coming that may make this process harder than usual. That's why we are building a set of tools and processes that will help you staying always up to date with the platform and benefit from the last features.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>Event Bus v.2</h5>
-                  <p>Solidus already shines for its ease of customization, but we want to take it up one notch. We’re one of the first eCommerce solutions to experiment with an event-driven architecture, easier to hook into and inspect. The events system will be accessible both by application code and extensions.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>Service Objects Architecture</h5>
-                  <p>In addition to implementing more events and improving our event-driven architecture, we also want to make sure it's easier than ever to replace Solidus' business logic with your own. Be on the lookout for a better, more intentional, more powerful service object architecture.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>Easier Admin Customization</h5>
-                  <p>Modifying admin sections to match the business needs of our stores should be easy. We want to improve the current structure of the application to allow easy and reliable customizations and provide tools and helpers that will cover the majority of use cases so you don't have to reinvent the wheel every time.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>Dockerize Solidus</h5>
-                  <p>Want to contribute to Solidus but you always work with Docker? We know how frustrating that could be and we are going to get you covered. We are already at work to make Solidus and the extensions ready for doker-compose up.</p>
-                </div>
-              </div>
+              <%= partial "partials/roadmap_developers_list" %>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="roadmap-use-case content-block" id="customers">
+      <div class="roadmap-use-case content-block pb-0" id="operators">
         <div class="container">
           <div class="row">
             <div class="roadmap-use-case__image col-md order-md-2">
@@ -101,48 +68,7 @@ preview_image: roadmap/preview_image.png
                 <h5>What we’re doing for</h5>
                 <h2>Operators</h2>
               </div>
-              <div class="roadmap-use-case__wrapper">
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable uncollapsed">
-                  <h5>New Frontend v.1</h5>
-                  <p>We have published a new storefront starter kit that uses some more modern practices to build a storefront. We have a lot of ideas about how to further improve it but the next step is designing a  smooth installation process that plays well with the ecosystem.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable uncollapsed">
-                  <h5>Subscriptions Completion</h5>
-                  <p>We have one of the most powerful and flexible subscriptions engines available. While we have some more features to add, we want to be sure the extension is easy to understand and use for subscription-based businesses.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable uncollapsed">
-                  <h5>Improve Upgrades Process</h5>
-                  <p>Solidus has to be easy to upgrade from one version to another. At the same time we have big changes coming that may make this process harder than usual. That's why we are building a set of tools and processes that will help you staying always up to date with the platform and benefit from the last features.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>Updated Solidus Stripe Extension</h5>
-                  <p>Description here.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>OmniChannel Support</h5>
-                  <p>SolidusFeeds extensions provides a nice and flexible way to distribute product feeds to platforms like Google Shopping, Facebook and Instagram. Next on our list of supported channels is Amazon Marketplace.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>New Frontend v.2</h5>
-                  <p>Description here.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>Global Commerce</h5>
-                  <p>We will finalize multi currency support, with a ready-to-use, yet extendable implementation of the currency switcher in the frontend.  We also want to improve the ability of translating data stored in the database with a new approach.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>Marketplace</h5>
-                  <p>Description here.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>Segment Integration</h5>
-                  <p>Description here.</p>
-                </div>
-                <div class="roadmap-use-case__timeline roadmap-use-case__timeline--toggleable">
-                  <h5>Admin Bulk Actions</h5>
-                  <p>Description here.</p>
-                </div>
-              </div>
+              <%= partial "partials/roadmap_operators_list" %>
             </div>
           </div>
         </div>
