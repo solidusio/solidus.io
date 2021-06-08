@@ -3,44 +3,33 @@ title: Extensions
 description: Solidus provides a lot of free extensions. Fine-tune your store’s capabilities!
 ---
 
-<div class="content-block-title text-center">
-  <div class="container container-md">
+<div class="extensions-hero hero-block content-block">
+  <div class="container">
     <h1 class="title">Extensions for days.</h1>
     <p class="lead">Fine-tune your store’s capabilities with free extensions for Solidus.</p>
+    <a href="#" class="btn btn-primary">Build your own</a>
   </div>
 </div>
 
-<div class="extensions-filter">
-  <div class="container">
-    <h6 class="title">Show:</h6>
 
-    <div class="form-check form-check-custom">
-      <input type="checkbox" class="form-check-input" id="filter-official" name="official" checked>
-      <label class="form-check-label" for="filter-official">
-        <%= inline_svg("icons/checkbox.svg", class: "isvg") %>
-        Official
-      </label>
-    </div>
+<div class="extensions-filter sub-navbar p-0">
+  <div class="container-fluid extensions-filter__navbar">
+    <ul class="extensions-filter__navbar__nav nav align-items-center">
+      <% extensions = Solidus::Extension.from_yaml_data(data.extensions, environment: environment) %>
 
-    <div class="form-check form-check-custom">
-      <input type="checkbox" class="form-check-input" id="filter-community" name="community" checked>
-      <label class="form-check-label" for="filter-community">
-        <%= inline_svg("icons/checkbox.svg", class: "isvg") %>
-        Community
-      </label>
-    </div>
-
-    <div class="form-check form-check-custom">
-      <input type="checkbox" class="form-check-input" id="filter-third-party" name="third-party" checked>
-      <label class="form-check-label" for="filter-third-party">
-        <%= inline_svg("icons/checkbox.svg", class: "isvg") %>
-        Third-Party
-      </label>
-    </div>
+      <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
+        <li class="nav-item" data-filter="<%= group_name.underscore.gsub('_', '-') %>">
+          <div class="form-check-custom pl-0">
+            <input type="checkbox" class="form-check-input extensions-filter__input" id="filter-<%= group_name.underscore.gsub('_', '-') %>" name="<%= group_name.underscore.gsub('_', '-') %>" checked>
+            <label class="btn btn-sm extensions-filter__label" for="filter-<%= group_name.underscore.gsub('_', '-') %>">
+              <%= group_name %>
+            </label>
+          </div>
+        </li>
+      <% end %>
+    </ul>
   </div>
 </div>
-
-<% extensions = Solidus::Extension.from_yaml_data(data.extensions, environment: environment) %>
 
 <div class="extensions-list-block content-block content-block-gray-100">
   <div class="container">
@@ -50,7 +39,7 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
 
     <div class="accordion" id="accordion">
       <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
-        <div class="extensions-group accordion-item" id="extensions-group-<%= group_name.underscore.gsub('_', '-') %>">
+        <div class="extensions-group accordion-item <%= group_name.underscore.gsub('_', '-') %>" id="extensions-group-<%= group_name.underscore.gsub('_', '-') %>">
           <h3 class="title">
             <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapse<%= i %>">
               <%= group_name %>

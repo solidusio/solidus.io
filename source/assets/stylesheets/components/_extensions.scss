@@ -1,12 +1,10 @@
 .extensions-hero{
-  overflow: hidden;
-  .img-fluid{
-    margin-right: -42%;
+  background: $white url("/assets/images/illustrations/extensions-background.svg") no-repeat;
+  background-size: cover;
+  background-position: top center;
 
-    @include media-breakpoint-up(md){
-      margin-right: 0;
-      max-width: 110%;
-    }
+  @include media-breakpoint-up(md){
+    background-size: contain;
   }
 }
 
@@ -21,53 +19,50 @@
   }
 }
 
-//Extensions list block
-.extensions-filter{
-  background-color: rgba(#f3f3f4, 0.5);
-  padding-top: 30px;
-  padding-bottom: 20px;
+.extensions-filter {
+  overflow: hidden;
 
-  .container{
-    @include media-breakpoint-up(lg){
-      max-width: 960px + $grid-gutter-width;
+  &__navbar {
+    overflow-x: scroll;
+    padding: $spacer;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__nav {
+      flex-wrap: nowrap;
+      white-space: nowrap;
+
+      .nav-item {
+        padding: 0 5px;
+      }
     }
   }
 
-  .title{
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: $font-size-xs;
-    font-weight: $font-weight-bolder;
-    margin-right: 40px;
+  &__label {
+    background-color: $white;
+    border-radius: 100px;
+    border: 1px solid $gray-300;
+    cursor: pointer;
+    text-transform: none;
+    color: $headings-color;
   }
+}
 
-  .title, .form-check{
-    margin-bottom: 10px;
-    @include media-breakpoint-up(md){ margin-bottom: 0; }
-  }
+.extensions-filter__input {
+  left: 0;
 
-  @include media-breakpoint-up(md){
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    .form-check{
-      display: inline-block;
-      margin-right: 20px;
-
-      &:last-child{ margin-right: 0; }
+  &:checked {
+    & + .extensions-filter__label {
+      color: $blue;
+      border-color: $blue;
     }
   }
 }
 
+
 .extensions-list-block{
-  padding-top: 0;
-
-  .container{
-    @include media-breakpoint-up(lg){
-      max-width: 960px + $grid-gutter-width;
-    }
-  }
-
   .extensions-group{
     @include media-breakpoint-up(lg){
       > .title{
@@ -89,7 +84,7 @@
   .extensions{
     @include media-breakpoint-up(md){
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: 1fr;
       grid-column-gap: 2rem;
       grid-row-gap: 2rem;
@@ -129,7 +124,6 @@
   }
 
   .title{
-    font-weight: $font-weight-normal;
     margin-bottom: 5px;
 
     img {
@@ -137,6 +131,10 @@
       height: 15px;
       vertical-align: middle;
       margin-right: 2px;
+    }
+
+    a {
+      color: $gray-900;
     }
   }
 

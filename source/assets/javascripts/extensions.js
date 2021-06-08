@@ -1,5 +1,3 @@
-import AOS from "aos";
-
 $(function () {
   let $filter = $(".extensions-filter input"),
       $groups = $(".extensions-group"),
@@ -24,7 +22,5 @@ $(function () {
     });
 
     $alert.toggleClass("d-none", ($groups.filter(":not(.empty)").length > 0));
-
-    AOS.refresh();
   })
 });
