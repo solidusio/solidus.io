@@ -1,7 +1,18 @@
 <% versions = Solidus::Version.collection_from_yaml_data(data.versions).select(&:supported?).map(&:number).reverse.push('master') %>
 
-<div class="extension-info card card-border-none e-<%= extension.group.underscore.gsub('_', '-') %>">
+<div class="extension-info card card-border-none e-<%= extension.group.underscore.gsub(' ', '-') %>">
   <div class="card-body">
+  <ul class="list-inline">
+    <% extension.categories.each do |category| %>
+      <li class="list-inline-item">
+          <span class="extension-info__badge <%= "certified" if category == 'Certified' %>"><%= category %></span>
+      </li>
+    <% end %>
+    <li class="list-inline-item">
+      <span class="extension-info__badge"><%= extension.group %></span>
+    </li>
+  </ul>
+
     <h4 class="title">
       <a href="<%= extension.repo_url %>" target="_blank">
         <%= extension.title %>
@@ -22,10 +33,10 @@
       <% end %>
     </div>
 
-    <div class="extension-meta">
+    <div class="extension-meta align-items-center">
       <div class="extension-org">
-        <img class="extension-org-logo" src="<%= extension.repo_org_image_url %>">
-        <small class="text-muted"><%= extension.repo_org %></small>
+        <img class="extension-org-logo rounded-circle" src="<%= extension.repo_org_image_url %>">
+        <span><%= extension.repo_org %></span>
       </div>
 
       <div class="extension-gh">

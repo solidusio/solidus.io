@@ -35,6 +35,17 @@ module Solidus
       "https://github.com/#{repo_org}.png"
     end
 
+    def categories
+      case repo_org.to_s
+      when 'solidusio'
+        ['Certified']
+      when 'solidusio-contrib'
+        ['Community']
+      else
+        ['Third-Party']
+      end
+    end
+
     def ci
       ci_klass.new(self)
     end

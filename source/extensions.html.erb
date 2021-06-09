@@ -20,8 +20,8 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
       <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
         <li class="nav-item" data-filter="<%= group_name.underscore.gsub('_', '-') %>">
           <div class="form-check-custom pl-0">
-            <input type="checkbox" class="form-check-input extensions-filter__input" id="filter-<%= group_name.underscore.gsub('_', '-') %>" name="<%= group_name.underscore.gsub('_', '-') %>" checked>
-            <label class="btn btn-sm extensions-filter__label" for="filter-<%= group_name.underscore.gsub('_', '-') %>">
+            <input type="checkbox" class="form-check-input extensions-filter__input" id="filter-<%= group_name.underscore.gsub(' ', '-') %>" name="<%= group_name.underscore.gsub(' ', '-') %>">
+            <label class="btn btn-sm extensions-filter__label" for="filter-<%= group_name.underscore.gsub(' ', '-') %>">
               <%= group_name %>
             </label>
           </div>
@@ -39,7 +39,7 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
 
     <div class="accordion" id="accordion">
       <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
-        <div class="extensions-group accordion-item <%= group_name.underscore.gsub('_', '-') %>" id="extensions-group-<%= group_name.underscore.gsub('_', '-') %>">
+        <div class="extensions-group accordion-item <%= group_name.underscore.gsub(' ', '-') %>" id="extensions-group-<%= group_name.underscore.gsub(' ', '-') %>">
           <h3 class="title">
             <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapse<%= i %>">
               <%= group_name %>
