@@ -13,7 +13,7 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
 
 
 <div class="extensions-filter sub-navbar p-0">
-  <div class="container-fluid extensions-filter__navbar">
+  <div class="container extensions-filter__navbar">
     <ul class="extensions-filter__navbar__nav nav align-items-center">
       <% extensions = Solidus::Extension.from_yaml_data(data.extensions, environment: environment) %>
 
@@ -27,6 +27,11 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
           </div>
         </li>
       <% end %>
+
+      <div class="dropdown">
+        <a class="dropdown-link btn btn-sm extensions-filter__label" id="dropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+        <div class="js-hidden-groups dropdown-menu" aria-labelledby="dropdownMenuLink"></div>
+     </div>
     </ul>
   </div>
 </div>

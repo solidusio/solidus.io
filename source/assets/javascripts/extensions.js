@@ -22,5 +22,18 @@ $(function () {
     });
 
     $alert.toggleClass("d-none", ($groups.filter(":not(.empty)").length > 0));
+
+    $( ".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)").appendTo( $( ".js-hidden-groups" ) );
+
+    $(".js-more").click(function(){
+      $(".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)").toggle();
+    });
+
+    // $('#sales').click(function() {
+    //   $('#grid li:hidden').slice(0, 5).slideDown();
+    // });
   })
+
+
+  $( ".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)").appendTo( $( ".js-hidden-groups" ) );
 });

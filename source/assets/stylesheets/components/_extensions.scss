@@ -20,22 +20,37 @@
 }
 
 .extensions-filter {
-  overflow: hidden;
-
   &__navbar {
-    overflow-x: scroll;
     padding: $spacer;
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
     &__nav {
-      flex-wrap: nowrap;
-      white-space: nowrap;
-
       .nav-item {
         padding: 0 5px;
+      }
+
+      .dropdown-menu {
+        overflow: hidden;
+        opacity: 0;
+        height: 0;
+        position: absolute;
+        background: $white;
+        top: 80%;
+        border-radius: 5px;
+        z-index: 1000;
+        text-align: left;
+        display: block;
+        box-shadow: 0px 5px 40px rgba(36, 40, 47, 0.12);
+        transform: translateY(20px);
+
+          
+        &.show {
+          overflow: visible;
+          opacity: 1;
+          height: auto;
+          transform: translateY(0);
+          transition: transform .3s linear, opacity .3s linear, visibility .3s linear;
+          padding: 20px 30px 0;
+        }
       }
     }
   }
