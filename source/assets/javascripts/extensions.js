@@ -1,5 +1,5 @@
 $(function () {
-  let $filter = $(".extensions-filter input"),
+  let $filter = $(".extensions-filter__input"),
       $groups = $(".extensions-group"),
       $cards = $(".extensions-list-block .extension-info"),
       $alert = $(".extensions-list-block .alert"),
@@ -22,18 +22,20 @@ $(function () {
     });
 
     $alert.toggleClass("d-none", ($groups.filter(":not(.empty)").length > 0));
+  });
 
-    $( ".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)").appendTo( $( ".js-hidden-groups" ) );
+  //var $hiddenGroups = $( ".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7):hidden");
 
-    $(".js-more").click(function(){
-      $(".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)").toggle();
-    });
+  // $(".js-more").click(function() {
+  //   $hiddenGroups.slice(0, 5).slideDown();
+  // });
 
-    // $('#sales').click(function() {
-    //   $('#grid li:hidden').slice(0, 5).slideDown();
-    // });
-  })
+  var $hiddenGroups = $( ".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)");
 
-
-  $( ".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)").appendTo( $( ".js-hidden-groups" ) );
+  $hiddenGroups.hide();
+    
+  $(".js-more").click(function() {
+    $hiddenGroups.show();
+    $(this).hide();
+  });
 });

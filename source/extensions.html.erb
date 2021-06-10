@@ -7,13 +7,17 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
   <div class="container">
     <h1 class="title">Extensions for days.</h1>
     <p class="lead">Fine-tune your store’s capabilities with free extensions for Solidus.</p>
-    <a href="#" class="btn btn-primary">Build your own</a>
+    <a href="https://github.com/solidusio/solidus_dev_support" target="_blank" class="btn btn-primary">Build your own</a>
   </div>
 </div>
 
 
-<div class="extensions-filter sub-navbar p-0">
+<div class="extensions-filter p-0">
   <div class="container extensions-filter__navbar">
+
+  <input type="checkbox" class="form-check-input show-all__mobile show-all__mobile__input" id="show-all" name="Show all">
+  <label class="show-all__mobile show-all__mobile__label" for="show-all"></label>
+
     <ul class="extensions-filter__navbar__nav nav align-items-center">
       <% extensions = Solidus::Extension.from_yaml_data(data.extensions, environment: environment) %>
 
@@ -27,11 +31,7 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
           </div>
         </li>
       <% end %>
-
-      <div class="dropdown">
-        <a class="dropdown-link btn btn-sm extensions-filter__label" id="dropdownMenuLink" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-        <div class="js-hidden-groups dropdown-menu" aria-labelledby="dropdownMenuLink"></div>
-     </div>
+      <button class="js-more btn btn-sm extensions-filter__more">More</button>
     </ul>
   </div>
 </div>
@@ -61,23 +61,6 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
           </div>
         </div>
       <% end %>
-    </div>
-  </div>
-</div>
-
-<div class="content-block">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md">
-        <div class="block-content mb-md-0">
-          <h2 class="title">Build an extension.</h2>
-          <p>Don’t see the functionality you need? Create your own extension and share it with the community so everyone can benefit from your expertise!</p>
-          <a class="btn btn-primary" href="https://github.com/solidusio/solidus_dev_support" target="_blank">Get Coding!</a>
-        </div>
-      </div>
-      <div class="col-md text-center text-md-right mt-6 mt-md-0">
-        <img class="img-fluid" src="<%= image_path('illustrations/build-extensions.svg') %>" alt="Edit Product">
-      </div>
     </div>
   </div>
 </div>
