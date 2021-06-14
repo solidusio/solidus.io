@@ -1,6 +1,6 @@
 module Solidus
   class Extension
-    attr_accessor :repo, :title, :ci_provider, :description, :group, :environment
+    attr_accessor :repo, :title, :ci_provider, :description, :group, :environment, :most_popular
 
     class << self
       def from_yaml_data(data, environment:)
@@ -45,7 +45,7 @@ module Solidus
         ['Third-Party']
       end
     end
-
+  
     def ci
       ci_klass.new(self)
     end

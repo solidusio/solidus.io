@@ -43,6 +43,25 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
     </div>
 
     <div class="accordion" id="accordion">
+      <div class="extensions-group accordion-item most-popular" id="extensions-group-most-popular">
+        <h3 class="title">
+          <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapse-most-popular">
+            Most popular
+            <%= inline_svg("icons/arrow-down.svg", class: "isvg isvg-arrow") %>
+          </a>
+        </h3>
+
+        <div id="collapse-most-popular" class="content collapse" data-parent="#accordion">
+          <div class="extensions">
+            <% extensions.sort_by(&:group).each do |extension| %>
+              <% if extension.most_popular %>
+                <%= partial 'partials/extension', locals: { extension: extension } %>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
       <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
         <div class="extensions-group accordion-item <%= group_name.underscore.gsub(' ', '-') %>" id="extensions-group-<%= group_name.underscore.gsub(' ', '-') %>">
           <h3 class="title">
