@@ -37,50 +37,36 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
 </div>
 
 <div class="extensions-list-block content-block content-block-gray-100">
-  <div class="container">
+  <div class="extensions-list-block__container container container-xl">
     <div class="alert alert-warning mb-0 d-none" role="alert">
       No extensions matching your criteria
     </div>
 
-    <div class="accordion" id="accordion">
-      <div class="extensions-group accordion-item most-popular" id="extensions-group-most-popular">
-        <h3 class="title">
-          <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapse-most-popular">
-            Most popular
-            <%= inline_svg("icons/arrow-down.svg", class: "isvg isvg-arrow") %>
-          </a>
-        </h3>
+    <div class="extensions-group most-popular" id="extensions-group-most-popular">
+      <h3 class="title">Most popular</h3>
 
-        <div id="collapse-most-popular" class="content collapse" data-parent="#accordion">
-          <div class="extensions">
-            <% extensions.sort_by(&:group).each do |extension| %>
-              <% if extension.most_popular %>
-                <%= partial 'partials/extension', locals: { extension: extension } %>
-              <% end %>
-            <% end %>
-          </div>
+      <div class="extensions">
+        <% extensions.sort_by(&:group).each do |extension| %>
+          <% if extension.most_popular %>
+            <%= partial 'partials/extension', locals: { extension: extension } %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+
+    <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
+      <div class="extensions-group <%= group_name.underscore.gsub(' ', '-') %>" id="extensions-group-<%= group_name.underscore.gsub(' ', '-') %>">
+        <h3 class="title">
+          <%= group_name %>
+        </h3>
+        <div class="extensions">
+          <% group_extensions.sort_by(&:title).each do |extension| %>
+            <%= partial 'partials/extension', locals: { extension: extension } %>
+          <% end %>
         </div>
       </div>
+    <% end %>
 
-      <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
-        <div class="extensions-group accordion-item <%= group_name.underscore.gsub(' ', '-') %>" id="extensions-group-<%= group_name.underscore.gsub(' ', '-') %>">
-          <h3 class="title">
-            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapse<%= i %>">
-              <%= group_name %>
-              <%= inline_svg("icons/arrow-down.svg", class: "isvg isvg-arrow") %>
-            </a>
-          </h3>
-
-          <div id="collapse<%= i %>" class="content collapse" data-parent="#accordion">
-            <div class="extensions">
-              <% group_extensions.sort_by(&:title).each do |extension| %>
-                <%= partial 'partials/extension', locals: { extension: extension } %>
-              <% end %>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
   </div>
 </div>
 
