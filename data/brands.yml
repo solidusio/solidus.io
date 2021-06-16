@@ -155,6 +155,20 @@ bevv:
   industries:
     - food_beverage
 
+cometeer:
+  name: "Cometeer"
+  logo: "cometeer.svg"
+  url: https://cometeer.com
+  industries:
+    - food_beverage
+
+framework:
+  name: "Framework"
+  logo: "framework.svg"
+  url: https://frame.work
+  use_cases:
+    - marketplace
+
 bookshop:
   name: "Bookshop"
   logo: "bookshop.svg"
