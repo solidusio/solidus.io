@@ -19,6 +19,14 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
   <label class="show-all__mobile show-all__mobile__label" for="show-all"></label>
 
     <ul class="extensions-filter__navbar__nav nav align-items-center">
+      <li class="nav-item" data-filter="extensions-group-most-popular">
+        <div class="form-check-custom pl-0">
+          <input type="checkbox" class="form-check-input extensions-filter__input" id="filter-most-popular" name="most-popular">
+          <label class="btn btn-sm extensions-filter__label" for="filter-most-popular">
+            Most popular
+          </label>
+        </div>
+      </li>
       <% extensions = Solidus::Extension.from_yaml_data(data.extensions, environment: environment) %>
 
       <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>

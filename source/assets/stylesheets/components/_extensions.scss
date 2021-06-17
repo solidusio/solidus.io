@@ -91,6 +91,8 @@
     }
 
     &.empty{ display: none; }
+    &.selected,
+    &.selected.d-none { display: block !important; }
   }
 
   .extensions{
