@@ -209,18 +209,18 @@
       &.row-1 {
         // 12 items
         width: 220px * 12;
-        animation: infiniteScrollBrandsRow1 55s linear infinite none;
+        animation: infiniteScrollBrandsRow1 55s linear infinite;
       }
   
       &.row-2 {
         // 14 items
-        animation: infiniteScrollBrandsRow2 45s linear infinite none;
+        animation: infiniteScrollBrandsRow2 45s linear infinite;
         width: 220px * 14;
       }
     }
 
     &:hover {
-      animation-play-state: paused;
+      animation-play-state: paused !important;
     }
   }
 }
