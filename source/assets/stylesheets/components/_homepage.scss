@@ -5,11 +5,6 @@
 }
 
 .testimonials {
-  .carousel-content {
-    position: relative;
-    @include media-breakpoint-up(lg) { height: 520px; }
-  }
-  
   .blockquote {
     text-align: left;
     padding: $spacer;
