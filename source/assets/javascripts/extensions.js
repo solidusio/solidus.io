@@ -21,15 +21,15 @@ $(function () {
 
     $groups.each(function () {
       $(this).toggleClass("empty", ($(this).find(".extension-info:not(.deselected)").length === 0));
-      $mostPopular.addClass("d-none");
+      $mostPopular.addClass("empty");
     });
   
-    $alert.toggleClass("d-none", ($groups.filter(":not(.empty)").length > 0));
+    $mostPopular.toggleClass("empty", ($groups.filter(":not(.empty)").length > 0));
   });
 
-  $mostPopularFilter.click(function () {
-    $mostPopular.toggleClass("selected");
-  });
+  // $mostPopularFilter.click(function () {
+  //   $mostPopular.toggleClass("selected");
+  // });
 
   var $hiddenGroups = $( ".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)");
 

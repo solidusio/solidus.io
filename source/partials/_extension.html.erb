@@ -1,6 +1,6 @@
 <% versions = Solidus::Version.collection_from_yaml_data(data.versions).select(&:supported?).map(&:number).reverse.push('master') %>
 
-<div class="extension-info card card-border-none e-<%= extension.group.underscore.gsub(' ', '-') %>">
+<div class="extension-info card card-border-none e-<%= extension.group.underscore.gsub(' ', '-') %> <%= extension.categories.map { |c| "collection-#{c.underscore.gsub('_', '-')}" }.join(' ') %>">
   <div class="card-body">
   <ul class="list-inline">
     <% extension.categories.each do |category| %>
