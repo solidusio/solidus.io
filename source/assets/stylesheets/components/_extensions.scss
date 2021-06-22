@@ -12,11 +12,21 @@
   &__navbar {
     padding: $spacer;
     position: relative;
-
+  
     &__nav {
       .nav-item {
         padding: 0 5px;
         margin-bottom: 0;
+
+        &:nth-last-of-type(-n+7) {
+          display: none;
+          visibility: hidden;
+        }
+
+        &.show {
+          display: block;
+          visibility: visible;
+        }
       }
 
       @include media-breakpoint-down(md) {

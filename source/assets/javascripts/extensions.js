@@ -2,9 +2,9 @@ $(function () {
   let $filter = $(".extensions-filter__input"),
       $groups = $(".extensions-group"),
       $cards = $(".extensions-list-block .extensions-group:not(.most-popular) .extension-info"),
-      $alert = $(".extensions-list-block .alert"),
+      //$alert = $(".extensions-list-block .alert"),
       $mostPopular = $(".extensions-list-block .extensions-group.most-popular"),
-      $mostPopularFilter = $("#filter-most-popular"),
+      //$mostPopularFilter = $("#filter-most-popular"),
       selectedFilters = [];
 
 
@@ -32,11 +32,9 @@ $(function () {
   // });
 
   var $hiddenGroups = $( ".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)");
-
-  $hiddenGroups.hide();
     
   $(".js-more").click(function() {
-    $hiddenGroups.show();
+    $hiddenGroups.addClass("show");
     $(this).hide();
   });
 });
