@@ -91,9 +91,17 @@
     }
 
     &.empty{ display: none; }
+  
+    &:not(.most-popular) {
+      .extension-info__badge.group-name {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
     // &.selected,
     // &.selected.d-none { display: block !important; }
-    &.selected { display: block !important; }
+    //&.selected { display: block !important; }
   }
 
   .extensions{
@@ -210,6 +218,10 @@
       background-repeat: no-repeat;
       background-position: .8em center;
       padding-left: .8em + 1.5em;
+    }
+
+    &.group-name {
+      color: $body-color;
     }
   }
 
