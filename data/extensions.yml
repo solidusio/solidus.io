@@ -95,6 +95,7 @@ solidusio/solidus_auth_devise:
   description: Add Devise authentication to your store. Supports registration, password resets and
     more.
   group: Authentication
+  most_popular: true
 solidusio-contrib/solidus_social:
   ci_provider: circleci
   title: Social Authentication
@@ -113,6 +114,7 @@ solidusio/solidus_braintree:
   title: Braintree (legacy)
   description: Legacy extension for integrating Braintree v.zero payments in your Solidus store.
   group: Payments
+  most_popular: true
 solidusio/solidus_paypal_braintree:
   ci_provider: circleci
   title: Braintree
