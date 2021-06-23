@@ -164,18 +164,6 @@
     max-width: 1440px;
   }
 
-  &.horizontal-scroll {
-    overflow-y: hidden;
-    overflow-x: scroll;
-  
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
   &::before,
   &::after {
     content: '';
