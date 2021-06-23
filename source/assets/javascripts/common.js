@@ -1,6 +1,7 @@
 import "popper.js";
 import "bootstrap";
 import "details-element-polyfill";
+import "slick-carousel";
 import Headroom from "headroom.js";
 import AOS from "aos";
 import LazyLoad from "vanilla-lazyload";
@@ -141,6 +142,83 @@ $(function () {
   });
 
   $('[data-toggle="tooltip"]').tooltip();
+
+  //Slick Slider
+  $('.carousel-list').slick({
+    autoplay: false,
+    dots: false,
+    speed: 300,
+    useTransform: false,
+    centerPadding: '60px',
+    slidesToShow: 1,
+    fade: true
+  });
+  
+  $('.animated-logos.row-1').slick({
+    slidesToShow: 10,
+    slidesToScroll: 1,
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 0,
+    speed: 7800,
+    arrows: false,
+    dots: false,
+    cssEase: 'linear',
+    swipe: false,
+    swipeToSlide: false,
+    touchMove: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    responsive: [{
+        breakpoint: 1440,
+        settings: {
+            slidesToShow: 6
+        }
+    }, {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 4
+        }
+    }, {
+        breakpoint: 520,
+        settings: {
+            slidesToShow: 3
+        }
+    }]
+  });
+
+  $('.animated-logos.row-2').slick({
+    slidesToShow: 9,
+    slidesToScroll: 1,
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 0,
+    speed: 6800,
+    arrows: false,
+    dots: false,
+    cssEase: 'linear',
+    swipe: false,
+    swipeToSlide: false,
+    touchMove: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    responsive: [{
+      breakpoint: 1440,
+      settings: {
+          slidesToShow: 6
+      }
+    }, {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 4
+        }
+    }, {
+        breakpoint: 520,
+        settings: {
+            slidesToShow: 3
+        }
+    }]
+  });
 });
 
 $(document).on('aos:in', function(event) {
