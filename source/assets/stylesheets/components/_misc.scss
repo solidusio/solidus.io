@@ -91,9 +91,8 @@
     padding: 0 $spacer;
     transform: scale(.9);
 
-    .infinite-slider & {
+    .carousel & {
       transform: none;
-      width: 100%;
       max-width: 100%;
       height: auto;
 
@@ -118,13 +117,13 @@
       .isvg {
         width: 100%;
         
-        .infinite-slider__track & {
+        .animated-logos & {
           max-height: 55px;
         }
       }
     }
     
-    .infinite-slider__track & {
+    .animated-logos & {
       margin-bottom: 0;
     }
   }
@@ -153,29 +152,14 @@
 }
 
 // Community logos animation
-
-.infinite-slider {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  max-width: 100%;
-  margin: 0 auto;
-
-  @include media-breakpoint-up(xl) {
-    max-width: 1440px;
-  }
-
-  &.horizontal-scroll {
-    overflow-y: hidden;
-    overflow-x: scroll;
-  
-    &::-webkit-scrollbar {
-      display: none;
+.animated-logos {
+  &.slick-initialized {
+    .slick-track {
+      display: flex;
+      align-items: center;
     }
-  
-    -ms-overflow-style: none;
-    scrollbar-width: none;
   }
-
+  
   &::before,
   &::after {
     content: '';
@@ -194,74 +178,6 @@
   &::after {
     background: linear-gradient(to right, rgba(250,251,252,0) 0%, rgba(250,251,252,1) 100%);
     right: 0;
-  }
-
-  &__track {
-    display: flex;
-    align-items: center;
-    position: relative;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    white-space: nowrap;
-    overflow: hidden;
-
-    &.community-logos {
-      backface-visibility: hidden;
-    
-      &.row-1 {
-        // 12 items
-        width: 100px * 12;
-        animation: infiniteScrollBrandsRow1 36s linear infinite;
-      
-        @include media-breakpoint-up(md) {
-          width: 200px * 12;
-        }
-      }
-  
-      &.row-2 {
-        // 14 items
-        width: 100px * 14;
-        animation: infiniteScrollBrandsRow2 28s linear infinite;
-      
-        @include media-breakpoint-up(md) {
-          width: 200px * 14;
-        }
-      }
-    }
-
-    @include media-breakpoint-up(md) {
-      @media(hover: hover) and (pointer: fine) {
-        &:hover {
-          animation-play-state: paused !important;
-        }
-      }
-    }
-  }
-}
-
-@keyframes infiniteScrollBrandsRow1 {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 0, 0);
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate3d(-((200px * 12) / 2.15), 0, 0);
-  }
-}
-
-@keyframes infiniteScrollBrandsRow2 {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 0, 0);
-  }
-  1% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate3d(-((200px * 14) / 2), 0, 0);
   }
 }
 
