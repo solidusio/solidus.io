@@ -2,7 +2,7 @@ $(function () {
   let $filter = $(".extensions-filter__input"),
       $groups = $(".extensions-group"),
       $cards = $(".extensions-list-block .extensions-group:not(.most-popular) .extension-info"),
-      //$alert = $(".extensions-list-block .alert"),
+      $alert = $(".extensions-list-block .alert"),
       $mostPopular = $(".extensions-list-block .extensions-group.most-popular"),
       //$mostPopularFilter = $("#filter-most-popular"),
       selectedFilters = [];
@@ -24,7 +24,8 @@ $(function () {
       $mostPopular.addClass("empty");
     });
   
-    $mostPopular.toggleClass("empty", ($groups.filter(":not(.empty)").length > 0));
+    //$mostPopular.toggleClass("empty", ($groups.filter(":not(.empty)").length > 0));
+    $alert.toggleClass("d-none", ($groups.filter(":not(.empty)").length > 0));
   });
 
   // $mostPopularFilter.click(function () {
