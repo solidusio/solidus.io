@@ -194,13 +194,6 @@ moddedeuros:
   industries:
     - automotive
 
-blue_apron:
-  name: "Blue Apron"
-  logo: "blue_apron.svg"
-  url: https://www.blueapron.com
-  industries:
-    - food_beverage
-
 tyres_direct:
   name: "Tyres Direct"
   logo: "tyresdirect.svg"
