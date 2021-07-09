@@ -12,7 +12,7 @@
 
 <div class="col-lg-12 mt-3 infinite-slider">
   <div class="row-2 community-logos infinite-slider__track">
-    <% data.brands.values.drop(12).each do |brand| %>
+    <% data.brands.values.drop(13).each do |brand| %>
       <div class="community-logos__item">
         <a href="<%= brand[:url] %>" target="_blank">
           <%= inline_svg("community-logos/#{brand[:logo]}", class: "isvg") %>
