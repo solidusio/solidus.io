@@ -1,10 +1,7 @@
 $(function () {
   let $filter = $(".extensions-filter__input"),
       $groups = $(".extensions-group"),
-      $cards = $(".extensions-list-block .extensions-group:not(.most-popular) .extension-info"),
-      $alert = $(".extensions-list-block .alert"),
-      $mostPopular = $(".extensions-list-block .extensions-group.most-popular"),
-      //$mostPopularFilter = $("#filter-most-popular"),
+      $cards = $(".extensions-list-block .extensions-group .extension-info"),
       selectedFilters = [];
 
 
@@ -21,16 +18,16 @@ $(function () {
 
     $groups.each(function () {
       $(this).toggleClass("empty", ($(this).find(".extension-info:not(.deselected)").length === 0));
-      $mostPopular.addClass("empty");
     });
-  
-    //$mostPopular.toggleClass("empty", ($groups.filter(":not(.empty)").length > 0));
-    $alert.toggleClass("d-none", ($groups.filter(":not(.empty)").length > 0));
+
+    if($filter.filter(':checked').length === 0) {
+      console.log ("uncheked");
+      $groups.toggleClass("empty");
+      $cards.toggleClass("deselected");
+    }
   });
 
-  // $mostPopularFilter.click(function () {
-  //   $mostPopular.toggleClass("selected");
-  // });
+
 
   var $hiddenGroups = $( ".extensions-filter__navbar__nav .nav-item:nth-last-of-type(-n+7)");
     

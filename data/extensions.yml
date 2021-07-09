@@ -9,14 +9,12 @@ boomerdigital/solidus_amazon_payments:
   title: Pay with Amazon
   description: Allow your customers to check out with their Amazon account via Pay with Amazon.
   group: Payments
-  most_popular: true
 solidusio-contrib/solidus_shipstation:
   ci_provider: circleci
   title: ShipStation
   description: Integrate with ShipStation to unify your carriers, track inventory and handle
     returns.
   group: Shipping
-  most_popular: true
 solidusio-contrib/solidus_globalize:
   ci_provider: circleci
   title: Globalize
@@ -78,7 +76,6 @@ solidusio-contrib/solidus_klarna_payments:
   description: Allow your customers to buy now and pay later with the Klarna integration for your
     store.
   group: Payments
-  most_popular: true
 AlchemyCMS/alchemy-solidus:
   ci_provider: travis
   title: AlchemyCMS
@@ -95,7 +92,6 @@ solidusio/solidus_auth_devise:
   description: Add Devise authentication to your store. Supports registration, password resets and
     more.
   group: Authentication
-  most_popular: true
 solidusio-contrib/solidus_social:
   ci_provider: circleci
   title: Social Authentication
@@ -108,25 +104,21 @@ solidusio/solidus_stripe:
   description: Integrate Stripe in your store for beautiful and developer-friendly direct credit
     card payments.
   group: Payments
-  most_popular: true
 solidusio/solidus_braintree:
   ci_provider: circleci
   title: Braintree (legacy)
   description: Legacy extension for integrating Braintree v.zero payments in your Solidus store.
   group: Payments
-  most_popular: true
 solidusio/solidus_paypal_braintree:
   ci_provider: circleci
   title: Braintree
   description: Use Braintree for seamless direct credit card, PayPal and Apple Pay payments.
   group: Payments
-  most_popular: true
 solidusio/solidus_affirm:
   ci_provider: circleci
   title: Affirm
   description: Allow your customers to pay in multiple installments by integrating Affirm payments.
   group: Payments
-  most_popular: true
 solidusio-contrib/solidus_signifyd:
   ci_provider: circleci
   title: Signifyd
@@ -331,4 +323,3 @@ solidusio-contrib/solidus_feeds:
   title: Feeds
   description: A framework for producing and publishing feeds on Solidus.
   group: Omnichannel
-  most_popular: true

@@ -24,7 +24,7 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
       <% group_extensions(extensions).each_pair.with_index do |(group_name, group_extensions), i| %>
         <li class="nav-item" data-filter="<%= group_name.underscore.gsub('_', '-') %>">
           <div class="form-check-custom pl-0">
-            <input type="checkbox" class="form-check-input extensions-filter__input" id="filter-<%= group_name.underscore.gsub(' ', '-') %>" name="<%= group_name.underscore.gsub(' ', '-') %>" checked>
+            <input type="checkbox" class="form-check-input extensions-filter__input" id="filter-<%= group_name.underscore.gsub(' ', '-') %>" name="<%= group_name.underscore.gsub(' ', '-') %>">
             <label class="btn btn-sm extensions-filter__label" for="filter-<%= group_name.underscore.gsub(' ', '-') %>">
               <%= group_name %>
             </label>
@@ -51,8 +51,6 @@ description: Solidus provides a lot of free extensions. Fine-tune your store’s
         </div>
       </div>
     <% end %>
-    <div class="alert alert-warning d-none">No extensions matching your criteria</div>
-
   </div>
 </div>
 
