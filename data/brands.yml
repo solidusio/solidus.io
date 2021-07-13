@@ -2,6 +2,7 @@ glossier:
   name: "Glossier"
   logo: "glossier.svg"
   url: https://www.glossier.com
+  get_started: true
   use_cases:
     - global_commerce
   industries:
@@ -11,6 +12,7 @@ meundies:
   name: "MeUndies"
   logo: "meundies.svg"
   url: https://www.meundies.com
+  get_started: true
   use_cases:
     - headless_commerce
   industries:
@@ -27,6 +29,7 @@ away:
   name: "Away"
   logo: "awaytravel.svg"
   url: https://www.awaytravel.com
+  get_started: true
   use_cases:
     - global_commerce
     - online_store
@@ -53,6 +56,7 @@ floyd:
   name: "FLOYD"
   logo: "floyd.svg"
   url: https://floydhome.com
+  get_started: true
   use_cases:
     - online_store
   industries:
@@ -71,6 +75,7 @@ maisonette:
   name: "Maisonette"
   logo: "maisonette.svg"
   url: https://www.maisonette.com
+  get_started: true
   use_cases:
     - headless_commerce
     - marketplace
@@ -82,6 +87,7 @@ acetate:
   name: "Ace & Tate"
   logo: "ace&tate.svg"
   url: https://www.aceandtate.com
+  get_started: true
   use_cases:
     - global_commerce
     - headless_commerce
@@ -109,6 +115,7 @@ goby:
   name: "Goby"
   logo: "goby.svg"
   url: https://goby.co
+  get_started: true
   use_cases:
     - online_store
   industries:
@@ -159,6 +166,7 @@ cometeer:
   name: "Cometeer"
   logo: "cometeer.svg"
   url: https://cometeer.com
+  get_started: true
   industries:
     - food_beverage
 

@@ -98,6 +98,17 @@
       }
     }
   }
+
+  &.community-logos {
+    .community-logos__item {
+      @include media-breakpoint-up(md) {
+        width: 25%;
+        padding: 0 $spacer;
+      }
+    }
+    
+    .inherit-fill { fill: $white; }
+  }
 }
 
 .get-started-developers {
@@ -159,6 +170,59 @@
       a {
         font-weight: $font-weight-bolder;
       }
+    }
+  }
+}
+
+.case-study {
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: ($spacer * 2) $spacer;
+    background: #f3f3f3;
+
+    @include media-breakpoint-up(lg) {
+      height: 80%;
+
+      .case-study__logo {
+        width: 50%;
+        height: auto;
+
+        .isvg {
+          min-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &:first-of-type {
+    .logo-wrapper {
+      background: #FAEFD9;
+    }
+  }
+
+  &__cta {
+    font-weight: $font-weight-bolder;
+    transition: color .2s ease-in;
+
+    span {
+      font-weight: $font-weight-normal;
+      color: $body-color;
+    }
+
+    &:hover {
+      .isvg {
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  &__feature {
+    h5 {
+      font-size: $font-size-base;
     }
   }
 }

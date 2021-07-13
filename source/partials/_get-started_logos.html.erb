@@ -1,0 +1,11 @@
+<div class="community-logos get-started col-lg-6">
+  <% data.brands.each do |brand, info| %>
+    <% if info[:get_started] == true %>
+      <div class="community-logos__item">
+        <a href="<%= info[:url] %>" target="_blank">
+          <%= inline_svg("community-logos/#{info[:logo]}", class: "isvg") %>
+        </a>
+      </div>
+    <% end %>
+  <% end %>
+</div>
