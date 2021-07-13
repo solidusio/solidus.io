@@ -155,6 +155,20 @@ bevv:
   industries:
     - food_beverage
 
+cometeer:
+  name: "Cometeer"
+  logo: "cometeer.svg"
+  url: https://cometeer.com
+  industries:
+    - food_beverage
+
+framework:
+  name: "Framework"
+  logo: "framework.svg"
+  url: https://frame.work
+  use_cases:
+    - marketplace
+
 bookshop:
   name: "Bookshop"
   logo: "bookshop.svg"
@@ -179,13 +193,6 @@ moddedeuros:
     - online_store
   industries:
     - automotive
-
-blue_apron:
-  name: "Blue Apron"
-  logo: "blue_apron.svg"
-  url: https://www.blueapron.com
-  industries:
-    - food_beverage
 
 tyres_direct:
   name: "Tyres Direct"
