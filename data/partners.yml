@@ -57,3 +57,9 @@ bronze_partners:
     description: "Digital expertise studio specializing in development of tailor-made, scalable and efficient transactional e-commerce platforms."
     url: "https://lawebshop.ca/"
     image: "lawebshop-logo.svg"
+  morphosis:
+    name: "Morphosis"
+    short_description: "UX strategy, digital product design and conversion tactics"
+    description: "Digital consultancy specializing in UX strategy and digital product design."
+    url: "https://www.morphos.is"
+    image: "morphosis-logo.svg"
