@@ -16,7 +16,7 @@ module Solidus
         end
 
         def name
-          circleci_build['build_parameters']['CIRCLE_JOB']
+          circleci_build['workflows']['job_name']
         end
 
         private
