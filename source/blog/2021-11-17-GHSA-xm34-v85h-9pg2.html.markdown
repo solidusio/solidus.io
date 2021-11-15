@@ -1,0 +1,18 @@
+---
+title: New solidus_auth_devise & Solidus releases to address a severe security vulnerability
+date: 2021-11-17
+tags: security
+author: Marc Busqué
+cover_image: /blog/shared/images/security.png
+description: New solidus_auth_devise & Solidus releases to address GHSA-xm34-v85h-9pg2. Please, update your store soon.
+---
+
+We've released solidus_auth_devise [2.5.4](https://github.com/solidusio/solidus_auth_devise/releases/tag/v2.5.4) to address a security vulnerability (GHSA-xm34-v85h-9pg2) affecting all versions of solidus_auth_devise.
+
+We've also released Solidus [3.1.3](https://github.com/solidusio/solidus/releases/tag/v3.1.3), [3.0.3](https://github.com/solidusio/solidus/releases/tag/v3.0.3) and [2.11.12](https://github.com/solidusio/solidus/releases/tag/v2.11.12). They just contain a patch in case you're unable to update solidus_auth_devise.
+
+You can read about GHSA-xm34-v85h-9pg2 on the [solidus mailing list](https://groups.google.com/forum/#!forum/solidus-security).
+
+If you have any questions about how to secure your site please stop by our Slack [http://slack.solidus.io/](http://slack.solidus.io/).
+
+Have a nice day!
