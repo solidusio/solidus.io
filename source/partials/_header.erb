@@ -1,4 +1,6 @@
 <header class="site-header site-header--fixed <%= "site-header--blue" if current_page.data.title == 'Integrations' %> <%= "site-header--dark" if current_page.data.title == 'Roadmap' %> <%= "site-header--dark" if current_page.data.title == 'Events' %> <%= "site-header--transparent" if current_page.data.title == 'Features' %>">
+  <%= partial "partials/top_bar" %>
+
   <div class="navbar container">
     <div class="logo-wrapper">
       <a class="site-logo" href="/"><%= inline_svg("logo.svg", class: "isvg") %></a>
