@@ -1,16 +1,16 @@
 ---
 title: Using Afterpay with Solidus
-date: 2021-11-24
+date: 2022-01-11
 tags: Solidus, Afterpay, Payments
 author: Andrea Vassallo
-cover_image: /blog/2021/11/24/solidus-afterpay/cover.jpg
+cover_image: /blog/2022/01/11/solidus-afterpay/cover.jpg
 ---
 
 Hey everyone! Today we are excited to share with you Solidus’ newly forged partnership with [Afterpay](https://www.afterpay.com/).
 
 [Afterpay](https://www.afterpay.com/) is a payment method that allows your customers to pay for their cart in 4 interest-free installments.
 
-<img src="/blog/2021/11/24/solidus-afterpay/afterpay.png" />
+<img src="/blog/2022/01/11/solidus-afterpay/afterpay.png" />
 
 The [Solidus and Afterpay](https://github.com/nebulab/solidus_afterpay) extension makes it very easy to add the Afterpay payment method to your store.
 
@@ -20,7 +20,7 @@ You are able to use the extension both with Solidus and Solidus APIs since the s
 
 After the installation, you will be able to configure the Afterpay payment method using the Solidus admin panel.
 
-<img src="/blog/2021/11/24/solidus-afterpay/solidus_afterpay_payment_method.png" />
+<img src="/blog/2022/01/11/solidus-afterpay/solidus_afterpay_payment_method.png" />
 
 On this page, you can update the Afterpay credentials and choose where the customer can make the payment. You have two options changeable by the `popup window` checkbox:
 
@@ -33,15 +33,15 @@ The Afterpay credentials (merchant ID and secret key) will be given to you once 
 
 If the configuration is correct, the customer will see the Afterpay payment method during the checkout payment step.
 
-<img src="/blog/2021/11/24/solidus-afterpay/checkout_afterpay_login.png" />
+<img src="/blog/2022/01/11/solidus-afterpay/checkout_afterpay_login.png" />
 
 Users can log in or create an Afterpay account without leaving your e-commerce site and will pay the first installment (25%) at the time of the order. Afterpay will pay the merchant the full amount of the order minus any fees. See [Getting Paid](https://developers.afterpay.com/afterpay-online/docs/getting-paid). In this step, there will be information about payments and future charges. If Afterpay authorization is successful, the user is redirected to the order confirmation checkout step to complete the order.
 
-<img src="/blog/2021/11/24/solidus-afterpay/checkout_afterpay_payment.png" />
+<img src="/blog/2022/01/11/solidus-afterpay/checkout_afterpay_payment.png" />
 
 When the order is placed and the first installment is charged, the customer will receive the order confirmation from Afterpay.
 
-<img src="/blog/2021/11/24/solidus-afterpay/afterpay_order_resume.png" />
+<img src="/blog/2022/01/11/solidus-afterpay/afterpay_order_resume.png" />
 
 ## Express checkout
 
@@ -51,8 +51,8 @@ Adding this partial inside your cart view, the [Afterpay Express Checkout](https
 <%= render "solidus_afterpay/afterpay_checkout_button" %>
 ```
 
-<img src="/blog/2021/11/24/solidus-afterpay/express_checkout_cart.png" />
-<img src="/blog/2021/11/24/solidus-afterpay/express_checkout.png" />
+<img src="/blog/2022/01/11/solidus-afterpay/express_checkout_cart.png" />
+<img src="/blog/2022/01/11/solidus-afterpay/express_checkout.png" />
 
 Each time a customer changes the delivery address using the Afterpay express checkout modal, Solidus calculates the shipping rates based on the available shipping methods. You can also [customize](https://github.com/nebulab/solidus_afterpay#customizing-shipping-rate-builder) this behavior by building a custom service object.
 
@@ -73,7 +73,7 @@ In both cases, the first installment is charged by Afterpay when the order is pl
 
 Afterpay offers an on-site messaging component to notify customers that Afterpay installments are available. Ensuring customers are aware of an installment payment option on product and cart pages helps increase conversation rates and increase average order values.
 
-<img src="/blog/2021/11/24/solidus-afterpay/messaging.png" />
+<img src="/blog/2022/01/11/solidus-afterpay/messaging.png" />
 
 You can configure a min and a max price to show the messaging below products not available with Afterpay.
 
@@ -81,7 +81,7 @@ You can configure a min and a max price to show the messaging below products not
 
 Inside the Solidus admin panel, you have the ability to capture and refund an Afterpay payment.
 
-<img src="/blog/2021/11/24/solidus-afterpay/solidus_admin_payment.png" />
+<img src="/blog/2022/01/11/solidus-afterpay/solidus_admin_payment.png" />
 
 Afterpay charges the customer the first installment at time of order. When you capture the order after fulfillment (if using deferred capture), the funds will be settled with you the next business day by Afterpay.
 
