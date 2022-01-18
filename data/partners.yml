@@ -63,3 +63,9 @@ bronze_partners:
     description: "Digital consultancy specializing in UX strategy and digital product design."
     url: "https://www.morphos.is"
     image: "morphosis-logo.svg"
+  renuo:
+    name: "Renuo AG"
+    short_description: "Web development, Prototyping, e-Commerce"
+    description: "The development of high quality software is our core competence. We create customer specific applications based on modern technologies."
+    url: "https://www.renuo.ch/"
+    image: "renuo-logo.svg"
