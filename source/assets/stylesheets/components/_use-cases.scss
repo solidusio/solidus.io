@@ -59,4 +59,29 @@
       padding-top: 0;
     }
   }
+
+  .ebook-banner {
+    border: 1px solid $gray-200;
+    border-radius: 4px;
+    font-size: $font-size-sm;
+
+    p {
+      font-size: $font-size-sm;
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z' stroke='%233C76F0' stroke-width='2' stroke-miterlimit='10'/%3E%3Cpath d='M8.81836 12.5679L12.0003 15.7498L15.1823 12.5679' stroke='%233C76F0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 8.25V15.75' stroke='%233C76F0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        width: 24px;
+        height: 24px;
+        margin-left: 5px;
+      }
+    }
+  }
 }
