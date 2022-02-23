@@ -31,7 +31,7 @@ UI, you probaly have to make some change at it now.
 
 Our REST API is now documented using the Open API Specification. The
 documentation is part of the repository and published on
-https://solidus.docs.stoplight.io/.
+https://solidus.stoplight.io.
 
 **Added Spree::Event**
 
