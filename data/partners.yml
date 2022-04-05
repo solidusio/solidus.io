@@ -69,3 +69,9 @@ bronze_partners:
     description: "The development of high quality software is our core competence. We create customer specific applications based on modern technologies."
     url: "https://www.renuo.ch/"
     image: "renuo-logo.svg"
+  flatirons:
+    name: "Flatirons Development"
+    short_description: "Consumer-facing software specialists. Solidus, React, Rails."
+    description: "Flatirons Development focuses on consumer-facing products such as SaaS apps, mobile, e-commerce, and marketplaces. UX/UI specialists."
+    url: "https://flatironsdevelopment.com?utm_source=solidus"
+    image: "flatirons-logo.svg"
