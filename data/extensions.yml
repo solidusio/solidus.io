@@ -326,5 +326,5 @@ solidusio-contrib/solidus_feeds:
 solidusio-contrib/solidus_bolt:
   ci_provider: circleci
   title: Bolt
-  description: Let customers pay for their purchases over time by integrating with Bolt.
+  description: Sell more and increase conversions with friction-free checkout
   group: Payments
