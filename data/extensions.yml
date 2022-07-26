@@ -323,3 +323,8 @@ solidusio-contrib/solidus_feeds:
   title: Feeds
   description: A framework for producing and publishing feeds on Solidus.
   group: Omnichannel
+solidusio-contrib/solidus_bolt:
+  ci_provider: circleci
+  title: Bolt
+  description: Sell more and increase conversions with friction-free checkout
+  group: Payments
