@@ -3,7 +3,7 @@ title: Solidus v3.2
 date: 2022-08-18
 tags: Solidus
 author: Solidus Core Team
-cover_image: /blog/2022/08/18/solidus/v3/2/cover.jpg
+cover_image: /blog/2022-08-18-solidus-v3-2/cover.jpg
 ---
 
 - <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v3.2.0">3.2.0 on GitHub</a>
