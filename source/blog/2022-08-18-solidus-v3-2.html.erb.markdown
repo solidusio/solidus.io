@@ -1,0 +1,173 @@
+---
+title: Solidus v3.2
+date: 2022-08-18
+tags: Solidus
+author: Solidus Core Team
+cover_image: /blog/2022-08-18-solidus-v3-2/cover.jpg
+---
+
+- <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v3.2.0">3.2.0 on GitHub</a>
+- <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/3.2.0">3.2.0 on RubyGems</a>
+
+We've just released Solidus `v3.2.0`!
+
+Thanks to all contributors, testers, and users who made this release possible.
+
+This version's support will end in 18 months: 2024-02-18.
+
+## What's next?
+
+We're listening to developers all around the globe to make Solidus the best
+e-commerce platform for you. That makes us aware of the areas we need to
+improve, so expect a lot of work in:
+
+- Making extensions first-class in the Solidus ecosystem.
+- Improving the design of our core logic with a better service layer.
+- Writing the documentation that you need to read.
+
+## What changed on Solidus 3.2
+
+Here's what changed in the last released version. If you have any trouble updating or you want to leave
+some feedback, please use [this GitHub Discussion](https://github.com/solidusio/solidus/discussions/4161).
+
+### Major changes
+
+#### New Event Bus
+
+A completely new Event Bus has been introduced. It has better support for async
+subscribers, testability, observability, and many other features. It's been
+developed as a separated gem, [omnes](https://github.com/nebulab/omnes). Check
+its README for everything it supports!
+
+Don't forget to consult the [upgrade guide from the legacy event system to
+omnes](https://edgeguides.solidus.io/customization/subscribing-to-events#upgrading-from-the-legacy-event-system).
+
+While the legacy event system is still supported, it'll be removed on Solidus
+v4.
+
+#### New Solidus' starter frontend
+
+For fresh Solidus applications, we now recommend you use
+[solidus_starter_frontend](https://github.com/solidusio/solidus_starter_frontend).
+
+solidus_frontend will be removed from the solidus meta-package gem in Solidus
+v4. Furthermore, its code has been extracted from
+https://github.com/solidusio/solidus to
+https://github.com/solidusio/solidus_frontend. Once removed, you'll need to
+explicitly add `solidus_frontend` to your Gemfile in order to continue using
+it.
+
+Meanwhile, the Solidus installer allows you to choose which one you want to use
+as the storefront.
+
+#### New guides
+
+The guides that used to live at `solidusio/solidus` have been deprecated. You
+can still find them at https://github.com/solidusio/legacy-guides, but a great
+effort is in progress to make first-class documentation on
+https://github.com/solidusio/edgeguides.
+
+You can check them live in https://edgeguides.solidus.io/.
+
+### Other important changes
+
+#### No more autoload of decorators in fresh applications
+
+New Solidus applications won't autoload files matching `app/**/*_decorator*.rb`
+pattern anymore. For previous Solidus applications, it's something that will
+keep working as the responsible code was added to your `config/application.rb`
+when Solidus was installed. That code is intended to work with Rails' classic
+autoloader, deprecated on Rails 6 and removed on Rails 7. It keeps working
+because of a [compatibility
+layer](https://github.com/rails/rails/blob/296ef7a17221e81881e38b51aa2b014d7a28bac5/activesupport/lib/active_support/dependencies/require_dependency.rb)
+which is also deprecated. However, it may be eventually removed, so you're
+better off updating your `application.rb`  file. You should substitute:
+
+```ruby
+config.to_prepare do
+  Dir.glob(Rails.root.join('app/**/*_decorator*.rb')) do |path|
+    require_dependency(path)
+  end
+end
+```
+
+With:
+
+```ruby
+overrides = "#{Rails.root}/app/overrides" # use your actual directory here
+Rails.autoloaders.main.ignore(overrides)
+config.to_prepare do
+  Dir.glob("#{overrides}/**/*_decorator*.rb").each do |override|
+    load override
+  end
+end
+```
+
+You may also want to stop using the `decorator` naming, as it's no longer part
+of Solidus recommendations (that files are monkey patches; they don't use the
+[decorator pattern](https://en.wikipedia.org/wiki/Decorator_pattern)). E.g.,
+you can place those files in `app/overrides/` and remove the `decorator`
+suffix.
+
+#### Changes to the promotion system
+
+Promotions with a `match_policy` of `any` are deprecated. If you have promotions
+with such a match policy, try running the following rake task:
+
+```bash
+bin/rake solidus:split_promotions_with_any_match_policy
+```
+
+This will create separate promotions for each of the rules of your promotions with `any`
+match policy, which should have the same outcome for customers.
+
+Creating new promotions with `any` match policy is turned off by default. If you still want
+to create promotions like that (knowing they will not be supported in the future), you can
+set a temporary flag in your `config/initializers/spree.rb` file:
+
+```ruby
+# Allow creating new promotions with an `any` match policy. Unsupported in the future.
+config.allow_promotions_any_match_policy = true
+```
+
+#### Static preference sources configured within `.to_prepare` blocks
+
+[Rails 7 no longer supports referring autoloadable classes within an
+initializer](https://guides.rubyonrails.org/autoloading_and_reloading_constants.html#autoload-on-boot-and-on-each-reload).
+
+Because of that, we need to change the way we configure static preference sources.
+
+Before:
+
+```ruby
+# config/initializers/spree.rb
+Spree.config do |config|
+  config.static_model_preferences.add(
+    AmazingStore::AmazingPaymentMethod,
+    'amazing_payment_method_credentials',
+    credentials: ENV['AMAZING_PAYMENT_METHOD_CREDENTIALS'],
+    server: Rails.env.production? ? 'production' : 'test',
+    test_mode: !Rails.env.production?
+  )
+end
+```
+
+Now:
+
+```ruby
+# config/initializers/spree.rb
+Rails.application.config.to_prepare do
+  Spree::Config.static_model_preferences.add(
+    AmazingStore::AmazingPaymentMethod,
+    'amazing_payment_method_credentials',
+    credentials: ENV['AMAZING_PAYMENT_METHOD_CREDENTIALS'],
+    server: Rails.env.production? ? 'production' : 'test',
+    test_mode: !Rails.env.production?
+  )
+end
+```
+
+### Other Changes
+
+But there's also a lot of other stuff in this release! If you want to see the full list of the
+changes made, plase take a look at the project's [CHANGELOG on GitHub](https://github.com/solidusio/solidus/blob/master/CHANGELOG.md).
