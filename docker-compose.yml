@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .dockerdev
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: "2.7.1"
+        NODE_VERSION: 14
+        BUNDLER_VERSION: 2
+    image: solidusio
+    command: bash -c "(bundle check || bundle) && (yarn check || yarn install --check-files) && tail -f /dev/null"
+    environment:
+      HISTFILE: "/home/solidusio_user/history/bash_history"
+    ports:
+      - "${SERVER_PORT:-4567}:${SERVER_PORT:-4567}"
+    volumes:
+      - .:/home/solidusio_user/app:delegated
+      - bundle:/home/solidusio_user/gems:cached
+      - history:/home/solidusio_user/history:cached
+    tty: true
+    stdin_open: true
+    tmpfs:
+      - /tmp
+
+volumes:
+  bundle:
+  history:

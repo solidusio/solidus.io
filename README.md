@@ -23,3 +23,10 @@ Usage
 4. To build html and assets for production, run
 
         $ bin/middleman build
+
+Or use the available docker-compose environment:
+
+```bash
+docker-compose up -d
+docker-compose exec app bin/middleman server --bind-address 0.0.0.0
+```
