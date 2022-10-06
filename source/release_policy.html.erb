@@ -1,0 +1,141 @@
+---
+title: Release policy
+description: Solidus follows semantic versioning and tries to keep a cadence for new releases so that users can have clear expectations.
+---
+
+<div class="content-block container">
+  <div class="release_policy-block">
+    <h1 class="title">Release policy</h1>
+
+    <div class="mb-4 mb-md-6">
+      <p class="lead">
+        This document presents the Solidus team's commitment to the release
+        cadence and policy for new Solidus releases. Users should take that as
+        soft guidelines and not as carved in stone. We might modify it to
+        accommodate the current state of development. On top of that, we're an
+        Open Source project with limited resources. Nonetheless, we expect that
+        will help Solidus users have a sense of when new features will be
+        available and plan upgrades in advance.
+      </p>
+
+      <p class="lead">
+        Solidus is in strict compliance with <a href="https://semver.org/">Semantic Versioning</a>.
+      </p>
+
+      <p class="lead">
+        <em>The used examples for version numbers don't need to correspond to
+        actual Solidus releases.</em>
+      </p>
+
+      <h2>Patch versions: releases on backports</h2>
+
+      <p>
+        <em>For example, a new patch release is transitioning from v3.2.0 to v3.2.1.</em>
+      </p>
+
+      <p>
+        Solidus releases a new patch version for a given minor whenever <strong>something is backported</strong>.
+      </p>
+
+      <p>
+        A new patch version only contains bug or security fixes. Most of the
+        time, this is done backward compatible, but it could introduce a
+        breaking change if there's no other way to fix an issue.
+      </p>
+
+      <p>
+        The backport policy is not strict, but users should expect all security
+        issues and sensible bugs to be backported to maintained versions.
+      </p>
+
+      <h2>Minor versions: quarterly releases</h2>
+
+      <p>
+        <em>For example, a new minor release is transitioning from v3.2.1 to v3.3.0.</em>
+      </p>
+
+      <p>
+        The Solidus team will evaluate releasing a new minor <strong>every quarter</strong>.
+      </p>
+
+      <p>
+        A new minor version can contain new features and bug or security fixes,
+        but it'll always add them in a backward compatible way. Deprecation
+        warnings are expected, but stores should keep working as before without
+        changes to the application code as long as users run the update
+        instructions.
+      </p>
+
+      <p>
+        See the <a href="#last_minor_before_major">last minor before every major
+        section</a>.
+      </p>
+
+      <h2>Major versions: every two years</h2>
+
+      <p>
+        <em>For example, a new major release is transitioning from v3.2.0 to
+        v4.0.0.</em>
+      </p>
+
+      <p>
+        Solidus aims to release a new major version at least <strong>every two
+        years</strong>.
+      </p>
+
+      <p>
+        A new major version contains breaking changes, and deprecated code is
+        removed.
+      </p>
+
+      <p>
+        See the <a href="#last_minor_before_major">last minor before every major
+        section</a>.
+      </p>
+
+      <h2 id="last_minor_before_major">Last minor before every major</h2>
+
+      <p>
+        <em>For example, the last minor before a major is v3.2.10 if the next release is v4.0.0.</em>
+      </p>
+
+      <p>
+        The final minor version in a major series (e.g., v3.2.10) and the first
+        one in the next (e.g., v4.0.0) are identical, besides removing
+        deprecated code.
+      </p>
+
+      <p>
+        All the deprecation warnings on the last minor version are removed in the next
+        major, and the application code is expected to comply. That means an application
+        that has been updated to the latest minor and adapted to avoid any deprecation
+        warning should keep working on the first minor release of the next series.
+      </p>
+
+      <p>
+        There could be exceptions when there's no way to introduce a new feature
+        without deprecating old behavior first, but that should be well
+        documented in the <a href="#changelog">Changelog</a>.
+      </p>
+
+      <p>
+        Master is frozen after the final minor version in a series and until the next
+        major is released. Both releases should happen very close in time.
+      </p>
+
+      <h2 id="changelog">Changelog</h2>
+
+      <p>
+        The <a
+        href="https://github.com/solidusio/solidus/blob/master/CHANGELOG.md">Changelog
+        in Solidus' master branch</a> is the unique source of truth for the
+        changes made to the project.
+      </p>
+
+      <p>
+        It shouldn't be expected for the Changelog files in other branches in
+        the repository or packaged gems to be complete.
+      </p>
+    </div>
+  </div>
+</div>
