@@ -303,7 +303,7 @@ hefan/solidus_dynamic_variants:
   title: Dynamic Variants
   description: Creates variants from selected options on the fly during cart populate
   group: Products
-solidusio-contrib/solidus_paypal_commerce_platform:
+solidusio/solidus_paypal_commerce_platform:
   ci_provider: circleci
   title: PayPal Commerce Platform
   description: Use PayPal to accept PayPal and credit/debit card payments
