@@ -31,7 +31,6 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.2.2)
     ffi (1.14.2)
-    ffi (1.14.2-x86-mingw32)
     gh (0.18.0)
       activesupport (~> 5.0)
       addressable (~> 2.4)
@@ -113,10 +112,6 @@ GEM
     nokogiri (1.12.0)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    nokogiri (1.12.0-x86-mingw32)
-      racc (~> 1.4)
-    nokogiri (1.12.0-x86_64-darwin)
-      racc (~> 1.4)
     oga (3.3)
       ast
       ruby-ll (~> 2.1)
@@ -132,7 +127,7 @@ GEM
       json
       websocket (~> 1.0)
     racc (1.5.2)
-    rack (2.2.3)
+    rack (2.2.4)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
