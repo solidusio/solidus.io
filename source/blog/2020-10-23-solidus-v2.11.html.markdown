@@ -114,7 +114,7 @@ Ensure double-checking all the custom defined permissions in your application be
 
 **Introduce encrypted preference type**
 
-A new preference type `encrypted_string` has been introduced allowing to encrypt the value assigned to the preference to avoid exposing it in case a malicious user gets access to the DB or a dump. Check the related [guide](https://guides.solidus.io/developers/preferences/add-model-preferences.html#details-for-encrypted_string-type) for more details.
+A new preference type `encrypted_string` has been introduced allowing to encrypt the value assigned to the preference to avoid exposing it in case a malicious user gets access to the DB or a dump. Check the related [guide](https:/legacy-guides.solidus.io/developers/preferences/add-model-preferences.html#details-for-encrypted_string-type) for more details.
 
 **Add "discontinue on" attribute to products**
 

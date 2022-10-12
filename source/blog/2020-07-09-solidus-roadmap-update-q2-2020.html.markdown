@@ -31,7 +31,7 @@ last months:
 ### Back in business: Klarna and solidus_subscriptions
 
 In addition to releasing the new extensions, we also worked hard to bring home and polish some
-popular community-maintained extensions: 
+popular community-maintained extensions:
 
 - [solidus\_klarna\_payments](https://github.com/solidusio-contrib/solidus_klarna_payments):
   originally developed by [@josetonyp](https://github.com/josetonyp) and
@@ -58,7 +58,7 @@ platforms such as Amazon, Facebook and Instagram.
 We'll also continue working on extendability, improving Solidus' event-driven architecture, and on
 enabling support for the latest frontend technologies through our Next.js starter kit.
 
-Finally, we'll complete and publish our new [developer guides](https://edgeguides.solidus.io), which
+Finally, we'll complete and publish our new [developer guides](https://guides.solidus.io), which
 will not only lower the barrier of entry for becoming a Solidus developer, but also shine a new
 light on many of Solidus' lesser-known features and capabilities.
 
