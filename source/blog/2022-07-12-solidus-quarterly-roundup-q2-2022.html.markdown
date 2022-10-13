@@ -79,7 +79,7 @@ developer documentation, our service object architecture and our official extens
 
 ### Developer guides: better, faster, stronger!
 
-As most of you know, we’ve been working on [completely revamping](https://edgeguides.solidus.io) our
+As most of you know, we’ve been working on [completely revamping](https://guides.solidus.io) our
 guides with the goal of providing a smoother, richer onboarding path to new Solidus users. The new
 guides take a deep dive into all aspects of Solidus, allowing you to more easily implement advanced
 customizations.
@@ -91,7 +91,7 @@ sure you don’t miss the announcement!
 
 ### How do you like them service objects?
 
-If you’re in Slack, you know that we’ve been running a [survey](https://forms.gle/cPFkgt68kuo9fUWC6) 
+If you’re in Slack, you know that we’ve been running a [survey](https://forms.gle/cPFkgt68kuo9fUWC6)
 in the community to collect feedback about our service layer.
 
 While the event bus handles a lot of scenarios, some customizations just need to be done the

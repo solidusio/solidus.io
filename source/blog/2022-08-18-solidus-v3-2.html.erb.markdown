@@ -40,7 +40,7 @@ developed as a separated gem, [omnes](https://github.com/nebulab/omnes). Check
 its README for everything it supports!
 
 Don't forget to consult the [upgrade guide from the legacy event system to
-omnes](https://edgeguides.solidus.io/customization/subscribing-to-events#upgrading-from-the-legacy-event-system).
+omnes](https://legacy-guides.solidus.io/customization/subscribing-to-events#upgrading-from-the-legacy-event-system).
 
 While the legacy event system is still supported, it'll be removed on Solidus
 v4.
@@ -67,7 +67,7 @@ can still find them at https://github.com/solidusio/legacy-guides, but a great
 effort is in progress to make first-class documentation on
 https://github.com/solidusio/edgeguides.
 
-You can check them live in https://edgeguides.solidus.io/.
+You can check them live in https://guides.solidus.io/.
 
 ### Other important changes
 

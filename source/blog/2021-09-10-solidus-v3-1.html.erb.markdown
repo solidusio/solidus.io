@@ -77,7 +77,7 @@ you can bump the version given to `Spree.load_defaults` in the `spree.rb`
 initializer and remove the `new_solidus_defaults.rb` initializer altogether.
 
 You can read in more detail about [this process on our
-guides](https://edgeguides.solidus.io/getting-started/upgrading-solidus#updating-preferences).
+guides](https://guides.solidus.io/getting-started/upgrading-solidus#updating-preferences).
 
 On [#4087](https://github.com/solidusio/solidus/pull/4087) you can find more.
 
