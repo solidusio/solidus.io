@@ -17,8 +17,8 @@ Usage
 
 3. Start the Middleman server. Note that this will also invoke Webpack via the external pipeline.
 
-        $ bundle exec middleman server
+        $ bin/middleman server
 
 4. To build html and assets for production, run
 
-        $ bundle exec middleman build
+        $ bin/middleman build

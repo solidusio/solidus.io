@@ -1,0 +1,122 @@
+---
+title: Solidus v3.1
+date: 2021-09-10
+tags: Solidus
+author: Solidus Core Team
+cover_image: /blog/2021/09/10/solidus-v3-1/solidus_v3_1.jpg
+---
+
+- <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v3.1.0">3.1.0 on GitHub</a>
+- <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/3.1.0">3.1.0 on RubyGems</a>
+
+We've just released Solidus `v3.1.0`!
+
+Thanks to all contributors, testers, and users who made this release possible.
+
+This version's support will end in 18 months: 2023-03-10.
+
+## What's next?
+
+For the next minor release (3.2.0), we plan to make huge changes to the Event Bus, in order to provide
+a solid architecture with a set of tools that will help developers use this feature. We are planning
+to release a new adapter along with the current one, to allow Solidus' users some time to switch, which
+could require some code change in the host applications.
+
+The main features of the new Event Bus Adapter are:
+
+- Isolation from `ActiveSupport::Notification`.
+- Better observability for event-generated flows.
+- Better testability.
+- More robust events registration.
+
+## What changed on Solidus 3.1
+
+Here's what changed in the last released version. If you have any trouble updating or you want to leave
+some feedback, please use [this GitHub Discussion](https://github.com/solidusio/solidus/discussions/4161).
+
+### Major changes
+
+**`Spree.load_defaults`: preference defaults depending on the Solidus version**
+
+Solidus 3.1 brings a new feature where preference defaults can take different
+values depending on a specified Solidus version. It makes it possible to stop
+deprecating old defaults every time we introduce a change in the recommended
+value for a setting. After all, they're just that; recommendations. Instead,
+now users can explicitly ask for a given Solidus version defaults and, as
+before, override the preferences they want.
+
+When upgrading to 3.1, you have to take action to adopt the new behavior.
+You'll need to add `Spree.load_defaults('3.1')` on the very top of your
+`spree.rb` initializer. As we're not changing any preference default on this
+release, nothing will break. A warning will be emitted on boot-up until you do
+it!
+
+However, bumping the version given to `load_defaults` straight away for future
+upgrades will not be a safe option. Instead, you'll have to go through the new
+update process detailed below.
+
+Take a look at [#4064](https://github.com/solidusio/solidus/pull/4064) for more information.
+
+**New update process**
+
+As aforementioned, preference defaults can change after a Solidus release. Once
+you have your defaults locked to the current Solidus version, a new upgrade
+won't break your application because of them. However, it's a good idea to
+adapt your application to the updated recommended settings. To help with this
+process, Solidus comes with a generator that you can execute like this:
+
+```bash
+bin/rails g solidus:update
+```
+
+That generator will create a new initializer called `new_solidus_defaults.rb`,
+which will preview all the defaults that have changed between versions, each on
+a commented line. From that point, you can activate the new defaults one by one
+and adapt your application incrementally. Once you're done with all of them,
+you can bump the version given to `Spree.load_defaults` in the `spree.rb`
+initializer and remove the `new_solidus_defaults.rb` initializer altogether.
+
+You can read in more detail about [this process on our
+guides](https://guides.solidus.io/getting-started/upgrading-solidus#updating-preferences).
+
+On [#4087](https://github.com/solidusio/solidus/pull/4087) you can find more.
+
+**Other important changes**
+
+`Spree::Price#amount` field can no longer be `nil`. Besides adding the
+validation at the model layer, we ship with a task that will remove records
+where the amount is `NULL` in the database. You should run the task before
+executing the new migrations:
+
+```ruby
+bin/rails solidus:delete_prices_with_nil_amount
+bin/rails railties:install:migrations
+bin/rails db:migrate
+```
+
+If you're running migrations automatically on deploy, you should run the task
+before rolling out the new code. In that case, you first should make sure that
+you have affected records:
+
+```ruby
+Spree::Price.where(amount: nil).any?
+```
+
+If the above code returns `false`, you don't need to do anything else.
+Otherwise, copy [the
+task](https://github.com/solidusio/solidus/blob/master/core/lib/tasks/solidus/delete_prices_with_nil_amount.rake)
+into your code, and deploy & execute it. Another option is to execute it
+manually in your console in production. However, be extremely careful when
+doing that!! :warning: :warning: :warning:
+
+```ruby
+Spree::Price.where(amount: nil).delete_all
+```
+
+Take a look at PR [#3987](https://github.com/solidusio/solidus/pull/3987) for more details.
+
+### Other Changes
+
+But there's also a lot of other stuff in this release! If you want to see the full list of the
+changes made, plase take a look at the project's [CHANGELOG on GitHub](https://github.com/solidusio/solidus/blob/master/CHANGELOG.md).
+

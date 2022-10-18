@@ -1,0 +1,16 @@
+---
+title: New Solidus releases to address a security vulnerability
+date: 2022-06-01
+tags: security
+author: Marc Busqué
+cover_image: /blog/shared/images/security.png
+description: New Solidus releases to address GHSA-8639-qx56-r428. Please, update your store soon.
+---
+
+We've released Solidus [3.1.6](https://github.com/solidusio/solidus/releases/tag/v3.1.6), [3.0.6](https://github.com/solidusio/solidus/releases/tag/v3.0.6) and [2.11.16](https://github.com/solidusio/solidus/releases/tag/v2.11.16) to address a security vulnerability ([GHSA-8639-qx56-r428](https://github.com/solidusio/solidus/security/advisories/GHSA-8639-qx56-r428)) affecting all versions of Solidus.
+
+You can read about GHSA-8639-qx56-r428 on the [solidus mailing list](https://groups.google.com/forum/#!forum/solidus-security).
+
+If you have any questions about how to secure your site please stop by our Slack [http://slack.solidus.io/](http://slack.solidus.io/).
+
+Have a nice day!

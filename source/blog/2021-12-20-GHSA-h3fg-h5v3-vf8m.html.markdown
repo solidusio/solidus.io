@@ -1,0 +1,16 @@
+---
+title: New Solidus releases to address a security vulnerability
+date: 2021-12-20
+tags: security
+author: Marc Busqué
+cover_image: /blog/shared/images/security.png
+description: New Solidus releases to address GHSA-h3fg-h5v3-vf8m. Please, update your store soon.
+---
+
+We've released Solidus [3.1.5](https://github.com/solidusio/solidus/releases/tag/v3.1.5), [3.0.5](https://github.com/solidusio/solidus/releases/tag/v3.0.5) and [2.11.14](https://github.com/solidusio/solidus/releases/tag/v2.11.14) to address a security vulnerability ([GHSA-h3fg-h5v3-vf8m](https://github.com/solidusio/solidus/security/advisories/GHSA-h3fg-h5v3-vf8m)) affecting all versions of Solidus.
+
+You can read about GHSA-h3fg-h5v3-vf8m on the [solidus mailing list](https://groups.google.com/forum/#!forum/solidus-security).
+
+If you have any questions about how to secure your site please stop by our Slack [http://slack.solidus.io/](http://slack.solidus.io/).
+
+Have a nice day!

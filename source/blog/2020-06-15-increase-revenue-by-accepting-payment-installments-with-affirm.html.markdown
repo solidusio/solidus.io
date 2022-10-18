@@ -23,7 +23,7 @@ The work for this extension is coordinated by the [Solidus Stakeholders](https:/
 
 With this extension merchants will also be able to use lease-to-own (LTO) providers who partnered with Affirm. Please reach out to Affirm directly to request access for any LTO partners. This is currently in beta at Affirm and not available by default just yet. The Affirm V2 extension supports LTO out of the box.
 
-The following example shows how easy it is to add the Affirm promotional messaging to your storefront.  
+The following example shows how easy it is to add the Affirm promotional messaging to your storefront.
 
 First we have to generate a view override for the cart partial, in this sample we want to show the Affirm payment option under the price.
 
@@ -31,7 +31,7 @@ We can generate our override like this:
 ```
 bundle exec rails g solidus:views:override --only products/_cart_form
 ```
-(for more information about customizing your storefront see the [customization guide](https://guides.solidus.io/developers/customizations/customizing-storefront.html) )
+(for more information about customizing your storefront see the [customization guide](https://legacy-guides.solidus.io/developers/customizations/customizing-storefront.html) )
 
 This file will be in `app/views/spree/products/_cart_form.html.erb`. To show the Affirm promotional messaging, we will need to load `Affirm.js`.
 
@@ -81,5 +81,5 @@ More information and documentation can be found with the following links:
 - [Affirm Merchant](https://www.affirm.com/business)
 - [Official Solidus Affirm Extension](https://github.com/solidusio/solidus_affirm)
 - [Affirm V2 Extension](https://github.com/solidusio-contrib/solidus_affirm_v2)
-- [Solidus Customizations Guide](https://guides.solidus.io/developers/customizations/overview.html)
+- [Solidus Customizations Guide](https://legacy-guides.solidus.io/developers/customizations/overview.html)
 - [Affirm Promotion Messages](https://docs.affirm.com/affirm-developers/docs/promo-messaging-getting-started)

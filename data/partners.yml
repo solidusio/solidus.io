@@ -12,9 +12,9 @@ main_contributors:
 
 gold_partners:
   super_good:
-    name: "Super Good Software"
-    short_description: "Spree and Solidus Specialists"
-    description: "Super Good Software is a software development agency specializing in eCommerce, Solidus, Ruby on Rails, and React."
+    name: "Super Good"
+    short_description: "Solidus Specialists"
+    description: "Solidus veterans who partner with global brands to build custom digital commerce experiences and software"
     url: https://supergood.software/
     image: "supergood-logo.svg"
   karma_creative:
@@ -57,3 +57,21 @@ bronze_partners:
     description: "Digital expertise studio specializing in development of tailor-made, scalable and efficient transactional e-commerce platforms."
     url: "https://lawebshop.ca/"
     image: "lawebshop-logo.svg"
+  morphosis:
+    name: "Morphosis"
+    short_description: "UX strategy, digital product design and conversion tactics"
+    description: "Digital consultancy specializing in UX strategy and digital product design."
+    url: "https://www.morphos.is"
+    image: "morphosis-logo.svg"
+  renuo:
+    name: "Renuo AG"
+    short_description: "Web development, Prototyping, e-Commerce"
+    description: "The development of high quality software is our core competence. We create customer specific applications based on modern technologies."
+    url: "https://www.renuo.ch/"
+    image: "renuo-logo.svg"
+  flatirons:
+    name: "Flatirons Development"
+    short_description: "Consumer-facing software specialists. Solidus, React, Rails."
+    description: "Flatirons Development focuses on consumer-facing products such as SaaS apps, mobile, e-commerce, and marketplaces. UX/UI specialists."
+    url: "https://flatironsdevelopment.com?utm_source=solidus"
+    image: "flatirons-logo.svg"
