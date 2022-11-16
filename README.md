@@ -30,3 +30,10 @@ Or use the available docker-compose environment:
 docker-compose up -d
 docker-compose exec app bin/middleman server --bind-address 0.0.0.0
 ```
+
+### Installing Ruby 2.7.1 on newer Macs
+
+Plain `rbenv install 2.7.1` will fail building on newer Macs.
+To install, you need to use the following command instead:
+
+`RUBY_CFLAGS=-DUSE_FFI_CLOSURE_ALLOC arch -arm64 rbenv install 2.7.1`
