@@ -4,7 +4,7 @@ Requirements
 ------------
 
 * [Middleman 4.x](https://middlemanapp.com/)
-* [Ruby 2.7](https://www.ruby-lang.org)
+* [Ruby 2.7.1](https://www.ruby-lang.org)
 * [Node 14](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com/)
 * [Gulp CLI](https://www.npmjs.com/package/gulp-cli)
