@@ -9,6 +9,11 @@ Requirements
 * [Yarn](https://yarnpkg.com/)
 * [Gulp CLI](https://www.npmjs.com/package/gulp-cli)
 
+_Notes_
+
+1. `node-sass` version in use does not support Node 16 or higher. You are advised to install and use Node 14, otherwise `yarn install` will fail._
+2. Python 2 is required. We recommend using `pyenv` to install Python 2, then set it as local default. `pyenv install 2.7 && pyenv shell 2.7` should work.
+
 Usage
 -----
 
