@@ -4,7 +4,7 @@ Requirements
 ------------
 
 * [Middleman 4.x](https://middlemanapp.com/)
-* [Ruby 2.7](https://www.ruby-lang.org)
+* [Ruby 2.7.1](https://www.ruby-lang.org)
 * [Node 14](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com/)
 * [Gulp CLI](https://www.npmjs.com/package/gulp-cli)
@@ -30,3 +30,11 @@ Or use the available docker-compose environment:
 docker-compose up -d
 docker-compose exec app bin/middleman server --bind-address 0.0.0.0
 ```
+
+Installing Ruby 2.7.1 on newer M1 Mac OS
+----------------------------------------
+
+Plain `rbenv install 2.7.1` will fail building on newer Macs.
+To install, you need to use the following command instead:
+
+`RUBY_CFLAGS=-DUSE_FFI_CLOSURE_ALLOC arch -arm64 rbenv install 2.7.1`
