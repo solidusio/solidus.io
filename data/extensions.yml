@@ -124,7 +124,7 @@ solidusio-contrib/solidus_signifyd:
   title: Signifyd
   description: Integrate your store with Signifyd for fraud protection and chargeback recovery.
   group: Fraud Checking
-solidusio-contrib/solidus_subscriptions:
+solidusio/solidus_subscriptions:
   ci_provider: circleci
   title: Subscriptions
   description: Easily allow your customers to subscribe to recurring products in your store.
