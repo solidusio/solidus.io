@@ -19,8 +19,21 @@ description: Solidus follows semantic versioning and tries to keep a cadence for
       </p>
 
       <p class="lead">
-        Solidus is in strict compliance with <a href="https://semver.org/">Semantic Versioning</a>.
+        Solidus is in strict compliance with <a
+          href="https://semver.org/">Semantic Versioning</a>. Our definition of a
+        Breaking Change is any update to the Solidus code that can break a host
+        application, except for:
       </p>
+
+      <ul>
+        <li>Issues due to the application using an interface explicitly marked as private.</li>
+        <li>Issues due to the application monkey patching Solidus code.</li>
+        <li>Issues due to a fix for a security or very important bug for which
+          it hasn't been possible to implement a non-breaking solution.</li>
+        <li>Issues due to the application using a Ruby, Rails or any other
+          dependency version that is no longer maintained by the corresponding
+          community.</li>
+      </ul>
 
       <p class="lead">
         <em>The used examples for version numbers don't need to correspond to
