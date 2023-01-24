@@ -1,0 +1,22 @@
+---
+title: Solidus v3.3
+date: 2023-01-25
+tags: Solidus
+author: Solidus Core Team
+cover_image: /blog/2023/01/25/solidus-v3-3/cover.jpg
+---
+
+- <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v3.3.0">3.3.0 on GitHub</a>
+- <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/3.3.0">3.3.0 on RubyGems</a>
+
+We've just released Solidus `v3.3.0`!
+
+Thanks to all contributors, testers, and users who made this release possible.
+
+This version's support will end in 18 months: 2024-07-27.
+
+## What's next?
+
+We're on the way for Solidus v4, which will happen later this year. Take the time to upgrade so your store keeps pace with the exciting journey that Solidus is taking. As part of our new processes, we're publishing detailed [upgrade instructions](https://guides.solidus.io/upgrading-solidus/v3.3) in our guides, so don't forget to check them. There, you'll also find all the new features that are included in this release.
+
+If you have any questions or experience issues, you can open a [GitHub discussion](https://guides.solidus.io/upgrading-solidus/v3.3) or contact us on [Slack](https://solidusio.slack.com/). We're here to help!
