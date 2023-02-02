@@ -23,7 +23,7 @@ Now off with the introductions, and let’s get started!
 
 We promised, and we are delivering. The last time you heard from me, I mentioned we wanted to work on payment extensions, make the main ones officially supported, and make them compatible with the new Starter Storefront, which means that the extensions will work out of the box with Solidus.
 
-PayPal Commerce is just the first step of this process and just came out of beta. So feel free to add the gem to your project, test it, and let us know how it goes.
+Solidus PayPal Commerce Platform is just the first step of this process and just came out of beta. So feel free to add the gem to your project, test it, and let us know how it goes.
 
 
 ## Solidus 3.3 has been released
