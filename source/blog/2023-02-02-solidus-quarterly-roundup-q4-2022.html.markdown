@@ -35,7 +35,7 @@ A few minor but important features have been added; here is an incomplete list w
 
 ### Configurable algorithm to prioritize store credits application
 
-Before v3.3, store credits were always sorted by the priority of their type before being applied to an order during the checkout. Now you can change that behavior by configuring the `Spree::Config.store_credit_prioritizer_class` preference with your own class to define your preferred prioritization algorithm.
+Before v3.3, store credits were always sorted by the priority of their type before being applied to an order during the checkout. Now you can change that behavior by configuring the `Spree::Config.store_credit_prioritizer_class` preference with your own class to define your preferred prioritization algorithm. Check out the [Pull Request](https://github.com/solidusio/solidus/pull/4677) that introduced this change for more details.
 
 
 ### Configurable promotion adjuster
