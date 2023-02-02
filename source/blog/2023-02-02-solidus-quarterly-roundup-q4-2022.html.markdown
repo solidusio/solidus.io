@@ -19,7 +19,7 @@ Now off with the introductions, and let’s get started!
 # What’s new
 
 
-## PayPal Commerce Extension 1.0
+## Solidus PayPal Commerce Platform 1.0
 
 We promised, and we are delivering. The last time you heard from me, I mentioned we wanted to work on payment extensions, make the main ones officially supported, and make them compatible with the new Starter Storefront, which means that the extensions will work out of the box with Solidus.
 
