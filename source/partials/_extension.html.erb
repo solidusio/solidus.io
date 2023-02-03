@@ -23,16 +23,6 @@
       <p><%= extension.description %></p>
     </div>
 
-    <div class="extension-ci">
-      <% extension.ci.build_statuses(versions: versions).each_pair do |version, build| %>
-        <%= partial 'partials/extension/build_status', locals: {
-            extension: extension,
-            version: version,
-            build: build,
-        } %>
-      <% end %>
-    </div>
-
     <div class="extension-meta align-items-center">
       <div class="extension-org">
         <img class="extension-org-logo rounded-circle" src="<%= extension.repo_org_image_url %>">
