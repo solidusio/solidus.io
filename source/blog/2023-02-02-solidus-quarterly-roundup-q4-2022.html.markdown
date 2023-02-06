@@ -81,7 +81,7 @@ Integrating payment extensions with the new Starter Frontend requires manual wor
 ## Make your voice be heard
 
 Are you considering using Solidus? Did you consider it but chose otherwise? Are you a Solidus user?
-In any case, we would be delighted if you like to reach out and talk about your experience and thoughts on Solidus; please feel free to schedule a chat with me using this link: https://www.getclockwise.com/c/gabrielsambarino-nebulab-com/quick-meeting.
+In any case, we would be delighted if you like to reach out and talk about your experience and thoughts on Solidus; please feel free to schedule a chat with me using [this link](https://www.getclockwise.com/c/gabrielsambarino-nebulab-com/quick-meeting).
 
 ## Join our community
 
