@@ -1,0 +1,32 @@
+---
+title: Solidus v4.0
+date: 2023-05-08
+tags: Solidus
+author: Solidus Core Team
+cover_image: /blog/2023/05/08/solidus-v4-0/cover.jpg
+---
+
+- <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v4.0.0">4.0.0 on GitHub</a>
+- <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/4.4.0">4.0.0 on RubyGems</a>
+
+We're excited to announce the release of Solidus v4.0! This major release marks a significant step forward for Solidus and reflects our commitment to providing developers with a powerful and flexible e-commerce platform.
+
+We want to thank all contributors, testers, and users who helped us all the way to this release. We're looking forward to seeing what you build with Solidus v4.0!
+
+Please note that this version's support will end in 18 months on 2025-10-26.
+
+## What's new in Solidus v4.0?
+
+Solidus v4.0 is the same as v3.4, but with the removal of all the deprecated code. Besides, there are a few database schema changes that you should be aware of.
+
+Please, don't forget to check out the complete [upgrade instructions](https://guides.solidus.io/upgrading-solidus/v4.0).
+
+In addition, we're happy to announce that Stripe is now available as a payment extension provided during installation. We've revamped the [solidus_stripe](https://github.com/solidusio/solidus_stripe) gem to fix its flaws and ensure seamless integration with the [solidus\_starter\_frontend](https://github.com/solidusio/solidus_starter_frontend), which is Solidus' default frontend.
+
+## What's next?
+
+We have a big project coming up to modernize the Solidus admin panel. The new panel will be simpler for operators to use and more powerful and developer-friendly. We're excited to work on this and look forward to sharing more updates soon.
+
+We're looking ahead to the future of Solidus. We'll continue to evolve and improve the platform to provide even more options and flexibility for our users. We encourage all users to share their feedback and ideas with us, and we'll continue to work together to make Solidus even better.
+
+If you have any questions or experience issues, you can open a [GitHub discussion](https://github.com/solidusio/solidus/discussions/new?category=troubleshooting) or contact us on [Slack](https://solidusio.slack.com/). We're here to help!
