@@ -1,0 +1,30 @@
+---
+title: Solidus v3.4
+date: 2023-04-21
+tags: Solidus
+author: Solidus Core Team
+cover_image: /blog/2023/04/21/solidus-v3-4/cover.jpg
+---
+
+- <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v3.4.0">3.4.0 on GitHub</a>
+- <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/3.4.0">3.4.0 on RubyGems</a>
+
+We're excited to announce the release of Solidus v3.4! This release is a significant milestone as it marks the last release on the 3.x series before we move on to Solidus v4.
+
+We want to thank all contributors, testers, and users who helped make this release possible.
+
+Please note that this version's support will end in 18 months on 2024-10-21.
+
+## What's new in Solidus v3.4?
+
+In addition to the standard bug fixes and improvements, we're excited to share that we've made some significant updates to our Braintree payment extension. It's now fully compatible with [solidus\_starter\_frontend](https://github.com/solidusio/solidus_starter_frontend), making it easier than ever to integrate Braintree into your store. When you install Solidus, you can now pick Braintree as your payment extension, and start processing payments with ease.
+
+Please, don't forget to check out the complete [upgrade instructions](https://guides.solidus.io/upgrading-solidus/v3.4).
+
+## What's next?
+
+With the release of Solidus v3.4, we're approaching the end of the 3.x series. As per our [release policy](/release_policy/), there won't be any more changes except for the removal of deprecated code in the upcoming v4 release. So, if you haven't done so already, it's important to focus on removing any deprecation warnings now to ensure a smooth transition to v4.
+
+Looking ahead to v4.0, we're also thrilled to announce that we'll be introducing a new Stripe payment extension. This update will provide even more options and flexibility for our users, as we continue to evolve and improve Solidus. We'll add it as an option for new Solidus installations, and it'll be fully compatible with solidus\_starter\_frontend.
+
+If you have any questions or experience issues, you can open a [GitHub discussion](https://github.com/solidusio/solidus/discussions/new?category=troubleshooting) or contact us on [Slack](https://solidusio.slack.com/). We'll be glad to help you!
