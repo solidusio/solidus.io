@@ -86,7 +86,7 @@ We are sure you are as excited as we are for Solidus's direction and progress! S
 
 Please join our [Slack community](https://solidusio.slack.com) if you haven’t already and leave there any comments, questions, and feedback.
 
-We are also happy to chat about your experience with Solidus. If you like the idea, you can book a spot at the following link:  https://www.getclockwise.com/c/gabrielsambarino-nebulab-com/quick-meeting.
+We are also happy to chat about your experience with Solidus. If you like the idea, you can book a spot at the following link: [Gabriel's Clockwise](https://www.getclockwise.com/c/gabrielsambarino-nebulab-com/quick-meeting).
 
 You will hear from us next quarter; take care, and have fun with Solidus!
 
