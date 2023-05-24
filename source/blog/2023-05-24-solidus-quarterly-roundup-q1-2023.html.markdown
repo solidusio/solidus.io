@@ -30,12 +30,7 @@ Yet another step toward a smoother onboarding, with much more to come!
 This is what the installer looks like now when it comes to payment methods:
 
 
-## 
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](2023-05-24-solidus-quarterly-roundup-q1-2023/payment-options-installer.png "image_tooltip")
 
 
 
