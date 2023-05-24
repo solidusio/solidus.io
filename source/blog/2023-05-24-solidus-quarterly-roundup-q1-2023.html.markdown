@@ -1,6 +1,6 @@
 ---
 title: "Solidus Quarterly Roundup: Q1 2023"
-date: 2023-05-14
+date: 2023-05-24
 tags: roundup
 author: Gabriel Sambarino
 cover_image: /blog/shared/images/solidus-quarterly-roundup.png
