@@ -1,9 +1,9 @@
 ---
 title: Solidus v4.1
-date: 2023-06-30
+date: 2023-06-29
 tags: Solidus
 author: Solidus Core Team
-cover_image: /blog/2023/06/30/solidus-v4-1/cover.jpg
+cover_image: /blog/2023/06/29/solidus-v4-1/cover.jpg
 ---
 
 - <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v4.1.0">4.1.0 on GitHub</a>
