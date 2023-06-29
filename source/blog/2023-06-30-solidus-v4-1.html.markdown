@@ -1,0 +1,20 @@
+---
+title: Solidus v4.1
+date: 2023-06-30
+tags: Solidus
+author: Solidus Core Team
+cover_image: /blog/2023/06/30/solidus-v4-1/cover.jpg
+---
+
+- <a class="button" href="https://github.com/solidusio/solidus/releases/tag/v4.1.0">4.1.0 on GitHub</a>
+- <a class="button button-secondary" href="https://rubygems.org/gems/solidus/versions/4.1.0">4.1.0 on RubyGems</a>
+
+Solidus v4.1 is the first minor release of the 4.x series.
+
+This release is relatively tiny and should be quite easy to upgrade. It starts to lay down the foundational work for the new Admin, which will be delivered gradually during the following releases.
+
+In fact, with v4.1, stores can switch their Admin to the new color scheme, and allow operators to start getting used to it, reducing the impact of future changes.
+
+But there's much more: it contains a number of new features, bug fixes, and performance improvements. Please read on for the full list of changes in the official [v4.1 Changelog](https://github.com/solidusio/solidus/releases/tag/v4.1.0) and check out the complete [upgrade instructions](https://guides.solidus.io/upgrading-solidus/v4.1) which will assist you in upgrading your store.
+
+If you have any questions or experience issues, you can open a [GitHub discussion](https://github.com/solidusio/solidus/discussions/new?category=troubleshooting) or contact us on [Slack](https://solidusio.slack.com/). We're here to help!
