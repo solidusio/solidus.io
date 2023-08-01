@@ -39,6 +39,7 @@ Work to drastically improve the Admin UX is underway, and the first piece we are
 In addition to a more compelling UI and a renewed UX, new features will be included; we are about to release an early alpha, though it should be stable enough despite its alpha state, to give you all a chance to test the new Admin and let us know your thought.
 
 Shorter feedback loops help build better products closer to users’ needs.
+For any feedback you want to share, we have prepared a [new category](https://github.com/solidusio/solidus/discussions/categories/new-admin-ui-ux-feedback) on Solidus' GitHub discussions.
 
 The alpha will contain a couple of exciting features, including:
 
