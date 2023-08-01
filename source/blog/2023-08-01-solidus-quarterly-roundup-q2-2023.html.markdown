@@ -36,10 +36,9 @@ In Solidus 4.1, we released a new default theme for the admin. That was the firs
 
 Work to drastically improve the Admin UX is underway, and the first piece we are releasing (early August) is the first version of the product list Admin page.
 
-In addition to a more compelling UI and a renewed UX, new features will be included; we are about to release an early alpha, though it should be stable enough despite its alpha state, to give you all a chance to test the new Admin and let us know your thought.
+In addition to a more compelling UI and a renewed UX, new features will be included; we are about to release an early alpha, though it should be stable enough despite its alpha state, to give you all a chance to try the new Admin during this early stage of development, and let us know your thought.
 
-Shorter feedback loops help build better products closer to users’ needs.
-For any feedback you want to share, we have prepared a [new category](https://github.com/solidusio/solidus/discussions/categories/new-admin-ui-ux-feedback) on Solidus' GitHub discussions.
+**For any feedback you want to share**, we have prepared a [new category](https://github.com/solidusio/solidus/discussions/categories/new-admin-ui-ux-feedback) on Solidus' GitHub discussions.
 
 The alpha will contain a couple of exciting features, including:
 
@@ -61,6 +60,8 @@ To complete the initiative product listing, we want to revamp the product creati
 Making the return process more straightforward is a priority; the current workflow has not proven to be always efficient and may create some friction for high-volume stores.
 
 # That’s all, folks!
+
+Before you go, please let me remind you, in case you have missed it, to leave any feedback on our [Github discussion page](https://github.com/solidusio/solidus/discussions/categories/new-admin-ui-ux-feedback).
 
 Please join our [Slack community](https://solidusio.slack.com) if you haven’t already and leave there any comments, questions, and feedback.
 
