@@ -42,8 +42,13 @@ In addition to a more compelling UI and a renewed UX, new features will be inclu
 
 The alpha will contain a couple of exciting features, including:
 
-* Bulk actions (we know you’ve been asking for them!)
-* Live Search.
+### Bulk actions (we know you’ve been asking for them!)
+
+![alt_text](2023-08-01-solidus-quarterly-roundup-q2-2023/product-listing-bulk-actions.png "image_tooltip")
+
+### Live Search
+
+![alt_text](2023-08-01-solidus-quarterly-roundup-q2-2023/product-listing-live-search.png "image_tooltip")
 
 # Next Up - Q3 2023
 
